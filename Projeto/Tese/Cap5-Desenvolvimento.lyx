@@ -16,7 +16,7 @@
 \master Monografia-Dissertacao-Tese-master.lyx
 \maintain_unincluded_children false
 \language brazilian
-\language_package babel
+\language_package default
 \inputencoding iso8859-1
 \fontencoding global
 \font_roman "default" "default"
@@ -139,7 +139,7 @@ thepage}
 Neste capítulo será mostrado o caminho realizado para o desenvolvimento
  da ferramenta de anotação de regiões, a coleta dos dados a partir das imagens
  obtidas em laboratório, e da aplicação CLI utilizada para o treinamento
- da rede neural e aplicação do modelo sobre estas images.
+ da rede neural e aplicação do modelo sobre estas imagens.
 \end_layout
 
 \begin_layout Section
@@ -149,10 +149,10 @@ Ferramenta de Anotação de Regiões de Interesse
 \begin_layout Standard
 Conforme descrito em parágrafos anteriores o objetivo desta secção é descrever
  o processo para a criação da ferramenta de anotação de regiões de interesse,
- as dependencias necessárias para seu desenvolvimento, a arquitetura de
+ as dependências necessárias para seu desenvolvimento, a arquitetura de
  código escolhida, as classes que forma criadas para as funcionalidades
  do programa, e finalmente descrever sobre alguns problemas enfrentados
- durante o processo de codificação e limitaçãoes.
+ durante o processo de codificação e limitações.
 \end_layout
 
 \begin_layout Standard
@@ -167,8 +167,8 @@ em seja bem sucedida.
 \end_layout
 
 \begin_layout Standard
-No caso de imagens é muito comum se utilizar a infomação dos canais de cores,
- por exemplo RGB (
+No caso de imagens é muito comum se utilizar a informação dos canais de
+ cores, por exemplo RGB (
 \emph on
 Red, Green
 \emph default
@@ -176,9 +176,9 @@ Red, Green
 \emph on
 Blue
 \emph default
-), como fonte de dados para o densenvolvimento de algoritimos de redes neurais.
- Isso porque, como já foi explicado em caítulos anteriores, uma imagem pode
- ser tratada como uma função em um espaço bi-dimensional, com coordenadas
+), como fonte de dados para o desenvolvimento de algoritmos de redes neurais.
+ Isso porque, como já foi explicado em capítulos anteriores, uma imagem
+ pode ser tratada como uma função em um espaço bidimensional, com coordenadas
  
 \begin_inset Formula $x$
 \end_inset
@@ -208,29 +208,29 @@ XXX
 \emph default
 .
  Como o escopo deste trabalho se concentra em apenas binarizar as imagens,
- a saida da rede neural contém apenas dois neurônios, classificando em 2
+ a saída da rede neural contém apenas dois neurônios, classificando em 2
  categorias, poro ou matriz sólida.
  Contudo, como é a informação de cor que está sendo usada para alimentar
  a inteligência artificial durante a aprendizagem, a classificação de cada
  pixel em em outras categorias, como diversos minerais ou tipos de fluido,
- em claramente possivel mudando apenas a quantidade de neurônios de saida.
+ em claramente possível mudando apenas a quantidade de neurônios de saída.
  
 \end_layout
 
 \begin_layout Standard
 A forma mais simples de se obter essas informações de cada pixel na imagem
- seria coletando de alguma forma na propria imagem.
+ seria coletando de alguma forma na própria imagem.
  Um 
 \emph on
 script
 \emph default
- escrido em alguma linguagem interpretada, como no caso do 
+ escrito em alguma linguagem interpretada, como no caso do 
 \emph on
 python
 \emph default
 , é de grande ajuda do se diz respeito em obter essa informação.
  Contudo, o processo de treinamento de uma rede neural direta implica em
- comparar o resultado obtido na saida com o valor que aquele ponto no plano
+ comparar o resultado obtido na saída com o valor que aquele ponto no plano
  deveria representar no mundo real, no caso, sua 
 \emph on
 label
@@ -260,7 +260,7 @@ labels
 \emph default
  criadas pelo profissional que estaria utilizando realizando o estudo sobre
  a amostra, seria de grande utilidade para a obtenção de material para alimentar
- o algoritimo de IA.
+ o algoritmos de IA.
  A imagem a ser estudada seria carregada em uma camada de base e a medida
  que novas labels fossem adicionadas novas camadas iriam se sobrepondo a
  camada de base.
@@ -328,12 +328,12 @@ QT
 \emph on
 software 
 \emph default
-construido nesse trabalho.
+construído nesse trabalho.
  
 \end_layout
 
 \begin_layout Standard
-Além disso existe uma comunidade extensa e presente em forúns, e uma documentaçã
+Além disso existe uma comunidade extensa e presente em fóruns, e uma documentaçã
 o altamente descritiva, o que torna o processo de desenvolvimento mais prático.
  Outro ponto positivo em relação à escolha do 
 \emph on
@@ -347,7 +347,7 @@ GUIs
 \emph on
 widgets
 \emph default
-, containers e outras estruturas 
+, contêineres e outras estruturas 
 \emph on
 ready-to-go
 \emph default
@@ -374,17 +374,17 @@ QT Desginer.
 \end_layout
 
 \begin_layout Standard
-Em contra-partida, é necessário que o 
+Em contrapartida, é necessário que o 
 \emph on
 QT 
 \emph default
-esteja instalado no dispositívo do usuário final para o programa seja utilizado.
- Mesmo que o processo de instalação seja documentado no site da propria
+esteja instalado no dispositivo do usuário final para o programa seja utilizado.
+ Mesmo que o processo de instalação seja documentado no site da própria
  equipe de desenvolvimento do 
 \emph on
 QT
 \emph default
-, ainda assim isso pode ser algum impecícilo para algumas pessoas utilizarem
+, ainda assim isso pode ser algum empecilho para algumas pessoas utilizarem
  o 
 \emph on
 software
@@ -404,7 +404,7 @@ CSS
 \emph on
 qss
 \emph default
-) ainda assim não entrega tanta libertdade de customização como seria possivel
+) ainda assim não entrega tanta liberdade de customização como seria possível
  em uma aplicação 
 \emph on
 web.
@@ -412,7 +412,7 @@ web.
 \end_layout
 
 \begin_layout Standard
-Contudo, para os propósitos desse trabalho, os components fornecidos por
+Contudo, para os propósitos desse trabalho, os componentes fornecidos por
  padrão são o suficiente para a construção de uma interface que atenda aos
  propósitos de marcação de regiões de interesse.
 \end_layout
@@ -427,13 +427,13 @@ build
 \emph on
 CMake
 \emph default
- auxilia a organizar as dependencias do projeto, tando internas quanto externas.
+ auxilia a organizar as dependências do projeto, tando internas quanto externas.
  A ideia básica é criar um 
 \emph on
 Makefile
 \emph default
  que possa executar a compilação de todos os arquivos.
- Para isso foi construido um arquivo 
+ Para isso foi construído um arquivo 
 \emph on
 CMakeLists.txt, 
 \emph default
@@ -457,10 +457,21 @@ Funcionalidades
 \begin_layout Itemize
 
 \emph on
-Visualiazação de Imagens
+Visualização de Imagens
 \emph default
-: A aplicação permite que uma imagens no formato JPG, PNG e BPM sejam carregadas
-, cada uma em uma sub-janela diferente.
+: A aplicação permite que uma imagens no formato 
+\emph on
+JPG
+\emph default
+, 
+\emph on
+PNG
+\emph default
+ e 
+\emph on
+BPM
+\emph default
+ sejam carregadas, cada uma em uma sub-janela diferente.
  Cada uma dessas sub-janelas é um 
 \begin_inset Quotes eld
 \end_inset
@@ -470,7 +481,7 @@ ambiente
 \end_inset
 
  independente.
- As camadas construidades sobre a imagem de base e os dados coletados pertencem
+ As camadas construídas sobre a imagem de base e os dados coletados pertencem
  apenas àquela sub-janela.
  
 \end_layout
@@ -480,7 +491,7 @@ ambiente
 \emph on
 Criação de Camadas
 \emph default
-: Sobre cada uma das imagens é possivel criar novas camadas.
+: Sobre cada uma das imagens é possível criar novas camadas.
  Cada camada tem um nome único e os valores de RGB coletados nela são associados
  à esse nome.
  
@@ -495,7 +506,7 @@ Tabela de Dados
  XXXX.
  Essa tabela pode ser limpa a qualquer momento ou ter seus dados exportados
  para um arquivo de texto.
- Também existe a possibilidade de exporta-los para um arquivo no formato
+ Também existe a possibilidade de exportá-los para um arquivo no formato
  CSV, o que facilita caso o usuário tenha a necessidade de abrir os dados
  em algum aplicativo de edição de planilhas, como o 
 \emph on
@@ -513,7 +524,7 @@ Sistema de Anotação
  na Figura XXXX.
  Essa cor representa a cor da caneta que irá fazer a marcação das regiões
  nas imagens, e pode ser alterada.
- A espesura da caneta também pode ser alterada, como é mostrado na Figura
+ A espessura da caneta também pode ser alterada, como é mostrado na Figura
  XXXX.
 \end_layout
 
@@ -665,13 +676,13 @@ e e permeabilidade, o que implica em diferentes maneiras de se realizar
 Para cada uma das imagens de cada uma das categorias foram obtidas uma determina
 da quantidade de pontos que são listadas nas Tabelas XXXX, XXXX, XXXX, XXXX,
  XXXX.
- Nas Figuras XXXX, XXXX, XXXX, XXXX, XXXX é possivel obervar um exemplo
+ Nas Figuras XXXX, XXXX, XXXX, XXXX, XXXX é possível observar um exemplo
  de coleta de dados utilizando a ferramente descrita acima para cada tipo
  de imagem.
  Durante a coleta também procurou-se manter a mesma quantidade de pontos
  para as regiões de sólidos e poros.
- Isso para que fosse possivel evitar que durante o treinamento a rede neural
- tivesse seus parâmetros enviezados.
+ Isso para que fosse possível evitar que durante o treinamento a rede neural
+ tivesse seus parâmetros enviesados.
 \end_layout
 
 \begin_layout Standard
@@ -723,7 +734,7 @@ pillow
 \end_layout
 
 \begin_layout Standard
-Na Figura XXXX é possivel ver um exemplo de execução da 
+Na Figura XXXX é possível ver um exemplo de execução da 
 \emph on
 CLI 
 \emph default
@@ -750,7 +761,7 @@ C++
 \emph default
 , o que poderia facilitar em portar futuramente o código de uma linguagem
  para outra.
- Além disso, a construção de modelos de redes neurais se motrou bem intuitivo
+ Além disso, a construção de modelos de redes neurais se demostrou bem intuitivo
  utilizando esta biblioteca.
 \end_layout
 
@@ -775,7 +786,7 @@ como função de ativação.
 \emph on
 log_softmax
 \emph default
-, que de acordo com a documentação da biblioteca, é recomentada para algoritimos
+, que de acordo com a documentação da biblioteca, é recomentada para algoritmos
  classificadores.
 \end_layout
 
@@ -986,7 +997,7 @@ A aplicação desenvolvida possui uma classe para descrever o modelo de rede
 \emph on
 Dataset 
 \emph default
-responsável por carregar os dados a partir de um arquivo de texto e trona-los
+responsável por carregar os dados a partir de um arquivo de texto e troná-los
  utilizáveis pelo modelo:
 \end_layout
 
@@ -1004,15 +1015,19 @@ de
 PyTorch
 \emph default
 .
- No contrutor da classe são instanciadas as camadas da rede como propriedades
+ No construtor da classe são instanciadas as camadas da rede como propriedades
  da própria classe.
- É possível criar quantas camadas foram necessárias, desde que seja intancias
+ É possível criar quantas camadas foram necessárias, desde que seja instancias
  da classe 
 \emph on
 Linear
 \emph default
- do Pytorch, e recebam no construtor a quantidade de neurônios da camada
- anterior e a quandidade de neurônios que iá possuir.
+ do 
+\emph on
+Pytorch
+\emph default
+, e recebam no construtor a quantidade de neurônios da camada anterior e
+ a quantidade de neurônios que iá possuir.
  Além disso, é necessário sobrecarregar o método 
 \emph on
 forward
@@ -1022,7 +1037,7 @@ forward
  a rede neural.
  O resultado de cada uma das camadas pode ser utilizado como entrada de
  uma função de ativação.
- A Figura XXXX mostra um examplo de modelo.
+ A Figura XXXX mostra um exemplo de modelo.
 \end_layout
 
 \begin_layout Itemize
@@ -1034,8 +1049,8 @@ RockDataset
 \emph on
 Dataset
 \emph default
- que descreve os dados a serem pasados pela rede neural durante o treinamento.
- No contrutor da classe é passado a propriedade que irá representar o dados,
+ que descreve os dados a serem passados pela rede neural durante o treinamento.
+ No construtor da classe é passado a propriedade que irá representar o dados,
  que nessa implementação se chama 
 \emph on
 content_data
@@ -1069,7 +1084,7 @@ CLI
 \emph default
 desenvolvida possui uma série de funções que podem ser compartilhadas entre
  o processo de treinamento, teste e aplicação do modelo.
- Essas funções compatilhadas foram concetradas em um pacote chamado 
+ Essas funções compartilhadas foram concentradas em um pacote chamado 
 \emph on
 utils, 
 \emph default
@@ -1128,7 +1143,7 @@ split_dataset
 \emph on
 datasets
 \emph default
- diferentes para treinamento e teste, essa função realiza essa ação a patir
+ diferentes para treinamento e teste, essa função realiza essa ação a partir
  de um 
 \emph on
 dataset
@@ -1136,7 +1151,7 @@ dataset
 .
  Ela recebe como parâmetro, além do conjunto de dados, a relação entre dados
  para treinamento e dados para teste, que por padrão é de 80%.
- A saida dessa função é uma tupla com o dataset de treino e de teste.
+ A saída dessa função é uma tupla com o dataset de treino e de teste.
  
 \end_layout
 
@@ -1229,8 +1244,8 @@ calculate_porosity
 \emph on
 array
 \emph default
- que representa uma imagem binarizada e calcula o valor da prosidade somando
- o resultado de todos os pixels com valor igual a 
+ que representa uma imagem binarizada e calcula o valor da porosidade somando
+ o resultado de todos os pixeis com valor igual a 
 \begin_inset Quotes eld
 \end_inset
 
@@ -1280,7 +1295,7 @@ save_image
 array 
 \emph default
 que representa uma imagem binarizada e o nome da imagem e salva localmente
- utilizando a bilioteca 
+ utilizando a biblioteca 
 \emph on
 pillow.
 \end_layout
@@ -1319,7 +1334,7 @@ batchs
 \emph on
 batch 
 \emph default
-é utilizado para alimentar a rede neural e o resultado da saida é comparado
+é utilizado para alimentar a rede neural e o resultado da saída é comparado
  com cada uma das 
 \emph on
 labels 
@@ -1328,7 +1343,7 @@ de cada um dos valores de RGB do
 \emph on
 batch 
 \emph default
-por meio de uma função de perda do PyTorch denomidade de 
+por meio de uma função de perda do PyTorch denominada de 
 \emph on
 nll_loss
 \emph default
@@ -1358,13 +1373,13 @@ encontrado no
 \emph on
 dataloader
 \emph default
-, é calculado a saida da rede neural.
+, é calculado a saída da rede neural.
  Contudo dessa vez o maior valor do 
 \emph on
 tensor 
 \emph default
-que representa a saida da rede, ou seja, a classe que melhor representa
- os valores de entrada, é compada com os valores de cada um das 
+que representa a saída da rede, ou seja, a classe que melhor representa
+ os valores de entrada, é comparada com os valores de cada um das 
 \emph on
 labels.
  
@@ -1443,7 +1458,7 @@ Aplicação dos Modelos
 \end_layout
 
 \begin_layout Standard
-Para aplicacação do modelo foi desenvolivida uma função chamada 
+Para aplicar o modelo foi desenvolvida uma função chamada 
 \emph on
 apply_model,
 \emph default
@@ -1453,11 +1468,11 @@ apply_model,
 pickle
 \emph default
 , o caminho para a imagem que será binarizada, o caminho para da imagem
- binarizada de saida e um 
+ binarizada de saída e um 
 \emph on
 flag
 \emph default
- para indicar se o resultado da imagem binarizado deverá ser salvo ou não.
+ para indicar se o resultado da imagem binarizada deverá ser salvo ou não.
 \end_layout
 
 \begin_layout Standard
@@ -1498,7 +1513,7 @@ O processo de coleta dos resultados seguiu o seguinte procedimento para
 \end_layout
 
 \begin_layout Enumerate
-Os dados das regioões de interesse de uma determinada imagem são coletados
+Os dados das regiões de interesse de uma determinada imagem são coletados
  e salvos em um arquivo .
 \emph on
 dat
@@ -1516,15 +1531,18 @@ O modelo é aplicado sobre a imagem para realizar a binarização.
 \end_layout
 
 \begin_layout Enumerate
-O resultado de porsidade é salvo em um arquivo de texto.
+O resultado de porosidade é salvo em um arquivo de texto.
 \end_layout
 
 \begin_layout Standard
 Todavia a aplicação desse processo para cada uma das imagens se mostrou
- muito cansativo e por isso foram desenvolvidos scripts em bash para entrar
- nos diretórios das imagens, buscar os arquivos com dados e modelos salvos
- e executar o treinamento e aplicação do modelo.
- Esses scripts podem ser escontrados no Apendice A.
+ muito cansativo e por isso foram desenvolvidos scripts em 
+\emph on
+bash
+\emph default
+ para entrar nos diretórios das imagens, buscar os arquivos com dados e
+ modelos salvos e executar o treinamento e aplicação do modelo.
+ Esses scripts podem ser encontrados no Apêndice A.
 \end_layout
 
 \end_body
