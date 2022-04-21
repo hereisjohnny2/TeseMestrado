@@ -1,6 +1,6 @@
 import torch
 from torch.utils.data import DataLoader
-from custom_dataset import CustomDataset
+from rock_dataset import RockDataset
 
 
 def load_data_from_file(file_name, pore_label="Poro"):
@@ -20,7 +20,7 @@ def split_dataset(dataset, ratio=0.8):
     return torch.utils.data.random_split(dataset, [train_size, test_size])
 
 def create_dataloaders(data):
-    dataset = CustomDataset(load_data_from_file(data))
+    dataset = RockDataset(load_data_from_file(data))
     train_dataset, test_dataset = split_dataset(dataset)
 
     train_dataloader = DataLoader(train_dataset, batch_size=16, shuffle=True)

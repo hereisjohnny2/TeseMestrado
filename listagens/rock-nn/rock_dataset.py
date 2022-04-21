@@ -1,7 +1,7 @@
 import torch
 from torch.utils.data import Dataset, DataLoader
 
-class CustomDataset(Dataset):
+class RockDataset(Dataset):
     def __init__(self, content_data):
         self.content_data = content_data
     
