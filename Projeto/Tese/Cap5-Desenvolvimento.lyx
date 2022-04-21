@@ -1,0 +1,272 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass abnt
+\begin_preamble
+\usepackage {graphicx}
+\usepackage {longtable}
+
+\usepackage {indentfirst}
+\renewenvironment{center}{\par\centering}{\par}
+\end_preamble
+\use_default_options false
+\master Monografia-Dissertacao-Tese-master.lyx
+\maintain_unincluded_children false
+\language brazilian
+\language_package default
+\inputencoding iso8859-1
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement p
+\paperfontsize 12
+\spacing onehalf
+\use_hyperref false
+\papersize a4paper
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 0
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\use_minted 0
+\index Índice
+\shortcut idx
+\color #008000
+\end_index
+\paperwidth 210mm
+\paperheight 297mm
+\leftmargin 30mm
+\topmargin 25mm
+\rightmargin 20mm
+\bottommargin 20mm
+\secnumdepth 2
+\tocdepth 2
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle fancy
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Chapter
+Desenvolvimento
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Desenvolvimento
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "chap:Desenvolvimento"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lhead{
+\backslash
+thechapter-Desenvolvimento} 
+\backslash
+rhead{
+\backslash
+thepage} 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Neste capítulo será mostrado o caminho realizado para o desenvolvimento
+ da ferramenta de anotação de regiões, a coleta dos dados a partir das imagens
+ obtidas em laboratório, e dos os 
+\emph on
+scripts
+\emph default
+ para o treinamento da rede neural e aplicação do modelo sobre estas images.
+\end_layout
+
+\begin_layout Section
+Ferramenta de Anotação de Regiões de Interesse
+\end_layout
+
+\begin_layout Standard
+....
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Itemize
+Aqui você deve desenvolver o tema de sua monografia/dissertação/tese.
+\end_layout
+
+\begin_layout Itemize
+Organizar os conceitos com início meio e fim.
+ 
+\end_layout
+
+\begin_layout Itemize
+Cada seção/parágrafo deve apontar para o próximo; deve fazer sentido lógico
+ e estar relacionado ao escopo do trabalho (definido claramente na metodologia).
+\end_layout
+
+\begin_layout Itemize
+Ser o mais claro possível, não ter medo de detalhar.
+\end_layout
+
+\begin_layout Itemize
+Todos os trabalhos artigos de terceiros devem ser referenciados.
+ 
+\end_layout
+
+\begin_layout Itemize
+Todas as figuras, tabelas devem ser referenciadas (referencia cruzada).
+ Nenhuma tabela ou figura pode simplesmente aparecer no meio do texto, todas,
+ sem exceção, devem ser citadas e comentadas!
+\end_layout
+
+\begin_layout Itemize
+Equações: ao longo do desenvolvimento todas as variáveis utilizadas devem
+ ser definidas (e copiadas para nomenclatura com unidades SI).
+ 
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Lembre-se a outra forma de gerar nomenclatura é usar a nomenclatura autmática
+ existente no \SpecialChar LyX
+ 2; Para usar nomenclatura automática, cada item deve ser
+ informado (Inserir->Lista->Nomenclatura).
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Deixar claro, ao longo do texto, as inovações desenvolvidas.
+ 
+\end_layout
+
+\begin_layout Itemize
+A origem dos dados e como os mesmos são manipulados, devem estar no capítulo
+ de metodologia.
+ Coloque aqui os processamentos que foram realizados; resultados obtidos
+ com sua manipulação/transformação.
+\end_layout
+
+\begin_layout Itemize
+Neste capítulo só pode entrar o que você fez.
+ Não coloque aqui trabalhos de terceiros, os mesmos devem ter sido incluídos
+ ou na revisão bibliográfica ou na revisão conceitual; em alguns casos nos
+ apêndices, mas nunca aqui!
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+ou seja, aqui entra efetivamente o que você fez!
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Coleta dos Dados
+\end_layout
+
+\begin_layout Standard
+...
+\end_layout
+
+\begin_layout Section
+Treinamento das Redes Neurais
+\end_layout
+
+\begin_layout Standard
+...
+\end_layout
+
+\begin_layout Section
+Aplicação dos Modelos
+\end_layout
+
+\begin_layout Standard
+...
+\end_layout
+
+\begin_layout Section
+Coleta de Resultados
+\end_layout
+
+\begin_layout Standard
+...
+\end_layout
+
+\end_body
+\end_document
