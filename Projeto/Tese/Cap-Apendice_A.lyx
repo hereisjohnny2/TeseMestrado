@@ -4,7 +4,7 @@
 \begin_header
 \save_transient_properties true
 \origin unavailable
-\textclass ../../../../../../../Dropbox/05-Gestao/Modelos/1-ModelosDiretorios/ModeloDiretorio-Aluno-Bolsista-TCC-IC-MSC-DSC-Projeto-GIT/04-Projeto-Defesa-Poster/01-Projeto/abnt
+\textclass abnt
 \begin_preamble
 \usepackage {graphicx}
 \usepackage {longtable}
@@ -118,7 +118,16 @@
 \begin_body
 
 \begin_layout Chapter
-Título do Apêndice
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Códigos Fonte
+\end_layout
+
+\end_inset
+
+Códigos Fonte Desenvolvidos
 \end_layout
 
 \begin_layout Standard
@@ -140,218 +149,12 @@ thepage}
 
 \end_inset
 
-Descreve-se neste apêndice ...
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-lhead{Apêndice 
-\backslash
-thechapter: Titulo do apêndice}
-\backslash
-rhead{
-\backslash
-thepage}
-\end_layout
-
-\end_inset
-
-Descreve-se neste apêndice ...
-\end_layout
-
-\begin_layout Itemize
-Tudo aquilo que for importante para a tese mas não essencial, deve ser colocado
- em apêndices.
-\begin_inset Note Note
-status collapsed
-
-\begin_layout Plain Layout
-Pegue todo aquele material do tipo "encher linguíça" e coloque aqui.
- 
-\end_layout
-
-\begin_layout Plain Layout
-Deixar no meio do texto principal da monografia/tese material que não é
- fundamental ao trabalho, seu desenvolvimento científico, só enche o saco
- do orientador e leitores.
- Na prática o aluno perde ponto!
-\end_layout
-
-\end_inset
-
- Como exemplo, revisão de metodologias, técnicas, modelos matemáticos, ítens
- desenvolvidos por terceiros.
- 
-\end_layout
-
-\begin_layout Itemize
-Algoritmos e programas extensos devem ser colocados no apêndice, assim como
- imagens de programas desenvolvidos/utilizados se forem muitas.
- No capítulo de metodologia coloca-se apenas uma imagem ilustrativa do programa,
- se for mostrar várias imagens e sequências, coloque no apêndice.
-\end_layout
-
-\begin_layout Itemize
-Os anexos ou apêndices contém material auxiliar.
- Por exemplo, tabelas, gráficos, resultados de experimentos, algoritmos,
- códigos e simulações.
-\end_layout
-
-\begin_layout Itemize
-Um apêndice pode incluir assuntos mais gerais (geral demais para estar no
- núcleo do trabalho) ou mais específicos (detalhado demais para estar no
- núcleo do trabalho).
-\end_layout
-
-\begin_layout Itemize
-Pode conter um artigo de auxílio fundamental ao trabalho.
- 
-\end_layout
-
-\begin_layout Itemize
-Pode conter artigos publicados.
+Neste capítulo estão reunídos todos os códigos fontes desenvolvidos para
+ esse projeto.
 \end_layout
 
 \begin_layout Section
-Sub-Titulo do Apêndice
-\end_layout
-
-\begin_layout Standard
-.....conteúdo..
-\end_layout
-
-\begin_layout Section
-Usando Semantik
-\begin_inset CommandInset label
-LatexCommand label
-name "sec:Usando-semantik"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-O programa 
-\family typewriter
-kdissert
-\family default
-, desenvolvido para ajudar na elatoração das idéias associadas ao desenvolviment
-o da sua monografia/dissertação/tese evoluiu, e agora chama-se 
-\family typewriter
-semantik.
- O mesmo pode ser baixado em
-\family default
- 
-\begin_inset CommandInset href
-LatexCommand href
-target "https://code.google.com/p/semantik/"
-literal "false"
-
-\end_inset
-
-.
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-se estiver usando GNU/Linux - Fedora use - como root - o comando:
-\end_layout
-
-\begin_layout Plain Layout
-yum install semantik
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-A Figura a seguir ilustra a tela do 
-\family typewriter
-semantik
-\family default
-.
- Seu uso é opcional, mas aconselhável.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename ../../imagens/UsandoProgramaSemantikDoLinux-Monografianumerica-1.jpg
-	scale 35
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-O programa semantik ajuda no desenvolvimento das ideias da monografia/dissertaçã
-o/tese.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename ../../imagens/UsandoProgramaSemantikDoLinux-Monografianumerica-0.jpg
-	scale 50
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-O programa semantik ajuda no desenvolvimento das ideias da monografia/dissertaçã
-o/tese.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
+Código Fonte da Ferramenta de Anotação de Regiões de Interesse
 \end_layout
 
 \end_body
