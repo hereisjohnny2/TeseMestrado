@@ -1386,13 +1386,13 @@ name "tab:Categorias-das-imagens-2"
 \noindent
 \align center
 \begin_inset Tabular
-<lyxtabular version="3" rows="4" columns="3">
+<lyxtabular version="3" rows="5" columns="3">
 <features tabularvalignment="middle">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1401,49 +1401,20 @@ Imagem
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-Poro
+Poros
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-Sólido
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-I216.png
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
+Sólidos
 \end_layout
 
 \end_inset
@@ -1463,7 +1434,7 @@ I22.png
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+3059
 \end_layout
 
 \end_inset
@@ -1472,7 +1443,65 @@ I22.png
 \begin_inset Text
 
 \begin_layout Plain Layout
+4516
+\end_layout
 
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+I212.png
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4582
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4556
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+I26.png
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4059
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4121
 \end_layout
 
 \end_inset
@@ -1483,7 +1512,7 @@ I22.png
 \begin_inset Text
 
 \begin_layout Plain Layout
-I26.png
+I216.png
 \end_layout
 
 \end_inset
@@ -1492,7 +1521,7 @@ I26.png
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+3695
 \end_layout
 
 \end_inset
@@ -1501,7 +1530,7 @@ I26.png
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+4300
 \end_layout
 
 \end_inset
@@ -1546,13 +1575,13 @@ name "tab:Categorias-das-imagens-3"
 \noindent
 \align center
 \begin_inset Tabular
-<lyxtabular version="3" rows="9" columns="3">
+<lyxtabular version="3" rows="8" columns="3">
 <features tabularvalignment="middle">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1561,20 +1590,20 @@ Imagem
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-Poro
+Poros
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-Sólido
+Sólidos
 \end_layout
 
 \end_inset
@@ -1594,7 +1623,7 @@ I310.png
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+4367
 \end_layout
 
 \end_inset
@@ -1603,7 +1632,7 @@ I310.png
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+5604
 \end_layout
 
 \end_inset
@@ -1623,7 +1652,7 @@ I311.png
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+3138
 \end_layout
 
 \end_inset
@@ -1632,7 +1661,7 @@ I311.png
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+4710
 \end_layout
 
 \end_inset
@@ -1652,7 +1681,7 @@ I312.png
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+3848
 \end_layout
 
 \end_inset
@@ -1661,7 +1690,7 @@ I312.png
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+4199
 \end_layout
 
 \end_inset
@@ -1681,7 +1710,7 @@ I318.png
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+3242
 \end_layout
 
 \end_inset
@@ -1690,36 +1719,7 @@ I318.png
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-I319.png
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
+4323
 \end_layout
 
 \end_inset
@@ -1739,7 +1739,7 @@ I320.png
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+3693
 \end_layout
 
 \end_inset
@@ -1748,7 +1748,7 @@ I320.png
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+4611
 \end_layout
 
 \end_inset
@@ -1768,7 +1768,7 @@ I31.png
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+4025
 \end_layout
 
 \end_inset
@@ -1777,7 +1777,7 @@ I31.png
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+4457
 \end_layout
 
 \end_inset
@@ -1797,7 +1797,7 @@ I32.png
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+4488
 \end_layout
 
 \end_inset
@@ -1806,7 +1806,7 @@ I32.png
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+5269
 \end_layout
 
 \end_inset
@@ -1857,7 +1857,7 @@ name "tab:Categorias-das-imagens-4"
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1866,7 +1866,7 @@ Imagem
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1875,7 +1875,7 @@ Poro
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1899,7 +1899,7 @@ Sólido
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+1210
 \end_layout
 
 \end_inset
@@ -1908,7 +1908,7 @@ Sólido
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+2382
 \end_layout
 
 \end_inset
@@ -1928,7 +1928,7 @@ Sólido
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+1918
 \end_layout
 
 \end_inset
@@ -1937,7 +1937,7 @@ Sólido
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+2745
 \end_layout
 
 \end_inset
@@ -1957,7 +1957,7 @@ Sólido
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+1733
 \end_layout
 
 \end_inset
@@ -1966,7 +1966,7 @@ Sólido
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+2557
 \end_layout
 
 \end_inset
@@ -1986,7 +1986,7 @@ Sólido
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+1342
 \end_layout
 
 \end_inset
@@ -1995,7 +1995,7 @@ Sólido
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+2113
 \end_layout
 
 \end_inset
@@ -2015,7 +2015,7 @@ Sólido
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+1541
 \end_layout
 
 \end_inset
@@ -2024,7 +2024,7 @@ Sólido
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+2279
 \end_layout
 
 \end_inset
@@ -2044,7 +2044,7 @@ Sólido
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+1377
 \end_layout
 
 \end_inset
@@ -2053,7 +2053,7 @@ Sólido
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+1765
 \end_layout
 
 \end_inset
@@ -2073,7 +2073,7 @@ Sólido
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+1386
 \end_layout
 
 \end_inset
@@ -2082,7 +2082,7 @@ Sólido
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+2544
 \end_layout
 
 \end_inset
@@ -2102,7 +2102,7 @@ Sólido
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+1484
 \end_layout
 
 \end_inset
@@ -2111,7 +2111,7 @@ Sólido
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+1629
 \end_layout
 
 \end_inset
@@ -2131,7 +2131,7 @@ Sólido
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+1646
 \end_layout
 
 \end_inset
@@ -2140,7 +2140,7 @@ Sólido
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+2137
 \end_layout
 
 \end_inset
@@ -2160,7 +2160,7 @@ Sólido
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+1179
 \end_layout
 
 \end_inset
@@ -2169,7 +2169,7 @@ Sólido
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+2052
 \end_layout
 
 \end_inset
@@ -2220,7 +2220,7 @@ name "tab:Categorias-das-imagens-5"
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2229,7 +2229,7 @@ Imagem
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2238,7 +2238,7 @@ Poro
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2262,7 +2262,7 @@ Sólido
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+1906
 \end_layout
 
 \end_inset
@@ -2271,7 +2271,7 @@ Sólido
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+2257
 \end_layout
 
 \end_inset
@@ -2291,7 +2291,7 @@ Sólido
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+1707
 \end_layout
 
 \end_inset
@@ -2300,7 +2300,7 @@ Sólido
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+2162
 \end_layout
 
 \end_inset
@@ -2311,7 +2311,7 @@ Sólido
 \begin_inset Text
 
 \begin_layout Plain Layout
-3251i03.png
+26513251i03.png
 \end_layout
 
 \end_inset
@@ -2320,7 +2320,7 @@ Sólido
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+2651
 \end_layout
 
 \end_inset
@@ -2329,7 +2329,7 @@ Sólido
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+2898
 \end_layout
 
 \end_inset
@@ -2349,7 +2349,7 @@ Sólido
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+2220
 \end_layout
 
 \end_inset
@@ -2358,7 +2358,7 @@ Sólido
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+3189
 \end_layout
 
 \end_inset
@@ -2378,7 +2378,7 @@ Sólido
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+2033
 \end_layout
 
 \end_inset
@@ -2387,7 +2387,7 @@ Sólido
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+2168
 \end_layout
 
 \end_inset
@@ -2407,7 +2407,7 @@ Sólido
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+2516
 \end_layout
 
 \end_inset
@@ -2416,7 +2416,7 @@ Sólido
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+2517
 \end_layout
 
 \end_inset
@@ -2436,7 +2436,7 @@ Sólido
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+2691
 \end_layout
 
 \end_inset
@@ -2445,7 +2445,7 @@ Sólido
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+2311
 \end_layout
 
 \end_inset
@@ -2465,7 +2465,7 @@ Sólido
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+2294
 \end_layout
 
 \end_inset
@@ -2474,7 +2474,7 @@ Sólido
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+2275
 \end_layout
 
 \end_inset
@@ -2494,7 +2494,7 @@ Sólido
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+2673
 \end_layout
 
 \end_inset
@@ -2503,7 +2503,7 @@ Sólido
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+3429
 \end_layout
 
 \end_inset
@@ -2523,7 +2523,7 @@ Sólido
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+2112
 \end_layout
 
 \end_inset
@@ -2532,7 +2532,7 @@ Sólido
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+2426
 \end_layout
 
 \end_inset
@@ -2625,7 +2625,7 @@ L67409i1.png
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+3022
 \end_layout
 
 \end_inset
@@ -2634,7 +2634,7 @@ L67409i1.png
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+3948
 \end_layout
 
 \end_inset
@@ -2654,7 +2654,7 @@ L67409i2.png
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+5921
 \end_layout
 
 \end_inset
@@ -2663,7 +2663,7 @@ L67409i2.png
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+6761
 \end_layout
 
 \end_inset
@@ -2683,7 +2683,7 @@ L67409i3.png
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+3024
 \end_layout
 
 \end_inset
@@ -2692,7 +2692,7 @@ L67409i3.png
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+4209
 \end_layout
 
 \end_inset
@@ -2712,7 +2712,7 @@ L67409i4.png
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+1900
 \end_layout
 
 \end_inset
@@ -2721,7 +2721,7 @@ L67409i4.png
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+2963
 \end_layout
 
 \end_inset
@@ -2741,7 +2741,7 @@ L67409i5.png
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+3112
 \end_layout
 
 \end_inset
@@ -2750,7 +2750,7 @@ L67409i5.png
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+4529
 \end_layout
 
 \end_inset
@@ -2770,7 +2770,7 @@ L67409i6.png
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+2154
 \end_layout
 
 \end_inset
@@ -2779,7 +2779,7 @@ L67409i6.png
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+3869
 \end_layout
 
 \end_inset
@@ -2799,7 +2799,7 @@ L67409i7.png
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+1253
 \end_layout
 
 \end_inset
@@ -2808,7 +2808,7 @@ L67409i7.png
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+4356
 \end_layout
 
 \end_inset
@@ -2828,7 +2828,7 @@ L67409i8.png
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+3181
 \end_layout
 
 \end_inset
@@ -2837,7 +2837,7 @@ L67409i8.png
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+5068
 \end_layout
 
 \end_inset
@@ -2857,7 +2857,7 @@ L67409i9.png
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+2178
 \end_layout
 
 \end_inset
@@ -2866,7 +2866,7 @@ L67409i9.png
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+4468
 \end_layout
 
 \end_inset
@@ -2886,7 +2886,7 @@ L67409i10.png
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+3668
 \end_layout
 
 \end_inset
@@ -2895,7 +2895,7 @@ L67409i10.png
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+5946
 \end_layout
 
 \end_inset
