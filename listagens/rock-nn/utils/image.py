@@ -1,4 +1,5 @@
 from os import path
+from posixpath import split, splitext
 import torch
 import numpy as np
 import matplotlib.pyplot as plt
@@ -43,3 +44,9 @@ def show_image(arr):
     
 def save_image(arr, name):
     Image.fromarray((arr * 255).astype(np.uint8)).save(f"{name}-bin.png")
+    
+def convert_image_to_rgb_format(image_name):
+    img = Image.open(image_name).convert("RGB")
+    name, _ = path,splitext()
+    img.save(f"{name}-converted.png")
+     
