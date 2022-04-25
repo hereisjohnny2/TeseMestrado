@@ -232,11 +232,14 @@ noprefix "false"
 
  mostram os valores obtidos para porosidade em cada uma das imagens e o
  tempo decorrido para aplicação do modelo.
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float table
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -421,11 +424,14 @@ I216.png
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float table
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -697,11 +703,14 @@ I32.png
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float table
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -1060,11 +1069,14 @@ Tempo Decorrido (s)
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float table
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -1423,11 +1435,14 @@ Tempo Decorrido (s)
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float table
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -1795,8 +1810,7 @@ Imagens Binarizadas Obtidas
 \begin_layout Standard
 Apresenta-se nesta seção as imagens obtidas pelo processo de binarização
  ao lado das imagens originais.
- Cada subsecção lista uma categoria de imagem junto de uma análise sobre
- os resultados obtidos.
+ Cada subsecção lista uma categoria de imagem.
 \end_layout
 
 \begin_layout Subsection
@@ -6428,7 +6442,7 @@ name "fig:L67409i9.png"
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -6549,7 +6563,7 @@ Análise
 
 \end_inset
 
- Resultados
+ dos Resultados
 \begin_inset CommandInset label
 LatexCommand label
 name "sec:Analise-Resultados"
@@ -6560,62 +6574,234 @@ name "sec:Analise-Resultados"
 \end_layout
 
 \begin_layout Standard
-Apresenta-se nesta seção ...
+Durante a execução do modelo é possível observar que o tempo para execução
+ do modelo ficou entre 19 e 21 segundos, para todas as imagens.
+ Devido ao fato de que a rede neural é executada para cada pixel da imagem
+ esses valores próximos podem ser explicados pelo fato que todas as imagens
+ possuíam a mesma quantidade de 640 x 450 pixeis.
+ 
 \end_layout
 
-\begin_layout Itemize
-Criar uma seção ou capítulo separado para análise dos resultados.
-\end_layout
-
-\begin_layout Itemize
-Analisar criteriosamente e criticamente os resultados obtidos, de forma
- a indicar correções e sugestões de novos trabalhos.
-\end_layout
-
-\begin_layout Itemize
-Todas as figuras devem ser comentadas e analisadas, não pode ter figura
- solta, não referenciada no texto e não comentada.
-\end_layout
-
-\begin_layout Itemize
-Todas tabela deve ser comentada e analisada, não pode ter tabela solta,
- não referenciada e não comentada.
-\end_layout
-
-\begin_layout Itemize
-As análises devem ser consistentes, isto é, deve-se adotar um padrão para
- análise dos resultados.
-\end_layout
-
-\begin_layout Itemize
-Como vimos no capítulo de metodologia, se todas as análises apontam para
- uma tendência, você pode tentar generalizar o resultado.
- Mas sempre destacando (deixando claro), que sua conclusão/generalização
- é para os casos estudados, e que novas análises precisam ser feitas.
-\end_layout
-
-\begin_layout Itemize
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-É comum o aluno levantar uma grande quantidade de resultados e depois ficar
- com medo de colocar claramente os mesmos e suas conclusões.
- Confira os dados de entrada, as hipóteses adotadas, os resultados obtidos,
- e não tenha medo de afirmar o que esta vendo.
-\end_layout
-
+\begin_layout Standard
+Para as imagens da categoria 
+\emph on
+Berea200 
+\emph default
+foi constado uma porosidade média igual a 
+\begin_inset Formula $26,4918\,\%$
 \end_inset
 
+ e um desvio padrão de 
+\begin_inset Formula $3,1108\,\%$
+\end_inset
 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-O que não pode é inventar conclusões que não estão de acordo com os dados/result
-ados.
+.
+ É possível observar que os valores de porosidade é mais bem comportado
+ nessa categoria do que nas outras, sendo as imagens 
+\emph on
+I26 
+\emph default
+e
+\emph on
+ I216 
+\emph default
+com os valores mais próximos da média
+\emph on
+.
+ 
 \end_layout
 
+\begin_layout Standard
+Já para as imagens da categoria 
+\emph on
+Berea500 
+\emph default
+foi constado uma porosidade média igual a 
+\begin_inset Formula $23,3138\,\%$
+\end_inset
+
+ e um desvio padrão de 
+\begin_inset Formula $5,9986\,\%$
+\end_inset
+
+.
+ Mesmo com a similaridade em relação à categoria 
+\emph on
+Berea200
+\emph default
+, os resultados são menos comportados com, a imagem 
+\emph on
+I310
+\emph default
+ com valor mais próximo da média.
+ As imagens 
+\emph on
+I312 
+\emph default
+e 
+\emph on
+I320
+\emph default
+ apresentaram os resultados mais distantes da média.
+\end_layout
+
+\begin_layout Standard
+Imagens da categoria 
+\emph on
+P148_K2 
+\emph default
+observou-se uma porosidade média igual a 
+\begin_inset Formula $23,7069\,\%$
+\end_inset
+
+ e um desvio padrão de 
+\begin_inset Formula $9,9023\,\%$
+\end_inset
+
+.
+ Em relação a porosidade medida em laboratório, essa foi a categoria que
+ apresentou os piores resultados, com o menor erro igual a 
+\begin_inset Formula $36,6818\%$
+\end_inset
+
+, para 
+\emph on
+3271i04
+\emph default
+, e maior igual 
+\begin_inset Formula $155,6922\%$
+\end_inset
+
+, para 
+\emph on
+3271i06
+\emph default
+.
+ Em relação à média da porosidade, observou-se um erro de 
+\begin_inset Formula $37,5709\%$
+\end_inset
+
+.
+ É provável que devido a natureza da imagem, com poros pequenos, a coleta
+ tenha sido prejudicada.
+ Novas análises seriam necessárias para obtenção de resultados mais próximos
+ da realidade.
+ Outro indicativo para esse problema é o fato das imagens 
+\emph on
+3271i03 e 3271i04
+\emph default
+, desta mesma categoria
+\emph on
+,
+\emph default
+ apresentaram um valor de porosidade muito baixo em relação ao resto das
+ amostras.
+ 
+\end_layout
+
+\begin_layout Standard
+O mesmo já não ocorre com imagens da categoria 
+\emph on
+P240_K104
+\emph default
+, já que é possível observar que os grãos são um pouco menores, tornando
+ mais fácil a coleta de dados para as regiões porosas.
+ Todavia, a imagem 
+\emph on
+3251i07
+\emph default
+ possui um valor de porosidade muito mais alto que as outras amostras.
+ Em relação ao valor de porosidade esperada da amostra, a imagem 
+\emph on
+3251i05 
+\emph default
+apresentou o melhor resultado, com um valor de 
+\begin_inset Formula $6,9444\%.$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Ainda em relação às imagens da categoria 
+\emph on
+P240_K104
+\emph default
+, que possui características de formados grãos semelhante, a porosidade
+ média foi igual a 
+\begin_inset Formula $31,6073\,\%$
+\end_inset
+
+ com um desvio padrão de 
+\begin_inset Formula $5,3404\,\%$
+\end_inset
+
+.
+ Sobre o erro em relação valor de porosidade medido em laboratório a imagem
+ 
+\emph on
+3251i05 
+\emph default
+teve o melhor resultado, com um valor de 
+\begin_inset Formula $6,9444\%$
+\end_inset
+
+, e a imagem 
+\emph on
+3251i07 
+\emph default
+teve o pior resultado, com um erro igual a 
+\begin_inset Formula $81,1686\%$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Por fim as imagens da categoria 
+\emph on
+P262_K441 
+\emph default
+a porosidade média foi igual a 
+\begin_inset Formula $16,4796\,\%$
+\end_inset
+
+ e o desvio padrão de 
+\begin_inset Formula $4,9635\,\%$
+\end_inset
+
+.
+ Observou-se um comportamento semelhante a categoria 
+\emph on
+P148_K2
+\emph default
+, onde a imagem 
+\emph on
+L67409i7 
+\emph default
+apresenta um valor muito mais baixo em relação às outras amostras, o que
+ contribuiu para deixar a média mais baixa em relação ao valor de porosidade
+ observada em laboratório, resultado em um erro igual à 
+\begin_inset Formula $37,1006%\%
+$
+\end_inset
+
+.
+ Na imagem 
+\emph on
+L67409i5
+\emph default
+ foi possível observar o menor erro em relação à a porosidade real da amostra,
+ igual à 
+\begin_inset Formula $15,7522\%$
+\end_inset
+
+, e na imagem 
+\emph on
+L67409i7
+\emph default
+, o maior, igual a 
+\begin_inset Formula $70,8945\%$
 \end_inset
 
 .
