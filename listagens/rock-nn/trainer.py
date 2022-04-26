@@ -1,5 +1,3 @@
-#!/usr/bin/env python
-
 from copy import deepcopy
 import torch
 import torch.optim as optim
@@ -28,6 +26,3 @@ def train_from_dataset(data, epochs=5):
     torch.save(deepcopy(net.state_dict()), model_file_name)
     
     print("Done!")
-    
-        
-    

@@ -375,37 +375,9 @@ options "abntex2-alf"
 
 \begin_layout Standard
 \start_of_appendix
-\begin_inset Note Note
-status collapsed
-
-\begin_layout Plain Layout
-\noindent
 \begin_inset CommandInset include
 LatexCommand include
 filename "Cap-Apendice_A.lyx"
-
-\end_inset
-
-
-\begin_inset CommandInset include
-LatexCommand include
-filename "Cap-Apendice_A.lyx"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\noindent
-\begin_inset CommandInset include
-LatexCommand include
-filename "Cap-Apendice_B.lyx"
-
-\end_inset
-
-
-\end_layout
 
 \end_inset
 
