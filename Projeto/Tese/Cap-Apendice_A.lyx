@@ -118,17 +118,7 @@
 \begin_body
 
 \begin_layout Chapter
-Códigos Fonte 
-\begin_inset Index idx
-status open
-
-\begin_layout Plain Layout
-Código Fonte
-\end_layout
-
-\end_inset
-
- dos Softwares Desenvolvidos
+Códigos-fontes dos Softwares Desenvolvidos
 \end_layout
 
 \begin_layout Standard
@@ -150,7 +140,7 @@ thepage}
 
 \end_inset
 
-Esse âpendice descreve os códigos fontes desenvolvidos para o a criação
+Esse apêndice descreve os códigos-fontes desenvolvidos para o a criação
  da ferramenta de anotação de regiões de interesse e dos 
 \emph on
 scripts
@@ -160,6 +150,27 @@ scripts
 Machine Learning
 \emph default
 .
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lhead{Apêndice 
+\backslash
+thechapter: Titulo do apêndice}
+\backslash
+rhead{
+\backslash
+thepage}
+\end_layout
+
+\end_inset
+
 \end_layout
 
 \begin_layout Section
@@ -5716,7 +5727,7 @@ name "list: main.py"
 \lang brazilian
 
 \begin_inset listings
-lstparams "language=Python,numbers=left,numberstyle={\footnotesize},basicstyle={\footnotesize\ttfamily},breaklines=true,showstringspaces=false,tabsize=4,caption={main.py}"
+lstparams "language=Python,numbers=left,numberstyle={\footnotesize},basicstyle={\footnotesize\ttfamily},breaklines=true,showstringspaces=false,tabsize=4,extendedchars=true,caption={main.py}"
 inline false
 status collapsed
 
@@ -5863,7 +5874,7 @@ if __name__ == "__main__":
 \begin_layout Standard
 \begin_inset CommandInset label
 LatexCommand label
-name "list: rock_dataset.py"
+name "list: rockdataset.py"
 
 \end_inset
 
@@ -5872,7 +5883,7 @@ name "list: rock_dataset.py"
 
 \begin_layout Standard
 \begin_inset listings
-lstparams "language=Python,numbers=left,numberstyle={\footnotesize},basicstyle={\footnotesize\ttfamily},breaklines=true,showstringspaces=false,tabsize=4,caption={rock_dataset.py}"
+lstparams "language=Python,numbers=left,numberstyle={\footnotesize},basicstyle={\footnotesize\ttfamily},breaklines=true,showstringspaces=false,tabsize=4,extendedchars=true,caption={rockdataset.py}"
 inline false
 status collapsed
 
@@ -5963,7 +5974,7 @@ class RockDataset(Dataset):
 \begin_layout Standard
 \begin_inset CommandInset label
 LatexCommand label
-name "list: rock_model.py"
+name "list: rockmodel.py"
 
 \end_inset
 
@@ -5972,7 +5983,7 @@ name "list: rock_model.py"
 
 \begin_layout Standard
 \begin_inset listings
-lstparams "language=Python,numbers=left,numberstyle={\footnotesize},basicstyle={\footnotesize\ttfamily},breaklines=true,showstringspaces=false,tabsize=4,caption={rock_model.py}"
+lstparams "language=Python,numbers=left,numberstyle={\footnotesize},basicstyle={\footnotesize\ttfamily},breaklines=true,showstringspaces=false,tabsize=4,extendedchars=true,caption={rockmodel.py}"
 inline false
 status collapsed
 
@@ -6076,7 +6087,7 @@ name "list: tester.py"
 
 \begin_layout Standard
 \begin_inset listings
-lstparams "language=Python,numbers=left,numberstyle={\footnotesize},basicstyle={\footnotesize\ttfamily},breaklines=true,showstringspaces=false,tabsize=4,caption={tester.py}"
+lstparams "language=Python,numbers=left,numberstyle={\footnotesize},basicstyle={\footnotesize\ttfamily},breaklines=true,showstringspaces=false,tabsize=4,extendedchars=true,caption={tester.py}"
 inline false
 status collapsed
 
@@ -6237,7 +6248,7 @@ name "list: trainer.py"
 
 \begin_layout Standard
 \begin_inset listings
-lstparams "language=Python,numbers=left,numberstyle={\footnotesize},basicstyle={\footnotesize\ttfamily},breaklines=true,showstringspaces=false,tabsize=4,caption={trainer.py}"
+lstparams "language=Python,numbers=left,numberstyle={\footnotesize},basicstyle={\footnotesize\ttfamily},breaklines=true,showstringspaces=false,tabsize=4,extendedchars=true,caption={trainer.py}"
 inline false
 status collapsed
 
@@ -6392,7 +6403,7 @@ name "list: dataset.py"
 
 \begin_layout Standard
 \begin_inset listings
-lstparams "language=Python,numbers=left,numberstyle={\footnotesize},basicstyle={\footnotesize\ttfamily},breaklines=true,showstringspaces=false,tabsize=4,caption={dataset.py}"
+lstparams "language=Python,numbers=left,numberstyle={\footnotesize},basicstyle={\footnotesize\ttfamily},breaklines=true,showstringspaces=false,tabsize=4,extendedchars=true,caption={dataset.py}"
 inline false
 status collapsed
 
@@ -6557,7 +6568,7 @@ name "list: image.py"
 
 \begin_layout Standard
 \begin_inset listings
-lstparams "language=Python,numbers=left,numberstyle={\footnotesize},basicstyle={\footnotesize\ttfamily},breaklines=true,showstringspaces=false,tabsize=4,caption={image.py}"
+lstparams "language=Python,numbers=left,numberstyle={\footnotesize},basicstyle={\footnotesize\ttfamily},breaklines=true,showstringspaces=false,tabsize=4,extendedchars=true,caption={image.py}"
 inline false
 status collapsed
 
@@ -6835,7 +6846,7 @@ name "list: network.py"
 
 \begin_layout Standard
 \begin_inset listings
-lstparams "language=Python,numbers=left,numberstyle={\footnotesize},basicstyle={\footnotesize\ttfamily},breaklines=true,showstringspaces=false,tabsize=4,caption={network.py}"
+lstparams "language=Python,numbers=left,numberstyle={\footnotesize},basicstyle={\footnotesize\ttfamily},breaklines=true,showstringspaces=false,tabsize=4,extendedchars=true,caption={network.py}"
 inline false
 status collapsed
 
@@ -6984,7 +6995,7 @@ name "list: parser.py"
 
 \begin_layout Standard
 \begin_inset listings
-lstparams "language=Python,numbers=left,numberstyle={\footnotesize},basicstyle={\footnotesize\ttfamily},breaklines=true,showstringspaces=false,tabsize=4,caption={network.py}"
+lstparams "language=Python,numbers=left,numberstyle={\footnotesize},basicstyle={\footnotesize\ttfamily},breaklines=true,showstringspaces=false,tabsize=4,extendedchars=true,caption={paser.py}"
 inline false
 status collapsed
 
@@ -7116,7 +7127,7 @@ n process")
 \begin_layout Standard
 \begin_inset CommandInset label
 LatexCommand label
-name "list: time_measure.py"
+name "list: timemeasure.py"
 
 \end_inset
 
@@ -7125,9 +7136,9 @@ name "list: time_measure.py"
 
 \begin_layout Standard
 \begin_inset listings
-lstparams "language=Python,numbers=left,numberstyle={\footnotesize},basicstyle={\footnotesize\ttfamily},breaklines=true,showstringspaces=false,tabsize=4,caption={network.py}"
+lstparams "language=Python,numbers=left,numberstyle={\footnotesize},basicstyle={\footnotesize\ttfamily},breaklines=true,showstringspaces=false,tabsize=4,extendedchars=true,caption={timemeasure.py}"
 inline false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 

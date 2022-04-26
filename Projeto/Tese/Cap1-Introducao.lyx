@@ -190,9 +190,9 @@ name "sec:Escopo-do-Problema"
 \end_layout
 
 \begin_layout Standard
-É cada vez mais comum a aplicação de algorítmos de inteligência artificial
+É cada vez mais comum a aplicação de algoritmos de inteligência artificial
  nas mais diferentes áreas de pesquisa, principalmente na engenharia.
- O uso de algorítmos inteligentes torna factível a execução, em um curto
+ O uso de algoritmos inteligentes torna factível a execução, em um curto
  espaço de tempo, de tarefas complexas de classificação e predição.
  Métodos dessa natureza já haviam sido previstos há décadas, mas somente
  com o aumento exponencial da capacidade de processamento dos computadores
@@ -564,7 +564,7 @@ Desenvolvimento de uma aplicação em C++ e QT para anotação de regiões de
 \end_layout
 
 \begin_layout Itemize
-Desevolvimento de scripts em Python para a realização do treinamento das
+Desenvolvimento de scripts em Python para a realização do treinamento das
  redes neurais e aplicação do modelo gerado nas imagens de rocha reservatório.
 \end_layout
 
@@ -661,7 +661,7 @@ Desenvolvimento
 \emph on
 scripts
 \emph default
- para o treinamento da rede neural e aplicação do modelo sobre estas images.
+ para o treinamento da rede neural e aplicação do modelo sobre estas imagens.
 \end_layout
 
 \begin_layout Standard
@@ -687,6 +687,18 @@ Conclusões
 \end_inset
 
 , apresenta-se as conclusões e sugestões para trabalhos futuros.
+\end_layout
+
+\begin_layout Standard
+No Apêndice A, 
+\begin_inset Quotes eld
+\end_inset
+
+Códigos-fontes dos Softwares Desenvolvidos
+\begin_inset Quotes erd
+\end_inset
+
+, são apresentados os códigos-fonte desenvolvidos para o projeto.
 \end_layout
 
 \end_body
