@@ -1835,9 +1835,9 @@ status open
 \noindent
 \align center
 \begin_inset Graphics
-	filename /home/joao/Documentos/TeseMestrado/resultados/imagens/Berea200/I22-bin.png
+	filename ../../resultados/imagens/Berea200/I22-bin.png
 	lyxscale 20
-	scale 25
+	width 49text%
 
 \end_inset
 
@@ -1879,9 +1879,9 @@ status open
 \noindent
 \align center
 \begin_inset Graphics
-	filename /home/joao/Documentos/TeseMestrado/resultados/imagens/Berea200/I22.png
+	filename ../../resultados/imagens/Berea200/I22.png
 	lyxscale 20
-	scale 25
+	width 49text%
 
 \end_inset
 
@@ -1954,9 +1954,9 @@ status open
 \noindent
 \align center
 \begin_inset Graphics
-	filename /home/joao/Documentos/TeseMestrado/resultados/imagens/Berea200/I212-bin.png
+	filename ../../resultados/imagens/Berea200/I212-bin.png
 	lyxscale 20
-	scale 25
+	width 49text%
 
 \end_inset
 
@@ -1994,9 +1994,9 @@ status open
 \noindent
 \align center
 \begin_inset Graphics
-	filename /home/joao/Documentos/TeseMestrado/resultados/imagens/Berea200/I212.png
+	filename ../../resultados/imagens/Berea200/I212.png
 	lyxscale 20
-	scale 25
+	width 49text%
 
 \end_inset
 
@@ -2069,9 +2069,9 @@ status open
 \noindent
 \align center
 \begin_inset Graphics
-	filename /home/joao/Documentos/TeseMestrado/resultados/imagens/Berea200/I26-bin.png
+	filename ../../resultados/imagens/Berea200/I26-bin.png
 	lyxscale 20
-	scale 25
+	width 49text%
 
 \end_inset
 
@@ -2109,9 +2109,9 @@ status open
 \noindent
 \align center
 \begin_inset Graphics
-	filename /home/joao/Documentos/TeseMestrado/resultados/imagens/Berea200/I26.png
+	filename ../../resultados/imagens/Berea200/I26.png
 	lyxscale 20
-	scale 25
+	width 49text%
 
 \end_inset
 
@@ -2184,9 +2184,9 @@ status open
 \noindent
 \align center
 \begin_inset Graphics
-	filename /home/joao/Documentos/TeseMestrado/resultados/imagens/Berea200/I216-bin.png
+	filename ../../resultados/imagens/Berea200/I216-bin.png
 	lyxscale 20
-	scale 25
+	width 49text%
 
 \end_inset
 
@@ -2224,9 +2224,9 @@ status open
 \noindent
 \align center
 \begin_inset Graphics
-	filename /home/joao/Documentos/TeseMestrado/resultados/imagens/Berea200/I216.png
+	filename ../../resultados/imagens/Berea200/I216.png
 	lyxscale 20
-	scale 25
+	width 49text%
 
 \end_inset
 
@@ -2303,9 +2303,9 @@ status open
 \noindent
 \align center
 \begin_inset Graphics
-	filename /home/joao/Documentos/TeseMestrado/resultados/imagens/Berea500/I31-bin.png
+	filename ../../resultados/imagens/Berea500/I31-bin.png
 	lyxscale 20
-	scale 25
+	width 49text%
 
 \end_inset
 
@@ -2343,9 +2343,9 @@ status open
 \noindent
 \align center
 \begin_inset Graphics
-	filename /home/joao/Documentos/TeseMestrado/resultados/imagens/Berea500/I31.png
+	filename ../../resultados/imagens/Berea500/I31.png
 	lyxscale 20
-	scale 25
+	width 49text%
 
 \end_inset
 
@@ -2418,9 +2418,9 @@ status open
 \noindent
 \align center
 \begin_inset Graphics
-	filename /home/joao/Documentos/TeseMestrado/resultados/imagens/Berea500/I310-bin.png
+	filename ../../resultados/imagens/Berea500/I310-bin.png
 	lyxscale 20
-	scale 25
+	width 49text%
 
 \end_inset
 
@@ -2458,9 +2458,9 @@ status open
 \noindent
 \align center
 \begin_inset Graphics
-	filename /home/joao/Documentos/TeseMestrado/resultados/imagens/Berea500/I310.png
+	filename ../../resultados/imagens/Berea500/I310.png
 	lyxscale 20
-	scale 25
+	width 49text%
 
 \end_inset
 
@@ -2533,9 +2533,9 @@ status open
 \noindent
 \align center
 \begin_inset Graphics
-	filename /home/joao/Documentos/TeseMestrado/resultados/imagens/Berea500/I311-bin.png
+	filename ../../resultados/imagens/Berea500/I311-bin.png
 	lyxscale 20
-	scale 25
+	width 49text%
 
 \end_inset
 
@@ -2573,9 +2573,9 @@ status open
 \noindent
 \align center
 \begin_inset Graphics
-	filename /home/joao/Documentos/TeseMestrado/resultados/imagens/Berea500/I311.png
+	filename ../../resultados/imagens/Berea500/I311.png
 	lyxscale 20
-	scale 25
+	width 49text%
 
 \end_inset
 
@@ -2648,9 +2648,9 @@ status open
 \noindent
 \align center
 \begin_inset Graphics
-	filename /home/joao/Documentos/TeseMestrado/resultados/imagens/Berea500/I312-bin.png
+	filename ../../resultados/imagens/Berea500/I312-bin.png
 	lyxscale 20
-	scale 25
+	width 49text%
 
 \end_inset
 
@@ -2688,9 +2688,9 @@ status open
 \noindent
 \align center
 \begin_inset Graphics
-	filename /home/joao/Documentos/TeseMestrado/resultados/imagens/Berea500/I312.png
+	filename ../../resultados/imagens/Berea500/I312.png
 	lyxscale 20
-	scale 25
+	width 49text%
 
 \end_inset
 
@@ -2763,9 +2763,9 @@ status open
 \noindent
 \align center
 \begin_inset Graphics
-	filename /home/joao/Documentos/TeseMestrado/resultados/imagens/Berea500/I318-bin.png
+	filename ../../resultados/imagens/Berea500/I318-bin.png
 	lyxscale 20
-	scale 25
+	width 49text%
 
 \end_inset
 
@@ -2803,9 +2803,9 @@ status open
 \noindent
 \align center
 \begin_inset Graphics
-	filename /home/joao/Documentos/TeseMestrado/resultados/imagens/Berea500/I318.png
+	filename ../../resultados/imagens/Berea500/I318.png
 	lyxscale 20
-	scale 25
+	width 49text%
 
 \end_inset
 
@@ -2878,9 +2878,9 @@ status open
 \noindent
 \align center
 \begin_inset Graphics
-	filename /home/joao/Documentos/TeseMestrado/resultados/imagens/Berea500/I32-bin.png
+	filename ../../resultados/imagens/Berea500/I32-bin.png
 	lyxscale 20
-	scale 25
+	width 49text%
 
 \end_inset
 
@@ -2918,9 +2918,9 @@ status open
 \noindent
 \align center
 \begin_inset Graphics
-	filename /home/joao/Documentos/TeseMestrado/resultados/imagens/Berea500/I32.png
+	filename ../../resultados/imagens/Berea500/I32.png
 	lyxscale 20
-	scale 25
+	width 49text%
 
 \end_inset
 
@@ -2993,9 +2993,9 @@ status open
 \noindent
 \align center
 \begin_inset Graphics
-	filename /home/joao/Documentos/TeseMestrado/resultados/imagens/Berea500/I320-bin.png
+	filename ../../resultados/imagens/Berea500/I320-bin.png
 	lyxscale 20
-	scale 25
+	width 49text%
 
 \end_inset
 
@@ -3033,9 +3033,9 @@ status open
 \noindent
 \align center
 \begin_inset Graphics
-	filename /home/joao/Documentos/TeseMestrado/resultados/imagens/Berea500/I320.png
+	filename ../../resultados/imagens/Berea500/I320.png
 	lyxscale 20
-	scale 25
+	width 49text%
 
 \end_inset
 
@@ -3112,9 +3112,9 @@ status open
 \noindent
 \align center
 \begin_inset Graphics
-	filename /home/joao/Documentos/TeseMestrado/resultados/imagens/P148_K2/3271i01-bin.png
+	filename ../../resultados/imagens/P148_K2/3271i01-bin.png
 	lyxscale 20
-	scale 25
+	width 49text%
 
 \end_inset
 
@@ -3152,9 +3152,9 @@ status open
 \noindent
 \align center
 \begin_inset Graphics
-	filename /home/joao/Documentos/TeseMestrado/resultados/imagens/P148_K2/3271i01.png
+	filename ../../resultados/imagens/P148_K2/3271i01.png
 	lyxscale 20
-	scale 2000
+	width 49text%
 
 \end_inset
 
@@ -3227,9 +3227,9 @@ status open
 \noindent
 \align center
 \begin_inset Graphics
-	filename /home/joao/Documentos/TeseMestrado/resultados/imagens/P148_K2/3271i02-bin.png
+	filename ../../resultados/imagens/P148_K2/3271i02-bin.png
 	lyxscale 20
-	scale 25
+	width 49text%
 
 \end_inset
 
@@ -3267,9 +3267,9 @@ status open
 \noindent
 \align center
 \begin_inset Graphics
-	filename /home/joao/Documentos/TeseMestrado/resultados/imagens/P148_K2/3271i02.png
+	filename ../../resultados/imagens/P148_K2/3271i02.png
 	lyxscale 20
-	scale 2000
+	width 49text%
 
 \end_inset
 
@@ -3342,9 +3342,9 @@ status open
 \noindent
 \align center
 \begin_inset Graphics
-	filename /home/joao/Documentos/TeseMestrado/resultados/imagens/P148_K2/3271i03-bin.png
+	filename ../../resultados/imagens/P148_K2/3271i03-bin.png
 	lyxscale 20
-	scale 25
+	width 49text%
 
 \end_inset
 
@@ -3382,9 +3382,9 @@ status open
 \noindent
 \align center
 \begin_inset Graphics
-	filename /home/joao/Documentos/TeseMestrado/resultados/imagens/P148_K2/3271i03.png
+	filename ../../resultados/imagens/P148_K2/3271i03.png
 	lyxscale 20
-	scale 25
+	width 49text%
 
 \end_inset
 
@@ -3457,9 +3457,9 @@ status open
 \noindent
 \align center
 \begin_inset Graphics
-	filename /home/joao/Documentos/TeseMestrado/resultados/imagens/P148_K2/3271i04-bin.png
+	filename ../../resultados/imagens/P148_K2/3271i04-bin.png
 	lyxscale 20
-	scale 25
+	width 49text%
 
 \end_inset
 
@@ -3497,9 +3497,9 @@ status open
 \noindent
 \align center
 \begin_inset Graphics
-	filename /home/joao/Documentos/TeseMestrado/resultados/imagens/P148_K2/3271i04.png
+	filename ../../resultados/imagens/P148_K2/3271i04.png
 	lyxscale 20
-	scale 25
+	width 49text%
 
 \end_inset
 
@@ -3572,9 +3572,9 @@ status open
 \noindent
 \align center
 \begin_inset Graphics
-	filename /home/joao/Documentos/TeseMestrado/resultados/imagens/P148_K2/3271i05-bin.png
+	filename ../../resultados/imagens/P148_K2/3271i05-bin.png
 	lyxscale 20
-	scale 25
+	width 49text%
 
 \end_inset
 
@@ -3612,9 +3612,9 @@ status open
 \noindent
 \align center
 \begin_inset Graphics
-	filename /home/joao/Documentos/TeseMestrado/resultados/imagens/P148_K2/3271i05.png
+	filename ../../resultados/imagens/P148_K2/3271i05.png
 	lyxscale 20
-	scale 25
+	width 49text%
 
 \end_inset
 
@@ -3687,9 +3687,9 @@ status open
 \noindent
 \align center
 \begin_inset Graphics
-	filename /home/joao/Documentos/TeseMestrado/resultados/imagens/P148_K2/3271i06-bin.png
+	filename ../../resultados/imagens/P148_K2/3271i06-bin.png
 	lyxscale 20
-	scale 25
+	width 49text%
 
 \end_inset
 
@@ -3727,9 +3727,9 @@ status open
 \noindent
 \align center
 \begin_inset Graphics
-	filename /home/joao/Documentos/TeseMestrado/resultados/imagens/P148_K2/3271i06.png
+	filename ../../resultados/imagens/P148_K2/3271i06.png
 	lyxscale 20
-	scale 25
+	width 49text%
 
 \end_inset
 
@@ -3802,9 +3802,9 @@ status open
 \noindent
 \align center
 \begin_inset Graphics
-	filename /home/joao/Documentos/TeseMestrado/resultados/imagens/P148_K2/3271i07-bin.png
+	filename ../../resultados/imagens/P148_K2/3271i07-bin.png
 	lyxscale 20
-	scale 25
+	width 49text%
 
 \end_inset
 
@@ -3842,9 +3842,9 @@ status open
 \noindent
 \align center
 \begin_inset Graphics
-	filename /home/joao/Documentos/TeseMestrado/resultados/imagens/P148_K2/3271i07.png
+	filename ../../resultados/imagens/P148_K2/3271i07.png
 	lyxscale 20
-	scale 25
+	width 49text%
 
 \end_inset
 
@@ -3917,9 +3917,9 @@ status open
 \noindent
 \align center
 \begin_inset Graphics
-	filename /home/joao/Documentos/TeseMestrado/resultados/imagens/P148_K2/3271i08-bin.png
+	filename ../../resultados/imagens/P148_K2/3271i08-bin.png
 	lyxscale 20
-	scale 25
+	width 49text%
 
 \end_inset
 
@@ -3957,9 +3957,9 @@ status open
 \noindent
 \align center
 \begin_inset Graphics
-	filename /home/joao/Documentos/TeseMestrado/resultados/imagens/P148_K2/3271i08.png
+	filename ../../resultados/imagens/P148_K2/3271i08.png
 	lyxscale 20
-	scale 25
+	width 49text%
 
 \end_inset
 
@@ -4032,9 +4032,9 @@ status open
 \noindent
 \align center
 \begin_inset Graphics
-	filename /home/joao/Documentos/TeseMestrado/resultados/imagens/P148_K2/3271i09-bin.png
+	filename ../../resultados/imagens/P148_K2/3271i09-bin.png
 	lyxscale 20
-	scale 25
+	width 49text%
 
 \end_inset
 
@@ -4072,9 +4072,9 @@ status open
 \noindent
 \align center
 \begin_inset Graphics
-	filename /home/joao/Documentos/TeseMestrado/resultados/imagens/P148_K2/3271i09.png
+	filename ../../resultados/imagens/P148_K2/3271i09.png
 	lyxscale 20
-	scale 2000
+	width 49text%
 
 \end_inset
 
@@ -4147,9 +4147,9 @@ status open
 \noindent
 \align center
 \begin_inset Graphics
-	filename /home/joao/Documentos/TeseMestrado/resultados/imagens/P148_K2/3271i10-bin.png
+	filename ../../resultados/imagens/P148_K2/3271i10-bin.png
 	lyxscale 20
-	scale 25
+	width 49text%
 
 \end_inset
 
@@ -4187,9 +4187,9 @@ status open
 \noindent
 \align center
 \begin_inset Graphics
-	filename /home/joao/Documentos/TeseMestrado/resultados/imagens/P148_K2/3271i10.png
+	filename ../../resultados/imagens/P148_K2/3271i10.png
 	lyxscale 20
-	scale 2000
+	width 49text%
 
 \end_inset
 
@@ -4266,9 +4266,9 @@ status open
 \noindent
 \align center
 \begin_inset Graphics
-	filename /home/joao/Documentos/TeseMestrado/resultados/imagens/P240_K104/3251i01-bin.png
+	filename ../../resultados/imagens/P240_K104/3251i01-bin.png
 	lyxscale 20
-	scale 25
+	width 49text%
 
 \end_inset
 
@@ -4306,9 +4306,9 @@ status open
 \noindent
 \align center
 \begin_inset Graphics
-	filename /home/joao/Documentos/TeseMestrado/resultados/imagens/P240_K104/3251i01.png
+	filename ../../resultados/imagens/P240_K104/3251i01.png
 	lyxscale 20
-	scale 2000
+	width 49text%
 
 \end_inset
 
@@ -4381,9 +4381,9 @@ status open
 \noindent
 \align center
 \begin_inset Graphics
-	filename /home/joao/Documentos/TeseMestrado/resultados/imagens/P240_K104/3251i02-bin.png
+	filename ../../resultados/imagens/P240_K104/3251i02-bin.png
 	lyxscale 20
-	scale 25
+	width 49text%
 
 \end_inset
 
@@ -4421,9 +4421,9 @@ status open
 \noindent
 \align center
 \begin_inset Graphics
-	filename /home/joao/Documentos/TeseMestrado/resultados/imagens/P240_K104/3251i02.png
+	filename ../../resultados/imagens/P240_K104/3251i02.png
 	lyxscale 20
-	scale 2000
+	width 49text%
 
 \end_inset
 
@@ -4496,9 +4496,9 @@ status open
 \noindent
 \align center
 \begin_inset Graphics
-	filename /home/joao/Documentos/TeseMestrado/resultados/imagens/P240_K104/3251i03-bin.png
+	filename ../../resultados/imagens/P240_K104/3251i03-bin.png
 	lyxscale 20
-	scale 25
+	width 49text%
 
 \end_inset
 
@@ -4536,9 +4536,9 @@ status open
 \noindent
 \align center
 \begin_inset Graphics
-	filename /home/joao/Documentos/TeseMestrado/resultados/imagens/P240_K104/3251i03.png
+	filename ../../resultados/imagens/P240_K104/3251i03.png
 	lyxscale 20
-	scale 2000
+	width 49text%
 
 \end_inset
 
@@ -4611,9 +4611,9 @@ status open
 \noindent
 \align center
 \begin_inset Graphics
-	filename /home/joao/Documentos/TeseMestrado/resultados/imagens/P240_K104/3251i04-bin.png
+	filename ../../resultados/imagens/P240_K104/3251i04-bin.png
 	lyxscale 20
-	scale 25
+	width 49text%
 
 \end_inset
 
@@ -4651,9 +4651,9 @@ status open
 \noindent
 \align center
 \begin_inset Graphics
-	filename /home/joao/Documentos/TeseMestrado/resultados/imagens/P240_K104/3251i04.png
+	filename ../../resultados/imagens/P240_K104/3251i04.png
 	lyxscale 20
-	scale 2000
+	width 49text%
 
 \end_inset
 
@@ -4726,9 +4726,9 @@ status open
 \noindent
 \align center
 \begin_inset Graphics
-	filename /home/joao/Documentos/TeseMestrado/resultados/imagens/P240_K104/3251i05-bin.png
+	filename ../../resultados/imagens/P240_K104/3251i05-bin.png
 	lyxscale 20
-	scale 25
+	width 49text%
 
 \end_inset
 
@@ -4766,9 +4766,9 @@ status open
 \noindent
 \align center
 \begin_inset Graphics
-	filename /home/joao/Documentos/TeseMestrado/resultados/imagens/P240_K104/3251i05.png
+	filename ../../resultados/imagens/P240_K104/3251i05.png
 	lyxscale 20
-	scale 2000
+	width 49text%
 
 \end_inset
 
@@ -4841,9 +4841,9 @@ status open
 \noindent
 \align center
 \begin_inset Graphics
-	filename /home/joao/Documentos/TeseMestrado/resultados/imagens/P240_K104/3251i06-bin.png
+	filename ../../resultados/imagens/P240_K104/3251i06-bin.png
 	lyxscale 20
-	scale 25
+	width 49text%
 
 \end_inset
 
@@ -4881,9 +4881,9 @@ status open
 \noindent
 \align center
 \begin_inset Graphics
-	filename /home/joao/Documentos/TeseMestrado/resultados/imagens/P240_K104/3251i06.png
+	filename ../../resultados/imagens/P240_K104/3251i06.png
 	lyxscale 20
-	scale 2000
+	width 49text%
 
 \end_inset
 
@@ -4956,9 +4956,9 @@ status open
 \noindent
 \align center
 \begin_inset Graphics
-	filename /home/joao/Documentos/TeseMestrado/resultados/imagens/P240_K104/3251i07-bin.png
+	filename ../../resultados/imagens/P240_K104/3251i07-bin.png
 	lyxscale 20
-	scale 25
+	width 49text%
 
 \end_inset
 
@@ -4996,9 +4996,9 @@ status open
 \noindent
 \align center
 \begin_inset Graphics
-	filename /home/joao/Documentos/TeseMestrado/resultados/imagens/P240_K104/3251i07.png
+	filename ../../resultados/imagens/P240_K104/3251i07.png
 	lyxscale 20
-	scale 2000
+	width 49text%
 
 \end_inset
 
@@ -5071,9 +5071,9 @@ status open
 \noindent
 \align center
 \begin_inset Graphics
-	filename /home/joao/Documentos/TeseMestrado/resultados/imagens/P240_K104/3251i08-bin.png
+	filename ../../resultados/imagens/P240_K104/3251i08-bin.png
 	lyxscale 20
-	scale 25
+	width 49text%
 
 \end_inset
 
@@ -5111,9 +5111,9 @@ status open
 \noindent
 \align center
 \begin_inset Graphics
-	filename /home/joao/Documentos/TeseMestrado/resultados/imagens/P240_K104/3251i08.png
+	filename ../../resultados/imagens/P240_K104/3251i08.png
 	lyxscale 20
-	scale 2000
+	width 49text%
 
 \end_inset
 
@@ -5186,9 +5186,9 @@ status open
 \noindent
 \align center
 \begin_inset Graphics
-	filename /home/joao/Documentos/TeseMestrado/resultados/imagens/P240_K104/3251i09-bin.png
+	filename ../../resultados/imagens/P240_K104/3251i09-bin.png
 	lyxscale 20
-	scale 25
+	width 49text%
 
 \end_inset
 
@@ -5226,9 +5226,9 @@ status open
 \noindent
 \align center
 \begin_inset Graphics
-	filename /home/joao/Documentos/TeseMestrado/resultados/imagens/P240_K104/3251i09.png
+	filename ../../resultados/imagens/P240_K104/3251i09.png
 	lyxscale 20
-	scale 2000
+	width 49text%
 
 \end_inset
 
@@ -5301,9 +5301,9 @@ status open
 \noindent
 \align center
 \begin_inset Graphics
-	filename /home/joao/Documentos/TeseMestrado/resultados/imagens/P240_K104/3251i10-bin.png
+	filename ../../resultados/imagens/P240_K104/3251i10-bin.png
 	lyxscale 20
-	scale 25
+	width 49text%
 
 \end_inset
 
@@ -5341,9 +5341,9 @@ status open
 \noindent
 \align center
 \begin_inset Graphics
-	filename /home/joao/Documentos/TeseMestrado/resultados/imagens/P240_K104/3251i10.png
+	filename ../../resultados/imagens/P240_K104/3251i10.png
 	lyxscale 20
-	scale 2000
+	width 49text%
 
 \end_inset
 
@@ -5420,9 +5420,9 @@ status open
 \noindent
 \align center
 \begin_inset Graphics
-	filename /home/joao/Documentos/TeseMestrado/resultados/imagens/P262_K441/L67409i1-bin.png
+	filename ../../resultados/imagens/P262_K441/L67409i1-bin.png
 	lyxscale 20
-	scale 25
+	width 49text%
 
 \end_inset
 
@@ -5460,9 +5460,9 @@ status open
 \noindent
 \align center
 \begin_inset Graphics
-	filename /home/joao/Documentos/TeseMestrado/resultados/imagens/P262_K441/L67409i1.png
+	filename ../../resultados/imagens/P262_K441/L67409i1.png
 	lyxscale 20
-	scale 25
+	width 49text%
 
 \end_inset
 
@@ -5535,9 +5535,9 @@ status open
 \noindent
 \align center
 \begin_inset Graphics
-	filename /home/joao/Documentos/TeseMestrado/resultados/imagens/P262_K441/L67409i2-bin.png
+	filename ../../resultados/imagens/P262_K441/L67409i2-bin.png
 	lyxscale 20
-	scale 25
+	width 49text%
 
 \end_inset
 
@@ -5575,9 +5575,9 @@ status open
 \noindent
 \align center
 \begin_inset Graphics
-	filename /home/joao/Documentos/TeseMestrado/resultados/imagens/P262_K441/L67409i2.png
+	filename ../../resultados/imagens/P262_K441/L67409i2.png
 	lyxscale 20
-	scale 25
+	width 49text%
 
 \end_inset
 
@@ -5650,9 +5650,9 @@ status open
 \noindent
 \align center
 \begin_inset Graphics
-	filename /home/joao/Documentos/TeseMestrado/resultados/imagens/P262_K441/L67409i3-bin.png
+	filename ../../resultados/imagens/P262_K441/L67409i3-bin.png
 	lyxscale 20
-	scale 25
+	width 49text%
 
 \end_inset
 
@@ -5690,9 +5690,9 @@ status open
 \noindent
 \align center
 \begin_inset Graphics
-	filename /home/joao/Documentos/TeseMestrado/resultados/imagens/P262_K441/L67409i3.png
+	filename ../../resultados/imagens/P262_K441/L67409i3.png
 	lyxscale 20
-	scale 25
+	width 49text%
 
 \end_inset
 
@@ -5765,9 +5765,9 @@ status open
 \noindent
 \align center
 \begin_inset Graphics
-	filename /home/joao/Documentos/TeseMestrado/resultados/imagens/P262_K441/L67409i4-bin.png
+	filename ../../resultados/imagens/P262_K441/L67409i4-bin.png
 	lyxscale 20
-	scale 25
+	width 49text%
 
 \end_inset
 
@@ -5805,9 +5805,9 @@ status open
 \noindent
 \align center
 \begin_inset Graphics
-	filename /home/joao/Documentos/TeseMestrado/resultados/imagens/P262_K441/L67409i4.png
+	filename ../../resultados/imagens/P262_K441/L67409i4.png
 	lyxscale 20
-	scale 25
+	width 49text%
 
 \end_inset
 
@@ -5880,9 +5880,9 @@ status open
 \noindent
 \align center
 \begin_inset Graphics
-	filename /home/joao/Documentos/TeseMestrado/resultados/imagens/P262_K441/L67409i5-bin.png
+	filename ../../resultados/imagens/P262_K441/L67409i5-bin.png
 	lyxscale 20
-	scale 25
+	width 49text%
 
 \end_inset
 
@@ -5920,9 +5920,9 @@ status open
 \noindent
 \align center
 \begin_inset Graphics
-	filename /home/joao/Documentos/TeseMestrado/resultados/imagens/P262_K441/L67409i5.png
+	filename ../../resultados/imagens/P262_K441/L67409i5.png
 	lyxscale 20
-	scale 25
+	width 49text%
 
 \end_inset
 
@@ -5995,9 +5995,9 @@ status open
 \noindent
 \align center
 \begin_inset Graphics
-	filename /home/joao/Documentos/TeseMestrado/resultados/imagens/P262_K441/L67409i6-bin.png
+	filename ../../resultados/imagens/P262_K441/L67409i6-bin.png
 	lyxscale 20
-	scale 25
+	width 49text%
 
 \end_inset
 
@@ -6035,9 +6035,9 @@ status open
 \noindent
 \align center
 \begin_inset Graphics
-	filename /home/joao/Documentos/TeseMestrado/resultados/imagens/P262_K441/L67409i6.png
+	filename ../../resultados/imagens/P262_K441/L67409i6.png
 	lyxscale 20
-	scale 25
+	width 49text%
 
 \end_inset
 
@@ -6110,9 +6110,9 @@ status open
 \noindent
 \align center
 \begin_inset Graphics
-	filename /home/joao/Documentos/TeseMestrado/resultados/imagens/P262_K441/L67409i7-bin.png
+	filename ../../resultados/imagens/P262_K441/L67409i7-bin.png
 	lyxscale 20
-	scale 25
+	width 49text%
 
 \end_inset
 
@@ -6152,7 +6152,7 @@ status open
 \begin_inset Graphics
 	filename /home/joao/Documentos/TeseMestrado/resultados/imagens/P262_K441/L67409i7.png
 	lyxscale 20
-	scale 25
+	width 49text%
 
 \end_inset
 
@@ -6225,9 +6225,9 @@ status open
 \noindent
 \align center
 \begin_inset Graphics
-	filename /home/joao/Documentos/TeseMestrado/resultados/imagens/P262_K441/L67409i8-bin.png
+	filename ../../resultados/imagens/P262_K441/L67409i8-bin.png
 	lyxscale 20
-	scale 25
+	width 49text%
 
 \end_inset
 
@@ -6265,9 +6265,9 @@ status open
 \noindent
 \align center
 \begin_inset Graphics
-	filename /home/joao/Documentos/TeseMestrado/resultados/imagens/P262_K441/L67409i8.png
+	filename ../../resultados/imagens/P262_K441/L67409i8.png
 	lyxscale 20
-	scale 25
+	width 49text%
 
 \end_inset
 
@@ -6340,9 +6340,9 @@ status open
 \noindent
 \align center
 \begin_inset Graphics
-	filename /home/joao/Documentos/TeseMestrado/resultados/imagens/P262_K441/L67409i9-bin.png
+	filename ../../resultados/imagens/P262_K441/L67409i9-bin.png
 	lyxscale 20
-	scale 25
+	width 49text%
 
 \end_inset
 
@@ -6380,9 +6380,9 @@ status open
 \noindent
 \align center
 \begin_inset Graphics
-	filename /home/joao/Documentos/TeseMestrado/resultados/imagens/P262_K441/L67409i9.png
+	filename ../../resultados/imagens/P262_K441/L67409i9.png
 	lyxscale 20
-	scale 25
+	width 49text%
 
 \end_inset
 
@@ -6442,7 +6442,7 @@ name "fig:L67409i9.png"
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -6455,9 +6455,9 @@ status open
 \noindent
 \align center
 \begin_inset Graphics
-	filename /home/joao/Documentos/TeseMestrado/resultados/imagens/P262_K441/L67409i10-bin.png
+	filename ../../resultados/imagens/P262_K441/L67409i10-bin.png
 	lyxscale 20
-	scale 25
+	width 49text%
 
 \end_inset
 
@@ -6495,9 +6495,9 @@ status open
 \noindent
 \align center
 \begin_inset Graphics
-	filename /home/joao/Documentos/TeseMestrado/resultados/imagens/P262_K441/L67409i10.png
+	filename ../../resultados/imagens/P262_K441/L67409i10.png
 	lyxscale 20
-	scale 25
+	width 49text%
 
 \end_inset
 
