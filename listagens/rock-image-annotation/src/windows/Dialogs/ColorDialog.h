@@ -1,7 +1,3 @@
-//
-// Created by joao on 18/04/2022.
-//
-
 #ifndef ROCK_IMAGE_CPP_COLORDIALOG_H
 #define ROCK_IMAGE_CPP_COLORDIALOG_H
 
