@@ -6,8 +6,6 @@ Este repositório representa o projeto de dissertação desenvolvida no LENEP/CC
 
 O objetivo geral deste trabalho foi desenvolver métodos de inteligência artificial capazes de reconhecer padrões relevantes para a análise das propriedades petrofísicas em imagens de rochas reservatórios.
 
-A versão compilada do texto em *pdf* pode ser acessada [aqui]('https://github.com/hereisjohnny2/TeseMestrado/blob/main/Projeto/Tese/Monografia-Dissertacao-Tese-master.pdf').
-
 ## Descrição dos Diretórios 
 
 Os arquivos fontes deste trabalho se encontram no diretório `Projeto` e foi desenvolvido utilizando o [Lyx](https://www.lyx.org/Home).
