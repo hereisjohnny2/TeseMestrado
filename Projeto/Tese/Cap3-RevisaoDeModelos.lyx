@@ -630,6 +630,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename ../../imagens/imagensLivros/angulo-de-contato-oleo-agua.png
+	width 100text%
 
 \end_inset
 
@@ -826,6 +827,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename ../../imagens/imagensLivros/tubo-com-agua.png
+	width 100text%
 
 \end_inset
 
@@ -1218,7 +1220,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename ../../imagens/imagensLivros/experimento_darcy.png
-	scale 80
+	width 100text%
 
 \end_inset
 
@@ -2250,7 +2252,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename ../../imagens/imagensLivros/modelo-rgb.png
-	scale 70
+	width 100text%
 
 \end_inset
 
@@ -2639,7 +2641,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename ../../imagens/imagensLivros/histograma.png
-	scale 70
+	width 100text%
 
 \end_inset
 
@@ -2761,7 +2763,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename ../../imagens/imagensLivros/histograma-bi-multi.png
-	scale 50
+	width 100text%
 
 \end_inset
 
@@ -2854,7 +2856,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename ../../imagens/imagensLivros/hist-contraste.png
-	scale 60
+	width 100text%
 
 \end_inset
 
@@ -3070,7 +3072,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename ../../imagens/imagensLivros/reducao-ruido-filtro-mediana.png
-	scale 70
+	width 100text%
 
 \end_inset
 
@@ -3200,7 +3202,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename ../../imagens/imagensLivros/mascarasFiltroPB.png
-	scale 90
+	width 100text%
 
 \end_inset
 
@@ -3323,7 +3325,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename ../../imagens/imagensLivros/images-suavizadas.png
-	scale 70
+	width 100text%
 
 \end_inset
 
@@ -3728,7 +3730,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename ../../imagens/imagensLivros/aplicacao-segmentacao.png
-	scale 80
+	width 100text%
 
 \end_inset
 
@@ -3894,7 +3896,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename ../../imagens/imagensLivros/watershead.png
-	scale 70
+	width 100text%
 
 \end_inset
 
@@ -4675,7 +4677,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename ../../imagens/imagensLivros/arvore-desisao.png
-	scale 60
+	width 100text%
 
 \end_inset
 
@@ -4923,7 +4925,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename ../../imagens/imagensLivros/neuronio-artificial.png
-	scale 70
+	width 100text%
 
 \end_inset
 
@@ -5612,7 +5614,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename ../../imagens/imagensLivros/rna-direta.png
-	scale 70
+	width 100text%
 
 \end_inset
 

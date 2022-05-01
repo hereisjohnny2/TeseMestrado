@@ -228,7 +228,7 @@ status open
 \begin_inset Graphics
 	filename ../../imagens/imagensCriadas/representacao-rede-neural.png
 	lyxscale 50
-	scale 40
+	width 100text%
 
 \end_inset
 
@@ -449,7 +449,7 @@ status open
 \begin_inset Graphics
 	filename ../../imagens/imagensCriadas/utilizando-qt-designer.png
 	lyxscale 50
-	scale 25
+	width 100text%
 
 \end_inset
 
@@ -577,7 +577,7 @@ status open
 \begin_inset Graphics
 	filename ../../imagens/imagensCriadas/util-cmake.png
 	lyxscale 50
-	scale 40
+	width 100text%
 
 \end_inset
 
@@ -699,7 +699,7 @@ status open
 \begin_inset Graphics
 	filename ../../imagens/imagensCriadas/tabela-dados1.png
 	lyxscale 50
-	scale 40
+	width 100text%
 
 \end_inset
 
@@ -763,7 +763,7 @@ status open
 \begin_inset Graphics
 	filename ../../imagens/imagensCriadas/poros-marcados.png
 	lyxscale 50
-	scale 40
+	width 100text%
 
 \end_inset
 
@@ -884,7 +884,7 @@ status open
 \begin_inset Graphics
 	filename ../../imagens/imagensCriadas/exemplo-ui.png
 	lyxscale 50
-	scale 30
+	width 100text%
 
 \end_inset
 
@@ -978,7 +978,7 @@ status open
 \begin_inset Graphics
 	filename /home/joao/Documentos/TeseMestrado/imagens/imagensCriadas/sub-janela-com-lista.png
 	lyxscale 50
-	scale 30
+	width 100text%
 
 \end_inset
 
@@ -2981,7 +2981,7 @@ status open
 \begin_inset Graphics
 	filename ../../imagens/imagensCriadas/exemplo-i26.png
 	lyxscale 50
-	scale 50
+	width 100text%
 
 \end_inset
 
@@ -3021,7 +3021,7 @@ status open
 \begin_inset Graphics
 	filename ../../imagens/imagensCriadas/exemplo-berea500.png
 	lyxscale 50
-	scale 50
+	width 100text%
 
 \end_inset
 
@@ -3061,7 +3061,7 @@ status open
 \begin_inset Graphics
 	filename ../../imagens/imagensCriadas/exemplo-p140.png
 	lyxscale 50
-	scale 50
+	width 100text%
 
 \end_inset
 
@@ -3101,7 +3101,7 @@ status open
 \begin_inset Graphics
 	filename ../../imagens/imagensCriadas/exemplo-p240.png
 	lyxscale 50
-	scale 50
+	width 100text%
 
 \end_inset
 
@@ -3141,7 +3141,7 @@ status open
 \begin_inset Graphics
 	filename ../../imagens/imagensCriadas/exemplo-p262.png
 	lyxscale 50
-	scale 50
+	width 100text%
 
 \end_inset
 
@@ -3213,7 +3213,7 @@ status open
 \begin_inset Graphics
 	filename /home/joao/Documentos/TeseMestrado/imagens/imagensCriadas/exemplo-dat.png
 	lyxscale 50
-	scale 50
+	width 100text%
 
 \end_inset
 
@@ -3298,8 +3298,18 @@ Descrição do Modelo
 \end_layout
 
 \begin_layout Standard
-Na Tabela XXXX está descrita o modelo de rede neural utilizado para treinamento
- e binarização das imagens.
+Na Tabela 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:Camadas-da-rede"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ está descrita o modelo de rede neural utilizado para treinamento e binarização
+ das imagens.
  Todas as camadas internas dessa rede utilizaram 
 \emph on
 ReLU 
@@ -3322,6 +3332,13 @@ status open
 
 \begin_layout Plain Layout
 Camadas da rede neural representada pelo modelo.
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:Camadas-da-rede"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset

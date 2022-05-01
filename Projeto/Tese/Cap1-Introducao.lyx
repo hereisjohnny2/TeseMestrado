@@ -280,7 +280,8 @@ status open
 \align center
 \begin_inset Graphics
 	filename ../../imagens/0-sequencia-processos-conhecimentos-base.png
-	scale 40
+	lyxscale 50
+	width 100text%
 
 \end_inset
 
@@ -364,7 +365,7 @@ thresholding
 status collapsed
 
 \begin_layout Plain Layout
-termos em ingles sempre em itálico
+termos em inglês sempre em itálico
 \end_layout
 
 \end_inset

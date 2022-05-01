@@ -220,7 +220,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename ../../imagens/imagensArtigos/imagem-ct-lin.png
-	scale 60
+	width 100text%
 
 \end_inset
 
@@ -276,7 +276,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename ../../imagens/imagensArtigos/imagem-ct-lin-metodo-antigo.png
-	scale 60
+	width 100text%
 
 \end_inset
 
@@ -332,7 +332,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename ../../imagens/imagensArtigos/imagem-ct-lin-metodo-novo.png
-	scale 60
+	width 100text%
 
 \end_inset
 
@@ -669,7 +669,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename ../../imagens/imagensArtigos/metodologia-cnn-alqahtani.png
-	scale 60
+	width 100text%
 
 \end_inset
 
@@ -786,7 +786,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename ../../imagens/imagensArtigos/resultados-alqahtani.png
-	scale 70
+	width 100text%
 
 \end_inset
 
@@ -962,7 +962,11 @@ status open
 \begin_inset Graphics
 	filename ../../imagens/imagensArtigos/inception-v3.png
 	lyxscale 50
-	width 100text%
+	width 100theight%
+	height 100text%
+	keepAspectRatio
+	scaleBeforeRotation
+	rotateAngle 270
 
 \end_inset
 
@@ -1389,7 +1393,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename ../../imagens/imagensArtigos/hebert-autoencoder.png
-	scale 60
+	width 100text%
 
 \end_inset
 
@@ -1448,7 +1452,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename ../../imagens/imagensArtigos/hebert-autoencoder-arch.png
-	scale 60
+	width 100text%
 
 \end_inset
 
@@ -1620,7 +1624,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename ../../imagens/imagensSites/sigmoid-derivada (1).png
-	scale 80
+	width 100text%
 
 \end_inset
 

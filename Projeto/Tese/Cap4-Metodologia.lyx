@@ -235,7 +235,11 @@ hine}
 
  vem apresentando bons resultados sobre o processamento do que pode se chamar
  de Rocha Digital utilizando, por exemplo, redes neurais convolucionais
- combinadas com algorítimos de machine learning mais simples.
+ combinadas com algorítimos de 
+\emph on
+machine learning
+\emph default
+ mais simples.
 \end_layout
 
 \begin_layout Standard
