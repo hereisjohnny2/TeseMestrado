@@ -2,3 +2,4 @@
 *.lyx~
 *.pyc
 **/__pycache__
+.vscode
