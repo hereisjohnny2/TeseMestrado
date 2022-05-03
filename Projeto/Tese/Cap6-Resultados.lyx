@@ -239,7 +239,7 @@ noprefix "false"
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -292,7 +292,7 @@ Porosidade (%)
 \begin_inset Text
 
 \begin_layout Plain Layout
-Tempo Decorrido (s)
+Tempo Decorrido (ms)
 \end_layout
 
 \end_inset
@@ -321,7 +321,7 @@ I22.png
 \begin_inset Text
 
 \begin_layout Plain Layout
-19,993
+14,9012
 \end_layout
 
 \end_inset
@@ -350,7 +350,7 @@ I212.png
 \begin_inset Text
 
 \begin_layout Plain Layout
-20,044
+9,8712
 \end_layout
 
 \end_inset
@@ -379,7 +379,7 @@ I26.png
 \begin_inset Text
 
 \begin_layout Plain Layout
-20,644
+10,3312
 \end_layout
 
 \end_inset
@@ -408,7 +408,7 @@ I216.png
 \begin_inset Text
 
 \begin_layout Plain Layout
-20,761
+10,2179
 \end_layout
 
 \end_inset
@@ -431,7 +431,7 @@ I216.png
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -484,7 +484,7 @@ Porosidade (%)
 \begin_inset Text
 
 \begin_layout Plain Layout
-Tempo Decorrido (s)
+Tempo Decorrido (ms)
 \end_layout
 
 \end_inset
@@ -513,7 +513,7 @@ I310.png
 \begin_inset Text
 
 \begin_layout Plain Layout
-20,361
+9,9235
 \end_layout
 
 \end_inset
@@ -542,7 +542,7 @@ I311.png
 \begin_inset Text
 
 \begin_layout Plain Layout
-20,799
+9,9270
 \end_layout
 
 \end_inset
@@ -571,7 +571,7 @@ I312.png
 \begin_inset Text
 
 \begin_layout Plain Layout
-20,710
+9,3529
 \end_layout
 
 \end_inset
@@ -600,7 +600,7 @@ I318.png
 \begin_inset Text
 
 \begin_layout Plain Layout
-20,419
+9,9303
 \end_layout
 
 \end_inset
@@ -629,7 +629,7 @@ I320.png
 \begin_inset Text
 
 \begin_layout Plain Layout
-20,660
+9,9576
 \end_layout
 
 \end_inset
@@ -658,7 +658,7 @@ I31.png
 \begin_inset Text
 
 \begin_layout Plain Layout
-20,364
+9,7187
 \end_layout
 
 \end_inset
@@ -687,7 +687,7 @@ I32.png
 \begin_inset Text
 
 \begin_layout Plain Layout
-19,897
+14,5907
 \end_layout
 
 \end_inset
@@ -710,7 +710,7 @@ I32.png
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -763,7 +763,7 @@ Porosidade (%)
 \begin_inset Text
 
 \begin_layout Plain Layout
-Tempo Decorrido (s)
+Tempo Decorrido (ms)
 \end_layout
 
 \end_inset
@@ -792,7 +792,7 @@ Tempo Decorrido (s)
 \begin_inset Text
 
 \begin_layout Plain Layout
-20,627
+10,2811 
 \end_layout
 
 \end_inset
@@ -821,7 +821,7 @@ Tempo Decorrido (s)
 \begin_inset Text
 
 \begin_layout Plain Layout
-20,389
+10,3567
 \end_layout
 
 \end_inset
@@ -850,7 +850,7 @@ Tempo Decorrido (s)
 \begin_inset Text
 
 \begin_layout Plain Layout
-20,687
+10,3350 
 \end_layout
 
 \end_inset
@@ -879,7 +879,7 @@ Tempo Decorrido (s)
 \begin_inset Text
 
 \begin_layout Plain Layout
-20,823
+10,2592 
 \end_layout
 
 \end_inset
@@ -908,7 +908,7 @@ Tempo Decorrido (s)
 \begin_inset Text
 
 \begin_layout Plain Layout
-20,533
+10,2439
 \end_layout
 
 \end_inset
@@ -937,7 +937,7 @@ Tempo Decorrido (s)
 \begin_inset Text
 
 \begin_layout Plain Layout
-20,91,31
+10,4513
 \end_layout
 
 \end_inset
@@ -966,7 +966,7 @@ Tempo Decorrido (s)
 \begin_inset Text
 
 \begin_layout Plain Layout
-20,725
+10,2217
 \end_layout
 
 \end_inset
@@ -995,7 +995,7 @@ Tempo Decorrido (s)
 \begin_inset Text
 
 \begin_layout Plain Layout
-20,581
+10,0586
 \end_layout
 
 \end_inset
@@ -1024,7 +1024,7 @@ Tempo Decorrido (s)
 \begin_inset Text
 
 \begin_layout Plain Layout
-19,479
+14,2813
 \end_layout
 
 \end_inset
@@ -1053,7 +1053,7 @@ Tempo Decorrido (s)
 \begin_inset Text
 
 \begin_layout Plain Layout
-20,704
+10,2632
 \end_layout
 
 \end_inset
@@ -1076,7 +1076,7 @@ Tempo Decorrido (s)
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -1129,7 +1129,7 @@ Porosidade (%)
 \begin_inset Text
 
 \begin_layout Plain Layout
-Tempo Decorrido (s)
+Tempo Decorrido (ms)
 \end_layout
 
 \end_inset
@@ -1158,7 +1158,7 @@ Tempo Decorrido (s)
 \begin_inset Text
 
 \begin_layout Plain Layout
-19,108
+22,7351
 \end_layout
 
 \end_inset
@@ -1187,7 +1187,7 @@ Tempo Decorrido (s)
 \begin_inset Text
 
 \begin_layout Plain Layout
-19,449
+10,1926
 \end_layout
 
 \end_inset
@@ -1216,7 +1216,7 @@ Tempo Decorrido (s)
 \begin_inset Text
 
 \begin_layout Plain Layout
-19,245
+10,4492
 \end_layout
 
 \end_inset
@@ -1245,7 +1245,7 @@ Tempo Decorrido (s)
 \begin_inset Text
 
 \begin_layout Plain Layout
-19,038
+10,2758
 \end_layout
 
 \end_inset
@@ -1274,7 +1274,7 @@ Tempo Decorrido (s)
 \begin_inset Text
 
 \begin_layout Plain Layout
-19,220
+10,2429
 \end_layout
 
 \end_inset
@@ -1303,7 +1303,7 @@ Tempo Decorrido (s)
 \begin_inset Text
 
 \begin_layout Plain Layout
-19,659
+10,4053
 \end_layout
 
 \end_inset
@@ -1332,7 +1332,7 @@ Tempo Decorrido (s)
 \begin_inset Text
 
 \begin_layout Plain Layout
-19,250
+10,6528
 \end_layout
 
 \end_inset
@@ -1361,7 +1361,7 @@ Tempo Decorrido (s)
 \begin_inset Text
 
 \begin_layout Plain Layout
-19,932
+14,6284
 \end_layout
 
 \end_inset
@@ -1390,7 +1390,7 @@ Tempo Decorrido (s)
 \begin_inset Text
 
 \begin_layout Plain Layout
-13,276
+10,1662
 \end_layout
 
 \end_inset
@@ -1419,7 +1419,7 @@ Tempo Decorrido (s)
 \begin_inset Text
 
 \begin_layout Plain Layout
-19,239
+10,2446
 \end_layout
 
 \end_inset
@@ -1442,7 +1442,7 @@ Tempo Decorrido (s)
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -1495,7 +1495,7 @@ Porosidade (%)
 \begin_inset Text
 
 \begin_layout Plain Layout
-Tempo Decorrido (s)
+Tempo Decorrido (ms)
 \end_layout
 
 \end_inset
@@ -1524,7 +1524,7 @@ L67409i1.png
 \begin_inset Text
 
 \begin_layout Plain Layout
-21,444
+9,2697
 \end_layout
 
 \end_inset
@@ -1553,7 +1553,7 @@ L67409i2.png
 \begin_inset Text
 
 \begin_layout Plain Layout
-21,070
+9,1662
 \end_layout
 
 \end_inset
@@ -1582,7 +1582,7 @@ L67409i3.png
 \begin_inset Text
 
 \begin_layout Plain Layout
-21,495
+9,1207
 \end_layout
 
 \end_inset
@@ -1611,7 +1611,7 @@ L67409i4.png
 \begin_inset Text
 
 \begin_layout Plain Layout
-20,347
+8,9459
 \end_layout
 
 \end_inset
@@ -1640,7 +1640,7 @@ L67409i5.png
 \begin_inset Text
 
 \begin_layout Plain Layout
-19,880
+14,0753
 \end_layout
 
 \end_inset
@@ -1669,7 +1669,7 @@ L67409i6.png
 \begin_inset Text
 
 \begin_layout Plain Layout
-21,485
+8,8730
 \end_layout
 
 \end_inset
@@ -1698,7 +1698,7 @@ L67409i7.png
 \begin_inset Text
 
 \begin_layout Plain Layout
-21,097
+9,2041
 \end_layout
 
 \end_inset
@@ -1727,7 +1727,7 @@ L67409i8.png
 \begin_inset Text
 
 \begin_layout Plain Layout
-20,929
+9,0673
 \end_layout
 
 \end_inset
@@ -1756,7 +1756,7 @@ L67409i9.png
 \begin_inset Text
 
 \begin_layout Plain Layout
-21,238
+8,9812
 \end_layout
 
 \end_inset
@@ -1785,7 +1785,7 @@ L67409i10.png
 \begin_inset Text
 
 \begin_layout Plain Layout
-21,238
+9,5263
 \end_layout
 
 \end_inset
@@ -6442,7 +6442,7 @@ name "fig:L67409i9.png"
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -6575,11 +6575,7 @@ name "sec:Analise-Resultados"
 
 \begin_layout Standard
 Durante a execução do modelo é possível observar que o tempo para execução
- do modelo ficou entre 19 e 21 segundos, para todas as imagens.
- Devido ao fato de que a rede neural é executada para cada pixel da imagem
- esses valores próximos podem ser explicados pelo fato que todas as imagens
- possuíam a mesma quantidade de 640 x 450 pixeis.
- 
+ do modelo ficou entre 9 e 22 milisegundos, para todas as imagens.
 \end_layout
 
 \begin_layout Standard
