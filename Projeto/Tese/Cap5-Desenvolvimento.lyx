@@ -3211,7 +3211,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename /home/joao/Documentos/TeseMestrado/imagens/imagensCriadas/exemplo-dat.png
+	filename ../../imagens/imagensCriadas/exemplo-dat.png
 	lyxscale 50
 	width 100text%
 
@@ -4044,44 +4044,101 @@ Coleta de Resultados
 \end_layout
 
 \begin_layout Standard
-O processo de coleta dos resultados seguiu o seguinte procedimento para
- cada uma das imagens:
-\end_layout
+O processo de coleta dos resultados seguiu o seguinte procedimento mostrado
+ na Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:procedimento-de-coleta-resultados"
+plural "false"
+caps "false"
+noprefix "false"
 
-\begin_layout Enumerate
-Os dados das regiões de interesse de uma determinada imagem são coletados
- e salvos em um arquivo .
-\emph on
-dat
-\emph default
-.
- 
-\begin_inset space \space{}
+\end_inset
+
+ para cada uma das imagens.
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../../imagens/imagensCriadas/fluxograma-procedimento.png
+	lyxscale 50
+	width 100text%
+
 \end_inset
 
 
 \end_layout
 
-\begin_layout Enumerate
-O arquivo com os dados é utilizado para treinar um novo modelo.
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Procedimento de Coleta de Dados para Binarização de Rochas Digitais com
+ Redes Neurais.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:procedimento-de-coleta-resultados"
+
+\end_inset
+
+
 \end_layout
 
-\begin_layout Enumerate
-O modelo é aplicado sobre a imagem para realizar a binarização.
+\end_inset
+
+
 \end_layout
 
-\begin_layout Enumerate
-O resultado de porosidade é salvo em um arquivo de texto.
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
-Todavia a aplicação desse processo para cada uma das imagens se mostrou
- muito cansativo e por isso foram desenvolvidos scripts em 
+Uma imagem é inicialmente carregada na Ferramenta de Anotação de Regiões
+ de Interesse e para cada nova região é criada uma camada.
+ Nessas camadas são marcadas os pontos que representam a região na qual
+ serão coletadas as informações dos canais de cores dos pixeis.
+ Assim se encerra coleta de uma determinada área é possível salvar momentaneamen
+te esses dados na tabela que fica no lado direto da janela do 
 \emph on
-bash
+software.
+
 \emph default
- para entrar nos diretórios das imagens, buscar os arquivos com dados e
- modelos salvos e executar o treinamento e aplicação do modelo.
+ São criadas quantas camadas forem necessárias e o procedimento é repetido.
+ Para esse trabalho, como já foi explicado anteriormente, são adicionadas
+ apenas uma camada para representar a fase sólida e outra para representar
+ a fase porosa.
+\end_layout
+
+\begin_layout Standard
+Terminada a fase de coleta, os dados da tabela são salvos e então utilizados
+ para alimentar o 
+\emph on
+script
+\emph default
+ de treinamento da rede neural.
+ O resultado desse treinamento é um arquivo no formato 
+\emph on
+.pt
+\emph default
+ que representa os parâmetros do modelo de inteligência artificial treinado.
+\end_layout
+
+\begin_layout Standard
+Esse arquivo é utilizado então no 
+\emph on
+script
+\emph default
+ que aplica a imagem à rede neural para ser binarizada.
+ O resultado desses processo é a imagem segmentada em fase solida e porosa,
+ e um arquivo de texto contendo a porosidade absoluta obtida e o tempo de
+ execução do modelo.
 \end_layout
 
 \end_body
