@@ -443,9 +443,53 @@ name "sec:Sugestoes-Para-Trabalhos-Futuros"
 
 \end_layout
 
+\begin_layout Itemize
+Utilizar a ferramenta de anotação de regiões de interesse para classificação
+ e segmentção de não apenas regiões de poros e matriz sólida, mas também
+ para os diferentes componentes mineralógicos que compõem a imagem.
+\end_layout
+
+\begin_layout Itemize
+Aplicar o modelo de rede neural em outras amostras de rochas reservatórios
+ além daquelas descritas neste trabalho.
+\end_layout
+
+\begin_layout Itemize
+Portar 
+\emph on
+scripts
+\emph default
+ escritos em 
+\emph on
+python 
+\emph default
+para C++ utilizando o 
+\emph on
+frontend 
+\emph default
+da biblioteca 
+\emph on
+PyTorch
+\emph default
+ para a linguagem.
+\end_layout
+
+\begin_layout Itemize
+Integrar a ferramenta de anotação de regiões de interesse com o 
+\emph on
+Laboratório Virtual de Petrofísica 
+\emph default
+(
+\emph on
+LVP
+\emph default
+), de modo a facilitar o processo de obtenção das propriedades petrofísicas
+ da amostra de rocha digital.
+\end_layout
+
 \begin_layout Standard
 \begin_inset Note Note
-status collapsed
+status open
 
 \begin_layout Itemize
 Coloque cada sugestão como uma itemização.
