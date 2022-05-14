@@ -200,43 +200,9 @@ name "sec:Escopo-do-Problema"
 \end_layout
 
 \begin_layout Standard
-O uso dessas metodologias
-\begin_inset Note Note
-status collapsed
-
-\begin_layout Plain Layout
-João atenção ao uso dos termos abaixo:
-\end_layout
-
-\begin_layout Plain Layout
-paradigma: uma forma de ver as coisas,
-\end_layout
-
-\begin_layout Plain Layout
-modelo: uma formulação conceitual de como algo funciona,
-\end_layout
-
-\begin_layout Plain Layout
-metodologia: um caminho pelo qual encontraremos/desenvolveremos a busca
- da solução do problema (a solução ainda não existe).
-\end_layout
-
-\begin_layout Plain Layout
-tecnologia: conjunto de técnicas associadas a solução de um problema (depois
- do seu mestrado teremos uma tecnologia nova desenvolvida, com programas
- que resolvem o problema).
-\end_layout
-
-\begin_layout Plain Layout
-técnica: um conjunto de passos/etapas para solução de um problema, desenvolvimen
-to de um produto ou processo (geralmente normatizado).
-\end_layout
-
-\end_inset
-
- se torna muito pertinente na engenharia de reservatórios, uma vez que a
- capacidade de prever e delimitar sua capacidade produtiva é essencial no
- âmbito econômico.
+O uso dessas metodologias se torna muito pertinente na engenharia de reservatóri
+os, uma vez que a capacidade de prever e delimitar sua capacidade produtiva
+ é essencial no âmbito econômico.
  Ter conhecimento das propriedades físicas das rochas, como porosidade e
  permeabilidade, ajudam nesse processo já que são capazes de trazer importantes
  informações acerca das heterogeneidades que formam tais estruturas.
