@@ -239,7 +239,7 @@ noprefix "false"
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -431,7 +431,7 @@ I216.png
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -710,7 +710,7 @@ I32.png
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -1076,7 +1076,7 @@ Tempo Decorrido (ms)
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -1442,7 +1442,7 @@ Tempo Decorrido (ms)
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -6801,6 +6801,31 @@ L67409i7
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Standard
+Sobre os dados coletados por diferentes tipos de voluntários, pode-se se
+ concluir que existe um impacto nos valores de porosidade obtidos de acordo
+ com o 
+\emph on
+background 
+\emph default
+de cada um deles.
+ Observa-se que os valores obtidos pelo voluntário 4 foram os que mais se
+ afastaram dos valores de porosidade real de cada uma das imagens.
+ É provável que isso tenha ocorrido devido a baixa quantidade de dados coletados
+ durante sua iteração.
+ Isso também reforça que a quantidade de dados é crucial para que sejam
+ obtidos bons resultados com algorítimos de inteligência artificial.
+ 
+\end_layout
+
+\begin_layout Standard
+Os voluntários 1, 2 e 3 coletaram valores semelhantes e por isso obtiveram
+ resultados tão próximos.
+ Isso mostra que a experiência que o usuário possui ao treinar uma algoritmo
+ de inteligência artificial é muito importante para que bons resultados
+ sejam alcançados.
 \end_layout
 
 \end_body

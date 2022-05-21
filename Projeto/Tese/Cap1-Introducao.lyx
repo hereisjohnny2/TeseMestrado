@@ -536,6 +536,14 @@ Desenvolvimento de scripts em Python para a realização do treinamento das
 \end_layout
 
 \begin_layout Itemize
+Comparar os resultados obtidos para pessoas com diferentes 
+\emph on
+backgrounds
+\emph default
+ em engenharia e geologia do petróleo.
+\end_layout
+
+\begin_layout Itemize
 Utilização da biblioteca 
 \emph on
 PyTorch
