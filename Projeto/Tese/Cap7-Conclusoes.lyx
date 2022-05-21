@@ -363,7 +363,7 @@ status collapsed
 \end_inset
 
 Como resultado, a duração, tanto do treinamento, quanto a aplicação do modelo
- duraram na ordem dos milisegundos, o que mostra a capacidade desses algoritimos
+ duraram na ordem dos milissegundos, o que mostra a capacidade desses algoritmos
  entregar resultdos de forma rápida.
 \end_layout
 
@@ -412,7 +412,31 @@ Deve finalizar e arrematar o trabalho de forma segura.
 
 \end_inset
 
+Este trabalho mostra como tecnologias como 
+\emph on
+machine learning
+\emph default
+ podem ser muito uteis na obtenção de valores de porosidade em amostras
+ de rochas reservatórios.
+ Além disso, o uso de ferramentas de anotação podem ajudar a tornar o processo
+ de coleta de dados menos tedioso e maçante.
+ É importante reforçar que a qualidade dos resultados obtidos está relacionado
+ diretamente à experiência profissional do usuário e seu 
+\emph on
+background
+\emph default
+ em no que se diz respeito à engenharia e geologia do petróleo, como foi
+ salientado no Capítulo 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Analise-Resultados"
+plural "false"
+caps "false"
+noprefix "false"
 
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -445,7 +469,7 @@ name "sec:Sugestoes-Para-Trabalhos-Futuros"
 
 \begin_layout Itemize
 Utilizar a ferramenta de anotação de regiões de interesse para classificação
- e segmentção de não apenas regiões de poros e matriz sólida, mas também
+ e segmentação de não apenas regiões de poros e matriz sólida, mas também
  para os diferentes componentes mineralógicos que compõem a imagem.
 \end_layout
 
@@ -487,9 +511,55 @@ LVP
  da amostra de rocha digital.
 \end_layout
 
+\begin_layout Itemize
+Desenvolvimento de um serviço que possa armazenar dados coletados para diversos
+ tipos de amostras.
+\end_layout
+
+\begin_layout Itemize
+Desenvolvimento de uma versão para Web da ferramenta de anotação de regiões
+ interesse.
+ A instalação local pode se tornar um pouco complicada para usuários com
+ menos conhecimento de informática, algo se já não ocorreria com uma aplicação
+ 
+\emph on
+hosteada
+\emph default
+ em um serviço de 
+\emph on
+cloud
+\emph default
+.
+ Com mais pessoas utilizando a ferramenta, mais dados poderiam ser coletados
+ e armazenados para diferentes tipos de amostras de rocha, possibilitando
+ o treinamento de redes cada vez mais inteligentes.
+\end_layout
+
+\begin_layout Itemize
+Aplicar outras arquiteturas de redes neurais.
+ O uso de redes no formato 
+\emph on
+feedforward
+\emph default
+ são excelentes para o desenvolvimento de um modelo inicial, mas para que
+ mais propriedades possam ser extraídas de uma determinada amostra, o uso
+ de redes convolucionais, por exemplo, podem se tornar bastante uteis, como
+ foi discutido no Capítulo 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:Revisao-de-Conceitos"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
 \begin_layout Standard
 \begin_inset Note Note
-status open
+status collapsed
 
 \begin_layout Itemize
 Coloque cada sugestão como uma itemização.

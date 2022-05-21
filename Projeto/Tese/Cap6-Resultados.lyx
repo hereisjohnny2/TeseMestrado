@@ -6575,7 +6575,7 @@ name "sec:Analise-Resultados"
 
 \begin_layout Standard
 Durante a execução do modelo é possível observar que o tempo para execução
- do modelo ficou entre 9 e 22 milisegundos, para todas as imagens.
+ do modelo ficou entre 9 e 22 milissegundos, para todas as imagens.
 \end_layout
 
 \begin_layout Standard
