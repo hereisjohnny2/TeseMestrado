@@ -938,14 +938,679 @@ This section describes the development of the region annotation tool, the
  collecting data process from images obtained in the laboratory, and the
  CLI (Command-Line) application used for training the neural network and
  application of the model on these images.
+ The Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:process"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ gives a whole process overview.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename process.png
+	lyxscale 50
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Process Overview.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:process"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
 Annotating Regions of Interest Software
 \end_layout
 
+\begin_layout Standard
+A tool was developed that was capable of displaying an image to the user,
+ and allowing the regions of interest to be associated with labels created
+ by the professional who would be using it to carry out the study on the
+ sample, it would be very useful to obtain material for feed the AI algorithms.
+ The image to be studied would be loaded onto a base layer and as new labels
+ were added new layers would overlap the base layer.
+ The user could then, with some virtual annotation tool, such as a “pen”,
+ mark the regions of interest in each layer.
+ The RGB values of each pixel included in these marked regions can then
+ be exported to a text file and used as a dataset in a neural network training
+ script.
+ This idea proved to be very simple to implement, in addition to having
+ the potential to collect data for image segmentation of any nature.
+ The Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:gui-tool"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ shows the tool Graphical User Interface (GUI).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename tool-gui.png
+	lyxscale 50
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Annotation Tool GUI.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:gui-tool"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
 Data Collecting Process
+\end_layout
+
+\begin_layout Standard
+The images used for data collection were classified into 5 different categories,
+ as shown in Table [tab:Categories-of-Images], together with the estimated
+ values of porosity and permeability in 
+\begin_inset Formula $mD$
+\end_inset
+
+.
+ These images represent rock samples of different porosity and permeability
+ values, which implies different ways of performing the collection.
+ However, actions such as avoiding contact with the edges were taken to
+ obtain the best data quality.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Images Categories.
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:images-categories"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="6" columns="3">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Categoria
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Porosidade (%)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Permeabilidade (
+\begin_inset Formula $mD$
+\end_inset
+
+)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Berea200
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Berea500
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+P148_K2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+14,8
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+P240_K104
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+24,0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+104
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+P262_K441
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+26,2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+441
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In Figs.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:exemple-berea200"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:exemple-berea500"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:exemple-P148_K2"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:exemple-P240_K104"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:exemple-P262_K441"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ it is possible to observe an example of data collection using the tool
+ described above for each image type.
+ During the collection, we also tried to maintain the same number of points
+ for the regions of solids and pores.
+ This was done so that it was possible to prevent the neural network from
+ having its parameters biased during training.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../../imagens/imagensCriadas/exemplo-i26.png
+	lyxscale 50
+	width 32text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Berea200 Sample.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:exemple-berea200"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../../imagens/imagensCriadas/exemplo-berea500.png
+	lyxscale 50
+	width 32text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Berea500 Sample.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:exemple-berea500"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../../imagens/imagensCriadas/exemplo-p140.png
+	lyxscale 50
+	width 32text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+P148_K2 Sample.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:exemple-P148_K2"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../../imagens/imagensCriadas/exemplo-p240.png
+	lyxscale 50
+	width 32text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+P240_K104 Sample.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:exemple-P240_K104"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../../imagens/imagensCriadas/exemplo-p262.png
+	lyxscale 50
+	width 32text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+P262_K441 Sample.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:exemple-P262_K441"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Data Collecting Examples.
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:examples"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
@@ -957,7 +1622,7 @@ Model Description
 \end_layout
 
 \begin_layout Standard
-Na Tabela 
+Table 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "tab:Neural-Networks-Layers"
@@ -967,24 +1632,20 @@ noprefix "false"
 
 \end_inset
 
- está descrita o modelo de rede neural utilizado para treinamento e binarização
- das imagens.
- Todas as camadas internas dessa rede utilizaram 
-\emph on
-ReLU 
-\emph default
-como função de ativação.
- Para saída da rede neural foi utilizada uma função chamada de 
-\emph on
-log_softmax
-\emph default
-, que de acordo com a documentação da biblioteca, é recomentada para algoritmos
- classificadores.
+ describes the neural network model used for training and binarizing the
+ images.
+ All internal layers of this network used ReLU as an activation function.
+ A function called log_softmax was used to output the neural network, which,
+ according to the library documentation, is recommended for classifier algorithm
+s.
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float table
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -1183,54 +1844,38 @@ log_softmax
 
 \end_layout
 
+\begin_layout Standard
+The training process took place for each of the datasets used in the same
+ way.
+ First, they were loaded through the command line interface developed in
+ python.
+ Then they are shuffled and divided into training and test sets.
+ After that, the training set was applied to the neural network in the form
+ of mini batches.
+ At the end of this step, the set test was submitted to the neural network
+ to verify the accuracy.
+ This process was then repeated for 5 epochs for each of the datasets.
+\end_layout
+
 \begin_layout Subsubsection
 Model Application
 \end_layout
 
 \begin_layout Standard
-Para aplicar o modelo foi desenvolvida uma função chamada 
-\emph on
-apply_model,
-\emph default
- semelhante à utilizada no treinamento, que recebe o caminho para o arquivo
- que guarda o modelo em 
-\emph on
-pickle
-\emph default
-, o caminho para a imagem que será binarizada, o caminho para da imagem
- binarizada de saída e um 
-\emph on
-flag
-\emph default
- para indicar se o resultado da imagem binarizada deverá ser salvo ou não.
+To apply the model, the CLI receives the path to the file that stores the
+ model saved in pickle, in the training process, the path to the image that
+ will be binarized, the path to the output binarized image and a flag to
+ indicate whether the result of the binarized image should be saved or not.
 \end_layout
 
 \begin_layout Standard
-Assim que a função é iniciada cria-se uma instancia de 
-\emph on
-RockNetModel 
-\emph default
-e o modelo salvo é carregado dentro dela por meio da função 
-\emph on
-local_state_dict 
-\emph default
-e colocado em modo de
-\emph on
- 
-\emph default
-estimativa com o método 
-\emph on
-eval
-\emph default
-.
- Por fim a função 
-\emph on
-apply_binarizarion 
-\emph default
-é executada, retornando o resultado da binarização e a duração do processo.
- Calcula-se então a porosidade da imagem amostra que é salvo em um arquivo
- de texto junto com tempo de execução.
- Por sim, se for o caso, a imagem resultante é salva.
+Once the function is started, an instance of the neural network is created
+ and the saved model is loaded into it.
+ Then, the image is transformated into a PyTorch tensor and used to feed
+ the AI model.
+ The result of this event is the binararized image and the time elapesed.
+ The porosity of the sample image is then calculated and saved in a text
+ file.
 \end_layout
 
 \begin_layout Section
@@ -1248,60 +1893,20 @@ Prososity Values
 \end_layout
 
 \begin_layout Standard
-Apresenta-se nesta secção os resultados obtidos pela aplicação do dos métodos
- descritos no capítulo anterior.
- As Tabelas 
+This section presents the results obtained by applying the methods described
+ in the previous chapter.
+ The Table 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "tab:resultados-berea200"
+reference "tab:porosity-results"
 plural "false"
 caps "false"
 noprefix "false"
 
 \end_inset
 
-, 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "tab:resultados-Berea500"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
-, 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "tab:resultados-P148_K"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
-, 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "tab:resultados_P240_K104"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
- e 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "tab:resultados-P262_K441"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
- mostram os valores obtidos para porosidade em cada uma das imagens e o
- tempo decorrido para aplicação do modelo.
+ shows the values obtained for porosity in each of the images and the time
+ elapsed for application of the model.
 \end_layout
 
 \begin_layout Standard
@@ -1315,12 +1920,10 @@ status collapsed
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-
-\lang brazilian
-Resultados Berea200.
+Porosity Results.
 \begin_inset CommandInset label
 LatexCommand label
-name "tab:resultados-berea200"
+name "tab:porosity-results"
 
 \end_inset
 
@@ -1336,7 +1939,7 @@ name "tab:resultados-berea200"
 \noindent
 \align center
 \begin_inset Tabular
-<lyxtabular version="3" rows="5" columns="3">
+<lyxtabular version="3" rows="6" columns="3">
 <features tabularvalignment="middle">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
@@ -1346,7 +1949,7 @@ name "tab:resultados-berea200"
 \begin_inset Text
 
 \begin_layout Plain Layout
-Imagem
+Sample
 \end_layout
 
 \end_inset
@@ -1355,7 +1958,7 @@ Imagem
 \begin_inset Text
 
 \begin_layout Plain Layout
-Porosidade (%)
+Porosity (%)
 \end_layout
 
 \end_inset
@@ -1364,7 +1967,7 @@ Porosidade (%)
 \begin_inset Text
 
 \begin_layout Plain Layout
-Tempo Decorrido (ms)
+Elapsed Time (ms)
 \end_layout
 
 \end_inset
@@ -1375,65 +1978,7 @@ Tempo Decorrido (ms)
 \begin_inset Text
 
 \begin_layout Plain Layout
-I22.png
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-30,9958
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-14,9012
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-I212.png
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-23,8404
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-9,8712
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-I26.png
+Berea200
 \end_layout
 
 \end_inset
@@ -1458,234 +2003,11 @@ I26.png
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-I216.png
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-25,5654
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-10,2179
-\end_layout
-
-\end_inset
-</cell>
-</row>
-</lyxtabular>
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float table
-placement H
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-
-\lang brazilian
-Resultados Berea500.
-\begin_inset CommandInset label
-LatexCommand label
-name "tab:resultados-Berea500"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\noindent
-\align center
-\begin_inset Tabular
-<lyxtabular version="3" rows="8" columns="3">
-<features tabularvalignment="middle">
-<column alignment="center" valignment="top">
-<column alignment="center" valignment="top">
-<column alignment="center" valignment="top">
-<row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Imagem
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Porosidade (%)
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Tempo Decorrido (ms)
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
 <cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-I310.png
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-23,4274
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-9,9235
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-I311.png
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-22,6009
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-9,9270
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-I312.png
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-34,7165
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-9,3529
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-I318.png
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-24,5332
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-9,9303
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-I320.png
+Berea500
 \end_layout
 
 \end_inset
@@ -1714,143 +2036,7 @@ I320.png
 \begin_inset Text
 
 \begin_layout Plain Layout
-I31.png
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-22,1816
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-9,7187
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-I32.png
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-21,2809
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-14,5907
-\end_layout
-
-\end_inset
-</cell>
-</row>
-</lyxtabular>
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float table
-placement H
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-
-\lang brazilian
-Resultados P148_K2.
-\begin_inset CommandInset label
-LatexCommand label
-name "tab:resultados-P148_K"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\noindent
-\align center
-\begin_inset Tabular
-<lyxtabular version="3" rows="11" columns="3">
-<features tabularvalignment="middle">
-<column alignment="center" valignment="top">
-<column alignment="center" valignment="top">
-<column alignment="center" valignment="top">
-<row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Imagem
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Porosidade (%)
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Tempo Decorrido (ms)
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-3271i01.png
+P148_K2
 \end_layout
 
 \end_inset
@@ -1868,7 +2054,7 @@ Tempo Decorrido (ms)
 \begin_inset Text
 
 \begin_layout Plain Layout
-10,2811
+10,2811 
 \end_layout
 
 \end_inset
@@ -1879,346 +2065,7 @@ Tempo Decorrido (ms)
 \begin_inset Text
 
 \begin_layout Plain Layout
-3271i02.png
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-6,2360
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-10,3567
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-3271i03.png
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-20,5915
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-10,3350
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-3271i04.png
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-9,3711
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-10,2592
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-3271i05.png
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-24,6165
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-10,2439
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-3271i06.png
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-37,8424
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-10,4513
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-3271i07.png
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-30,4268
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-10,2217
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-3271i08.png
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-33,8730
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-10,0586
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-3271i09.png
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-22,5837
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-14,2813
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-3271i10.png
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-27,0260
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-10,2632
-\end_layout
-
-\end_inset
-</cell>
-</row>
-</lyxtabular>
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float table
-placement H
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-
-\lang brazilian
-Resultados P240_K104.
-\begin_inset CommandInset label
-LatexCommand label
-name "tab:resultados_P240_K104"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\noindent
-\align center
-\begin_inset Tabular
-<lyxtabular version="3" rows="11" columns="3">
-<features tabularvalignment="middle">
-<column alignment="center" valignment="top">
-<column alignment="center" valignment="top">
-<column alignment="center" valignment="top">
-<row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Imagem
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Porosidade (%)
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Tempo Decorrido (ms)
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-3251i01.png
+P240_K104
 \end_layout
 
 \end_inset
@@ -2243,355 +2090,16 @@ Tempo Decorrido (ms)
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-3251i02.png
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-34,1064
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-10,1926
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-26513251i03.png
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-27,7467
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-10,4492
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-3251i04.png
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-31,8760
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-10,2758
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-3251i05.png
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-25,6667
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-10,2429
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-3251i06.png
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-28,5176
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-10,4053
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-3251i07.png
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-43,4805
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-10,6528
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-3251i08.png
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-35,7324
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-14,6284
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-3251i09.png
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-27,9440
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-10,1662
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
 <cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-3251i10.png
+P262_K441
 \end_layout
 
 \end_inset
 </cell>
 <cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-33,3971
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-10,2446
-\end_layout
-
-\end_inset
-</cell>
-</row>
-</lyxtabular>
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float table
-placement H
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-
-\lang brazilian
-Resultados P262_K441.
-\begin_inset CommandInset label
-LatexCommand label
-name "tab:resultados-P262_K441"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\noindent
-\align center
-\begin_inset Tabular
-<lyxtabular version="3" rows="11" columns="3">
-<features tabularvalignment="middle">
-<column alignment="center" valignment="top">
-<column alignment="center" valignment="top">
-<column alignment="center" valignment="top">
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Imagem
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Porosidade (%)
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Tempo Decorrido (ms)
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-L67409i1.png
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2600,272 +2108,11 @@ L67409i1.png
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-9,2697
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-L67409i2.png
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-19,4385
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-9,1662
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-L67409i3.png
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-16,2819
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-9,1207
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-L67409i4.png
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-16,9977
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-8,9459
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-L67409i5.png
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-22,0729
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-14,0753
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-L67409i6.png
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-20,7565
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-8,8730
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-L67409i7.png
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-7,6257
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-9,2041
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-L67409i8.png
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-10,6711
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-9,0673
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-L67409i9.png
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-11,1859
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-8,9812
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-L67409i10.png
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-19,6126
-\end_layout
-
-\end_inset
-</cell>
 <cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-9,5263
+9,2697
 \end_layout
 
 \end_inset
@@ -2885,6 +2132,246 @@ L67409i10.png
 
 \begin_layout Subsection
 Output Images
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename /home/joao/Documentos/TeseMestrado/resultados/imagens/Berea200/I216-bin.png
+	lyxscale 50
+	width 32text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Berea200 Sample.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:exemple-berea200-1"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename /home/joao/Documentos/TeseMestrado/resultados/imagens/Berea500/I320-bin.png
+	lyxscale 50
+	width 32text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Berea500 Sample.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:exemple-berea500-1"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename /home/joao/Documentos/TeseMestrado/resultados/imagens/P148_K2/3271i01-bin.png
+	lyxscale 50
+	width 32text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+P148_K2 Sample.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:exemple-P148_K2-1"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename /home/joao/Documentos/TeseMestrado/resultados/imagens/P240_K104/3251i01-bin.png
+	lyxscale 50
+	width 32text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+P240_K104 Sample.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:exemple-P240_K104-1"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename /home/joao/Documentos/TeseMestrado/resultados/imagens/P262_K441/L67409i1-bin.png
+	lyxscale 50
+	width 32text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+P262_K441 Sample.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:exemple-P262_K441-1"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Data Collecting Examples.
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:examples-1"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -3151,106 +2638,71 @@ Conclusion
 \end_layout
 
 \begin_layout Standard
-Conforme já explicado anteriormente, o uso de algoritmos de inteligência
- artificial é cada vez mais comum nas mais diferentes áreas de pesquisa,
- especialmente no campo da engenharia.
- O uso de tal tecnologia torna a execução de tarefas complexas, como o modelo
- de classificação e de predição, em um curto espaço de tempo possível.
+As previously explained, the use of artificial intelligence algorithms is
+ increasingly common in the most different areas of research, especially
+ in the field of engineering.
+ The use of such technology makes the execution of complex tasks, such as
+ the classification and prediction model, in a short time possible.
 \end_layout
 
 \begin_layout Standard
-Mais especificamente no âmbito da engenharia de reservatórios, o uso de
- redes neurais e visão computacional permitem que sejam realizadas análises
- para descrever características petrofísicas de uma amostra sem precisar
- danificá-la.
- Neste trabalho foi mostrado como valores de porosidade absoluta podem ser
- obtidas poder meio de modelos inteligentes que permitem a segmentação de
- imagens em regiões de poros e de matriz sólida, em um tempo relativamente
- mais curto e com precisão semelhante a analises físicas.
- Além disso o desenvolvimento desses modelos se deu utilizando tecnologias
- de código aberto, o que torna mais fácil a reprodução dos resultados aqui
- descritos.
- 
+More specifically in the field of reservoir engineering, the use of neural
+ networks and computer vision allow analyzes to be performed to describe
+ petrophysical characteristics of a sample without having to damage it.
+ In this work, it was shown how absolute porosity values can be obtained
+ using intelligent models that allow the segmentation of images in regions
+ of pores and solid matrix, in a relatively shorter time and with precision
+ similar to physical analysis.
+ In addition, the development of these models took place using open source
+ technologies, which makes it easier to reproduce the results described
+ here.
 \end_layout
 
 \begin_layout Standard
-Este trabalho teve como objetivo geral desenvolver métodos de inteligência
- artificial capazes de reconhecer padrões relevantes para a análise das
- propriedades petrofísicas em imagens de rochas reservatórios.
- Procurou-se estudar diferentes métodos de aprendizagem de maquina e aprendizage
-m profundas aplicadas à análise de imagens, e desenvolver aplicações que
- pudessem tornar possível aplicação desses modelos em exemplos do mundo
- real.
- Dentre essas aplicações estariam scripts em 
-\emph on
-python
-\emph default
- para utilização das técnicas de inteligência artificial e uma ferramenta
- para anotação de regiões de interesse em amostras de rocha digital.
- 
+The general objective of this work was to develop artificial intelligence
+ methods capable of recognizing relevant patterns for the analysis of petrophysi
+cal properties in images of reservoir rocks.
+ We tried to study different methods of machine learning and deep learning
+ applied to image analysis, and to develop applications that could make
+ possible the application of these models in real world examples.
+ Among these applications would be python scripts for the use of artificial
+ intelligence techniques and a tool for annotating regions of interest in
+ digital rock samples.
 \end_layout
 
 \begin_layout Standard
-A obtenção dos resultados para que os objetivos descritos anteriormente
- fossem alcançados se deu na forma de um procedimento descrito na Figura
- 
+Obtaining the results so that the objectives described above were achieved
+ took place in the form of a procedure described in Figure 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "fig:procedimento-de-coleta-resultados"
+reference "fig:process"
 plural "false"
 caps "false"
 noprefix "false"
 
 \end_inset
 
-, onde as informações de cor dos pixeis das regiões de interesse eram coletados
- e salvos em um arquivo no formato 
-\emph on
-.dat
-\emph default
-.
- Esse arquivo é utilizado como 
-\emph on
-inputs
-\emph default
- de uma rede neural desenvolvida utilizando a biblioteca de 
-\emph on
-Machine Learning PyTorch
-\emph default
-.
- A saída do 
-\emph on
-script 
-\emph default
-de treinamento é um outro arquivo no formato 
-\emph on
-.pt
-\emph default
-, que contém os valores dos 
-\emph on
-biases
-\emph default
- e pesos da rede neural treinada.
- Esse modelo salvo é então aplicado sobre a imagem a ser binarizada.
- Por fim, é calculado o valor de porosidade para a nova imagem gerada no
- processo.
- Todo esse procedimento foi repetido para imagens contidas acervo digital
- do Prof.
+, where the color information of the pixels of the regions of interest were
+ collected and saved in a file in .dat format.
+ This file is used as inputs for a neural network developed using the Machine
+ Learning library PyTorch.
+ The training script output is another file in .pt format, which contains
+ the values of the biases and weights of the trained neural network.
+ This saved template is then applied over the image to be binarized.
+ Finally, the porosity value for the new image generated in the process
+ is calculated.
+ This entire procedure was repeated for images contained in the digital
+ collection of Prof.
  DSc.
  André Duarte Bueno.
 \end_layout
 
 \begin_layout Standard
-Para esse trabalho foi desenvolvido um único modelo de rede neural do tipo
- 
-\emph on
-feedforward, 
-\emph default
-com 3 camadas profundas, cada uma com 4 neurônios, conforme mostrado na
- Figura 
+For this work, a single feedforward neural network model was developed,
+ with 3 deep layers, each with 4 neurons, as shown in Table 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "fig:Representação-da-rede"
+reference "tab:Neural-Networks-Layers"
 plural "false"
 caps "false"
 noprefix "false"
@@ -3258,73 +2710,34 @@ noprefix "false"
 \end_inset
 
 .
- Como função de ativação foi utilizada função 
-\emph on
-ReLU
-\emph default
- mostrada na Figura 
+ As activation function, the ReLU function shown in Equation 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "fig:relu-func"
+reference "eq:relu-func"
 plural "false"
 caps "false"
 noprefix "false"
 
 \end_inset
 
-.
- Para a ultima camada foi aplicada a função 
-\emph on
-softmax
-\emph default
- seguida da aplicação do logaritmo natural do valor obtido.
- Como otimizador foi escolhido o algoritmo 
-\emph on
-Adam 
-\emph default
-e, por fim, a função de perda 
-\emph on
-NLL Loss
-\emph default
-, ou, 
-\emph on
-Negative Log-Likelihood Loss
-\emph default
-.
+ was used.
+ For the last layer, the softmax function was applied followed by the applicatio
+n of the natural logarithm of the value obtained.
+ As optimizer, the Adam algorithm was chosen and, finally, the loss function
+ NLL Loss, or, Negative Log-Likelihood Loss.
 \end_layout
 
 \begin_layout Standard
-Como resultado, a duração, tanto do treinamento, quanto a aplicação do modelo
- duraram na ordem dos milissegundos, o que mostra a capacidade desses algoritmos
- entregar resultdos de forma rápida.
+As a result, the duration of both training and application of the model
+ lasted in the order of milliseconds, which shows the ability of these algorithm
+s to deliver results quickly.
 \end_layout
 
 \begin_layout Standard
-Este trabalho mostra como tecnologias como 
-\emph on
-machine learning
-\emph default
- podem ser muito uteis na obtenção de valores de porosidade em amostras
- de rochas reservatórios.
- Além disso, o uso de ferramentas de anotação podem ajudar a tornar o processo
- de coleta de dados menos tedioso e maçante.
- É importante reforçar que a qualidade dos resultados obtidos está relacionado
- diretamente à experiência profissional do usuário e seu 
-\emph on
-background
-\emph default
- em no que se diz respeito à engenharia e geologia do petróleo, como foi
- salientado no Capítulo 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sec:Analise-Resultados"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
-.
+This work shows how technologies such as machine learning can be very useful
+ in obtaining porosity values in samples of reservoir rocks.
+ Additionally, the use of annotation tools can help make the data collection
+ process less tedious and tedious.
 \end_layout
 
 \begin_layout Standard
