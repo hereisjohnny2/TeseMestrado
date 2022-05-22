@@ -346,7 +346,7 @@ Recent advances in the field of imaging technology make rock analysis through
 \end_layout
 
 \begin_layout Standard
-Conforme mostrado nos trabalhos de 
+As shown in the work of 
 \begin_inset CommandInset citation
 LatexCommand citet
 key "andra2013digital,rubo2019digital"
@@ -354,19 +354,13 @@ literal "false"
 
 \end_inset
 
- a escolha de um algorítimo de segmentação, a escolha dos filtros e principalmen
-te o 
-\emph on
-threshold
-\emph default
- em imagens em escala de cinza são os pontos chaves para uma boa binarização
- de uma imagem de uma amostra de rocha reservatório, tanto que uma combinação
- infeliz desses parâmetros pode trazer ambiguidades para o processo de interpret
-ação.
+ the choice of a segmentation algorithm, filters and especially the threshold
+ in grayscale images are the key points for a good binarization of a reservoir
+ rock image sample, so much that an unfortunate combination of these parameters
+ can bring ambiguities for the interpretation process.
 \end_layout
 
 \begin_layout Standard
-O trabalho de 
 \begin_inset CommandInset citation
 LatexCommand citet
 key "rego2010desenvolvimento"
@@ -374,25 +368,18 @@ literal "false"
 
 \end_inset
 
- mostrou que a utilização de redes neurais artificiais podem trazer bons
- resultados para o processo de binarização de imagens, principalmente quando
- comparado com métodos tradicionais.
- Todavia, vale resultar que observou-se ainda uma dificuldade em processar
- amostras nas quais eram encontradas grãos muito claros ou escuros.
- Além disse no trabalho foram utilizadas redes neurais tradicionais 
-\emph on
-feedforward
-\emph default
-, algorítimo da retro-propagação, função de custo quadrático e função de
- ativação
-\emph on
- sigmoid.
- 
+ showed that the use of artificial neural networks can bring good results
+ to the image segmentation process, especially when compared to traditional
+ methods.
+ However, it is worth noting that there was still a difficulty in processing
+ samples in which very light or dark grains were found.
+ In addition, the work used traditional feedforward neural networks, backpropaga
+tion algorithm, quadratic cost function and sigmoid activation function.
 \end_layout
 
 \begin_layout Standard
-Com o avanço dos métodos de IA essas escolhas se tornaram obsoleta com o
- passar dos anos, e trabalhos como os de 
+With the advancement of AI methods these choices have become obsolete over
+ the years, and works like those of 
 \begin_inset CommandInset citation
 LatexCommand citet
 key "sudakov2019driving,rubo2019digital,van2016machine,saporetti2018machine"
@@ -400,20 +387,546 @@ literal "false"
 
 \end_inset
 
- vem apresentando bons resultados sobre o processamento do que pode se chamar
- de Rocha Digital utilizando, por exemplo, redes neurais convolucionais
- combinadas com algorítimos de 
-\emph on
-machine learning
-\emph default
- mais simples.
+ has been showing good results on the processing of what can be called Digital
+ Rock using, for example, convolutional neural networks combined with simpler
+ machine learning algorithms.
 \end_layout
 
 \begin_layout Standard
-Esses fatores colaboram portanto para a motivação desse trabalho, que visa
- utilizar a experiencia obtida em trabalhos anteriores para o avanço do
- conhecimento da área da pesquisa em Inteligência Artificial aplicada à
- engenharia de reservatórios de petróleo.
+These factors therefore contribute to the motivation of this work, which
+ aims to use the experience obtained in previous works to advance knowledge
+ in the field of research in Artificial Intelligence applied to petroleum
+ reservoir engineering.
+\end_layout
+
+\begin_layout Subsection
+Artiticial Neural Networks
+\end_layout
+
+\begin_layout Standard
+Artificial neural networks are defined as non-linear models capable of mimicking
+ the behavior of the human brain and its neuron structure 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "haykin2007redes"
+literal "false"
+
+\end_inset
+
+.
+ Thus, ideally, an ANN is capable of performing the operations of learning,
+ association, generalization and abstraction.
+ These networks are composed of a series of elements called artificial neurons,
+ highly interconnected and that perform simple operations and pass the informati
+on to the following elements of the structure.
+ Each entry is represented by 
+\begin_inset Formula $u_{i}$
+\end_inset
+
+ and is weighted by a weight 
+\begin_inset Formula $w_{i}$
+\end_inset
+
+ with i ranging from 
+\begin_inset Formula $1$
+\end_inset
+
+ to 
+\begin_inset Formula $n$
+\end_inset
+
+.
+ The combination of these inputs is done by the sum 
+\begin_inset Formula $\Phi$
+\end_inset
+
+, to which a value of polarization or bias 
+\begin_inset Formula $\theta$
+\end_inset
+
+ is added, as shown in Equation 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:weighted-sum"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+u=\Phi+\theta=\sum_{1}^{n}u_{n}w_{n}+\theta\label{eq:weighted-sum}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The result of the operation shown in Equation 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:weighted-sum"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ is applied as input to an activation function 
+\begin_inset Formula $\eta$
+\end_inset
+
+, thus the output 
+\begin_inset Formula $y$
+\end_inset
+
+ of the neuron is shown in Equation 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:neuron-output"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ This activation function that is responsible for introducing nonlinearity
+ to the neuron model, and can appear in the form of a hyperbolic tangent,
+ sigmoid function, 
+\emph on
+ReLU
+\emph default
+, among others 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "chollet2018deep"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+y=\eta(u)=\eta\left(\Phi+\theta\right)=\eta\left(\sum_{1}^{n}u_{n}w_{n}+\theta\right)\label{eq:neuron-output}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The ReLU activation function shown in Equation 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:relu-func"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ has as its main advantage the fact that it does not immediately activate
+ all neurons, as negative values of u end up being set to 
+\begin_inset Formula $0$
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "nielsen2015neural"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\eta(u)=\begin{cases}
+u & u\geq0\\
+0 & u<0
+\end{cases}\label{eq:relu-func}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The softmax function is similar to a sigmoid function and is widely used
+ for classifying problems with more than two classes.
+ It converts the values of the output layers into a probability function.
+ Equation [eq:softmax-function] shows its structure, where 
+\begin_inset Formula $\vec{u}$
+\end_inset
+
+ represents an entire input vector with k elements 
+\begin_inset Formula $u_{i}$
+\end_inset
+
+.
+ Here 
+\begin_inset Formula $k$
+\end_inset
+
+ is also the number of classes applied to the algorithm.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\eta(\vec{u})_{i}=\frac{e^{u_{i}}}{\sum_{j=1}^{k}e^{u_{j}}}\label{eq:softmax-func}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Feedforward Neural Networks
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset citation
+LatexCommand citet
+key "nielsen2015neural"
+literal "false"
+
+\end_inset
+
+ defines feedforward neural networks as structures divided in layers that
+ are always fed with data in one direction.
+ Any layer between these two is called deep or hidden layers.
+ 
+\end_layout
+
+\begin_layout Standard
+The behavior of this neural network can be expressed in the form of Equation
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:rna-direct-notation"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ In this notation 
+\begin_inset Formula $w_{jk}^{l}$
+\end_inset
+
+ denotes the weight of the connection between the 
+\begin_inset Formula $k$
+\end_inset
+
+-th neuron of the 
+\begin_inset Formula $(l-1)$
+\end_inset
+
+-th layer with the 
+\begin_inset Formula $j$
+\end_inset
+
+-th neuron of the 
+\begin_inset Formula $l$
+\end_inset
+
+-th layer.
+ Furthermore
+\begin_inset Formula $\theta_{j}^{l}$
+\end_inset
+
+ and 
+\begin_inset Formula $y_{j}^{l}$
+\end_inset
+
+ represent, respectively, the bias and activation of the 
+\begin_inset Formula $j$
+\end_inset
+
+-th neuron in the 
+\begin_inset Formula $l$
+\end_inset
+
+-th layer.
+ The activation of the 
+\begin_inset Formula $k$
+\end_inset
+
+-th neuron of the previous layer (
+\begin_inset Formula $l-1$
+\end_inset
+
+) is used as input for the activation of the current neuron and is represented
+ as 
+\begin_inset Formula $y_{k}^{l-1}$
+\end_inset
+
+.
+ Equation 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:vetorized-form"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ shows the vectorized form of the activation.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+y_{j}^{l}=\eta\left(\sum_{k}w_{jk}^{l}y_{k}^{l-1}+\theta_{j}^{l}\right)\label{eq:rna-direct-notation}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+y^{l}=\eta\left(w^{l}y^{l-1}+\theta^{l}\right)\label{eq:vetorized-form}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Acording with 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "goodfellow2016deep"
+literal "false"
+
+\end_inset
+
+ the learning process of that form neural network relies on an algorithm
+ called backpropagation, which the objective is to calculate how much it
+ is necessary to modify the values of the weights and biases of the network
+ after each output that the neural network returns.
+ A cost function 
+\begin_inset Formula $C$
+\end_inset
+
+ is defined to how different from the network output 
+\begin_inset Formula $y^{L}$
+\end_inset
+
+ is the true value assigned to the input data at the input layer 
+\begin_inset Formula $y(x)$
+\end_inset
+
+.
+ The partial derivatives 
+\begin_inset Formula $\partial C/\partial\theta$
+\end_inset
+
+ and 
+\begin_inset Formula $\partial C/\partial w$
+\end_inset
+
+are calculated regarding to the biases 
+\begin_inset Formula $\theta$
+\end_inset
+
+ and weights 
+\begin_inset Formula $w$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Normally, when a network is trained, the entire dataset is not used at once.
+ It is common that before it is divided into smaller sets of input and label
+ pairs, selected randomly, called mini-batches.
+ This approach is not only more computationally viable, as it avoids loading
+ very large datasets into memory at once, but also helps in the network
+ learning process 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "james2013introduction"
+literal "false"
+
+\end_inset
+
+.
+ The speed at which the network learns is also dictated by the learning
+ rate.
+\end_layout
+
+\begin_layout Standard
+According to 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "nielsen2015neural"
+literal "false"
+
+\end_inset
+
+ the procedure for working with direct neural networks can be described
+ under the following algorithm:
+\end_layout
+
+\begin_layout Enumerate
+A set of data is entered in the input layer of the neural network.
+\end_layout
+
+\begin_layout Enumerate
+For each training example, the following procedure is performed:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Compute the outputs of neurons up to the last layer using Equation 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:rna-direct-notation"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+Calculate the error 
+\begin_inset Formula $\delta^{x,L}$
+\end_inset
+
+ using Equation 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:error-output"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+Backpropagate the error through the network using Equation 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:layer-error"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ to calculate the error in each layer 
+\begin_inset Formula $l=L-1,\,L-2,\,..$
+\end_inset
+
+.;
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Update the weights and biases of the network using Equations 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:new-weight"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:new-biases"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, where 
+\begin_inset Formula $\mu$
+\end_inset
+
+ represents the learning rate of the network and 
+\begin_inset Formula $m$
+\end_inset
+
+ the size of the mini-batches.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\delta^{x,L}=\nabla_{a}C_{x}\odot\eta'(w^{L}y^{L-1}+\theta^{L})\label{eq:error-output}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\delta^{x,l}=\left(\left(w^{l+1}\right)^{T}\delta^{x,l+1}\right)\odot\eta'(w^{l}y^{l-1}+\theta^{l})\label{eq:layer-error}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+w^{l}\rightarrow w^{l}-\frac{\mu}{m}\sum_{x}\delta^{x,l}\left(a^{x,l-1}\right)^{T}\label{eq:new-weight}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+b^{l}\rightarrow b^{l}-\frac{\mu}{m}\sum_{x}\delta^{x,l}\label{eq:new-biases}
+\end{equation}
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -421,23 +934,10 @@ Materials and Methods
 \end_layout
 
 \begin_layout Standard
-Para a realização desse trabalho será feita inicialmente um estudo acerca
- da geologia das rochas reservatórios, as suas propriedades petrofísicas
- ao se cursar as disciplinas de Petrofísica, Escoamento em Meios Porosos
- e Fraturados e Introdução a Engenharia do Petróleo.
- Em seguida serão cursadas disciplinas de Processamento Digital de Imagens
- e Processamento Paralelo e Concorrente, para dar suporte ao desenvolvimento
- de técnicas computacionais e para a realização de uma revisão bibliográfica
- profunda sobre a área.
-\end_layout
-
-\begin_layout Standard
-Em seguida serão desenvolvidos os modelos para serem aplicados nas amostras.
- O trabalho será focado no desenvolvimento e implementação de uma Rede Neural
- Artificial Profunda para a binarização das imagens.
- Todos os códigos desenvolvidos serão testados e incorporados a biblioteca
- LIB_LDSC em C++.
- 
+This section describes the development of the region annotation tool, the
+ collecting data process from images obtained in the laboratory, and the
+ CLI (Command-Line) application used for training the neural network and
+ application of the model on these images.
 \end_layout
 
 \begin_layout Subsection
@@ -2765,7 +3265,7 @@ ReLU
  mostrada na Figura 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "fig:funcao-relu"
+reference "fig:relu-func"
 plural "false"
 caps "false"
 noprefix "false"
