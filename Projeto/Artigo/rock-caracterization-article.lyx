@@ -1,0 +1,2843 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass elsarticle
+\begin_preamble
+% specify here the journal
+\journal{Example: Nuclear Physics B}
+
+% use this if you need line numbers
+%\usepackage{lineno}
+\end_preamble
+\use_default_options false
+\begin_modules
+theorems-std
+\end_modules
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures false
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command bibtex
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine natbib
+\cite_engine_type authoryear
+\biblio_style plainnat
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 2
+\paperpagestyle headings
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+This is a template \SpecialChar LyX
+ file for articles to be submitted to journals of the
+ Elsevier publishing company.
+ For general infos see 
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+https://wiki.lyx.org/Examples/Elsevier
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+The Journal is specified in the document preamble! For the right document
+ class options to get the page format for your journal, have a look at the
+ elsarticle documentation: 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://www.ctan.org/get/macros/latex/contrib/elsarticle/elsdoc.pdf
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout BeginFrontmatter
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+Keep this empty!
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Title
+DIGITAL ROCK CHARACTERIZATION USING ARTIFICIAL INTELLIGENCE - APPLICATION
+ TO IMAGE SEGMENTATION
+\end_layout
+
+\begin_layout Author
+J.
+\begin_inset space ~
+\end_inset
+
+M.
+\begin_inset space ~
+\end_inset
+
+C.
+\begin_inset space ~
+\end_inset
+
+Carvalho
+\begin_inset Flex Authormark
+status collapsed
+
+\begin_layout Plain Layout
+fn1
+\end_layout
+
+\end_inset
+
+
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+lenep
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Email
+joao.carvalho@lenep.uenf.br
+\end_layout
+
+\begin_layout Author
+A.
+\begin_inset space ~
+\end_inset
+
+D.
+\begin_inset space ~
+\end_inset
+
+Bueno
+\begin_inset Flex Authormark
+status open
+
+\begin_layout Plain Layout
+fn2
+\end_layout
+
+\end_inset
+
+
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+lenep
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Email
+bueno@lenep.uenf.br
+\end_layout
+
+\begin_layout Address
+Av.
+ Alberto Lamego, 2000 – Parque Califórnia – Campos dos Goytacazes – RJ -
+ Brazil – CEP: 28013-602
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+lenep
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Abstract
+In the field of digital rock segmentation, the use of neural networks allows
+ the classification or determination of solid and porous phases.
+ The purpose of this work was to show how the use of such methods makes
+ the binarization of images of reservoir rocks in solids and pores practical.
+ For this, the color information of an image, collected through an annotation
+ software developed in C++.
+ The construction and training of neural networks were made with the PyTorch
+ library through python scripts.
+ Each training sequence (loading the dataset, separating it into training
+ and test sets, and then into mini-batches, performing batch training and
+ testing the result in each epoch) lasted about 12 milliseconds.
+ The results were obtained with an error varying between 6% and 80% in compariso
+n with laboratory measurements.
+ It is believed that this occurs due to the points obtained from the regions
+ of interest in the image, so a more careful collection could guarantee
+ better results.
+ 
+\end_layout
+
+\begin_layout Keywords
+Artificial Intelligence 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+sep
+\end_layout
+
+\end_inset
+
+ Digital Rock 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+sep
+\end_layout
+
+\end_inset
+
+ Neural Networks
+\end_layout
+
+\begin_layout EndFrontmatter
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+Keep this empty!
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Introduction
+\end_layout
+
+\begin_layout Standard
+In this work, a study is developed about the application of artificial intellige
+nce algorithms in the processing of images of reservoir rocks.
+ More specifically, it is focused on the process of binarization of them,
+ in order to facilitate the characterization of petrophysical properties.
+\end_layout
+
+\begin_layout Subsection
+Description of the Problem
+\end_layout
+
+\begin_layout Standard
+It is increasingly common to apply artificial intelligence algorithms in
+ the most different areas of research, especially in engineering.
+ The use of intelligent algorithms makes it possible to perform complex
+ classification and prediction tasks in a short time.
+ Methods of such nature had been predicted for decades, but only with the
+ exponential increase in the processing capacity of computers and the decrease
+ in their cost has made then possible.
+\end_layout
+
+\begin_layout Standard
+Recent advances in the field of imaging technology make rock analysis through
+ digital imaging emergent.
+ Microtomographs allow a non-destructive analysis of cores and help to build
+ a more complete understanding of physical processes in porous media.
+\end_layout
+
+\begin_layout Standard
+Conforme mostrado nos trabalhos de 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "andra2013digital,rubo2019digital"
+literal "false"
+
+\end_inset
+
+ a escolha de um algorítimo de segmentação, a escolha dos filtros e principalmen
+te o 
+\emph on
+threshold
+\emph default
+ em imagens em escala de cinza são os pontos chaves para uma boa binarização
+ de uma imagem de uma amostra de rocha reservatório, tanto que uma combinação
+ infeliz desses parâmetros pode trazer ambiguidades para o processo de interpret
+ação.
+\end_layout
+
+\begin_layout Standard
+O trabalho de 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "rego2010desenvolvimento"
+literal "false"
+
+\end_inset
+
+ mostrou que a utilização de redes neurais artificiais podem trazer bons
+ resultados para o processo de binarização de imagens, principalmente quando
+ comparado com métodos tradicionais.
+ Todavia, vale resultar que observou-se ainda uma dificuldade em processar
+ amostras nas quais eram encontradas grãos muito claros ou escuros.
+ Além disse no trabalho foram utilizadas redes neurais tradicionais 
+\emph on
+feedforward
+\emph default
+, algorítimo da retro-propagação, função de custo quadrático e função de
+ ativação
+\emph on
+ sigmoid.
+ 
+\end_layout
+
+\begin_layout Standard
+Com o avanço dos métodos de IA essas escolhas se tornaram obsoleta com o
+ passar dos anos, e trabalhos como os de 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "sudakov2019driving,rubo2019digital,van2016machine,saporetti2018machine"
+literal "false"
+
+\end_inset
+
+ vem apresentando bons resultados sobre o processamento do que pode se chamar
+ de Rocha Digital utilizando, por exemplo, redes neurais convolucionais
+ combinadas com algorítimos de 
+\emph on
+machine learning
+\emph default
+ mais simples.
+\end_layout
+
+\begin_layout Standard
+Esses fatores colaboram portanto para a motivação desse trabalho, que visa
+ utilizar a experiencia obtida em trabalhos anteriores para o avanço do
+ conhecimento da área da pesquisa em Inteligência Artificial aplicada à
+ engenharia de reservatórios de petróleo.
+\end_layout
+
+\begin_layout Section
+Materials and Methods
+\end_layout
+
+\begin_layout Standard
+Para a realização desse trabalho será feita inicialmente um estudo acerca
+ da geologia das rochas reservatórios, as suas propriedades petrofísicas
+ ao se cursar as disciplinas de Petrofísica, Escoamento em Meios Porosos
+ e Fraturados e Introdução a Engenharia do Petróleo.
+ Em seguida serão cursadas disciplinas de Processamento Digital de Imagens
+ e Processamento Paralelo e Concorrente, para dar suporte ao desenvolvimento
+ de técnicas computacionais e para a realização de uma revisão bibliográfica
+ profunda sobre a área.
+\end_layout
+
+\begin_layout Standard
+Em seguida serão desenvolvidos os modelos para serem aplicados nas amostras.
+ O trabalho será focado no desenvolvimento e implementação de uma Rede Neural
+ Artificial Profunda para a binarização das imagens.
+ Todos os códigos desenvolvidos serão testados e incorporados a biblioteca
+ LIB_LDSC em C++.
+ 
+\end_layout
+
+\begin_layout Subsection
+Annotating Regions of Interest Software
+\end_layout
+
+\begin_layout Subsection
+Data Collecting Process
+\end_layout
+
+\begin_layout Subsection
+Neural Network Training and Application Process
+\end_layout
+
+\begin_layout Subsubsection
+Model Description
+\end_layout
+
+\begin_layout Standard
+Na Tabela 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:Neural-Networks-Layers"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ está descrita o modelo de rede neural utilizado para treinamento e binarização
+ das imagens.
+ Todas as camadas internas dessa rede utilizaram 
+\emph on
+ReLU 
+\emph default
+como função de ativação.
+ Para saída da rede neural foi utilizada uma função chamada de 
+\emph on
+log_softmax
+\emph default
+, que de acordo com a documentação da biblioteca, é recomentada para algoritmos
+ classificadores.
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Neural Networks Layers.
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:Neural-Networks-Layers"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="3">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Layer Number
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Number of Neurons
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Activation Funtion
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+relu
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+relu
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+relu
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4 (
+\emph on
+output
+\emph default
+)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+log_softmax
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Model Application
+\end_layout
+
+\begin_layout Standard
+Para aplicar o modelo foi desenvolvida uma função chamada 
+\emph on
+apply_model,
+\emph default
+ semelhante à utilizada no treinamento, que recebe o caminho para o arquivo
+ que guarda o modelo em 
+\emph on
+pickle
+\emph default
+, o caminho para a imagem que será binarizada, o caminho para da imagem
+ binarizada de saída e um 
+\emph on
+flag
+\emph default
+ para indicar se o resultado da imagem binarizada deverá ser salvo ou não.
+\end_layout
+
+\begin_layout Standard
+Assim que a função é iniciada cria-se uma instancia de 
+\emph on
+RockNetModel 
+\emph default
+e o modelo salvo é carregado dentro dela por meio da função 
+\emph on
+local_state_dict 
+\emph default
+e colocado em modo de
+\emph on
+ 
+\emph default
+estimativa com o método 
+\emph on
+eval
+\emph default
+.
+ Por fim a função 
+\emph on
+apply_binarizarion 
+\emph default
+é executada, retornando o resultado da binarização e a duração do processo.
+ Calcula-se então a porosidade da imagem amostra que é salvo em um arquivo
+ de texto junto com tempo de execução.
+ Por sim, se for o caso, a imagem resultante é salva.
+\end_layout
+
+\begin_layout Section
+Results
+\end_layout
+
+\begin_layout Standard
+In this section, the results obtained from the application of artificial
+ intelligence methods over digital rocks samples will be shown along with
+ the segmented images.
+\end_layout
+
+\begin_layout Subsection
+Prososity Values
+\end_layout
+
+\begin_layout Standard
+Apresenta-se nesta secção os resultados obtidos pela aplicação do dos métodos
+ descritos no capítulo anterior.
+ As Tabelas 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:resultados-berea200"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:resultados-Berea500"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:resultados-P148_K"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:resultados_P240_K104"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ e 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:resultados-P262_K441"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ mostram os valores obtidos para porosidade em cada uma das imagens e o
+ tempo decorrido para aplicação do modelo.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\lang brazilian
+Resultados Berea200.
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:resultados-berea200"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="3">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Imagem
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Porosidade (%)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Tempo Decorrido (ms)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+I22.png
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+30,9958
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+14,9012
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+I212.png
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+23,8404
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+9,8712
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+I26.png
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+25,5654
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10,3312
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+I216.png
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+25,5654
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10,2179
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\lang brazilian
+Resultados Berea500.
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:resultados-Berea500"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="8" columns="3">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Imagem
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Porosidade (%)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Tempo Decorrido (ms)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+I310.png
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+23,4274
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+9,9235
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+I311.png
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+22,6009
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+9,9270
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+I312.png
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+34,7165
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+9,3529
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+I318.png
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+24,5332
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+9,9303
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+I320.png
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+14,4561
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+9,9576
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+I31.png
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+22,1816
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+9,7187
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+I32.png
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+21,2809
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+14,5907
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\lang brazilian
+Resultados P148_K2.
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:resultados-P148_K"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="11" columns="3">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Imagem
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Porosidade (%)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Tempo Decorrido (ms)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3271i01.png
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+24,5020
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10,2811
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3271i02.png
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+6,2360
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10,3567
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3271i03.png
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+20,5915
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10,3350
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3271i04.png
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+9,3711
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10,2592
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3271i05.png
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+24,6165
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10,2439
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3271i06.png
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+37,8424
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10,4513
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3271i07.png
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+30,4268
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10,2217
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3271i08.png
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+33,8730
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10,0586
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3271i09.png
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+22,5837
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+14,2813
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3271i10.png
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+27,0260
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10,2632
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\lang brazilian
+Resultados P240_K104.
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:resultados_P240_K104"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="11" columns="3">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Imagem
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Porosidade (%)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Tempo Decorrido (ms)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3251i01.png
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+27,6058
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+22,7351
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3251i02.png
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+34,1064
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10,1926
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+26513251i03.png
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+27,7467
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10,4492
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3251i04.png
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+31,8760
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10,2758
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3251i05.png
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+25,6667
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10,2429
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3251i06.png
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+28,5176
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10,4053
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3251i07.png
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+43,4805
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10,6528
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3251i08.png
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+35,7324
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+14,6284
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3251i09.png
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+27,9440
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10,1662
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3251i10.png
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+33,3971
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10,2446
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\lang brazilian
+Resultados P262_K441.
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:resultados-P262_K441"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="11" columns="3">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Imagem
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Porosidade (%)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Tempo Decorrido (ms)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+L67409i1.png
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+20,1338
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+9,2697
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+L67409i2.png
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+19,4385
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+9,1662
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+L67409i3.png
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+16,2819
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+9,1207
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+L67409i4.png
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+16,9977
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8,9459
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+L67409i5.png
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+22,0729
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+14,0753
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+L67409i6.png
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+20,7565
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8,8730
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+L67409i7.png
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7,6257
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+9,2041
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+L67409i8.png
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10,6711
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+9,0673
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+L67409i9.png
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+11,1859
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8,9812
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+L67409i10.png
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+19,6126
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+9,5263
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Output Images
+\end_layout
+
+\begin_layout Section
+Discussion
+\end_layout
+
+\begin_layout Standard
+Durante a execução do modelo é possível observar que o tempo para execução
+ do modelo ficou entre 9 e 22 milissegundos, para todas as imagens.
+\end_layout
+
+\begin_layout Standard
+Para as imagens da categoria 
+\emph on
+Berea200 
+\emph default
+foi constado uma porosidade média igual a 
+\begin_inset Formula $26,4918\,\%$
+\end_inset
+
+ e um desvio padrão de 
+\begin_inset Formula $3,1108\,\%$
+\end_inset
+
+.
+ É possível observar que os valores de porosidade é mais bem comportado
+ nessa categoria do que nas outras, sendo as imagens 
+\emph on
+I26 
+\emph default
+e
+\emph on
+ I216 
+\emph default
+com os valores mais próximos da média
+\emph on
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Já para as imagens da categoria 
+\emph on
+Berea500 
+\emph default
+foi constado uma porosidade média igual a 
+\begin_inset Formula $23,3138\,\%$
+\end_inset
+
+ e um desvio padrão de 
+\begin_inset Formula $5,9986\,\%$
+\end_inset
+
+.
+ Mesmo com a similaridade em relação à categoria 
+\emph on
+Berea200
+\emph default
+, os resultados são menos comportados com, a imagem 
+\emph on
+I310
+\emph default
+ com valor mais próximo da média.
+ As imagens 
+\emph on
+I312 
+\emph default
+e 
+\emph on
+I320
+\emph default
+ apresentaram os resultados mais distantes da média.
+\end_layout
+
+\begin_layout Standard
+Imagens da categoria 
+\emph on
+P148_K2 
+\emph default
+observou-se uma porosidade média igual a 
+\begin_inset Formula $23,7069\,\%$
+\end_inset
+
+ e um desvio padrão de 
+\begin_inset Formula $9,9023\,\%$
+\end_inset
+
+.
+ Em relação a porosidade medida em laboratório, essa foi a categoria que
+ apresentou os piores resultados, com o menor erro igual a 
+\begin_inset Formula $36,6818\%$
+\end_inset
+
+, para 
+\emph on
+3271i04
+\emph default
+, e maior igual 
+\begin_inset Formula $155,6922\%$
+\end_inset
+
+, para 
+\emph on
+3271i06
+\emph default
+.
+ Em relação à média da porosidade, observou-se um erro de 
+\begin_inset Formula $37,5709\%$
+\end_inset
+
+.
+ É provável que devido a natureza da imagem, com poros pequenos, a coleta
+ tenha sido prejudicada.
+ Novas análises seriam necessárias para obtenção de resultados mais próximos
+ da realidade.
+ Outro indicativo para esse problema é o fato das imagens 
+\emph on
+3271i03 e 3271i04
+\emph default
+, desta mesma categoria
+\emph on
+,
+\emph default
+ apresentaram um valor de porosidade muito baixo em relação ao resto das
+ amostras.
+ 
+\end_layout
+
+\begin_layout Standard
+O mesmo já não ocorre com imagens da categoria 
+\emph on
+P240_K104
+\emph default
+, já que é possível observar que os grãos são um pouco menores, tornando
+ mais fácil a coleta de dados para as regiões porosas.
+ Todavia, a imagem 
+\emph on
+3251i07
+\emph default
+ possui um valor de porosidade muito mais alto que as outras amostras.
+ Em relação ao valor de porosidade esperada da amostra, a imagem 
+\emph on
+3251i05 
+\emph default
+apresentou o melhor resultado, com um valor de 
+\begin_inset Formula $6,9444\%.$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Ainda em relação às imagens da categoria 
+\emph on
+P240_K104
+\emph default
+, que possui características de formados grãos semelhante, a porosidade
+ média foi igual a 
+\begin_inset Formula $31,6073\,\%$
+\end_inset
+
+ com um desvio padrão de 
+\begin_inset Formula $5,3404\,\%$
+\end_inset
+
+.
+ Sobre o erro em relação valor de porosidade medido em laboratório a imagem
+ 
+\emph on
+3251i05 
+\emph default
+teve o melhor resultado, com um valor de 
+\begin_inset Formula $6,9444\%$
+\end_inset
+
+, e a imagem 
+\emph on
+3251i07 
+\emph default
+teve o pior resultado, com um erro igual a 
+\begin_inset Formula $81,1686\%$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Por fim as imagens da categoria 
+\emph on
+P262_K441 
+\emph default
+a porosidade média foi igual a 
+\begin_inset Formula $16,4796\,\%$
+\end_inset
+
+ e o desvio padrão de 
+\begin_inset Formula $4,9635\,\%$
+\end_inset
+
+.
+ Observou-se um comportamento semelhante a categoria 
+\emph on
+P148_K2
+\emph default
+, onde a imagem 
+\emph on
+L67409i7 
+\emph default
+apresenta um valor muito mais baixo em relação às outras amostras, o que
+ contribuiu para deixar a média mais baixa em relação ao valor de porosidade
+ observada em laboratório, resultado em um erro igual à 
+\begin_inset Formula $37,1006%\%
+$
+\end_inset
+
+.
+ Na imagem 
+\emph on
+L67409i5
+\emph default
+ foi possível observar o menor erro em relação à a porosidade real da amostra,
+ igual à 
+\begin_inset Formula $15,7522\%$
+\end_inset
+
+, e na imagem 
+\emph on
+L67409i7
+\emph default
+, o maior, igual a 
+\begin_inset Formula $70,8945\%$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Sobre os dados coletados por diferentes tipos de voluntários, pode-se se
+ concluir que existe um impacto nos valores de porosidade obtidos de acordo
+ com o 
+\emph on
+background 
+\emph default
+de cada um deles.
+ Observa-se que os valores obtidos pelo voluntário 4 foram os que mais se
+ afastaram dos valores de porosidade real de cada uma das imagens.
+ É provável que isso tenha ocorrido devido a baixa quantidade de dados coletados
+ durante sua iteração.
+ Isso também reforça que a quantidade de dados é crucial para que sejam
+ obtidos bons resultados com algorítimos de inteligência artificial.
+ 
+\end_layout
+
+\begin_layout Standard
+Os voluntários 1, 2 e 3 coletaram valores semelhantes e por isso obtiveram
+ resultados tão próximos.
+ Isso mostra que a experiência que o usuário possui ao treinar uma algoritmo
+ de inteligência artificial é muito importante para que bons resultados
+ sejam alcançados.
+\end_layout
+
+\begin_layout Section
+Conclusion
+\end_layout
+
+\begin_layout Standard
+Conforme já explicado anteriormente, o uso de algoritmos de inteligência
+ artificial é cada vez mais comum nas mais diferentes áreas de pesquisa,
+ especialmente no campo da engenharia.
+ O uso de tal tecnologia torna a execução de tarefas complexas, como o modelo
+ de classificação e de predição, em um curto espaço de tempo possível.
+\end_layout
+
+\begin_layout Standard
+Mais especificamente no âmbito da engenharia de reservatórios, o uso de
+ redes neurais e visão computacional permitem que sejam realizadas análises
+ para descrever características petrofísicas de uma amostra sem precisar
+ danificá-la.
+ Neste trabalho foi mostrado como valores de porosidade absoluta podem ser
+ obtidas poder meio de modelos inteligentes que permitem a segmentação de
+ imagens em regiões de poros e de matriz sólida, em um tempo relativamente
+ mais curto e com precisão semelhante a analises físicas.
+ Além disso o desenvolvimento desses modelos se deu utilizando tecnologias
+ de código aberto, o que torna mais fácil a reprodução dos resultados aqui
+ descritos.
+ 
+\end_layout
+
+\begin_layout Standard
+Este trabalho teve como objetivo geral desenvolver métodos de inteligência
+ artificial capazes de reconhecer padrões relevantes para a análise das
+ propriedades petrofísicas em imagens de rochas reservatórios.
+ Procurou-se estudar diferentes métodos de aprendizagem de maquina e aprendizage
+m profundas aplicadas à análise de imagens, e desenvolver aplicações que
+ pudessem tornar possível aplicação desses modelos em exemplos do mundo
+ real.
+ Dentre essas aplicações estariam scripts em 
+\emph on
+python
+\emph default
+ para utilização das técnicas de inteligência artificial e uma ferramenta
+ para anotação de regiões de interesse em amostras de rocha digital.
+ 
+\end_layout
+
+\begin_layout Standard
+A obtenção dos resultados para que os objetivos descritos anteriormente
+ fossem alcançados se deu na forma de um procedimento descrito na Figura
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:procedimento-de-coleta-resultados"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, onde as informações de cor dos pixeis das regiões de interesse eram coletados
+ e salvos em um arquivo no formato 
+\emph on
+.dat
+\emph default
+.
+ Esse arquivo é utilizado como 
+\emph on
+inputs
+\emph default
+ de uma rede neural desenvolvida utilizando a biblioteca de 
+\emph on
+Machine Learning PyTorch
+\emph default
+.
+ A saída do 
+\emph on
+script 
+\emph default
+de treinamento é um outro arquivo no formato 
+\emph on
+.pt
+\emph default
+, que contém os valores dos 
+\emph on
+biases
+\emph default
+ e pesos da rede neural treinada.
+ Esse modelo salvo é então aplicado sobre a imagem a ser binarizada.
+ Por fim, é calculado o valor de porosidade para a nova imagem gerada no
+ processo.
+ Todo esse procedimento foi repetido para imagens contidas acervo digital
+ do Prof.
+ DSc.
+ André Duarte Bueno.
+\end_layout
+
+\begin_layout Standard
+Para esse trabalho foi desenvolvido um único modelo de rede neural do tipo
+ 
+\emph on
+feedforward, 
+\emph default
+com 3 camadas profundas, cada uma com 4 neurônios, conforme mostrado na
+ Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Representação-da-rede"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Como função de ativação foi utilizada função 
+\emph on
+ReLU
+\emph default
+ mostrada na Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:funcao-relu"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Para a ultima camada foi aplicada a função 
+\emph on
+softmax
+\emph default
+ seguida da aplicação do logaritmo natural do valor obtido.
+ Como otimizador foi escolhido o algoritmo 
+\emph on
+Adam 
+\emph default
+e, por fim, a função de perda 
+\emph on
+NLL Loss
+\emph default
+, ou, 
+\emph on
+Negative Log-Likelihood Loss
+\emph default
+.
+\end_layout
+
+\begin_layout Standard
+Como resultado, a duração, tanto do treinamento, quanto a aplicação do modelo
+ duraram na ordem dos milissegundos, o que mostra a capacidade desses algoritmos
+ entregar resultdos de forma rápida.
+\end_layout
+
+\begin_layout Standard
+Este trabalho mostra como tecnologias como 
+\emph on
+machine learning
+\emph default
+ podem ser muito uteis na obtenção de valores de porosidade em amostras
+ de rochas reservatórios.
+ Além disso, o uso de ferramentas de anotação podem ajudar a tornar o processo
+ de coleta de dados menos tedioso e maçante.
+ É importante reforçar que a qualidade dos resultados obtidos está relacionado
+ diretamente à experiência profissional do usuário e seu 
+\emph on
+background
+\emph default
+ em no que se diz respeito à engenharia e geologia do petróleo, como foi
+ salientado no Capítulo 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Analise-Resultados"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+btprint "btPrintCited"
+bibfiles "bibliografia"
+options "bibtotoc,elsarticle-harv"
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
