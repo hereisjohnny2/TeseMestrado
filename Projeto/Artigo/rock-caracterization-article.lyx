@@ -355,7 +355,7 @@ literal "false"
 \end_inset
 
  the choice of a segmentation algorithm, filters and especially the threshold
- in grayscale images are the key points for a good binarization of a reservoir
+ in gray-scale images are the key points for a good binarization of a reservoir
  rock image sample, so much that an unfortunate combination of these parameters
  can bring ambiguities for the interpretation process.
 \end_layout
@@ -373,8 +373,8 @@ literal "false"
  methods.
  However, it is worth noting that there was still a difficulty in processing
  samples in which very light or dark grains were found.
- In addition, the work used traditional feedforward neural networks, backpropaga
-tion algorithm, quadratic cost function and sigmoid activation function.
+ In addition, the work used traditional feed-forward neural networks, backpropag
+ation algorithm, quadratic cost function and sigmoid activation function.
 \end_layout
 
 \begin_layout Standard
@@ -400,7 +400,7 @@ These factors therefore contribute to the motivation of this work, which
 \end_layout
 
 \begin_layout Subsection
-Artiticial Neural Networks
+Artificial Neural Networks
 \end_layout
 
 \begin_layout Standard
@@ -498,7 +498,7 @@ noprefix "false"
 \end_inset
 
 .
- This activation function that is responsible for introducing nonlinearity
+ This activation function that is responsible for introducing non-linearity
  to the neuron model, and can appear in the form of a hyperbolic tangent,
  sigmoid function, 
 \emph on
@@ -571,7 +571,17 @@ u & u\geq0\\
 The softmax function is similar to a sigmoid function and is widely used
  for classifying problems with more than two classes.
  It converts the values of the output layers into a probability function.
- Equation [eq:softmax-function] shows its structure, where 
+ Equation 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:softmax-func"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ shows its structure, where 
 \begin_inset Formula $\vec{u}$
 \end_inset
 
@@ -599,7 +609,7 @@ The softmax function is similar to a sigmoid function and is widely used
 \end_layout
 
 \begin_layout Subsection
-Feedforward Neural Networks
+Feed-forward Neural Networks
 \end_layout
 
 \begin_layout Standard
@@ -610,7 +620,7 @@ literal "false"
 
 \end_inset
 
- defines feedforward neural networks as structures divided in layers that
+ defines feed-forward neural networks as structures divided in layers that
  are always fed with data in one direction.
  Any layer between these two is called deep or hidden layers.
  
@@ -717,7 +727,7 @@ y^{l}=\eta\left(w^{l}y^{l-1}+\theta^{l}\right)\label{eq:vetorized-form}
 \end_layout
 
 \begin_layout Standard
-Acording with 
+According with 
 \begin_inset CommandInset citation
 LatexCommand citet
 key "goodfellow2016deep"
@@ -962,7 +972,7 @@ status collapsed
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename process.png
+	filename images/process.png
 	lyxscale 50
 	width 100text%
 
@@ -1032,12 +1042,12 @@ noprefix "false"
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename tool-gui.png
+	filename images/tool-gui.png
 	lyxscale 50
 	width 100text%
 
@@ -1093,7 +1103,7 @@ The images used for data collection were classified into 5 different categories,
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -1128,7 +1138,7 @@ name "tab:images-categories"
 \begin_inset Text
 
 \begin_layout Plain Layout
-Categoria
+Category
 \end_layout
 
 \end_inset
@@ -1137,7 +1147,7 @@ Categoria
 \begin_inset Text
 
 \begin_layout Plain Layout
-Porosidade (%)
+Porosity (%)
 \end_layout
 
 \end_inset
@@ -1146,7 +1156,7 @@ Porosidade (%)
 \begin_inset Text
 
 \begin_layout Plain Layout
-Permeabilidade (
+Permeability (
 \begin_inset Formula $mD$
 \end_inset
 
@@ -1378,7 +1388,7 @@ noprefix "false"
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -1391,7 +1401,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename ../../imagens/imagensCriadas/exemplo-i26.png
+	filename images/exemplo-i26.png
 	lyxscale 50
 	width 32text%
 
@@ -1431,7 +1441,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename ../../imagens/imagensCriadas/exemplo-berea500.png
+	filename images/exemplo-berea500.png
 	lyxscale 50
 	width 32text%
 
@@ -1471,7 +1481,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename ../../imagens/imagensCriadas/exemplo-p140.png
+	filename images/exemplo-p140.png
 	lyxscale 50
 	width 32text%
 
@@ -1515,7 +1525,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename ../../imagens/imagensCriadas/exemplo-p240.png
+	filename images/exemplo-p240.png
 	lyxscale 50
 	width 32text%
 
@@ -1555,7 +1565,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename ../../imagens/imagensCriadas/exemplo-p262.png
+	filename images/exemplo-p262.png
 	lyxscale 50
 	width 32text%
 
@@ -1645,7 +1655,7 @@ s.
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -1698,7 +1708,7 @@ Number of Neurons
 \begin_inset Text
 
 \begin_layout Plain Layout
-Activation Funtion
+Activation Function
 \end_layout
 
 \end_inset
@@ -1871,8 +1881,8 @@ To apply the model, the CLI receives the path to the file that stores the
 \begin_layout Standard
 Once the function is started, an instance of the neural network is created
  and the saved model is loaded into it.
- Then, the image is transformated into a PyTorch tensor and used to feed
- the AI model.
+ Then, the image is transformed into a PyTorch tensor and used to feed the
+ AI model.
  The result of this event is the binararized image and the time elapesed.
  The porosity of the sample image is then calculated and saved in a text
  file.
@@ -1889,7 +1899,7 @@ In this section, the results obtained from the application of artificial
 \end_layout
 
 \begin_layout Subsection
-Prososity Values
+Porosity Values
 \end_layout
 
 \begin_layout Standard
@@ -1914,7 +1924,7 @@ noprefix "false"
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -2135,11 +2145,66 @@ Output Images
 \end_layout
 
 \begin_layout Standard
+The Figs.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:exemple-berea200-1"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:exemple-berea500-1"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:exemple-P148_K2-1"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:exemple-P240_K104-1"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:exemple-P262_K441-1"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ shows the output images from the binarization process.
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float figure
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -2152,7 +2217,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename /home/joao/Documentos/TeseMestrado/resultados/imagens/Berea200/I216-bin.png
+	filename images/I26-bin.png
 	lyxscale 50
 	width 32text%
 
@@ -2192,7 +2257,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename /home/joao/Documentos/TeseMestrado/resultados/imagens/Berea500/I320-bin.png
+	filename images/I320-bin.png
 	lyxscale 50
 	width 32text%
 
@@ -2232,7 +2297,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename /home/joao/Documentos/TeseMestrado/resultados/imagens/P148_K2/3271i01-bin.png
+	filename images/3271i01-bin.png
 	lyxscale 50
 	width 32text%
 
@@ -2276,7 +2341,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename /home/joao/Documentos/TeseMestrado/resultados/imagens/P240_K104/3251i01-bin.png
+	filename images/3251i01-bin.png
 	lyxscale 50
 	width 32text%
 
@@ -2316,7 +2381,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename /home/joao/Documentos/TeseMestrado/resultados/imagens/P262_K441/L67409i1-bin.png
+	filename images/L67409i1-bin.png
 	lyxscale 50
 	width 32text%
 
@@ -2353,11 +2418,11 @@ name "fig:exemple-P262_K441-1"
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Data Collecting Examples.
+Output images from binarization process.
  
 \begin_inset CommandInset label
 LatexCommand label
-name "fig:examples-1"
+name "fig:outputs"
 
 \end_inset
 
@@ -2379,258 +2444,240 @@ Discussion
 \end_layout
 
 \begin_layout Standard
-Durante a execução do modelo é possível observar que o tempo para execução
- do modelo ficou entre 9 e 22 milissegundos, para todas as imagens.
+As discussed earlier, the use of neural networks to solve problems related
+ to image segmentation proves to be quite useful, especially when it comes
+ to the study of digital rock samples.
+ The results shown above corroborate those already shown in other works,
+ such as 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "rego2010desenvolvimento,sudakov2019driving,lin2016efficient,leu2014fast,kuroda2016tecnicas,ma2017image"
+literal "false"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
-Para as imagens da categoria 
-\emph on
-Berea200 
-\emph default
-foi constado uma porosidade média igual a 
-\begin_inset Formula $26,4918\,\%$
-\end_inset
+What can be highlighted from the porosity values obtained is that there
+ is a margin of error between the values obtained in the laboratory and
+ those calculated by the algorithm.
+ This may be related to the fact that in the laboratory part of the porosity
+ value can be lost depending on the quality of the equipment used, while
+ its electronic counterpart is capable of capturing the minutiae in the
+ pores of smaller radius.
+\end_layout
 
- e um desvio padrão de 
-\begin_inset Formula $3,1108\,\%$
-\end_inset
-
-.
- É possível observar que os valores de porosidade é mais bem comportado
- nessa categoria do que nas outras, sendo as imagens 
-\emph on
-I26 
-\emph default
-e
-\emph on
- I216 
-\emph default
-com os valores mais próximos da média
-\emph on
-.
+\begin_layout Standard
+Another point to be considered is the impact that the quality of the images
+ has on the segmented output.
+ Figs.
  
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:exemple-berea200-1"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:exemple-berea500-1"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:exemple-P262_K441-1"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ have a result with a much lower visual quality compared to 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:exemple-P148_K2-1"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:exemple-P240_K104-1"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ images.
 \end_layout
 
 \begin_layout Standard
-Já para as imagens da categoria 
-\emph on
-Berea500 
-\emph default
-foi constado uma porosidade média igual a 
-\begin_inset Formula $23,3138\,\%$
+Finally, the 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:exemple-P148_K2-1"
+plural "false"
+caps "false"
+noprefix "false"
+
 \end_inset
 
- e um desvio padrão de 
-\begin_inset Formula $5,9986\,\%$
-\end_inset
-
-.
- Mesmo com a similaridade em relação à categoria 
-\emph on
-Berea200
-\emph default
-, os resultados são menos comportados com, a imagem 
-\emph on
-I310
-\emph default
- com valor mais próximo da média.
- As imagens 
-\emph on
-I312 
-\emph default
-e 
-\emph on
-I320
-\emph default
- apresentaram os resultados mais distantes da média.
-\end_layout
-
-\begin_layout Standard
-Imagens da categoria 
-\emph on
-P148_K2 
-\emph default
-observou-se uma porosidade média igual a 
-\begin_inset Formula $23,7069\,\%$
-\end_inset
-
- e um desvio padrão de 
-\begin_inset Formula $9,9023\,\%$
-\end_inset
-
-.
- Em relação a porosidade medida em laboratório, essa foi a categoria que
- apresentou os piores resultados, com o menor erro igual a 
-\begin_inset Formula $36,6818\%$
-\end_inset
-
-, para 
-\emph on
-3271i04
-\emph default
-, e maior igual 
-\begin_inset Formula $155,6922\%$
-\end_inset
-
-, para 
-\emph on
-3271i06
-\emph default
-.
- Em relação à média da porosidade, observou-se um erro de 
-\begin_inset Formula $37,5709\%$
-\end_inset
-
-.
- É provável que devido a natureza da imagem, com poros pequenos, a coleta
- tenha sido prejudicada.
- Novas análises seriam necessárias para obtenção de resultados mais próximos
- da realidade.
- Outro indicativo para esse problema é o fato das imagens 
-\emph on
-3271i03 e 3271i04
-\emph default
-, desta mesma categoria
-\emph on
-,
-\emph default
- apresentaram um valor de porosidade muito baixo em relação ao resto das
- amostras.
+ image has an error in the porosity value that can be justified by some
+ regions that can be confused with oil stains, but which in reality can
+ just be an error in the application of the resin.
+ Figs.
  
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:exemple-region-bin"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:example-image"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ highlights this region.
 \end_layout
 
 \begin_layout Standard
-O mesmo já não ocorre com imagens da categoria 
-\emph on
-P240_K104
-\emph default
-, já que é possível observar que os grãos são um pouco menores, tornando
- mais fácil a coleta de dados para as regiões porosas.
- Todavia, a imagem 
-\emph on
-3251i07
-\emph default
- possui um valor de porosidade muito mais alto que as outras amostras.
- Em relação ao valor de porosidade esperada da amostra, a imagem 
-\emph on
-3251i05 
-\emph default
-apresentou o melhor resultado, com um valor de 
-\begin_inset Formula $6,9444\%.$
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename images/region-bin.jpeg
+	lyxscale 50
+	width 32text%
+
 \end_inset
 
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+P148_K2 Sample Output.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:exemple-region-bin"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename images/region.jpeg
+	lyxscale 50
+	width 32text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+P148_K2 Sample.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:example-image"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Data Collecting Examples.
  
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:region"
+
+\end_inset
+
+
 \end_layout
 
-\begin_layout Standard
-Ainda em relação às imagens da categoria 
-\emph on
-P240_K104
-\emph default
-, que possui características de formados grãos semelhante, a porosidade
- média foi igual a 
-\begin_inset Formula $31,6073\,\%$
 \end_inset
 
- com um desvio padrão de 
-\begin_inset Formula $5,3404\,\%$
-\end_inset
 
-.
- Sobre o erro em relação valor de porosidade medido em laboratório a imagem
- 
-\emph on
-3251i05 
-\emph default
-teve o melhor resultado, com um valor de 
-\begin_inset Formula $6,9444\%$
-\end_inset
-
-, e a imagem 
-\emph on
-3251i07 
-\emph default
-teve o pior resultado, com um erro igual a 
-\begin_inset Formula $81,1686\%$
-\end_inset
-
-.
 \end_layout
 
-\begin_layout Standard
-Por fim as imagens da categoria 
-\emph on
-P262_K441 
-\emph default
-a porosidade média foi igual a 
-\begin_inset Formula $16,4796\,\%$
 \end_inset
 
- e o desvio padrão de 
-\begin_inset Formula $4,9635\,\%$
-\end_inset
 
-.
- Observou-se um comportamento semelhante a categoria 
-\emph on
-P148_K2
-\emph default
-, onde a imagem 
-\emph on
-L67409i7 
-\emph default
-apresenta um valor muito mais baixo em relação às outras amostras, o que
- contribuiu para deixar a média mais baixa em relação ao valor de porosidade
- observada em laboratório, resultado em um erro igual à 
-\begin_inset Formula $37,1006%\%
-$
-\end_inset
-
-.
- Na imagem 
-\emph on
-L67409i5
-\emph default
- foi possível observar o menor erro em relação à a porosidade real da amostra,
- igual à 
-\begin_inset Formula $15,7522\%$
-\end_inset
-
-, e na imagem 
-\emph on
-L67409i7
-\emph default
-, o maior, igual a 
-\begin_inset Formula $70,8945\%$
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
-Sobre os dados coletados por diferentes tipos de voluntários, pode-se se
- concluir que existe um impacto nos valores de porosidade obtidos de acordo
- com o 
-\emph on
-background 
-\emph default
-de cada um deles.
- Observa-se que os valores obtidos pelo voluntário 4 foram os que mais se
- afastaram dos valores de porosidade real de cada uma das imagens.
- É provável que isso tenha ocorrido devido a baixa quantidade de dados coletados
- durante sua iteração.
- Isso também reforça que a quantidade de dados é crucial para que sejam
- obtidos bons resultados com algorítimos de inteligência artificial.
- 
-\end_layout
-
-\begin_layout Standard
-Os voluntários 1, 2 e 3 coletaram valores semelhantes e por isso obtiveram
- resultados tão próximos.
- Isso mostra que a experiência que o usuário possui ao treinar uma algoritmo
- de inteligência artificial é muito importante para que bons resultados
- sejam alcançados.
 \end_layout
 
 \begin_layout Section
@@ -2698,7 +2745,7 @@ noprefix "false"
 \end_layout
 
 \begin_layout Standard
-For this work, a single feedforward neural network model was developed,
+For this work, a single feed-forward neural network model was developed,
  with 3 deep layers, each with 4 neurons, as shown in Table 
 \begin_inset CommandInset ref
 LatexCommand ref
