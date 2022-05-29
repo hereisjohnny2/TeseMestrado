@@ -101,7 +101,7 @@
 \papercolumns 1
 \papersides 1
 \paperpagestyle fancy
-\tracking_changes false
+\tracking_changes true
 \output_changes false
 \html_math_output 0
 \html_css_as_file 0
@@ -200,20 +200,43 @@ Este trabalho objetiva, através da análise de imagens de rochas reservatório
 \end_layout
 
 \begin_layout Standard
-Atualmente é cada vez mais comum a aplicação de algorítimos de inteligência
- artificial nas mais diferentes áreas de pesquisa, uma vez que estes tornam
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+O modo "Documento->Controle Alterações"->"Controlar alterações"
+\end_layout
+
+\begin_layout Plain Layout
+permite que eu faça correções no documento.
+\end_layout
+
+\begin_layout Plain Layout
+Você vai ver a esquerda uma barra e os textos corrigidos, apagados, inseridos,
+ aparecem com formatação especial.
+\end_layout
+
+\begin_layout Plain Layout
+Você pode usar a barra de tarefas de correções para aceitar ou rejeitar
+ uma alteração; ou para todo capítulo.
+\end_layout
+
+\end_inset
+
+Atualmente é cada vez mais comum a aplicação de algorítmos de inteligência
+ artificial nas mais diferentes áreas tecnológicas, uma vez que estes tornam
  factível a execução de tarefas complexas de classificação e predição em
- um curto espaço de tempo.
+ um curto espaço de tempo considerando um treinamento prévio feito com humanos.
  No âmbito da segmentação de rochas digitais o uso de redes neurais permite
- treinar algorítimos para classificação de minerais ou a quantificação entre
+ treinar algorítmos para classificação de minerais ou a quantificação entre
  a permeabilidade e caminhos ótimos entre os poros.
  A proposta deste trabalho foi mostrar como o uso de tais métodos torna
- pratico a binarização de imagens de rochas reservatórios em sólidos e poros.
+ prática a binarização de imagens de rochas reservatórios em sólidos e poros.
  Para isso as informações de cor de uma imagem (valores de vermelho, verde
  e azul), coletadas por meio de um software de anotação desenvolvido em
  C++ e QT, foram usadas para treinar redes neurais de diferentes topologias,
- mudando o números de neurônios em cada cada e as funções de ativação na
- saída de cada um desses neurônios.
+ mudando o números de neurônios em cada camada e as funções de ativação
+ na saída de cada um desses neurônios.
  Para a construção das redes neurais e execução do treinamento foi utilizada
  a biblioteca PyTorch, desenvolvida pelo Facebook em scripts desenvolvidos
  em Python.
@@ -221,7 +244,13 @@ Atualmente é cada vez mais comum a aplicação de algorítimos de inteligência
  do modelo nas imagens de mostrou lenta, durando entre 30 à 90 segundos
  dependendo do tamanho da imagem a ser binarizada.
  O uso de algorítimos de paralelismo poderiam reduzir esse tempo.
- 
+ O software desenvolvido foi utilizado por três grupos diferentes de usuários.
+ Grupo 1 - estudantes que acabaram de entrar na universidade, Grupo 2 -
+ estudantes de final de curso de engenharia de petróleo e Grupo 3 - geólogos
+ com experiência em segmentação de imagens.
+ Os resultados obtidos foram analisados e feita comparação dos resultados
+ de cada grupo, de forma a identificar também a importância do conhecimento
+ das rochas.
 \end_layout
 
 \begin_layout Standard

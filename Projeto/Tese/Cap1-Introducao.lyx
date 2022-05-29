@@ -101,7 +101,7 @@
 \papercolumns 1
 \papersides 1
 \paperpagestyle fancy
-\tracking_changes false
+\tracking_changes true
 \output_changes false
 \html_math_output 0
 \html_css_as_file 0
@@ -156,7 +156,7 @@ pagenumbering{arabic}
 \end_layout
 
 \begin_layout Standard
-No presente trabalho desenvolve-se um estudo acerca da aplicação de algorítimos
+No presente trabalho desenvolve-se um estudo acerca da aplicação de algorítmos
  de inteligência artificial no processamento de imagens de rochas reservatório.
  Mais especificamente, ele é focado no processo de binarização das mesmas,
  de forma a facilitar a caracterização de propriedades petrofísicas.
@@ -191,35 +191,39 @@ name "sec:Escopo-do-Problema"
 
 \begin_layout Standard
 É cada vez mais comum a aplicação de algoritmos de inteligência artificial
- nas mais diferentes áreas de pesquisa, principalmente na engenharia.
+ nas mais diferentes áreas tecnológica, principalmente na engenharia.
  O uso de algoritmos inteligentes torna factível a execução, em um curto
- espaço de tempo, de tarefas complexas de classificação e predição.
+ espaço de tempo, de tarefas complexas de classificação e predição, considerando
+ um treinamento prévio realizado por humanos.
  Métodos dessa natureza já haviam sido previstos há décadas, mas somente
  com o aumento exponencial da capacidade de processamento dos computadores
  e a diminuição de seu custo isso tem se tornado possível.
 \end_layout
 
 \begin_layout Standard
-O uso dessas metodologias se torna muito pertinente na engenharia de reservatóri
-os, uma vez que a capacidade de prever e delimitar sua capacidade produtiva
- é essencial no âmbito econômico.
+O uso dessas metodologias se torna muito pertinente na geologia, na petrofísica,
+ e em espeial na engenharia de reservatórios, uma vez que a capacidade de
+ prever e delimitar a capacidade produtiva do reservatório é essencial no
+ âmbito econômico.
  Ter conhecimento das propriedades físicas das rochas, como porosidade e
- permeabilidade, ajudam nesse processo já que são capazes de trazer importantes
- informações acerca das heterogeneidades que formam tais estruturas.
+ permeabilidade, ajudam nesse processo, já que são parâmetros essenciais
+ na simulação e predição da capacidade produtiva dos reservatórios, além
+ de trazer informações importantes acerca das heterogênidades que formam
+ tais estruturas.
  Métodos como análise petrofísica de testemunhos são extremamente úteis
  nesses aspecto, muitas vezes demandam um custo muito alto para serem realizadas
  devido aos equipamentos utilizados no processo, como porosímetro e permeâmetro,
  mas principalmente devido o custo para obter as amostras.
- Além disso essas análises são destrutivas, logo, o objeto de estudo é perdido
- depois que o estudo é concluído.
+ Além disso alguns desses ensaios são destrutivos, logo, o objeto de estudo
+ é perdido depois que o estudo é concluído.
 \end_layout
 
 \begin_layout Standard
 Os recentes avanços no campo da tecnologia de imageamento torna emergente
  a análise de rochas por meio de imagens digitais.
- Microtomógrafos permitem uma análise não destrutiva dos testemunhos e ajudam
- a construir um entendimento mais completo acerca dos processos físicos
- em meios porosos.
+ Microtomógrafos e nanotomógrafos permitem uma análise não destrutiva dos
+ testemunhos e ajudam a construir um entendimento mais completo acerca dos
+ processos físicos em meios porosos.
  A Figura 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -232,6 +236,16 @@ noprefix "false"
 
  ilustra de forma simples o procedimento utilizado na análise de imagens
  de rochas bidimensionais.
+ Equipamentos como o acelerador de partículas Sírius (
+\begin_inset CommandInset href
+LatexCommand href
+target "https://www.lnls.cnpem.br/sirius/"
+literal "false"
+
+\end_inset
+
+) permitem obter muitas imagens com ótima resolução num curto espaço de
+ tempo.
 \end_layout
 
 \begin_layout Standard
@@ -246,8 +260,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename ../../imagens/0-sequencia-processos-conhecimentos-base.png
-	lyxscale 50
-	width 100text%
+	scale 40
 
 \end_inset
 
@@ -272,7 +285,7 @@ name "fig:Conhecimentos-de-Base"
 [Fonte: 
 \begin_inset CommandInset citation
 LatexCommand cite
-key "rego2010desenvolvimento"
+key "rego2010desenvolvimento,adb-analise-imagem"
 literal "false"
 
 \end_inset
@@ -326,16 +339,6 @@ Logo depois, na segmentação, o objetivo é, na maioria dos casos, separar
 \emph on
 thresholding
 \emph default
-
-\begin_inset Note Note
-status collapsed
-
-\begin_layout Plain Layout
-termos em inglês sempre em itálico
-\end_layout
-
-\end_inset
-
 .
  Contudo em estruturas com geometrias mais complexas esses métodos em geral
  não trazem bons resultados sozinhos e acabam dependendo de etapas adicionais
@@ -356,13 +359,36 @@ cite{iassonov2009segmentation}
 \end_layout
 
 \begin_layout Standard
+São vários os fatores que podem afetar a qualidade da etapa de segmentação,
+ entre eles:
+\end_layout
+
+\begin_layout Enumerate
+A qualidade das amostras (se foram corretamente coletadas, se são em quantidade
+ para termos uma boa estatística).
+\end_layout
+
+\begin_layout Enumerate
+A qualidade do processo de impregnação, polimento e preparação das lâminas.
+\end_layout
+
+\begin_layout Enumerate
+A qualidade das imagens obtidas (em 2D ou 3D).
+\end_layout
+
+\begin_layout Enumerate
+A qualidade do usuário que realiza a etapa de segmentação usando rochas
+ digitais.
+\end_layout
+
+\begin_layout Standard
 O procedimento de caracterização corresponde à obtenção de informações sobre
  as propriedades da rochas por meio da aplicação de função de autocorrelação,
  medição do tamanho dos poros e a distribuição dos mesmos.
 \end_layout
 
 \begin_layout Standard
-São nessas três ultimas etapas que a aplicação de inteligência artificial
+São nessas três últimas etapas que a aplicação de inteligência artificial
  pode ser extremamente proveitosa.
  Com o uso de redes neurais, por exemplo, é possível treinar um algorítmo
  capaz de reconhecer padrões nas imagens de rochas e assim facilitar o processo
@@ -379,8 +405,8 @@ cite{rego2010desenvolvimento}
 
 \end_inset
 
-ou realizar uma quantificação entre a permeabilidade e caminhos ótimos entre
- os poros 
+ ou realizar uma quantificação entre a permeabilidade e caminhos ótimos
+ entre os poros 
 \begin_inset ERT
 status open
 
@@ -497,9 +523,9 @@ Objetivo geral:
 
 \begin_deeper
 \begin_layout Itemize
-Desenvolver métodos de inteligência artificial capazes de reconhecer padrões
- relevantes para a análise das propriedades petrofísicas em imagens de rochas
- reservatórios.
+Desenvolver e aplicar um modelo de rede neural capaz de segementar uma amostra
+ de rocha digital e estudar o efeito do treinamento/conhecimento do usuário
+ na obtenção de resultados.
 \end_layout
 
 \end_deeper
@@ -536,19 +562,16 @@ Desenvolvimento de scripts em Python para a realização do treinamento das
 \end_layout
 
 \begin_layout Itemize
-Comparar os resultados obtidos para pessoas com diferentes 
-\emph on
-backgrounds
-\emph default
- em engenharia e geologia do petróleo.
-\end_layout
-
-\begin_layout Itemize
 Utilização da biblioteca 
 \emph on
 PyTorch
 \emph default
  para a criação dos modelos de inteligência artificial.
+\end_layout
+
+\begin_layout Itemize
+Uso do softwares desenvolvido por diferentes grupos de usuários para verificar
+ a diferença nos resultados em função do treinamento prévio do usuário.
 \end_layout
 
 \end_deeper
@@ -648,8 +671,10 @@ Resultados
 \begin_inset Quotes erd
 \end_inset
 
-, apresenta-se os resultados obtido a partir da aplicação dos modelos de
+, apresenta-se os resultados obtidos a partir da aplicação dos modelos de
  inteligência artificial sobre a imagens de rocha reservatório.
+ Além de tabelas com os resultados obtidos por diferentes usuários e grupos
+ de usuários.
 \end_layout
 
 \begin_layout Standard

@@ -4,7 +4,7 @@
 \begin_header
 \save_transient_properties true
 \origin unavailable
-\textclass abnt
+\textclass /home2/andreduartebueno/workdir/TeseMestrado/Projeto/Tese/abnt
 \begin_preamble
 \usepackage {graphicx}
 \usepackage {longtable}
@@ -239,7 +239,7 @@ noprefix "false"
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -292,7 +292,7 @@ Porosidade (%)
 \begin_inset Text
 
 \begin_layout Plain Layout
-Tempo Decorrido (ms)
+Tempo Decorrido (s)
 \end_layout
 
 \end_inset
@@ -321,7 +321,7 @@ I22.png
 \begin_inset Text
 
 \begin_layout Plain Layout
-14,9012
+19,993
 \end_layout
 
 \end_inset
@@ -350,7 +350,7 @@ I212.png
 \begin_inset Text
 
 \begin_layout Plain Layout
-9,8712
+20,044
 \end_layout
 
 \end_inset
@@ -379,7 +379,7 @@ I26.png
 \begin_inset Text
 
 \begin_layout Plain Layout
-10,3312
+20,644
 \end_layout
 
 \end_inset
@@ -408,7 +408,7 @@ I216.png
 \begin_inset Text
 
 \begin_layout Plain Layout
-10,2179
+20,761
 \end_layout
 
 \end_inset
@@ -431,7 +431,7 @@ I216.png
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -484,7 +484,7 @@ Porosidade (%)
 \begin_inset Text
 
 \begin_layout Plain Layout
-Tempo Decorrido (ms)
+Tempo Decorrido (s)
 \end_layout
 
 \end_inset
@@ -513,7 +513,7 @@ I310.png
 \begin_inset Text
 
 \begin_layout Plain Layout
-9,9235
+20,361
 \end_layout
 
 \end_inset
@@ -542,7 +542,7 @@ I311.png
 \begin_inset Text
 
 \begin_layout Plain Layout
-9,9270
+20,799
 \end_layout
 
 \end_inset
@@ -571,7 +571,7 @@ I312.png
 \begin_inset Text
 
 \begin_layout Plain Layout
-9,3529
+20,710
 \end_layout
 
 \end_inset
@@ -600,7 +600,7 @@ I318.png
 \begin_inset Text
 
 \begin_layout Plain Layout
-9,9303
+20,419
 \end_layout
 
 \end_inset
@@ -629,7 +629,7 @@ I320.png
 \begin_inset Text
 
 \begin_layout Plain Layout
-9,9576
+20,660
 \end_layout
 
 \end_inset
@@ -658,7 +658,7 @@ I31.png
 \begin_inset Text
 
 \begin_layout Plain Layout
-9,7187
+20,364
 \end_layout
 
 \end_inset
@@ -687,7 +687,7 @@ I32.png
 \begin_inset Text
 
 \begin_layout Plain Layout
-14,5907
+19,897
 \end_layout
 
 \end_inset
@@ -710,7 +710,7 @@ I32.png
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -763,7 +763,7 @@ Porosidade (%)
 \begin_inset Text
 
 \begin_layout Plain Layout
-Tempo Decorrido (ms)
+Tempo Decorrido (s)
 \end_layout
 
 \end_inset
@@ -792,7 +792,7 @@ Tempo Decorrido (ms)
 \begin_inset Text
 
 \begin_layout Plain Layout
-10,2811 
+20,627
 \end_layout
 
 \end_inset
@@ -821,7 +821,7 @@ Tempo Decorrido (ms)
 \begin_inset Text
 
 \begin_layout Plain Layout
-10,3567
+20,389
 \end_layout
 
 \end_inset
@@ -850,7 +850,7 @@ Tempo Decorrido (ms)
 \begin_inset Text
 
 \begin_layout Plain Layout
-10,3350 
+20,687
 \end_layout
 
 \end_inset
@@ -879,7 +879,7 @@ Tempo Decorrido (ms)
 \begin_inset Text
 
 \begin_layout Plain Layout
-10,2592 
+20,823
 \end_layout
 
 \end_inset
@@ -908,7 +908,7 @@ Tempo Decorrido (ms)
 \begin_inset Text
 
 \begin_layout Plain Layout
-10,2439
+20,533
 \end_layout
 
 \end_inset
@@ -937,7 +937,7 @@ Tempo Decorrido (ms)
 \begin_inset Text
 
 \begin_layout Plain Layout
-10,4513
+20,91,31
 \end_layout
 
 \end_inset
@@ -966,7 +966,7 @@ Tempo Decorrido (ms)
 \begin_inset Text
 
 \begin_layout Plain Layout
-10,2217
+20,725
 \end_layout
 
 \end_inset
@@ -995,7 +995,7 @@ Tempo Decorrido (ms)
 \begin_inset Text
 
 \begin_layout Plain Layout
-10,0586
+20,581
 \end_layout
 
 \end_inset
@@ -1024,7 +1024,7 @@ Tempo Decorrido (ms)
 \begin_inset Text
 
 \begin_layout Plain Layout
-14,2813
+19,479
 \end_layout
 
 \end_inset
@@ -1053,7 +1053,7 @@ Tempo Decorrido (ms)
 \begin_inset Text
 
 \begin_layout Plain Layout
-10,2632
+20,704
 \end_layout
 
 \end_inset
@@ -1076,7 +1076,7 @@ Tempo Decorrido (ms)
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -1129,7 +1129,7 @@ Porosidade (%)
 \begin_inset Text
 
 \begin_layout Plain Layout
-Tempo Decorrido (ms)
+Tempo Decorrido (s)
 \end_layout
 
 \end_inset
@@ -1158,7 +1158,7 @@ Tempo Decorrido (ms)
 \begin_inset Text
 
 \begin_layout Plain Layout
-22,7351
+19,108
 \end_layout
 
 \end_inset
@@ -1187,7 +1187,7 @@ Tempo Decorrido (ms)
 \begin_inset Text
 
 \begin_layout Plain Layout
-10,1926
+19,449
 \end_layout
 
 \end_inset
@@ -1216,7 +1216,7 @@ Tempo Decorrido (ms)
 \begin_inset Text
 
 \begin_layout Plain Layout
-10,4492
+19,245
 \end_layout
 
 \end_inset
@@ -1245,7 +1245,7 @@ Tempo Decorrido (ms)
 \begin_inset Text
 
 \begin_layout Plain Layout
-10,2758
+19,038
 \end_layout
 
 \end_inset
@@ -1274,7 +1274,7 @@ Tempo Decorrido (ms)
 \begin_inset Text
 
 \begin_layout Plain Layout
-10,2429
+19,220
 \end_layout
 
 \end_inset
@@ -1303,7 +1303,7 @@ Tempo Decorrido (ms)
 \begin_inset Text
 
 \begin_layout Plain Layout
-10,4053
+19,659
 \end_layout
 
 \end_inset
@@ -1332,7 +1332,7 @@ Tempo Decorrido (ms)
 \begin_inset Text
 
 \begin_layout Plain Layout
-10,6528
+19,250
 \end_layout
 
 \end_inset
@@ -1361,7 +1361,7 @@ Tempo Decorrido (ms)
 \begin_inset Text
 
 \begin_layout Plain Layout
-14,6284
+19,932
 \end_layout
 
 \end_inset
@@ -1390,7 +1390,7 @@ Tempo Decorrido (ms)
 \begin_inset Text
 
 \begin_layout Plain Layout
-10,1662
+13,276
 \end_layout
 
 \end_inset
@@ -1419,7 +1419,7 @@ Tempo Decorrido (ms)
 \begin_inset Text
 
 \begin_layout Plain Layout
-10,2446
+19,239
 \end_layout
 
 \end_inset
@@ -1442,7 +1442,7 @@ Tempo Decorrido (ms)
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -1495,7 +1495,7 @@ Porosidade (%)
 \begin_inset Text
 
 \begin_layout Plain Layout
-Tempo Decorrido (ms)
+Tempo Decorrido (s)
 \end_layout
 
 \end_inset
@@ -1524,7 +1524,7 @@ L67409i1.png
 \begin_inset Text
 
 \begin_layout Plain Layout
-9,2697
+21,444
 \end_layout
 
 \end_inset
@@ -1553,7 +1553,7 @@ L67409i2.png
 \begin_inset Text
 
 \begin_layout Plain Layout
-9,1662
+21,070
 \end_layout
 
 \end_inset
@@ -1582,7 +1582,7 @@ L67409i3.png
 \begin_inset Text
 
 \begin_layout Plain Layout
-9,1207
+21,495
 \end_layout
 
 \end_inset
@@ -1611,7 +1611,7 @@ L67409i4.png
 \begin_inset Text
 
 \begin_layout Plain Layout
-8,9459
+20,347
 \end_layout
 
 \end_inset
@@ -1640,7 +1640,7 @@ L67409i5.png
 \begin_inset Text
 
 \begin_layout Plain Layout
-14,0753
+19,880
 \end_layout
 
 \end_inset
@@ -1669,7 +1669,7 @@ L67409i6.png
 \begin_inset Text
 
 \begin_layout Plain Layout
-8,8730
+21,485
 \end_layout
 
 \end_inset
@@ -1698,7 +1698,7 @@ L67409i7.png
 \begin_inset Text
 
 \begin_layout Plain Layout
-9,2041
+21,097
 \end_layout
 
 \end_inset
@@ -1727,7 +1727,7 @@ L67409i8.png
 \begin_inset Text
 
 \begin_layout Plain Layout
-9,0673
+20,929
 \end_layout
 
 \end_inset
@@ -1756,7 +1756,7 @@ L67409i9.png
 \begin_inset Text
 
 \begin_layout Plain Layout
-8,9812
+21,238
 \end_layout
 
 \end_inset
@@ -1785,433 +1785,7 @@ L67409i10.png
 \begin_inset Text
 
 \begin_layout Plain Layout
-9,5263
-\end_layout
-
-\end_inset
-</cell>
-</row>
-</lyxtabular>
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Os valores de porosidade das imagens dos voluntários é descrito na Tabela
- 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "tab:resultados-voluntarios"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float table
-placement H
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Valores de Porosidade das Análises dos Voluntários.
-\begin_inset CommandInset label
-LatexCommand label
-name "tab:resultados-voluntarios"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\noindent
-\align center
-\begin_inset Tabular
-<lyxtabular version="3" rows="6" columns="5">
-<features tabularvalignment="middle" tabularwidth="100text%">
-<column alignment="center" valignment="top" width="0pt">
-<column alignment="center" valignment="top" width="0pt">
-<column alignment="center" valignment="top" width="0pt">
-<column alignment="center" valignment="top" width="0pt">
-<column alignment="center" valignment="top" width="0pt">
-<row>
-<cell multicolumn="1" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Imagens
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Voluntário 1
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Voluntário 2
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Voluntário 3
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Voluntário 4
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-I212.png
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-30,2003
-\begin_inset space ~
-\end_inset
-
-%
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-31,2881
-\begin_inset space ~
-\end_inset
-
-% 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-28,1389
-\begin_inset space ~
-\end_inset
-
-%
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-21,6879
-\begin_inset space ~
-\end_inset
-
-%
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-I310.png
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-33,2604
-\begin_inset space ~
-\end_inset
-
-% 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-31,9063
-\begin_inset space ~
-\end_inset
-
-% 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-31,6811
-\begin_inset space ~
-\end_inset
-
-% 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-21,4062
-\begin_inset space ~
-\end_inset
-
-%
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-3271i01.png
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-14,0071
-\begin_inset space ~
-\end_inset
-
-%
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-10,6523
-\begin_inset space ~
-\end_inset
-
-% 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-15,9402
-\begin_inset space ~
-\end_inset
-
-% 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-21,6104
-\begin_inset space ~
-\end_inset
-
-%
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-3251i01.png
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-27,7952
-\begin_inset space ~
-\end_inset
-
-%
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-30,1705
-\begin_inset space ~
-\end_inset
-
-%
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-23,0253
-\begin_inset space ~
-\end_inset
-
-% 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-33,7577
-\begin_inset space ~
-\end_inset
-
-%
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-L67409i1.png
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-27,4941
-\begin_inset space ~
-\end_inset
-
-%
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-25,6866
-\begin_inset space ~
-\end_inset
-
-%
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-28,2072
-\begin_inset space ~
-\end_inset
-
-%
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-16,5648
-\begin_inset space ~
-\end_inset
-
-%
+21,238
 \end_layout
 
 \end_inset
@@ -2248,7 +1822,7 @@ Berea200
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -2367,7 +1941,7 @@ name "fig:I22.png"
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -2382,7 +1956,7 @@ status open
 \begin_inset Graphics
 	filename ../../resultados/imagens/Berea200/I212-bin.png
 	lyxscale 20
-	width 49text%
+	scale 25
 
 \end_inset
 
@@ -2422,7 +1996,7 @@ status open
 \begin_inset Graphics
 	filename ../../resultados/imagens/Berea200/I212.png
 	lyxscale 20
-	width 49text%
+	scale 25
 
 \end_inset
 
@@ -2482,7 +2056,7 @@ name "fig:I212.png"
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -2497,7 +2071,7 @@ status open
 \begin_inset Graphics
 	filename ../../resultados/imagens/Berea200/I26-bin.png
 	lyxscale 20
-	width 49text%
+	scale 25
 
 \end_inset
 
@@ -2537,7 +2111,7 @@ status open
 \begin_inset Graphics
 	filename ../../resultados/imagens/Berea200/I26.png
 	lyxscale 20
-	width 49text%
+	scale 25
 
 \end_inset
 
@@ -2597,7 +2171,7 @@ name "fig:I26.png"
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -2612,7 +2186,7 @@ status open
 \begin_inset Graphics
 	filename ../../resultados/imagens/Berea200/I216-bin.png
 	lyxscale 20
-	width 49text%
+	scale 25
 
 \end_inset
 
@@ -2652,7 +2226,7 @@ status open
 \begin_inset Graphics
 	filename ../../resultados/imagens/Berea200/I216.png
 	lyxscale 20
-	width 49text%
+	scale 25
 
 \end_inset
 
@@ -2716,7 +2290,7 @@ Berea500
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -2731,7 +2305,7 @@ status open
 \begin_inset Graphics
 	filename ../../resultados/imagens/Berea500/I31-bin.png
 	lyxscale 20
-	width 49text%
+	scale 25
 
 \end_inset
 
@@ -2771,7 +2345,7 @@ status open
 \begin_inset Graphics
 	filename ../../resultados/imagens/Berea500/I31.png
 	lyxscale 20
-	width 49text%
+	scale 25
 
 \end_inset
 
@@ -2831,7 +2405,7 @@ name "fig:I31.png"
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -2846,7 +2420,7 @@ status open
 \begin_inset Graphics
 	filename ../../resultados/imagens/Berea500/I310-bin.png
 	lyxscale 20
-	width 49text%
+	scale 25
 
 \end_inset
 
@@ -2886,7 +2460,7 @@ status open
 \begin_inset Graphics
 	filename ../../resultados/imagens/Berea500/I310.png
 	lyxscale 20
-	width 49text%
+	scale 25
 
 \end_inset
 
@@ -2946,7 +2520,7 @@ name "fig:I310.png"
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -2961,7 +2535,7 @@ status open
 \begin_inset Graphics
 	filename ../../resultados/imagens/Berea500/I311-bin.png
 	lyxscale 20
-	width 49text%
+	scale 25
 
 \end_inset
 
@@ -3001,7 +2575,7 @@ status open
 \begin_inset Graphics
 	filename ../../resultados/imagens/Berea500/I311.png
 	lyxscale 20
-	width 49text%
+	scale 25
 
 \end_inset
 
@@ -3061,7 +2635,7 @@ name "fig:I311.png"
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -3076,7 +2650,7 @@ status open
 \begin_inset Graphics
 	filename ../../resultados/imagens/Berea500/I312-bin.png
 	lyxscale 20
-	width 49text%
+	scale 25
 
 \end_inset
 
@@ -3116,7 +2690,7 @@ status open
 \begin_inset Graphics
 	filename ../../resultados/imagens/Berea500/I312.png
 	lyxscale 20
-	width 49text%
+	scale 25
 
 \end_inset
 
@@ -3176,7 +2750,7 @@ name "fig:I312.png"
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -3191,7 +2765,7 @@ status open
 \begin_inset Graphics
 	filename ../../resultados/imagens/Berea500/I318-bin.png
 	lyxscale 20
-	width 49text%
+	scale 25
 
 \end_inset
 
@@ -3231,7 +2805,7 @@ status open
 \begin_inset Graphics
 	filename ../../resultados/imagens/Berea500/I318.png
 	lyxscale 20
-	width 49text%
+	scale 25
 
 \end_inset
 
@@ -3291,7 +2865,7 @@ name "fig:I318.png"
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -3306,7 +2880,7 @@ status open
 \begin_inset Graphics
 	filename ../../resultados/imagens/Berea500/I32-bin.png
 	lyxscale 20
-	width 49text%
+	scale 25
 
 \end_inset
 
@@ -3346,7 +2920,7 @@ status open
 \begin_inset Graphics
 	filename ../../resultados/imagens/Berea500/I32.png
 	lyxscale 20
-	width 49text%
+	scale 25
 
 \end_inset
 
@@ -3406,7 +2980,7 @@ name "fig:I32.png"
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -3421,7 +2995,7 @@ status open
 \begin_inset Graphics
 	filename ../../resultados/imagens/Berea500/I320-bin.png
 	lyxscale 20
-	width 49text%
+	scale 25
 
 \end_inset
 
@@ -3461,7 +3035,7 @@ status open
 \begin_inset Graphics
 	filename ../../resultados/imagens/Berea500/I320.png
 	lyxscale 20
-	width 49text%
+	scale 25
 
 \end_inset
 
@@ -3525,7 +3099,7 @@ P148_K2
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -3540,7 +3114,7 @@ status open
 \begin_inset Graphics
 	filename ../../resultados/imagens/P148_K2/3271i01-bin.png
 	lyxscale 20
-	width 49text%
+	scale 25
 
 \end_inset
 
@@ -3580,7 +3154,7 @@ status open
 \begin_inset Graphics
 	filename ../../resultados/imagens/P148_K2/3271i01.png
 	lyxscale 20
-	width 49text%
+	scale 2000
 
 \end_inset
 
@@ -3640,7 +3214,7 @@ name "fig:3271i01.png"
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -3655,7 +3229,7 @@ status open
 \begin_inset Graphics
 	filename ../../resultados/imagens/P148_K2/3271i02-bin.png
 	lyxscale 20
-	width 49text%
+	scale 25
 
 \end_inset
 
@@ -3695,7 +3269,7 @@ status open
 \begin_inset Graphics
 	filename ../../resultados/imagens/P148_K2/3271i02.png
 	lyxscale 20
-	width 49text%
+	scale 2000
 
 \end_inset
 
@@ -3755,7 +3329,7 @@ name "fig:3271i02.png"
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -3770,7 +3344,7 @@ status open
 \begin_inset Graphics
 	filename ../../resultados/imagens/P148_K2/3271i03-bin.png
 	lyxscale 20
-	width 49text%
+	scale 25
 
 \end_inset
 
@@ -3810,7 +3384,7 @@ status open
 \begin_inset Graphics
 	filename ../../resultados/imagens/P148_K2/3271i03.png
 	lyxscale 20
-	width 49text%
+	scale 25
 
 \end_inset
 
@@ -3870,7 +3444,7 @@ name "fig:3271i03.png"
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -3885,7 +3459,7 @@ status open
 \begin_inset Graphics
 	filename ../../resultados/imagens/P148_K2/3271i04-bin.png
 	lyxscale 20
-	width 49text%
+	scale 25
 
 \end_inset
 
@@ -3925,7 +3499,7 @@ status open
 \begin_inset Graphics
 	filename ../../resultados/imagens/P148_K2/3271i04.png
 	lyxscale 20
-	width 49text%
+	scale 25
 
 \end_inset
 
@@ -3985,7 +3559,7 @@ name "fig:3271i04.png"
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -4000,7 +3574,7 @@ status open
 \begin_inset Graphics
 	filename ../../resultados/imagens/P148_K2/3271i05-bin.png
 	lyxscale 20
-	width 49text%
+	scale 25
 
 \end_inset
 
@@ -4040,7 +3614,7 @@ status open
 \begin_inset Graphics
 	filename ../../resultados/imagens/P148_K2/3271i05.png
 	lyxscale 20
-	width 49text%
+	scale 25
 
 \end_inset
 
@@ -4100,7 +3674,7 @@ name "fig:3271i05.png"
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -4115,7 +3689,7 @@ status open
 \begin_inset Graphics
 	filename ../../resultados/imagens/P148_K2/3271i06-bin.png
 	lyxscale 20
-	width 49text%
+	scale 25
 
 \end_inset
 
@@ -4155,7 +3729,7 @@ status open
 \begin_inset Graphics
 	filename ../../resultados/imagens/P148_K2/3271i06.png
 	lyxscale 20
-	width 49text%
+	scale 25
 
 \end_inset
 
@@ -4215,7 +3789,7 @@ name "fig:3271i06.png"
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -4230,7 +3804,7 @@ status open
 \begin_inset Graphics
 	filename ../../resultados/imagens/P148_K2/3271i07-bin.png
 	lyxscale 20
-	width 49text%
+	scale 25
 
 \end_inset
 
@@ -4270,7 +3844,7 @@ status open
 \begin_inset Graphics
 	filename ../../resultados/imagens/P148_K2/3271i07.png
 	lyxscale 20
-	width 49text%
+	scale 25
 
 \end_inset
 
@@ -4330,7 +3904,7 @@ name "fig:3271i07.png"
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -4345,7 +3919,7 @@ status open
 \begin_inset Graphics
 	filename ../../resultados/imagens/P148_K2/3271i08-bin.png
 	lyxscale 20
-	width 49text%
+	scale 25
 
 \end_inset
 
@@ -4385,7 +3959,7 @@ status open
 \begin_inset Graphics
 	filename ../../resultados/imagens/P148_K2/3271i08.png
 	lyxscale 20
-	width 49text%
+	scale 25
 
 \end_inset
 
@@ -4445,7 +4019,7 @@ name "fig:3271i08.png"
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -4460,7 +4034,7 @@ status open
 \begin_inset Graphics
 	filename ../../resultados/imagens/P148_K2/3271i09-bin.png
 	lyxscale 20
-	width 49text%
+	scale 25
 
 \end_inset
 
@@ -4500,7 +4074,7 @@ status open
 \begin_inset Graphics
 	filename ../../resultados/imagens/P148_K2/3271i09.png
 	lyxscale 20
-	width 49text%
+	scale 2000
 
 \end_inset
 
@@ -4560,7 +4134,7 @@ name "fig:3271i09.png"
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -4575,7 +4149,7 @@ status open
 \begin_inset Graphics
 	filename ../../resultados/imagens/P148_K2/3271i10-bin.png
 	lyxscale 20
-	width 49text%
+	scale 25
 
 \end_inset
 
@@ -4615,7 +4189,7 @@ status open
 \begin_inset Graphics
 	filename ../../resultados/imagens/P148_K2/3271i10.png
 	lyxscale 20
-	width 49text%
+	scale 2000
 
 \end_inset
 
@@ -4679,7 +4253,7 @@ P240_K104
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -4694,7 +4268,7 @@ status open
 \begin_inset Graphics
 	filename ../../resultados/imagens/P240_K104/3251i01-bin.png
 	lyxscale 20
-	width 49text%
+	scale 25
 
 \end_inset
 
@@ -4734,7 +4308,7 @@ status open
 \begin_inset Graphics
 	filename ../../resultados/imagens/P240_K104/3251i01.png
 	lyxscale 20
-	width 49text%
+	scale 2000
 
 \end_inset
 
@@ -4794,7 +4368,7 @@ name "fig:3251i01.png"
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -4809,7 +4383,7 @@ status open
 \begin_inset Graphics
 	filename ../../resultados/imagens/P240_K104/3251i02-bin.png
 	lyxscale 20
-	width 49text%
+	scale 25
 
 \end_inset
 
@@ -4849,7 +4423,7 @@ status open
 \begin_inset Graphics
 	filename ../../resultados/imagens/P240_K104/3251i02.png
 	lyxscale 20
-	width 49text%
+	scale 2000
 
 \end_inset
 
@@ -4909,7 +4483,7 @@ name "fig:3251i02.png"
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -4924,7 +4498,7 @@ status open
 \begin_inset Graphics
 	filename ../../resultados/imagens/P240_K104/3251i03-bin.png
 	lyxscale 20
-	width 49text%
+	scale 25
 
 \end_inset
 
@@ -4964,7 +4538,7 @@ status open
 \begin_inset Graphics
 	filename ../../resultados/imagens/P240_K104/3251i03.png
 	lyxscale 20
-	width 49text%
+	scale 2000
 
 \end_inset
 
@@ -5024,7 +4598,7 @@ name "fig:3251i03.png"
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -5039,7 +4613,7 @@ status open
 \begin_inset Graphics
 	filename ../../resultados/imagens/P240_K104/3251i04-bin.png
 	lyxscale 20
-	width 49text%
+	scale 25
 
 \end_inset
 
@@ -5079,7 +4653,7 @@ status open
 \begin_inset Graphics
 	filename ../../resultados/imagens/P240_K104/3251i04.png
 	lyxscale 20
-	width 49text%
+	scale 2000
 
 \end_inset
 
@@ -5139,7 +4713,7 @@ name "fig:3251i04.png"
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -5154,7 +4728,7 @@ status open
 \begin_inset Graphics
 	filename ../../resultados/imagens/P240_K104/3251i05-bin.png
 	lyxscale 20
-	width 49text%
+	scale 25
 
 \end_inset
 
@@ -5194,7 +4768,7 @@ status open
 \begin_inset Graphics
 	filename ../../resultados/imagens/P240_K104/3251i05.png
 	lyxscale 20
-	width 49text%
+	scale 2000
 
 \end_inset
 
@@ -5254,7 +4828,7 @@ name "fig:3251i05.png"
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -5269,7 +4843,7 @@ status open
 \begin_inset Graphics
 	filename ../../resultados/imagens/P240_K104/3251i06-bin.png
 	lyxscale 20
-	width 49text%
+	scale 25
 
 \end_inset
 
@@ -5309,7 +4883,7 @@ status open
 \begin_inset Graphics
 	filename ../../resultados/imagens/P240_K104/3251i06.png
 	lyxscale 20
-	width 49text%
+	scale 2000
 
 \end_inset
 
@@ -5369,7 +4943,7 @@ name "fig:3251i06.png"
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -5384,7 +4958,7 @@ status open
 \begin_inset Graphics
 	filename ../../resultados/imagens/P240_K104/3251i07-bin.png
 	lyxscale 20
-	width 49text%
+	scale 25
 
 \end_inset
 
@@ -5424,7 +4998,7 @@ status open
 \begin_inset Graphics
 	filename ../../resultados/imagens/P240_K104/3251i07.png
 	lyxscale 20
-	width 49text%
+	scale 2000
 
 \end_inset
 
@@ -5484,7 +5058,7 @@ name "fig:3251i07.png"
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -5499,7 +5073,7 @@ status open
 \begin_inset Graphics
 	filename ../../resultados/imagens/P240_K104/3251i08-bin.png
 	lyxscale 20
-	width 49text%
+	scale 25
 
 \end_inset
 
@@ -5539,7 +5113,7 @@ status open
 \begin_inset Graphics
 	filename ../../resultados/imagens/P240_K104/3251i08.png
 	lyxscale 20
-	width 49text%
+	scale 2000
 
 \end_inset
 
@@ -5599,7 +5173,7 @@ name "fig:3251i08.png"
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -5614,7 +5188,7 @@ status open
 \begin_inset Graphics
 	filename ../../resultados/imagens/P240_K104/3251i09-bin.png
 	lyxscale 20
-	width 49text%
+	scale 25
 
 \end_inset
 
@@ -5654,7 +5228,7 @@ status open
 \begin_inset Graphics
 	filename ../../resultados/imagens/P240_K104/3251i09.png
 	lyxscale 20
-	width 49text%
+	scale 2000
 
 \end_inset
 
@@ -5714,7 +5288,7 @@ name "fig:3251i09.png"
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -5729,7 +5303,7 @@ status open
 \begin_inset Graphics
 	filename ../../resultados/imagens/P240_K104/3251i10-bin.png
 	lyxscale 20
-	width 49text%
+	scale 25
 
 \end_inset
 
@@ -5769,7 +5343,7 @@ status open
 \begin_inset Graphics
 	filename ../../resultados/imagens/P240_K104/3251i10.png
 	lyxscale 20
-	width 49text%
+	scale 2000
 
 \end_inset
 
@@ -5833,7 +5407,7 @@ P262_K441
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -5848,7 +5422,7 @@ status open
 \begin_inset Graphics
 	filename ../../resultados/imagens/P262_K441/L67409i1-bin.png
 	lyxscale 20
-	width 49text%
+	scale 25
 
 \end_inset
 
@@ -5888,7 +5462,7 @@ status open
 \begin_inset Graphics
 	filename ../../resultados/imagens/P262_K441/L67409i1.png
 	lyxscale 20
-	width 49text%
+	scale 25
 
 \end_inset
 
@@ -5948,7 +5522,7 @@ name "fig:L67409i1.png"
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -5963,7 +5537,7 @@ status open
 \begin_inset Graphics
 	filename ../../resultados/imagens/P262_K441/L67409i2-bin.png
 	lyxscale 20
-	width 49text%
+	scale 25
 
 \end_inset
 
@@ -6003,7 +5577,7 @@ status open
 \begin_inset Graphics
 	filename ../../resultados/imagens/P262_K441/L67409i2.png
 	lyxscale 20
-	width 49text%
+	scale 25
 
 \end_inset
 
@@ -6063,7 +5637,7 @@ name "fig:L67409i2.png"
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -6078,7 +5652,7 @@ status open
 \begin_inset Graphics
 	filename ../../resultados/imagens/P262_K441/L67409i3-bin.png
 	lyxscale 20
-	width 49text%
+	scale 25
 
 \end_inset
 
@@ -6118,7 +5692,7 @@ status open
 \begin_inset Graphics
 	filename ../../resultados/imagens/P262_K441/L67409i3.png
 	lyxscale 20
-	width 49text%
+	scale 25
 
 \end_inset
 
@@ -6178,7 +5752,7 @@ name "fig:L67409i3.png"
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -6193,7 +5767,7 @@ status open
 \begin_inset Graphics
 	filename ../../resultados/imagens/P262_K441/L67409i4-bin.png
 	lyxscale 20
-	width 49text%
+	scale 25
 
 \end_inset
 
@@ -6233,7 +5807,7 @@ status open
 \begin_inset Graphics
 	filename ../../resultados/imagens/P262_K441/L67409i4.png
 	lyxscale 20
-	width 49text%
+	scale 25
 
 \end_inset
 
@@ -6293,7 +5867,7 @@ name "fig:L67409i4.png"
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -6308,7 +5882,7 @@ status open
 \begin_inset Graphics
 	filename ../../resultados/imagens/P262_K441/L67409i5-bin.png
 	lyxscale 20
-	width 49text%
+	scale 25
 
 \end_inset
 
@@ -6348,7 +5922,7 @@ status open
 \begin_inset Graphics
 	filename ../../resultados/imagens/P262_K441/L67409i5.png
 	lyxscale 20
-	width 49text%
+	scale 25
 
 \end_inset
 
@@ -6408,7 +5982,7 @@ name "fig:L67409i5.png"
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -6423,7 +5997,7 @@ status open
 \begin_inset Graphics
 	filename ../../resultados/imagens/P262_K441/L67409i6-bin.png
 	lyxscale 20
-	width 49text%
+	scale 25
 
 \end_inset
 
@@ -6463,7 +6037,7 @@ status open
 \begin_inset Graphics
 	filename ../../resultados/imagens/P262_K441/L67409i6.png
 	lyxscale 20
-	width 49text%
+	scale 25
 
 \end_inset
 
@@ -6523,7 +6097,7 @@ name "fig:L67409i6.png"
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -6538,7 +6112,7 @@ status open
 \begin_inset Graphics
 	filename ../../resultados/imagens/P262_K441/L67409i7-bin.png
 	lyxscale 20
-	width 49text%
+	scale 25
 
 \end_inset
 
@@ -6576,9 +6150,9 @@ status open
 \noindent
 \align center
 \begin_inset Graphics
-	filename /home/joao/Documentos/TeseMestrado/resultados/imagens/P262_K441/L67409i7.png
+	filename ../../resultados/imagens/P262_K441/L67409i7.png
 	lyxscale 20
-	width 49text%
+	scale 25
 
 \end_inset
 
@@ -6638,7 +6212,7 @@ name "fig:L67409i7.png"
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -6653,7 +6227,7 @@ status open
 \begin_inset Graphics
 	filename ../../resultados/imagens/P262_K441/L67409i8-bin.png
 	lyxscale 20
-	width 49text%
+	scale 25
 
 \end_inset
 
@@ -6693,7 +6267,7 @@ status open
 \begin_inset Graphics
 	filename ../../resultados/imagens/P262_K441/L67409i8.png
 	lyxscale 20
-	width 49text%
+	scale 25
 
 \end_inset
 
@@ -6753,7 +6327,7 @@ name "fig:L67409i8.png"
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -6768,7 +6342,7 @@ status open
 \begin_inset Graphics
 	filename ../../resultados/imagens/P262_K441/L67409i9-bin.png
 	lyxscale 20
-	width 49text%
+	scale 25
 
 \end_inset
 
@@ -6808,7 +6382,7 @@ status open
 \begin_inset Graphics
 	filename ../../resultados/imagens/P262_K441/L67409i9.png
 	lyxscale 20
-	width 49text%
+	scale 25
 
 \end_inset
 
@@ -6868,7 +6442,7 @@ name "fig:L67409i9.png"
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -6883,7 +6457,7 @@ status open
 \begin_inset Graphics
 	filename ../../resultados/imagens/P262_K441/L67409i10-bin.png
 	lyxscale 20
-	width 49text%
+	scale 25
 
 \end_inset
 
@@ -6923,7 +6497,7 @@ status open
 \begin_inset Graphics
 	filename ../../resultados/imagens/P262_K441/L67409i10.png
 	lyxscale 20
-	width 49text%
+	scale 25
 
 \end_inset
 
@@ -7001,7 +6575,11 @@ name "sec:Analise-Resultados"
 
 \begin_layout Standard
 Durante a execução do modelo é possível observar que o tempo para execução
- do modelo ficou entre 9 e 22 milissegundos, para todas as imagens.
+ do modelo ficou entre 19 e 21 segundos, para todas as imagens.
+ Devido ao fato de que a rede neural é executada para cada pixel da imagem
+ esses valores próximos podem ser explicados pelo fato que todas as imagens
+ possuíam a mesma quantidade de 640 x 450 pixeis.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -7227,31 +6805,6 @@ L67409i7
 \end_inset
 
 .
-\end_layout
-
-\begin_layout Standard
-Sobre os dados coletados por diferentes tipos de voluntários, pode-se se
- concluir que existe um impacto nos valores de porosidade obtidos de acordo
- com o 
-\emph on
-background 
-\emph default
-de cada um deles.
- Observa-se que os valores obtidos pelo voluntário 4 foram os que mais se
- afastaram dos valores de porosidade real de cada uma das imagens.
- É provável que isso tenha ocorrido devido a baixa quantidade de dados coletados
- durante sua iteração.
- Isso também reforça que a quantidade de dados é crucial para que sejam
- obtidos bons resultados com algorítimos de inteligência artificial.
- 
-\end_layout
-
-\begin_layout Standard
-Os voluntários 1, 2 e 3 coletaram valores semelhantes e por isso obtiveram
- resultados tão próximos.
- Isso mostra que a experiência que o usuário possui ao treinar uma algoritmo
- de inteligência artificial é muito importante para que bons resultados
- sejam alcançados.
 \end_layout
 
 \end_body

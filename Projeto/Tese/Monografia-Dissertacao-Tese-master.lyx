@@ -10,6 +10,7 @@
 \usepackage {longtable}
 \usepackage {indentfirst}
 \renewenvironment{center}{\par\centering}{\par}
+\usepackage{xcolor}
 
 % Comentar linhas abaixo se não estiver usando pacote abntex
 % ou se o pacote ainda não foi instalado.
@@ -128,7 +129,7 @@
 \papercolumns 1
 \papersides 1
 \paperpagestyle fancy
-\tracking_changes false
+\tracking_changes true
 \output_changes false
 \html_math_output 0
 \html_css_as_file 0
@@ -179,6 +180,16 @@ lfoot{João Marcelo Cardoso Carvalho}
 rfoot{
 \backslash
 today }
+\end_layout
+
+\end_inset
+
+
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+versão final retirar
 \end_layout
 
 \end_inset
@@ -242,6 +253,52 @@ rhead{}
 \begin_layout Standard
 \align block
 \begin_inset FloatList table
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align block
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Revisados por Bueno:
+\end_layout
+
+\begin_layout Plain Layout
+Resumo - SIM (CORRIGIDO)
+\end_layout
+
+\begin_layout Plain Layout
+Introdução - SIM (CORRIGIDO)
+\end_layout
+
+\begin_layout Plain Layout
+Revisão bibliográfica - SIM (CORRIGIDO)
+\end_layout
+
+\begin_layout Plain Layout
+Revisão de modelos - EM ANDAMENTO
+\end_layout
+
+\begin_layout Plain Layout
+Metodologia - SIM (CORRIGIDO)
+\end_layout
+
+\begin_layout Plain Layout
+Desenvolvimento - EM ANDAMENTO
+\end_layout
+
+\begin_layout Plain Layout
+Resultados - EM ANDAMENTO
+\end_layout
+
+\begin_layout Plain Layout
+Conclusões - EM ANDAMENTO
+\end_layout
 
 \end_inset
 

@@ -4,8 +4,9 @@
 \begin_header
 \save_transient_properties true
 \origin unavailable
-\textclass abnt
+\textclass /home2/andreduartebueno/workdir/TeseMestrado/Projeto/Tese/abnt
 \begin_preamble
+\usepackage {listings}
 \usepackage {graphicx}
 \usepackage {longtable}
 \usepackage {indentfirst}
@@ -298,7 +299,7 @@ thispagestyle{empty}
 
 \size large
 CARACTERIZAÇÃO DE ROCHA DIGITAL USANDO INTELIGÊNCIA ARTIFICIAL – APLICAÇÃO
- A SEGMENTAÇÃO DE
+ A SEGMENTAÇÃO DE IMAGENS
 \end_layout
 
 \begin_layout Standard
@@ -333,7 +334,7 @@ width "50text%"
 special "none"
 height "1in"
 height_special "totalheight"
-thickness "0pt"
+thickness "0.4pt"
 separation "3pt"
 shadowsize "4pt"
 framecolor "black"
@@ -440,11 +441,11 @@ pagenumbering{roman}
 
 \size large
 CARACTERIZAÇÃO DE ROCHA DIGITAL USANDO INTELIGÊNCIA ARTIFICIAL – APLICAÇÃO
- A SEGMENTAÇÃO DE
+ A SEGMENTAÇÃO DE IMAGENS
 \end_layout
 
 \begin_layout Standard
-\begin_inset VSpace 2cm
+\begin_inset VSpace 2.5cm
 \end_inset
 
 
@@ -457,7 +458,7 @@ CARACTERIZAÇÃO DE ROCHA DIGITAL USANDO INTELIGÊNCIA ARTIFICIAL – APLICAÇÃ
 JOÃO MARCELO CARDOSO CARVALHO
 \size default
 
-\begin_inset VSpace 2cm
+\begin_inset VSpace 2.5cm
 \end_inset
 
 
@@ -476,7 +477,7 @@ width "50text%"
 special "none"
 height "1in"
 height_special "totalheight"
-thickness "0pt"
+thickness "0.4pt"
 separation "3pt"
 shadowsize "4pt"
 framecolor "black"
@@ -605,7 +606,7 @@ baselineskip}
 \noindent
 \align left
 Prof.
- Um Dois Três de redira Quatro (D.Sc, Ciências da Computação) - PURO/UFF
+ Um Dois Três de Oliveira Quatro (D.Sc, Ciências da Computação) - PURO/UFF
 \begin_inset Newline newline
 \end_inset
 
@@ -729,7 +730,7 @@ lhead{Dedicatória}
 \end_layout
 
 \begin_layout Standard
-\begin_inset VSpace 21cm
+\begin_inset VSpace 21.5cm
 \end_inset
 
 
@@ -883,7 +884,6 @@ status open
 Ao comitê gestor do PRH20-ANP-PETROBRAS/LENEP/CCT/UENF, e a Universidade
  Petrobras pelo fornecimento de bolsa de estudos e taxa de bancada por meio
  do PFRH-PETROBRAS, Programa de Formação de Recursos Humanos da Petrobras.
- 
 \end_layout
 
 \begin_layout Standard
@@ -999,7 +999,118 @@ definecolor{mymauve}{rgb}{0.58,0,0.82}
 
 \begin_layout Standard
 \begin_inset Note Note
-status collapsed
+status open
+
+\begin_layout Plain Layout
+Manuais LATEX
+\end_layout
+
+\begin_layout Plain Layout
+https://pt.overleaf.com/learn/latex
+\end_layout
+
+\begin_layout Plain Layout
+Cores para listagens
+\end_layout
+
+\begin_layout Plain Layout
+http://latexcolor.com/
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+definecolor{brown}{rgb}{0.59, 0.29, 0.0}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+definecolor{lightgray}{rgb}{0.8,0.8,0.8} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+definecolor{myred1}{rgb}{0.75,0.0,0} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+definecolor{myred2}{rgb}{0.9,0.0,0} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+definecolor{mygreen1}{rgb}{0,0.7,0} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+definecolor{mygreen2}{rgb}{0,0.9,0} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+definecolor{myblue1}{rgb}{0,0,0.7} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+definecolor{myblue2}{rgb}{0,0,0.9}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+definecolor{mygray1}{rgb}{0.5,0.5,0.5} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+definecolor{mygray2}{rgb}{0.7,0.7,0.7} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+definecolor{mymauve}{rgb}{0.58,0,0.82}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
 
 \begin_layout Plain Layout
 Define estilo de listagem em C++
@@ -1076,7 +1187,7 @@ lstset{style=out,xleftmargin=1cm}
 
 \begin_layout Standard
 \begin_inset Note Note
-status collapsed
+status open
 
 \begin_layout Plain Layout
 Exemplo de uso:
@@ -1130,7 +1241,7 @@ lstinputlisting[style=C++,caption={Usando os tipos pré-definidos de C++.},
 
 \begin_layout Standard
 \begin_inset Note Note
-status collapsed
+status open
 
 \begin_layout Plain Layout
 Exemplo de uso:
@@ -1151,8 +1262,12 @@ lstset{style=C++}
 
 
 \backslash
-lstinputlisting[caption={Usando os tipos pré-definidos de C++.}, label={tipos}]
- {../listagens/Cap-09/UsandoOsTiposPre-Definidos.cpp}
+lstinputlisting[caption={Usando os tipos pré-definidos de C++.
+ Exemplo uso typewriter e underscore 
+\backslash
+texttt{source
+\backslash
+_location}}, label={tipos}] {../listagens/Cap-09/UsandoOsTiposPre-Definidos.cpp}
 \end_layout
 
 \end_inset
@@ -1183,6 +1298,39 @@ lstinputlisting[style=C++,caption={Usando os tipos pré-definidos de C++.},
 \end_layout
 
 \begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Como definir cores para
+\end_layout
+
+\begin_layout Plain Layout
+
+\backslash
+#define, 
+\backslash
+#ifdef, 
+\backslash
+#ifndef, 
+\backslash
+#undef, 
+\backslash
+#if, 
+\backslash
+#else, 
+\backslash
+#elif, 
+\backslash
+#endif
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset ERT
 status open
 
@@ -1201,11 +1349,6 @@ lstdefinestyle{C++}{
 \begin_layout Plain Layout
 
 frame=lines,
-\end_layout
-
-\begin_layout Plain Layout
-
-%none|leftline|topline|bottomline|lines|single|shadowboxi
 \end_layout
 
 \begin_layout Plain Layout
@@ -1400,7 +1543,7 @@ emph={[3] algorithm , atomic ,backward ,bits ,bitset ,cassert ,ccomplex
  ,iomanip ,ios ,iosfwd ,iostream ,istream ,iterator ,limits ,locale ,numeric
  ,ostream ,profile ,random ,ratio ,regex ,scoped_allocator ,sstream ,stack
  ,stdexcept  ,streambuf ,system_error ,tr1 ,tr2 ,typeindex ,typeinfo ,type_trait
-s ,utility ,x86_64-redhat-linux ,complex } , 
+s ,utility ,x86_64-redhat-linux ,complex   } , 
 \end_layout
 
 \begin_layout Plain Layout
@@ -1498,7 +1641,7 @@ nstruct_n, uninitialized_value_construct, uninitialized_value_construct_n,
 
 emphstyle={[6]
 \backslash
-color{red}},
+color{olive}},
 \end_layout
 
 \begin_layout Plain Layout
@@ -1801,7 +1944,7 @@ nstruct_n, uninitialized_value_construct, uninitialized_value_construct_n,
 
 emphstyle={[6]
 \backslash
-color{red}},
+color{olive}},
 \end_layout
 
 \begin_layout Plain Layout
@@ -1847,7 +1990,7 @@ color{mymauve}},
 
 
 \begin_inset Note Note
-status collapsed
+status open
 
 \begin_layout Plain Layout
 O style=iC++ é o C++ sem numeração; pode colocar outra cor de fundo
@@ -1894,7 +2037,7 @@ color{white},
 
 
 \begin_inset Note Note
-status collapsed
+status open
 
 \begin_layout Plain Layout
 Define estilo de saida gerada por programa executado
@@ -1927,7 +2070,7 @@ ttfamily}
 
 \begin_layout Standard
 \begin_inset Note Note
-status collapsed
+status open
 
 \begin_layout Plain Layout
 Define estilo de saida gerada por programa executado em itálico
@@ -1960,23 +2103,10 @@ ttfamily}
 
 \begin_layout Standard
 \begin_inset Note Note
-status collapsed
-
-\begin_layout Plain Layout
-Define estilo de saida para listagens/scripts do Gnuplot
-\end_layout
-
-\end_inset
-
-
-\begin_inset ERT
 status open
 
 \begin_layout Plain Layout
-
-
-\backslash
-lstset{style=iC++}
+Define estilo de saida para listagens/scripts do Gnuplot
 \end_layout
 
 \end_inset
@@ -2006,7 +2136,7 @@ ttfamily}
 
 \begin_layout Standard
 \begin_inset Note Note
-status collapsed
+status open
 
 \begin_layout Plain Layout
 Define estilo de saida para saída de comandos do terminal (em itálico)
@@ -2059,7 +2189,7 @@ ttfamily}
 
 \begin_layout Standard
 \begin_inset Note Note
-status collapsed
+status open
 
 \begin_layout Plain Layout
 Define estilo de saida para arquivos Makefile
@@ -2091,9 +2221,67 @@ ttfamily}
 
 \begin_layout Standard
 \begin_inset Note Note
-status collapsed
+status open
 
 \begin_layout Plain Layout
+Define o estilo padrão como sendo C++
+\end_layout
+
+\begin_layout Plain Layout
+para mudar escolha uma das opções:
+\end_layout
+
+\begin_layout Plain Layout
+C++
+\end_layout
+
+\begin_layout Plain Layout
+(listagem linha no topo e abaixo, toda colorida de acordo com palavra chave,
+ numerada)
+\end_layout
+
+\begin_layout Plain Layout
+out
+\end_layout
+
+\begin_layout Plain Layout
+(fundo colorido, sem numeração)
+\end_layout
+
+\begin_layout Plain Layout
+Makefile
+\end_layout
+
+\begin_layout Plain Layout
+(estilo de arquivo Makefile)
+\end_layout
+
+\begin_layout Plain Layout
+Gnuplot
+\end_layout
+
+\begin_layout Plain Layout
+(estilo de arquivo gnuplot)
+\end_layout
+
+\begin_layout Plain Layout
+bash (comandos de terminal)
+\end_layout
+
+\begin_layout Plain Layout
+make (arquivos makefile)
+\end_layout
+
+\begin_layout Plain Layout
+italico (itálico)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset ERT
 status open
 
@@ -2101,12 +2289,7 @@ status open
 
 
 \backslash
-lstinputlisting[style=C++,caption={Pré-processamento: Usando 
-\backslash
-texttt{
-\backslash
-#ifdef..else}}, label={pre-processamento-ifdef-else}] {../listagens/Apendice-A/if-el
-se.cpp}
+lstset{style=C++}
 \end_layout
 
 \end_inset
@@ -2114,24 +2297,7 @@ se.cpp}
 
 \end_layout
 
-\begin_layout Plain Layout
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-lstinputlisting[style=out]{../listagens/Apendice-A/if-else.out}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
+\begin_layout Standard
 
 \end_layout
 

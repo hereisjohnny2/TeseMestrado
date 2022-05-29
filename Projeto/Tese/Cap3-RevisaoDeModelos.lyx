@@ -4,7 +4,7 @@
 \begin_header
 \save_transient_properties true
 \origin unavailable
-\textclass abnt
+\textclass /home2/andreduartebueno/workdir/TeseMestrado/Projeto/Tese/abnt
 \begin_preamble
 \usepackage {graphicx}
 \usepackage {longtable}
@@ -271,7 +271,7 @@ literal "false"
 
 
 \begin_inset Note Note
-status collapsed
+status open
 
 \begin_layout Plain Layout
 Toda vez que incluir um termo coloque o termo, suas unidades SI, e uma descrição.
@@ -630,7 +630,6 @@ status open
 \align center
 \begin_inset Graphics
 	filename ../../imagens/imagensLivros/angulo-de-contato-oleo-agua.png
-	width 100text%
 
 \end_inset
 
@@ -690,7 +689,7 @@ tensão superficial
 
 
 \begin_inset Note Note
-status collapsed
+status open
 
 \begin_layout Plain Layout
 [unidade]
@@ -827,7 +826,6 @@ status open
 \align center
 \begin_inset Graphics
 	filename ../../imagens/imagensLivros/tubo-com-agua.png
-	width 100text%
 
 \end_inset
 
@@ -1220,7 +1218,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename ../../imagens/imagensLivros/experimento_darcy.png
-	width 100text%
+	scale 80
 
 \end_inset
 
@@ -1606,6 +1604,26 @@ literal "false"
 \end_inset
 
 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Na revisão bibliográfica falou de número de coordenação; se der, coloque
+ aqui o que é.
+\end_layout
+
+\begin_layout Plain Layout
+Verifique se os principais pontos citados na revisão bibliográfica estão
+ aqui definidos ou referencie com algo externo, uma bibliografia externa
+ que descreva o conceito.
 \end_layout
 
 \end_inset
@@ -2252,7 +2270,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename ../../imagens/imagensLivros/modelo-rgb.png
-	width 100text%
+	scale 70
 
 \end_inset
 
@@ -2641,7 +2659,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename ../../imagens/imagensLivros/histograma.png
-	width 100text%
+	scale 70
 
 \end_inset
 
@@ -2763,7 +2781,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename ../../imagens/imagensLivros/histograma-bi-multi.png
-	width 100text%
+	scale 50
 
 \end_inset
 
@@ -2856,7 +2874,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename ../../imagens/imagensLivros/hist-contraste.png
-	width 100text%
+	scale 60
 
 \end_inset
 
@@ -3026,7 +3044,7 @@ Median Filter of Order n
 \emph default
 ),
 \begin_inset Note Note
-status collapsed
+status open
 
 \begin_layout Plain Layout
 verifique pois parece incompleto o "no,"
@@ -3072,7 +3090,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename ../../imagens/imagensLivros/reducao-ruido-filtro-mediana.png
-	width 100text%
+	scale 70
 
 \end_inset
 
@@ -3202,7 +3220,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename ../../imagens/imagensLivros/mascarasFiltroPB.png
-	width 100text%
+	scale 90
 
 \end_inset
 
@@ -3325,7 +3343,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename ../../imagens/imagensLivros/images-suavizadas.png
-	width 100text%
+	scale 70
 
 \end_inset
 
@@ -3730,7 +3748,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename ../../imagens/imagensLivros/aplicacao-segmentacao.png
-	width 100text%
+	scale 80
 
 \end_inset
 
@@ -3896,7 +3914,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename ../../imagens/imagensLivros/watershead.png
-	width 100text%
+	scale 70
 
 \end_inset
 
@@ -4196,7 +4214,7 @@ A aquisição de imagens pode ser feita por meio de câmeras, scanners ou sensor
  essa informação para um computador ou armazena em algum dispositivo de
  memória.
 \begin_inset Note Note
-status collapsed
+status open
 
 \begin_layout Plain Layout
 OBS:
@@ -4677,7 +4695,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename ../../imagens/imagensLivros/arvore-desisao.png
-	width 100text%
+	scale 60
 
 \end_inset
 
@@ -4892,7 +4910,7 @@ bias
 , como é mostrado na Equação 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "eq:soma-ponderada"
+reference "fig:neuronio-artificial"
 plural "false"
 caps "false"
 noprefix "false"
@@ -4925,7 +4943,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename ../../imagens/imagensLivros/neuronio-artificial.png
-	width 100text%
+	scale 70
 
 \end_inset
 
@@ -5614,7 +5632,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename ../../imagens/imagensLivros/rna-direta.png
-	width 100text%
+	scale 70
 
 \end_inset
 

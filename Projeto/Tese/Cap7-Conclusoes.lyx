@@ -1,9 +1,7 @@
-#LyX 2.3 created this file. For more info see http://www.lyx.org/
-\lyxformat 544
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
 \begin_document
 \begin_header
-\save_transient_properties true
-\origin unavailable
 \textclass abnt
 \begin_preamble
 \usepackage {graphicx}
@@ -23,20 +21,18 @@
 \maintain_unincluded_children false
 \language brazilian
 \language_package default
-\inputencoding iso8859-1
+\inputencoding latin1
 \fontencoding global
-\font_roman "default" "default"
-\font_sans "default" "default"
-\font_typewriter "default" "default"
-\font_math "auto" "auto"
+\font_roman default
+\font_sans default
+\font_typewriter default
 \font_default_family default
 \use_non_tex_fonts false
 \font_sc false
 \font_osf false
-\font_sf_scale 100 100
-\font_tt_scale 100 100
-\use_microtype false
-\use_dash_ligatures true
+\font_sf_scale 100
+\font_tt_scale 100
+
 \graphics default
 \default_output_format default
 \output_sync 0
@@ -60,26 +56,16 @@
 \pdf_pdfusetitle true
 \papersize a4paper
 \use_geometry true
-\use_package amsmath 1
-\use_package amssymb 1
-\use_package cancel 1
-\use_package esint 0
-\use_package mathdots 1
-\use_package mathtools 1
-\use_package mhchem 1
-\use_package stackrel 1
-\use_package stmaryrd 1
-\use_package undertilde 1
+\use_amsmath 1
+\use_esint 0
+\use_mhchem 1
+\use_mathdots 1
 \cite_engine basic
-\cite_engine_type default
-\biblio_style plain
 \use_bibtopic false
 \use_indices false
 \paperorientation portrait
 \suppress_date false
-\justification true
 \use_refstyle 0
-\use_minted 0
 \index Índice
 \shortcut idx
 \color #008000
@@ -94,10 +80,7 @@
 \tocdepth 1
 \paragraph_separation indent
 \paragraph_indentation default
-\is_math_indent 0
-\math_numbering_side default
-\quotes_style english
-\dynamic_quotes 0
+\quotes_language english
 \papercolumns 1
 \papersides 1
 \paperpagestyle fancy
@@ -169,209 +152,77 @@ name "sec:Conclusoes"
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
-status collapsed
-
-\begin_layout Plain Layout
 [Repita aqui o primeiro parágrafo da introdução, mudando o enfoque de pretende-s
-e fazer para foi feito] o objetivo é relembrar o leitor o escopo do problema
-\end_layout
-
-\end_inset
-
-Conforme já explicado anteriormente, o uso de algoritmos de inteligência
- artificial é cada vez mais comum nas mais diferentes áreas de pesquisa,
- especialmente no campo da engenharia.
- O uso de tal tecnologia torna a execução de tarefas complexas, como o modelo
- de classificação e de predição, em um curto espaço de tempo possível.
-\end_layout
-
-\begin_layout Standard
-Mais especificamente no âmbito da engenharia de reservatórios, o uso de
- redes neurais e visão computacional permitem que sejam realizadas análises
- para descrever características petrofísicas de uma amostra sem precisar
- danificá-la.
- Neste trabalho foi mostrado como valores de porosidade absoluta podem ser
- obtidas poder meio de modelos inteligentes que permitem a segmentação de
- imagens em regiões de poros e de matriz sólida, em um tempo relativamente
- mais curto e com precisão semelhante a analises físicas.
- Além disso o desenvolvimento desses modelos se deu utilizando tecnologias
- de código aberto, o que torna mais fácil a reprodução dos resultados aqui
- descritos.
- 
-\end_layout
-
-\begin_layout Standard
+e fazer para foi feito]
 \begin_inset Note Note
-status collapsed
+status open
 
 \begin_layout Plain Layout
-[repita aqui os objetivos do trabalho] o objetivo é relembrar o leitor dos
- objetivos
+o objetivo é relembrar o leitor o escopo do problema
 \end_layout
 
 \end_inset
 
-Este trabalho teve como objetivo geral desenvolver métodos de inteligência
- artificial capazes de reconhecer padrões relevantes para a análise das
- propriedades petrofísicas em imagens de rochas reservatórios.
- Procurou-se estudar diferentes métodos de aprendizagem de maquina e aprendizage
-m profundas aplicadas à análise de imagens, e desenvolver aplicações que
- pudessem tornar possível aplicação desses modelos em exemplos do mundo
- real.
- Dentre essas aplicações estariam scripts em 
-\emph on
-python
-\emph default
- para utilização das técnicas de inteligência artificial e uma ferramenta
- para anotação de regiões de interesse em amostras de rocha digital.
- 
+
 \end_layout
 
 \begin_layout Standard
+[repita aqui os objetivos do trabalho]
 \begin_inset Note Note
-status collapsed
+status open
 
 \begin_layout Plain Layout
-[resuma a metodologia utilizada] o objetivo é relembrar o leitor o método
- científico utilizado
+o objetivo é relembrar o leitor dos objetivos
 \end_layout
 
 \end_inset
 
-A obtenção dos resultados para que os objetivos descritos anteriormente
- fossem alcançados se deu na forma de um procedimento descrito na Figura
- 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:procedimento-de-coleta-resultados"
-plural "false"
-caps "false"
-noprefix "false"
 
-\end_inset
-
-, onde as informações de cor dos pixeis das regiões de interesse eram coletados
- e salvos em um arquivo no formato 
-\emph on
-.dat
-\emph default
-.
- Esse arquivo é utilizado como 
-\emph on
-inputs
-\emph default
- de uma rede neural desenvolvida utilizando a biblioteca de 
-\emph on
-Machine Learning PyTorch
-\emph default
-.
- A saída do 
-\emph on
-script 
-\emph default
-de treinamento é um outro arquivo no formato 
-\emph on
-.pt
-\emph default
-, que contém os valores dos 
-\emph on
-biases
-\emph default
- e pesos da rede neural treinada.
- Esse modelo salvo é então aplicado sobre a imagem a ser binarizada.
- Por fim, é calculado o valor de porosidade para a nova imagem gerada no
- processo.
- Todo esse procedimento foi repetido para imagens contidas acervo digital
- do Prof.
- DSc.
- André Duarte Bueno.
 \end_layout
 
 \begin_layout Standard
+[resuma a metodologia utilizada]
 \begin_inset Note Note
-status collapsed
+status open
 
 \begin_layout Plain Layout
-[descreva resumidamente os modelos desenvolvidos] o objetivo é relembrar
- o leitor os modelos desenvolvidos 
+o objetivo é relembrar o leitor o método científico utilizado
 \end_layout
 
 \end_inset
 
-Para esse trabalho foi desenvolvido um único modelo de rede neural do tipo
- 
-\emph on
-feedforward, 
-\emph default
-com 3 camadas profundas, cada uma com 4 neurônios, conforme mostrado na
- Figura 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:Representação-da-rede"
-plural "false"
-caps "false"
-noprefix "false"
 
-\end_inset
-
-.
- Como função de ativação foi utilizada função 
-\emph on
-ReLU
-\emph default
- mostrada na Figura 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:funcao-relu"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
-.
- Para a ultima camada foi aplicada a função 
-\emph on
-softmax
-\emph default
- seguida da aplicação do logaritmo natural do valor obtido.
- Como otimizador foi escolhido o algoritmo 
-\emph on
-Adam 
-\emph default
-e, por fim, a função de perda 
-\emph on
-NLL Loss
-\emph default
-, ou, 
-\emph on
-Negative Log-Likelihood Loss
-\emph default
-.
 \end_layout
 
 \begin_layout Standard
+[descreva resumidamente os modelos desenvolvidos]
 \begin_inset Note Note
-status collapsed
+status open
 
 \begin_layout Plain Layout
-[descreve resumidamente os principais resultados obtidos] o objetivo é relembrar
- os principais resultados e análises
+o objetivo é relembrar o leitor os modelos desenvolvidos 
 \end_layout
 
 \end_inset
 
-Como resultado, a duração, tanto do treinamento, quanto a aplicação do modelo
- duraram na ordem dos milissegundos, o que mostra a capacidade desses algoritmos
- entregar resultdos de forma rápida.
+
 \end_layout
 
 \begin_layout Standard
+[descreve resumidamente os principais resultados obtidos]
 \begin_inset Note Note
-status collapsed
+status open
 
 \begin_layout Plain Layout
+o objetivo é relembrar os principais resultados e análises
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 [Agora, descreve em detalhes as conclusões do trabalho.....].
  
 \end_layout
@@ -410,35 +261,6 @@ Deve concluir se as hipóteses foram "rejeitadas" ou "não foram rejeitadas".
 Deve finalizar e arrematar o trabalho de forma segura.
 \end_layout
 
-\end_inset
-
-Este trabalho mostra como tecnologias como 
-\emph on
-machine learning
-\emph default
- podem ser muito uteis na obtenção de valores de porosidade em amostras
- de rochas reservatórios.
- Além disso, o uso de ferramentas de anotação podem ajudar a tornar o processo
- de coleta de dados menos tedioso e maçante.
- É importante reforçar que a qualidade dos resultados obtidos está relacionado
- diretamente à experiência profissional do usuário e seu 
-\emph on
-background
-\emph default
- em no que se diz respeito à engenharia e geologia do petróleo, como foi
- salientado no Capítulo 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sec:Analise-Resultados"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
-.
-\end_layout
-
 \begin_layout Standard
 \begin_inset Newpage newpage
 \end_inset
@@ -468,105 +290,11 @@ name "sec:Sugestoes-Para-Trabalhos-Futuros"
 \end_layout
 
 \begin_layout Itemize
-Utilizar a ferramenta de anotação de regiões de interesse para classificação
- e segmentação de não apenas regiões de poros e matriz sólida, mas também
- para os diferentes componentes mineralógicos que compõem a imagem.
-\end_layout
-
-\begin_layout Itemize
-Aplicar o modelo de rede neural em outras amostras de rochas reservatórios
- além daquelas descritas neste trabalho.
-\end_layout
-
-\begin_layout Itemize
-Portar 
-\emph on
-scripts
-\emph default
- escritos em 
-\emph on
-python 
-\emph default
-para C++ utilizando o 
-\emph on
-frontend 
-\emph default
-da biblioteca 
-\emph on
-PyTorch
-\emph default
- para a linguagem.
-\end_layout
-
-\begin_layout Itemize
-Integrar a ferramenta de anotação de regiões de interesse com o 
-\emph on
-Laboratório Virtual de Petrofísica 
-\emph default
-(
-\emph on
-LVP
-\emph default
-), de modo a facilitar o processo de obtenção das propriedades petrofísicas
- da amostra de rocha digital.
-\end_layout
-
-\begin_layout Itemize
-Desenvolvimento de um serviço que possa armazenar dados coletados para diversos
- tipos de amostras.
-\end_layout
-
-\begin_layout Itemize
-Desenvolvimento de uma versão para Web da ferramenta de anotação de regiões
- interesse.
- A instalação local pode se tornar um pouco complicada para usuários com
- menos conhecimento de informática, algo se já não ocorreria com uma aplicação
- 
-\emph on
-hosteada
-\emph default
- em um serviço de 
-\emph on
-cloud
-\emph default
-.
- Com mais pessoas utilizando a ferramenta, mais dados poderiam ser coletados
- e armazenados para diferentes tipos de amostras de rocha, possibilitando
- o treinamento de redes cada vez mais inteligentes.
-\end_layout
-
-\begin_layout Itemize
-Aplicar outras arquiteturas de redes neurais.
- O uso de redes no formato 
-\emph on
-feedforward
-\emph default
- são excelentes para o desenvolvimento de um modelo inicial, mas para que
- mais propriedades possam ser extraídas de uma determinada amostra, o uso
- de redes convolucionais, por exemplo, podem se tornar bastante uteis, como
- foi discutido no Capítulo 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "chap:Revisao-de-Conceitos"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status collapsed
-
-\begin_layout Itemize
 Coloque cada sugestão como uma itemização.
 \end_layout
 
 \begin_layout Itemize
-Fale dos erros cometidos e o que fazer para corrigi-los.
+Fale dos erros cometidos e o que fazer para corrigí-los.
  
 \end_layout
 
@@ -602,11 +330,6 @@ exemplos de novos trabalhos, que ampliam o trabalho desenvolvido e que podem
 outros exemplos de trabalhos que podem ser desenvolvidos, mas que tem um
  enfoque diferente, ou que irão demorar muito (provavelmente você fará isto
  num doutorado, ou outra pessoa poderá fazê-lo).
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \end_body

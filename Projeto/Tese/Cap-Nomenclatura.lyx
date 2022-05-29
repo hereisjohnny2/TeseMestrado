@@ -1,8 +1,10 @@
-#LyX 2.0 created this file. For more info see http://www.lyx.org/
-\lyxformat 413
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
 \begin_document
 \begin_header
-\textclass abnt
+\save_transient_properties true
+\origin unavailable
+\textclass /home2/andreduartebueno/workdir/TeseMestrado/Projeto/Tese/abnt
 \begin_preamble
 \usepackage {graphicx}
 \usepackage {longtable}
@@ -21,18 +23,20 @@
 \maintain_unincluded_children false
 \language brazilian
 \language_package default
-\inputencoding latin1
+\inputencoding iso8859-1
 \fontencoding global
-\font_roman default
-\font_sans default
-\font_typewriter default
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
 \font_default_family default
 \use_non_tex_fonts false
 \font_sc false
 \font_osf false
-\font_sf_scale 100
-\font_tt_scale 100
-
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
 \graphics default
 \default_output_format default
 \output_sync 0
@@ -56,16 +60,26 @@
 \pdf_pdfusetitle true
 \papersize a4paper
 \use_geometry true
-\use_amsmath 1
-\use_esint 0
-\use_mhchem 1
-\use_mathdots 1
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 0
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
 \cite_engine basic
+\cite_engine_type default
+\biblio_style plain
 \use_bibtopic false
 \use_indices false
 \paperorientation portrait
 \suppress_date false
+\justification true
 \use_refstyle 0
+\use_minted 0
 \index Índice
 \shortcut idx
 \color #008000
@@ -80,7 +94,10 @@
 \tocdepth 1
 \paragraph_separation indent
 \paragraph_indentation default
-\quotes_language english
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
 \papercolumns 1
 \papersides 1
 \paperpagestyle fancy
@@ -188,18 +205,38 @@ Existem duas maneiras de gerar a nomenclatura:
 \end_layout
 
 \begin_layout Plain Layout
-2) - A partir do LyX 2.0 existe a opção de inserir lista de nomenclatura(Inserir-
->ListaIndice->Nomenclatura).
+2) - A partir do \SpecialChar LyX
+ 2.0 existe a opção de inserir lista de nomenclatura(Inserir->Li
+staIndice->Nomenclatura).
  Neste caso, você precisa indicar, ao longo da monografia/dissertação/tese,
  o que entra na nomenclatura.
  
 \end_layout
 
 \begin_layout Plain Layout
-O LyX/LaTeX automaticamente monta a nomenclatura para você.
+O \SpecialChar LyX
+/\SpecialChar LaTeX
+ automaticamente monta a nomenclatura para você.
  Se usar esta opção você deve retirar o arquivo nomenclatura do arquivo
  master(pode colocar como comentário), e deve inserir no lugar a "nomenclatura"
  (comando Inserir->ListaIndice->Nomenclatura).
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+APAGAR O QUE NÃO ESTA SENDO USADO 
+\end_layout
+
+\begin_layout Plain Layout
+ADICIONAR O QUE FICOU FALTANDO
 \end_layout
 
 \end_inset
@@ -1506,6 +1543,25 @@ C++
 \noun off
 \color none
 Linguagem de programação com recursos para orientação a objetos
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+adicionar python
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset

@@ -10,6 +10,41 @@
 \usepackage {longtable}
 \usepackage {indentfirst}
 \renewenvironment{center}{\par\centering}{\par}
+\usepackage{xcolor}
+
+% Comentar linhas abaixo se não estiver usando pacote abntex
+% ou se o pacote ainda não foi instalado.
+% neste caso sugere-se usar citações no padrão apalike (lembra o da anbt).
+%\usepackage[alf ,abnt-etal-cite=2 , abnt-year-extra-label=yes , abnt-etal-list=0]{abntcite}
+%Adicionado et all em italico
+\usepackage[alf ,abnt-etal-cite=2 , abnt-year-extra-label=yes , abnt-etal-list=0, abnt-etal-text=it]{abntcite}
+\usepackage {helvet}
+\renewcommand {\familydefault}{\sfdefault}
+%\usepackage[abnt-etal-text=emph,......]{abntcite} ou \usepackage[abnt-etal-text=it,......]{abntcite} 
+
+
+% Informa que vai usar o pacote listings, 
+% disponibilizado em /usr/share/texmf/doc/latex/styles/listings.dvi
+\usepackage{listings}
+
+% Define um novo comando, chamado lst
+% observe que lst chama o comando  lstinputlisting.
+\newcommand{\lst}[2]{%
+    \noindent\rule[-1ex]{\textwidth}{0.3mm}\vspace{-1ex}
+    \lstinputlisting[caption={#2},label={#1},stringspaces=false,frame={tb},lineskip=-1pt,extendedchars=true,%
+    basicstyle=\footnotesize\tt,labelstep=1,labelstyle=\tiny,indent=2em,language=Java,breaklines]{#1}
+    \vspace{1ex}%
+}
+% \listfiles
+% \usepackage[]{hyperref}
+% \usepackage{mathptmx}  % instead of package times
+%\ usepackage[scaled=0.9]{helvet} % or [scaled=0.92], if you like
+%% Pacote de citações para formato abnt
+%% \usepackage[num]{abntcite}
+%% \usepackage[alf]{abntcite}
+%% FIM  Lyx-Document Settings
+\usepackage{color}
+\definecolor{azulclaro}{rgb}{0.6,1,1}%   rgb color model
 \end_preamble
 \use_default_options false
 \master Monografia-Dissertacao-Tese-master.lyx
@@ -82,7 +117,7 @@
 \papercolumns 1
 \papersides 1
 \paperpagestyle fancy
-\tracking_changes false
+\tracking_changes true
 \output_changes false
 \html_math_output 0
 \html_css_as_file 0
@@ -159,7 +194,7 @@ citeonline{lin2018new}
 \end_inset
 
  é proposta uma nova metodologia para segmentação de imagens de rochas baseadas
- na porosidade calculada como limitador para obter o melhor valor de limiar.
+ na porosidade, calculada como limitador para obter o melhor valor de limiar.
  Dessa forma é levado em consideração características petrofísicas da amostras,
  o que ajuda na obtenção de resultados mais próximos da realidade quando
  se trata de segmentação.
@@ -174,8 +209,8 @@ se tiver alguma imagem mostrando o resultado obtido pode incluir, sempre
 
 \end_inset
 
-O resultado obtido por essa nova metodologia é comparado com o calculo convencio
-nal de porosidade nas Figuras 
+O resultado obtido por essa metodologia é comparado com o cálculo convencional
+ de porosidade nas Figuras 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:imagem-ct-lin"
@@ -206,6 +241,17 @@ noprefix "false"
 \end_inset
 
 .
+ 
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+não comentar todas as figuras
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -220,7 +266,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename ../../imagens/imagensArtigos/imagem-ct-lin.png
-	width 100text%
+	scale 60
 
 \end_inset
 
@@ -276,7 +322,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename ../../imagens/imagensArtigos/imagem-ct-lin-metodo-antigo.png
-	width 100text%
+	scale 60
 
 \end_inset
 
@@ -332,7 +378,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename ../../imagens/imagensArtigos/imagem-ct-lin-metodo-novo.png
-	width 100text%
+	scale 60
 
 \end_inset
 
@@ -485,8 +531,8 @@ poro
 
 .
  Mesmo que o resultado obtido tenha apresentado uma alta acurácia, o fato
- de ter sido utilizado imagens apenas de uma determinada região limita os
- resultados à mesma.
+ de ter utilizado imagens apenas de uma determinada região limita os resultados
+ à mesma.
  Além disso os autores identificaram que os modelos criados confundiram
  bolhas em regiões porosas como fase sólida e dolomita como outros minerais,
  e tiveram dificuldade de classificar poros com presença de materiais argilosos.
@@ -617,8 +663,7 @@ e
 \emph on
 dropout
 \emph default
-; e uma última camada usada como saída com a informação sobre a propriedade
- física.
+; e uma última camada com a informação sobre a propriedade física.
  A Figura 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -669,7 +714,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename ../../imagens/imagensArtigos/metodologia-cnn-alqahtani.png
-	width 100text%
+	scale 60
 
 \end_inset
 
@@ -719,8 +764,26 @@ literal "false"
 
 \begin_layout Standard
 Como resultado, o modelo foi capaz de estimar os valores de porosidade,
- tamanho médio dos grãos e número de coordenação com um erro médio de 0.05,
- 1.8 e 0.17 
+ número de coordenação
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+O número de coordenação pode ser definido como a quantidade de gargantas
+ que chegam ou partem de um poro 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "cunha2012caracterizaccao"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+ e tamanho médio dos poros com um erro médio de 0.05, 1.8 e 0.17 
 \begin_inset Formula $\mu m$
 \end_inset
 
@@ -962,11 +1025,7 @@ status open
 \begin_inset Graphics
 	filename ../../imagens/imagensArtigos/inception-v3.png
 	lyxscale 50
-	width 100theight%
-	height 100text%
-	keepAspectRatio
-	scaleBeforeRotation
-	rotateAngle 270
+	width 100text%
 
 \end_inset
 
@@ -1120,6 +1179,8 @@ Convolução 3D
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\emph on
 filters=32, kernel_size=(5, 5, 5), strides=(2,2,2), padding='valid', activation=
 'relu'
 \end_layout
@@ -1141,6 +1202,8 @@ Convolução 3D
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\emph on
 filters=32, kernel_size=(5, 5, 5), strides=(2,2,2), padding='valid', activation=
 'relu'
 \end_layout
@@ -1166,6 +1229,8 @@ Max Pooling
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\emph on
 pool_size=(2, 2, 2)
 \end_layout
 
@@ -1186,6 +1251,8 @@ Convolução 3D
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\emph on
 filters=32, kernel_size=(3, 3, 3), padding='valid', activation='relu'
 \end_layout
 
@@ -1206,6 +1273,8 @@ Convolução 3D
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\emph on
 filters=32, kernel_size=(3, 3, 3), padding='valid', activation='relu'
 \end_layout
 
@@ -1230,6 +1299,8 @@ Max Pooling
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\emph on
 filters=32, kernel_size=(3, 3, 3), padding='valid', activation='relu'
 \end_layout
 
@@ -1250,6 +1321,8 @@ Densa
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\emph on
  units=128, activation='relu'
 \end_layout
 
@@ -1270,6 +1343,8 @@ Densa
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\emph on
 units=64, activation='relu'
 \end_layout
 
@@ -1312,6 +1387,8 @@ Densa
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\emph on
 units=1
 \end_layout
 
@@ -1338,8 +1415,8 @@ Os autores deste trabalho ainda utilizaram uma terceira metodologia para
 auto-encoder
 \emph default
 .
- A ideia aqui foi computar atributos de alto nível a partir de uma imagem
- 3D que já contenha alguma informação acerca da porosidade e então decodificar
+ A ideia foi computar atributos de alto nível a partir de uma imagem 3D
+ que já contenha alguma informação acerca da porosidade e então decodificar
  esses atributos em uma máscara de segmentação, onde cada valor representa
  a probabilidade de um 
 \emph on
@@ -1367,16 +1444,16 @@ noprefix "false"
 \end_inset
 
 .
- A função de perda aplicada aqui é uma junção da função 
+ A função de perda aplicada é uma junção da função 
 \emph on
 cross-entropy
 \emph default
-, e o erro médio quadrático entre o valor de porosidade previsto e o computado
+ do erro médio quadrático, entre o valor de porosidade previsto e o computado
  no 
 \emph on
 bottleneck
 \emph default
-, e entre o valor da probabilidade final e a computada no 
+, e também entre o valor da probabilidade final e a computada no 
 \emph on
 bottleneck.
 \end_layout
@@ -1393,7 +1470,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename ../../imagens/imagensArtigos/hebert-autoencoder.png
-	width 100text%
+	scale 60
 
 \end_inset
 
@@ -1452,7 +1529,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename ../../imagens/imagensArtigos/hebert-autoencoder-arch.png
-	width 100text%
+	scale 60
 
 \end_inset
 
@@ -1547,7 +1624,7 @@ citeonline{rubo2019digital}
 \emph on
 sigmoid
 \emph default
-) já se mostrou problematica no que se diz respeito à aplicação de sua derivada
+) já se mostrou problemática no que se diz respeito à aplicação de sua derivada
  
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -1584,7 +1661,7 @@ vanishnig gradient
 \end_layout
 
 \begin_layout Standard
-Na figura 
+Na Figura 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:sigmoid-derivada"
@@ -1603,7 +1680,7 @@ sigmoid
  
 \emph default
 e sua derivada.
- Nela fica fácil entender porque essa função se torna um probla em algóritimos
+ Nela fica fácil entender porque essa função se torna um problema em algóritmos
  de redes neurais que são treinados de forma dependente das funções de ativação.
  Quanto mais 
 \begin_inset Formula $\sigma(x)$
@@ -1624,7 +1701,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename ../../imagens/imagensSites/sigmoid-derivada (1).png
-	width 100text%
+	scale 80
 
 \end_inset
 
@@ -1656,12 +1733,12 @@ name "fig:sigmoid-derivada"
 \end_layout
 
 \begin_layout Standard
-Outros algorítimos de aprendizagem além do gradiente descendente estocastico
+Outros algorítimos de aprendizagem, além do gradiente descendente estocástico
  (
 \emph on
 Stocastic Gradient Descendent
 \emph default
-) também poderiam ser aplicados para ajudar a contornar esse problema.
+), também poderiam ser aplicados para ajudar a contornar esse problema.
  O trabalho de 
 \begin_inset ERT
 status open
@@ -1675,14 +1752,23 @@ citeonline{alqahtani2018deep}
 
 \end_inset
 
- se mostrou be sucedido nesse aspecto, mas todavia ainda foram observadas
- dificuldades no que se diz respeito a anomalias provocadas por minerais
- de brilho mais intenso, algo que poderia ser melhorado se fosse utilizado
- um 
+ se mostrou bem sucedido nesse aspecto, todavia ainda foram observadas dificulda
+des no que se diz respeito a anomalias provocadas por minerais de brilho
+ mais intenso, algo que poderia ser melhorado se fosse utilizado um 
 \emph on
 dataset 
 \emph default
 com valores de intensidade mais bem distribuídos.
+\end_layout
+
+\begin_layout Standard
+Neste trabalho serão utilizadas outras funções que buscam evitar, ou pelo
+ menos mitigar, os problemas listados acima.
+ A ideia será buscar meios de se evitar que o problema do 
+\emph on
+vanishing gradient
+\emph default
+ possa afetar os resultados e principalmente o tempo de processamento.
 \end_layout
 
 \end_body
