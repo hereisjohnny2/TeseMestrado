@@ -4,7 +4,7 @@
 \begin_header
 \save_transient_properties true
 \origin unavailable
-\textclass /home2/andreduartebueno/workdir/TeseMestrado/Projeto/Tese/abnt
+\textclass abnt
 \begin_preamble
 \usepackage {graphicx}
 \usepackage {longtable}
@@ -106,7 +106,6 @@
 \html_math_output 0
 \html_css_as_file 0
 \html_be_strict false
-\author 1908091853 "andreduartebueno"
 \end_header
 
 \begin_body
@@ -181,19 +180,12 @@ e fazer para foi feito] o objetivo é relembrar o leitor o escopo do problema
 \end_inset
 
 Conforme explicado anteriormente, o uso de algoritmos de inteligência artificial
- é cada vez mais comum nas mais diferentes áreas 
-\change_inserted 1908091853 1653947798
-tecnológicas e 
-\change_unchanged
-de pesquisa, especialmente no campo da engenharia.
+ é cada vez mais comum nas mais diferentes áreas tecnológicas e de pesquisa,
+ especialmente no campo da engenharia.
  O uso de tal tecnologia torna a execução de tarefas complexas, como o modelo
  de classificação e de predição, em um curto espaço de tempo possível.
-
-\change_inserted 1908091853 1653947844
  Na prática estamos conseguindo automatizar processos, mas, agora, considerando
  o "treinamento humano".
-\change_unchanged
-
 \end_layout
 
 \begin_layout Standard
@@ -201,9 +193,6 @@ Mais especificamente no âmbito da engenharia de reservatórios, o uso de
  redes neurais e visão computacional permitem que sejam realizadas análises
  para descrever características petrofísicas de uma amostra sem precisar
  danificá-la.
- 
-\change_inserted 1908091853 1653947862
-
 \end_layout
 
 \begin_layout Standard
@@ -214,7 +203,6 @@ Neste trabalho foi mostrado como valores de porosidade absoluta podem ser
  Além disso o desenvolvimento desses modelos se deu utilizando tecnologias
  de código aberto, o que torna mais fácil a reprodução dos resultados aqui
  descritos.
- 
 \end_layout
 
 \begin_layout Standard
@@ -240,12 +228,7 @@ m profundas aplicadas à análise de imagens, e desenvolver aplicações que
 python
 \emph default
  para utilização das técnicas de inteligência artificial e uma ferramenta
- para anotação de regiões de interesse em amostras de rocha digital
-\change_inserted 1908091853 1653947943
- em C++/Qt
-\change_unchanged
-.
- 
+ para anotação de regiões de interesse em amostras de rocha digital em C++/Qt.
 \end_layout
 
 \begin_layout Standard
@@ -384,11 +367,7 @@ status collapsed
 
 Como resultado, a duração, tanto do treinamento, quanto a aplicação do modelo
  duraram na ordem dos milissegundos, o que mostra a capacidade desses algoritmos
- entregar result
-\change_inserted 1908091853 1653948024
-a
-\change_unchanged
-dos de forma rápida.
+ entregar resultados de forma rápida.
 \end_layout
 
 \begin_layout Standard
@@ -461,37 +440,25 @@ noprefix "false"
 \end_inset
 
 .
-\change_inserted 1908091853 1653948046
-
 \end_layout
 
 \begin_layout Standard
-
-\change_inserted 1908091853 1653948061
 O trabalho mostrou e comparou resultados em três situações diferentes:
 \end_layout
 
 \begin_layout Itemize
-
-\change_inserted 1908091853 1653948079
 Um mesmo usuário repete o treinamento em dias diferentes;
 \end_layout
 
 \begin_layout Itemize
-
-\change_inserted 1908091853 1653948089
 Diferentes usuários binarizam as mesmas imagens.
 \end_layout
 
 \begin_layout Itemize
-
-\change_inserted 1908091853 1653948105
 Finalmente, compara-se o resultado obtido por usuários leigos x experientes.
 \end_layout
 
 \begin_layout Standard
-
-\change_inserted 1908091853 1653948254
 Os softwares foram desenvolvidos com a licença GPL e estarão disponibilizadas
  no github do ldsc (
 \begin_inset CommandInset href
@@ -542,30 +509,20 @@ name "sec:Sugestoes-Para-Trabalhos-Futuros"
 Utilizar a ferramenta de anotação de regiões de interesse para classificação
  e segmentação de não apenas regiões de poros e matriz sólida, mas também
  para os diferentes componentes mineralógicos que compõem a imagem.
-\change_inserted 1908091853 1653948289
-
 \begin_inset Note Note
 status open
 
 \begin_layout Plain Layout
-
-\change_inserted 1908091853 1653948322
 tente conseguir alguém que possa fazer isso para você; daí poderia acrescentar
  resultado na versão final;
 \end_layout
 
 \begin_layout Plain Layout
-
-\change_inserted 1908091853 1653948332
 uma imagem com uns 5 minerais diferentes.
-\change_unchanged
-
 \end_layout
 
 \end_inset
 
-
-\change_unchanged
 
 \end_layout
 
@@ -592,31 +549,20 @@ da biblioteca
 PyTorch
 \emph default
  para a linguagem.
-\change_inserted 1908091853 1653948345
-
 \begin_inset Note Note
 status open
 
 \begin_layout Plain Layout
-
-\change_inserted 1908091853 1653948356
 coloque os links para onde isto é descrito/sites
-\change_unchanged
-
 \end_layout
 
 \end_inset
 
 
-\change_unchanged
-
 \end_layout
 
 \begin_layout Itemize
-Integrar a ferramenta de anotação de regiões de interesse com o
-\change_inserted 1908091853 1653948385
- software
-\change_unchanged
+Integrar a ferramenta de anotação de regiões de interesse com o software
  
 \emph on
 Laboratório Virtual de Petrofísica 
@@ -624,8 +570,6 @@ Laboratório Virtual de Petrofísica
 (
 \emph on
 LVP
-\change_inserted 1908091853 1653948401
-
 \emph default
  - 
 \begin_inset CommandInset href
@@ -635,28 +579,18 @@ literal "false"
 
 \end_inset
 
-
-\change_unchanged
 ), de modo a facilitar o processo de obtenção das propriedades petrofísicas
  da amostra de rocha digital.
 \end_layout
 
 \begin_layout Itemize
 Desenvolvimento de um serviço que possa armazenar dados coletados para diversos
- tipos de amostras
-\change_inserted 1908091853 1653948420
-, criando uma base de dados
-\change_unchanged
-.
+ tipos de amostras, criando uma base de dados.
 \end_layout
 
 \begin_layout Itemize
 Desenvolvimento de uma versão para Web da ferramenta de anotação de regiões
- 
-\change_inserted 1908091853 1653948427
-de 
-\change_unchanged
-interesse.
+ de interesse.
  A instalação local pode se tornar um pouco complicada para usuários com
  menos conhecimento de informática, algo se já não ocorreria com uma aplicação
  
