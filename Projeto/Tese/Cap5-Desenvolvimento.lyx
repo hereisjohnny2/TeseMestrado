@@ -4,7 +4,7 @@
 \begin_header
 \save_transient_properties true
 \origin unavailable
-\textclass /home2/andreduartebueno/workdir/TeseMestrado/Projeto/Tese/abnt
+\textclass abnt
 \begin_preamble
 \usepackage {graphicx}
 \usepackage {longtable}
@@ -88,6 +88,7 @@
 \html_math_output 0
 \html_css_as_file 0
 \html_be_strict false
+\author -584458461 "João Carvalho"
 \author 1908091853 "andreduartebueno"
 \end_header
 
@@ -148,55 +149,22 @@ Ferramenta de Anotação de Regiões de Interesse
 \end_layout
 
 \begin_layout Standard
-Conforme descrito em parágrafos anteriores o objetivo desta se
-\change_deleted 1908091853 1653935020
-c
-\change_unchanged
-ção é descrever o processo para a criação da ferramenta de anotação de regiões
- de interesse, as dependências necessárias para seu desenvolvimento, a arquitetu
-ra de código escolhida, as classes que for
-\change_inserted 1908091853 1653935034
-a
-\change_unchanged
-m
-\change_deleted 1908091853 1653935035
-a
-\change_unchanged
- criadas para as funcionalidades do programa, e
-\change_inserted 1908091853 1653935041
-,
-\change_unchanged
- finalmente
-\change_inserted 1908091853 1653935042
-,
-\change_unchanged
- descrever 
-\change_deleted 1908091853 1653935048
-sobre 
-\change_unchanged
-alguns problemas enfrentados durante o processo de codificação e limitações.
+Conforme descrito em parágrafos anteriores o objetivo desta seção é descrever
+ o processo para a criação da ferramenta de anotação de regiões de interesse,
+ as dependências necessárias para seu desenvolvimento, a arquitetura de
+ código escolhida, as classes que foram criadas para as funcionalidades
+ do programa, e, finalmente, descrever alguns problemas enfrentados durante
+ o processo de codificação e limitações.
 \end_layout
 
 \begin_layout Standard
-A ideia básica para o funcionamento do treinamento de um
-\change_inserted 1908091853 1653935087
-a
-\change_unchanged
- rede neural é o fato 
-\change_inserted 1908091853 1653935110
-de 
-\change_unchanged
-que é necessário uma determinada quantidade de dados para que a aprendizagem
- seja bem sucedida.
+A ideia básica para o funcionamento do treinamento de uma rede neural é
+ o fato de que é necessário uma determinada quantidade de dados para que
+ a aprendizagem seja bem sucedida.
  Esses dados podem ser obtidos das mais diferentes formas, seja por meio
  de uma coleta manual, uma pesquisa em bancos de dados ou a partir de sistemas
  automatizados de instrumentação, onde sensores são utilizados para obtenção
  de valores de uma determinada grandeza em tempo real.
-
-\change_deleted 1908091853 1653935141
- 
-\change_unchanged
-
 \end_layout
 
 \begin_layout Standard
@@ -210,12 +178,8 @@ Red, Green
 Blue
 \emph default
 ), como fonte de dados para o desenvolvimento de algoritmos de redes neurais.
- Isso porque, como 
-\change_deleted 1908091853 1653935156
-já foi 
-\change_unchanged
-explicado em capítulos anteriores, uma imagem pode ser tratada como uma
- função em um espaço bidimensional, com coordenadas 
+ Isso porque, como explicado em capítulos anteriores, uma imagem pode ser
+ tratada como uma função em um espaço bidimensional, com coordenadas 
 \begin_inset Formula $x$
 \end_inset
 
@@ -228,12 +192,8 @@ explicado em capítulos anteriores, uma imagem pode ser tratada como uma
 \end_inset
 
  é igual à uma informação de cor, ou, em alguns casos, profundidade.
- Dependendo da quantidade de canais ou do formato da imagem
-\change_deleted 1908091853 1653935180
- do formato da imagem
-\change_unchanged
-, essas informações podem variar em sua estrutura.
- 
+ Dependendo da quantidade de canais ou do formato da imagem, essas informações
+ podem variar em sua estrutura.
 \end_layout
 
 \begin_layout Standard
@@ -384,39 +344,16 @@ Como o escopo deste trabalho se concentra em apenas binarizar as imagens,
  categorias, poro ou matriz sólida.
  Contudo, como é a informação de cor que está sendo usada para alimentar
  a inteligência artificial durante a aprendizagem, a classificação de cada
- pixel 
-\change_deleted 1908091853 1653935280
-em
-\change_unchanged
- em outras categorias, como diversos minerais ou tipos de fluido, 
-\change_deleted 1908091853 1653935304
-e
-\change_inserted 1908091853 1653935310
-é
-\change_deleted 1908091853 1653935304
-m
-\change_unchanged
- claramente possível mudando apenas a quantidade de neurônios de saída.
- 
-\change_inserted 1908091853 1653935665
-Outra possibilidade seria considerar a identificação de cada mineral separadamen
-te, neste caso, um mineral seria classificado como saída tipo 1(sólido)
+ pixel em outras categorias, como diversos minerais ou tipos de fluido,
+ é claramente possível mudando apenas a quantidade de neurônios de saída.
+ Outra possibilidade seria considerar a identificação de cada mineral separadame
+nte, neste caso, um mineral seria classificado como saída tipo 1(sólido)
  e os demais como saída tipo 2(poro).
-\change_unchanged
-
 \end_layout
 
 \begin_layout Standard
 A forma mais simples de se obter essas informações de cada pixel na imagem
- seria coletando
-\change_inserted 1908091853 1653935675
-,
-\change_unchanged
- de alguma forma
-\change_inserted 1908091853 1653935677
-,
-\change_unchanged
- na própria imagem.
+ seria coletando, de alguma forma, na própria imagem.
  Um 
 \emph on
 script
@@ -425,21 +362,7 @@ script
 \emph on
 python
 \emph default
-, é de grande ajuda 
-\change_deleted 1908091853 1653935687
-d
-\change_inserted 1908091853 1653935687
-no
-\change_unchanged
-o 
-\change_deleted 1908091853 1653935688
-s
-\change_inserted 1908091853 1653935688
-que
-\change_deleted 1908091853 1653935690
-e
-\change_unchanged
- diz respeito em obter essa informação.
+, é de grande ajuda no que diz respeito em obter essa informação.
  Contudo, o processo de treinamento de uma rede neural direta implica em
  comparar o resultado obtido na saída com o valor que aquele ponto no plano
  deveria representar no mundo real, no caso, sua 
@@ -447,76 +370,37 @@ e
 label
 \emph default
 .
- 
 \end_layout
 
 \begin_layout Standard
 Dessa forma, a coleta dos dados deve ser realizada por algum profissional
  que seja capaz de distinguir poros de sólidos em uma amostra de rocha digital.
- De
-\change_deleted 1908091853 1653935720
-ssa
-\change_unchanged
- forma 
-\change_inserted 1908091853 1653935722
-que 
-\change_unchanged
-um simples 
+ De forma que um simples 
 \emph on
 script
 \emph default
  não seria tão útil, já que nessa abordagem o trabalho deveria ser realizado
  de forma manual.
-
-\change_deleted 1908091853 1653935729
- 
-\change_unchanged
-
 \end_layout
 
 \begin_layout Standard
-Com esse problema em mente, uma ferramenta que 
-\change_deleted 1908091853 1653935745
-fosse
-\change_inserted 1908091853 1653935745
-seja
-\change_unchanged
- capaz de exibir uma imagem para o usuário, e permit
-\change_deleted 1908091853 1653935750
-ir
-\change_inserted 1908091853 1653935750
-a
-\change_unchanged
- que as regiões de interesse 
-\change_deleted 1908091853 1653935756
-fossem
-\change_inserted 1908091853 1653935757
-sejam
-\change_unchanged
- associadas a 
+Com esse problema em mente, uma ferramenta que seja capaz de exibir uma
+ imagem para o usuário, e permita que as regiões de interesse sejam associadas
+ a 
 \emph on
 labels
 \emph default
  criadas pelo profissional que estaria utilizando realizando o estudo sobre
  a amostra, seria de grande utilidade para a obtenção de material para alimentar
  o algoritmos de IA.
- 
-\change_inserted 1908091853 1653935773
-
 \end_layout
 
 \begin_layout Standard
 A imagem a ser estudada seria carregada em uma camada de base e a medida
- que novas labels fossem adicionadas
-\change_inserted 1908091853 1653935785
-,
-\change_unchanged
- novas camadas iriam se sobrepondo a camada de base.
- O usuário poderia
-\change_inserted 1908091853 1653935790
-,
-\change_unchanged
- então, com alguma ferramenta virtual de anotação, como uma 
+ que novas labels fossem adicionadas, novas camadas iriam se sobrepondo
+ a camada de base.
+ O usuário poderia, então, com alguma ferramenta virtual de anotação, como
+ uma 
 \begin_inset Quotes eld
 \end_inset
 
@@ -539,21 +423,9 @@ dataset
 script
 \emph default
  de treinamento de redes neurais.
- Essa ideia 
-\change_deleted 1908091853 1653935808
-é
-\change_unchanged
- se mostrou bem simples de ser implementada
-\change_inserted 1908091853 1653935818
-,
-\change_unchanged
- além de possuir um potencial de coletada de dados para segmentação de imagens
- de qualquer natureza.
-
-\change_deleted 1908091853 1653935820
- 
-\change_unchanged
-
+ Essa ideia se mostrou bem simples de ser implementada, além de possuir
+ um potencial de coletada de dados para segmentação de imagens de qualquer
+ natureza.
 \end_layout
 
 \begin_layout Standard
@@ -566,15 +438,7 @@ web,
  ferramenta.
  Ou seja, poderia ser acessada em qualquer lugar, a partir de qualquer dispositi
 vo.
- Toda
-\change_deleted 1908091853 1653935836
- 
-\change_unchanged
-vi
-\change_deleted 1908091853 1653935838
-d
-\change_unchanged
-a, devido às restrições de tempo do projeto e de performance da linguagem
+ Todavia, devido às restrições de tempo do projeto e de performance da linguagem
  
 \emph on
 javascript
@@ -588,15 +452,9 @@ desktop
 
 \begin_layout Standard
 Como a ferramenta necessita de alguma interação com interfaces gráficas
- optou-se 
-\change_inserted 1908091853 1653935857
-pel
-\change_unchanged
-a utilização da biblioteca 
+ optou-se pela utilização da biblioteca 
 \emph on
 QT
-\change_inserted 1908091853 1653935881
-
 \emph default
 (
 \begin_inset CommandInset href
@@ -606,60 +464,21 @@ literal "false"
 
 \end_inset
 
-)
-\change_unchanged
-.
- Esta possui uma larga utilização
-\change_inserted 1908091853 1653935888
-,
-\change_unchanged
- 
-\change_deleted 1908091853 1653935933
-tanto 
-\change_inserted 1908091853 1653935892
-na 
-\change_unchanged
-industria
-\change_inserted 1908091853 1653935894
-,
-\change_unchanged
- 
-\change_inserted 1908091853 1653935917
-nas aplicações científicas e 
-\change_deleted 1908091853 1653935920
-quando 
-\change_unchanged
-no desenvolvimento de projetos pessoais ou de pequeno porte, como é o caso
- do 
+).
+ Esta possui uma larga utilização, na industria, nas aplicações científicas
+ e no desenvolvimento de projetos pessoais ou de pequeno porte, como é o
+ caso do 
 \emph on
 software 
 \emph default
 construído nesse trabalho.
- 
 \end_layout
 
 \begin_layout Standard
-Além disso
-\change_inserted 1908091853 1653935953
-,
-\change_unchanged
- 
-\change_inserted 1908091853 1653935987
-a biblioteca QT tem sido constantemente atualizada, é multiplataforma, e
- 
-\change_unchanged
-existe uma comunidade extensa e presente em fóruns, 
-\change_deleted 1908091853 1653935990
-e
-\change_inserted 1908091853 1653935992
-além de
-\change_unchanged
- uma documentação altamente descritiva, o que torna o processo de desenvolviment
-o mais 
-\change_inserted 1908091853 1653936002
-rápido e 
-\change_unchanged
-prático.
+Além disso, a biblioteca QT tem sido constantemente atualizada, é multiplataform
+a, e existe uma comunidade extensa e presente em fóruns, além de uma documentaçã
+o altamente descritiva, o que torna o processo de desenvolvimento mais rápido
+ e prático.
  Outro ponto positivo em relação à escolha do 
 \emph on
 QT
@@ -685,12 +504,9 @@ QT
 \emph on
 QT Designer
 \emph default
-, que permite arrastar e posicionar componentes como
-\change_inserted 1908091853 1653936023
-:
-\change_unchanged
- janelas, botões e menus, o que torna o processo de criação do software
- ainda mais fácil, já que o código que representa a 
+, que permite arrastar e posicionar componentes como: janelas, botões e
+ menus, o que torna o processo de criação do software ainda mais fácil,
+ já que o código que representa a 
 \emph on
 GUI 
 \emph default
@@ -783,11 +599,8 @@ Em contrapartida, é necessário que o
 \emph on
 QT 
 \emph default
-esteja instalado no dispositivo do usuário final para 
-\change_inserted 1908091853 1653936107
-que 
-\change_unchanged
-o programa seja utilizado
+esteja instalado no dispositivo do usuário final para que o programa seja
+ utilizado
 \change_inserted 1908091853 1653936360
  ou precisamos gerar uma versão sem uso das bibliotecas dinâmicas (*.dll
  no Windows ou *.so no GNU/Linux)
@@ -895,11 +708,6 @@ qss
  em uma aplicação 
 \emph on
 web.
-
-\change_deleted 1908091853 1653936389
- 
-\change_unchanged
-
 \end_layout
 
 \begin_layout Standard
@@ -914,17 +722,11 @@ Por fim, a fim de facilitar o processo de
 build 
 \emph default
 (construção do binário executável da ferramenta a partir do código fonte),
- o
-\change_inserted 1908091853 1653936409
- montador
-\change_unchanged
- 
+ o montador 
 \emph on
 CMake
 \emph default
- 
-\change_inserted 1908091853 1653936425
-(
+ (
 \begin_inset CommandInset href
 LatexCommand href
 target "https://cmake.org/"
@@ -932,15 +734,8 @@ literal "false"
 
 \end_inset
 
-) 
-\change_unchanged
-auxilia a organizar as dependências do projeto, tan
-\change_deleted 1908091853 1653936434
-d
-\change_inserted 1908091853 1653936434
-t
-\change_unchanged
-o internas quanto externas.
+) auxilia a organizar as dependências do projeto, tanto internas quanto
+ externas.
  A ideia básica é criar um 
 \emph on
 Makefile
@@ -992,8 +787,6 @@ status open
 Utilização do 
 \emph on
 CMake
-\change_inserted 1908091853 1653936494
-
 \emph default
  (
 \begin_inset CommandInset href
@@ -1003,9 +796,7 @@ literal "false"
 
 \end_inset
 
-)
-\change_unchanged
-.
+).
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:cmake"
@@ -1027,16 +818,10 @@ name "fig:cmake"
 
 \begin_layout Subsection
 Funcionalidades
-\change_inserted 1908091853 1653936501
-
 \end_layout
 
 \begin_layout Standard
-
-\change_inserted 1908091853 1653936515
 Apresenta-se a seguir as principais funcionalidades do software de anotação.
-\change_unchanged
-
 \end_layout
 
 \begin_layout Itemize
@@ -1044,9 +829,7 @@ Apresenta-se a seguir as principais funcionalidades do software de anotação.
 \emph on
 Visualização de Imagens
 \emph default
-: 
-\change_inserted 1908091853 1653936540
-
+:
 \end_layout
 
 \begin_deeper
@@ -1075,7 +858,6 @@ ambiente
  independente.
  As camadas construídas sobre a imagem de base e os dados coletados pertencem
  apenas àquela sub-janela.
- 
 \end_layout
 
 \end_deeper
@@ -1084,9 +866,7 @@ ambiente
 \emph on
 Criação de Camadas
 \emph default
-: 
-\change_inserted 1908091853 1653936543
-
+:
 \end_layout
 
 \begin_deeper
@@ -1119,9 +899,7 @@ isto possibilita a seleção de minerais;
 \emph on
 Tabela de Dados
 \emph default
-: 
-\change_inserted 1908091853 1653936624
-
+:
 \end_layout
 
 \begin_deeper
@@ -1143,17 +921,13 @@ noprefix "false"
  Também existe a possibilidade de exportá-los para um arquivo no formato
  CSV, o que facilita caso o usuário tenha a necessidade de abrir os dados
  em algum aplicativo de edição de planilhas, como o 
-\change_inserted 1908091853 1653936647
-
 \emph on
-Microsoft 
-\change_unchanged
-Excel
-\change_inserted 1908091853 1653936668
-
+Microsoft Excel
 \emph default
- ou Openoffice Calc
-\change_unchanged
+ ou 
+\emph on
+Openoffice Calc
+\emph default
 .
 \end_layout
 
@@ -1206,26 +980,13 @@ name "fig:tabela-dados-1"
 \emph on
 Sistema de Anotação
 \emph default
-: 
-\change_inserted 1908091853 1653936698
-
+:
 \end_layout
 
 \begin_deeper
 \begin_layout Itemize
-Cada ca
-\change_inserted 1908091853 1653936705
-ma
-\change_unchanged
-da, quando criada
-\change_inserted 1908091853 1653936714
-,
-\change_unchanged
- é 
-\change_deleted 1908091853 1653936718
-também 
-\change_unchanged
-associada a uma cor, conforme mostrado na Figura 
+Cada camada, quando criada, é associada a uma cor, conforme mostrado na
+ Figura 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:poros-marcados"
@@ -1236,13 +997,8 @@ noprefix "false"
 \end_inset
 
 .
- Essa cor representa a cor da caneta que irá fazer a 
-\change_deleted 1908091853 1653936730
-marcação
-\change_inserted 1908091853 1653936731
-anotação
-\change_unchanged
- das regiões nas imagens, e pode ser alterada.
+ Essa cor representa a cor da caneta que irá fazer a anotação das regiões
+ nas imagens, e pode ser alterada.
 \end_layout
 
 \end_deeper
@@ -1298,21 +1054,15 @@ Descrição das Classes
 \emph on
 RockImageUI
 \emph default
-: 
-\change_inserted 1908091853 1653936748
-
+:
 \end_layout
 
 \begin_deeper
 \begin_layout Itemize
-
-\change_inserted 1908091853 1653937620
 \begin_inset Note Note
-status open
+status collapsed
 
 \begin_layout Itemize
-
-\change_inserted 1908091853 1653937620
 Classe gerada automaticamente pelo 
 \emph on
 QT Designer
@@ -1348,12 +1098,14 @@ noprefix "false"
 \end_inset
 
 .
+
+\change_deleted -584458461 1653943780
  
+\change_unchanged
+
 \end_layout
 
 \begin_layout Itemize
-
-\change_inserted 1908091853 1653937620
 No momento da compilação esse arquivo é usado pelo compilador do 
 \emph on
 C++ 
@@ -1390,76 +1142,6 @@ ui
 
 \end_inset
 
-
-\change_deleted 1908091853 1653937620
-Classe gerada automaticamente pelo 
-\emph on
-QT Designer
-\emph default
- a partir a janela desenvolvida na Figura 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:qt-designer"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
-.
- Basicamente um arquivo com a extensão 
-\emph on
-.ui
-\emph default
- é criada pela ferramente.
- Esse arquivo possui um formato semelhante ao 
-\emph on
-XML
-\emph default
-, como mostrado na Figura 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:xml-ui"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
-.
- No momento da compilação esse arquivo é usado pelo compilador do 
-\emph on
-C++ 
-\emph default
-e para gerar uma classe com 
-\emph on
-widgets QT 
-\emph default
-que representam a interface criada.
- Por convenção essas classes sempre tem o nome terminado em 
-\begin_inset Quotes eld
-\end_inset
-
-
-\emph on
-UI
-\emph default
-
-\begin_inset Quotes erd
-\end_inset
-
-.
- Os 
-\emph on
-widgets 
-\emph default
-podem ser acessados pela instância da classe, que por convenção também é
- nomeada como 
-\emph on
-ui
-\emph default
-.
-\change_inserted 1908091853 1653937629
 A interface gráfica da janela a ser construída é desenhada no aplicativo
  
 \emph on
@@ -1498,8 +1180,6 @@ noprefix "false"
 status open
 
 \begin_layout Plain Layout
-
-\change_inserted 1908091853 1653937184
 veja por exemplo 
 \begin_inset CommandInset href
 LatexCommand href
@@ -1508,8 +1188,6 @@ target "https://doc.qt.io/archives/qt-4.8/moc.html"
 \end_inset
 
 .
-\change_unchanged
-
 \end_layout
 
 \end_inset
@@ -1527,17 +1205,11 @@ gera um arquivo .ui, este é convertido em .h e .cpp que são pré-processados
 status open
 
 \begin_layout Plain Layout
-
-\change_inserted 1908091853 1653937644
 o compilador C++ não reconhece comandos específicos de QT
-\change_unchanged
-
 \end_layout
 
 \end_inset
 
-
-\change_unchanged
 
 \end_layout
 
@@ -1593,18 +1265,13 @@ name "fig:xml-ui"
 \emph on
 ColorDialog
 \emph default
-: 
-\change_inserted 1908091853 1653936751
-
+:
 \end_layout
 
 \begin_deeper
 \begin_layout Itemize
-Classe que representa a janela de diálogo para alteração 
-\change_deleted 1908091853 1653937652
-de
-\change_unchanged
- da cor da caneta de anotação.
+Classe que representa a janela de diálogo para alteração da cor da caneta
+ de anotação.
  Essa classe foi criada inteiramente em código sem a ultilização do 
 \emph on
 QT Desginer 
@@ -1618,8 +1285,10 @@ devido a sua simplicidade.
 \emph on
 CustomMessageDialogs
 \emph default
-: 
-\change_inserted 1908091853 1653936755
+:
+\change_deleted -584458461 1653943805
+ 
+\change_unchanged
 
 \end_layout
 
@@ -1634,24 +1303,20 @@ Classe que representa uma janela de diálogo para exibir mensagens personalizada
 \emph on
 ImageDisplaySubWindow
 \emph default
-: 
-\change_inserted 1908091853 1653936757
+:
+\change_deleted -584458461 1653943807
+ 
+\change_unchanged
 
 \end_layout
 
 \begin_deeper
 \begin_layout Itemize
-Essa classe 
-\change_inserted 1908091853 1653937726
-representa 
-\change_unchanged
-uma sub-janela e é utilizada para exibir uma nova imagem.
+Essa classe representa uma sub-janela e é utilizada para exibir uma nova
+ imagem.
  Assim que ela é criada, o nome da imagem é inserido em uma barra lateral
- que lista as imagens e também as camadas, conforme 
-\change_inserted 1908091853 1653937743
-ilustrado n
-\change_unchanged
-a Figura 
+ que lista as imagens e também as camadas, conforme ilustrado na Figura
+ 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:sub-listas"
@@ -1715,8 +1380,10 @@ name "fig:sub-listas"
 \begin_layout Itemize
 
 \emph on
-StackedImagesWidget: 
-\change_inserted 1908091853 1653936759
+StackedImagesWidget:
+\change_deleted -584458461 1653943813
+ 
+\change_unchanged
 
 \end_layout
 
@@ -1733,23 +1400,18 @@ Representa a estrutura de pilha na qual as camadas das imagens são exibidas.
 \emph on
 ImageDisplayWidget
 \emph default
-: 
-\change_inserted 1908091853 1653936761
+:
+\change_deleted -584458461 1653943815
+ 
+\change_unchanged
 
 \end_layout
 
 \begin_deeper
 \begin_layout Itemize
-Representa cada uma das imagens ou camadas mostra
-\change_inserted 1908091853 1653937786
-da
-\change_unchanged
-s na ferramenta.
- Essa classe também armazena 
-\change_deleted 1908091853 1653937793
-d
-\change_unchanged
-os dados das regiões marcadas em uma estrutura de 
+Representa cada uma das imagens ou camadas mostradas na ferramenta.
+ Essa classe também armazena os dados das regiões marcadas em uma estrutura
+ de 
 \emph on
 HashMap
 \emph default
@@ -1760,8 +1422,10 @@ HashMap
 \begin_layout Itemize
 
 \emph on
-PixelDataTable: 
-\change_inserted 1908091853 1653936763
+PixelDataTable:
+\change_deleted -584458461 1653943820
+ 
+\change_unchanged
 
 \end_layout
 
@@ -1803,19 +1467,11 @@ noprefix "false"
 \end_inset
 
 .
- Essas imagens representam amostras de rochas 
-\change_deleted 1908091853 1653937834
-de
-\change_inserted 1908091853 1653937834
-com
-\change_unchanged
- diferentes valores de porosidade e permeabilidade, o que implica em diferentes
- maneiras de se realizar a coleta.
+ Essas imagens representam amostras de rochas com diferentes valores de
+ porosidade e permeabilidade, o que implica em diferentes maneiras de se
+ realizar a coleta.
  Todavia ações como evitar o contato com as bordas foram tomadas para se
  obter a melhor qualidade dos dados.
- 
-\change_inserted 1908091853 1653937873
-
 \end_layout
 
 \begin_layout Standard
@@ -3694,13 +3350,7 @@ noprefix "false"
 
 \end_inset
 
-
-\change_deleted 1908091853 1653937927
-,
-\change_inserted 1908091853 1653937927
- e
-\change_unchanged
- 
+ e 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:exemplo-p262"
@@ -3956,11 +3606,7 @@ name "fig:exemplo-p262"
 
 \begin_layout Standard
 Os dados depois de coletados foram exportados para um arquivo de texto no
- formato
-\change_inserted 1908091853 1653938033
- ASCII com extensão
-\change_unchanged
- 
+ formato ASCII com extensão 
 \emph on
 .dat
 \emph default
@@ -4033,11 +3679,7 @@ name "fig:exemplo-dat"
 \begin_layout Standard
 Além da coleta de dados de todas a amostras descritas acima, também foi
  solicitados à outros quatro voluntários com diferentes níveis de conhecimento
- e experiência e
-\change_inserted 1908091853 1653938075
-m
-\change_unchanged
- engenharia e geologia do petróleo.
+ e experiência em engenharia e geologia do petróleo.
  Cada um deles realizou a coleta nas mesmas amostras, conforme é listado
  na Tabela 
 \begin_inset CommandInset ref
@@ -4050,20 +3692,12 @@ noprefix "false"
 \end_inset
 
 .
- Os voluntários 1 e 2 são graduados em engenharia de petróleo e atua
-\change_deleted 1908091853 1653938087
-l
-\change_inserted 1908091853 1653938087
-m
-\change_unchanged
- na área.
+ Os voluntários 1 e 2 são graduados em engenharia de petróleo e atuam na
+ área.
  O voluntário 3 é atualmente doutorando em engenharia de reservatórios e
  exploração.
- Por fim, o voluntário 4 é estudante 
-\change_inserted 1908091853 1653938100
-d
-\change_unchanged
-e engenharia de reservatórios e atualmente é estagiário na área.
+ Por fim, o voluntário 4 é estudante de engenharia de reservatórios e atualmente
+ é estagiário na área.
 \change_inserted 1908091853 1653938104
 
 \begin_inset Note Note
@@ -4814,13 +4448,8 @@ noprefix "false"
 
 \end_inset
 
- está descrit
-\change_deleted 1908091853 1653938169
-a
-\change_inserted 1908091853 1653938169
-o
-\change_unchanged
- o modelo de rede neural utilizado para treinamento e binarização das imagens.
+ está descrito o modelo de rede neural utilizado para treinamento e binarização
+ das imagens.
  Todas as camadas internas dessa rede utilizaram 
 \emph on
 ReLU 
@@ -4830,11 +4459,7 @@ como função de ativação.
 \emph on
 log_softmax
 \emph default
-, que
-\change_inserted 1908091853 1653938186
-,
-\change_unchanged
- de acordo com a documentação da biblioteca, é recomentada para algoritmos
+, que, de acordo com a documentação da biblioteca, é recomentada para algoritmos
  classificadores.
 \change_inserted 1908091853 1653938196
 
@@ -5076,8 +4701,10 @@ responsável por carregar os dados a partir de um arquivo de texto e troná-los
 \emph on
 RockNetModel
 \emph default
-: 
-\change_inserted 1908091853 1653938215
+:
+\change_deleted -584458461 1653943902
+ 
+\change_unchanged
 
 \end_layout
 
@@ -5093,34 +4720,23 @@ PyTorch
 \emph default
 .
  No construtor
-\change_inserted 1908091853 1653938333
-
 \begin_inset Foot
-status open
+status collapsed
 
 \begin_layout Plain Layout
-
-\change_inserted 1908091853 1653938393
 Em orientação a objeto um construtor é uma função executada quando um objeto
- é instanciado(construído).
+ é instanciado (construído).
  É normalmente utilizado para iniciar o objeto, definindo os valores de
  seus atributos e realizando alguma tarefa necessária para que o objeto
  fique pronto para uso.
-\change_unchanged
-
 \end_layout
 
 \end_inset
 
-
-\change_unchanged
  da classe são instanciadas as camadas da rede como propriedades da própria
  classe.
- É possível criar quantas camadas foram necessárias, desde que seja
-\change_inserted 1908091853 1653938257
-m
-\change_unchanged
- instancias da classe 
+ É possível criar quantas camadas foram necessárias, desde que sejam instancias
+ da classe 
 \emph on
 Linear
 \emph default
@@ -5129,11 +4745,7 @@ Linear
 Pytorch
 \emph default
 , e recebam no construtor a quantidade de neurônios da camada anterior e
- a quantidade de neurônios que i
-\change_inserted 1908091853 1653938268
-r
-\change_unchanged
-á possuir.
+ a quantidade de neurônios que irá possuir.
  Além disso, é necessário sobrecarregar o método 
 \emph on
 forward
@@ -5151,8 +4763,10 @@ forward
 \emph on
 RockDataset
 \emph default
-: 
-\change_inserted 1908091853 1653938218
+:
+\change_deleted -584458461 1653943939
+ 
+\change_unchanged
 
 \end_layout
 
@@ -5326,11 +4940,7 @@ dataloaders
 \emph on
 image
 \emph default
-: Pacote que concentra funções para a manipulação de imagens
-\change_inserted 1908091853 1653939744
-.
-\change_unchanged
-
+: Pacote que concentra funções para a manipulação de imagens.
 \end_layout
 
 \begin_deeper
@@ -5343,15 +4953,9 @@ binarize
 \emph on
 array 
 \emph default
-que representa
-\change_deleted 1908091853 1653939791
- 
-\change_inserted 1908091853 1653939792
- a 
-\change_unchanged
-imagem a ser binarizada, uma tupla que representa os valores de altura e
- largura de imagens e o modelo da rede neural que será aplicado sobre cada
- pixel da imagem.
+que representa a imagem a ser binarizada, uma tupla que representa os valores
+ de altura e largura de imagens e o modelo da rede neural que será aplicado
+ sobre cada pixel da imagem.
  A saída é um novo 
 \emph on
 array
@@ -5435,17 +5039,7 @@ array
 
 .
  O valor da porosidade será utilizada futuramente para poder comparar o
- resultados do processo com
-\change_inserted 1908091853 1653939958
- o
-\change_unchanged
- de outros trabalhos n
-\change_deleted 1908091853 1653939885
-a
-\change_inserted 1908091853 1653939886
-o
-\change_unchanged
- capítulo de resultados.
+ resultados do processo com o de outros trabalhos no capítulo de resultados.
 \end_layout
 
 \begin_layout Itemize
@@ -5558,21 +5152,11 @@ por meio de uma função de perda do PyTorch denominada de
 nll_loss
 \emph default
 .
- 
-\change_deleted 1908091853 1653940063
-De acordo com a documentação da biblioteca, e
-\change_inserted 1908091853 1653940063
-E
-\change_unchanged
-ssa função representa a perda de probabilidade logarítmica negativa e é
- útil treinar problemas de classificação parecido com aqueles que são tratados
- neste trabalho.
- Em seguida é calculado o gradiente da perda e o erro
-\change_deleted 1908091853 1653940049
-r
-\change_unchanged
- é propagado pelo rede neural a fim de se atualizar os pesos e vieses de
- cada neurônio.
+ Essa função representa a perda de probabilidade logarítmica negativa e
+ é útil treinar problemas de classificação parecido com aqueles que são
+ tratados neste trabalho.
+ Em seguida é calculado o gradiente da perda e o erro é propagado pelo rede
+ neural a fim de se atualizar os pesos e vieses de cada neurônio.
 \end_layout
 
 \begin_layout Itemize
@@ -5594,15 +5178,7 @@ encontrado no
 dataloader
 \emph default
 , é calculado a saída da rede neural.
- Contudo
-\change_inserted 1908091853 1653940100
-,
-\change_unchanged
- dessa vez
-\change_inserted 1908091853 1653940102
-,
-\change_unchanged
- o maior valor do 
+ Contudo, dessa vez, o maior valor do 
 \emph on
 tensor 
 \emph default
@@ -5621,8 +5197,10 @@ A saída da função é a acurácia do modelo.
 \emph on
 parser
 \emph default
-: 
-\change_inserted 1908091853 1653938228
+:
+\change_deleted -584458461 1653944018
+ 
+\change_unchanged
 
 \end_layout
 
@@ -5653,12 +5231,7 @@ dataloaders
 \emph default
  de treino e teste.
  Em seguida é instanciada a classe que representa o modelo da rede neural,
- e se define 
-\change_inserted 1908091853 1653940175
-o 
-\change_unchanged
-otimizador.
- 
+ e se define o otimizador.
 \end_layout
 
 \begin_layout Standard
@@ -5707,11 +5280,8 @@ apply_model,
 \emph on
 pickle
 \emph default
-, o caminho para a imagem que será binarizada, o caminho para 
-\change_deleted 1908091853 1653940233
-d
-\change_unchanged
-a imagem binarizada de saída e um 
+, o caminho para a imagem que será binarizada, o caminho para a imagem binarizad
+a de saída e um 
 \emph on
 flag
 \emph default
@@ -5736,19 +5306,15 @@ estimativa com o método
 eval
 \emph default
 .
- Por fim
-\change_inserted 1908091853 1653940255
-,
-\change_unchanged
- a função 
+ Por fim, a função 
 \emph on
 apply_binarizarion 
 \emph default
 é executada, retornando o resultado da binarização e a duração do processo.
  Calcula-se então a porosidade da imagem amostra que é salvo em um arquivo
  de texto junto com 
-\change_inserted 1908091853 1653940265
-p 
+\change_inserted -584458461 1653944040
+o 
 \change_unchanged
 tempo de execução.
  Por sim, se for o caso, a imagem resultante é salva.
@@ -5760,30 +5326,10 @@ Coleta de Resultados
 
 \begin_layout Standard
 O processo de coleta dos resultados seguiu o 
-\change_deleted 1908091853 1653940278
-seguinte
+\change_inserted -584458461 1653944069
+fluxograma 
 \change_unchanged
- 
-\change_deleted 1908091853 1653940296
-procedimento
-\change_inserted 1908091853 1653940304
-algoritmo
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-
-\change_inserted 1908091853 1653940311
-ou fluxograma
-\change_unchanged
-
-\end_layout
-
-\end_inset
-
-
-\change_unchanged
- mostrado na Figura 
+mostrado na Figura 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:procedimento-de-coleta-resultados"
