@@ -88,8 +88,6 @@
 \html_math_output 0
 \html_css_as_file 0
 \html_be_strict false
-\author -584458461 "João Carvalho"
-\author 1908091853 "andreduartebueno"
 \end_header
 
 \begin_body
@@ -212,7 +210,24 @@ noprefix "false"
 \end_inset
 
 .
- 
+ Os 
+\emph on
+Input_Type1, Input_Type2 e Input_Type3, 
+\emph default
+representam neste caso os canais de cores dos pixeis das imagens.
+ Todavia poderiam representar também qualquer tipo de entrada válida que
+ pudesse servir como material de aprendizagem da rede.
+ De forma semelhantes os neurônios da camada de saída 
+\emph on
+Output_Type1 
+\emph default
+e 
+\emph on
+Output_Type2
+\emph default
+, representam respectivamente os minerais de interesse do estudo.
+ Aqui estes seriam poros e matriz sólida, mas dependendo o objetivo final
+ essas saídas poderiam representar outros elementos.
 \end_layout
 
 \begin_layout Standard
@@ -225,91 +240,12 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename ../../imagens/imagensCriadas/representacao-rede-neural.png
+	filename /home/joao/Documentos/TeseMestrado/imagens/imagensCriadas/rede-neural-rep.png
 	lyxscale 50
 	width 100text%
 
 \end_inset
 
-
-\change_inserted 1908091853 1653935376
-
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-
-\change_inserted 1908091853 1653935386
-generalize:
-\end_layout
-
-\begin_layout Plain Layout
-
-\change_inserted 1908091853 1653935409
-coloque na entrada Input_Type_1 Input_Type_2 Input_Type_3
-\end_layout
-
-\begin_layout Plain Layout
-
-\change_inserted 1908091853 1653935431
-e na saída Output_Type_1 Output_Type_2
-\end_layout
-
-\begin_layout Plain Layout
-
-\change_inserted 1908091853 1653935457
-No software selecionar opção em que Input_Type_1 Input_Type_2 Input_Type_3
- ->RGB
-\end_layout
-
-\begin_layout Plain Layout
-
-\change_inserted 1908091853 1653935475
-e Output_Type_1 Output_Type_2 -> Sólido e Poro.
-\end_layout
-
-\begin_layout Plain Layout
-
-\change_inserted 1908091853 1653935485
-Permite fazer coisas diferentes como:
-\end_layout
-
-\begin_layout Plain Layout
-
-\change_inserted 1908091853 1653935488
-Entrada RGB
-\end_layout
-
-\begin_layout Plain Layout
-
-\change_inserted 1908091853 1653935537
-Saída: Tipo1=Argila Tipo2=outrascoisas;
-\end_layout
-
-\begin_layout Plain Layout
-
-\change_inserted 1908091853 1653935546
-Pode repetir a classificação e fazer
-\end_layout
-
-\begin_layout Plain Layout
-
-\change_inserted 1908091853 1653935563
-Saída: Tipo1=MineralDeInteresse Tipo2=outrascoisas;
-\end_layout
-
-\begin_layout Plain Layout
-
-\change_inserted 1908091853 1653935601
-Assim consegue classificar os minerais fazendo repetidas classificações.
-\change_unchanged
-
-\end_layout
-
-\end_inset
-
-
-\change_unchanged
 
 \end_layout
 
@@ -524,28 +460,6 @@ noprefix "false"
  mostra uma janela sendo desenvolvida no 
 \emph on
 QT Desginer.
- 
-\change_inserted 1908091853 1653936066
-
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-
-\change_inserted 1908091853 1653936096
-
-\emph on
-tela preta é legal para economizar energia; mas para impressão o ideal é
- tela clara, pois economiza tonner
-\change_unchanged
-
-\end_layout
-
-\end_inset
-
-
-\change_unchanged
-
 \end_layout
 
 \begin_layout Standard
@@ -558,7 +472,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename ../../imagens/imagensCriadas/utilizando-qt-designer.png
+	filename /home/joao/Documentos/TeseMestrado/imagens/imagensCriadas/qt-desginer.png
 	width 100text%
 
 \end_inset
@@ -600,67 +514,55 @@ Em contrapartida, é necessário que o
 QT 
 \emph default
 esteja instalado no dispositivo do usuário final para que o programa seja
- utilizado
-\change_inserted 1908091853 1653936360
- ou precisamos gerar uma versão sem uso das bibliotecas dinâmicas (*.dll
- no Windows ou *.so no GNU/Linux)
+ utilizado ou que seja gerada uma versão sem uso das bibliotecas dinâmicas
+ (*.dll no Windows ou *.so no GNU/Linux) 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "gccLinkOptions"
+literal "false"
+
+\end_inset
+
+
 \begin_inset Note Note
-status open
+status collapsed
 
 \begin_layout Plain Layout
-
-\change_inserted 1908091853 1653936248
 é possível gerar um executável que incorpora, dentro de sí, as bibliotecas;
  sem necessidade de estarem instaladas.
 \end_layout
 
 \begin_layout Plain Layout
-
-\change_inserted 1908091853 1653936250
 veja
 \end_layout
 
 \begin_layout Plain Layout
-
-\change_inserted 1908091853 1653936251
 https://gcc.gnu.org/onlinedocs/gcc/Link-Options.html
 \end_layout
 
 \begin_layout Plain Layout
-
-\change_inserted 1908091853 1653936263
 ex:
 \end_layout
 
 \begin_layout Plain Layout
-
-\change_inserted 1908091853 1653936302
--static 
+-static
 \end_layout
 
 \begin_layout Plain Layout
-
-\change_inserted 1908091853 1653936299
 On systems that support dynamic linking, this overrides -pie and prevents
  linking with the shared libraries.
  On other systems, this option has no effect.
 \end_layout
 
 \begin_layout Plain Layout
-
-\change_inserted 1908091853 1653936305
 .
 \end_layout
 
 \begin_layout Plain Layout
-
-\change_inserted 1908091853 1653936305
--static-libstdc++ 
+-static-libstdc++
 \end_layout
 
 \begin_layout Plain Layout
-
-\change_inserted 1908091853 1653936263
 When the g++ program is used to link a C++ program, it normally automatically
  links against libstdc++.
  If libstdc++ is available as a shared library, and the -static option is
@@ -670,14 +572,10 @@ When the g++ program is used to link a C++ program, it normally automatically
  by the program without going all the way to a fully static link.
  The -static-libstdc++ option directs the g++ driver to link libstdc++ staticall
 y, without necessarily linking other libraries statically.
-\change_unchanged
-
 \end_layout
 
 \end_inset
 
-
-\change_unchanged
 .
  Mesmo que o processo de instalação seja documentado no site da própria
  equipe de desenvolvimento do 
@@ -874,23 +772,8 @@ Criação de Camadas
 Sobre cada uma das imagens é possível criar novas camadas.
  Cada camada tem um nome único e os valores de RGB coletados nela são associados
  à esse nome.
- 
-\change_inserted 1908091853 1653936567
-
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-
-\change_inserted 1908091853 1653936593
-isto possibilita a seleção de minerais;
-\end_layout
-
-\end_inset
-
-
-\change_unchanged
-
+ É justamente essa criação de camadas que possibilita a seleção de diferentes
+ minerais.
 \end_layout
 
 \end_deeper
@@ -1098,11 +981,6 @@ noprefix "false"
 \end_inset
 
 .
-
-\change_deleted -584458461 1653943780
- 
-\change_unchanged
-
 \end_layout
 
 \begin_layout Itemize
@@ -1147,7 +1025,7 @@ A interface gráfica da janela a ser construída é desenhada no aplicativo
 \emph on
 QT Designer
 \emph default
-(veja Figura 
+ (veja Figura 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:qt-designer"
@@ -1160,7 +1038,7 @@ noprefix "false"
 ).
  Este, por sua vez, gera arquivos .ui que descrevem a interface da janela
  criada.
- Arquivos .ui são arquivos com formato semelhante ao xml (veja Figura 
+ Arquivos .ui são arquivos com formato semelhante ao XML (veja Figura 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:xml-ui"
@@ -1286,10 +1164,6 @@ devido a sua simplicidade.
 CustomMessageDialogs
 \emph default
 :
-\change_deleted -584458461 1653943805
- 
-\change_unchanged
-
 \end_layout
 
 \begin_deeper
@@ -1304,10 +1178,6 @@ Classe que representa uma janela de diálogo para exibir mensagens personalizada
 ImageDisplaySubWindow
 \emph default
 :
-\change_deleted -584458461 1653943807
- 
-\change_unchanged
-
 \end_layout
 
 \begin_deeper
@@ -1381,10 +1251,6 @@ name "fig:sub-listas"
 
 \emph on
 StackedImagesWidget:
-\change_deleted -584458461 1653943813
- 
-\change_unchanged
-
 \end_layout
 
 \begin_deeper
@@ -1401,10 +1267,6 @@ Representa a estrutura de pilha na qual as camadas das imagens são exibidas.
 ImageDisplayWidget
 \emph default
 :
-\change_deleted -584458461 1653943815
- 
-\change_unchanged
-
 \end_layout
 
 \begin_deeper
@@ -1423,10 +1285,6 @@ HashMap
 
 \emph on
 PixelDataTable:
-\change_deleted -584458461 1653943820
- 
-\change_unchanged
-
 \end_layout
 
 \begin_deeper
@@ -3382,24 +3240,6 @@ status open
 \end_inset
 
 
-\change_inserted 1908091853 1653937958
-
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-
-\change_inserted 1908091853 1653937970
-se tiver coloque lado a lado a coleta de poros e sólidos
-\change_unchanged
-
-\end_layout
-
-\end_inset
-
-
-\change_unchanged
-
 \end_layout
 
 \begin_layout Plain Layout
@@ -3560,24 +3400,6 @@ status open
 \end_inset
 
 
-\change_inserted 1908091853 1653937991
-
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-
-\change_inserted 1908091853 1653938009
-atualizar a imagem aqui! não tem a coleta
-\change_unchanged
-
-\end_layout
-
-\end_inset
-
-
-\change_unchanged
-
 \end_layout
 
 \begin_layout Plain Layout
@@ -3698,23 +3520,15 @@ noprefix "false"
  exploração.
  Por fim, o voluntário 4 é estudante de engenharia de reservatórios e atualmente
  é estagiário na área.
-\change_inserted 1908091853 1653938104
-
 \begin_inset Note Note
-status open
+status collapsed
 
 \begin_layout Plain Layout
-
-\change_inserted 1908091853 1653938116
 vamos tentar um voluntário geólogo com experiência
-\change_unchanged
-
 \end_layout
 
 \end_inset
 
-
-\change_unchanged
 
 \end_layout
 
@@ -4460,25 +4274,15 @@ como função de ativação.
 log_softmax
 \emph default
 , que, de acordo com a documentação da biblioteca, é recomentada para algoritmos
- classificadores.
-\change_inserted 1908091853 1653938196
-
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-
-\change_inserted 1908091853 1653938208
-aqui vale alguma referência de artigo para justificar a escolha
-\change_unchanged
-
-\end_layout
+ classificadores 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "de2015exploration"
+literal "false"
 
 \end_inset
 
-
-\change_unchanged
-
+.
 \begin_inset Float table
 placement H
 wide false
@@ -4702,10 +4506,6 @@ responsável por carregar os dados a partir de um arquivo de texto e troná-los
 RockNetModel
 \emph default
 :
-\change_deleted -584458461 1653943902
- 
-\change_unchanged
-
 \end_layout
 
 \begin_deeper
@@ -4764,10 +4564,6 @@ forward
 RockDataset
 \emph default
 :
-\change_deleted -584458461 1653943939
- 
-\change_unchanged
-
 \end_layout
 
 \begin_deeper
@@ -4809,25 +4605,29 @@ label
 A aplicação 
 \emph on
 CLI
-\change_inserted 1908091853 1653940134
-
 \begin_inset Foot
 status open
 
 \begin_layout Plain Layout
-
-\change_inserted 1908091853 1653940154
-
+Uma CLI, ou 
 \emph on
-Uma CLI ....explique o que é, a banca não sabe
-\change_unchanged
+Command-Line Interface
+\emph default
+, significa Interface de Linha de Comando.
+ É um tipo de programa no qual os usuários são capazes de de digitar comandos
+ em texto para a execução de tarefas no computados 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "singer2022command"
+literal "false"
 
+\end_inset
+
+.
 \end_layout
 
 \end_inset
 
-
-\change_unchanged
  
 \emph default
 desenvolvida possui uma série de funções que podem ser compartilhadas entre
@@ -4866,38 +4666,12 @@ load_data_from_file
 : Função responsável por carregar os dados coletados a partir de um arquivo
  de texto.
  Os dados são lidos e colocados dentro de uma lista do python.
- Os valores das 
+ Os valores de cada 
 \emph on
-labels
+label 
 \emph default
- que representam a categoria dos poros foram classificadas com o valor 
-\begin_inset Quotes eld
-\end_inset
-
-1
-\begin_inset Quotes erd
-\end_inset
-
-.
- Os outros valores foram convertidos de texto para inteiro.
-\change_inserted 1908091853 1653938545
-
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-
-\change_inserted 1908091853 1653938581
-cada label recebe um inteiro crescente? 1=poro 2=argila 3=mineralA 4=mineralb...?
-\change_unchanged
-
-\end_layout
-
-\end_inset
-
-
-\change_unchanged
-
+são convertidos para valores numéricos em ordem crescente, a partir de zero,
+ a medida que vão aparecendo.
 \end_layout
 
 \begin_layout Itemize
@@ -4994,28 +4768,14 @@ array
 binaraize
 \emph default
 .
- A saída destes função é o retorno da função 
+ A saída desta função é o 
+\emph on
+array 
+\emph default
+que representa a imagem binarizada gerada por 
 \emph on
 binarize
-\change_inserted 1908091853 1653939839
-
 \emph default
-
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-
-\change_inserted 1908091853 1653939866
-do tipo ?(qual o tipo retornado?)
-\change_unchanged
-
-\end_layout
-
-\end_inset
-
-
-\change_unchanged
 .
 \end_layout
 
@@ -5081,27 +4841,11 @@ array
 que representa uma imagem binarizada e o nome da imagem e salva localmente
  utilizando a biblioteca 
 \emph on
-pillow.
-\change_inserted 1908091853 1653939982
-
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-
-\change_inserted 1908091853 1653939990
-
+pillow 
+\emph default
+no formato 
 \emph on
-qual o formato da imagem salva?
-\change_unchanged
-
-\end_layout
-
-\end_inset
-
-
-\change_unchanged
-
+png.
 \end_layout
 
 \end_deeper
@@ -5198,10 +4942,6 @@ A saída da função é a acurácia do modelo.
 parser
 \emph default
 :
-\change_deleted -584458461 1653944018
- 
-\change_unchanged
-
 \end_layout
 
 \begin_deeper
@@ -5312,11 +5052,7 @@ apply_binarizarion
 \emph default
 é executada, retornando o resultado da binarização e a duração do processo.
  Calcula-se então a porosidade da imagem amostra que é salvo em um arquivo
- de texto junto com 
-\change_inserted -584458461 1653944040
-o 
-\change_unchanged
-tempo de execução.
+ de texto junto com o tempo de execução.
  Por sim, se for o caso, a imagem resultante é salva.
 \end_layout
 
@@ -5325,11 +5061,8 @@ Coleta de Resultados
 \end_layout
 
 \begin_layout Standard
-O processo de coleta dos resultados seguiu o 
-\change_inserted -584458461 1653944069
-fluxograma 
-\change_unchanged
-mostrado na Figura 
+O processo de coleta dos resultados seguiu o fluxograma mostrado na Figura
+ 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:procedimento-de-coleta-resultados"
@@ -5352,31 +5085,12 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename ../../imagens/imagensCriadas/fluxograma-procedimento.png
+	filename /home/joao/Documentos/TeseMestrado/imagens/imagensCriadas/processo2.png
 	lyxscale 50
 	width 100text%
 
 \end_inset
 
-
-\change_inserted 1908091853 1653940342
-
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-
-\change_inserted 1908091853 1653940372
-coloque em cores diferentes o que é feito no software em c++ e o que é feito
- no software em python; ou caixas mostrando isso
-\change_unchanged
-
-\end_layout
-
-\end_inset
-
-
-\change_unchanged
 
 \end_layout
 
