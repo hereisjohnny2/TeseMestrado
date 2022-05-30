@@ -4,7 +4,7 @@
 \begin_header
 \save_transient_properties true
 \origin unavailable
-\textclass /home2/andreduartebueno/workdir/TeseMestrado/Projeto/Tese/abnt
+\textclass abnt
 \begin_preamble
 \usepackage {graphicx}
 \usepackage {longtable}
@@ -82,7 +82,7 @@
 \papercolumns 1
 \papersides 1
 \paperpagestyle fancy
-\tracking_changes false
+\tracking_changes true
 \output_changes false
 \html_math_output 0
 \html_css_as_file 0
@@ -126,7 +126,7 @@ thechapter-Revisão dos Modelos a Serem Utilizados}
 \backslash
 rhead{
 \backslash
-thepage} 
+thepage}
 \end_layout
 
 \end_inset
@@ -138,6 +138,16 @@ thepage}
 Este capítulo apresenta um conjunto de conceitos e modelos desenvolvidos
  por outros autores e que estão diretamente relacionados a este trabalho,
  estes conceitos serão utilizados neste trabalho.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+você precisa copiar todos os termos aqui definidos para a nomenclatura
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -172,7 +182,7 @@ Petrofísica
 \end_layout
 
 \begin_layout Standard
-Por definição, a petrofísica é o estudo das propriedades físicas e químicas
+Por definição, petrofísica é o estudo das propriedades físicas e químicas
  das rochas detentoras e geradoras de hidrocarbonetos, dos selos, de aquíferos,
  e os fluidos as percolam, principalmente no que se diz respeito à sistemas
  porosos, a distribuição de fluidos e as características do escoamento sob
@@ -205,7 +215,7 @@ rocha reservatório
 Em um sistema petrolífero, uma rocha reservatório é, de forma geral, uma
  estrutura geológica que se torna capaz de armazenar o óleo ou gás que foi
  gerado ou migrado para a mesma.
- Para isso ela deve possuir alguma tipo de porosidade, de forma que seja
+ Para isso ela deve possuir algum tipo de porosidade, de forma que seja
  possível um fluido poder se acumular ali 
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -217,6 +227,18 @@ literal "false"
 .
  Os reservatórios comerciais, em sua grande maioria, são formados por rochas
  sedimentares clásticas e não clásticas, especialmente arenitos e calcarenitos.
+ No âmbito nacional têm-se como exemplo o pré-sal.
+ Seus reservatórios podem ser considerados principalmente de três tipos:
+ rochas calcárias com coqúinas, fraturas em rochas vulcânicas e calcários
+ microbialíticos 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "riccomini2012pre"
+literal "false"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -226,7 +248,10 @@ Os reservatórios de arenitos são, na maioria dos casos, de grande espessura
  da porosidade inicial e reduzida após processos de cimentação, observa-se
  uma porosidade de aproximadamente 10 a 20 %, que pode ser muito maior se
  for considerada a porosidade gerada por fraturas.
- No caso de rochas carbonatadas, ou seja, calcários e dolomitas, a porosidade
+\end_layout
+
+\begin_layout Standard
+No caso de rochas carbonatadas, ou seja, calcários e dolomitas, a porosidade
  pode pode ser muitas vezes maior que no caso dos arenitos, dando ao reservatóri
 o uma grande permeabilidade 
 \begin_inset CommandInset citation
@@ -271,7 +296,7 @@ literal "false"
 
 
 \begin_inset Note Note
-status open
+status collapsed
 
 \begin_layout Plain Layout
 Toda vez que incluir um termo coloque o termo, suas unidades SI, e uma descrição.
@@ -336,7 +361,7 @@ porosidade total
 
 \end_inset
 
-, considera-se todo o volume de vazios presente um uma rocha, independente
+, considera-se todo o volume de vazios presente em uma rocha, independente
  se estão isolados ou não.
  A porosidade efetiva
 \begin_inset Index idx
@@ -687,16 +712,6 @@ tensão superficial
 \begin_inset Formula $\sigma[dina/cm]$
 \end_inset
 
-
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-[unidade]
-\end_layout
-
-\end_inset
-
  entre a interface de dois fluidos imiscíveis pode ser definida como a força
  por unidade de comprimento necessária para manter o contato entre ambas
  às superfícies 
@@ -715,16 +730,6 @@ literal "false"
 \begin_layout Standard
 Considerando um cilindro de raio 
 \begin_inset Formula $r[m]$
-\end_inset
-
-
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-[unidade]
-\end_layout
-
 \end_inset
 
 , imerso em um recipiente contendo um fluido, por exemplo, água, percebe-se
@@ -893,19 +898,8 @@ Permeabilidade
 \end_layout
 
 \begin_layout Standard
-A permeabilidade é a propriedade que relaciona a capacidade de uma determinada
- formação deixar transmitir um fluido
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-a formação não transmite nada; a diferença de pressão é que gera um movimento
- de fluidos.
-\end_layout
-
-\end_inset
-
-.
+A permeabilidade é a propriedade que relaciona a capacidade que a diferença
+ de pressão dentro de uma determinada formação deixar transmitir um fluido.
  É, em outras palavras, a condutividade de fluidos de um material, ou inverso
  da resistência que o mesmo oferece à um escoamento 
 \begin_inset CommandInset citation
@@ -922,7 +916,7 @@ literal "false"
 
 \begin_layout Standard
 A estimativa da permeabilidade em um sistema poroso pode ser feita inicialmente
- por meio de uma simplificação da sua geometria, considerando uma sequencia
+ por meio de uma simplificação da sua geometria, considerando uma sequência
  de feixes de capilares.
  A Equação de 
 \emph on
@@ -1297,9 +1291,9 @@ onde
 \end_inset
 
  é definida como a permeabilidade absoluta do meio poroso e é medida em
- mili
+ 
 \emph on
-darcy
+milidarcy
 \emph default
  (
 \begin_inset Formula $D$
@@ -1395,7 +1389,6 @@ status open
 \align center
 \begin_inset Graphics
 	filename ../../imagens/imagensLivros/saturacao-permeabilidade-efetiva-fluxo-bifasico.png
-	scale 80
 
 \end_inset
 
@@ -1487,7 +1480,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename ../../imagens/imagensLivros/embebicao-oleo-gas.png
-	scale 50
+	scale 70
 
 \end_inset
 
@@ -1568,7 +1561,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename ../../imagens/imagensLivros/drenagem-oleo-gas.png
-	scale 50
+	scale 70
 
 \end_inset
 
@@ -1604,26 +1597,6 @@ literal "false"
 \end_inset
 
 
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Na revisão bibliográfica falou de número de coordenação; se der, coloque
- aqui o que é.
-\end_layout
-
-\begin_layout Plain Layout
-Verifique se os principais pontos citados na revisão bibliográfica estão
- aqui definidos ou referencie com algo externo, uma bibliografia externa
- que descreva o conceito.
 \end_layout
 
 \end_inset
@@ -2050,7 +2023,20 @@ A identificação dos elementos ou objetos que compõem uma imagem dependem
 \end_layout
 
 \begin_layout Standard
-A partir da forma geométrica dos objetos, obtida na segmentação, é possível
+Como mostra 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+citeonline{castelo2013estimativa}
+\end_layout
+
+\end_inset
+
+, a partir da forma geométrica dos objetos, obtida na segmentação, é possível
  aplicar operadores morfológicos a fim de analisar, modificar e extrair
  informações que podem ser úteis em modelos de classificação, ou seja, reconhece
 r, inferir e verificar a identidade dos objetos.
@@ -2132,7 +2118,7 @@ noprefix "false"
 \begin_inset Formula $c_{i}$
 \end_inset
 
-representam as coordenadas.
+ representam as coordenadas.
 \end_layout
 
 \begin_layout Standard
@@ -2466,7 +2452,17 @@ literal "false"
 \end_layout
 
 \begin_layout Standard
-O modelo HSI (
+O modelo HSI
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+HSI
+\end_layout
+
+\end_inset
+
+ (
 \emph on
 hue, saturation, brightness
 \emph default
@@ -2659,7 +2655,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename ../../imagens/imagensLivros/histograma.png
-	scale 70
+	scale 90
 
 \end_inset
 
@@ -2781,7 +2777,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename ../../imagens/imagensLivros/histograma-bi-multi.png
-	scale 50
+	scale 60
 
 \end_inset
 
@@ -2874,7 +2870,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename ../../imagens/imagensLivros/hist-contraste.png
-	scale 60
+	scale 70
 
 \end_inset
 
@@ -3038,21 +3034,15 @@ literal "false"
 
 , utilizam de propriedades estatísticas da imagem para determinar o resultado
  aplicado a cada pixel.
- Um exemplo é o filtro de mediana de ordem n (
+ Um exemplo é o filtro de mediana de ordem 
+\begin_inset Formula $n$
+\end_inset
+
+ (
 \emph on
 Median Filter of Order n
 \emph default
-),
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-verifique pois parece incompleto o "no,"
-\end_layout
-
-\end_inset
-
- no qual a resposta para cada um dos pixel é calculado conforme a mediana
+), no qual a resposta para cada um dos pixel é calculado conforme a mediana
  dos 8 pixeis vizinhos ordenados de acordo com seus valores de intensidade.
  Esse filtro ajuda na eliminação de valores de intensidade isolados em meio
  a sua vizinhança, tornando o sinal mais uniforme e eliminando os ruídos,
@@ -3090,7 +3080,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename ../../imagens/imagensLivros/reducao-ruido-filtro-mediana.png
-	scale 70
+	scale 80
 
 \end_inset
 
@@ -3286,18 +3276,9 @@ reference "fig:mascaras-filtro-pb"
 \end_inset
 
 .
- Já na imagem da b e c
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-conferir
-\end_layout
-
-\end_inset
-
- observa-se que é aplicado um peso a cada um dos pixeis que forma a máscara,
- indicando que alguns deles possuem mais importância que outros.
+ Já na imagens da b e c observa-se que é aplicado um peso a cada um dos
+ pixeis que forma a máscara, indicando que alguns deles possuem mais importância
+ que outros.
  O pixel do centro possui um maior peso, enquanto os que estão a sua volta
  recebem valores de acordo com sua distância.
  Dessa forma essa técnica ajuda a reduzir o borramento na imagem durante
@@ -3306,7 +3287,7 @@ conferir
 
 \begin_layout Standard
 Uma importante aplicação dos filtros de suavização reside em tornar mais
- fácil a detecção de objetos maiores em uma imagem, como é mostrado na figura
+ fácil a detecção de objetos maiores em uma imagem, como é mostrado na Figura
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -3343,7 +3324,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename ../../imagens/imagensLivros/images-suavizadas.png
-	scale 70
+	width 100text%
 
 \end_inset
 
@@ -3395,7 +3376,17 @@ literal "false"
 Em contraste aos filtros de suavização, existem os filtros de aguçamento,
  cujo objetivo consiste em salientar transições de intensidade para o aumento
  da nitidez em uma imagem.
- Um exemplo comum de filtro dessa natureza é o filtro laplaciano.
+ Um exemplo comum de filtro dessa natureza é o filtro laplaciano
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+filtro laplaciano
+\end_layout
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -4213,27 +4204,6 @@ A aquisição de imagens pode ser feita por meio de câmeras, scanners ou sensor
  Um conversor ADC transforma o sinal analógico e em discreto e transmite
  essa informação para um computador ou armazena em algum dispositivo de
  memória.
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-OBS:
-\end_layout
-
-\begin_layout Plain Layout
-note que esta lâmina é usada em microscópios com luz transmitida, que atravessas
- a imagem.
- Uma amostra, como ilustrada em (b), após polimento, pode ser usada para
- obter uma imagem usando microscópio com luz refletida.
- Ambas coloridas.
- Já se forem colocadas num MEV - Microscópio eletrônico de varredura a imagem
- obtida será em tons de cinza.
- O microtomógrafo também retorna uma imagem em tons de cinza.
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Subsubsection
@@ -4788,7 +4758,7 @@ noprefix "false"
 
 , para a medição da impureza em cada nó.
  Quando esse índice é igual a 0, diz que o nó é considerado puro, se for
- diferente disso, é portando impuro.
+ diferente disso, é portanto impuro.
 \end_layout
 
 \begin_layout Standard
@@ -4819,7 +4789,7 @@ A principal vantagem desse método é a sua facilidade de compreensão e interpr
  suas decisões.
  Todavia, esses algoritmos não produzem a mesma acurácia em predições como
  outros métodos mais comum de regressão.
- Com tudo essa diferença pode ser minimizada aplicado outros métodos como
+ Contudo essa diferença pode ser minimizada aplicando outros métodos como
  florestas aleatórias.
 \end_layout
 

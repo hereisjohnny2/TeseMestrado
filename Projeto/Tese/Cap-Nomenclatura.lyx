@@ -4,7 +4,7 @@
 \begin_header
 \save_transient_properties true
 \origin unavailable
-\textclass /home2/andreduartebueno/workdir/TeseMestrado/Projeto/Tese/abnt
+\textclass abnt
 \begin_preamble
 \usepackage {graphicx}
 \usepackage {longtable}
@@ -1487,7 +1487,7 @@ Acrônimos
 \begin_layout Standard
 \align left
 \begin_inset Tabular
-<lyxtabular version="3" rows="8" columns="2">
+<lyxtabular version="3" rows="9" columns="2">
 <features tabularvalignment="middle">
 <column alignment="left" valignment="top" width="2cm">
 <column alignment="left" valignment="middle" width="14cm">
@@ -1543,25 +1543,6 @@ C++
 \noun off
 \color none
 Linguagem de programação com recursos para orientação a objetos
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\noun off
-\color none
-adicionar python
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \end_inset
@@ -1685,6 +1666,31 @@ Laboratório Virtual de Petrofísica (
 Software
 \emph default
 )
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+Python
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Linguagem de programação interpretada com recursos para orientação a objetos
+ e execução de 
+\emph on
+scripts
 \end_layout
 
 \end_inset
