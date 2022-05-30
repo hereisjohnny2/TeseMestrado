@@ -83,11 +83,12 @@
 \papercolumns 1
 \papersides 1
 \paperpagestyle fancy
-\tracking_changes false
+\tracking_changes true
 \output_changes false
 \html_math_output 0
 \html_css_as_file 0
 \html_be_strict false
+\author 1908091853 "andreduartebueno"
 \end_header
 
 \begin_body
@@ -153,7 +154,1875 @@ thepage}
 \end_inset
 
  Neste capítulo são apresentados os resultados obtido a partir da aplicação
- dos modelos de inteligência artificial sobre a imagens de rocha reservatório.
+ dos modelos de inteligência artificial sobre 
+\change_deleted 1908091853 1653945992
+a
+\change_unchanged
+ imagens de rocha reservatório.
+\change_inserted 1908091853 1653946255
+
+\end_layout
+
+\begin_layout Standard
+
+\change_inserted 1908091853 1653946256
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1653946260
+Sugiro mudar ordem:
+\end_layout
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1653946268
+6.1 Resultados para Berea 200
+\end_layout
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1653946277
+6.1.1 Imagens Berea 200
+\end_layout
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1653946285
+6.1.2 Tabela Resultados
+\end_layout
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1653946298
+6.1.3 Análise
+\end_layout
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1653946307
+6.2 Resultados para Berea 500
+\end_layout
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1653946308
+6.2.1 Imagens Berea 500
+\end_layout
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1653946302
+6.2.2 Tabela Resultados
+\end_layout
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1653946303
+6.2.3 Análise
+\end_layout
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1653946311
+...
+\end_layout
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1653946325
+assim fica num pacote com imagens, resultados e comentários;
+\end_layout
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1653946331
+no final junta as análises
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+
+\end_layout
+
+\begin_layout Section
+
+\change_inserted 1908091853 1653947306
+Resultados para Berea 200
+\end_layout
+
+\begin_layout Subsection
+
+\change_inserted 1908091853 1653947418
+Imagens Berea 200
+\end_layout
+
+\begin_layout Standard
+
+\change_inserted 1908091853 1653947306
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\change_inserted 1908091853 1653947306
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+
+\change_inserted 1908091853 1653947306
+\begin_inset Graphics
+	filename ../../resultados/imagens/Berea200/I22-bin.png
+	lyxscale 20
+	width 49text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1653947306
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1653947306
+I22.png Binarizada.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:I22.png-Binarizada."
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+
+\change_inserted 1908091853 1653947306
+\begin_inset Graphics
+	filename ../../resultados/imagens/Berea200/I22.png
+	lyxscale 20
+	width 49text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1653947306
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1653947306
+I22.png Original.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:I22.png-original"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1653947306
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1653947306
+Resultados pra I22.png.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:I22.png"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\change_inserted 1908091853 1653947306
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\change_inserted 1908091853 1653947306
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+
+\change_inserted 1908091853 1653947306
+\begin_inset Graphics
+	filename ../../resultados/imagens/Berea200/I212-bin.png
+	lyxscale 20
+	width 49text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1653947306
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1653947306
+I212.png Binarizada.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:I212.png-Binarizada"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+
+\change_inserted 1908091853 1653947306
+\begin_inset Graphics
+	filename ../../resultados/imagens/Berea200/I212.png
+	lyxscale 20
+	width 49text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1653947306
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1653947306
+I212.png Original.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:I212.png-original"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1653947306
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1653947306
+Resultados pra I212.png.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:I212.png"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\change_inserted 1908091853 1653947306
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\change_inserted 1908091853 1653947306
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+
+\change_inserted 1908091853 1653947306
+\begin_inset Graphics
+	filename ../../resultados/imagens/Berea200/I26-bin.png
+	lyxscale 20
+	width 49text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1653947306
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1653947306
+I26.png Binarizada.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:I26.png-Binarizada"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+
+\change_inserted 1908091853 1653947306
+\begin_inset Graphics
+	filename ../../resultados/imagens/Berea200/I26.png
+	lyxscale 20
+	width 49text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1653947306
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1653947306
+I26.png Original.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:I26.png-original"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1653947306
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1653947306
+Resultados pra I26.png.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:I26.png"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\change_inserted 1908091853 1653947306
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\change_inserted 1908091853 1653947306
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+
+\change_inserted 1908091853 1653947306
+\begin_inset Graphics
+	filename ../../resultados/imagens/Berea200/I216-bin.png
+	lyxscale 20
+	width 49text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1653947306
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1653947306
+I216.png Binarizada.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:I216.png-Binarizada"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+
+\change_inserted 1908091853 1653947306
+\begin_inset Graphics
+	filename ../../resultados/imagens/Berea200/I216.png
+	lyxscale 20
+	width 49text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1653947306
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1653947306
+I216.png Original.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:I216.png-original"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1653947306
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1653947306
+Resultados pra I216.png.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:I216.png"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+
+\change_inserted 1908091853 1653947337
+Tabela Resultados Berea 200
+\end_layout
+
+\begin_layout Standard
+
+\change_inserted 1908091853 1653947291
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1653947291
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1653947291
+Resultados Berea200.
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:resultados-berea200"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\noindent
+\align center
+
+\change_inserted 1908091853 1653947291
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="3">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1653947291
+Imagem
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1653947291
+Porosidade (%)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1653947291
+Tempo Decorrido (ms)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1653947291
+I22.png
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1653947291
+30,9958
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1653947291
+14,9012
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1653947291
+I212.png
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1653947291
+23,8404
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1653947291
+9,8712
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1653947291
+I26.png
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1653947291
+25,5654
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1653947291
+10,3312
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1653947291
+I216.png
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1653947291
+25,5654
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1653947291
+10,2179
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+
+\change_inserted 1908091853 1653947353
+Análise Resultados Berea 200
+\end_layout
+
+\begin_layout Standard
+
+\change_inserted 1908091853 1653947354
+...
+\end_layout
+
+\begin_layout Section
+
+\change_inserted 1908091853 1653947396
+Resultados para Berea 500
+\end_layout
+
+\begin_layout Subsection
+
+\change_inserted 1908091853 1653947479
+Imagens Berea 500
+\end_layout
+
+\begin_layout Standard
+
+\change_inserted 1908091853 1653947479
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\change_inserted 1908091853 1653947479
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+
+\change_inserted 1908091853 1653947479
+\begin_inset Graphics
+	filename ../../resultados/imagens/Berea500/I31-bin.png
+	lyxscale 20
+	width 49text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1653947479
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1653947479
+I31.png Binarizada.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:I31.png-Binarizada"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+
+\change_inserted 1908091853 1653947479
+\begin_inset Graphics
+	filename ../../resultados/imagens/Berea500/I31.png
+	lyxscale 20
+	width 49text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1653947479
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1653947479
+I31.png Original.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:I31.png-original"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1653947479
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1653947479
+Resultados pra I31.png.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:I31.png"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\change_inserted 1908091853 1653947479
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\change_inserted 1908091853 1653947479
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+
+\change_inserted 1908091853 1653947479
+\begin_inset Graphics
+	filename ../../resultados/imagens/Berea500/I310-bin.png
+	lyxscale 20
+	width 49text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1653947479
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1653947479
+I310.png Binarizada.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:I310.png-Binarizada"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+
+\change_inserted 1908091853 1653947479
+\begin_inset Graphics
+	filename ../../resultados/imagens/Berea500/I310.png
+	lyxscale 20
+	width 49text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1653947479
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1653947479
+I310.png Original.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:I310.png-original"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1653947479
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1653947479
+Resultados pra I310.png.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:I310.png"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\change_inserted 1908091853 1653947479
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\change_inserted 1908091853 1653947479
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+
+\change_inserted 1908091853 1653947479
+\begin_inset Graphics
+	filename ../../resultados/imagens/Berea500/I311-bin.png
+	lyxscale 20
+	width 49text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1653947479
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1653947479
+I311.png Binarizada.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:I311.png-Binarizada"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+
+\change_inserted 1908091853 1653947479
+\begin_inset Graphics
+	filename ../../resultados/imagens/Berea500/I311.png
+	lyxscale 20
+	width 49text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1653947479
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1653947479
+I311.png Original.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:I311.png-original"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1653947479
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1653947479
+Resultados pra I311.png.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:I311.png"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\change_inserted 1908091853 1653947479
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\change_inserted 1908091853 1653947479
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+
+\change_inserted 1908091853 1653947479
+\begin_inset Graphics
+	filename ../../resultados/imagens/Berea500/I312-bin.png
+	lyxscale 20
+	width 49text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1653947479
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1653947479
+I312.png Binarizada.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:I312.png-Binarizada"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+
+\change_inserted 1908091853 1653947479
+\begin_inset Graphics
+	filename ../../resultados/imagens/Berea500/I312.png
+	lyxscale 20
+	width 49text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1653947479
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1653947479
+I312.png Original.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:I312.png-original"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1653947479
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1653947479
+Resultados pra I312.png.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:I312.png"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\change_inserted 1908091853 1653947479
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\change_inserted 1908091853 1653947479
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+
+\change_inserted 1908091853 1653947479
+\begin_inset Graphics
+	filename ../../resultados/imagens/Berea500/I318-bin.png
+	lyxscale 20
+	width 49text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1653947479
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1653947479
+I318.png Binarizada.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:I318.png-Binarizada"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+
+\change_inserted 1908091853 1653947479
+\begin_inset Graphics
+	filename ../../resultados/imagens/Berea500/I318.png
+	lyxscale 20
+	width 49text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1653947479
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1653947479
+I318.png Original.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:I318.png-original"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1653947479
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1653947479
+Resultados pra I318.png.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:I318.png"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\change_inserted 1908091853 1653947479
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\change_inserted 1908091853 1653947479
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+
+\change_inserted 1908091853 1653947479
+\begin_inset Graphics
+	filename ../../resultados/imagens/Berea500/I32-bin.png
+	lyxscale 20
+	width 49text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1653947479
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1653947479
+I32.png Binarizada.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:I32.png-Binarizada"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+
+\change_inserted 1908091853 1653947479
+\begin_inset Graphics
+	filename ../../resultados/imagens/Berea500/I32.png
+	lyxscale 20
+	width 49text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1653947479
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1653947479
+I32.png Original.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:I32.png-original"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1653947479
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1653947479
+Resultados pra I32.png.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:I32.png"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\change_inserted 1908091853 1653947479
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\change_inserted 1908091853 1653947479
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+
+\change_inserted 1908091853 1653947479
+\begin_inset Graphics
+	filename ../../resultados/imagens/Berea500/I320-bin.png
+	lyxscale 20
+	width 49text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1653947479
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1653947479
+I320.png Binarizada.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:I320.png-Binarizada"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+
+\change_inserted 1908091853 1653947479
+\begin_inset Graphics
+	filename ../../resultados/imagens/Berea500/I320.png
+	lyxscale 20
+	width 49text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1653947479
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1653947479
+I320.png Original.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:I320.png-original"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1653947479
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1653947479
+Resultados pra I320.png.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:I320.png"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+
+\change_inserted 1908091853 1653947407
+Tabela Resultados Berea 500
+\end_layout
+
+\begin_layout Subsection
+
+\change_inserted 1908091853 1653947388
+Análise Resultados Berea 500
+\end_layout
+
+\begin_layout Standard
+
+\change_inserted 1908091853 1653947385
+...
 \end_layout
 
 \begin_layout Section
@@ -178,8 +2047,11 @@ name "sec:Resultados"
 \end_layout
 
 \begin_layout Standard
-Apresenta-se nesta secção os resultados obtidos pela aplicação do dos métodos
- descritos no capítulo anterior.
+Apresenta-se nesta secção os resultados obtidos pela aplicação 
+\change_deleted 1908091853 1653945998
+do
+\change_unchanged
+ dos métodos descritos no capítulo anterior.
  As Tabelas 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -235,6 +2107,8 @@ noprefix "false"
 \end_layout
 
 \begin_layout Standard
+
+\change_deleted 1908091853 1653947288
 \begin_inset Float table
 placement H
 wide false
@@ -423,6 +2297,8 @@ I216.png
 
 \end_inset
 
+
+\change_unchanged
 
 \end_layout
 
@@ -734,6 +2610,8 @@ name "tab:resultados-P148_K"
 \begin_layout Plain Layout
 \noindent
 \align center
+
+\change_deleted 1908091853 1653946797
 \begin_inset Tabular
 <lyxtabular version="3" rows="11" columns="3">
 <features tabularvalignment="middle">
@@ -1063,6 +2941,8 @@ Tempo Decorrido (ms)
 
 \end_inset
 
+
+\change_unchanged
 
 \end_layout
 
@@ -1804,6 +3684,8 @@ L67409i10.png
 \end_layout
 
 \begin_layout Standard
+
+\change_deleted 1908091853 1653947145
 Os valores de porosidade das imagens dos voluntários é descrito na Tabela
  
 \begin_inset CommandInset ref
@@ -1819,6 +3701,8 @@ noprefix "false"
 \end_layout
 
 \begin_layout Standard
+
+\change_deleted 1908091853 1653947145
 \begin_inset Float table
 placement H
 wide false
@@ -2227,6 +4111,8 @@ L67409i1.png
 \end_inset
 
 
+\change_unchanged
+
 \end_layout
 
 \begin_layout Section
@@ -2240,10 +4126,14 @@ Apresenta-se nesta seção as imagens obtidas pelo processo de binarização
 \end_layout
 
 \begin_layout Subsection
+
+\change_deleted 1908091853 1653947300
 Berea200
 \end_layout
 
 \begin_layout Standard
+
+\change_deleted 1908091853 1653947300
 \begin_inset Float figure
 placement H
 wide false
@@ -2363,6 +4253,8 @@ name "fig:I22.png"
 \end_layout
 
 \begin_layout Standard
+
+\change_deleted 1908091853 1653947300
 \begin_inset Float figure
 placement H
 wide false
@@ -2478,6 +4370,8 @@ name "fig:I212.png"
 \end_layout
 
 \begin_layout Standard
+
+\change_deleted 1908091853 1653947300
 \begin_inset Float figure
 placement H
 wide false
@@ -2593,6 +4487,8 @@ name "fig:I26.png"
 \end_layout
 
 \begin_layout Standard
+
+\change_deleted 1908091853 1653947300
 \begin_inset Float figure
 placement H
 wide false
@@ -2708,10 +4604,14 @@ name "fig:I216.png"
 \end_layout
 
 \begin_layout Subsection
+
+\change_deleted 1908091853 1653947472
 Berea500
 \end_layout
 
 \begin_layout Standard
+
+\change_deleted 1908091853 1653947472
 \begin_inset Float figure
 placement H
 wide false
@@ -2827,6 +4727,8 @@ name "fig:I31.png"
 \end_layout
 
 \begin_layout Standard
+
+\change_deleted 1908091853 1653947472
 \begin_inset Float figure
 placement H
 wide false
@@ -2942,6 +4844,8 @@ name "fig:I310.png"
 \end_layout
 
 \begin_layout Standard
+
+\change_deleted 1908091853 1653947472
 \begin_inset Float figure
 placement H
 wide false
@@ -3057,6 +4961,8 @@ name "fig:I311.png"
 \end_layout
 
 \begin_layout Standard
+
+\change_deleted 1908091853 1653947472
 \begin_inset Float figure
 placement H
 wide false
@@ -3172,6 +5078,8 @@ name "fig:I312.png"
 \end_layout
 
 \begin_layout Standard
+
+\change_deleted 1908091853 1653947472
 \begin_inset Float figure
 placement H
 wide false
@@ -3287,6 +5195,8 @@ name "fig:I318.png"
 \end_layout
 
 \begin_layout Standard
+
+\change_deleted 1908091853 1653947472
 \begin_inset Float figure
 placement H
 wide false
@@ -3402,6 +5312,8 @@ name "fig:I32.png"
 \end_layout
 
 \begin_layout Standard
+
+\change_deleted 1908091853 1653947472
 \begin_inset Float figure
 placement H
 wide false
@@ -6978,6 +8890,714 @@ name "fig:L67409i10.png"
 
 \end_layout
 
+\begin_layout Standard
+
+\change_inserted 1908091853 1653945957
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1653945975
+Criar seção para imagens binarizadas pelos usuários externos
+\end_layout
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1653945979
+imagens;
+\end_layout
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1653945982
+tabelas resultados
+\end_layout
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1653945985
+analisa comparativa
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+
+\end_layout
+
+\begin_layout Section
+
+\change_inserted 1908091853 1653947018
+Análise dos Resultados Considerando Aplicação da Metodologia pelo Mesmo
+ Usuário Repetindo o Treinamento em Diferentes Dias
+\end_layout
+
+\begin_layout Standard
+
+\change_inserted 1908091853 1653947039
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1653947039
+como disse acima; comente os resultados por imagens dentro da seção Análise
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1653947039
+Ou seja, comentar sobre Berea200 na seção Resultados Berea200;
+\end_layout
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1653947039
+Depois cria seção analise consolidada dos resultados;
+\end_layout
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1653947039
+.
+\end_layout
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1653947039
+Agora o ponto principal é, só faz sentido comparar os resultados obtidos
+ se a imagem é da mesma lâmina, se não tiver esta certeza pode ser de amostras
+ diferentes e daí não faz sentido a comparação das porosidades e menos ainda
+ falar em média e desvio padrão.
+\end_layout
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1653947532
+Eu acho que estas comparações que você havia feito podem ser descartadas
+ e sugiro fazer diferente.
+\end_layout
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1653947039
+1- Num domingo João pega as imagens, treina, binariza, mede a porosidade
+ e coloca numa tabela;
+\end_layout
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1653947039
+2- Numa segunda-feira João pega as imagens, treina, binariza, mede a porosidade
+ e coloca numa tabela;
+\end_layout
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1653947039
+3- Numa terça-feira João pega as imagens, treina, binariza, mede a porosidade
+ e coloca numa tabela;
+\end_layout
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1653947585
+..repete umas 7x de forma a ter uma média e desvio padrão sobre a mesma metodologi
+a, a mesma imagem e o mesmo usuário, daí estará medindo a variação nos resultado
+s para um mesmo usuário João em diferentes dias.
+ Faz sentido faer uma tabela com resultado, média e desvio padrão
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+
+\change_inserted 1908091853 1653947161
+Análise dos Resultados Considerando Aplicação da Metodologia por Usuários
+ Distintos 
+\end_layout
+
+\begin_layout Standard
+
+\change_inserted 1908091853 1653947596
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1653947613
+depois de considerar média e desvio padrão para um mesmo usuário
+\end_layout
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1653947630
+repete considerando diferentes usuários; vai estudar a variação para diferentes
+ usuários;
+\end_layout
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1653947636
+o ideal é dividir em 3 grupos:
+\end_layout
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1653947648
+- Usuários iniciantes em engenharia
+\end_layout
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1653947652
+- Usuários concluintes
+\end_layout
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1653947660
+- Geólogos experientes
+\end_layout
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1653947680
+daí consegue fazer considerações sobre os diferentes usuários e diferentes
+ grupos
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+Os valores de porosidade das imagens dos voluntários é descrito na Tabela
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:resultados-voluntarios"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\change_inserted 1908091853 1653947161
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1653947161
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1653947161
+Valores de Porosidade das Análises dos Voluntários.
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:resultados-voluntarios"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\noindent
+\align center
+
+\change_inserted 1908091853 1653947161
+\begin_inset Tabular
+<lyxtabular version="3" rows="6" columns="5">
+<features tabularvalignment="middle" tabularwidth="100text%">
+<column alignment="center" valignment="top" width="0pt">
+<column alignment="center" valignment="top" width="0pt">
+<column alignment="center" valignment="top" width="0pt">
+<column alignment="center" valignment="top" width="0pt">
+<column alignment="center" valignment="top" width="0pt">
+<row>
+<cell multicolumn="1" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1653947161
+Imagens
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1653947161
+Voluntário 1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1653947161
+Voluntário 2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1653947161
+Voluntário 3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1653947161
+Voluntário 4
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1653947161
+I212.png
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1653947161
+30,2003
+\begin_inset space ~
+\end_inset
+
+%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1653947161
+31,2881
+\begin_inset space ~
+\end_inset
+
+% 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1653947161
+28,1389
+\begin_inset space ~
+\end_inset
+
+%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1653947161
+21,6879
+\begin_inset space ~
+\end_inset
+
+%
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1653947161
+I310.png
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1653947161
+33,2604
+\begin_inset space ~
+\end_inset
+
+% 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1653947161
+31,9063
+\begin_inset space ~
+\end_inset
+
+% 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1653947161
+31,6811
+\begin_inset space ~
+\end_inset
+
+% 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1653947161
+21,4062
+\begin_inset space ~
+\end_inset
+
+%
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1653947161
+3271i01.png
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1653947161
+14,0071
+\begin_inset space ~
+\end_inset
+
+%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1653947161
+10,6523
+\begin_inset space ~
+\end_inset
+
+% 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1653947161
+15,9402
+\begin_inset space ~
+\end_inset
+
+% 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1653947161
+21,6104
+\begin_inset space ~
+\end_inset
+
+%
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1653947161
+3251i01.png
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1653947161
+27,7952
+\begin_inset space ~
+\end_inset
+
+%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1653947161
+30,1705
+\begin_inset space ~
+\end_inset
+
+%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1653947161
+23,0253
+\begin_inset space ~
+\end_inset
+
+% 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1653947161
+33,7577
+\begin_inset space ~
+\end_inset
+
+%
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1653947161
+L67409i1.png
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1653947161
+27,4941
+\begin_inset space ~
+\end_inset
+
+%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1653947161
+25,6866
+\begin_inset space ~
+\end_inset
+
+%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1653947161
+28,2072
+\begin_inset space ~
+\end_inset
+
+%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1653947161
+16,5648
+\begin_inset space ~
+\end_inset
+
+%
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+
+\change_inserted 1908091853 1653947687
+Análise dos Resultados Considerando Aplicação da Metodologia por Usuários
+ Leigos x Treinados
+\end_layout
+
+\begin_layout Standard
+
+\change_inserted 1908091853 1653947690
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1653947700
+finalmente compara resultados leigos x experiente
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 Análise
 \begin_inset Index idx
@@ -6989,7 +9609,11 @@ Análise
 
 \end_inset
 
- dos Resultados
+ 
+\change_inserted 1908091853 1653946972
+Consolidada 
+\change_unchanged
+dos Resultados
 \begin_inset CommandInset label
 LatexCommand label
 name "sec:Analise-Resultados"
@@ -7000,6 +9624,36 @@ name "sec:Analise-Resultados"
 \end_layout
 
 \begin_layout Standard
+
+\change_inserted 1908091853 1653947173
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1653947200
+acho que estas comparações de média e desvi padrão de imagens diferentes
+ não faz sentido; melhor descartar;
+\end_layout
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1653947712
+só faria sentido se fossem da mesma lâmina;
+\end_layout
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1653947722
+Aqui você poderia consolidar todas as análises feitas
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
 Durante a execução do modelo é possível observar que o tempo para execução
  do modelo ficou entre 9 e 22 milissegundos, para todas as imagens.
 \end_layout
@@ -7018,6 +9672,23 @@ foi constado uma porosidade média igual a
 \end_inset
 
 .
+\change_inserted 1908091853 1653946464
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1653946476
+coloque média e desvio padrão na tabela
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
  É possível observar que os valores de porosidade é mais bem comportado
  nessa categoria do que nas outras, sendo as imagens 
 \emph on
@@ -7242,7 +9913,11 @@ de cada um deles.
  É provável que isso tenha ocorrido devido a baixa quantidade de dados coletados
  durante sua iteração.
  Isso também reforça que a quantidade de dados é crucial para que sejam
- obtidos bons resultados com algorítimos de inteligência artificial.
+ obtidos bons resultados com algorít
+\change_deleted 1908091853 1653947259
+i
+\change_unchanged
+mos de inteligência artificial.
  
 \end_layout
 
