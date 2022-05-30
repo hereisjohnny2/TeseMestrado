@@ -4,7 +4,7 @@
 \begin_header
 \save_transient_properties true
 \origin unavailable
-\textclass abnt
+\textclass /home2/andreduartebueno/workdir/TeseMestrado/Projeto/Tese/abnt
 \begin_preamble
 \usepackage {graphicx}
 \usepackage {longtable}
@@ -239,7 +239,7 @@ noprefix "false"
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -431,7 +431,7 @@ I216.png
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -710,7 +710,7 @@ I32.png
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -1076,7 +1076,7 @@ Tempo Decorrido (ms)
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -1442,7 +1442,7 @@ Tempo Decorrido (ms)
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -2248,7 +2248,7 @@ Berea200
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -2367,7 +2367,7 @@ name "fig:I22.png"
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -2482,7 +2482,7 @@ name "fig:I212.png"
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -2597,7 +2597,7 @@ name "fig:I26.png"
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -2716,7 +2716,7 @@ Berea500
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -2831,7 +2831,7 @@ name "fig:I31.png"
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -2946,7 +2946,7 @@ name "fig:I310.png"
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -3061,7 +3061,7 @@ name "fig:I311.png"
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -3176,7 +3176,7 @@ name "fig:I312.png"
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -3291,7 +3291,7 @@ name "fig:I318.png"
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -3406,7 +3406,7 @@ name "fig:I32.png"
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -3525,7 +3525,7 @@ P148_K2
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -3640,7 +3640,7 @@ name "fig:3271i01.png"
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -3755,7 +3755,7 @@ name "fig:3271i02.png"
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -3870,7 +3870,7 @@ name "fig:3271i03.png"
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -3985,7 +3985,7 @@ name "fig:3271i04.png"
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -4100,7 +4100,7 @@ name "fig:3271i05.png"
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -4215,7 +4215,7 @@ name "fig:3271i06.png"
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -4330,7 +4330,7 @@ name "fig:3271i07.png"
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -4445,7 +4445,7 @@ name "fig:3271i08.png"
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -4560,7 +4560,7 @@ name "fig:3271i09.png"
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -4679,7 +4679,7 @@ P240_K104
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -4794,7 +4794,7 @@ name "fig:3251i01.png"
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -4909,7 +4909,7 @@ name "fig:3251i02.png"
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -5024,7 +5024,7 @@ name "fig:3251i03.png"
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -5139,7 +5139,7 @@ name "fig:3251i04.png"
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -5254,7 +5254,7 @@ name "fig:3251i05.png"
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -5369,7 +5369,7 @@ name "fig:3251i06.png"
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -5484,7 +5484,7 @@ name "fig:3251i07.png"
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -5599,7 +5599,7 @@ name "fig:3251i08.png"
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -5714,7 +5714,7 @@ name "fig:3251i09.png"
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -5833,7 +5833,7 @@ P262_K441
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -5948,7 +5948,7 @@ name "fig:L67409i1.png"
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -6063,7 +6063,7 @@ name "fig:L67409i2.png"
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -6178,7 +6178,7 @@ name "fig:L67409i3.png"
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -6293,7 +6293,7 @@ name "fig:L67409i4.png"
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -6408,7 +6408,7 @@ name "fig:L67409i5.png"
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -6523,7 +6523,7 @@ name "fig:L67409i6.png"
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -6576,7 +6576,7 @@ status open
 \noindent
 \align center
 \begin_inset Graphics
-	filename /home/joao/Documentos/TeseMestrado/resultados/imagens/P262_K441/L67409i7.png
+	filename ../../resultados/imagens/P262_K441/L67409i7.png
 	lyxscale 20
 	width 49text%
 
@@ -6638,7 +6638,7 @@ name "fig:L67409i7.png"
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -6753,7 +6753,7 @@ name "fig:L67409i8.png"
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -6868,7 +6868,7 @@ name "fig:L67409i9.png"
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
