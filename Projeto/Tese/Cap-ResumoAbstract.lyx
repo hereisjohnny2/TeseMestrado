@@ -196,7 +196,7 @@ Este trabalho objetiva, através da análise de imagens de rochas reservatório
 
 \end_inset
 
- 
+
 \end_layout
 
 \begin_layout Standard
@@ -238,13 +238,14 @@ Atualmente é cada vez mais comum a aplicação de algorítmos de inteligência
  mudando o números de neurônios em cada camada e as funções de ativação
  na saída de cada um desses neurônios.
  Para a construção das redes neurais e execução do treinamento foi utilizada
- a biblioteca PyTorch, desenvolvida pelo Facebook em scripts desenvolvidos
- em Python.
- Cada sequencia de treinamento durou cerca de 20 segundos, porém a aplicação
- do modelo nas imagens de mostrou lenta, durando entre 30 à 90 segundos
- dependendo do tamanho da imagem a ser binarizada.
- O uso de algorítimos de paralelismo poderiam reduzir esse tempo.
- O software desenvolvido foi utilizado por três grupos diferentes de usuários.
+ a biblioteca PyTorch, desenvolvida pelo 
+\emph on
+Facebook
+\emph default
+ em scripts desenvolvidos em Python.
+ Cada uma das sequencias de treinamento e de aplicação do modelo duraram
+ em torno de 20 milissegundos.O software desenvolvido foi utilizado por três
+ grupos diferentes de usuários.
  Grupo 1 - estudantes que acabaram de entrar na universidade, Grupo 2 -
  estudantes de final de curso de engenharia de petróleo e Grupo 3 - geólogos
  com experiência em segmentação de imagens.
@@ -273,8 +274,8 @@ Redes Neurais, Rocha Digital, Segmentação de Imagens.
 \begin_layout Standard
 
 \emph on
-Titulo do Trabalho em ingles...Titulo do Trabalho em ingles...Titulo do Trabalho
- em ingles...
+Digital Rock Characterization Using Artificial Intelligence – Application
+ to Image Segmentation
 \begin_inset Separator latexpar
 \end_inset
 
@@ -360,42 +361,31 @@ This work aims, through image analysis of oil reservoir rocks, study, simulate
 \end_layout
 
 \begin_layout Standard
-[coloque aqui o resumo em inglês].
-\lang english
-
-\begin_inset Note Note
-status collapsed
-
-\begin_layout Plain Layout
-
-\lang english
-Note que o documento tem uma língua, que pode ser setada utilizando-se Document-
-Settings->Language.
-\end_layout
-
-\begin_layout Plain Layout
-
-\lang english
-Note que partes do texto podem ser definidos como tendo outra linguagem.
- Selecione o texto, vá em Edit->TextStyle->Customized, ou Edit->Language.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Resumo aqui...Resumo aqui...Resumo aqui...Resumo aqui...Resumo aqui...Resumo aqui...Resumo
- aqui...Resumo aqui...Resumo aqui...Resumo aqui...Resumo aqui...Resumo aqui...Resumo aqui...Resumo
- aqui...Resumo aqui...Resumo aqui...Resumo aqui...Resumo aqui...Resumo aqui...Resumo aqui...Resumo
- aqui...Resumo aqui...Resumo aqui...Resumo aqui...Resumo aqui...Resumo aqui...Resumo aqui...Resumo
- aqui...Resumo aqui...Resumo aqui...Resumo aqui...Resumo aqui...Resumo aqui...Resumo aqui...Resumo
- aqui...Resumo aqui...Resumo aqui...Resumo aqui...Resumo aqui...Resumo aqui...Resumo aqui...Resumo
- aqui...Resumo aqui...Resumo aqui...Resumo aqui...Resumo aqui...Resumo aqui...Resumo aqui...Resumo
- aqui...Resumo aqui...Resumo aqui...Resumo aqui...Resumo aqui...Resumo aqui...Resumo aqui...Resumo
- aqui...Resumo aqui...Resumo aqui...Resumo aqui...Resumo aqui...Resumo aqui...Resumo aqui...Resumo
- aqui...Resumo aqui...Resumo aqui...Resumo aqui...
+Currently, the application of artificial intelligence algorithms in the
+ most different technological areas is increasingly common, since they make
+ it feasible to perform complex classification and prediction tasks in a
+ short time, considering a previous training done with humans.
+ In the scope of digital rock segmentation, the use of neural networks allows
+ training algorithms for mineral classification or quantification between
+ permeability and optimal paths between pores.
+ The purpose of this work was to show how the use of such methods makes
+ the binarization of images of reservoir rocks in solids and pores practical.
+ For this, the color information of an image (values of red, green and blue),
+ collected through an annotation software developed in C++ and QT, were
+ used to train neural networks of different topologies, changing the number
+ of neurons in each layer and the activation functions at the output of
+ each of these neurons.
+ For the construction of neural networks and execution of the training,
+ the PyTorch library was used, developed by Facebook in scripts developed
+ in Python.
+ Each of the training and application sequences of the model lasted around
+ 20 milliseconds.
+ The developed software was used by three different groups of users.
+ Group 1 - students who have just entered the university, Group 2 - final
+ year students in petroleum engineering and Group 3 - geologists with experience
+ in image segmentation.
+ The results obtained were analyzed and the results of each group were compared,
+ in order to also identify the importance of knowing the rocks.
 \begin_inset space ~
 \end_inset
 
@@ -409,7 +399,7 @@ Resumo aqui...Resumo aqui...Resumo aqui...Resumo aqui...Resumo aqui...Resumo aqu
 Keywords: 
 \series default
 \size default
-[até 5 palavras chaves em inglês].
+Neural Networks, Digital Rock, Image Segmentation.
 \end_layout
 
 \end_body
