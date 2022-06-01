@@ -228,7 +228,7 @@ m profundas aplicadas à análise de imagens, e desenvolver aplicações que
 python
 \emph default
  para utilização das técnicas de inteligência artificial e uma ferramenta
- para anotação de regiões de interesse em amostras de rocha digital em C++/Qt.
+ para anotação de regiões de interesse em amostras de rocha digital em C++/QT.
 \end_layout
 
 \begin_layout Standard
@@ -297,7 +297,7 @@ status collapsed
 
 \begin_layout Plain Layout
 [descreva resumidamente os modelos desenvolvidos] o objetivo é relembrar
- o leitor os modelos desenvolvidos 
+ o leitor os modelos desenvolvidos
 \end_layout
 
 \end_inset
@@ -376,27 +376,23 @@ status collapsed
 
 \begin_layout Plain Layout
 [Agora, descreve em detalhes as conclusões do trabalho.....].
- 
 \end_layout
 
 \begin_layout Itemize
 É uma síntese conclusiva de tudo o que foi feito.
  Deve esclarecer os pontos principais do trabalho, os resultados a que se
  chegou.
- 
 \end_layout
 
 \begin_layout Itemize
 Deve relembrar o escopo do trabalho, o método, os dados e equipamentos utilizado
 s.
- 
 \end_layout
 
 \begin_layout Itemize
 Deve responder as perguntas da introdução.
  Falar dos modelos/algoritmos desenvolvidos, dos problemas resolvidos e
  resultados obtidos.
- 
 \end_layout
 
 \begin_layout Itemize
@@ -460,7 +456,11 @@ Finalmente, compara-se o resultado obtido por usuários leigos x experientes.
 
 \begin_layout Standard
 Os softwares foram desenvolvidos com a licença GPL e estarão disponibilizadas
- no github do ldsc (
+ no 
+\emph on
+github
+\emph default
+ do ldsc (
 \begin_inset CommandInset href
 LatexCommand href
 target "https://github.com/ldsc"
@@ -468,13 +468,52 @@ literal "false"
 
 \end_inset
 
-) além do github do autor, de forma que alunos de programação e disciplinas
- de inteligência artificial poderão fazer o 
+) além do 
+\emph on
+github
+\emph default
+ do autor
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Ferramenta para Anotação de Regiões de Interesse: 
+\begin_inset CommandInset href
+LatexCommand href
+target "https://github.com/hereisjohnny2/rock-image-annotation"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+Scripts Python para Execução do Modelo: 
+\begin_inset CommandInset href
+LatexCommand href
+target "https://github.com/hereisjohnny2/project-mestrado"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+, de forma que alunos de programação e disciplinas de inteligência artificial
+ poderão fazer o 
 \emph on
 download
 \emph default
-, uso e alteração dos modelos e softwares desenvolvidos, servindo o mesmo
- como um software educativo.
+, uso e alteração dos modelos e 
+\emph on
+softwares
+\emph default
+ desenvolvidos, servindo o mesmo como um 
+\emph on
+software
+\emph default
+ educativo.
 \end_layout
 
 \begin_layout Standard
@@ -639,7 +678,6 @@ Coloque cada sugestão como uma itemização.
 
 \begin_layout Itemize
 Fale dos erros cometidos e o que fazer para corrigi-los.
- 
 \end_layout
 
 \begin_layout Itemize

@@ -139,7 +139,7 @@ Este capítulo apresenta um conjunto de conceitos e modelos desenvolvidos
  por outros autores e que estão diretamente relacionados a este trabalho,
  estes conceitos serão utilizados neste trabalho.
 \begin_inset Note Note
-status open
+status collapsed
 
 \begin_layout Plain Layout
 você precisa copiar todos os termos aqui definidos para a nomenclatura
@@ -229,7 +229,7 @@ literal "false"
  sedimentares clásticas e não clásticas, especialmente arenitos e calcarenitos.
  No âmbito nacional têm-se como exemplo o pré-sal.
  Seus reservatórios podem ser considerados principalmente de três tipos:
- rochas calcárias com coqúinas, fraturas em rochas vulcânicas e calcários
+ rochas calcárias com coquínas, fraturas em rochas vulcânicas e calcários
  microbialíticos 
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -1148,7 +1148,11 @@ Todavia, essa equação tem sua aplicação dificultada devido a irregularidade
 \end_layout
 
 \begin_layout Standard
-A formulação de Darcy, descrita na Equação 
+A formulação de 
+\emph on
+Darcy
+\emph default
+, descrita na Equação 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "eq: equação de darcy"
@@ -2172,7 +2176,6 @@ Sistemas de Cor Computacionais: utilizados para a realização de cálculos
 
 \begin_layout Standard
 Dentre estes, os mais comuns são os sistemas cromáticos CIE-RGB, HSV e HSL.
- 
 \end_layout
 
 \begin_layout Standard
@@ -3612,7 +3615,7 @@ Demanda de algum processamento antes de ser utilizada para obtenção de melhore
 
 \begin_layout Standard
 Para imagens monocromáticas existem duas categorias baseadas em valores
- de intensidade em que se dividem os algorítmos de segmentação: descontinuidade
+ de intensidade em que se dividem os algoritmos de segmentação: descontinuidade
  e similaridade 
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -3785,7 +3788,7 @@ literal "false"
 \end_layout
 
 \begin_layout Standard
-Algorítmos de segmentação baseados no crescimento de regiões tornam difícil
+Algoritmos de segmentação baseados no crescimento de regiões tornam difícil
  a obtenção de bons resultados pois concentra a informação de forma local,
  mesclando regiões e provocando um processo de segmentação.
  Além disso é uma técnica cara em termos computacionais e demanda de um
@@ -4053,7 +4056,17 @@ Na limiarização local o valor do limiar depende da vizinhança dos pixeis
 \end_layout
 
 \begin_layout Subsection
-Processamento Digital de Imagens de Rochas Reservatórios
+Processamento Digital
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Processamento Digital
+\end_layout
+
+\end_inset
+
+ de Imagens de Rochas Reservatórios
 \end_layout
 
 \begin_layout Standard
@@ -4197,8 +4210,11 @@ Etapa 2 - Aquisição de Imagens
 \end_layout
 
 \begin_layout Standard
-A aquisição de imagens pode ser feita por meio de câmeras, scanners ou sensores
- dedicados à esse propósito.
+A aquisição de imagens pode ser feita por meio de câmeras, 
+\emph on
+scanners
+\emph default
+ ou sensores dedicados à esse propósito.
  Na maioria dos casos opta-se pela utilização de uma câmera de vídeo acoplada
  a um microscópio como sensor de aquisição.
  Um conversor ADC transforma o sinal analógico e em discreto e transmite
@@ -4272,7 +4288,7 @@ Inteligência Artificial
 \end_layout
 
 \begin_layout Standard
-A pesquisa em inteligência artificial envolve a construção de algorítmos
+A pesquisa em inteligência artificial envolve a construção de algoritmos
  que sejam capazes de simular o processo cognitivo humano para a resolução
  de problemas 
 \begin_inset CommandInset citation
@@ -4284,8 +4300,24 @@ literal "false"
 
 .
  É uma área demasiada extensa e envolve uma série de técnicas, e dentre
- elas destacam-se as Redes Neurais Artificiais, os Algorítmos Genéticos
- e a Lógica Fuzzy.
+ elas destacam-se as Redes Neurais Artificiais, os Algoritmos Genéticos
+ e a Lógica 
+\emph on
+Fuzzy
+\emph default
+
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+
+\emph on
+Fuzzy
+\end_layout
+
+\end_inset
+
+.
  Nos últimos anos as IAs tem se tornado muito popular devido a disponibilidades
  de unidades de processamento gráfico (GPUs) com melhor desempenho e mais
  acessíveis, e a grande quantidade de dados como imagens, textos, mapas,
@@ -4361,7 +4393,7 @@ Dentre as principais tarefas
 \emph on
 T
 \emph default
- que podem ser atribuídas à algorítmos de aprendizagem de máquina, 
+ que podem ser atribuídas à algoritmos de aprendizagem de máquina, 
 \begin_inset ERT
 status open
 
@@ -4512,7 +4544,7 @@ machine learning
 \end_layout
 
 \begin_layout Standard
-Algorítmos de aprendizagem supervisionada são submetidos a um conjunto de
+Algoritmos de aprendizagem supervisionada são submetidos a um conjunto de
  dados, ou 
 \emph on
 dataset,
@@ -4554,7 +4586,7 @@ literal "false"
 \end_layout
 
 \begin_layout Standard
-Algorítmos de aprendizagem não supervisionados experienciam um 
+Algoritmos de aprendizagem não supervisionados experienciam um 
 \emph on
 dataset
 \emph default
@@ -4580,13 +4612,13 @@ literal "false"
 \end_layout
 
 \begin_layout Standard
-Além disso existe uma categoria de algorítmos de aprendizagem de máquina
+Além disso existe uma categoria de algoritmos de aprendizagem de máquina
  que não utilizam apenas um 
 \emph on
 dataset
 \emph default
  fixo, mas sim se adaptam de acordo com o ambiente.
- Esse é o caso dos algorítmos de aprendizagem reforçada, os quais utilizam
+ Esse é o caso dos algoritmos de aprendizagem reforçada, os quais utilizam
  de um sistema de realimentação entre suas saídas e entradas 
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -4623,7 +4655,7 @@ Florestas Aleatórias
 \end_layout
 
 \begin_layout Standard
-Árvores de decisão são algorítmos que podem ser aplicados tanto em problemas
+Árvores de decisão são algoritmos que podem ser aplicados tanto em problemas
  de regressão quanto em problemas de classificação.
  Conforme é mostrado na Figura 
 \begin_inset CommandInset ref
@@ -5210,7 +5242,7 @@ name "fig:funcoes-arampa"
 \end_layout
 
 \begin_layout Standard
-Na função sigmoid a saida assume valores reais entre 0 e 1, e sua inclinação
+Na função sigmoid a saída assume valores reais entre 0 e 1, e sua inclinação
  é definida por um parâmetro 
 \begin_inset Formula $\beta$
 \end_inset
@@ -5503,7 +5535,7 @@ sigmoid
 \emph default
 e é bastante utilizada para a classificação de problemas com mais de duas
  classes.
- Ela converte os valores das camadas de saida em uma função de probabilidade.
+ Ela converte os valores das camadas de saída em uma função de probabilidade.
  A Equação 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -5550,6 +5582,18 @@ Redes Neurais Diretas (
 \emph on
 FeedForwarding
 \emph default
+
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+
+\emph on
+FeedForwarding
+\end_layout
+
+\end_inset
+
 )
 \end_layout
 
@@ -5783,6 +5827,18 @@ Existem diversos métodos utilizados para desenvolver o aprendizagem desse
 \emph on
 backpropagation
 \emph default
+
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+
+\emph on
+backpropagation
+\end_layout
+
+\end_inset
+
 .
  O objetivo desse algoritmo é calcular o quanto é preciso modificar os valores
  dos pesos e 
@@ -5802,7 +5858,7 @@ literal "false"
 \begin_inset Formula $C$
 \end_inset
 
- que mede o quão diferente da saida da rede 
+ que mede o quão diferente da saída da rede 
 \begin_inset Formula $y^{L}$
 \end_inset
 
@@ -5955,7 +6011,7 @@ noprefix "false"
 \end_layout
 
 \begin_layout Enumerate
-Retropropagar o erro pela rede utilizando a Equação 
+Retro-propagar o erro pela rede utilizando a Equação 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "eq:erro-camada"
@@ -6071,6 +6127,18 @@ noprefix "false"
 \emph on
 Cross-Entropy
 \emph default
+
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+
+\emph on
+Cross-Entropy
+\end_layout
+
+\end_inset
+
 , que é expressa na Equação 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -6085,7 +6153,7 @@ noprefix "false"
 \begin_inset Formula $a$
 \end_inset
 
- representa a saida da função de ativação, 
+ representa a saída da função de ativação, 
 \begin_inset Formula $n$
 \end_inset
 
@@ -6097,7 +6165,7 @@ noprefix "false"
 \begin_inset Formula $y$
 \end_inset
 
- é a saida desejada.
+ é a saída desejada.
  As derivadas 
 \begin_inset Formula $\partial C/\partial\theta$
 \end_inset
@@ -6128,7 +6196,7 @@ noprefix "false"
 
 .
  Observa-se que o gradiente da função de ativação não é considerado, o que
- ajuda a resulver o problema do 
+ ajuda a resolver o problema do 
 \emph on
 vanishing gradient.
 \end_layout
@@ -6187,7 +6255,7 @@ noprefix "false"
 
 \end_inset
 
- é feita uma comparação usando um fanção de custo quadrático e um função
+ é feita uma comparação usando um função de custo quadrático e um função
  
 \emph on
 cross-entropy
@@ -6200,7 +6268,7 @@ configurados inicialmente iguais a 2, o
 \emph on
 input
 \emph default
- igual a 1, a saida atual em 0,98 e a saida desejada em 0.
+ igual a 1, a saída atual em 0,98 e a saída desejada em 0.
  O que se observa é que no segundo caso o valor do custo atinge um número
  mais baixo em uma menor quantidade de épocas do que o primeiro.
  Isso mostra, portanto, que ele está aprendendo mais rápido.
@@ -6228,7 +6296,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Relacão custo x número de épocas para uma função de custo quadrática.
+Relação custo x número de épocas para uma função de custo quadrática.
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:epochs-x-cost-custo-quadratico"
@@ -6282,7 +6350,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Relacão custo x número de épocas para uma função de custo 
+Relação custo x número de épocas para uma função de custo 
 \emph on
 cross-entropy
 \emph default

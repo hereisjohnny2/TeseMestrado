@@ -389,8 +389,8 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Imagem binarizada do arenito usando método baseado nas caractrísticas petrofísic
-as 
+Imagem binarizada do arenito usando método baseado nas características petrofísi
+cas 
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:imagem-ct-lin-2"
@@ -615,7 +615,7 @@ noprefix "false"
 \begin_inset Formula $L$
 \end_inset
 
- de uma saida 
+ de uma saída 
 \begin_inset Formula $a$
 \end_inset
 
@@ -934,6 +934,8 @@ Fontainebleau
  extraídas por um usuário experiente por meio do 
 \emph on
 software Voxilon 
+\emph default
+
 \begin_inset CommandInset citation
 LatexCommand cite
 key "rodriguez2019non"
@@ -942,30 +944,7 @@ literal "false"
 \end_inset
 
 
-\begin_inset Note Note
-status collapsed
-
-\begin_layout Plain Layout
-
 \emph on
-Não achei o site extamente, mas encontrei um artigo que descreve o funcionamento
- do software.
-\end_layout
-
-\end_inset
-
-
-\begin_inset Note Note
-status collapsed
-
-\begin_layout Plain Layout
-
-\emph on
-(coloque link para site do software e informe a versão utilizada se soubver)
-\end_layout
-
-\end_inset
-
 .
  
 \emph default
@@ -1036,7 +1015,11 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Arquitetura da Inception V3(Google Codelabs) 
+Arquitetura da Inception V3(
+\emph on
+Google Codelabs
+\emph default
+) 
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:inception-v3"
@@ -1070,8 +1053,11 @@ literal "false"
 
 \begin_layout Standard
 Para a estimativa da porosidade foram utilizadas 3500 blocos 3D de 100 x
- 100 x 100 voxeis para treinar uma rede convolucional baseado no trabalho
- de 
+ 100 x 100 
+\emph on
+voxeis
+\emph default
+ para treinar uma rede convolucional baseado no trabalho de 
 \begin_inset ERT
 status open
 
@@ -1619,7 +1605,7 @@ citeonline{rubo2019digital}
  poderia ser feita uma tentativa de ser treinar a base de dado utilizando
  outras funções de ativação como ReLU e softmax, que já se mostraram bastante
  proeminentes em outros trabalhos envolvendo redes convolucionais e visão
- compuatacional.
+ computacional.
  A função escolhida (função logística ou 
 \emph on
 sigmoid
@@ -1649,7 +1635,7 @@ noprefix "false"
 
 \end_inset
 
- mostra que essa atualização ocorrre de forma associada ao gradiente das
+ mostra que essa atualização ocorre de forma associada ao gradiente das
  função de ativação.
  No momento que esse gradiente se torna cada vez menor observa-se o fenômeno
  do 
@@ -1657,7 +1643,7 @@ noprefix "false"
 vanishnig gradient
 \emph default
 , ou seja, os novos valores de peso se tornam tão pequenos que a rede neural
- se torna cada vez mais dificil de se treinar.
+ se torna cada vez mais difícil de se treinar.
 \end_layout
 
 \begin_layout Standard
@@ -1680,7 +1666,7 @@ sigmoid
  
 \emph default
 e sua derivada.
- Nela fica fácil entender porque essa função se torna um problema em algóritmos
+ Nela fica fácil entender porque essa função se torna um problema em algoritmos
  de redes neurais que são treinados de forma dependente das funções de ativação.
  Quanto mais 
 \begin_inset Formula $\sigma(x)$

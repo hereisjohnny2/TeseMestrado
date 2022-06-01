@@ -156,7 +156,7 @@ pagenumbering{arabic}
 \end_layout
 
 \begin_layout Standard
-No presente trabalho desenvolve-se um estudo acerca da aplicação de algorítmos
+No presente trabalho desenvolve-se um estudo acerca da aplicação de algoritmos
  de inteligência artificial no processamento de imagens de rochas reservatório.
  Mais especificamente, ele é focado no processo de binarização das mesmas,
  de forma a facilitar a caracterização de propriedades petrofísicas.
@@ -202,13 +202,13 @@ name "sec:Escopo-do-Problema"
 
 \begin_layout Standard
 O uso dessas metodologias se torna muito pertinente na geologia, na petrofísica,
- e em espeial na engenharia de reservatórios, uma vez que a capacidade de
- prever e delimitar a capacidade produtiva do reservatório é essencial no
- âmbito econômico.
+ e em especial na engenharia de reservatórios, uma vez que a capacidade
+ de prever e delimitar a capacidade produtiva do reservatório é essencial
+ no âmbito econômico.
  Ter conhecimento das propriedades físicas das rochas, como porosidade e
  permeabilidade, ajudam nesse processo, já que são parâmetros essenciais
  na simulação e predição da capacidade produtiva dos reservatórios, além
- de trazer informações importantes acerca das heterogênidades que formam
+ de trazer informações importantes acerca das heterogeneidades que formam
  tais estruturas.
  Métodos como análise petrofísica de testemunhos são extremamente úteis
  nesses aspecto, muitas vezes demandam um custo muito alto para serem realizadas
@@ -523,7 +523,7 @@ Objetivo geral:
 
 \begin_deeper
 \begin_layout Itemize
-Desenvolver e aplicar um modelo de rede neural capaz de segementar uma amostra
+Desenvolver e aplicar um modelo de rede neural capaz de segmentar uma amostra
  de rocha digital e estudar o efeito do treinamento/conhecimento do usuário
  na obtenção de resultados.
 \end_layout

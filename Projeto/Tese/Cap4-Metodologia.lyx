@@ -206,7 +206,7 @@ citeonline{rego2010desenvolvimento}
  mostrou que a utilização de redes neurais artificiais podem trazer bons
  resultados para o processo de binarização de imagens, principalmente quando
  comparado com métodos tradicionais.
- Todavia, vale resaltar que observou-se ainda uma dificuldade em processar
+ Todavia, vale ressaltar que observou-se ainda uma dificuldade em processar
  amostras nas quais eram encontradas grãos muito claros ou escuros.
  Além disse 
 \begin_inset ERT
@@ -248,7 +248,7 @@ hine}
 
  vem apresentando bons resultados sobre o processamento do que pode se chamar
  de Rocha Digital utilizando, por exemplo, redes neurais convolucionais
- combinadas com algorítmos de 
+ combinadas com algoritmos de 
 \emph on
 machine learning 
 \emph default
