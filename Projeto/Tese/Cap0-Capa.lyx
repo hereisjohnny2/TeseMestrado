@@ -4,7 +4,7 @@
 \begin_header
 \save_transient_properties true
 \origin unavailable
-\textclass /home2/andreduartebueno/workdir/TeseMestrado/Projeto/Tese/abnt
+\textclass abnt
 \begin_preamble
 \usepackage {listings}
 \usepackage {graphicx}
@@ -334,7 +334,7 @@ width "50text%"
 special "none"
 height "1in"
 height_special "totalheight"
-thickness "0.4pt"
+thickness "0pt"
 separation "3pt"
 shadowsize "4pt"
 framecolor "black"
@@ -445,7 +445,7 @@ CARACTERIZAÇÃO DE ROCHA DIGITAL USANDO INTELIGÊNCIA ARTIFICIAL – APLICAÇÃ
 \end_layout
 
 \begin_layout Standard
-\begin_inset VSpace 2.5cm
+\begin_inset VSpace 2cm
 \end_inset
 
 
@@ -458,7 +458,7 @@ CARACTERIZAÇÃO DE ROCHA DIGITAL USANDO INTELIGÊNCIA ARTIFICIAL – APLICAÇÃ
 JOÃO MARCELO CARDOSO CARVALHO
 \size default
 
-\begin_inset VSpace 2.5cm
+\begin_inset VSpace 2cm
 \end_inset
 
 
@@ -477,7 +477,7 @@ width "50text%"
 special "none"
 height "1in"
 height_special "totalheight"
-thickness "0.4pt"
+thickness "0pt"
 separation "3pt"
 shadowsize "4pt"
 framecolor "black"
@@ -730,7 +730,7 @@ lhead{Dedicatória}
 \end_layout
 
 \begin_layout Standard
-\begin_inset VSpace 21.5cm
+\begin_inset VSpace 21cm
 \end_inset
 
 
@@ -771,124 +771,47 @@ lhead{Agradecimentos}
 \end_layout
 
 \begin_layout Standard
-\paragraph_spacing onehalf
-\align left
-Ao ...
-\begin_inset Index idx
-status open
-
-\begin_layout Plain Layout
-Agradecimentos
-\end_layout
-
-\end_inset
-
-Agradecimentos
+Aos pais Cristina Carvalho e Marcelo Carvalho, que sempre me incentivaram
+ a estudar e buscar o melhor de mim.
+ Nunca desistiram e sempre souberam o que dizer para que eu me tornasse
+ cada dia uma pessoa melhor.
 \end_layout
 
 \begin_layout Standard
-Aos pais...
+À minha irmã Crissima Carvalho, e minha companheira Ana Beatriz Trindade,
+ que me apoiaram do início ao fim dessa jornada, principalmente nos momentos
+ mais difíceis.
 \end_layout
 
 \begin_layout Standard
-Aos amigos ....
+Aos melhores amigos, Mateus Zaror e Raphael dos Santos, que trouxeram pra
+ mim ideias e palavras de tranquilidade que me ajudaram a passar por esta
+ experiência.
 \end_layout
 
 \begin_layout Standard
-Aos membros da banca, professores ...
+Ao meu orientador, André Duarte Bueno, pela confiança em mim depositada
+ para realização deste trabalho.
 \end_layout
 
 \begin_layout Standard
-Aos professores e funcionários do LENEP/CCT/UENF....
+À todos professores e profissionais do LENEP/CCT/UENF, que me ajudaram a
+ tornar possível esse trabalho.
 \end_layout
 
 \begin_layout Standard
-Ao CENPES/PETROBRAS pelo fornecimento de material....
-\begin_inset Separator latexpar
-\end_inset
-
-
-\end_layout
-
-\begin_layout Itemize
-\paragraph_spacing onehalf
-\align left
-Reconhecer que teve ajuda e apoio é uma característica importante para todo
- profissional e pesquisador.
- 
-\end_layout
-
-\begin_layout Itemize
-\align left
-Lembre-se dos amigos, dos professores, dos funcionários, dos colaboradores.
- Lembre-se de quem emprestou/cedeu material, dados, informações, amostras.
- 
-\end_layout
-
-\begin_layout Itemize
-\align left
-Lembre-se de quem lhe ajudou nos algoritmos/programas;
-\end_layout
-
-\begin_layout Itemize
-\align left
-Lembre-se de quem lhe ajudou na preparação e realização de experimentos
- de laboratório.
- 
-\end_layout
-
-\begin_layout Itemize
-Não economize, seja generoso nos agradecimentos.
-\end_layout
-
-\begin_layout Itemize
-Cada agradecimento deve ser curto e objetivo.
- 
-\end_layout
-
-\begin_layout Itemize
-Troque o genérico "aos amigos" pelo nome completo dos seus amigos e nome
- completo das pessoas que colaboraram com seu trabalho.
- Os nomes das pessoas devem ser completos (não ambíguos).
+Ao CENPES/PETROBRAS pelo fornecimento das imagens de rochas reservatórios.
 \end_layout
 
 \begin_layout Standard
-\paragraph_spacing double
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-\paragraph_spacing double
-(obrigatório para bolsistas prh20-anp/ctpetro) - 
-\end_layout
-
-\end_inset
-
-Ao comitê gestor do PRH20-ANP-CTPETRO/LENEP/CCT/UENF, a Agência Nacional
- do Petróleo, Gás Natural e Biocombustíveis – ANP, a Financiadora de Estudos
- e Projetos – FINEP e ao Ministério da Ciência e Tecnologia – MCT pelo fornecime
-nto de bolsa de estudos e taxa de bancada por meio do Programa de Recursos
- Humanos da ANP para o Setor Petróleo e Gás – PRH-ANP/MCT.
+O presente trabalho foi realizado com apoio da Coordenação de Aperfeiçoamento
+ de Pessoal de Nível Superior - Brasil (CAPES) - Código de Financiamento
+ 001.
 \end_layout
 
 \begin_layout Standard
 \begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-(obrigatório para bolsistas prh20-anp/petrobras) - 
-\end_layout
-
-\end_inset
-
-Ao comitê gestor do PRH20-ANP-PETROBRAS/LENEP/CCT/UENF, e a Universidade
- Petrobras pelo fornecimento de bolsa de estudos e taxa de bancada por meio
- do PFRH-PETROBRAS, Programa de Formação de Recursos Humanos da Petrobras.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
+status collapsed
 
 \begin_layout Plain Layout
 Manuais LATEX
@@ -999,7 +922,7 @@ definecolor{mymauve}{rgb}{0.58,0,0.82}
 
 \begin_layout Standard
 \begin_inset Note Note
-status open
+status collapsed
 
 \begin_layout Plain Layout
 Manuais LATEX
@@ -1110,7 +1033,7 @@ definecolor{mymauve}{rgb}{0.58,0,0.82}
 
 \begin_layout Standard
 \begin_inset Note Note
-status open
+status collapsed
 
 \begin_layout Plain Layout
 Define estilo de listagem em C++
@@ -1187,7 +1110,7 @@ lstset{style=out,xleftmargin=1cm}
 
 \begin_layout Standard
 \begin_inset Note Note
-status open
+status collapsed
 
 \begin_layout Plain Layout
 Exemplo de uso:
@@ -1241,7 +1164,7 @@ lstinputlisting[style=C++,caption={Usando os tipos pré-definidos de C++.},
 
 \begin_layout Standard
 \begin_inset Note Note
-status open
+status collapsed
 
 \begin_layout Plain Layout
 Exemplo de uso:
@@ -1299,7 +1222,7 @@ lstinputlisting[style=C++,caption={Usando os tipos pré-definidos de C++.},
 
 \begin_layout Standard
 \begin_inset Note Note
-status open
+status collapsed
 
 \begin_layout Plain Layout
 Como definir cores para
@@ -1990,7 +1913,7 @@ color{mymauve}},
 
 
 \begin_inset Note Note
-status open
+status collapsed
 
 \begin_layout Plain Layout
 O style=iC++ é o C++ sem numeração; pode colocar outra cor de fundo
@@ -2037,7 +1960,7 @@ color{white},
 
 
 \begin_inset Note Note
-status open
+status collapsed
 
 \begin_layout Plain Layout
 Define estilo de saida gerada por programa executado
@@ -2070,7 +1993,7 @@ ttfamily}
 
 \begin_layout Standard
 \begin_inset Note Note
-status open
+status collapsed
 
 \begin_layout Plain Layout
 Define estilo de saida gerada por programa executado em itálico
@@ -2103,7 +2026,7 @@ ttfamily}
 
 \begin_layout Standard
 \begin_inset Note Note
-status open
+status collapsed
 
 \begin_layout Plain Layout
 Define estilo de saida para listagens/scripts do Gnuplot
@@ -2136,7 +2059,7 @@ ttfamily}
 
 \begin_layout Standard
 \begin_inset Note Note
-status open
+status collapsed
 
 \begin_layout Plain Layout
 Define estilo de saida para saída de comandos do terminal (em itálico)
@@ -2189,7 +2112,7 @@ ttfamily}
 
 \begin_layout Standard
 \begin_inset Note Note
-status open
+status collapsed
 
 \begin_layout Plain Layout
 Define estilo de saida para arquivos Makefile
@@ -2221,7 +2144,7 @@ ttfamily}
 
 \begin_layout Standard
 \begin_inset Note Note
-status open
+status collapsed
 
 \begin_layout Plain Layout
 Define o estilo padrão como sendo C++
@@ -2294,10 +2217,6 @@ lstset{style=C++}
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
 
 \end_layout
 
