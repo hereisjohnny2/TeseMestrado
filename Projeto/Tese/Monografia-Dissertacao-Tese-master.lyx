@@ -129,7 +129,7 @@
 \papercolumns 1
 \papersides 1
 \paperpagestyle fancy
-\tracking_changes true
+\tracking_changes false
 \output_changes false
 \html_math_output 0
 \html_css_as_file 0
@@ -293,11 +293,11 @@ Desenvolvimento - SIM (CORRIGIDO)
 \end_layout
 
 \begin_layout Plain Layout
-Resultados - EM ANDAMENTO
+Resultados - SIM (CORRIGIDO)
 \end_layout
 
 \begin_layout Plain Layout
-Conclusões - EM ANDAMENTO
+Conclusões - SIM (CORRIGIDO)
 \end_layout
 
 \end_inset
