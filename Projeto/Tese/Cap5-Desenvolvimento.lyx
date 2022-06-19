@@ -241,7 +241,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename /home/joao/Documentos/TeseMestrado/imagens/imagensCriadas/rede-neural-rep.png
+	filename ../../imagens/imagensCriadas/rede-neural-rep.png
 	lyxscale 50
 	width 100text%
 
@@ -473,7 +473,8 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename /home/joao/Documentos/TeseMestrado/imagens/imagensCriadas/qt-desginer.png
+	filename ../../imagens/imagensCriadas/qt-desginer.png
+	lyxscale 50
 	width 100text%
 
 \end_inset
@@ -5113,7 +5114,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename /home/joao/Documentos/TeseMestrado/imagens/imagensCriadas/processo2.png
+	filename ../../imagens/imagensCriadas/processo2.png
 	lyxscale 50
 	width 100text%
 

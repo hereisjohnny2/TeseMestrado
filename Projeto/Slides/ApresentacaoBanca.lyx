@@ -1,0 +1,3756 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass beamer
+\begin_preamble
+\usetheme{Hannover}
+% or ...
+
+\setbeamercovered{transparent}
+% or whatever (possibly just delete it)
+\usefonttheme[onlymath]{serif}
+\usefonttheme[onlysmall]{structurebold}
+\usepackage{color}
+\end_preamble
+\options aspectratio=169
+\use_default_options false
+\maintain_unincluded_children false
+\language brazilian
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "times" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 2
+\use_package amssymb 2
+\use_package cancel 0
+\use_package esint 0
+\use_package mathdots 1
+\use_package mathtools 0
+\use_package mhchem 1
+\use_package stackrel 0
+\use_package stmaryrd 0
+\use_package undertilde 0
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 2
+\tocdepth 2
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+CARACTERIZAÇÃO DE ROCHA DIGITAL USANDO INTELIGÊNCIA ARTIFICIAL – APLICAÇÃO
+ A SEGMENTAÇÃO DE IMAGENS
+\begin_inset Argument 1
+status collapsed
+
+\begin_layout Plain Layout
+Dissertação de Mestrado
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Author
+João Marcelo Cardoso Carvalho
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+João Marcelo Cardoso Carvalho
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Institute
+Laboratório Engenharia Exploração e Produção de Petróleo
+\begin_inset Newline newline
+\end_inset
+
+Universidade Estadual do Norte Fluminense Darcy Ribeiro 
+\begin_inset Argument 1
+status collapsed
+
+\begin_layout Plain Layout
+Universidade Estadual do Norte Fluminense
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+optional, but mostly needed
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Date
+\begin_inset Formula $\ $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Date
+Macaé, Março 2021
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+If you have a file called "institution-logo-filename.xxx", where xxx is a
+ graphic format that can be processed by latex or pdflatex, resp., then you
+ can add a logo by uncommenting the following:
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+%
+\backslash
+pgfdeclareimage[height=0.5cm]{institution-logo}{institution-logo-filename}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+%
+\backslash
+logo{
+\backslash
+pgfuseimage{institution-logo}}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+The following causes the table of contents to be shown at the beginning
+ of every subsection.
+ Delete this, if you do not want it.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+AtBeginSubsection[]{
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+  
+\backslash
+frame<beamer>{ 
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+frametitle{Sumário}   
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+tableofcontents[currentsection,currentsubsection] 
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+  }
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+If you wish to uncover everything in a step-wise fashion, uncomment the
+ following command:
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+%
+\backslash
+beamerdefaultoverlayspecification{<+->}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Sumário
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Section
+Introdução
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Escopo do Problema
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+É cada vez mais comum a aplicação de algorítmos de inteligência artificial
+ nas mais diferentes áreas de pesquisa, principalmente na engenharia, graças
+ ao aumento exponencial da capacidade de processamento dos computadores
+ e seu baixo custo.
+\end_layout
+
+\begin_layout Itemize
+O uso dessas metodologias se torna muito pertinente na engenharia de reservatóri
+os, uma vez que a capacidade de prever e delimitar sua capacidade produtiva
+ é essencial no âmbito econômico.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Escopo do Problema
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Métodos como análise petrofísica de testemunhos são extremamente úteis nesses
+ aspecto, muitas vezes demandam um custo muito alto para serem realizadas
+ devido aos equipamentos utilizados no processo, como porosímetro e permeâmetro,
+ mas principalmente devido o custo para obter as amostras.
+\end_layout
+
+\begin_layout Itemize
+São caros e destrutivas, logo a amostra é perdia assim que o estudo é concluido.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Escopo do Problema
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../../imagens/0-sequencia-processos-conhecimentos-base.png
+	width 50text%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Conhecimentos de Base para Análise de Imagens de Rochas Reservatório.
+ [Fonte: (REGO; BUENO, 2010)].
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Frame
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Objetivo Geral
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Desenvolver métodos de inteligência artificial capazes de reconhecer padrões
+ relevantes para a análise das propriedades petrofísicas em imagens de rochas
+ reservatórios.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Objetivos Específicos
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Estudar diferentes métodos de aprendizagem de maquina e aprendizagem profundas
+ aplicadas à análise de imagens.
+\end_layout
+
+\begin_layout Itemize
+Estudar o comportamento dos métodos de IA em geometrias de poros complexas.
+\end_layout
+
+\begin_layout Itemize
+Comparar resultados obtidos com aqueles já apresentados na literatura.
+\end_layout
+
+\begin_layout Itemize
+Implementação de algorítmos em C++ e inclusão dos mesmos na biblioteca criada
+ pela equipe do Laboratório de Desenvolvimento de Software Científico (lib_ldsc).
+\end_layout
+
+\end_deeper
+\begin_layout Section
+Revisão Bibliográfica
+\end_layout
+
+\begin_layout Subsection
+Lin 
+\shape italic
+et al.
+ 
+\shape default
+(2018)
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Descrição do Modelo
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Segmentação de rochas baseada na porosidade calculada como limitador (
+\emph on
+threshold)
+\emph default
+.
+\end_layout
+
+\begin_layout Itemize
+Considera características petrofísicas das amostras.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Resultados
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../../imagens/imagensArtigos/imagem-ct-lin.png
+	width 50text%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Imagem em escala de cinza de um arenito obtido por meio de tomografia computador
+izada [Fonte: (LIN et al., 2018)].
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Resultados
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../../imagens/imagensArtigos/imagem-ct-lin-metodo-antigo.png
+	width 50text%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Imagem binarizada do arenito usando método comum para o cálculo da porosidade
+ [Fonte: (LIN et al., 2018)].
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Resultados
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../../imagens/imagensArtigos/imagem-ct-lin-metodo-novo.png
+	width 50text%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Imagem binarizada do arenito usando método baseado nas características petrofísi
+cas [Fonte: (LIN et al., 2018)].
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Rubo 
+\shape italic
+et al.
+ 
+\shape default
+(2019)
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Descrição do Modelo
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Geração de modelos de classificação mineralógica.
+\end_layout
+
+\begin_layout Itemize
+Filtros convolucionais para extração de informações de cada pixel.
+\end_layout
+
+\begin_layout Itemize
+Redes neurais com 3 camadas de 45 neurônios, ativados por meio da função
+ logística.
+\end_layout
+
+\begin_layout Itemize
+Gradiente descendente estocástico como algorítimo der aprendizagem.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Estrutura Rede Neural
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../../imagens/imagensLivros/neuronio-artificial.png
+	width 50page%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Representação de um neurônio artificial.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Estrutura Rede Neural
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../../imagens/imagensLivros/rna-direta.png
+	width 50page%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Rede neural artificial direta com 2 camadas profundas.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Função Custo
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Uma função de custo mede o quão diferente da saida da rede está relação
+ ao valor verdadeiro atribuído ao dado imputado na camada de entrada.
+\end_layout
+
+\begin_layout Itemize
+Um exemplo de função de custo é a função de custo quadrático.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula 
+\[
+C=\frac{1}{2n}\sum_{x}\parallel y(x)-y^{L}(x)\parallel^{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Algorítimo
+\shape italic
+ Backpropagation
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Entra-se com um conjunto de dados na camada de entrada da rede neural;
+\end_layout
+
+\begin_layout Enumerate
+Para cada exemplo de treino é feito o seguinte procedimento:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+computar as saídas dos neurônios até a última camada utilizando a Equação
+ 
+\begin_inset Formula $y_{j}^{l}=\eta\left(\sum_{k}w_{jk}^{l}y_{k}^{l-1}+\theta_{j}^{l}\right)$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+calcular o erro 
+\begin_inset Formula $\delta^{x,L}=\nabla_{a}C_{x}\odot\eta'(w^{L}y^{L-1}+\theta^{L})$
+\end_inset
+
+ ;
+\end_layout
+
+\begin_layout Enumerate
+Retropropagar o erro pela rede utilizando a Equação 
+\begin_inset Formula $\delta^{x,l}=\left(\left(w^{l+1}\right)^{T}\delta^{x,l+1}\right)\odot\eta'(w^{l}y^{l-1}+\theta^{l})$
+\end_inset
+
+ para calcular o erro em cada camada 
+\begin_inset Formula $l=L-1,\,L-2,\,...$
+\end_inset
+
+;
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Atualizar os pesos e 
+\emph on
+biases 
+\emph default
+da rede por meio das Equações 
+\begin_inset Formula $w^{l}\rightarrow w^{l}-\frac{\mu}{m}\sum_{x}\delta^{x,l}\left(a^{x,l-1}\right)^{T}$
+\end_inset
+
+ e 
+\begin_inset Formula $b^{l}\rightarrow b^{l}-\frac{\mu}{m}\sum_{x}\delta^{x,l}$
+\end_inset
+
+, onde 
+\begin_inset Formula $\mu$
+\end_inset
+
+ representa a taxa de aprendizagem da rede e 
+\begin_inset Formula $m$
+\end_inset
+
+ o tamanho do 
+\emph on
+mini-batches.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Resultado
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Bolhas foram confundidas com regiões porosas.
+\end_layout
+
+\begin_layout Itemize
+Dificuldade de classificar poros na presença de materiais argilosos.
+\end_layout
+
+\begin_layout Itemize
+Uso de outras funções de ativação.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Resultado
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../../imagens/imagensSites/sigmoid-derivada (1).png
+	width 70text%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Função Sigmoid e sua Derivada.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Função Custo 
+\shape italic
+Cross-Entropy
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+O uso da função de custo quadrática pode tornar o aprendizado muito lento.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula 
+\[
+C=-\frac{1}{n}\sum_{x}\left[y\ln a+(1-y)\ln(1-a)\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula 
+\[
+\frac{\partial C}{\partial\theta}=\frac{1}{n}\sum_{x}(a-y)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula 
+\[
+\frac{\partial C}{\partial w}=\frac{1}{n}\sum_{x}x(a-y)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Função Custo 
+\shape italic
+Cross-Entropy
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../../imagens/imagensLivros/epochs-x-cost-custo-quadrático.png
+	width 70text%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Relação custo x número de épocas para uma função de custo quadrática [Fonte:
+ (NIELSEN, 2015)].
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Função Custo 
+\shape italic
+Cross-Entropy
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../../imagens/imagensLivros/epochs-x-cost-cross-entropy.png
+	width 70text%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Relação custo x número de épocas para uma função de custo 
+\shape italic
+Cross-Entropy
+\shape default
+ [Fonte: (NIELSEN, 2015)].
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Alqahtani 
+\shape italic
+et al.
+
+\shape default
+ (2018)
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Descrição do Modelo
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Previsão de propriedades petrofísicas por meio de redes neurais convolucionais.
+\end_layout
+
+\begin_layout Itemize
+Dataset composto com 3 tipos de arenitos: 
+\emph on
+Bentheimer, Berea e Fine-Grain
+\emph default
+.
+\end_layout
+
+\begin_layout Itemize
+Segmentação pelo método de 
+\emph on
+Otsu.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Descrição do Modelo
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Rede de poros por meio do algorítimo de 
+\emph on
+watershead.
+\end_layout
+
+\begin_layout Itemize
+Aplicada função de perda de Huber em conjunto com o otimizador Adam.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula 
+\[
+L_{s}(a)=\begin{cases}
+0,5a^{2} & |a|\leq\delta\\
+\left(|a|-0,5\delta\right)\delta & |a|>\delta
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Redes Neurais Convolucionais
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Aplicada a dados com topologia em grade, como no caso de matrizes 2D.
+\end_layout
+
+\begin_layout Itemize
+Sobre cada imagem são aplicados filtros convolucionais que retornam vários
+ mapas de características.
+\end_layout
+
+\begin_layout Itemize
+Cada mapa passa em seguida por um processo de subamostragem, chamado de
+ 
+\shape italic
+pooling
+\shape default
+.
+\end_layout
+
+\begin_layout Itemize
+No final da rede, a topologia em 2D é transformada em um vetor, unidimensional
+ e é usado para alimentar uma rede neural comum.
+\end_layout
+
+\begin_layout Itemize
+Em problemas de classificação é comum utilizar uma função 
+\shape italic
+softmax
+\shape default
+.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Redes Neurais Convolucionais
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../../imagens/imagensSites/conv-net-operacao-convolucao.png
+	width 80page%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Operação de convolução.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Redes Neurais Convolucionais
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../../imagens/imagensSites/conv-net-operacao-pooling.png
+	width 80pheight%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Operação de 
+\shape italic
+pooling
+\shape default
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Redes Neurais Convolucionais
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../../imagens/imagensSites/conv-net-operacao-flatting.png
+	width 70page%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Operação de 
+\shape italic
+flattening
+\shape default
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Redes Neurais Convolucionais
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../../imagens/imagensSites/conv-net.png
+	width 90page%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Exemplo de rede convolucional.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Função Softmax
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+A função 
+\emph on
+softmax 
+\emph default
+é semelhante a uma função 
+\emph on
+sigmoid 
+\emph default
+e é bastante utilizada para a classificação de problemas com mais de duas
+ classes.
+ Ela converte os valores das camadas de saida em uma função de probabilidade.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula 
+\[
+\eta(\vec{u})_{i}=\frac{e^{u_{i}}}{\sum_{j=1}^{k}e^{u_{j}}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Algorítimo 
+\shape italic
+Watershead
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Imagem é modelada como uma superfície topográfica (vales e montanhas) que
+ corresponde aos valores de intensidade dos pixeis.
+\end_layout
+
+\begin_layout Itemize
+Inundação dos mínimos locais formando bacias até que eventualmente essas
+ bacias se encontram e formam as linhas de contenção.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Método de 
+\shape italic
+Otsu
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Baseado na seleção do menor ponto entre dois picos no histograma, considerando
+ que os níveis médios de cinza do objeto do fundo são diferentes.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula 
+\[
+\sigma_{T}^{2}=\sum_{i=0}^{255}p_{i}\left(\frac{\sum_{i=0}^{255}i.p_{i}}{\sum_{i=0}^{255}p_{i}}\right)^{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula 
+\[
+\eta(T_{h})=\frac{\sigma_{inter}^{2}}{\sigma_{T}^{2}}=\frac{B_{0}B_{1}(\mu_{0}\mu_{1})^{2}}{\sigma_{T}^{2}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Algorítimo 
+\shape italic
+Watershead
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../../imagens/imagensLivros/watershead.png
+	width 80page%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Processo de aplicação da segmentação por watersheads [Fonte: (GONZALEZ;
+ WOODS, 2010)].
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Estrutura da Rede Neural
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../../imagens/imagensArtigos/metodologia-cnn-alqahtani.png
+	height 50pheight%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Framework da metodologia utilizada para prever propriedades de meios porosos
+ utilizando redes neurais convolucionais [Fonte: (ALQAHTANI et al., 2018)]x.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Resultados
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Dificuldade para classificar minerais com brilho intenso.
+\end_layout
+
+\begin_layout Itemize
+Uso de dataset com valores de intensidade mais bem distribuidos.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Resultados
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../../imagens/imagensArtigos/resultados-alqahtani.png
+	width 80page%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Correlação entre entre os valores previsos e reais de porosidade, número
+ de coordenação e tamanho médio de poro, para cada amostra [Fonte: (ALQAHTANI
+ et al., 2018)].
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Hébert 
+\shape italic
+et al.
+
+\shape default
+\size largest
+\emph on
+\color blue
+ 
+\size default
+\emph default
+\color inherit
+(2020)
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Descrição do Modelo - Problema de Classificação
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Dataset composto por carbonatos das formações de Estaillades e Savonnieres,
+ e arenitos Berea e Fontainebleau.
+\end_layout
+
+\begin_layout Itemize
+Uso do software Voxilon para extrair para extrair propriedades físicas de
+ porosidade (aplicada ao trabalho), permeabilidade e tortuosidade.
+\end_layout
+
+\begin_layout Itemize
+Problema de classificação abordado por meio da rede neural pré-treinada
+ Inception v3 do Google.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Descrição do Modelo - Problema de Classificação
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../../imagens/imagensArtigos/inception-v3.png
+	lyxscale 50
+	width 70page%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Arquitetura da Inception V3(Google Codelabs) [Fonte: (HÉBERT et al., 2020)].
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Descrição do Modelo - Estimativa de Porosidade
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Modelo RegPhi, desenvolvido por Sudakov 
+\emph on
+et al.
+ 
+\emph default
+(2019), para estimar a porosidade nas amostras.
+\end_layout
+
+\begin_layout Itemize
+Obteve-se um erro relativo médio em 18% e uma mediana abaixo de 15%.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Descrição do Modelo - Estimativa de Porosidade
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../../imagens/imagensArtigos/arquitetura-reg-phi.png
+	width 70page%
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Section
+Metodologia
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Motivação Para o Tema
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+A escolha de um bom algorítimo de segmentação é um ponto chave para uma
+ boa binarização de imagens de rochas reservatório.
+\end_layout
+
+\begin_layout Itemize
+Dificuldade de processamento de imagens com grãos muito claros ou muito
+ escuros.
+\end_layout
+
+\begin_layout Itemize
+Utilização de uma arquitetura de rede neural mais otimizada para lidar com
+ imagens.
+\end_layout
+
+\begin_layout Itemize
+Funções de ativação de que não estejam suscetíveis ao fenômeno do 
+\emph on
+vanishing gradient
+\emph default
+.
+\end_layout
+
+\begin_layout Itemize
+Utilização de outros algorítimos de otimização que não SGD (
+\emph on
+Stochastic Gradient Descendent).
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Classificação da Pesquisa
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Área de Estudo: Processamento digital de imagens de rocha reservatório utilizand
+o inteligência artificial.
+\end_layout
+
+\begin_layout Itemize
+Subordinação do tema a áreas do conhecimento científico: Ligado à engenharia
+ de reservatório de petróleo, ao estudo e caracterização do meio poroso,
+ a determinação de propriedades petrofísicas utilizando métodos da área
+ de processamento e análise de imagens digitais e da área de inteligência
+ artificial.
+\end_layout
+
+\begin_layout Itemize
+Problema específico: Desenvolvimento de modelos de inteligência artificial
+ (IA) aplicados a binarização de imagens de rocha reservatório.
+\end_layout
+
+\begin_layout Itemize
+Tipo de pesquisa: A pesquisa em desenvolvimento apresenta caráter misto
+ entre a modelagem numérico-computacional e desenvolvimento experimental.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Hipóteses
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+O arcabouço, matriz e cimento dos arenitos, e o aloquímico, a micrita e
+ o esparito dos carbonatos serão tratados como fase granular, e os poros
+ como fase rochosa.
+ Dessa forma portanto, está desconsiderada a classificação dos minerais.
+\end_layout
+
+\begin_layout Itemize
+Serão utilizados valores de porosidade efetiva, já que a resina preenche
+ apenas os poros interconectados.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Materiais e Pressupostos
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Realização de um estudo acerca da geologia das rochas reservatórios ao se
+ cursar as disciplinas de Introdução a Engenharia de Petróleo, Petrofísica
+ e Escoamento em Meios Poros e Fraturados.
+\end_layout
+
+\begin_layout Itemize
+Cursar Disciplinas de Desenvolvimento de Software em C++, Processamento
+ Paralelo e Concorrente e Processamento de Imagens para dar suporte ao desenvolv
+imento das técnicas computacionais.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Materiais e Pressupostos
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Desenvolvimento de modelos de redes neurais profundas para binarização de
+ amostras de imagens de rochas digitais providas pelo acervo digital do
+ Prof.
+ DSc.
+ André Bueno e pelo banco de dados disponibilizados pelo CENPES-PETROBRÁS.
+\end_layout
+
+\begin_layout Itemize
+Integração dos códigos desenvolvidos com a LIB_LDSC em C++.
+\end_layout
+
+\begin_layout Itemize
+Comparação dos resultados com outros trabalhos na literatura.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Desenvolvimento
+\end_layout
+
+\begin_layout Subsection
+Ferramenta de Anotação de Regiões de Interesse
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Ferramenta de Anotação de Regiões de Interesse
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Demarcação de regiões que representariam a matriz sólida e os poros.
+ Cada região é representada por um cor, escolhida pelo usuário.
+ 
+\end_layout
+
+\begin_layout Itemize
+Desenvolvido em C++.
+\end_layout
+
+\begin_layout Itemize
+Utilização da Biblioteca QT para construção da interface gŕafica.
+\end_layout
+
+\begin_layout Itemize
+Exportação da informação RGB dos pixeis representados sobre as regiões de
+ interesse.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Ferramenta de Anotação de Regiões de Interesse
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../../imagens/imagensCriadas/utilizando-qt-designer.png
+	lyxscale 50
+	width 70page%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Interface Gráfica do 
+\emph on
+QT Designer
+\emph default
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Ferramenta de Anotação de Regiões de Interesse
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../../imagens/imagensCriadas/tabela-dados1.png
+	lyxscale 50
+	width 30page%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Exemplo de Tabela com Dados Coletados.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Ferramenta de Anotação de Regiões de Interesse
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../../imagens/imagensCriadas/poros-marcados.png
+	lyxscale 50
+	width 30page%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Exemplo Marcação de Poros.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Coleta dos Dados
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Coleta dos Dados
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../../imagens/imagensCriadas/exemplo-i26.png
+	lyxscale 50
+	width 40page%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Exemplo de Coleta de Dados com Berea200.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:exemplo-berea200"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Coleta dos Cados
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../../imagens/imagensCriadas/exemplo-berea500.png
+	lyxscale 50
+	width 40text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Exemplo de Coleta de Dados com Berea500.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:exemplo-berea500-1"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Coleta dos Dados
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../../imagens/imagensCriadas/exemplo-p140.png
+	lyxscale 50
+	width 40text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Exemplo de Coleta de Dados com P148_K2.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:exemplo-p148-1"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Coleta dos Cados
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../../imagens/imagensCriadas/exemplo-p240.png
+	lyxscale 50
+	width 40text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Exemplo de Coleta de Dados com P240_K104.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:exemplo-p240-1"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Coleta de Dados
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../../imagens/imagensCriadas/exemplo-p262.png
+	lyxscale 50
+	width 40text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Exemplo de Coleta de Dados com P262_K441.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:exemplo-p262-1"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Treinamento e Aplicação das Redes Neurais
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Treinamento e Aplicação das Redes Neurais
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Código desenvolvido em Python.
+\end_layout
+
+\begin_layout Itemize
+Utilização de uma CLI (
+\emph on
+Command-Line Interface
+\emph default
+) para treinar e aplicar os modelos nas imagens.
+\end_layout
+
+\begin_layout Itemize
+Utilização das biblioteca 
+\emph on
+PyTorch, NumPy 
+\emph default
+e
+\emph on
+ Pillow.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Descrição do Modelo
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Camadas da rede neural representada pelo modelo.
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:Camadas-da-rede"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="3">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Número da Camada
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Número de Neurônios
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Função de Ativação
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+relu
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+relu
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+relu
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4 (
+\emph on
+output
+\emph default
+)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+log_softmax
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Descrição do Modelo
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../../imagens/imagensCriadas/rede-neural-rep.png
+	lyxscale 50
+	width 40text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Representação da rede neural construída.
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Representação-da-rede"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Coleta de Resultados
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Procedimento de Coleta de Dados
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename /home/joao/Documents/dev/mestrado/TeseMestrado/imagens/imagensCriadas/processo2.png
+	lyxscale 50
+	height 40page%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Procedimento de Coleta de Dados para Binarização de Rochas Digitais com
+ Redes Neurais.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:procedimento-de-coleta-resultados"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Bibliografia
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Bibliografia
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+ALQAHTANI, N.; ARMSTRONG, R.
+ T.; MOSTAGHIMI, P.
+ et al.
+ Deep learning convolutional neural networks to predict porous media properties.
+ In: SOCIETY OF PETROLEUM ENGINEERS.
+ SPE Asia Pacific oil and gas conference and exhibition.
+ [S.l.], 2018.
+\end_layout
+
+\begin_layout Itemize
+GONZALEZ, R.; WOODS, R.
+ Processamento Digital de Imagens.
+ Book.
+ [S.l.]: São Paulo: Pearson Pretience Hall, 2010.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Bibliografia
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+HÉBERT, V.; PORCHER, T.; PLANES, V.; LÉGER, M.; ALPEROVICH, A.; GOLDLUECKE, B.;
+ RODRIGUEZ, O.; YOUSSEF, S.
+ Digital core repository coupled with machine learning as a tool to classify
+ and assess petrophysical rock properties.
+ In: EDP SCIENCES.
+ E3S Web of Conferences.
+ [S.l.], 2020.
+ v.
+ 146, p.
+ 01003.
+\end_layout
+
+\begin_layout Itemize
+LIN, W.; LI, X.; YANG, Z.; LIN, L.; XIONG, S.; WANG, Z.; WANG, X.; XIAO, Q.
+ A new improved threshold segmentation method for scanning images of reservoir
+ rocks considering pore fractal characteristics.
+ Fractals, World Scientific, v.
+ 26, n.
+ 02, p.
+ 1840003, 2018.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Bibliografia
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+NIELSEN, M.
+ A.
+ Neural networks and deep learning.
+ [S.l.]: Determination press San Francisco, CA, 2015.
+ v.
+ 25.
+\end_layout
+
+\begin_layout Itemize
+REGO, E.
+ A.; BUENO, O.
+ A.
+ D.
+ Desenvolvimento de Metodo de Binarizacao para Analise de Rochas Reservatorio
+ Tipicas da Bacia de Campos.
+ Tese (Doutorado) — Dissertacao (Msc Dissertation)âUENF/LENEP, 2010.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Bibliografia
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+RODRIGUEZ, O.; PORCHER, T.; PLANES, V.; MECUSON, G.; BOUVIER, R.
+ Non destructive testing of cmc engine internal parts from x-ray tomographic
+ images.
+ In: 9th Int.
+ Conf.
+ Industrial Computed Tomography, Padova, Italy.
+ [S.l.: s.n.], 2019.
+\end_layout
+
+\begin_layout Itemize
+RUBO, R.
+ A.; CARNEIRO, C.; MICHELON, M.; GIORIA, R.
+ Digital petrography: Mineralogy and porosity identification using machine
+ learning algorithms in petrographic thin section images.
+ Journal of Petroleum Science and Engineering, v.
+ 183, p.
+ 106382, 08 2019.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Bibliografia
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+SUDAKOV, O.; BURNAEV, E.; KOROTEEV, D.
+ Driving digital rock towards machine learning: Predicting permeability
+ with gradient boosting and deep neural networks.
+ Computers & geosciences, Elsevier, v.
+ 127, p.
+ 91–98, 2019.
+\end_layout
+
+\end_deeper
+\end_body
+\end_document
