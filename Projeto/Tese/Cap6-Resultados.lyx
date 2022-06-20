@@ -221,7 +221,7 @@ noprefix "false"
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -336,7 +336,7 @@ name "fig:I22.png"
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -700,7 +700,7 @@ noprefix "false"
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -2365,14 +2365,14 @@ name "fig:I32.png"
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \noindent
@@ -2412,7 +2412,7 @@ name "fig:I320.png-Binarizada"
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \noindent
@@ -2499,7 +2499,7 @@ noprefix "false"
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -4220,7 +4220,7 @@ noprefix "false"
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -4335,7 +4335,7 @@ name "fig:3271i01.png"
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -5362,9 +5362,7 @@ name "fig:3271i10.png"
 
 \end_inset
 
-31,00% 31,00% 36,74% 37,38% 31,00% 33,42% 3,33% 23,84% 23,84% 21,52% 33,16%
- 23,84% 25,24% 4,54% 16,58% 16,58% 22,17% 38,31% 25,57% 23,84% 8,95% 25,57%
- 25,57% 22,64% 26,63% 25,57% 25,19% 1,50%
+
 \end_layout
 
 \begin_layout Subsection
