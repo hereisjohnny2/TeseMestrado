@@ -79,11 +79,12 @@
 \papercolumns 1
 \papersides 1
 \paperpagestyle default
-\tracking_changes false
+\tracking_changes true
 \output_changes false
 \html_math_output 0
 \html_css_as_file 0
 \html_be_strict false
+\author 1908091853 "andreduartebueno"
 \end_header
 
 \begin_body
@@ -124,12 +125,12 @@ Laboratório Engenharia Exploração e Produção de Petróleo
 
 Universidade Estadual do Norte Fluminense Darcy Ribeiro 
 \begin_inset Argument 1
-status collapsed
+status open
 
 \begin_layout Plain Layout
 Universidade Estadual do Norte Fluminense
 \begin_inset Note Note
-status collapsed
+status open
 
 \begin_layout Plain Layout
 optional, but mostly needed
@@ -158,7 +159,7 @@ Macaé, Março 2021
 
 \begin_layout Standard
 \begin_inset Note Note
-status collapsed
+status open
 
 \begin_layout Plain Layout
 If you have a file called "institution-logo-filename.xxx", where xxx is a
@@ -173,7 +174,7 @@ If you have a file called "institution-logo-filename.xxx", where xxx is a
 
 \begin_layout Standard
 \begin_inset Note Note
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset ERT
@@ -208,7 +209,7 @@ pgfuseimage{institution-logo}}
 
 
 \begin_inset Note Note
-status collapsed
+status open
 
 \begin_layout Plain Layout
 The following causes the table of contents to be shown at the beginning
@@ -223,7 +224,7 @@ The following causes the table of contents to be shown at the beginning
 
 \begin_layout Standard
 \begin_inset Note Note
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset ERT
@@ -296,7 +297,7 @@ tableofcontents[currentsection,currentsubsection]
 
 
 \begin_inset Note Note
-status collapsed
+status open
 
 \begin_layout Plain Layout
 If you wish to uncover everything in a step-wise fashion, uncomment the
@@ -382,9 +383,35 @@ Escopo do Problema
 \end_layout
 
 \begin_layout Itemize
-O uso dessas metodologias se torna muito pertinente na engenharia de reservatóri
-os, uma vez que a capacidade de prever e delimitar sua capacidade produtiva
- é essencial no âmbito econômico.
+O uso dess
+\change_deleted 1908091853 1655994141
+a
+\change_inserted 1908091853 1655994141
+e
+\change_unchanged
+s 
+\change_deleted 1908091853 1655994144
+metodologias
+\change_inserted 1908091853 1655994166
+algoritmos
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1655994189
+precisa manter um padrão algoritmo é diferente de métodos
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+ se torna muito pertinente na engenharia de reservatórios, uma vez que a
+ capacidade de prever e delimitar sua capacidade produtiva é essencial no
+ âmbito econômico.
 \end_layout
 
 \end_deeper
@@ -417,11 +444,31 @@ Escopo do Problema
 Métodos como análise petrofísica de testemunhos são extremamente úteis nesses
  aspecto, muitas vezes demandam um custo muito alto para serem realizadas
  devido aos equipamentos utilizados no processo, como porosímetro e permeâmetro,
- mas principalmente devido o custo para obter as amostras.
+ mas principalmente devido o custo para obter as amostras
+\change_inserted 1908091853 1655994208
+ cilíndricas
+\change_unchanged
+.
 \end_layout
 
 \begin_layout Itemize
-São caros e destrutivas, logo a amostra é perdia assim que o estudo é concluído.
+
+\change_inserted 1908091853 1655994218
+Alguns ensaios s
+\change_deleted 1908091853 1655994218
+S
+\change_unchanged
+ão caros e destrutiv
+\change_deleted 1908091853 1655994222
+a
+\change_inserted 1908091853 1655994222
+o
+\change_unchanged
+s, logo a amostra é perdi
+\change_inserted 1908091853 1655994225
+d
+\change_unchanged
+a assim que o estudo é concluído.
 \end_layout
 
 \end_deeper
@@ -469,7 +516,33 @@ status open
 
 \begin_layout Plain Layout
 Conhecimentos de Base para Análise de Imagens de Rochas Reservatório.
- [Fonte: (REGO; BUENO, 2010)].
+ [Fonte: (REGO; BUENO, 2010)]
+\change_deleted 1908091853 1655995570
+.
+\change_inserted 1908091853 1655995927
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1655995930
+https://normas-abnt.espm.br/index.php?title=Figuras
+\end_layout
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1655995937
+titulo não tem ponto no final
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+
 \end_layout
 
 \end_inset
@@ -545,12 +618,46 @@ Objetivos Específicos
 
 \begin_deeper
 \begin_layout Itemize
-Estudar diferentes métodos de aprendizagem de maquina e aprendizagem profundas
- aplicadas à análise de imagens.
+Estudar diferentes métodos de aprendizagem de m
+\change_deleted 1908091853 1655994266
+a
+\change_inserted 1908091853 1655994266
+á
+\change_unchanged
+quina e aprendizagem profundas aplicadas à análise de imagens
+\change_inserted 1908091853 1655994301
+ de rochas reservatório
+\change_unchanged
+.
 \end_layout
 
 \begin_layout Itemize
 Estudar o comportamento dos métodos de IA em geometrias de poros complexas.
+\change_inserted 1908091853 1655994307
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1655994349
+em momento algum você faz análises geométricas relacionadas a forma dos
+ poros/sólidos; acho melhor tirar/substituir;
+\end_layout
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1655994361
+coloque a análise de resultados considerando diferentes usuários
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+
 \end_layout
 
 \begin_layout Itemize
@@ -651,7 +758,11 @@ status open
 
 \begin_layout Plain Layout
 Imagem em escala de cinza de um arenito obtido por meio de tomografia computador
-izada [Fonte: (LIN et al., 2018)].
+izada [Fonte: (LIN et al., 2018)]
+\change_deleted 1908091853 1655995573
+.
+\change_unchanged
+
 \end_layout
 
 \end_inset
@@ -709,7 +820,11 @@ status open
 
 \begin_layout Plain Layout
 Imagem binarizada do arenito usando método comum para o cálculo da porosidade
- [Fonte: (LIN et al., 2018)].
+ [Fonte: (LIN et al., 2018)]
+\change_deleted 1908091853 1655995575
+.
+\change_unchanged
+
 \end_layout
 
 \end_inset
@@ -767,7 +882,11 @@ status open
 
 \begin_layout Plain Layout
 Imagem binarizada do arenito usando método baseado nas características petrofísi
-cas [Fonte: (LIN et al., 2018)].
+cas [Fonte: (LIN et al., 2018)]
+\change_deleted 1908091853 1655995577
+.
+\change_unchanged
+
 \end_layout
 
 \end_inset
@@ -829,7 +948,11 @@ Redes neurais com 3 camadas de 45 neurônios, ativados por meio da função
 \end_layout
 
 \begin_layout Itemize
-Gradiente descendente estocástico como algorítimo der aprendizagem.
+Gradiente descendente estocástico como algorít
+\change_deleted 1908091853 1655994416
+i
+\change_unchanged
+mo der aprendizagem.
 \end_layout
 
 \end_deeper
@@ -876,7 +999,28 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Representação de um neurônio artificial.
+Representação de um neurônio artificial
+\change_deleted 1908091853 1655995580
+.
+\change_inserted 1908091853 1655995628
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1655995657
+todas as figuras precisam das fontes; se for sua [o autor] se for minha
+ adaptada [adaptada de Bueno...]
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+
 \end_layout
 
 \end_inset
@@ -933,7 +1077,11 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Rede neural artificial direta com 2 camadas profundas.
+Rede neural artificial direta com 2 camadas profundas
+\change_deleted 1908091853 1655995584
+.
+\change_unchanged
+
 \end_layout
 
 \end_inset
@@ -975,6 +1123,24 @@ Função Custo
 \begin_layout Itemize
 Uma função de custo mede o quão diferente da saída da rede está relação
  ao valor verdadeiro atribuído ao dado imputado na camada de entrada.
+\change_inserted 1908091853 1655994509
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1655994527
+frase confusa, reescrever
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+
 \end_layout
 
 \begin_layout Itemize
@@ -1005,7 +1171,13 @@ C=\frac{1}{2n}\sum_{x}\parallel y(x)-y^{L}(x)\parallel^{2}
 status open
 
 \begin_layout Plain Layout
+
+\change_deleted 1908091853 1655994439
 Algorítimo
+\change_inserted 1908091853 1655994562
+Algorítmo
+\change_unchanged
+
 \shape italic
  Backpropagation
 \end_layout
@@ -1153,7 +1325,7 @@ Resultado
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -1167,7 +1339,11 @@ status collapsed
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Função Sigmoid e sua Derivada.
+Função Sigmoid e sua Derivada
+\change_deleted 1908091853 1655995586
+.
+\change_unchanged
+
 \end_layout
 
 \end_inset
@@ -1292,7 +1468,11 @@ status open
 
 \begin_layout Plain Layout
 Relação custo x número de épocas para uma função de custo quadrática [Fonte:
- (NIELSEN, 2015)].
+ (NIELSEN, 2015)]
+\change_deleted 1908091853 1655995588
+.
+\change_unchanged
+
 \end_layout
 
 \end_inset
@@ -1355,7 +1535,11 @@ Relação custo x número de épocas para uma função de custo
 \shape italic
 Cross-Entropy
 \shape default
- [Fonte: (NIELSEN, 2015)].
+ [Fonte: (NIELSEN, 2015)]
+\change_deleted 1908091853 1655995590
+.
+\change_unchanged
+
 \end_layout
 
 \end_inset
@@ -1408,7 +1592,11 @@ Previsão de propriedades petrofísicas por meio de redes neurais convolucionais
 \end_layout
 
 \begin_layout Itemize
-Dataset composto com 3 tipos de arenitos: 
+
+\emph on
+Dataset
+\emph default
+ composto com 3 tipos de arenitos: 
 \emph on
 Bentheimer, Berea e Fine-Grain
 \emph default
@@ -1448,7 +1636,13 @@ Descrição do Modelo
 
 \begin_deeper
 \begin_layout Itemize
-Rede de poros por meio do algorítimo de 
+Rede de poros por meio do 
+\change_deleted 1908091853 1655994441
+algorítimo
+\change_inserted 1908091853 1655994441
+algorítmo
+\change_unchanged
+ de 
 \emph on
 watershead.
 \end_layout
@@ -1516,8 +1710,11 @@ pooling
 \end_layout
 
 \begin_layout Itemize
-No final da rede, a topologia em 2D é transformada em um vetor, unidimensional
- e é usado para alimentar uma rede neural comum.
+No final da rede, a topologia em 2D é transformada em um vetor
+\change_deleted 1908091853 1655995056
+,
+\change_unchanged
+ unidimensional e é usado para alimentar uma rede neural comum.
 \end_layout
 
 \begin_layout Itemize
@@ -1572,7 +1769,11 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Operação de convolução.
+Operação de convolução
+\change_deleted 1908091853 1655995593
+.
+\change_unchanged
+
 \end_layout
 
 \end_inset
@@ -1632,8 +1833,12 @@ status open
 Operação de 
 \shape italic
 pooling
+\change_deleted 1908091853 1655995598
+
 \shape default
 .
+\change_unchanged
+
 \end_layout
 
 \end_inset
@@ -1693,8 +1898,12 @@ status open
 Operação de 
 \shape italic
 flattening
+\change_deleted 1908091853 1655995600
+
 \shape default
 .
+\change_unchanged
+
 \end_layout
 
 \end_inset
@@ -1751,7 +1960,11 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Exemplo de rede convolucional.
+Exemplo de rede convolucional
+\change_deleted 1908091853 1655995602
+.
+\change_unchanged
+
 \end_layout
 
 \end_inset
@@ -1828,7 +2041,13 @@ e é bastante utilizada para a classificação de problemas com mais de duas
 status open
 
 \begin_layout Plain Layout
-Algorítimo 
+
+\change_deleted 1908091853 1655994442
+Algorítimo
+\change_inserted 1908091853 1655994576
+Algorítmo
+\change_unchanged
+ 
 \shape italic
 Watershead
 \end_layout
@@ -1844,7 +2063,13 @@ Watershead
 
 \begin_deeper
 \begin_layout Itemize
-Imagem é modelada como uma superfície topográfica (vales e montanhas) que
+
+\change_inserted 1908091853 1655995150
+A i
+\change_deleted 1908091853 1655995151
+I
+\change_unchanged
+magem é modelada como uma superfície topográfica (vales e montanhas) que
  corresponde aos valores de intensidade dos pixeis.
 \end_layout
 
@@ -1921,7 +2146,13 @@ Baseado na seleção do menor ponto entre dois picos no histograma, considerando
 status open
 
 \begin_layout Plain Layout
-Algorítimo 
+
+\change_deleted 1908091853 1655994443
+Algorítimo
+\change_inserted 1908091853 1655994580
+Algorítmo
+\change_unchanged
+ 
 \shape italic
 Watershead
 \end_layout
@@ -1955,7 +2186,11 @@ status open
 
 \begin_layout Plain Layout
 Processo de aplicação da segmentação por watersheads [Fonte: (GONZALEZ;
- WOODS, 2010)].
+ WOODS, 2010)]
+\change_deleted 1908091853 1655995679
+.
+\change_unchanged
+
 \end_layout
 
 \end_inset
@@ -2012,8 +2247,16 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Framework da metodologia utilizada para prever propriedades de meios porosos
- utilizando redes neurais convolucionais [Fonte: (ALQAHTANI et al., 2018)]x.
+
+\emph on
+Framework
+\emph default
+ da metodologia utilizada para prever propriedades de meios porosos utilizando
+ redes neurais convolucionais [Fonte: (ALQAHTANI et al., 2018)]
+\change_deleted 1908091853 1655995682
+x.
+\change_unchanged
+
 \end_layout
 
 \end_inset
@@ -2057,7 +2300,11 @@ Dificuldade para classificar minerais com brilho intenso.
 \end_layout
 
 \begin_layout Itemize
-Uso de dataset com valores de intensidade mais bem distribuídos.
+Uso de 
+\emph on
+dataset
+\emph default
+ com valores de intensidade mais bem distribuídos.
 \end_layout
 
 \end_deeper
@@ -2106,7 +2353,11 @@ status open
 \begin_layout Plain Layout
 Correlação entre entre os valores previsos e reais de porosidade, número
  de coordenação e tamanho médio de poro, para cada amostra [Fonte: (ALQAHTANI
- et al., 2018)].
+ et al., 2018)]
+\change_deleted 1908091853 1655995685
+.
+\change_unchanged
+
 \end_layout
 
 \end_inset
@@ -2162,8 +2413,12 @@ Descrição do Modelo - Problema de Classificação
 
 \begin_deeper
 \begin_layout Itemize
-Dataset composto por carbonatos das formações de Estaillades e Savonnieres,
- e arenitos Berea e Fontainebleau.
+
+\emph on
+Dataset
+\emph default
+ composto por carbonatos das formações de Estaillades e Savonnieres, e arenitos
+ Berea e Fontainebleau.
 \end_layout
 
 \begin_layout Itemize
@@ -2173,7 +2428,11 @@ Uso do software Voxilon para extrair para extrair propriedades físicas de
 
 \begin_layout Itemize
 Problema de classificação abordado por meio da rede neural pré-treinada
- Inception v3 do Google.
+ 
+\emph on
+Inception v3 do Google
+\emph default
+.
 \end_layout
 
 \end_deeper
@@ -2221,7 +2480,15 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Arquitetura da Inception V3(Google Codelabs) [Fonte: (HÉBERT et al., 2020)].
+Arquitetura da 
+\emph on
+Inception V3(Google Codelabs)
+\emph default
+ [Fonte: (HÉBERT et al., 2020)]
+\change_deleted 1908091853 1655995689
+.
+\change_unchanged
+
 \end_layout
 
 \end_inset
@@ -2310,6 +2577,24 @@ status open
 \end_inset
 
 
+\change_inserted 1908091853 1655995701
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1655995703
+titulo e fonte
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+
 \end_layout
 
 \end_inset
@@ -2341,8 +2626,14 @@ Motivação Para o Tema
 
 \begin_deeper
 \begin_layout Itemize
-A escolha de um bom algorítimo de segmentação é um ponto chave para uma
- boa binarização de imagens de rochas reservatório.
+A escolha de um bom 
+\change_deleted 1908091853 1655994444
+algorítimo
+\change_inserted 1908091853 1655994444
+algorítmo
+\change_unchanged
+ de segmentação é um ponto chave para uma boa binarização de imagens de
+ rochas reservatório.
 \end_layout
 
 \begin_layout Itemize
@@ -2352,11 +2643,19 @@ Dificuldade de processamento de imagens com grãos muito claros ou muito
 
 \begin_layout Itemize
 Utilização de uma arquitetura de rede neural mais otimizada para lidar com
- imagens.
+ imagens
+\change_inserted 1908091853 1655995295
+ de rochas reservatório
+\change_unchanged
+.
 \end_layout
 
 \begin_layout Itemize
-Funções de ativação de que não estejam suscetíveis ao fenômeno do 
+Funções de ativação 
+\change_deleted 1908091853 1655995301
+de
+\change_unchanged
+ que não estejam suscetíveis ao fenômeno do 
 \emph on
 vanishing gradient
 \emph default
@@ -2364,7 +2663,13 @@ vanishing gradient
 \end_layout
 
 \begin_layout Itemize
-Utilização de outros algorítimos de otimização que não SGD (
+Utilização de outros 
+\change_deleted 1908091853 1655994445
+algorítimo
+\change_inserted 1908091853 1655994445
+algorítmo
+\change_unchanged
+s de otimização que não SGD (
 \emph on
 Stochastic Gradient Descendent).
 \end_layout
@@ -2447,7 +2752,13 @@ Hipóteses
 \begin_layout Itemize
 O arcabouço, matriz e cimento dos arenitos, e o aloquímico, a micrita e
  o esparito dos carbonatos serão tratados como fase granular, e os poros
- como fase rochosa.
+ como fase 
+\change_deleted 1908091853 1655995362
+rochosa
+\change_inserted 1908091853 1655995363
+porosa
+\change_unchanged
+.
  Dessa forma portanto, está desconsiderada a classificação dos minerais.
 \end_layout
 
@@ -2521,7 +2832,13 @@ Desenvolvimento de modelos de redes neurais profundas para binarização de
  amostras de imagens de rochas digitais providas pelo acervo digital do
  Prof.
  DSc.
- André Bueno e pelo banco de dados disponibilizados pelo CENPES-PETROBRÁS.
+ André Bueno e pelo banco de dados disponibilizados pelo CENPES-PETROBR
+\change_deleted 1908091853 1655995414
+Á
+\change_inserted 1908091853 1655995414
+A
+\change_unchanged
+S.
 \end_layout
 
 \begin_layout Itemize
@@ -2568,7 +2885,11 @@ Ferramenta de Anotação de Regiões de Interesse
 \begin_deeper
 \begin_layout Itemize
 Demarcação de regiões que representariam a matriz sólida e os poros.
- Cada região é representada por um cor, escolhida pelo usuário.
+ Cada região é representada por um
+\change_inserted 1908091853 1655995432
+a
+\change_unchanged
+ cor, escolhida pelo usuário.
  
 \end_layout
 
@@ -2633,8 +2954,12 @@ status open
 Interface Gráfica do 
 \emph on
 QT Designer
+\change_deleted 1908091853 1655995707
+
 \emph default
 .
+\change_unchanged
+
 \end_layout
 
 \end_inset
@@ -2681,6 +3006,8 @@ status open
 
 \begin_layout Plain Layout
 \align center
+
+\change_deleted 1908091853 1655995718
 \begin_inset Graphics
 	filename ../../imagens/imagensCriadas/tabela-dados1.png
 	lyxscale 50
@@ -2689,14 +3016,38 @@ status open
 \end_inset
 
 
+\change_unchanged
+
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Exemplo de Tabela com Dados Coletados.
+Exemplo de Tabela com Dados Coletados
+\change_deleted 1908091853 1655995710
+.
+\change_unchanged
+
 \end_layout
 
 \end_inset
 
+
+\change_inserted 1908091853 1655995720
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+
+\change_inserted 1908091853 1655995721
+\begin_inset Graphics
+	filename ../../imagens/imagensCriadas/tabela-dados1.png
+	lyxscale 50
+	width 30page%
+
+\end_inset
+
+
+\change_unchanged
 
 \end_layout
 
@@ -2750,7 +3101,11 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Exemplo Marcação de Poros.
+Exemplo Marcação de Poros
+\change_deleted 1908091853 1655995728
+.
+\change_unchanged
+
 \end_layout
 
 \end_inset
@@ -2816,7 +3171,11 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Exemplo de Coleta de Dados com Berea200.
+Exemplo de Coleta de Dados com Berea200
+\change_deleted 1908091853 1655995730
+.
+\change_unchanged
+
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:exemplo-berea200"
@@ -2885,7 +3244,11 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Exemplo de Coleta de Dados com Berea500.
+Exemplo de Coleta de Dados com Berea500
+\change_deleted 1908091853 1655995732
+.
+\change_unchanged
+
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:exemplo-berea500-1"
@@ -2954,7 +3317,11 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Exemplo de Coleta de Dados com P148_K2.
+Exemplo de Coleta de Dados com P148_K2
+\change_deleted 1908091853 1655995734
+.
+\change_unchanged
+
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:exemplo-p148-1"
@@ -2987,7 +3354,13 @@ name "fig:exemplo-p148-1"
 status open
 
 \begin_layout Plain Layout
-Coleta dos Cados
+Coleta dos 
+\change_deleted 1908091853 1655994604
+C
+\change_inserted 1908091853 1655994604
+D
+\change_unchanged
+ados
 \end_layout
 
 \end_inset
@@ -3023,7 +3396,11 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Exemplo de Coleta de Dados com P240_K104.
+Exemplo de Coleta de Dados com P240_K104
+\change_deleted 1908091853 1655995736
+.
+\change_unchanged
+
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:exemplo-p240-1"
@@ -3092,7 +3469,11 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Exemplo de Coleta de Dados com P262_K441.
+Exemplo de Coleta de Dados com P262_K441
+\change_deleted 1908091853 1655995738
+.
+\change_unchanged
+
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:exemplo-p262-1"
@@ -3195,13 +3576,17 @@ Descrição do Modelo
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Camadas da rede neural representada pelo modelo.
+Camadas da rede neural representada pelo modelo
+\change_deleted 1908091853 1655995743
+.
+\change_unchanged
+
 \begin_inset CommandInset label
 LatexCommand label
 name "tab:Camadas-da-rede"
@@ -3437,13 +3822,36 @@ status open
 \end_inset
 
 
+\change_inserted 1908091853 1655996037
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1655996076
+para um caso qualquer poderia gerar modelo com mais neurônios por camada
+ e/ou mais camadas e ver se altera o resultado
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+
 \end_layout
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Representação da rede neural construída.
+Representação da rede neural construída
+\change_deleted 1908091853 1655995745
+.
+
+\change_unchanged
  
 \begin_inset CommandInset label
 LatexCommand label
@@ -3487,6 +3895,24 @@ Procedimento de Coleta de Dados
 \end_inset
 
 
+\change_inserted 1908091853 1655994636
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1655994641
+dados ou resultados?
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+
 \begin_inset Separator latexpar
 \end_inset
 
@@ -3518,7 +3944,11 @@ status open
 
 \begin_layout Plain Layout
 Procedimento de Coleta de Dados para Binarização de Rochas Digitais com
- Redes Neurais.
+ Redes Neurais
+\change_deleted 1908091853 1655995747
+.
+\change_unchanged
+
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:procedimento-de-coleta-resultados"
@@ -3573,13 +4003,17 @@ Resultados para Amostras Berea200
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Resultados Berea200.
+Resultados Berea200
+\change_deleted 1908091853 1655995750
+.
+\change_unchanged
+
 \begin_inset CommandInset label
 LatexCommand label
 name "tab:resultados-berea200-1"
@@ -4173,6 +4607,25 @@ I216
 \end_inset
 
 
+\change_inserted 1908091853 1655996101
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1655996121
+os resultados precisam ser comentados no corpo da dissertação e na hora
+ da apresentação
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+
 \end_layout
 
 \end_inset
@@ -4211,7 +4664,7 @@ Resultados para Amostras Berea200
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -4224,7 +4677,7 @@ status open
 \noindent
 \align center
 \begin_inset Graphics
-	filename /home/joao/Documentos/TeseMestrado/resultados/imagens/Berea200/I216-bin.png
+	filename ../../resultados/imagens/Berea200/I216-bin.png
 	lyxscale 20
 	width 49text%
 
@@ -4237,7 +4690,11 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-I216.png Binarizada.
+I216.png Binarizada
+\change_deleted 1908091853 1655995834
+.
+\change_unchanged
+
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:I216.png-Binarizada"
@@ -4264,7 +4721,7 @@ status open
 \noindent
 \align center
 \begin_inset Graphics
-	filename /home/joao/Documentos/TeseMestrado/resultados/imagens/Berea200/I216.png
+	filename ../../resultados/imagens/Berea200/I216.png
 	lyxscale 20
 	width 49text%
 
@@ -4277,7 +4734,11 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-I216.png Original.
+I216.png Original
+\change_deleted 1908091853 1655995836
+.
+\change_unchanged
+
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:I216.png-original"
@@ -4301,7 +4762,11 @@ name "fig:I216.png-original"
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Resultados pra I216.png.
+Resultados pra I216.png
+\change_deleted 1908091853 1655995837
+.
+\change_unchanged
+
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:I216.png"
@@ -4352,7 +4817,7 @@ Resultados para Amostras Berea200
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -4365,7 +4830,7 @@ status open
 \noindent
 \align center
 \begin_inset Graphics
-	filename /home/joao/Documentos/TeseMestrado/resultados/imagens/Berea200/I26-bin.png
+	filename ../../resultados/imagens/Berea200/I26-bin.png
 	lyxscale 20
 	width 49text%
 
@@ -4378,7 +4843,11 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-I26.png Binarizada.
+I26.png Binarizada
+\change_deleted 1908091853 1655995842
+.
+\change_unchanged
+
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:I26.png-Binarizada"
@@ -4405,7 +4874,7 @@ status open
 \noindent
 \align center
 \begin_inset Graphics
-	filename /home/joao/Documentos/TeseMestrado/resultados/imagens/Berea200/I26.png
+	filename ../../resultados/imagens/Berea200/I26.png
 	lyxscale 20
 	width 49text%
 
@@ -4418,7 +4887,11 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-I26.png Original.
+I26.png Original
+\change_deleted 1908091853 1655995843
+.
+\change_unchanged
+
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:I26.png-original"
@@ -4442,7 +4915,11 @@ name "fig:I26.png-original"
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Resultados pra I26.png.
+Resultados pra I26.png
+\change_deleted 1908091853 1655995845
+.
+\change_unchanged
+
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:I26.png"
@@ -4493,7 +4970,7 @@ Resultados para Amostras Berea500
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -5436,20 +5913,20 @@ Resultados para Amostras Berea500
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \noindent
 \align center
 \begin_inset Graphics
-	filename /home/joao/Documentos/TeseMestrado/resultados/imagens/Berea500/I320-bin.png
+	filename ../../resultados/imagens/Berea500/I320-bin.png
 	lyxscale 20
 	width 49text%
 
@@ -5462,7 +5939,11 @@ status collapsed
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-I320.png Binarizada.
+I320.png Binarizada
+\change_deleted 1908091853 1655995850
+.
+\change_unchanged
+
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:I320.png-Binarizada"
@@ -5483,13 +5964,13 @@ name "fig:I320.png-Binarizada"
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \noindent
 \align center
 \begin_inset Graphics
-	filename /home/joao/Documentos/TeseMestrado/resultados/imagens/Berea500/I320.png
+	filename ../../resultados/imagens/Berea500/I320.png
 	lyxscale 20
 	width 49text%
 
@@ -5502,7 +5983,11 @@ status collapsed
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-I320.png Original.
+I320.png Original
+\change_deleted 1908091853 1655995852
+.
+\change_unchanged
+
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:I320.png-original"
@@ -5526,7 +6011,11 @@ name "fig:I320.png-original"
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Resultados pra I320.png.
+Resultados pra I320.png
+\change_deleted 1908091853 1655995854
+.
+\change_unchanged
+
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:I320.png"
@@ -5577,7 +6066,7 @@ Resultados para Amostras Berea500
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -5590,7 +6079,7 @@ status open
 \noindent
 \align center
 \begin_inset Graphics
-	filename /home/joao/Documentos/TeseMestrado/resultados/imagens/Berea500/I31-bin.png
+	filename ../../resultados/imagens/Berea500/I31-bin.png
 	lyxscale 20
 	width 49text%
 
@@ -5603,7 +6092,11 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-I31.png Binarizada.
+I31.png Binarizada
+\change_deleted 1908091853 1655995855
+.
+\change_unchanged
+
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:I31.png-Binarizada"
@@ -5630,7 +6123,7 @@ status open
 \noindent
 \align center
 \begin_inset Graphics
-	filename /home/joao/Documentos/TeseMestrado/resultados/imagens/Berea500/I31.png
+	filename ../../resultados/imagens/Berea500/I31.png
 	lyxscale 20
 	width 49text%
 
@@ -5643,7 +6136,11 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-I31.png Original.
+I31.png Original
+\change_deleted 1908091853 1655995857
+.
+\change_unchanged
+
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:I31.png-original"
@@ -5667,7 +6164,11 @@ name "fig:I31.png-original"
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Resultados pra I31.png.
+Resultados pra I31.png
+\change_deleted 1908091853 1655995858
+.
+\change_unchanged
+
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:I31.png"
@@ -5718,13 +6219,17 @@ Resultados para Amostras P148_K2
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Resultados P148_K2.
+Resultados P148_K2
+\change_deleted 1908091853 1655995861
+.
+\change_unchanged
+
 \begin_inset CommandInset label
 LatexCommand label
 name "tab:resultados-P148_K-1"
@@ -6945,7 +7450,7 @@ Resultados para Amostras P148_K2
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -6958,7 +7463,7 @@ status open
 \noindent
 \align center
 \begin_inset Graphics
-	filename /home/joao/Documentos/TeseMestrado/resultados/imagens/P148_K2/3271i01-bin.png
+	filename ../../resultados/imagens/P148_K2/3271i01-bin.png
 	lyxscale 20
 	width 49text%
 
@@ -6971,7 +7476,11 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-3271i01.png Binarizada.
+3271i01.png Binarizada
+\change_deleted 1908091853 1655995864
+.
+\change_unchanged
+
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:3271i01.png-Binarizada"
@@ -6998,7 +7507,7 @@ status open
 \noindent
 \align center
 \begin_inset Graphics
-	filename /home/joao/Documentos/TeseMestrado/resultados/imagens/P148_K2/3271i01.png
+	filename ../../resultados/imagens/P148_K2/3271i01.png
 	lyxscale 20
 	width 49text%
 
@@ -7011,7 +7520,11 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-3271i01.png Original.
+3271i01.png Original
+\change_deleted 1908091853 1655995866
+.
+\change_unchanged
+
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:3271i01.png-original"
@@ -7035,7 +7548,11 @@ name "fig:3271i01.png-original"
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Resultados pra 3271i01.png.
+Resultados pra 3271i01.png
+\change_deleted 1908091853 1655995867
+.
+\change_unchanged
+
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:3271i01.png"
@@ -7086,7 +7603,7 @@ Resultados para Amostras P148_K2
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -7099,7 +7616,7 @@ status open
 \noindent
 \align center
 \begin_inset Graphics
-	filename /home/joao/Documentos/TeseMestrado/resultados/imagens/P148_K2/3271i02-bin.png
+	filename ../../resultados/imagens/P148_K2/3271i02-bin.png
 	lyxscale 20
 	width 49text%
 
@@ -7139,7 +7656,7 @@ status open
 \noindent
 \align center
 \begin_inset Graphics
-	filename /home/joao/Documentos/TeseMestrado/resultados/imagens/P148_K2/3271i02.png
+	filename ../../resultados/imagens/P148_K2/3271i02.png
 	lyxscale 20
 	width 49text%
 
@@ -7152,7 +7669,11 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-3271i02.png Original.
+3271i02.png Original
+\change_deleted 1908091853 1655995869
+.
+\change_unchanged
+
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:3271i02.png-original"
@@ -7176,7 +7697,11 @@ name "fig:3271i02.png-original"
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Resultados pra 3271i02.png.
+Resultados pra 3271i02.png
+\change_deleted 1908091853 1655995871
+.
+\change_unchanged
+
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:3271i02.png"
@@ -7227,13 +7752,17 @@ Resultados para Amostras P240_K104
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Resultados P240_K104.
+Resultados P240_K104
+\change_deleted 1908091853 1655995873
+.
+\change_unchanged
+
 \begin_inset CommandInset label
 LatexCommand label
 name "tab:resultados_P240_K104"
@@ -8453,7 +8982,7 @@ Resultados para Amostras P240_K104
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -8479,7 +9008,11 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-3251i05.png Binarizada.
+3251i05.png Binarizada
+\change_deleted 1908091853 1655995875
+.
+\change_unchanged
+
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:3251i05.png-Binarizada"
@@ -8519,7 +9052,11 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-3251i05.png Original.
+3251i05.png Original
+\change_deleted 1908091853 1655995877
+.
+\change_unchanged
+
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:3251i05.png-original"
@@ -8543,7 +9080,11 @@ name "fig:3251i05.png-original"
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Resultados pra 3251i05.png.
+Resultados pra 3251i05.png
+\change_deleted 1908091853 1655995878
+.
+\change_unchanged
+
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:3251i05.png"
@@ -8594,7 +9135,7 @@ Resultados para Amostras P240_K104
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -8620,7 +9161,11 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-3251i09.png Binarizada.
+3251i09.png Binarizada
+\change_deleted 1908091853 1655995880
+.
+\change_unchanged
+
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:3251i09.png-Binarizada"
@@ -8660,7 +9205,11 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-3251i09.png Original.
+3251i09.png Original
+\change_deleted 1908091853 1655995882
+.
+\change_unchanged
+
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:3251i09.png-original"
@@ -8684,7 +9233,11 @@ name "fig:3251i09.png-original"
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Resultados pra 3251i09.png.
+Resultados pra 3251i09.png
+\change_deleted 1908091853 1655995884
+.
+\change_unchanged
+
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:3251i09.png"
@@ -8735,13 +9288,17 @@ Resultados para Amostras P262_K441
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Resultados P262_K441.
+Resultados P262_K441
+\change_deleted 1908091853 1655995886
+.
+\change_unchanged
+
 \begin_inset CommandInset label
 LatexCommand label
 name "tab:resultados-P262_K441"
@@ -9961,7 +10518,7 @@ Resultados para Amostras P262_K441
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -9987,7 +10544,11 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-L67409i5.png Binarizada.
+L67409i5.png Binarizada
+\change_deleted 1908091853 1655995888
+.
+\change_unchanged
+
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:L67409i5.png-Binarizada"
@@ -10027,7 +10588,11 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-L67409i5.png Original.
+L67409i5.png Original
+\change_deleted 1908091853 1655995890
+.
+\change_unchanged
+
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:L67409i5.png-original"
@@ -10051,7 +10616,11 @@ name "fig:L67409i5.png-original"
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Resultados pra L67409i5.png.
+Resultados pra L67409i5.png
+\change_deleted 1908091853 1655995891
+.
+\change_unchanged
+
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:L67409i5.png"
@@ -10102,7 +10671,7 @@ Resultados para Amostras P262_K441
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -10128,7 +10697,11 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-L67409i6.png Binarizada.
+L67409i6.png Binarizada
+\change_deleted 1908091853 1655995893
+.
+\change_unchanged
+
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:L67409i6.png-Binarizada"
@@ -10168,7 +10741,11 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-L67409i6.png Original.
+L67409i6.png Original
+\change_deleted 1908091853 1655995894
+.
+\change_unchanged
+
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:L67409i6.png-original"
@@ -10192,7 +10769,11 @@ name "fig:L67409i6.png-original"
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Resultados pra L67409i6.png.
+Resultados pra L67409i6.png
+\change_deleted 1908091853 1655995896
+.
+\change_unchanged
+
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:L67409i6.png"
@@ -10239,8 +10820,15 @@ Análise para Mesmo Usuário
 
 \begin_deeper
 \begin_layout Itemize
-As amostras da categoria P240_K104 entregaram o melhor resultados de segmentação
-;
+As amostras da categoria P240_K104 entregaram o
+\change_inserted 1908091853 1655996271
+s
+\change_unchanged
+ melhor
+\change_inserted 1908091853 1655996273
+es
+\change_unchanged
+ resultados de segmentação;
 \end_layout
 
 \begin_layout Itemize
@@ -10278,6 +10866,24 @@ Análise para Usuários Distintos
 \end_inset
 
 
+\change_inserted 1908091853 1655996309
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1655996312
+faltam os comentários
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+
 \begin_inset Separator latexpar
 \end_inset
 
@@ -10290,13 +10896,17 @@ Análise para Usuários Distintos
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Valores de Porosidade das Análises dos Voluntários.
+Valores de Porosidade das Análises dos Voluntários
+\change_deleted 1908091853 1655995899
+.
+\change_unchanged
+
 \begin_inset CommandInset label
 LatexCommand label
 name "tab:resultados-voluntarios"
@@ -10748,6 +11358,24 @@ L67409i1
 
 \end_inset
 
+
+\change_inserted 1908091853 1655996328
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1655996337
+médias e desvios?
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
 
 \end_layout
 
