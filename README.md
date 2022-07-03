@@ -61,7 +61,7 @@ Por fim, no diretório `resultados` estão os valores obtidos na aplicação da 
 
 - [ ] Evitar palavras em inglês como em estocástica/stochastic
 
-- [ ] Trocar a expressão "Representada pela letra" por "Representada pela variável" quando uma nova variável for introduzida
+- [X] Trocar a expressão "Representada pela letra" por "Representada pela variável" quando uma nova variável for introduzida
 
 - [ ] Rever a citação da Equação 3.1
 

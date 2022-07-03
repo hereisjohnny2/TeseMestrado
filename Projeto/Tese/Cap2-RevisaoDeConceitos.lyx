@@ -82,7 +82,7 @@
 \papercolumns 1
 \papersides 1
 \paperpagestyle fancy
-\tracking_changes true
+\tracking_changes false
 \output_changes false
 \html_math_output 0
 \html_css_as_file 0
@@ -290,7 +290,7 @@ literal "false"
 
 .
  É definida, portanto, como a razão entre o volume de espaço vazio e o volume
- total da rocha e é representado pela letra 
+ total da rocha e é representado pela variável 
 \begin_inset Formula $\phi[m³/m³]$
 \end_inset
 
