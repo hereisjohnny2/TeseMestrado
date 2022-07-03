@@ -26,81 +26,81 @@ Por fim, no diretório `resultados` estão os valores obtidos na aplicação da 
 
 ### Sugestões Prof. Basílio
 
-[ ] Trazer Fluxograma de **Coleta de Resultado** para inicio
+- [ ] Trazer Fluxograma de **Coleta de Resultado** para inicio
 
-[ ] Resumo, apresentar as melhorias que o trabalho trouxe
+- [ ] Resumo, apresentar as melhorias que o trabalho trouxe
 
-[ ] Ultrapassar limites de bordas (corrigido na versão final)
+- [ ] Ultrapassar limites de bordas (corrigido na versão final)
 
-[ ] Inverter capítulos 2 e 3
+- [ ] Inverter capítulos 2 e 3
 
-[ ] Explicar o que é **Conjunto de Treino**
+- [ ] Explicar o que é **Conjunto de Treino**
 
-[ ] Tirar parte de disciplinas realizadas para o trabalho ter um alcance maior
+- [ ] Tirar parte de disciplinas realizadas para o trabalho ter um alcance maior
 
-[ ] Em 3.3.2 corrigir Algorítimos -> Algoritmos
+- [ ] Em 3.3.2 corrigir Algorítimos -> Algoritmos
 
-[ ] Explicar as flags e comandos utilizados na CLI em python em um apêndice
+- [ ] Explicar as flags e comandos utilizados na CLI em python em um apêndice
 
-[ ] Retirar Figura do `makefile` e mover para apêndice
+- [ ] Retirar Figura do `makefile` e mover para apêndice
 
-[ ] Mover **descrição das classes** para apêndice
+- [ ] Mover **descrição das classes** para apêndice
 
-[ ] Quando fala da classe referenciar o diagrama de classes e o código listado no apêndice, assim leitor poderá verificar o que você esta falando
+- [ ] Quando fala da classe referenciar o diagrama de classes e o código listado no apêndice, assim leitor poderá verificar o que você esta falando
 
-[ ] Maior destaque para o que foi feito e mover parte do como para apêndices
+- [ ] Maior destaque para o que foi feito e mover parte do como para apêndices
 
-[ ] Mostrar Figura do software de **Anotação de Regiões de Interesse** e explicar como funciona
+- [ ] Mostrar Figura do software de **Anotação de Regiões de Interesse** e explicar como funciona
 
-[ ] Figura 47 (exemplo de arquivo `.ui`) só manter se for explicar o que esta na Figura
+- [ ] Figura 47 (exemplo de arquivo `.ui`) só manter se for explicar o que esta na Figura
 
 
 ### Sugestões Prof. Slava
 
-[ ] Corrigir idioma, deixar em português
+- [ ] Corrigir idioma, deixar em português
 
-[ ] Evitar palavras em inglês como em estocástica/stochastic
+- [ ] Evitar palavras em inglês como em estocástica/stochastic
 
-[ ] Trocar a expressão "Representada pela letra" por "Representada pela variável" quando uma nova variável for introduzida
+- [ ] Trocar a expressão "Representada pela letra" por "Representada pela variável" quando uma nova variável for introduzida
 
-[ ] Rever a citação da Equação 3.1
+- [ ] Rever a citação da Equação 3.1
 
-[ ] Rever referencia de Jr (2017) na pg. 22, já que **Jr** não é sobrenome
+- [ ] Rever referencia de Jr (2017) na pg. 22, já que **Jr** não é sobrenome
 
-[ ] Verificar pg molhanteSw
+- [ ] Verificar pg molhanteSw
 
-[ ] Introduzir as Equações imediatamente após falar sobre a mesma no texto. As Equações devem fazer parte do texto e não serem tratadas como Figuras 
+- [ ] Introduzir as Equações imediatamente após falar sobre a mesma no texto. As Equações devem fazer parte do texto e não serem tratadas como Figuras 
 
-[ ] Colocar dimensões no texto e não diretamente na Equação
+- [ ] Colocar dimensões no texto e não diretamente na Equação
 
-[ ] Ver com **Slava** melhor grafia para *"Um filtro L : S → S é considerado linear se as operações naturais de adição e multiplicação por um escalar de um sinal forem preservadas, ou seja,"*
+- [ ] Ver com **Slava** melhor grafia para *"Um filtro L : S → S é considerado linear se as operações naturais de adição e multiplicação por um escalar de um sinal forem preservadas, ou seja,"*
 
-[ ] Sempre em maiúsculo: equação -> Equação, figura ->Figura, tabela->Tabela
+- [ ] Sempre em maiúsculo: equação -> Equação, figura ->Figura, tabela->Tabela
 
-[ ] Corrigir a Equação 3.25, removendo o desenvolvimento e deixando apenas a final
+- [ ] Corrigir a Equação 3.25, removendo o desenvolvimento e deixando apenas a final
 
-[ ] Cada Equação deve ter uma numeração diferente
+- [ ] Cada Equação deve ter uma numeração diferente
 
-[ ] Corrigir Equação 3.35 (tangente hiperbólica)
+- [ ] Corrigir Equação 3.35 (tangente hiperbólica)
 
-[ ] Na Equação 3.42, definir o operador (*Hadamard*) utilizado pois não é tão comum
+- [ ] Na Equação 3.42, definir o operador (*Hadamard*) utilizado pois não é tão comum
 
-[ ] Na Figura 56, corrigir pra -> PARA
+- [ ] Na Figura 56, corrigir pra -> PARA
 
-[ ] Tirar ponto final do título
+- [ ] Tirar ponto final do título
 
-[ ] Trocar bibliografia para ABNT2
+- [ ] Trocar bibliografia para ABNT2
 
-[ ] Adicionar um apêndice manual do usuário
+- [ ] Adicionar um apêndice manual do usuário
 
-[ ] Índice remissivo padronizar maiúscula/minuscula
+- [ ] Índice remissivo padronizar maiúscula/minuscula
 
 ### Sugestões Prof. Fernando
 
-[ ] Em apêndice manual desenvolvedor, que seria diagrama de classes, sequência, descrição das classes e códigos
+- [ ] Em apêndice manual desenvolvedor, que seria diagrama de classes, sequência, descrição das classes e códigos
 
-[ ] Verificar a fonte da Figura 12
+- [ ] Verificar a fonte da Figura 12
 
-[ ] Discutir o fato da informação de porosidade variar de acordo com o método experimental aplicado
+- [ ] Discutir o fato da informação de porosidade variar de acordo com o método experimental aplicado
 
-[ ] Discutir a heterogeneidade das amostras
+- [ ] Discutir a heterogeneidade das amostras
