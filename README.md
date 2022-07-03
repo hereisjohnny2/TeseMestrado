@@ -32,7 +32,7 @@ Por fim, no diretório `resultados` estão os valores obtidos na aplicação da 
 
 - [ ] Ultrapassar limites de bordas (corrigido na versão final)
 
-- [ ] Inverter capítulos 2 e 3
+- [X] Inverter capítulos 2 e 3
 
 - [ ] Explicar o que é **Conjunto de Treino**
 

@@ -338,7 +338,7 @@ filename "Cap1-Introducao.lyx"
 \align block
 \begin_inset CommandInset include
 LatexCommand include
-filename "Cap2-RevisaoBibliografica.lyx"
+filename "Cap2-RevisaoDeConceitos.lyx"
 
 \end_inset
 
@@ -349,7 +349,7 @@ filename "Cap2-RevisaoBibliografica.lyx"
 \align block
 \begin_inset CommandInset include
 LatexCommand include
-filename "Cap3-RevisaoDeModelos.lyx"
+filename "Cap3-RevisaoBibliografica.lyx"
 
 \end_inset
 
