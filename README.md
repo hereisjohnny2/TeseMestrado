@@ -65,7 +65,7 @@ Por fim, no diretório `resultados` estão os valores obtidos na aplicação da 
 
 - [ ] Rever a citação da Equação 3.1
 
-- [ ] Rever referencia de Jr (2017) na pg. 22, já que **Jr** não é sobrenome
+- [X] Rever referencia de Jr (2017) na pg. 22, já que **Jr** não é sobrenome
 
 - [ ] Verificar pg molhanteSw
 
