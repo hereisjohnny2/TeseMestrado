@@ -93,7 +93,7 @@ Por fim, no diretório `resultados` estão os valores obtidos na aplicação da 
 
 - [ ] Adicionar um apêndice manual do usuário
 
-- [ ] Índice remissivo padronizar maiúscula/minuscula
+- [X] Índice remissivo padronizar maiúscula/minuscula
 
 ### Sugestões Prof. Fernando
 
