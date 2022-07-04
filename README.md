@@ -77,7 +77,7 @@ Por fim, no diretório `resultados` estão os valores obtidos na aplicação da 
 
 - [ ] Sempre em maiúsculo: equação -> Equação, figura ->Figura, tabela->Tabela
 
-- [ ] Corrigir a Equação 3.25, removendo o desenvolvimento e deixando apenas a final
+- [X] Corrigir a Equação 3.25, removendo o desenvolvimento e deixando apenas a final
 
 - [ ] Cada Equação deve ter uma numeração diferente
 
