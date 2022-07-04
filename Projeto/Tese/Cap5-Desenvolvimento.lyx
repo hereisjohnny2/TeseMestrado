@@ -799,7 +799,7 @@ Tabela de Dados
 
 \begin_deeper
 \begin_layout Itemize
-Os dados coletados são guardados em uma tabela conforme mostrado na Figura
+Os dados coletados são guardados em uma Tabela conforme mostrado na Figura
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -811,7 +811,7 @@ noprefix "false"
 \end_inset
 
 .
- Essa tabela pode ser limpa a qualquer momento ou ter seus dados exportados
+ Essa Tabela pode ser limpa a qualquer momento ou ter seus dados exportados
  para um arquivo de texto.
  Também existe a possibilidade de exportá-los para um arquivo no formato
  CSV, o que facilita caso o usuário tenha a necessidade de abrir os dados
@@ -1296,7 +1296,7 @@ Representa cada uma das imagens ou camadas mostradas na ferramenta.
 \emph on
 HashMap
 \emph default
- até serem enviadas para a tabela de dados.
+ até serem enviadas para a Tabela de dados.
 \end_layout
 
 \end_deeper
@@ -1308,7 +1308,7 @@ PixelDataTable:
 
 \begin_deeper
 \begin_layout Itemize
-Representa a tabela na qual os dados de uma determinada imagem em uma sub-janela
+Representa a Tabela na qual os dados de uma determinada imagem em uma sub-janela
  são armazenados, conforme mostra a Figura 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -5144,7 +5144,7 @@ Uma imagem é inicialmente carregada na Ferramenta de Anotação de Regiões
  Nessas camadas são marcadas os pontos que representam a região na qual
  serão coletadas as informações dos canais de cores dos pixeis.
  Assim se encerra coleta de uma determinada área é possível salvar momentaneamen
-te esses dados na tabela que fica no lado direto da janela do 
+te esses dados na Tabela que fica no lado direto da janela do 
 \emph on
 software.
 
@@ -5156,7 +5156,7 @@ software.
 \end_layout
 
 \begin_layout Standard
-Terminada a fase de coleta, os dados da tabela são salvos e então utilizados
+Terminada a fase de coleta, os dados da Tabela são salvos e então utilizados
  para alimentar o 
 \emph on
 script

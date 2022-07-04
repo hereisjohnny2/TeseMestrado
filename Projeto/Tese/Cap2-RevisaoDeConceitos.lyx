@@ -198,17 +198,16 @@ literal "false"
 \end_layout
 
 \begin_layout Subsection
-Rochas Reservatórios
 \begin_inset Index idx
 status open
 
 \begin_layout Plain Layout
-rocha reservatório
+Rochas Reservatórios
 \end_layout
 
 \end_inset
 
-
+Rochas Reservatórios
 \end_layout
 
 \begin_layout Standard
@@ -356,7 +355,7 @@ No estudo da porosidade é comum definir dois conceitos relacionados à forma
 status open
 
 \begin_layout Plain Layout
-porosidade total
+Porosidade Total
 \end_layout
 
 \end_inset
@@ -368,7 +367,7 @@ porosidade total
 status open
 
 \begin_layout Plain Layout
-porosidade efetiva
+Porosidade Efetiva
 \end_layout
 
 \end_inset
@@ -606,7 +605,7 @@ A molhabilidade
 status open
 
 \begin_layout Plain Layout
-molhabilidade
+Molhabilidade
 \end_layout
 
 \end_inset
@@ -703,7 +702,7 @@ A
 status open
 
 \begin_layout Plain Layout
-tensão superficial
+Tensão Superficial
 \end_layout
 
 \end_inset
@@ -1135,7 +1134,7 @@ q=\frac{\pi r_{0}^{4}(p_{1}-p_{2})}{8\mu L}\label{eq:vazao total}
 \end_layout
 
 \begin_layout Standard
-Todavia, essa equação tem sua aplicação dificultada devido a irregularidade
+Todavia, essa Equação tem sua aplicação dificultada devido a irregularidade
  e a não linearidade dos poros ao longo de uma determinada formação.
  Sendo assim, ela se torna inaplicável na maioria dos casos mais complexos.
 \end_layout
@@ -1224,7 +1223,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Experimento realizado por Darcy para a formulação da equação da vazão total
+Experimento realizado por Darcy para a formulação da Equação da vazão total
  em um meio poroso.
 \begin_inset CommandInset label
 LatexCommand label
@@ -1265,14 +1264,14 @@ Sob as condições de um fluxo horizontal, isotérmico, laminar e permanente
 status open
 
 \begin_layout Plain Layout
-equação da 
+Equação da 
 \emph on
 Darcy
 \end_layout
 
 \end_inset
 
-equação da 
+Equação da 
 \emph on
 Darcy
 \emph default
@@ -1309,7 +1308,7 @@ Essa permeabilidade absoluta
 status open
 
 \begin_layout Plain Layout
-permeabilidade absoluta
+Permeabilidade Absoluta
 \end_layout
 
 \end_inset
@@ -1740,7 +1739,7 @@ A discretização
 status open
 
 \begin_layout Plain Layout
-discretização
+Discretização
 \end_layout
 
 \end_inset
@@ -1760,7 +1759,7 @@ literal "false"
 status open
 
 \begin_layout Plain Layout
-reconstrução
+Reconstrução
 \end_layout
 
 \end_inset
@@ -1864,7 +1863,7 @@ As vezes, durante o processo de aquisição de uma imagem pode acontecer da
 status open
 
 \begin_layout Plain Layout
-taxa de amostragem
+Taxa de Amostragem
 \end_layout
 
 \end_inset
@@ -2074,7 +2073,7 @@ literal "false"
 status open
 
 \begin_layout Plain Layout
-cor
+Cor
 \end_layout
 
 \end_inset
@@ -2340,7 +2339,7 @@ A tonalidade
 status open
 
 \begin_layout Plain Layout
-tonalidade
+Tonalidade
 \end_layout
 
 \end_inset
@@ -2352,7 +2351,7 @@ tonalidade
 status open
 
 \begin_layout Plain Layout
-saturação
+Saturação
 \end_layout
 
 \end_inset
@@ -2364,7 +2363,7 @@ saturação
 status open
 
 \begin_layout Plain Layout
-luminância
+Luminância
 \end_layout
 
 \end_inset
@@ -2996,7 +2995,7 @@ onde
 \end_inset
 
  um escalar qualquer.
- A equação 
+ A Equação 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "eq:filtro-adicao"
@@ -3009,7 +3008,7 @@ noprefix "false"
  mostra que o resultado ao aplicar um filtro à duas imagens diferentes adicionad
 as é o mesmo que aplicar o filtro em cada uma das duas separadamente e em
  seguida somar os resultados.
- Já a equação 
+ Já a Equação 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "eq:filtr-multiplicacao-escalar"
@@ -3381,7 +3380,7 @@ Em contraste aos filtros de suavização, existem os filtros de aguçamento,
 status open
 
 \begin_layout Plain Layout
-filtro laplaciano
+Filtro Laplaciano
 \end_layout
 
 \end_inset
@@ -4733,7 +4732,7 @@ Gili
 status open
 
 \begin_layout Plain Layout
-índice 
+Índice 
 \emph on
 Gili
 \end_layout
@@ -5791,7 +5790,7 @@ status open
 \begin_layout Plain Layout
 
 \emph on
-backpropagation
+Backpropagation
 \end_layout
 
 \end_inset

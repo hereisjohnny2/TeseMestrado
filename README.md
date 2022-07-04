@@ -75,7 +75,7 @@ Por fim, no diretório `resultados` estão os valores obtidos na aplicação da 
 
 - [ ] Ver com **Slava** melhor grafia para *"Um filtro L : S → S é considerado linear se as operações naturais de adição e multiplicação por um escalar de um sinal forem preservadas, ou seja,"*
 
-- [ ] Sempre em maiúsculo: equação -> Equação, figura ->Figura, tabela->Tabela
+- [X] Sempre em maiúsculo: equação -> Equação, figura ->Figura, tabela->Tabela
 
 - [X] Corrigir a Equação 3.25, removendo o desenvolvimento e deixando apenas a final
 
@@ -89,7 +89,7 @@ Por fim, no diretório `resultados` estão os valores obtidos na aplicação da 
 
 - [X] Tirar ponto final do título
 
-- [ ] Trocar bibliografia para ABNT2
+- [X] Trocar bibliografia para ABNT2
 
 - [ ] Adicionar um apêndice manual do usuário
 

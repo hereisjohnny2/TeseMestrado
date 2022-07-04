@@ -242,16 +242,6 @@ noprefix "false"
 
 .
  
-\begin_inset Note Note
-status collapsed
-
-\begin_layout Plain Layout
-não comentar todas as figuras
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -601,7 +591,7 @@ A rede neural aplicada utilizou como função de perda a função de
 \emph on
 Huber
 \emph default
-, que é descrita na equação 
+, que é descrita na Equação 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "eq:funcao-perda-huber"
