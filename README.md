@@ -40,7 +40,7 @@ Por fim, no diretório `resultados` estão os valores obtidos na aplicação da 
 
 - [X] Em 3.3.2 corrigir Algorítimos -> Algoritmos
 
-- [ ] Explicar as flags e comandos utilizados na CLI em python em um apêndice
+- [X] Explicar as flags e comandos utilizados na CLI em python em um apêndice
 
 - [ ] Retirar Figura do `makefile` e mover para apêndice
 
@@ -50,7 +50,7 @@ Por fim, no diretório `resultados` estão os valores obtidos na aplicação da 
 
 - [ ] Maior destaque para o que foi feito e mover parte do como para apêndices
 
-- [ ] Mostrar Figura do software de **Anotação de Regiões de Interesse** e explicar como funciona
+- [X] Mostrar Figura do software de **Anotação de Regiões de Interesse** e explicar como funciona
 
 - [X] Figura 47 (exemplo de arquivo `.ui`) só manter se for explicar o que esta na Figura
 
@@ -91,7 +91,7 @@ Por fim, no diretório `resultados` estão os valores obtidos na aplicação da 
 
 - [X] Trocar bibliografia para ABNT2
 
-- [ ] Adicionar um apêndice manual do usuário
+- [X] Adicionar um apêndice manual do usuário
 
 - [X] Índice remissivo padronizar maiúscula/minuscula
 

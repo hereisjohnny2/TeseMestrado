@@ -601,20 +601,6 @@ No Capítulo 2,
 \begin_inset Quotes eld
 \end_inset
 
-Revisão Bibliográfica
-\begin_inset Quotes erd
-\end_inset
-
-, apresenta-se uma revisão bibliográfica detalhada dos trabalhos, técnicos
- e científicos relacionados ao desenvolvimento de métodos de inteligência
- artificial relacionados à segmentação de imagens de rochas reservatórios.
-\end_layout
-
-\begin_layout Standard
-No Capítulo 3, 
-\begin_inset Quotes eld
-\end_inset
-
 Revisão dos Conceitos e Modelos a Serem Utilizados
 \begin_inset Quotes erd
 \end_inset
@@ -622,6 +608,20 @@ Revisão dos Conceitos e Modelos a Serem Utilizados
 , apresenta-se um conjunto de conceitos e modelos desenvolvidos por outros
  autores mas que estão diretamente relacionados a este trabalho e que serão
  amplamente utilizados.
+\end_layout
+
+\begin_layout Standard
+No Capítulo 3, 
+\begin_inset Quotes eld
+\end_inset
+
+Revisão Bibliográfica
+\begin_inset Quotes erd
+\end_inset
+
+, apresenta-se uma revisão bibliográfica detalhada dos trabalhos, técnicos
+ e científicos relacionados ao desenvolvimento de métodos de inteligência
+ artificial relacionados à segmentação de imagens de rochas reservatórios.
 \end_layout
 
 \begin_layout Standard
@@ -695,6 +695,18 @@ Códigos-fontes dos Softwares Desenvolvidos
 \end_inset
 
 , são apresentados os códigos-fonte desenvolvidos para o projeto.
+\end_layout
+
+\begin_layout Standard
+No Apêndice B, 
+\begin_inset Quotes eld
+\end_inset
+
+Manual do Usuário
+\begin_inset Quotes erd
+\end_inset
+
+, são mostrados os manuais de utilização dos códigos desenvolvidos.
 \end_layout
 
 \end_body

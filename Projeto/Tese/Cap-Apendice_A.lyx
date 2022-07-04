@@ -4,7 +4,7 @@
 \begin_header
 \save_transient_properties true
 \origin unavailable
-\textclass /home2/andreduartebueno/workdir/TeseMestrado/Projeto/Tese/abnt
+\textclass abnt
 \begin_preamble
 \usepackage {graphicx}
 \usepackage {longtable}
@@ -108,12 +108,11 @@
 \papercolumns 1
 \papersides 1
 \paperpagestyle fancy
-\tracking_changes true
+\tracking_changes false
 \output_changes false
 \html_math_output 0
 \html_css_as_file 0
 \html_be_strict false
-\author 1908091853 "andreduartebueno"
 \end_header
 
 \begin_body
@@ -132,7 +131,7 @@ status open
 \backslash
 lhead{Apêndice 
 \backslash
-thechapter: Titulo do apêndice}
+thechapter: Códigos-fontes dos Softwares Desenvolvidos}
 \backslash
 rhead{
 \backslash
@@ -141,7 +140,7 @@ thepage}
 
 \end_inset
 
-Esse apêndice descreve os códigos-fontes desenvolvidos para o a criação
+Este apêndice descreve os códigos-fontes desenvolvidos para o a criação
  da ferramenta de anotação de regiões de interesse e dos 
 \emph on
 scripts
@@ -163,7 +162,7 @@ status open
 \backslash
 lhead{Apêndice 
 \backslash
-thechapter: Titulo do apêndice}
+thechapter: Códigos-fontes dos Softwares Desenvolvidos}
 \backslash
 rhead{
 \backslash
@@ -3453,11 +3452,7 @@ void ColorDialog::createColorInput(const QString &label) {
 \end_layout
 
 \begin_layout Subsection
-
-\change_inserted 1908091853 1653852598
 StackedImagesWidget
-\change_unchanged
-
 \begin_inset CommandInset label
 LatexCommand label
 name "list: StackedImagesWidget.h"
