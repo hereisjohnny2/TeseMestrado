@@ -52,7 +52,7 @@ Por fim, no diretório `resultados` estão os valores obtidos na aplicação da 
 
 - [ ] Mostrar Figura do software de **Anotação de Regiões de Interesse** e explicar como funciona
 
-- [ ] Figura 47 (exemplo de arquivo `.ui`) só manter se for explicar o que esta na Figura
+- [X] Figura 47 (exemplo de arquivo `.ui`) só manter se for explicar o que esta na Figura
 
 
 ### Sugestões Prof. Slava

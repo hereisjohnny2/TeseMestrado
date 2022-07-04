@@ -1050,17 +1050,7 @@ noprefix "false"
 ).
  Este, por sua vez, gera arquivos .ui que descrevem a interface da janela
  criada.
- Arquivos .ui são arquivos com formato semelhante ao XML (veja Figura 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:xml-ui"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
-).
+ Arquivos .ui são arquivos com formato semelhante ao XML/HTML.
  Estes arquivos são então processados e transformando em arquivos *.
 \emph on
 h
@@ -1111,52 +1101,6 @@ o compilador C++ não reconhece comandos específicos de QT
 \end_layout
 
 \end_deeper
-\begin_layout Standard
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename ../../imagens/imagensCriadas/exemplo-ui.png
-	width 100text%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Exemplo de código 
-\emph on
-.ui
-\emph default
-
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:xml-ui"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
 \begin_layout Itemize
 
 \emph on
