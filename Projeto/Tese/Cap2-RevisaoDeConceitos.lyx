@@ -5347,7 +5347,7 @@ name "fig:funcoes-sigmoid"
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-g(u)=\tanh(u)=\frac{1-e^{-u}}{1+e^{-u}}\label{eq:funcao-tanh}
+g(u)=\tanh(u)=\frac{e^{u}-e^{-u}}{e^{u}+e^{-u}}\label{eq:funcao-tanh}
 \end{equation}
 
 \end_inset

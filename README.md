@@ -81,13 +81,13 @@ Por fim, no diretório `resultados` estão os valores obtidos na aplicação da 
 
 - [ ] Cada Equação deve ter uma numeração diferente
 
-- [ ] Corrigir Equação 3.35 (tangente hiperbólica)
+- [X] Corrigir Equação 3.35 (tangente hiperbólica)
 
 - [ ] Na Equação 3.42, definir o operador (*Hadamard*) utilizado pois não é tão comum
 
 - [X] Na Figura 56, corrigir pra -> PARA
 
-- [ ] Tirar ponto final do título
+- [X] Tirar ponto final do título
 
 - [ ] Trocar bibliografia para ABNT2
 
