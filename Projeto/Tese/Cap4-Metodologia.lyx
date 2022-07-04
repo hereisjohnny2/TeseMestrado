@@ -83,8 +83,8 @@
 \papercolumns 1
 \papersides 1
 \paperpagestyle fancy
-\tracking_changes true
-\output_changes true
+\tracking_changes false
+\output_changes false
 \html_math_output 0
 \html_css_as_file 0
 \html_be_strict false
@@ -403,12 +403,10 @@ Materiais e Pressupostos
 
 \begin_layout Standard
 Para a realização desse trabalho será feita inicialmente um estudo acerca
- da geologia das rochas reservatórios, as suas propriedades petrofísicas
- ao se cursar as disciplinas de Petrofísica, Escoamento em Meios Porosos
- e Fraturados e Introdução a Engenharia do Petróleo.
- Em seguida será cursada a disciplina de Processamento Digital de Imagens,
- para dar suporte ao desenvolvimento de técnicas computacionais e para a
- realização de uma revisão bibliográfica profunda sobre a área.
+ da geologia das rochas reservatórios, as suas propriedades petrofísicas.
+ Em seguida técnicas de processamento digital de imagens serão estudas para
+ dar suporte ao desenvolvimento de aplicações computacionais, e para a realizaçã
+o de uma revisão bibliográfica profunda sobre a área.
 \end_layout
 
 \begin_layout Standard

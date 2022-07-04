@@ -36,7 +36,7 @@ Por fim, no diretório `resultados` estão os valores obtidos na aplicação da 
 
 - [ ] Explicar o que é **Conjunto de Treino**
 
-- [ ] Tirar parte de disciplinas realizadas para o trabalho ter um alcance maior
+- [X] Tirar parte de disciplinas realizadas para o trabalho ter um alcance maior
 
 - [ ] Em 3.3.2 corrigir Algorítimos -> Algoritmos
 
