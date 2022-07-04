@@ -85,7 +85,7 @@ Por fim, no diretório `resultados` estão os valores obtidos na aplicação da 
 
 - [ ] Na Equação 3.42, definir o operador (*Hadamard*) utilizado pois não é tão comum
 
-- [ ] Na Figura 56, corrigir pra -> PARA
+- [X] Na Figura 56, corrigir pra -> PARA
 
 - [ ] Tirar ponto final do título
 
