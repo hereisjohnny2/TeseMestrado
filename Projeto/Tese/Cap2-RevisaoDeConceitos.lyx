@@ -750,7 +750,11 @@ noprefix "false"
 .
  Também é possível verificar que se forma uma interface esférica entre a
  água, que aqui é o fluido molhante.
- A pressão capilar é a diferença de pressão entre os dois ponto 
+ A pressão capilar 
+\begin_inset Formula $P_{c}[Pa]$
+\end_inset
+
+ é a diferença de pressão entre os dois ponto 
 \begin_inset Formula $A$
 \end_inset
 
@@ -764,7 +768,7 @@ noprefix "false"
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-P_{capilar}[Pa]=P_{A}-P_{B}.\label{eq: pressao-capilar}
+P_{c}=P_{A}-P_{B}.\label{eq: pressao-capilar}
 \end{equation}
 
 \end_inset
@@ -799,19 +803,8 @@ descreve então a pressão capilar para uma superfície cilíndrica em função
 
 \begin_layout Standard
 \begin_inset Formula 
-\[
-2\pi r\sigma\cos(\theta)=P_{c}\pi r^{2}
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
 \begin{equation}
-P_{c}=\frac{2\sigma\cos(\theta)}{r}[Pa].\label{eq: pressao-capilar-funcao-tensao-superficial}
+P_{c}=\frac{2\sigma\cos(\theta)}{r}.\label{eq: pressao-capilar-funcao-tensao-superficial}
 \end{equation}
 
 \end_inset
@@ -974,7 +967,7 @@ F=-\mu A\frac{d\nu}{dx}=-\mu(2\pi rL)\frac{d\nu}{dx}.\label{eq:forças viscosas}
 \begin_layout Standard
 Considerando que existe, além das forças viscosas, a ação do diferencial
  de pressão 
-\begin_inset Formula $\Delta P=(p_{1}-p_{2})[Pa]$
+\begin_inset Formula $\Delta P=(p_{1}-p_{2})$
 \end_inset
 
  sobre a área da secção do cilindro 
@@ -1162,25 +1155,18 @@ noprefix "false"
 
 \end_inset
 
- é utilizada justamente para contornar esse problema, uma vez que parte
- de uma constatação empírica do fenômeno do escoamento em meios porosos.
- A Figura 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:experiemnto de darcy"
-plural "false"
-caps "false"
-noprefix "false"
-
+ para se obter a vazão 
+\begin_inset Formula $q[m^{2}/s]$
 \end_inset
 
- mostra como o experimento foi realizado para se chegar no seguinte resultado:
+, é utilizada justamente para contornar esse problema, uma vez que parte
+ de uma constatação empírica do fenômeno do escoamento em meios porosos.
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-q=KA\frac{\left(h_{1}-h_{2}\right)}{L}[m^{2}/s],\label{eq: equação de darcy}
+q=KA\frac{\left(h_{1}-h_{2}\right)}{L},\label{eq: equação de darcy}
 \end{equation}
 
 \end_inset
@@ -1202,6 +1188,17 @@ onde
 \end_inset
 
  é uma constante de proporcionalidade característica do meio e do fluido.
+ A Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:experiemnto de darcy"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ mostra como o experimento foi realizado para se chegar no seguinte resultado:
 \end_layout
 
 \begin_layout Standard

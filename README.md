@@ -71,7 +71,7 @@ Por fim, no diretório `resultados` estão os valores obtidos na aplicação da 
 
 - [ ] Introduzir as Equações imediatamente após falar sobre a mesma no texto. As Equações devem fazer parte do texto e não serem tratadas como Figuras 
 
-- [ ] Colocar dimensões no texto e não diretamente na Equação
+- [X] Colocar dimensões no texto e não diretamente na Equação
 
 - [ ] Ver com **Slava** melhor grafia para *"Um filtro L : S → S é considerado linear se as operações naturais de adição e multiplicação por um escalar de um sinal forem preservadas, ou seja,"*
 
