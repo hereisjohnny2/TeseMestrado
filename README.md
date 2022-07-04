@@ -34,7 +34,7 @@ Por fim, no diretório `resultados` estão os valores obtidos na aplicação da 
 
 - [X] Inverter capítulos 2 e 3
 
-- [ ] Explicar o que é **Conjunto de Treino**
+- [X] Explicar o que é **Conjunto de Treino**
 
 - [X] Tirar parte de disciplinas realizadas para o trabalho ter um alcance maior
 
