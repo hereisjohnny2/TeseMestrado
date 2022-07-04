@@ -63,7 +63,7 @@ Por fim, no diretório `resultados` estão os valores obtidos na aplicação da 
 
 - [X] Trocar a expressão "Representada pela letra" por "Representada pela variável" quando uma nova variável for introduzida
 
-- [ ] Rever a citação da Equação 3.1
+- [X] Rever a citação da Equação 3.1
 
 - [X] Rever referencia de Jr (2017) na pg. 22, já que **Jr** não é sobrenome
 

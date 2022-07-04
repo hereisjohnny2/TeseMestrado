@@ -290,7 +290,7 @@ literal "false"
 .
  É definida, portanto, como a razão entre o volume de espaço vazio e o volume
  total da rocha e é representado pela variável 
-\begin_inset Formula $\phi[m³/m³]$
+\begin_inset Formula $\phi$
 \end_inset
 
 
@@ -473,7 +473,7 @@ citeonline{dake1983fundamentals}
  um estado de equilíbrio, e portanto estão separados de acordo com sua densidade.
  Em um escoamento, existe um ponto de saturação do óleo no qual ele permanece
  parado chamado de saturação crítica do óleo 
-\begin_inset Formula $S_{oc}[m\text{³}/m\text{³}]$
+\begin_inset Formula $S_{oc}$
 \end_inset
 
 .
@@ -490,7 +490,7 @@ citeonline{dake1983fundamentals}
 \begin_layout Standard
 Define-se como a saturação de água existente no reservatório, no momento
  de sua descoberta, como a saturação de água inicial, inata ou conata 
-\begin_inset Formula $S_{wi}[m\text{³}/m\text{³}]$
+\begin_inset Formula $S_{wi}$
 \end_inset
 
  
@@ -543,11 +543,11 @@ onde
 \end_inset
 
  é o volume de óleo original, 
-\begin_inset Formula $B_{o}[m³/m³]$
+\begin_inset Formula $B_{o}$
 \end_inset
 
  é o fator volume-formação de óleo, e 
-\begin_inset Formula $B_{oi}[m\text{³}/m\text{³}]$
+\begin_inset Formula $B_{oi}$
 \end_inset
 
  é o fator volume-formação de óleo à pressão inicial.
