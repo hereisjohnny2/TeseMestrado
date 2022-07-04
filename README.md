@@ -69,7 +69,7 @@ Por fim, no diretório `resultados` estão os valores obtidos na aplicação da 
 
 - [ ] Verificar pg molhanteSw
 
-- [ ] Introduzir as Equações imediatamente após falar sobre a mesma no texto. As Equações devem fazer parte do texto e não serem tratadas como Figuras 
+- [X] Introduzir as Equações imediatamente após falar sobre a mesma no texto. As Equações devem fazer parte do texto e não serem tratadas como Figuras 
 
 - [X] Colocar dimensões no texto e não diretamente na Equação
 
@@ -79,7 +79,7 @@ Por fim, no diretório `resultados` estão os valores obtidos na aplicação da 
 
 - [X] Corrigir a Equação 3.25, removendo o desenvolvimento e deixando apenas a final
 
-- [ ] Cada Equação deve ter uma numeração diferente
+- [X] Cada Equação deve ter uma numeração diferente
 
 - [X] Corrigir Equação 3.35 (tangente hiperbólica)
 

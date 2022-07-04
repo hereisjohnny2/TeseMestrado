@@ -591,17 +591,21 @@ A rede neural aplicada utilizou como função de perda a função de
 \emph on
 Huber
 \emph default
-, que é descrita na Equação 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "eq:funcao-perda-huber"
-plural "false"
-caps "false"
-noprefix "false"
+, que é descrita na Equação
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+L_{s}(a)=\begin{cases}
+0,5a^{2} & |a|\leq\delta\\
+\left(|a|-0,5\delta\right)\delta & |a|>\delta
+\end{cases},\label{eq:funcao-perda-huber}
+\end{equation}
 
 \end_inset
 
- onde a perda 
+onde a perda 
 \begin_inset Formula $L$
 \end_inset
 
@@ -614,7 +618,11 @@ noprefix "false"
 \end_inset
 
 .
- Como otimizador foi utilizado o modelo 
+ 
+\end_layout
+
+\begin_layout Standard
+Como otimizador foi utilizado o modelo 
 \emph on
 Adam, 
 \emph default
@@ -665,31 +673,6 @@ noprefix "false"
 \end_inset
 
  ilustra a metodologia utilizada pelos autores.
-\begin_inset Note Note
-status collapsed
-
-\begin_layout Plain Layout
-muitos termos novos que a banca (e eu) não conhece, você tem de saber explicar
- o que são e como funcionam.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\begin{equation}
-L_{s}(a)=\begin{cases}
-0,5a^{2} & |a|\leq\delta\\
-\left(|a|-0,5\delta\right)\delta & |a|>\delta
-\end{cases}\label{eq:funcao-perda-huber}
-\end{equation}
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -778,41 +761,6 @@ literal "false"
 \end_inset
 
 , respectivamente.
- 
-\begin_inset Note Note
-status collapsed
-
-\begin_layout Plain Layout
-Não foram utilizadas GPUs para o processamento e o tempo total para treinar
- o modelo foi de aproximadamente 2 dias
-\end_layout
-
-\end_inset
-
-
-\begin_inset Note Note
-status collapsed
-
-\begin_layout Plain Layout
-Não foi informado na artigo as especificações da máquina utilizada para
- rodas o algorítimo de aprendizagem.
-\end_layout
-
-\end_inset
-
-
-\begin_inset Note Note
-status collapsed
-
-\begin_layout Plain Layout
-(usando um computador pentium ?? com xx GB de RAM...
- tempo de processamento sem informação da plataforma (hardware/SO, linguagem)
- não ajuda muito
-\end_layout
-
-\end_inset
-
-.
  A Figura 
 \begin_inset CommandInset ref
 LatexCommand ref
