@@ -168,37 +168,6 @@ rhead{}
 
 \begin_layout Standard
 \align block
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-lfoot{Dissertação Mestrado - João Marcelo Cardoso Carvalho} 
-\backslash
-rfoot{
-\backslash
-today }
-\end_layout
-
-\end_inset
-
-
-\begin_inset Note Note
-status collapsed
-
-\begin_layout Plain Layout
-versão final retirar
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\align block
 \begin_inset CommandInset toc
 LatexCommand tableofcontents
 
