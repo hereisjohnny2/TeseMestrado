@@ -117,7 +117,7 @@
 \papercolumns 1
 \papersides 1
 \paperpagestyle fancy
-\tracking_changes true
+\tracking_changes false
 \output_changes false
 \html_math_output 0
 \html_css_as_file 0
@@ -285,7 +285,7 @@ name "fig:imagem-ct-lin"
 
 \end_inset
 
-.
+
 \begin_inset Newline newline
 \end_inset
 
@@ -341,7 +341,7 @@ name "fig:imagem-ct-lin-1"
 
 \end_inset
 
-.
+
 \begin_inset Newline newline
 \end_inset
 
@@ -397,7 +397,7 @@ name "fig:imagem-ct-lin-2"
 
 \end_inset
 
-.
+
 \begin_inset Newline newline
 \end_inset
 
@@ -737,7 +737,7 @@ name "fig:metodologia-cnn-1"
 
 \end_inset
 
-.
+
 \begin_inset Newline newline
 \end_inset
 
@@ -868,7 +868,7 @@ name "fig:resultados-alqahtani"
 
 \end_inset
 
-.
+
 \begin_inset Newline newline
 \end_inset
 
@@ -1107,7 +1107,6 @@ Arquitetura da rede
 \emph on
 RegPhi
 \emph default
-.
  
 \begin_inset CommandInset label
 LatexCommand label
@@ -1478,7 +1477,7 @@ name "fig:hebert-autoeconder"
 
 \end_inset
 
-.
+
 \begin_inset Newline newline
 \end_inset
 
@@ -1537,7 +1536,7 @@ name "fig:hebert-autoencoder-arch"
 
 \end_inset
 
-.
+
 \begin_inset Newline newline
 \end_inset
 

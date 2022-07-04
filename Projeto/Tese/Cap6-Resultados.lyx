@@ -247,7 +247,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-I22.png Binarizada.
+I22.png Binarizada
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:I22.png-Binarizada."
@@ -311,7 +311,7 @@ name "fig:I22.png-original"
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Resultados para I22.png.
+Resultados para I22.png
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:I22.png"
@@ -362,7 +362,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-I212.png Binarizada.
+I212.png Binarizada
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:I212.png-Binarizada"
@@ -402,7 +402,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-I212.png Original.
+I212.png Original
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:I212.png-original"
@@ -426,7 +426,7 @@ name "fig:I212.png-original"
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Resultados para I212.png.
+Resultados para I212.png
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:I212.png"
@@ -477,7 +477,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-I26.png Binarizada.
+I26.png Binarizada
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:I26.png-Binarizada"
@@ -517,7 +517,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-I26.png Original.
+I26.png Original
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:I26.png-original"
@@ -541,7 +541,7 @@ name "fig:I26.png-original"
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Resultados para I26.png.
+Resultados para I26.png
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:I26.png"
@@ -592,7 +592,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-I216.png Binarizada.
+I216.png Binarizada
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:I216.png-Binarizada"
@@ -632,7 +632,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-I216.png Original.
+I216.png Original
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:I216.png-original"
@@ -656,7 +656,7 @@ name "fig:I216.png-original"
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Resultados para I216.png.
+Resultados para I216.png
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:I216.png"
@@ -1701,7 +1701,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-I31.png Binarizada.
+I31.png Binarizada
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:I31.png-Binarizada"
@@ -1741,7 +1741,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-I31.png Original.
+I31.png Original
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:I31.png-original"
@@ -1765,7 +1765,7 @@ name "fig:I31.png-original"
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Resultados para I31.png.
+Resultados para I31.png
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:I31.png"
@@ -1816,7 +1816,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-I310.png Binarizada.
+I310.png Binarizada
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:I310.png-Binarizada"
@@ -1856,7 +1856,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-I310.png Original.
+I310.png Original
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:I310.png-original"
@@ -1880,7 +1880,7 @@ name "fig:I310.png-original"
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Resultados para I310.png.
+Resultados para I310.png
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:I310.png"
@@ -1931,7 +1931,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-I311.png Binarizada.
+I311.png Binarizada
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:I311.png-Binarizada"
@@ -1971,7 +1971,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-I311.png Original.
+I311.png Original
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:I311.png-original"
@@ -1995,7 +1995,7 @@ name "fig:I311.png-original"
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Resultados para I311.png.
+Resultados para I311.png
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:I311.png"
@@ -2046,7 +2046,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-I312.png Binarizada.
+I312.png Binarizada
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:I312.png-Binarizada"
@@ -2086,7 +2086,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-I312.png Original.
+I312.png Original
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:I312.png-original"
@@ -2110,7 +2110,7 @@ name "fig:I312.png-original"
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Resultados para I312.png.
+Resultados para I312.png
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:I312.png"
@@ -2161,7 +2161,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-I318.png Binarizada.
+I318.png Binarizada
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:I318.png-Binarizada"
@@ -2201,7 +2201,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-I318.png Original.
+I318.png Original
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:I318.png-original"
@@ -2225,7 +2225,7 @@ name "fig:I318.png-original"
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Resultados para I318.png.
+Resultados para I318.png
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:I318.png"
@@ -2276,7 +2276,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-I32.png Binarizada.
+I32.png Binarizada
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:I32.png-Binarizada"
@@ -2316,7 +2316,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-I32.png Original.
+I32.png Original
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:I32.png-original"
@@ -2340,7 +2340,7 @@ name "fig:I32.png-original"
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Resultados para I32.png.
+Resultados para I32.png
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:I32.png"
@@ -2391,7 +2391,7 @@ status collapsed
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-I320.png Binarizada.
+I320.png Binarizada
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:I320.png-Binarizada"
@@ -2431,7 +2431,7 @@ status collapsed
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-I320.png Original.
+I320.png Original
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:I320.png-original"
@@ -2455,7 +2455,7 @@ name "fig:I320.png-original"
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Resultados para I320.png.
+Resultados para I320.png
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:I320.png"
@@ -4246,7 +4246,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-3271i01.png Binarizada.
+3271i01.png Binarizada
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:3271i01.png-Binarizada"
@@ -4286,7 +4286,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-3271i01.png Original.
+3271i01.png Original
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:3271i01.png-original"
@@ -4310,7 +4310,7 @@ name "fig:3271i01.png-original"
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Resultados para 3271i01.png.
+Resultados para 3271i01.png
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:3271i01.png"
@@ -4361,7 +4361,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-3271i02.png Binarizada.
+3271i02.png Binarizada
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:3271i02.png-Binarizada"
@@ -4401,7 +4401,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-3271i02.png Original.
+3271i02.png Original
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:3271i02.png-original"
@@ -4425,7 +4425,7 @@ name "fig:3271i02.png-original"
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Resultados para 3271i02.png.
+Resultados para 3271i02.png
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:3271i02.png"
@@ -4476,7 +4476,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-3271i03.png Binarizada.
+3271i03.png Binarizada
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:3271i03.png-Binarizada"
@@ -4516,7 +4516,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-3271i03.png Original.
+3271i03.png Original
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:3271i03.png-original"
@@ -4540,7 +4540,7 @@ name "fig:3271i03.png-original"
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Resultados para 3271i03.png.
+Resultados para 3271i03.png
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:3271i03.png"
@@ -4591,7 +4591,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-3271i04.png Binarizada.
+3271i04.png Binarizada
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:3271i04.png-Binarizada"
@@ -4631,7 +4631,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-3271i04.png Original.
+3271i04.png Original
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:3271i04.png-original"
@@ -4655,7 +4655,7 @@ name "fig:3271i04.png-original"
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Resultados para 3271i04.png.
+Resultados para 3271i04.png
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:3271i04.png"
@@ -4706,7 +4706,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-3271i05.png Binarizada.
+3271i05.png Binarizada
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:3271i05.png-Binarizada"
@@ -4746,7 +4746,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-3271i05.png Original.
+3271i05.png Original
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:3271i05.png-original"
@@ -4770,7 +4770,7 @@ name "fig:3271i05.png-original"
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Resultados para 3271i05.png.
+Resultados para 3271i05.png
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:3271i05.png"
@@ -4821,7 +4821,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-3271i06.png Binarizada.
+3271i06.png Binarizada
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:3271i06.png-Binarizada"
@@ -4861,7 +4861,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-3271i06.png Original.
+3271i06.png Original
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:3271i06.png-original"
@@ -4885,7 +4885,7 @@ name "fig:3271i06.png-original"
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Resultados para 3271i06.png.
+Resultados para 3271i06.png
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:3271i06.png"
@@ -4936,7 +4936,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-3271i07.png Binarizada.
+3271i07.png Binarizada
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:3271i07.png-Binarizada"
@@ -4976,7 +4976,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-3271i07.png Original.
+3271i07.png Original
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:3271i07.png-original"
@@ -5000,7 +5000,7 @@ name "fig:3271i07.png-original"
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Resultados para 3271i07.png.
+Resultados para 3271i07.png
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:3271i07.png"
@@ -5051,7 +5051,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-3271i08.png Binarizada.
+3271i08.png Binarizada
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:3271i08.png-Binarizada"
@@ -5091,7 +5091,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-3271i08.png Original.
+3271i08.png Original
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:3271i08.png-original"
@@ -5115,7 +5115,7 @@ name "fig:3271i08.png-original"
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Resultados para 3271i08.png.
+Resultados para 3271i08.png
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:3271i08.png"
@@ -5166,7 +5166,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-3271i09.png Binarizada.
+3271i09.png Binarizada
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:3271i09.png-Binarizada"
@@ -5206,7 +5206,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-3271i09.png Original.
+3271i09.png Original
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:3271i09.png-original"
@@ -5230,7 +5230,7 @@ name "fig:3271i09.png-original"
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Resultados para 3271i09.png.
+Resultados para 3271i09.png
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:3271i09.png"
@@ -5281,7 +5281,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-3271i10.png Binarizada.
+3271i10.png Binarizada
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:3271i10.png-Binarizada"
@@ -5321,7 +5321,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-3271i10.png Original.
+3271i10.png Original
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:3271i10.png-original"
@@ -5345,7 +5345,7 @@ name "fig:3271i10.png-original"
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Resultados para 3271i10.png.
+Resultados para 3271i10.png
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:3271i10.png"
@@ -7542,7 +7542,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-3251i01.png Binarizada.
+3251i01.png Binarizada
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:3251i01.png-Binarizada"
@@ -7582,7 +7582,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-3251i01.png Original.
+3251i01.png Original
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:3251i01.png-original"
@@ -7606,7 +7606,7 @@ name "fig:3251i01.png-original"
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Resultados para 3251i01.png.
+Resultados para 3251i01.png
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:3251i01.png"
@@ -7657,7 +7657,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-3251i02.png Binarizada.
+3251i02.png Binarizada
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:3251i02.png-Binarizada"
@@ -7697,7 +7697,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-3251i02.png Original.
+3251i02.png Original
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:3251i02.png-original"
@@ -7721,7 +7721,7 @@ name "fig:3251i02.png-original"
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Resultados para 3251i02.png.
+Resultados para 3251i02.png
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:3251i02.png"
@@ -7772,7 +7772,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-3251i03.png Binarizada.
+3251i03.png Binarizada
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:3251i03.png-Binarizada"
@@ -7812,7 +7812,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-3251i03.png Original.
+3251i03.png Original
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:3251i03.png-original"
@@ -7836,7 +7836,7 @@ name "fig:3251i03.png-original"
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Resultados para 3251i03.png.
+Resultados para 3251i03.png
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:3251i03.png"
@@ -7887,7 +7887,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-3251i04.png Binarizada.
+3251i04.png Binarizada
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:3251i04.png-Binarizada"
@@ -7927,7 +7927,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-3251i01.png Original.
+3251i01.png Original
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:3251i04.png-original"
@@ -7951,7 +7951,7 @@ name "fig:3251i04.png-original"
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Resultados para 3251i04.png.
+Resultados para 3251i04.png
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:3251i04.png"
@@ -8002,7 +8002,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-3251i05.png Binarizada.
+3251i05.png Binarizada
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:3251i05.png-Binarizada"
@@ -8042,7 +8042,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-3251i05.png Original.
+3251i05.png Original
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:3251i05.png-original"
@@ -8066,7 +8066,7 @@ name "fig:3251i05.png-original"
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Resultados para 3251i05.png.
+Resultados para 3251i05.png
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:3251i05.png"
@@ -8117,7 +8117,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-3251i06.png Binarizada.
+3251i06.png Binarizada
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:3251i06.png-Binarizada"
@@ -8157,7 +8157,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-3251i06.png Original.
+3251i06.png Original
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:3251i06.png-original"
@@ -8181,7 +8181,7 @@ name "fig:3251i06.png-original"
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Resultados para 3251i06.png.
+Resultados para 3251i06.png
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:3251i06.png"
@@ -8232,7 +8232,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-3251i07.png Binarizada.
+3251i07.png Binarizada
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:3251i07.png-Binarizada"
@@ -8272,7 +8272,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-3251i07.png Original.
+3251i07.png Original
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:3251i07.png-original"
@@ -8296,7 +8296,7 @@ name "fig:3251i07.png-original"
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Resultados para 3251i07.png.
+Resultados para 3251i07.png
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:3251i07.png"
@@ -8347,7 +8347,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-3251i08.png Binarizada.
+3251i08.png Binarizada
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:3251i08.png-Binarizada"
@@ -8387,7 +8387,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-3251i08.png Original.
+3251i08.png Original
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:3251i08.png-original"
@@ -8411,7 +8411,7 @@ name "fig:3251i08.png-original"
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Resultados para 3251i08.png.
+Resultados para 3251i08.png
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:3251i08.png"
@@ -8462,7 +8462,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-3251i09.png Binarizada.
+3251i09.png Binarizada
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:3251i09.png-Binarizada"
@@ -8502,7 +8502,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-3251i09.png Original.
+3251i09.png Original
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:3251i09.png-original"
@@ -8526,7 +8526,7 @@ name "fig:3251i09.png-original"
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Resultados para 3251i09.png.
+Resultados para 3251i09.png
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:3251i09.png"
@@ -8577,7 +8577,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-3251i10.png Binarizada.
+3251i10.png Binarizada
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:3251i10.png-Binarizada"
@@ -8617,7 +8617,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-3251i10.png Original.
+3251i10.png Original
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:3251i10.png-original"
@@ -8641,7 +8641,7 @@ name "fig:3251i10.png-original"
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Resultados para 3251i10.png.
+Resultados para 3251i10.png
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:3251i10.png"
@@ -10798,7 +10798,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-L67409i1.png Binarizada.
+L67409i1.png Binarizada
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:L67409i1.png-Binarizada"
@@ -10838,7 +10838,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-L67409i1.png Original.
+L67409i1.png Original
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:L67409i1.png-original"
@@ -10862,7 +10862,7 @@ name "fig:L67409i1.png-original"
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Resultados para L67409i1.png.
+Resultados para L67409i1.png
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:L67409i1.png"
@@ -10913,7 +10913,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-L67409i2.png Binarizada.
+L67409i2.png Binarizada
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:L67409i2.png-Binarizada"
@@ -10953,7 +10953,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-L67409i2.png Original.
+L67409i2.png Original
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:L67409i2.png-original"
@@ -10977,7 +10977,7 @@ name "fig:L67409i2.png-original"
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Resultados para L67409i2.png.
+Resultados para L67409i2.png
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:L67409i2.png"
@@ -11028,7 +11028,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-L67409i3.png Binarizada.
+L67409i3.png Binarizada
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:L67409i3.png-Binarizada"
@@ -11068,7 +11068,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-L67409i3.png Original.
+L67409i3.png Original
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:L67409i3.png-original"
@@ -11092,7 +11092,7 @@ name "fig:L67409i3.png-original"
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Resultados para L67409i3.png.
+Resultados para L67409i3.png
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:L67409i3.png"
@@ -11143,7 +11143,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-L67409i4.png Binarizada.
+L67409i4.png Binarizada
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:L67409i4.png-Binarizada"
@@ -11183,7 +11183,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-L67409i4.png Original.
+L67409i4.png Original
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:L67409i4.png-original"
@@ -11207,7 +11207,7 @@ name "fig:L67409i4.png-original"
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Resultados para L67409i4.png.
+Resultados para L67409i4.png
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:L67409i4.png"
@@ -11258,7 +11258,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-L67409i5.png Binarizada.
+L67409i5.png Binarizada
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:L67409i5.png-Binarizada"
@@ -11298,7 +11298,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-L67409i5.png Original.
+L67409i5.png Original
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:L67409i5.png-original"
@@ -11322,7 +11322,7 @@ name "fig:L67409i5.png-original"
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Resultados para L67409i5.png.
+Resultados para L67409i5.png
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:L67409i5.png"
@@ -11373,7 +11373,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-L67409i6.png Binarizada.
+L67409i6.png Binarizada
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:L67409i6.png-Binarizada"
@@ -11413,7 +11413,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-L67409i6.png Original.
+L67409i6.png Original
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:L67409i6.png-original"
@@ -11437,7 +11437,7 @@ name "fig:L67409i6.png-original"
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Resultados para L67409i6.png.
+Resultados para L67409i6.png
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:L67409i6.png"
@@ -11488,7 +11488,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-L67409i7.png Binarizada.
+L67409i7.png Binarizada
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:L67409i7.png-Binarizada"
@@ -11528,7 +11528,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-L67409i7.png Original.
+L67409i7.png Original
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:L67409i7.png-original"
@@ -11552,7 +11552,7 @@ name "fig:L67409i7.png-original"
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Resultados para L67409i7.png.
+Resultados para L67409i7.png
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:L67409i7.png"
@@ -11603,7 +11603,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-L67409i8.png Binarizada.
+L67409i8.png Binarizada
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:L67409i8.png-Binarizada"
@@ -11643,7 +11643,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-L67409i8.png Original.
+L67409i8.png Original
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:L67409i8.png-original"
@@ -11667,7 +11667,7 @@ name "fig:L67409i8.png-original"
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Resultados para L67409i8.png.
+Resultados para L67409i8.png
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:L67409i8.png"
@@ -11718,7 +11718,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-L67409i9.png Binarizada.
+L67409i9.png Binarizada
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:L67409i9.png-Binarizada"
@@ -11758,7 +11758,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-L67409i9.png Original.
+L67409i9.png Original
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:L67409i9.png-original"
@@ -11782,7 +11782,7 @@ name "fig:L67409i9.png-original"
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Resultados para L67409i9.png.
+Resultados para L67409i9.png
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:L67409i9.png"
@@ -11833,7 +11833,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-L67409i10.png Binarizada.
+L67409i10.png Binarizada
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:L67409i10.png-Binarizada"
@@ -11873,7 +11873,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-L67409i10.png Original.
+L67409i10.png Original
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:L67409i10.png-original"
@@ -11897,7 +11897,7 @@ name "fig:L67409i10.png-original"
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Resultados para L67409i10.png.
+Resultados para L67409i10.png
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:L67409i10.png"
