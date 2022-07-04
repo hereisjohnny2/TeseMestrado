@@ -38,7 +38,7 @@ Por fim, no diretório `resultados` estão os valores obtidos na aplicação da 
 
 - [X] Tirar parte de disciplinas realizadas para o trabalho ter um alcance maior
 
-- [ ] Em 3.3.2 corrigir Algorítimos -> Algoritmos
+- [X] Em 3.3.2 corrigir Algorítimos -> Algoritmos
 
 - [ ] Explicar as flags e comandos utilizados na CLI em python em um apêndice
 

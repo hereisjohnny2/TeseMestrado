@@ -1656,7 +1656,7 @@ name "fig:sigmoid-derivada"
 \end_layout
 
 \begin_layout Standard
-Outros algorítimos de aprendizagem, além do gradiente descendente estocástico
+Outros algorítmos de aprendizagem, além do gradiente descendente estocástico
  (
 \emph on
 Stocastic Gradient Descendent
