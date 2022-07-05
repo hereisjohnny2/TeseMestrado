@@ -5761,9 +5761,49 @@ calcular o erro
 
 \begin_deeper
 \begin_layout Standard
+\noindent
 \begin_inset Formula 
 \begin{equation}
-\delta^{x,L}=\nabla_{a}C_{x}\odot\eta'(w^{L}y^{L-1}+\theta^{L});\label{eq:erro-saida}
+\delta^{x,L}=\nabla_{a}C_{x}\odot\eta'(w^{L}y^{L-1}+\theta^{L}),\label{eq:erro-saida}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+onde o operador 
+\begin_inset Formula $\bigodot$
+\end_inset
+
+ denota o produto de 
+\emph on
+Hadamard 
+\emph default
+ou produto de 
+\emph on
+Schur
+\emph default
+, em se calcula o produto de cada elemento de duas matrizes com as mesmas
+ dimensões.
+ Essa operação é denotada pela Equação
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset Formula 
+\begin{equation}
+\left[\begin{array}{cc}
+A & B\\
+C & D
+\end{array}\right]\bigodot\left[\begin{array}{cc}
+E & F\\
+G & H
+\end{array}\right]=\left[\begin{array}{cc}
+A\times E & B\times F\\
+C\times G & D\times H
+\end{array}\right];\label{eq:hadamard}
 \end{equation}
 
 \end_inset
@@ -5800,6 +5840,7 @@ da rede por meio das Equações
 
 \begin_deeper
 \begin_layout Standard
+\noindent
 \begin_inset Formula 
 \begin{equation}
 w^{l}\rightarrow w^{l}-\frac{\mu}{m}\sum_{x}\delta^{x,l}\left(a^{x,l-1}\right),^{T}\label{eq:novo-peso}

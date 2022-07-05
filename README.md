@@ -83,7 +83,7 @@ Por fim, no diretório `resultados` estão os valores obtidos na aplicação da 
 
 - [X] Corrigir Equação 3.35 (tangente hiperbólica)
 
-- [ ] Na Equação 3.42, definir o operador (*Hadamard*) utilizado pois não é tão comum
+- [X] Na Equação 3.42, definir o operador (*Hadamard*) utilizado pois não é tão comum
 
 - [X] Na Figura 56, corrigir pra -> PARA
 
