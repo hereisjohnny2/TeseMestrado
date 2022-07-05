@@ -99,7 +99,7 @@ Por fim, no diretório `resultados` estão os valores obtidos na aplicação da 
 
 - [ ] Em apêndice manual desenvolvedor, que seria diagrama de classes, sequência, descrição das classes e códigos
 
-- [ ] Verificar a fonte da Figura 12
+- [X] Verificar a fonte da Figura 12
 
 - [ ] Discutir o fato da informação de porosidade variar de acordo com o método experimental aplicado
 

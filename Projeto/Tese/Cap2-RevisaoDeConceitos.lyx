@@ -822,7 +822,8 @@ status open
 \noindent
 \align center
 \begin_inset Graphics
-	filename ../../imagens/imagensLivros/tubo-com-agua.png
+	filename ../../imagens/imagensLivros/tubo-agua-oleo-rosa.png
+	width 100text%
 
 \end_inset
 
@@ -845,7 +846,7 @@ name "fig:tubo-com-agua"
 \begin_inset Newline newline
 \end_inset
 
-[Fonte: 
+[Fonte: Adaptado de 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "rosa2006engenharia"
