@@ -42,9 +42,9 @@ Por fim, no diretório `resultados` estão os valores obtidos na aplicação da 
 
 - [X] Explicar as flags e comandos utilizados na CLI em python em um apêndice
 
-- [ ] Retirar Figura do `makefile` e mover para apêndice
+- [X] Retirar Figura do `makefile` e mover para apêndice
 
-- [ ] Mover **descrição das classes** para apêndice
+- [X] Mover **descrição das classes** para apêndice
 
 - [ ] Quando fala da classe referenciar o diagrama de classes e o código listado no apêndice, assim leitor poderá verificar o que você esta falando
 
@@ -97,7 +97,7 @@ Por fim, no diretório `resultados` estão os valores obtidos na aplicação da 
 
 ### Sugestões Prof. Fernando
 
-- [ ] Em apêndice manual desenvolvedor, que seria diagrama de classes, sequência, descrição das classes e códigos
+- [X] Em apêndice manual desenvolvedor, que seria diagrama de classes, sequência, descrição das classes e códigos
 
 - [X] Verificar a fonte da Figura 12
 

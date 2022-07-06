@@ -655,10 +655,10 @@ Makefile
 \emph on
 CMakeLists.txt, 
 \emph default
-como mostrado na Figura 
+como mostrado na Listagem 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "fig:cmake"
+reference "list: cmake-lists-txt"
 plural "false"
 caps "false"
 noprefix "false"
@@ -670,60 +670,6 @@ noprefix "false"
 Makefile
 \emph default
 .
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename ../../imagens/imagensCriadas/util-cmake.png
-	width 100text%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Utilização do 
-\emph on
-CMake
-\emph default
- (
-\begin_inset CommandInset href
-LatexCommand href
-target "https://cmake.org/"
-literal "false"
-
-\end_inset
-
-)
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:cmake"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Subsection
@@ -783,12 +729,65 @@ Criação de Camadas
 \begin_layout Itemize
 Sobre cada uma das imagens é possível criar novas camadas.
  Cada camada tem um nome único e os valores de RGB coletados nela são associados
- à esse nome.
+ à esse nome, como é mostrado na Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:sub-listas"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
  É justamente essa criação de camadas que possibilita a seleção de diferentes
  minerais.
 \end_layout
 
 \end_deeper
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../../imagens/imagensCriadas/sub-janela-com-lista.png
+	lyxscale 50
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Sub-janela ao lado da lista de imagens
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:sub-listas"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Itemize
 
 \emph on
@@ -832,7 +831,7 @@ Openoffice Calc
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -940,333 +939,6 @@ name "fig:poros-marcados"
 
 \end_layout
 
-\begin_layout Subsection
-Descrição das Classes
-\end_layout
-
-\begin_layout Itemize
-
-\emph on
-RockImageUI
-\emph default
-:
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-\begin_inset Note Note
-status collapsed
-
-\begin_layout Itemize
-Classe gerada automaticamente pelo 
-\emph on
-QT Designer
-\emph default
- a partir da janela desenvolvida na Figura 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:qt-designer"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
-.
- Basicamente um arquivo com a extensão 
-\emph on
-.ui
-\emph default
- é criada pela ferramenta.
- Esse arquivo possui um formato semelhante ao 
-\emph on
-XML
-\emph default
-, como mostrado na Figura 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:xml-ui"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Itemize
-No momento da compilação esse arquivo é usado pelo compilador do 
-\emph on
-C++ 
-\emph default
-e para gerar uma classe com 
-\emph on
-widgets QT 
-\emph default
-que representam a interface criada.
- Por convenção essas classes sempre tem o nome terminado em 
-\begin_inset Quotes eld
-\end_inset
-
-
-\emph on
-UI
-\emph default
-
-\begin_inset Quotes erd
-\end_inset
-
-.
- Os 
-\emph on
-widgets 
-\emph default
-podem ser acessados pela instância da classe, que por convenção também é
- nomeada como 
-\emph on
-ui
-\emph default
-.
-\end_layout
-
-\end_inset
-
-A interface gráfica da janela a ser construída é desenhada no aplicativo
- 
-\emph on
-QT Designer
-\emph default
- (veja Figura 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:qt-designer"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
-).
- Este, por sua vez, gera arquivos .ui que descrevem a interface da janela
- criada.
- Arquivos .ui são arquivos com formato semelhante ao XML/HTML.
- Estes arquivos são então processados e transformando em arquivos *.
-\emph on
-h
-\emph default
- e *.
-\emph on
-cpp
-\emph default
- dependentes de QT.
- Como os arquivos .h e .cpp gerados contém instruções específicas de QT, eles
- precisam passar por um pré-processamento.
- Isto é feito usando o compilador MOC - Meta Object Compiler, de QT
-\begin_inset Foot
-status open
-
-\begin_layout Plain Layout
-veja por exemplo 
-\begin_inset CommandInset href
-LatexCommand href
-target "https://doc.qt.io/archives/qt-4.8/moc.html"
-
-\end_inset
-
-.
-\end_layout
-
-\end_inset
-
-.
- MOC processa estes arquivos e faz as interpretações necessárias para gerar
- arquivos válidos para o compilador de C++.
- Em resumo, a interface da janela desenhada no 
-\emph on
-QT Designer 
-\emph default
-gera um arquivo .ui, este é convertido em .h e .cpp que são pré-processados
- pelo MOC e então finalmente compilados e linkados pelo compilador de C++.
-\begin_inset Note Note
-status collapsed
-
-\begin_layout Plain Layout
-o compilador C++ não reconhece comandos específicos de QT
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-
-\emph on
-ColorDialog
-\emph default
-:
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Classe que representa a janela de diálogo para alteração da cor da caneta
- de anotação.
- Essa classe foi criada inteiramente em código sem a ultilização do 
-\emph on
-QT Desginer 
-\emph default
-devido a sua simplicidade.
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-
-\emph on
-CustomMessageDialogs
-\emph default
-:
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Classe que representa uma janela de diálogo para exibir mensagens personalizadas.
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-
-\emph on
-ImageDisplaySubWindow
-\emph default
-:
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Essa classe representa uma sub-janela e é utilizada para exibir uma nova
- imagem.
- Assim que ela é criada, o nome da imagem é inserido em uma barra lateral
- que lista as imagens e também as camadas, conforme ilustrado na Figura
- 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:sub-listas"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
-.
- Quando uma janela é fechada, ela pode ser reaberta quando se clica duas
- vezes no nome da imagem.
- Quando eliminada da lista, a janela é fechada e todos os dados e camadas
- são perdidos.
-\end_layout
-
-\end_deeper
-\begin_layout Standard
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename ../../imagens/imagensCriadas/sub-janela-com-lista.png
-	lyxscale 50
-	width 100text%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Sub-janela ao lado da lista de imagens
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:sub-listas"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Itemize
-
-\emph on
-StackedImagesWidget:
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Representa a estrutura de pilha na qual as camadas das imagens são exibidas.
- Quando uma nova camada é adicionada, ela aparece direto no topo da pilha
- e pode ser editada com anotações.
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-
-\emph on
-ImageDisplayWidget
-\emph default
-:
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Representa cada uma das imagens ou camadas mostradas na ferramenta.
- Essa classe também armazena os dados das regiões marcadas em uma estrutura
- de 
-\emph on
-HashMap
-\emph default
- até serem enviadas para a Tabela de dados.
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-
-\emph on
-PixelDataTable:
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Representa a Tabela na qual os dados de uma determinada imagem em uma sub-janela
- são armazenados, conforme mostra a Figura 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:tabela-dados-1"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
-.
-\end_layout
-
-\end_deeper
 \begin_layout Section
 Coleta dos Dados
 \end_layout
@@ -4447,526 +4119,6 @@ log_softmax
 \end_inset
 
 
-\end_layout
-
-\begin_layout Subsection
-Descrição das Classes e Funções
-\end_layout
-
-\begin_layout Standard
-A aplicação desenvolvida possui uma classe para descrever o modelo de rede
- neural e outra para descrever o 
-\emph on
-Dataset 
-\emph default
-responsável por carregar os dados a partir de um arquivo de texto e troná-los
- utilizáveis pelo modelo:
-\end_layout
-
-\begin_layout Itemize
-
-\emph on
-RockNetModel
-\emph default
-:
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Representa o modelo de rede neural e herda da classe 
-\emph on
-Module 
-\emph default
-de 
-\emph on
-PyTorch
-\emph default
-.
- No construtor
-\begin_inset Foot
-status collapsed
-
-\begin_layout Plain Layout
-Em orientação a objeto um construtor é uma função executada quando um objeto
- é instanciado (construído).
- É normalmente utilizado para iniciar o objeto, definindo os valores de
- seus atributos e realizando alguma tarefa necessária para que o objeto
- fique pronto para uso.
-\end_layout
-
-\end_inset
-
- da classe são instanciadas as camadas da rede como propriedades da própria
- classe.
- É possível criar quantas camadas foram necessárias, desde que sejam instancias
- da classe 
-\emph on
-Linear
-\emph default
- do 
-\emph on
-Pytorch
-\emph default
-, e recebam no construtor a quantidade de neurônios da camada anterior e
- a quantidade de neurônios que irá possuir.
- Além disso, é necessário sobrecarregar o método 
-\emph on
-forward
-\emph default
-.
- Esse é o método responsável por fazer com que os dados de entrada atravessem
- a rede neural.
- O resultado de cada uma das camadas pode ser utilizado como entrada de
- uma função de ativação.
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-
-\emph on
-RockDataset
-\emph default
-:
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Representa o 
-\emph on
-Dataset
-\emph default
- que descreve os dados a serem passados pela rede neural durante o treinamento.
- No construtor da classe é passado a propriedade que irá representar o dados,
- que nessa implementação se chama 
-\emph on
-content_data
-\emph default
-.
- O principal método que deve ser sobrecarregado nesse classe é o 
-\emph on
-__getitem__
-\emph default
-, que descreve a maneira como dos dados são acessados durante a execução
- do treino.
- Aqui os valores de 
-\emph on
-content_data
-\emph default
- são separados em um 
-\emph on
-Tensor 
-\emph default
-que representa os valores de RGB e o inteiro que representa a 
-\emph on
-label
-\emph default
-.
-\end_layout
-
-\end_deeper
-\begin_layout Standard
-A aplicação 
-\emph on
-CLI
-\begin_inset Foot
-status open
-
-\begin_layout Plain Layout
-Uma CLI, ou 
-\emph on
-Command-Line Interface
-\emph default
-, significa Interface de Linha de Comando.
- É um tipo de programa no qual os usuários são capazes de de digitar comandos
- em texto para a execução de tarefas no computados 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "singer2022command"
-literal "false"
-
-\end_inset
-
-.
-\end_layout
-
-\end_inset
-
- 
-\emph default
-desenvolvida possui uma série de funções que podem ser compartilhadas entre
- o processo de treinamento, teste e aplicação do modelo.
- Essas funções compartilhadas foram concentradas em um pacote chamado 
-\emph on
-utils, 
-\emph default
-em referencia a 
-\emph on
-utilidades.
- 
-\emph default
-Dentre os arquivos desse pacote encontram-se:
-\end_layout
-
-\begin_layout Itemize
-
-\emph on
-dataset
-\emph default
-: Pacote com funções relacionadas ao carregamento dos dados e a criação
- de 
-\emph on
-Dataloaders
-\emph default
-.
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-
-\emph on
-load_data_from_file
-\emph default
-: Função responsável por carregar os dados coletados a partir de um arquivo
- de texto.
- Os dados são lidos e colocados dentro de uma lista do python.
- Os valores de cada 
-\emph on
-label 
-\emph default
-são convertidos para valores numéricos em ordem crescente, a partir de zero,
- a medida que vão aparecendo.
-\end_layout
-
-\begin_layout Itemize
-
-\emph on
-split_dataset
-\emph default
-: A fim de se criar 
-\emph on
-datasets
-\emph default
- diferentes para treinamento e teste, essa função realiza essa ação a partir
- de um 
-\emph on
-dataset
-\emph default
-.
- Ela recebe como parâmetro, além do conjunto de dados, a relação entre dados
- para treinamento e dados para teste, que por padrão é de 80%.
- A saída dessa função é uma tupla com o dataset de treino e de teste.
- 
-\end_layout
-
-\begin_layout Itemize
-
-\emph on
-create_dataloaders: 
-\emph default
-Cria os 
-\emph on
-dataloaders
-\emph default
- para serem utilizados nas rotinas de treinamento e de teste das redes neurais
- a partir da lista de dados coletados.
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-
-\emph on
-image
-\emph default
-: Pacote que concentra funções para a manipulação de imagens.
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-
-\emph on
-binarize
-\emph default
-: Recebe o 
-\emph on
-array 
-\emph default
-que representa a imagem a ser binarizada, uma tupla que representa os valores
- de altura e largura de imagens e o modelo da rede neural que será aplicado
- sobre cada pixel da imagem.
- A saída é um novo 
-\emph on
-array
-\emph default
- que representa a imagem binarizada.
-\end_layout
-
-\begin_layout Itemize
-
-\emph on
-apply_binarization
-\emph default
-: Recebe o caminho para a imagem a ser binarizada e o modelo de rede neural
- a ser aplicado sobre a imagem.
- Utilizando a biblioteca 
-\emph on
-pillow
-\emph default
- a imagem é carregada em memória, tem seus canais de cores convertidos para
- RGB, afim de garantir que os valores de cor sempre teriam esse formato,
- e então utilizada para criar um 
-\emph on
-array 
-\emph default
-do 
-\emph on
-NumPy.
- 
-\emph default
-Em seguida o 
-\emph on
-array
-\emph default
- resultante é utilizado como parâmetro na função 
-\emph on
-binaraize
-\emph default
-.
- A saída desta função é o 
-\emph on
-array 
-\emph default
-que representa a imagem binarizada gerada por 
-\emph on
-binarize
-\emph default
-.
-\end_layout
-
-\begin_layout Itemize
-
-\emph on
-calculate_porosity
-\emph default
-: Recebe um 
-\emph on
-array
-\emph default
- que representa uma imagem binarizada e calcula o valor da porosidade somando
- o resultado de todos os pixeis com valor igual a 
-\begin_inset Quotes eld
-\end_inset
-
-1
-\begin_inset Quotes erd
-\end_inset
-
-.
- O valor da porosidade será utilizada futuramente para poder comparar o
- resultados do processo com o de outros trabalhos no capítulo de resultados.
-\end_layout
-
-\begin_layout Itemize
-
-\emph on
-save_porosity
-\emph default
-: Recebe a porosidade calculada, o caminho do arquivo onde o valor de porosidade
- será salvo, o nome da imagem, e o tempo total de execução do processo de
- binarização.
- 
-\end_layout
-
-\begin_layout Itemize
-
-\emph on
-show_image
-\emph default
-: Recebe um 
-\emph on
-array 
-\emph default
-que representa a imagem a ser exibida utilizando a biblioteca 
-\emph on
-MatPlotLib
-\emph default
-.
-\end_layout
-
-\begin_layout Itemize
-
-\emph on
-save_image
-\emph default
-: Recebe um 
-\emph on
-array 
-\emph default
-que representa uma imagem binarizada e o nome da imagem e salva localmente
- utilizando a biblioteca 
-\emph on
-pillow 
-\emph default
-no formato 
-\emph on
-png.
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-
-\emph on
-network:
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-
-\emph on
-run_training
-\emph default
-: Recebe o número de épocas, o 
-\emph on
-dataloader 
-\emph default
-de treinamento, o modelo de rede neural e um otimizador.
- Para cada época, cada 
-\emph on
-batch
-\emph default
- de dados dentro do 
-\emph on
-dataloader
-\emph default
- é carregado e para cada um desses 
-\emph on
-batchs
-\emph default
- é realizada uma sequencia de treinamento, onde o 
-\emph on
-batch 
-\emph default
-é utilizado para alimentar a rede neural e o resultado da saída é comparado
- com cada uma das 
-\emph on
-labels 
-\emph default
-de cada um dos valores de RGB do 
-\emph on
-batch 
-\emph default
-por meio de uma função de perda do PyTorch denominada de 
-\emph on
-nll_loss
-\emph default
-.
- Essa função representa a perda de probabilidade logarítmica negativa e
- é útil treinar problemas de classificação parecido com aqueles que são
- tratados neste trabalho.
- Em seguida é calculado o gradiente da perda e o erro é propagado pelo rede
- neural a fim de se atualizar os pesos e vieses de cada neurônio.
-\end_layout
-
-\begin_layout Itemize
-
-\emph on
-run_test
-\emph default
-: Recebe o 
-\emph on
-dataloader 
-\emph default
-de teste e o modelo de rede neural.
- Novamente, para cada 
-\emph on
-batch 
-\emph default
-encontrado no 
-\emph on
-dataloader
-\emph default
-, é calculado a saída da rede neural.
- Contudo, dessa vez, o maior valor do 
-\emph on
-tensor 
-\emph default
-que representa a saída da rede, ou seja, a classe que melhor representa
- os valores de entrada, é comparada com os valores de cada um das 
-\emph on
-labels.
- 
-\emph default
-A saída da função é a acurácia do modelo.
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-
-\emph on
-parser
-\emph default
-:
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Possui apenas uma função que tem como objetivo criar 
-\emph on
-flags 
-\emph default
-para a utilização da 
-\emph on
-CLI 
-\emph default
-em python.
-\end_layout
-
-\end_deeper
-\begin_layout Standard
-Por fim, para realizar o treinamento, uma função chamada 
-\emph on
-train_from_dataset
-\emph default
- recebe o caminho para o arquivo dos dados e o número de épocas a serem
- executadas.
- A partir do caminho do arquivo, são criados os 
-\emph on
-dataloaders
-\emph default
- de treino e teste.
- Em seguida é instanciada a classe que representa o modelo da rede neural,
- e se define o otimizador.
-\end_layout
-
-\begin_layout Standard
-Como parâmetros, o otimizador recebe os parâmetros da rede neural e a taxa
- de aprendizado.
- Para esse trabalho foi escolhido a função de otimização do 
-\emph on
-PyTorch 
-\emph default
-chamada de 
-\emph on
-Adam
-\emph default
-.
- 
-\end_layout
-
-\begin_layout Standard
-Na sequencia é executado o treinamento da rede neural e em seguida é aplicado
- o teste.
- O resultado do teste, ou seja a acurácia, é impresso no terminal e o resultado
- do modelo (os valores dos pesos e bias de cada uma das camadas) é salvo
- em um arquivo no formato 
-\emph on
-pickle
-\emph default
-, com a extensão 
-\emph on
-.pt, 
-\emph default
-para que possa ser utilizada no momento da binarização das imagens.
- 
 \end_layout
 
 \begin_layout Subsection

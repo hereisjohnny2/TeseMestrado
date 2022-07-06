@@ -118,7 +118,7 @@
 \begin_body
 
 \begin_layout Chapter
-Códigos-fontes dos Softwares Desenvolvidos
+Manual do Desenvolvedor
 \end_layout
 
 \begin_layout Standard
@@ -147,9 +147,12 @@ scripts
 \emph default
  para treinamento e aplicação do modelo de 
 \emph on
-Machine Learning
+Machine Learning, 
 \emph default
-.
+além disso são mostrados os diagramas de classe e instruções de como compilar
+ e executar ambos projetos.
+ Cada classe tem uma breve descrição de seu funcionamento para facilitar
+ no processo de compreensão.
 \end_layout
 
 \begin_layout Standard
@@ -178,8 +181,474 @@ thepage}
 Ferramenta de Aquisição de Regiões de Interesse
 \end_layout
 
+\begin_layout Standard
+Para facilitar o processo de desenvolvimento, todos os códigos fontes do
+ projeto podem ser baixados em 
+\begin_inset CommandInset href
+LatexCommand href
+target "https://github.com/hereisjohnny2/rock-image-annotation"
+literal "true"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Subsection
+Dependências e Softwares Auxiliares
+\end_layout
+
+\begin_layout Standard
+As seguintes bibliotecas e softwares são necessários para a compilação do
+ código da ferramenta:
+\end_layout
+
+\begin_layout Itemize
+Qt6: 
+\begin_inset CommandInset href
+LatexCommand href
+target "https://www.qt.io/product/qt6"
+literal "true"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+CMake: 
+\begin_inset CommandInset href
+LatexCommand href
+target "https://cmake.org/download/"
+literal "true"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Compilando e Executando o Projeto
+\end_layout
+
+\begin_layout Standard
+A compilação do projeto é feita utilizando a ferramenta 
+\emph on
+CMake 
+\emph default
+para gerar o 
+\emph on
+makefiles
+\emph default
+ necessários para a compilação.
+ A Listagem 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "list: cmake-lists-txt"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ mostra o código a ser executado para gerar esses arquivos:
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset label
+LatexCommand label
+name "list: cmake-lists-txt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "language=make,numbers=left,numberstyle={\footnotesize},basicstyle={\footnotesize\ttfamily},tabsize=4,caption={CMakeLists.txt}"
+inline false
+status collapsed
+
+\begin_layout Plain Layout
+
+cmake_minimum_required(VERSION 3.16)
+\end_layout
+
+\begin_layout Plain Layout
+
+project(rock_image_cpp)
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+set(CMAKE_CXX_STANDARD 17)
+\end_layout
+
+\begin_layout Plain Layout
+
+add_definitions(-D_GLIBCXX_USE_CXX17_ABI=0)
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+set(CMAKE_AUTOMOC ON)
+\end_layout
+
+\begin_layout Plain Layout
+
+set(CMAKE_AUTORCC ON)
+\end_layout
+
+\begin_layout Plain Layout
+
+set(CMAKE_AUTOUIC ON)
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+find_package(Qt6 COMPONENTS
+\end_layout
+
+\begin_layout Plain Layout
+
+        Core
+\end_layout
+
+\begin_layout Plain Layout
+
+        Gui
+\end_layout
+
+\begin_layout Plain Layout
+
+        Widgets
+\end_layout
+
+\begin_layout Plain Layout
+
+        REQUIRED
+\end_layout
+
+\begin_layout Plain Layout
+
+)
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+add_executable(rock_image_cpp
+\end_layout
+
+\begin_layout Plain Layout
+
+        src/main.cpp
+\end_layout
+
+\begin_layout Plain Layout
+
+        src/windows/RockImageWindow/rockimageui.cpp
+\end_layout
+
+\begin_layout Plain Layout
+
+        src/windows/RockImageWindow/rockimageui.h
+\end_layout
+
+\begin_layout Plain Layout
+
+        src/widgets/PixelDataTable.cpp
+\end_layout
+
+\begin_layout Plain Layout
+
+        src/widgets/PixelDataTable.h
+\end_layout
+
+\begin_layout Plain Layout
+
+        src/widgets/ImageDisplaySubWindow.cpp
+\end_layout
+
+\begin_layout Plain Layout
+
+        src/widgets/ImageDisplaySubWindow.h
+\end_layout
+
+\begin_layout Plain Layout
+
+        src/widgets/ImageDisplayWidget.cpp
+\end_layout
+
+\begin_layout Plain Layout
+
+        src/widgets/ImageDisplayWidget.h
+\end_layout
+
+\begin_layout Plain Layout
+
+        src/windows/Dialogs/CustomMessageDialogs.cpp
+\end_layout
+
+\begin_layout Plain Layout
+
+        src/windows/Dialogs/CustomMessageDialogs.h
+\end_layout
+
+\begin_layout Plain Layout
+
+        src/windows/Dialogs/ColorDialog.cpp src/windows/Dialogs/ColorDialog.h)
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+target_link_libraries(rock_image_cpp
+\end_layout
+
+\begin_layout Plain Layout
+
+        Qt::Core
+\end_layout
+
+\begin_layout Plain Layout
+
+        Qt::Gui
+\end_layout
+
+\begin_layout Plain Layout
+
+        Qt::Widgets
+\end_layout
+
+\begin_layout Plain Layout
+
+)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Para compilar e executar o projeto o seguinte procedimento deve ser realizado:
+\end_layout
+
+\begin_layout Enumerate
+Entre no diretório do projeto e crie uma nova pasta chamado 
+\emph on
+build.
+\end_layout
+
+\begin_layout Enumerate
+Ainda na raiz do projeto execute o CMake para gerar os arquivos de compilação
+ com o seguinte comando no terminal:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset listings
+lstparams "language=bash,numbers=left,numberstyle={\footnotesize},basicstyle={\footnotesize\ttfamily},tabsize=4"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+$ cmake -B build -S .
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Em seguida, entre no diretório 
+\emph on
+build
+\emph default
+ e execute o comando no terminal
+\emph on
+ make 
+\emph default
+para compilar o projeto:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset listings
+lstparams "language=bash,numbers=left,numberstyle={\footnotesize},basicstyle={\footnotesize\ttfamily},tabsize=4"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+$ cd build && make
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Assim que o projeto for compilado, execute a ferramenta com o seguinte comando
+ no terminal:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset listings
+lstparams "language=bash,numbers=left,numberstyle={\footnotesize},basicstyle={\footnotesize\ttfamily},tabsize=4"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+$ ./rock_image_cpp
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Diagrama de Classes
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename ../../imagens/imagensCriadas/diagrama-class.png
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Diagrama de classes da Ferramenta de Aquisição de Regiões de Interesse
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Diagrama-de-classes-anot"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
 RockImageUI
+\end_layout
+
+\begin_layout Standard
+A interface gráfica da janela a ser construída é desenhada no aplicativo
+ 
+\emph on
+QT Designer
+\emph default
+ (veja Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:qt-designer"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
+ Este, por sua vez, gera arquivos .ui que descrevem a interface da janela
+ criada.
+ Arquivos .ui são arquivos com formato semelhante ao XML/HTML.
+ Estes arquivos são então processados e transformando em arquivos *.
+\emph on
+h
+\emph default
+ e *.
+\emph on
+cpp
+\emph default
+ dependentes de QT.
+ Como os arquivos .h e .cpp gerados contém instruções específicas de QT, eles
+ precisam passar por um pré-processamento.
+ Isto é feito usando o compilador MOC - Meta Object Compiler, de QT
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+veja por exemplo 
+\begin_inset CommandInset href
+LatexCommand href
+target "https://doc.qt.io/archives/qt-4.8/moc.html"
+
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+.
+ MOC processa estes arquivos e faz as interpretações necessárias para gerar
+ arquivos válidos para o compilador de C++.
+ Em resumo, a interface da janela desenhada no 
+\emph on
+QT Designer 
+\emph default
+gera um arquivo .ui, este é convertido em .h e .cpp que são pré-processados
+ pelo MOC e então finalmente compilados e linkados pelo compilador de C++.
 \end_layout
 
 \begin_layout Standard
@@ -286,7 +755,30 @@ namespace RockImageUI {
 
 \begin_layout Plain Layout
 
-    	Q_OBJECT
+    Q_OBJECT
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    public:
+\end_layout
+
+\begin_layout Plain Layout
+
+        explicit RockImageUI(QWidget *parent = nullptr);
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        ~RockImageUI() override;
 \end_layout
 
 \begin_layout Plain Layout
@@ -310,17 +802,6 @@ namespace RockImageUI {
 
 \begin_layout Plain Layout
 
-    public:
-\end_layout
-
-\begin_layout Plain Layout
-
-        explicit RockImageUI(QWidget *parent = nullptr);
-\end_layout
-
-\begin_layout Plain Layout
-
-        ~RockImageUI() override;
 \end_layout
 
 \begin_layout Plain Layout
@@ -330,7 +811,15 @@ namespace RockImageUI {
 
 \begin_layout Plain Layout
 
+\end_layout
+
+\begin_layout Plain Layout
+
         void openImage();
+\end_layout
+
+\begin_layout Plain Layout
+
 \end_layout
 
 \begin_layout Plain Layout
@@ -340,7 +829,15 @@ namespace RockImageUI {
 
 \begin_layout Plain Layout
 
+\end_layout
+
+\begin_layout Plain Layout
+
         void cleanTable();
+\end_layout
+
+\begin_layout Plain Layout
+
 \end_layout
 
 \begin_layout Plain Layout
@@ -350,7 +847,15 @@ namespace RockImageUI {
 
 \begin_layout Plain Layout
 
+\end_layout
+
+\begin_layout Plain Layout
+
         void showImage(QListWidgetItem *listWidgetItem);
+\end_layout
+
+\begin_layout Plain Layout
+
 \end_layout
 
 \begin_layout Plain Layout
@@ -360,7 +865,15 @@ namespace RockImageUI {
 
 \begin_layout Plain Layout
 
+\end_layout
+
+\begin_layout Plain Layout
+
         void zoomIn();
+\end_layout
+
+\begin_layout Plain Layout
+
 \end_layout
 
 \begin_layout Plain Layout
@@ -370,12 +883,15 @@ namespace RockImageUI {
 
 \begin_layout Plain Layout
 
+\end_layout
+
+\begin_layout Plain Layout
+
         void addLayer();
 \end_layout
 
 \begin_layout Plain Layout
 
-        void removeCurrentLayerLayer();
 \end_layout
 
 \begin_layout Plain Layout
@@ -385,12 +901,24 @@ namespace RockImageUI {
 
 \begin_layout Plain Layout
 
+\end_layout
+
+\begin_layout Plain Layout
+
         void increaseWidth();
 \end_layout
 
 \begin_layout Plain Layout
 
+\end_layout
+
+\begin_layout Plain Layout
+
         void decreaseWidth();
+\end_layout
+
+\begin_layout Plain Layout
+
 \end_layout
 
 \begin_layout Plain Layout
@@ -409,7 +937,11 @@ namespace RockImageUI {
 
 \begin_layout Plain Layout
 
-        ImageDisplaySubWindow *getSubWidowByName(const QString& name);
+        ImageDisplaySubWindow *getSubWidowByName(const QString &name);
+\end_layout
+
+\begin_layout Plain Layout
+
 \end_layout
 
 \begin_layout Plain Layout
@@ -419,22 +951,33 @@ namespace RockImageUI {
 
 \begin_layout Plain Layout
 
-        PixelDataTable* getCurrentDataTable();
 \end_layout
 
 \begin_layout Plain Layout
 
-        PixelDataTable*  getPixelDataTableByName(const QString& name);
+        PixelDataTable *getCurrentDataTable();
 \end_layout
 
 \begin_layout Plain Layout
 
-        int  getPixelDataIndexTableByName(const QString& name);
 \end_layout
 
 \begin_layout Plain Layout
 
-        ImageDisplayWidget *getCurrentSubWindowTopLayerImage();
+        PixelDataTable *getPixelDataTableByName(const QString &name);
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        int getPixelDataIndexTableByName(const QString &name);
+\end_layout
+
+\begin_layout Plain Layout
+
 \end_layout
 
 \begin_layout Plain Layout
@@ -444,12 +987,24 @@ namespace RockImageUI {
 
 \begin_layout Plain Layout
 
-        void deleteImage(const QString& name);
 \end_layout
 
 \begin_layout Plain Layout
 
-        void loadImage(const QString& filePath);
+        void deleteImage(const QString &name);
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        void loadImage(const QString &filePath);
+\end_layout
+
+\begin_layout Plain Layout
+
 \end_layout
 
 \begin_layout Plain Layout
@@ -459,12 +1014,24 @@ namespace RockImageUI {
 
 \begin_layout Plain Layout
 
+\end_layout
+
+\begin_layout Plain Layout
+
         void setActionsIcons();
 \end_layout
 
 \begin_layout Plain Layout
 
-        bool removeLayer(QTreeWidgetItem* item);
+\end_layout
+
+\begin_layout Plain Layout
+
+        bool removeLayer(QTreeWidgetItem *item);
+\end_layout
+
+\begin_layout Plain Layout
+
 \end_layout
 
 \begin_layout Plain Layout
@@ -474,7 +1041,21 @@ namespace RockImageUI {
 
 \begin_layout Plain Layout
 
+\end_layout
+
+\begin_layout Plain Layout
+
+        static QPair<QString, QString> getLayerAndSubWindowName(QTreeWidgetItem
+ *treeWidgetItem, int column);
+\end_layout
+
+\begin_layout Plain Layout
+
     };
+\end_layout
+
+\begin_layout Plain Layout
+
 \end_layout
 
 \begin_layout Plain Layout
@@ -489,6 +1070,10 @@ namespace RockImageUI {
 \begin_layout Plain Layout
 
 #endif //ROCK_IMAGE_CPP_ROCKIMAGEUI_H
+\end_layout
+
+\begin_layout Plain Layout
+
 \end_layout
 
 \end_inset
@@ -609,8 +1194,8 @@ a()));
 
 \begin_layout Plain Layout
 
-        connect(ui->exitAction, &QAction::triggered, [this](){QApplication::quit
-();});
+        connect(ui->exitAction, &QAction::triggered, [](){QApplication::quit();}
+);
 \end_layout
 
 \begin_layout Plain Layout
@@ -626,12 +1211,6 @@ a()));
 
         connect(ui->addLayerAction, SIGNAL(triggered()), this, SLOT(addLayer()))
 ;
-\end_layout
-
-\begin_layout Plain Layout
-
-        connect(ui->removeLayerAction, SIGNAL(triggered()), this, SLOT(removeCur
-rentLayerLayer()));
 \end_layout
 
 \begin_layout Plain Layout
@@ -1462,7 +2041,7 @@ y);
 
 \begin_layout Plain Layout
 
-        auto *imageDisplayWidget = window->getTopLayerImage();
+        auto *imageDisplayWidget = window->getImageDisplayWidget();
 \end_layout
 
 \begin_layout Plain Layout
@@ -1535,20 +2114,30 @@ y);
 
 \begin_layout Plain Layout
 
-        QHash<QPoint, QRgb> pixelDataMap = imageDisplayWidget->getPixelDataMap()
-;
+        QHash<QPoint, ImageDisplayWidget::RGBLayerName> pixelDataMap = imageDisp
+layWidget->getPixelDataMap();
 \end_layout
 
 \begin_layout Plain Layout
 
-        for(auto i = pixelDataMap.constBegin(); i != pixelDataMap.constEnd();
- ++i) {
+        ImageDisplayWidget::RGBLayerName rgbLayerName;
 \end_layout
 
 \begin_layout Plain Layout
 
-            pixelDataTable->addData(i.key(), i.value(), imageDisplayWidget->getLab
-el());
+        for(auto it = pixelDataMap.constBegin(); it != pixelDataMap.constEnd();
+ ++it) {
+\end_layout
+
+\begin_layout Plain Layout
+
+            rgbLayerName = it.value();
+\end_layout
+
+\begin_layout Plain Layout
+
+            pixelDataTable->addData(it.key(), rgbLayerName.rgb, rgbLayerName.layerN
+ame);
 \end_layout
 
 \begin_layout Plain Layout
@@ -1857,72 +2446,6 @@ currentWidget());
 
 \begin_layout Plain Layout
 
-    ImageDisplayWidget *RockImageUI::getCurrentSubWindowTopLayerImage()
- {
-\end_layout
-
-\begin_layout Plain Layout
-
-        auto currentSubWindow = getCurrentSubWindow();
-\end_layout
-
-\begin_layout Plain Layout
-
-        if (currentSubWindow == nullptr) {
-\end_layout
-
-\begin_layout Plain Layout
-
-            QMessageBox::warning(this,
-\end_layout
-
-\begin_layout Plain Layout
-
-                                 "Área de Trabalho Vazia",
-\end_layout
-
-\begin_layout Plain Layout
-
-                                 "Não existe nenhuma janela ativa no momento
- com dados a serem coletados.");
-\end_layout
-
-\begin_layout Plain Layout
-
-            return nullptr;
-\end_layout
-
-\begin_layout Plain Layout
-
-        }
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-        auto *imageDisplayWidget = dynamic_cast<ImageDisplayWidget*>(currentSubW
-indow->getTopLayerImage());
-\end_layout
-
-\begin_layout Plain Layout
-
-        return imageDisplayWidget;
-\end_layout
-
-\begin_layout Plain Layout
-
-    }
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
     void RockImageUI::createToolBar() {
 \end_layout
 
@@ -1948,7 +2471,7 @@ indow->getTopLayerImage());
 
 \begin_layout Plain Layout
 
-        ui->toolBar->addAction(ui->changeLabelAction);
+        ui->toolBar->addAction(ui->addLayerAction);
 \end_layout
 
 \begin_layout Plain Layout
@@ -2017,17 +2540,12 @@ indow->getTopLayerImage());
 
 \begin_layout Plain Layout
 
-        ui->applyBinarizationAction->setIcon(QIcon("../assets/icons/binary.svg"));
-\end_layout
-
-\begin_layout Plain Layout
-
         ui->collectDataAction->setIcon(QIcon("../assets/icons/collect.svg"));
 \end_layout
 
 \begin_layout Plain Layout
 
-        ui->changeLabelAction->setIcon(QIcon("../assets/icons/change.svg"));
+        ui->changeLabelAction->setIcon(QIcon("../assets/icons/layer.svg"));
 \end_layout
 
 \begin_layout Plain Layout
@@ -2450,7 +2968,7 @@ indow->getTopLayerImage());
 \begin_layout Plain Layout
 
             QMessageBox::warning(this, tr("Adicionar Camada"), tr("Toda
- camada deve possuir uma label."));
+ camada deve possuir uma currentLayer."));
 \end_layout
 
 \begin_layout Plain Layout
@@ -2469,7 +2987,7 @@ indow->getTopLayerImage());
 
 \begin_layout Plain Layout
 
-        window->addNewLayer(label);
+        if (!window->addNewLayer(label)) return;
 \end_layout
 
 \begin_layout Plain Layout
@@ -2488,8 +3006,12 @@ indow->getTopLayerImage());
 
 \begin_layout Plain Layout
 
-        layerTreeItem->setBackground(1, window->getTopLayerImage()->getPenBrush(
-));
+        layerTreeItem->setBackground(1, window->getImageDisplayWidget()->getPenB
+rush());
+\end_layout
+
+\begin_layout Plain Layout
+
 \end_layout
 
 \begin_layout Plain Layout
@@ -2510,35 +3032,6 @@ ctly)[0];
 \begin_layout Plain Layout
 
         ui->imageTree->setCurrentItem(layerTreeItem);
-\end_layout
-
-\begin_layout Plain Layout
-
-    }
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-    void RockImageUI::removeCurrentLayerLayer() {
-\end_layout
-
-\begin_layout Plain Layout
-
-        auto window = getCurrentSubWindow();
-\end_layout
-
-\begin_layout Plain Layout
-
-        if (window == nullptr) return;
-\end_layout
-
-\begin_layout Plain Layout
-
-        window->removeCurrentLayer();
 \end_layout
 
 \begin_layout Plain Layout
@@ -2587,7 +3080,8 @@ ctly)[0];
 
 \begin_layout Plain Layout
 
-        QString subWindowName, name;
+        QPair<QString, QString> layerAndSubWindowName = getLayerAndSubWindowName
+(treeWidgetItem, column);
 \end_layout
 
 \begin_layout Plain Layout
@@ -2596,51 +3090,12 @@ ctly)[0];
 
 \begin_layout Plain Layout
 
-        if (treeWidgetItem->parent() == nullptr) {
+        auto subWindow = getSubWidowByName(layerAndSubWindowName.first);
 \end_layout
 
 \begin_layout Plain Layout
 
-            subWindowName = treeWidgetItem->text(0);
-\end_layout
-
-\begin_layout Plain Layout
-
-            name = StackedImagesWidget::BASE_IMAGE;
-\end_layout
-
-\begin_layout Plain Layout
-
-        } else {
-\end_layout
-
-\begin_layout Plain Layout
-
-            subWindowName = treeWidgetItem->parent()->text(0);
-\end_layout
-
-\begin_layout Plain Layout
-
-            name = treeWidgetItem->text(column);
-\end_layout
-
-\begin_layout Plain Layout
-
-        }
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-        auto subWindow = getSubWidowByName(subWindowName);
-\end_layout
-
-\begin_layout Plain Layout
-
-        subWindow->showLayer(name);
+        subWindow->setCurrentLayer(layerAndSubWindowName.second);
 \end_layout
 
 \begin_layout Plain Layout
@@ -2889,7 +3344,1681 @@ ctly)[0];
 
 \begin_layout Plain Layout
 
+\end_layout
+
+\begin_layout Plain Layout
+
+    QPair<QString, QString> RockImageUI::getLayerAndSubWindowName(QTreeWidgetIte
+m* treeWidgetItem, int column) {
+\end_layout
+
+\begin_layout Plain Layout
+
+        QString name, subWindowName;
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        if (treeWidgetItem->parent() == nullptr) {
+\end_layout
+
+\begin_layout Plain Layout
+
+            subWindowName = treeWidgetItem->text(0);
+\end_layout
+
+\begin_layout Plain Layout
+
+            name = "baseImage";
+\end_layout
+
+\begin_layout Plain Layout
+
+        } else {
+\end_layout
+
+\begin_layout Plain Layout
+
+            subWindowName = treeWidgetItem->parent()->text(0);
+\end_layout
+
+\begin_layout Plain Layout
+
+            name = treeWidgetItem->text(column);
+\end_layout
+
+\begin_layout Plain Layout
+
+        }
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        return {subWindowName, name};
+\end_layout
+
+\begin_layout Plain Layout
+
+    }
+\end_layout
+
+\begin_layout Plain Layout
+
 } // RockImageUI
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset label
+LatexCommand label
+name "list: rockimageui.ui"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "language=XML,numbers=left,numberstyle={\footnotesize},basicstyle={\footnotesize\ttfamily},tabsize=4,caption={rockimageui.ui}"
+inline false
+status collapsed
+
+\begin_layout Plain Layout
+
+<?xml version="1.0" encoding="UTF-8"?>
+\end_layout
+
+\begin_layout Plain Layout
+
+<ui version="4.0">
+\end_layout
+
+\begin_layout Plain Layout
+
+ <class>RockImageUI::RockImageUI</class>
+\end_layout
+
+\begin_layout Plain Layout
+
+ <widget class="QMainWindow" name="RockImageUI::RockImageUI">
+\end_layout
+
+\begin_layout Plain Layout
+
+  <property name="geometry">
+\end_layout
+
+\begin_layout Plain Layout
+
+   <rect>
+\end_layout
+
+\begin_layout Plain Layout
+
+    <x>0</x>
+\end_layout
+
+\begin_layout Plain Layout
+
+    <y>0</y>
+\end_layout
+
+\begin_layout Plain Layout
+
+    <width>1300</width>
+\end_layout
+
+\begin_layout Plain Layout
+
+    <height>773</height>
+\end_layout
+
+\begin_layout Plain Layout
+
+   </rect>
+\end_layout
+
+\begin_layout Plain Layout
+
+  </property>
+\end_layout
+
+\begin_layout Plain Layout
+
+  <property name="windowTitle">
+\end_layout
+
+\begin_layout Plain Layout
+
+   <string>RockImage</string>
+\end_layout
+
+\begin_layout Plain Layout
+
+  </property>
+\end_layout
+
+\begin_layout Plain Layout
+
+  <property name="dockNestingEnabled">
+\end_layout
+
+\begin_layout Plain Layout
+
+   <bool>false</bool>
+\end_layout
+
+\begin_layout Plain Layout
+
+  </property>
+\end_layout
+
+\begin_layout Plain Layout
+
+  <property name="dockOptions">
+\end_layout
+
+\begin_layout Plain Layout
+
+   <set>QMainWindow::AllowTabbedDocks|QMainWindow::AnimatedDocks</set>
+\end_layout
+
+\begin_layout Plain Layout
+
+  </property>
+\end_layout
+
+\begin_layout Plain Layout
+
+  <widget class="QWidget" name="centralwidget">
+\end_layout
+
+\begin_layout Plain Layout
+
+   <layout class="QGridLayout" name="gridLayout_2">
+\end_layout
+
+\begin_layout Plain Layout
+
+    <item row="0" column="1">
+\end_layout
+
+\begin_layout Plain Layout
+
+     <widget class="QMdiArea" name="openImagesArea">
+\end_layout
+
+\begin_layout Plain Layout
+
+      <property name="sizePolicy">
+\end_layout
+
+\begin_layout Plain Layout
+
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+\end_layout
+
+\begin_layout Plain Layout
+
+        <horstretch>3</horstretch>
+\end_layout
+
+\begin_layout Plain Layout
+
+        <verstretch>2</verstretch>
+\end_layout
+
+\begin_layout Plain Layout
+
+       </sizepolicy>
+\end_layout
+
+\begin_layout Plain Layout
+
+      </property>
+\end_layout
+
+\begin_layout Plain Layout
+
+     </widget>
+\end_layout
+
+\begin_layout Plain Layout
+
+    </item>
+\end_layout
+
+\begin_layout Plain Layout
+
+   </layout>
+\end_layout
+
+\begin_layout Plain Layout
+
+  </widget>
+\end_layout
+
+\begin_layout Plain Layout
+
+  <widget class="QMenuBar" name="menubar">
+\end_layout
+
+\begin_layout Plain Layout
+
+   <property name="geometry">
+\end_layout
+
+\begin_layout Plain Layout
+
+    <rect>
+\end_layout
+
+\begin_layout Plain Layout
+
+     <x>0</x>
+\end_layout
+
+\begin_layout Plain Layout
+
+     <y>0</y>
+\end_layout
+
+\begin_layout Plain Layout
+
+     <width>1300</width>
+\end_layout
+
+\begin_layout Plain Layout
+
+     <height>28</height>
+\end_layout
+
+\begin_layout Plain Layout
+
+    </rect>
+\end_layout
+
+\begin_layout Plain Layout
+
+   </property>
+\end_layout
+
+\begin_layout Plain Layout
+
+   <widget class="QMenu" name="fileMenu">
+\end_layout
+
+\begin_layout Plain Layout
+
+    <property name="title">
+\end_layout
+
+\begin_layout Plain Layout
+
+     <string>Arquivos</string>
+\end_layout
+
+\begin_layout Plain Layout
+
+    </property>
+\end_layout
+
+\begin_layout Plain Layout
+
+    <addaction name="openImageAction"/>
+\end_layout
+
+\begin_layout Plain Layout
+
+    <addaction name="saveDataAction"/>
+\end_layout
+
+\begin_layout Plain Layout
+
+    <addaction name="cleanTableAction"/>
+\end_layout
+
+\begin_layout Plain Layout
+
+    <addaction name="exitAction"/>
+\end_layout
+
+\begin_layout Plain Layout
+
+   </widget>
+\end_layout
+
+\begin_layout Plain Layout
+
+   <widget class="QMenu" name="imageMenu">
+\end_layout
+
+\begin_layout Plain Layout
+
+    <property name="title">
+\end_layout
+
+\begin_layout Plain Layout
+
+     <string>Imagem</string>
+\end_layout
+
+\begin_layout Plain Layout
+
+    </property>
+\end_layout
+
+\begin_layout Plain Layout
+
+    <widget class="QMenu" name="menuPincel">
+\end_layout
+
+\begin_layout Plain Layout
+
+     <property name="title">
+\end_layout
+
+\begin_layout Plain Layout
+
+      <string>Pincel</string>
+\end_layout
+
+\begin_layout Plain Layout
+
+     </property>
+\end_layout
+
+\begin_layout Plain Layout
+
+     <addaction name="increaseWidthAction"/>
+\end_layout
+
+\begin_layout Plain Layout
+
+     <addaction name="decreaseWidthAction"/>
+\end_layout
+
+\begin_layout Plain Layout
+
+     <addaction name="chooseColorAction"/>
+\end_layout
+
+\begin_layout Plain Layout
+
+    </widget>
+\end_layout
+
+\begin_layout Plain Layout
+
+    <addaction name="addLayerAction"/>
+\end_layout
+
+\begin_layout Plain Layout
+
+    <addaction name="removeLayerAction"/>
+\end_layout
+
+\begin_layout Plain Layout
+
+    <addaction name="menuPincel"/>
+\end_layout
+
+\begin_layout Plain Layout
+
+   </widget>
+\end_layout
+
+\begin_layout Plain Layout
+
+   <widget class="QMenu" name="showDockMenu">
+\end_layout
+
+\begin_layout Plain Layout
+
+    <property name="title">
+\end_layout
+
+\begin_layout Plain Layout
+
+     <string>Exibir</string>
+\end_layout
+
+\begin_layout Plain Layout
+
+    </property>
+\end_layout
+
+\begin_layout Plain Layout
+
+   </widget>
+\end_layout
+
+\begin_layout Plain Layout
+
+   <addaction name="fileMenu"/>
+\end_layout
+
+\begin_layout Plain Layout
+
+   <addaction name="imageMenu"/>
+\end_layout
+
+\begin_layout Plain Layout
+
+   <addaction name="showDockMenu"/>
+\end_layout
+
+\begin_layout Plain Layout
+
+  </widget>
+\end_layout
+
+\begin_layout Plain Layout
+
+  <widget class="QToolBar" name="toolBar">
+\end_layout
+
+\begin_layout Plain Layout
+
+   <property name="windowTitle">
+\end_layout
+
+\begin_layout Plain Layout
+
+    <string>toolBar</string>
+\end_layout
+
+\begin_layout Plain Layout
+
+   </property>
+\end_layout
+
+\begin_layout Plain Layout
+
+   <property name="movable">
+\end_layout
+
+\begin_layout Plain Layout
+
+    <bool>false</bool>
+\end_layout
+
+\begin_layout Plain Layout
+
+   </property>
+\end_layout
+
+\begin_layout Plain Layout
+
+   <property name="floatable">
+\end_layout
+
+\begin_layout Plain Layout
+
+    <bool>false</bool>
+\end_layout
+
+\begin_layout Plain Layout
+
+   </property>
+\end_layout
+
+\begin_layout Plain Layout
+
+   <attribute name="toolBarArea">
+\end_layout
+
+\begin_layout Plain Layout
+
+    <enum>TopToolBarArea</enum>
+\end_layout
+
+\begin_layout Plain Layout
+
+   </attribute>
+\end_layout
+
+\begin_layout Plain Layout
+
+   <attribute name="toolBarBreak">
+\end_layout
+
+\begin_layout Plain Layout
+
+    <bool>false</bool>
+\end_layout
+
+\begin_layout Plain Layout
+
+   </attribute>
+\end_layout
+
+\begin_layout Plain Layout
+
+   <addaction name="separator"/>
+\end_layout
+
+\begin_layout Plain Layout
+
+  </widget>
+\end_layout
+
+\begin_layout Plain Layout
+
+  <widget class="QDockWidget" name="imagesListDockWidget">
+\end_layout
+
+\begin_layout Plain Layout
+
+   <property name="floating">
+\end_layout
+
+\begin_layout Plain Layout
+
+    <bool>false</bool>
+\end_layout
+
+\begin_layout Plain Layout
+
+   </property>
+\end_layout
+
+\begin_layout Plain Layout
+
+   <property name="allowedAreas">
+\end_layout
+
+\begin_layout Plain Layout
+
+    <set>Qt::AllDockWidgetAreas</set>
+\end_layout
+
+\begin_layout Plain Layout
+
+   </property>
+\end_layout
+
+\begin_layout Plain Layout
+
+   <property name="windowTitle">
+\end_layout
+
+\begin_layout Plain Layout
+
+    <string>Lista de Imagens</string>
+\end_layout
+
+\begin_layout Plain Layout
+
+   </property>
+\end_layout
+
+\begin_layout Plain Layout
+
+   <attribute name="dockWidgetArea">
+\end_layout
+
+\begin_layout Plain Layout
+
+    <number>1</number>
+\end_layout
+
+\begin_layout Plain Layout
+
+   </attribute>
+\end_layout
+
+\begin_layout Plain Layout
+
+   <widget class="QWidget" name="imagesListDockWidgetContent">
+\end_layout
+
+\begin_layout Plain Layout
+
+    <layout class="QGridLayout" name="gridLayout_4">
+\end_layout
+
+\begin_layout Plain Layout
+
+     <item row="0" column="0">
+\end_layout
+
+\begin_layout Plain Layout
+
+      <widget class="QListWidget" name="imagesList"/>
+\end_layout
+
+\begin_layout Plain Layout
+
+     </item>
+\end_layout
+
+\begin_layout Plain Layout
+
+     <item row="2" column="0">
+\end_layout
+
+\begin_layout Plain Layout
+
+      <widget class="QTreeWidget" name="imageTree">
+\end_layout
+
+\begin_layout Plain Layout
+
+       <column>
+\end_layout
+
+\begin_layout Plain Layout
+
+        <property name="text">
+\end_layout
+
+\begin_layout Plain Layout
+
+         <string>Nome</string>
+\end_layout
+
+\begin_layout Plain Layout
+
+        </property>
+\end_layout
+
+\begin_layout Plain Layout
+
+       </column>
+\end_layout
+
+\begin_layout Plain Layout
+
+       <column>
+\end_layout
+
+\begin_layout Plain Layout
+
+        <property name="text">
+\end_layout
+
+\begin_layout Plain Layout
+
+         <string>Cor</string>
+\end_layout
+
+\begin_layout Plain Layout
+
+        </property>
+\end_layout
+
+\begin_layout Plain Layout
+
+       </column>
+\end_layout
+
+\begin_layout Plain Layout
+
+      </widget>
+\end_layout
+
+\begin_layout Plain Layout
+
+     </item>
+\end_layout
+
+\begin_layout Plain Layout
+
+    </layout>
+\end_layout
+
+\begin_layout Plain Layout
+
+   </widget>
+\end_layout
+
+\begin_layout Plain Layout
+
+  </widget>
+\end_layout
+
+\begin_layout Plain Layout
+
+  <widget class="QDockWidget" name="tableTabDockWidget">
+\end_layout
+
+\begin_layout Plain Layout
+
+   <property name="windowTitle">
+\end_layout
+
+\begin_layout Plain Layout
+
+    <string>Tabelas de Dados</string>
+\end_layout
+
+\begin_layout Plain Layout
+
+   </property>
+\end_layout
+
+\begin_layout Plain Layout
+
+   <attribute name="dockWidgetArea">
+\end_layout
+
+\begin_layout Plain Layout
+
+    <number>2</number>
+\end_layout
+
+\begin_layout Plain Layout
+
+   </attribute>
+\end_layout
+
+\begin_layout Plain Layout
+
+   <widget class="QWidget" name="tableTabDockWidgetContent">
+\end_layout
+
+\begin_layout Plain Layout
+
+    <layout class="QGridLayout" name="gridLayout_5">
+\end_layout
+
+\begin_layout Plain Layout
+
+     <item row="0" column="0">
+\end_layout
+
+\begin_layout Plain Layout
+
+      <widget class="QTabWidget" name="dataTablesTab">
+\end_layout
+
+\begin_layout Plain Layout
+
+       <property name="sizePolicy">
+\end_layout
+
+\begin_layout Plain Layout
+
+        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+\end_layout
+
+\begin_layout Plain Layout
+
+         <horstretch>0</horstretch>
+\end_layout
+
+\begin_layout Plain Layout
+
+         <verstretch>1</verstretch>
+\end_layout
+
+\begin_layout Plain Layout
+
+        </sizepolicy>
+\end_layout
+
+\begin_layout Plain Layout
+
+       </property>
+\end_layout
+
+\begin_layout Plain Layout
+
+       <property name="tabsClosable">
+\end_layout
+
+\begin_layout Plain Layout
+
+        <bool>true</bool>
+\end_layout
+
+\begin_layout Plain Layout
+
+       </property>
+\end_layout
+
+\begin_layout Plain Layout
+
+      </widget>
+\end_layout
+
+\begin_layout Plain Layout
+
+     </item>
+\end_layout
+
+\begin_layout Plain Layout
+
+    </layout>
+\end_layout
+
+\begin_layout Plain Layout
+
+   </widget>
+\end_layout
+
+\begin_layout Plain Layout
+
+  </widget>
+\end_layout
+
+\begin_layout Plain Layout
+
+  <action name="openImageAction">
+\end_layout
+
+\begin_layout Plain Layout
+
+   <property name="text">
+\end_layout
+
+\begin_layout Plain Layout
+
+    <string>Abrir Imagem</string>
+\end_layout
+
+\begin_layout Plain Layout
+
+   </property>
+\end_layout
+
+\begin_layout Plain Layout
+
+   <property name="shortcut">
+\end_layout
+
+\begin_layout Plain Layout
+
+    <string>Ctrl+O</string>
+\end_layout
+
+\begin_layout Plain Layout
+
+   </property>
+\end_layout
+
+\begin_layout Plain Layout
+
+  </action>
+\end_layout
+
+\begin_layout Plain Layout
+
+  <action name="saveDataAction">
+\end_layout
+
+\begin_layout Plain Layout
+
+   <property name="text">
+\end_layout
+
+\begin_layout Plain Layout
+
+    <string>Salvar Dados da Tabela</string>
+\end_layout
+
+\begin_layout Plain Layout
+
+   </property>
+\end_layout
+
+\begin_layout Plain Layout
+
+   <property name="shortcut">
+\end_layout
+
+\begin_layout Plain Layout
+
+    <string>Ctrl+S</string>
+\end_layout
+
+\begin_layout Plain Layout
+
+   </property>
+\end_layout
+
+\begin_layout Plain Layout
+
+  </action>
+\end_layout
+
+\begin_layout Plain Layout
+
+  <action name="cleanTableAction">
+\end_layout
+
+\begin_layout Plain Layout
+
+   <property name="text">
+\end_layout
+
+\begin_layout Plain Layout
+
+    <string>Limpar Tabela</string>
+\end_layout
+
+\begin_layout Plain Layout
+
+   </property>
+\end_layout
+
+\begin_layout Plain Layout
+
+   <property name="shortcut">
+\end_layout
+
+\begin_layout Plain Layout
+
+    <string>Ctrl+L</string>
+\end_layout
+
+\begin_layout Plain Layout
+
+   </property>
+\end_layout
+
+\begin_layout Plain Layout
+
+  </action>
+\end_layout
+
+\begin_layout Plain Layout
+
+  <action name="exitAction">
+\end_layout
+
+\begin_layout Plain Layout
+
+   <property name="text">
+\end_layout
+
+\begin_layout Plain Layout
+
+    <string>Sair</string>
+\end_layout
+
+\begin_layout Plain Layout
+
+   </property>
+\end_layout
+
+\begin_layout Plain Layout
+
+   <property name="shortcut">
+\end_layout
+
+\begin_layout Plain Layout
+
+    <string>Ctrl+Q</string>
+\end_layout
+
+\begin_layout Plain Layout
+
+   </property>
+\end_layout
+
+\begin_layout Plain Layout
+
+  </action>
+\end_layout
+
+\begin_layout Plain Layout
+
+  <action name="applyBinarizationAction">
+\end_layout
+
+\begin_layout Plain Layout
+
+   <property name="text">
+\end_layout
+
+\begin_layout Plain Layout
+
+    <string>Aplicar Binarização</string>
+\end_layout
+
+\begin_layout Plain Layout
+
+   </property>
+\end_layout
+
+\begin_layout Plain Layout
+
+   <property name="shortcut">
+\end_layout
+
+\begin_layout Plain Layout
+
+    <string>Ctrl+B</string>
+\end_layout
+
+\begin_layout Plain Layout
+
+   </property>
+\end_layout
+
+\begin_layout Plain Layout
+
+  </action>
+\end_layout
+
+\begin_layout Plain Layout
+
+  <action name="collectDataAction">
+\end_layout
+
+\begin_layout Plain Layout
+
+   <property name="icon">
+\end_layout
+
+\begin_layout Plain Layout
+
+    <iconset>
+\end_layout
+
+\begin_layout Plain Layout
+
+     <normaloff>:/icons/plus.png</normaloff>:/icons/plus.png</iconset>
+\end_layout
+
+\begin_layout Plain Layout
+
+   </property>
+\end_layout
+
+\begin_layout Plain Layout
+
+   <property name="text">
+\end_layout
+
+\begin_layout Plain Layout
+
+    <string>Coletar Dados</string>
+\end_layout
+
+\begin_layout Plain Layout
+
+   </property>
+\end_layout
+
+\begin_layout Plain Layout
+
+   <property name="toolTip">
+\end_layout
+
+\begin_layout Plain Layout
+
+    <string>Envia dados coletados para a tabela</string>
+\end_layout
+
+\begin_layout Plain Layout
+
+   </property>
+\end_layout
+
+\begin_layout Plain Layout
+
+   <property name="shortcut">
+\end_layout
+
+\begin_layout Plain Layout
+
+    <string>Ctrl+J</string>
+\end_layout
+
+\begin_layout Plain Layout
+
+   </property>
+\end_layout
+
+\begin_layout Plain Layout
+
+  </action>
+\end_layout
+
+\begin_layout Plain Layout
+
+  <action name="changeLabelAction">
+\end_layout
+
+\begin_layout Plain Layout
+
+   <property name="checkable">
+\end_layout
+
+\begin_layout Plain Layout
+
+    <bool>true</bool>
+\end_layout
+
+\begin_layout Plain Layout
+
+   </property>
+\end_layout
+
+\begin_layout Plain Layout
+
+   <property name="text">
+\end_layout
+
+\begin_layout Plain Layout
+
+    <string>Alterar Label</string>
+\end_layout
+
+\begin_layout Plain Layout
+
+   </property>
+\end_layout
+
+\begin_layout Plain Layout
+
+   <property name="toolTip">
+\end_layout
+
+\begin_layout Plain Layout
+
+    <string>Altera a currentLayer atribuida ao dado coletado</string>
+\end_layout
+
+\begin_layout Plain Layout
+
+   </property>
+\end_layout
+
+\begin_layout Plain Layout
+
+   <property name="shortcut">
+\end_layout
+
+\begin_layout Plain Layout
+
+    <string>Ctrl+;</string>
+\end_layout
+
+\begin_layout Plain Layout
+
+   </property>
+\end_layout
+
+\begin_layout Plain Layout
+
+  </action>
+\end_layout
+
+\begin_layout Plain Layout
+
+  <action name="zoomInAction">
+\end_layout
+
+\begin_layout Plain Layout
+
+   <property name="text">
+\end_layout
+
+\begin_layout Plain Layout
+
+    <string>Aproximar</string>
+\end_layout
+
+\begin_layout Plain Layout
+
+   </property>
+\end_layout
+
+\begin_layout Plain Layout
+
+   <property name="toolTip">
+\end_layout
+
+\begin_layout Plain Layout
+
+    <string>Aproximar</string>
+\end_layout
+
+\begin_layout Plain Layout
+
+   </property>
+\end_layout
+
+\begin_layout Plain Layout
+
+   <property name="shortcut">
+\end_layout
+
+\begin_layout Plain Layout
+
+    <string>Ctrl+=</string>
+\end_layout
+
+\begin_layout Plain Layout
+
+   </property>
+\end_layout
+
+\begin_layout Plain Layout
+
+  </action>
+\end_layout
+
+\begin_layout Plain Layout
+
+  <action name="zoomOutAction">
+\end_layout
+
+\begin_layout Plain Layout
+
+   <property name="text">
+\end_layout
+
+\begin_layout Plain Layout
+
+    <string>Afastar</string>
+\end_layout
+
+\begin_layout Plain Layout
+
+   </property>
+\end_layout
+
+\begin_layout Plain Layout
+
+   <property name="toolTip">
+\end_layout
+
+\begin_layout Plain Layout
+
+    <string>Afastar</string>
+\end_layout
+
+\begin_layout Plain Layout
+
+   </property>
+\end_layout
+
+\begin_layout Plain Layout
+
+   <property name="shortcut">
+\end_layout
+
+\begin_layout Plain Layout
+
+    <string>Ctrl+-</string>
+\end_layout
+
+\begin_layout Plain Layout
+
+   </property>
+\end_layout
+
+\begin_layout Plain Layout
+
+  </action>
+\end_layout
+
+\begin_layout Plain Layout
+
+  <action name="closeAllAction">
+\end_layout
+
+\begin_layout Plain Layout
+
+   <property name="text">
+\end_layout
+
+\begin_layout Plain Layout
+
+    <string>Fechar Todas Janelas</string>
+\end_layout
+
+\begin_layout Plain Layout
+
+   </property>
+\end_layout
+
+\begin_layout Plain Layout
+
+   <property name="toolTip">
+\end_layout
+
+\begin_layout Plain Layout
+
+    <string>Fecha todas as janelas na área de trabalho</string>
+\end_layout
+
+\begin_layout Plain Layout
+
+   </property>
+\end_layout
+
+\begin_layout Plain Layout
+
+   <property name="shortcut">
+\end_layout
+
+\begin_layout Plain Layout
+
+    <string>Ctrl+X</string>
+\end_layout
+
+\begin_layout Plain Layout
+
+   </property>
+\end_layout
+
+\begin_layout Plain Layout
+
+  </action>
+\end_layout
+
+\begin_layout Plain Layout
+
+  <action name="showDataTableAction">
+\end_layout
+
+\begin_layout Plain Layout
+
+   <property name="checkable">
+\end_layout
+
+\begin_layout Plain Layout
+
+    <bool>true</bool>
+\end_layout
+
+\begin_layout Plain Layout
+
+   </property>
+\end_layout
+
+\begin_layout Plain Layout
+
+   <property name="checked">
+\end_layout
+
+\begin_layout Plain Layout
+
+    <bool>false</bool>
+\end_layout
+
+\begin_layout Plain Layout
+
+   </property>
+\end_layout
+
+\begin_layout Plain Layout
+
+   <property name="text">
+\end_layout
+
+\begin_layout Plain Layout
+
+    <string>Tabela de Dados</string>
+\end_layout
+
+\begin_layout Plain Layout
+
+   </property>
+\end_layout
+
+\begin_layout Plain Layout
+
+  </action>
+\end_layout
+
+\begin_layout Plain Layout
+
+  <action name="showImageListAction">
+\end_layout
+
+\begin_layout Plain Layout
+
+   <property name="checkable">
+\end_layout
+
+\begin_layout Plain Layout
+
+    <bool>true</bool>
+\end_layout
+
+\begin_layout Plain Layout
+
+   </property>
+\end_layout
+
+\begin_layout Plain Layout
+
+   <property name="checked">
+\end_layout
+
+\begin_layout Plain Layout
+
+    <bool>false</bool>
+\end_layout
+
+\begin_layout Plain Layout
+
+   </property>
+\end_layout
+
+\begin_layout Plain Layout
+
+   <property name="text">
+\end_layout
+
+\begin_layout Plain Layout
+
+    <string>Lista de Imagens</string>
+\end_layout
+
+\begin_layout Plain Layout
+
+   </property>
+\end_layout
+
+\begin_layout Plain Layout
+
+  </action>
+\end_layout
+
+\begin_layout Plain Layout
+
+  <action name="addLayerAction">
+\end_layout
+
+\begin_layout Plain Layout
+
+   <property name="text">
+\end_layout
+
+\begin_layout Plain Layout
+
+    <string>Adicionar Camada</string>
+\end_layout
+
+\begin_layout Plain Layout
+
+   </property>
+\end_layout
+
+\begin_layout Plain Layout
+
+  </action>
+\end_layout
+
+\begin_layout Plain Layout
+
+  <action name="removeLayerAction">
+\end_layout
+
+\begin_layout Plain Layout
+
+   <property name="text">
+\end_layout
+
+\begin_layout Plain Layout
+
+    <string>Remover Camanda</string>
+\end_layout
+
+\begin_layout Plain Layout
+
+   </property>
+\end_layout
+
+\begin_layout Plain Layout
+
+  </action>
+\end_layout
+
+\begin_layout Plain Layout
+
+  <action name="increaseWidthAction">
+\end_layout
+
+\begin_layout Plain Layout
+
+   <property name="text">
+\end_layout
+
+\begin_layout Plain Layout
+
+    <string>Aumentar Largura</string>
+\end_layout
+
+\begin_layout Plain Layout
+
+   </property>
+\end_layout
+
+\begin_layout Plain Layout
+
+   <property name="shortcut">
+\end_layout
+
+\begin_layout Plain Layout
+
+    <string>Ctrl+[</string>
+\end_layout
+
+\begin_layout Plain Layout
+
+   </property>
+\end_layout
+
+\begin_layout Plain Layout
+
+  </action>
+\end_layout
+
+\begin_layout Plain Layout
+
+  <action name="decreaseWidthAction">
+\end_layout
+
+\begin_layout Plain Layout
+
+   <property name="text">
+\end_layout
+
+\begin_layout Plain Layout
+
+    <string>Diminuir Largura</string>
+\end_layout
+
+\begin_layout Plain Layout
+
+   </property>
+\end_layout
+
+\begin_layout Plain Layout
+
+   <property name="shortcut">
+\end_layout
+
+\begin_layout Plain Layout
+
+    <string>Ctrl+]</string>
+\end_layout
+
+\begin_layout Plain Layout
+
+   </property>
+\end_layout
+
+\begin_layout Plain Layout
+
+  </action>
+\end_layout
+
+\begin_layout Plain Layout
+
+  <action name="chooseColorAction">
+\end_layout
+
+\begin_layout Plain Layout
+
+   <property name="text">
+\end_layout
+
+\begin_layout Plain Layout
+
+    <string>Escolher Color</string>
+\end_layout
+
+\begin_layout Plain Layout
+
+   </property>
+\end_layout
+
+\begin_layout Plain Layout
+
+  </action>
+\end_layout
+
+\begin_layout Plain Layout
+
+  <zorder>tableTabDockWidget</zorder>
+\end_layout
+
+\begin_layout Plain Layout
+
+  <zorder>imagesListDockWidget</zorder>
+\end_layout
+
+\begin_layout Plain Layout
+
+ </widget>
+\end_layout
+
+\begin_layout Plain Layout
+
+ <resources/>
+\end_layout
+
+\begin_layout Plain Layout
+
+ <connections/>
+\end_layout
+
+\begin_layout Plain Layout
+
+</ui>
 \end_layout
 
 \end_inset
@@ -2899,6 +5028,10 @@ ctly)[0];
 
 \begin_layout Subsection
 CustomMessageDialogs
+\end_layout
+
+\begin_layout Standard
+Classe que representa uma janela de diálogo para exibir mensagens personalizadas.
 \end_layout
 
 \begin_layout Standard
@@ -2925,6 +5058,10 @@ status collapsed
 \begin_layout Plain Layout
 
 #define ROCK_IMAGE_CPP_CUSTOMMESSAGEDIALOGS_H
+\end_layout
+
+\begin_layout Plain Layout
+
 \end_layout
 
 \begin_layout Plain Layout
@@ -3056,6 +5193,16 @@ ColorDialog
 \end_layout
 
 \begin_layout Standard
+Classe que representa a janela de diálogo para alteração da cor da caneta
+ de anotação.
+ Essa classe foi criada inteiramente em código sem a ultilização do 
+\emph on
+QT Desginer 
+\emph default
+devido a sua simplicidade.
+\end_layout
+
+\begin_layout Standard
 \begin_inset CommandInset label
 LatexCommand label
 name "list: colordialog.h"
@@ -3076,6 +5223,10 @@ status collapsed
 \begin_layout Plain Layout
 
 #define ROCK_IMAGE_CPP_COLORDIALOG_H
+\end_layout
+
+\begin_layout Plain Layout
+
 \end_layout
 
 \begin_layout Plain Layout
@@ -3108,7 +5259,7 @@ class ColorDialog : public QDialog {
 
 \begin_layout Plain Layout
 
-    Q_OBJECT
+Q_OBJECT
 \end_layout
 
 \begin_layout Plain Layout
@@ -3123,7 +5274,15 @@ public:
 
 \begin_layout Plain Layout
 
+\end_layout
+
+\begin_layout Plain Layout
+
     static QList<int> getStrings(QWidget *parent, bool *ok = nullptr);
+\end_layout
+
+\begin_layout Plain Layout
+
 \end_layout
 
 \begin_layout Plain Layout
@@ -3133,12 +5292,16 @@ private:
 
 \begin_layout Plain Layout
 
-    QFormLayout *lytMain;
+    QFormLayout *formLayout;
 \end_layout
 
 \begin_layout Plain Layout
 
-    QList<QSpinBox*> fields;
+    QList<QSpinBox *> fields;
+\end_layout
+
+\begin_layout Plain Layout
+
 \end_layout
 
 \begin_layout Plain Layout
@@ -3204,7 +5367,7 @@ ColorDialog::ColorDialog(QWidget *parent) {
 
 \begin_layout Plain Layout
 
-    lytMain = new QFormLayout(this);
+    formLayout = new QFormLayout(this);
 \end_layout
 
 \begin_layout Plain Layout
@@ -3232,6 +5395,19 @@ ColorDialog::ColorDialog(QWidget *parent) {
 
 \begin_layout Plain Layout
 
+    auto colorBox = new QWidget();
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
     auto *buttonBox = new QDialogButtonBox
 \end_layout
 
@@ -3247,7 +5423,7 @@ ColorDialog::ColorDialog(QWidget *parent) {
 
 \begin_layout Plain Layout
 
-    lytMain->addWidget(buttonBox);
+    formLayout->addWidget(buttonBox);
 \end_layout
 
 \begin_layout Plain Layout
@@ -3290,7 +5466,7 @@ ColorDialog::ColorDialog(QWidget *parent) {
 
 \begin_layout Plain Layout
 
-    setLayout(lytMain);
+    setLayout(formLayout);
 \end_layout
 
 \begin_layout Plain Layout
@@ -3429,7 +5605,7 @@ void ColorDialog::createColorInput(const QString &label) {
 
 \begin_layout Plain Layout
 
-    lytMain->addRow(tLabel, value);
+    formLayout->addRow(tLabel, value);
 \end_layout
 
 \begin_layout Plain Layout
@@ -3452,444 +5628,22 @@ void ColorDialog::createColorInput(const QString &label) {
 \end_layout
 
 \begin_layout Subsection
-StackedImagesWidget
-\begin_inset CommandInset label
-LatexCommand label
-name "list: StackedImagesWidget.h"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset CommandInset label
-LatexCommand label
-name "list: stackedimageswidget.h"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset listings
-lstparams "language={C++},numbers=left,numberstyle={\footnotesize},basicstyle={\footnotesize\ttfamily},tabsize=4,caption={StackedImagesWidget.h}"
-inline false
-status collapsed
-
-\begin_layout Plain Layout
-
-#ifndef ROCK_IMAGE_CPP_STACKEDIMAGESWIDGET_H
-\end_layout
-
-\begin_layout Plain Layout
-
-#define ROCK_IMAGE_CPP_STACKEDIMAGESWIDGET_H
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-#include <QLabel>
-\end_layout
-
-\begin_layout Plain Layout
-
-#include <QStackedLayout>
-\end_layout
-
-\begin_layout Plain Layout
-
-#include <QStack>
-\end_layout
-
-\begin_layout Plain Layout
-
-#include "ImageDisplayWidget.h"
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-class StackedImagesWidget : public QVBoxLayout  {
-\end_layout
-
-\begin_layout Plain Layout
-
-private:
-\end_layout
-
-\begin_layout Plain Layout
-
-    QStackedLayout *stackedLayout;
-\end_layout
-
-\begin_layout Plain Layout
-
-    QStack<ImageDisplayWidget *> layers;
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-public:
-\end_layout
-
-\begin_layout Plain Layout
-
-    StackedImagesWidget();
-\end_layout
-
-\begin_layout Plain Layout
-
-    [[nodiscard]] QStack<ImageDisplayWidget *> getImages() const;
-\end_layout
-
-\begin_layout Plain Layout
-
-    [[nodiscard]] ImageDisplayWidget * getImageByName(const QString &name)
- const;
-\end_layout
-
-\begin_layout Plain Layout
-
-    void addLayer(ImageDisplayWidget *layer);
-\end_layout
-
-\begin_layout Plain Layout
-
-    void removeLayer();
-\end_layout
-
-\begin_layout Plain Layout
-
-    void scaleImage(double factor) const;
-\end_layout
-
-\begin_layout Plain Layout
-
-    void setTopLayer(const QString &name);
-\end_layout
-
-\begin_layout Plain Layout
-
-    void removeLayerByName(const QString &name);
-\end_layout
-
-\begin_layout Plain Layout
-
-    static const QString BASE_IMAGE;
-\end_layout
-
-\begin_layout Plain Layout
-
-};
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-#endif //ROCK_IMAGE_CPP_STACKEDIMAGESWIDGET_H
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset CommandInset label
-LatexCommand label
-name "list: stackedimageswidget.cpp"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset listings
-lstparams "language={C++},numbers=left,numberstyle={\footnotesize},basicstyle={\footnotesize\ttfamily},breaklines=true,showstringspaces=false,tabsize=4,caption={StackedImagesWidget.cpp}"
-inline false
-status collapsed
-
-\begin_layout Plain Layout
-
-#include "StackedImagesWidget.h"
-\end_layout
-
-\begin_layout Plain Layout
-
-#include <algorithm>
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-const QString StackedImagesWidget::BASE_IMAGE = "baseImage";
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-StackedImagesWidget::StackedImagesWidget() {
-\end_layout
-
-\begin_layout Plain Layout
-
-    stackedLayout = new QStackedLayout;
-\end_layout
-
-\begin_layout Plain Layout
-
-    addLayout(stackedLayout);
-\end_layout
-
-\begin_layout Plain Layout
-
-}
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-QStack<ImageDisplayWidget *> StackedImagesWidget::getImages() const {
-\end_layout
-
-\begin_layout Plain Layout
-
-    return layers;
-\end_layout
-
-\begin_layout Plain Layout
-
-}
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-ImageDisplayWidget *StackedImagesWidget::getImageByName(const QString &name)
- const {
-\end_layout
-
-\begin_layout Plain Layout
-
-    auto layer = std::find_if(layers.begin(), layers.end(), [&](ImageDisplayWidget
-* item) {
-\end_layout
-
-\begin_layout Plain Layout
-
-        return name == item->getLabel();
-\end_layout
-
-\begin_layout Plain Layout
-
-    });
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-    return *layer;
-\end_layout
-
-\begin_layout Plain Layout
-
-}
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-void StackedImagesWidget::addLayer(ImageDisplayWidget *layer) {
-\end_layout
-
-\begin_layout Plain Layout
-
-    stackedLayout->addWidget(layer);
-\end_layout
-
-\begin_layout Plain Layout
-
-    stackedLayout->setCurrentIndex(stackedLayout->count() - 1);
-\end_layout
-
-\begin_layout Plain Layout
-
-    layers.push_back(layer);
-\end_layout
-
-\begin_layout Plain Layout
-
-}
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-void StackedImagesWidget::scaleImage(double factor) const {
-\end_layout
-
-\begin_layout Plain Layout
-
-    auto image = getImageByName(StackedImagesWidget::BASE_IMAGE);
-\end_layout
-
-\begin_layout Plain Layout
-
-    image->resize(factor * image->pixmap(Qt::ReturnByValue).size());
-\end_layout
-
-\begin_layout Plain Layout
-
-}
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-void StackedImagesWidget::removeLayer() {
-\end_layout
-
-\begin_layout Plain Layout
-
-    if (stackedLayout->count() > 1) {
-\end_layout
-
-\begin_layout Plain Layout
-
-        layers.pop_back();
-\end_layout
-
-\begin_layout Plain Layout
-
-        stackedLayout->takeAt(stackedLayout->count() - 1);
-\end_layout
-
-\begin_layout Plain Layout
-
-        stackedLayout->setCurrentIndex(stackedLayout->count() - 1);
-\end_layout
-
-\begin_layout Plain Layout
-
-    }
-\end_layout
-
-\begin_layout Plain Layout
-
-}
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-void StackedImagesWidget::setTopLayer(const QString &name) {
-\end_layout
-
-\begin_layout Plain Layout
-
-    auto image = getImageByName(name);
-\end_layout
-
-\begin_layout Plain Layout
-
-    stackedLayout->setCurrentWidget(image);
-\end_layout
-
-\begin_layout Plain Layout
-
-}
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-void StackedImagesWidget::removeLayerByName(const QString &name) {
-\end_layout
-
-\begin_layout Plain Layout
-
-    auto layer = getImageByName(name);
-\end_layout
-
-\begin_layout Plain Layout
-
-    stackedLayout->removeWidget(layer);
-\end_layout
-
-\begin_layout Plain Layout
-
-    layers.removeIf([=](ImageDisplayWidget* layer) {
-\end_layout
-
-\begin_layout Plain Layout
-
-        return layer->getLabel() == name;
-\end_layout
-
-\begin_layout Plain Layout
-
-    });
-\end_layout
-
-\begin_layout Plain Layout
-
-}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsection
 PixelDataTable
+\end_layout
+
+\begin_layout Standard
+Representa a Tabela na qual os dados de uma determinada imagem em uma sub-janela
+ são armazenados, conforme mostra a Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:tabela-dados-1"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -3924,6 +5678,10 @@ status collapsed
 
 \begin_layout Plain Layout
 
+\end_layout
+
+\begin_layout Plain Layout
+
 #include <QTableWidget>
 \end_layout
 
@@ -3948,7 +5706,15 @@ public:
 
 \begin_layout Plain Layout
 
+\end_layout
+
+\begin_layout Plain Layout
+
     void addData(const QPoint& point, const QRgb& rgb, const QString& label);
+\end_layout
+
+\begin_layout Plain Layout
+
 \end_layout
 
 \begin_layout Plain Layout
@@ -3963,12 +5729,20 @@ private:
 
 \begin_layout Plain Layout
 
+\end_layout
+
+\begin_layout Plain Layout
+
     void addCell(int column, const QString& value);
 \end_layout
 
 \begin_layout Plain Layout
 
 };
+\end_layout
+
+\begin_layout Plain Layout
+
 \end_layout
 
 \begin_layout Plain Layout
@@ -4205,6 +5979,16 @@ ImageDisplayWidget
 \end_layout
 
 \begin_layout Standard
+Representa cada uma das imagens ou camadas mostradas na ferramenta.
+ Essa classe também armazena os dados das regiões marcadas em uma estrutura
+ de 
+\emph on
+HashMap
+\emph default
+ até serem enviadas para a Tabela de dados.
+\end_layout
+
+\begin_layout Standard
 \begin_inset CommandInset label
 LatexCommand label
 name "list: imagedisplaywidget.h"
@@ -4236,12 +6020,21 @@ status collapsed
 
 \begin_layout Plain Layout
 
+\end_layout
+
+\begin_layout Plain Layout
+
 #include <QLabel>
 \end_layout
 
 \begin_layout Plain Layout
 
 #include <map>
+\end_layout
+
+\begin_layout Plain Layout
+
+#include <utility>
 \end_layout
 
 \begin_layout Plain Layout
@@ -4255,147 +6048,315 @@ status collapsed
 
 \begin_layout Plain Layout
 
-class ImageDisplayWidget : public QLabel {
+namespace ImageDisplayWidget {
 \end_layout
 
 \begin_layout Plain Layout
 
-private:
+    const QString BASE_IMAGE = "baseImage";
 \end_layout
 
 \begin_layout Plain Layout
 
-    QImage image;
 \end_layout
 
 \begin_layout Plain Layout
 
-    QImage compositeImage;
+    struct RGBLayerName {
 \end_layout
 
 \begin_layout Plain Layout
 
-    QHash<QPoint, QRgb> pixelDataMap{};
+        QRgb rgb{};
 \end_layout
 
 \begin_layout Plain Layout
 
-    QPoint lastPoint;
 \end_layout
 
 \begin_layout Plain Layout
 
-    QString label = "layer";
+        QString layerName;
 \end_layout
 
 \begin_layout Plain Layout
 
-    int penWidth {10};
 \end_layout
 
 \begin_layout Plain Layout
 
-    QBrush penBrush {Qt::blue};
+        RGBLayerName() = default;
 \end_layout
 
 \begin_layout Plain Layout
 
-    void drawLineTo(const QPoint &endPoint);
 \end_layout
 
 \begin_layout Plain Layout
 
-    QImage createImageWithOverlay();
+        RGBLayerName(QRgb pRgb, QString pLayerName) : rgb(pRgb), layerName(std::
+move(pLayerName)) {}
 \end_layout
 
 \begin_layout Plain Layout
 
-public:
+    };
 \end_layout
 
 \begin_layout Plain Layout
 
-    ImageDisplayWidget();
 \end_layout
 
 \begin_layout Plain Layout
 
-    void setImage(const QImage &newImage);
+    class ImageDisplayWidget : public QLabel {
 \end_layout
 
 \begin_layout Plain Layout
 
-    [[nodiscard]] const QImage &getImage() const;
+    public:
 \end_layout
 
 \begin_layout Plain Layout
 
-    [[nodiscard]] const QHash<QPoint, QRgb> &getPixelDataMap() const;
+        ImageDisplayWidget();
 \end_layout
 
 \begin_layout Plain Layout
 
-    [[nodiscard]] const QString &getLabel() const;
 \end_layout
 
 \begin_layout Plain Layout
 
-    [[nodiscard]] int getPenWidth() const;
+        [[nodiscard]] const QHash<QPoint, RGBLayerName> &getPixelDataMap()
+ const;
 \end_layout
 
 \begin_layout Plain Layout
 
-    void setPenWidth(int penWidth);
 \end_layout
 
 \begin_layout Plain Layout
 
-    [[nodiscard]] QBrush getPenBrush() const;
+        [[nodiscard]] int getPenWidth() const;
 \end_layout
 
 \begin_layout Plain Layout
 
-    void setPenBrush(const QBrush &penBrush);
 \end_layout
 
 \begin_layout Plain Layout
 
-    void setLabel(const QString &name);
+        [[nodiscard]] const QBrush &getPenBrush() const;
 \end_layout
 
 \begin_layout Plain Layout
 
-    void clearPixelDataMap();
 \end_layout
 
 \begin_layout Plain Layout
 
-protected:
+        void setImage(const QImage &newImage);
 \end_layout
 
 \begin_layout Plain Layout
 
-    void mousePressEvent(QMouseEvent *event) override;
 \end_layout
 
 \begin_layout Plain Layout
 
-    void mouseMoveEvent(QMouseEvent *event) override;
+        void setPenWidth(int newPenWidth);
 \end_layout
 
 \begin_layout Plain Layout
 
-    void mouseReleaseEvent(QMouseEvent *event) override;
 \end_layout
 
 \begin_layout Plain Layout
 
-    void paintEvent(QPaintEvent *event) override;
+        void setPenBrush(const QBrush &newPenBrush);
 \end_layout
 
 \begin_layout Plain Layout
 
-};
+\end_layout
+
+\begin_layout Plain Layout
+
+        void setCurrentLayer(const QString &layerName);
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        void clearPixelDataMap();
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        void resizeImage();
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        void removeLayer(const QString &layerName);
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    private:
+\end_layout
+
+\begin_layout Plain Layout
+
+        QImage image{};
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        QImage compositeImage{};
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        QHash<QPoint, RGBLayerName> pixelDataMap{};
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        QPoint lastPoint{};
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        QString currentLayer{BASE_IMAGE};
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        QBrush penBrush{Qt::blue};
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        int penWidth{10};
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        void drawLineTo(const QPoint &endPoint);
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        QImage createImageWithOverlay();
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    protected:
+\end_layout
+
+\begin_layout Plain Layout
+
+        void mousePressEvent(QMouseEvent *event) override;
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        void mouseMoveEvent(QMouseEvent *event) override;
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        void mouseReleaseEvent(QMouseEvent *event) override;
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        void paintEvent(QPaintEvent *event) override;
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        void resizeEvent(QResizeEvent *event) override;
+\end_layout
+
+\begin_layout Plain Layout
+
+    };
+\end_layout
+
+\begin_layout Plain Layout
+
+}
 \end_layout
 
 \begin_layout Plain Layout
@@ -4449,75 +6410,28 @@ status collapsed
 
 \begin_layout Plain Layout
 
-ImageDisplayWidget::ImageDisplayWidget() {
+namespace ImageDisplayWidget {
 \end_layout
 
 \begin_layout Plain Layout
 
-    setBackgroundRole(QPalette::Base);
+    ImageDisplayWidget::ImageDisplayWidget() {
 \end_layout
 
 \begin_layout Plain Layout
 
-    setSizePolicy(QSizePolicy::Policy::Ignored, QSizePolicy::Policy::Ignored);
+        setBackgroundRole(QPalette::Dark);
 \end_layout
 
 \begin_layout Plain Layout
 
-    setScaledContents(true);
+        setSizePolicy(QSizePolicy::Policy::Ignored, QSizePolicy::Policy::Ignored
+);
 \end_layout
 
 \begin_layout Plain Layout
 
-}
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-void ImageDisplayWidget::mousePressEvent(QMouseEvent *event) {
-\end_layout
-
-\begin_layout Plain Layout
-
-    if (event->button() == Qt::LeftButton) {
-\end_layout
-
-\begin_layout Plain Layout
-
-        lastPoint = event->pos();
-\end_layout
-
-\begin_layout Plain Layout
-
-    }
-\end_layout
-
-\begin_layout Plain Layout
-
-}
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-void ImageDisplayWidget::mouseMoveEvent(QMouseEvent *event) {
-\end_layout
-
-\begin_layout Plain Layout
-
-    if (label == "baseImage") {
-\end_layout
-
-\begin_layout Plain Layout
-
-        return;
+        setScaledContents(true);
 \end_layout
 
 \begin_layout Plain Layout
@@ -4531,27 +6445,27 @@ void ImageDisplayWidget::mouseMoveEvent(QMouseEvent *event) {
 
 \begin_layout Plain Layout
 
-    QPoint currentPoint = event->pos();
+    void ImageDisplayWidget::mousePressEvent(QMouseEvent *event) {
 \end_layout
 
 \begin_layout Plain Layout
 
-    QRgb rgb = QColor(image.pixel(currentPoint)).rgb();
+        if (event->button() == Qt::LeftButton) {
 \end_layout
 
 \begin_layout Plain Layout
 
-    pixelDataMap.insert(currentPoint, rgb);
+            lastPoint = event->pos();
 \end_layout
 
 \begin_layout Plain Layout
 
-    drawLineTo(event->pos());
+        }
 \end_layout
 
 \begin_layout Plain Layout
 
-}
+    }
 \end_layout
 
 \begin_layout Plain Layout
@@ -4560,16 +6474,74 @@ void ImageDisplayWidget::mouseMoveEvent(QMouseEvent *event) {
 
 \begin_layout Plain Layout
 
+    void ImageDisplayWidget::mouseMoveEvent(QMouseEvent *event) {
 \end_layout
 
 \begin_layout Plain Layout
 
-void ImageDisplayWidget::mouseReleaseEvent(QMouseEvent *event) {
+        QPoint currentPoint = event->pos();
 \end_layout
 
 \begin_layout Plain Layout
 
-    if (event->button() == Qt::LeftButton and label != "baseImage") {
+\end_layout
+
+\begin_layout Plain Layout
+
+        if (currentLayer == BASE_IMAGE) return;
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        if (pixelDataMap.contains(currentPoint)) {
+\end_layout
+
+\begin_layout Plain Layout
+
+            QRgb rgb = QColor(image.pixel(currentPoint)).rgb();
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+            int rad = penWidth / 2;
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+            for (int i = currentPoint.x() - rad; i < currentPoint.x() + rad;
+ ++i)
+\end_layout
+
+\begin_layout Plain Layout
+
+                for (int j = currentPoint.y() - rad; j < currentPoint.y()
+ + rad; ++j)
+\end_layout
+
+\begin_layout Plain Layout
+
+                    pixelDataMap.insert(QPoint(i, j), {rgb, currentLayer});
+\end_layout
+
+\begin_layout Plain Layout
+
+        }
+\end_layout
+
+\begin_layout Plain Layout
+
 \end_layout
 
 \begin_layout Plain Layout
@@ -4584,7 +6556,6 @@ void ImageDisplayWidget::mouseReleaseEvent(QMouseEvent *event) {
 
 \begin_layout Plain Layout
 
-}
 \end_layout
 
 \begin_layout Plain Layout
@@ -4593,281 +6564,283 @@ void ImageDisplayWidget::mouseReleaseEvent(QMouseEvent *event) {
 
 \begin_layout Plain Layout
 
-void ImageDisplayWidget::setImage(const QImage &newImage) {
+    void ImageDisplayWidget::mouseReleaseEvent(QMouseEvent *event) {
 \end_layout
 
 \begin_layout Plain Layout
 
-    image = newImage;
+        if (event->button() == Qt::LeftButton and currentLayer != BASE_IMAGE)
+ {
 \end_layout
 
 \begin_layout Plain Layout
 
-    compositeImage = createImageWithOverlay();
+            drawLineTo(event->pos());
 \end_layout
 
 \begin_layout Plain Layout
 
-    QPixmap p = QPixmap::fromImage(compositeImage);
+        }
 \end_layout
 
 \begin_layout Plain Layout
 
-    setPixmap(p);
+    }
 \end_layout
 
 \begin_layout Plain Layout
 
-    adjustSize();
 \end_layout
 
 \begin_layout Plain Layout
 
-}
+    void ImageDisplayWidget::setImage(const QImage &newImage) {
 \end_layout
 
 \begin_layout Plain Layout
 
+        image = newImage;
 \end_layout
 
 \begin_layout Plain Layout
 
-const QImage &ImageDisplayWidget::getImage() const {
+        compositeImage = createImageWithOverlay();
 \end_layout
 
 \begin_layout Plain Layout
 
-    return image;
+        QPixmap p = QPixmap::fromImage(compositeImage);
 \end_layout
 
 \begin_layout Plain Layout
 
-}
+        setPixmap(p);
 \end_layout
 
 \begin_layout Plain Layout
 
+        adjustSize();
 \end_layout
 
 \begin_layout Plain Layout
 
-const QHash<QPoint, QRgb> &ImageDisplayWidget::getPixelDataMap() const {
+    }
 \end_layout
 
 \begin_layout Plain Layout
 
-    return pixelDataMap;
 \end_layout
 
 \begin_layout Plain Layout
 
-}
+    const QHash<QPoint, RGBLayerName> &ImageDisplayWidget::getPixelDataMap()
+ const {
 \end_layout
 
 \begin_layout Plain Layout
 
+        return pixelDataMap;
 \end_layout
 
 \begin_layout Plain Layout
 
-void ImageDisplayWidget::clearPixelDataMap() {
+    }
 \end_layout
 
 \begin_layout Plain Layout
 
-    pixelDataMap = {};
 \end_layout
 
 \begin_layout Plain Layout
 
-}
+    void ImageDisplayWidget::clearPixelDataMap() {
 \end_layout
 
 \begin_layout Plain Layout
 
+        pixelDataMap.clear();
 \end_layout
 
 \begin_layout Plain Layout
 
-void ImageDisplayWidget::drawLineTo(const QPoint &endPoint) {
+    }
 \end_layout
 
 \begin_layout Plain Layout
 
-    QPainter painter(&compositeImage);
 \end_layout
 
 \begin_layout Plain Layout
 
-    painter.setPen(QPen(penBrush, penWidth, Qt::SolidLine, Qt::RoundCap,
- Qt::RoundJoin));
+    void ImageDisplayWidget::drawLineTo(const QPoint &endPoint) {
 \end_layout
 
 \begin_layout Plain Layout
 
-    painter.drawLine(lastPoint, endPoint);
+        QPen pen(penBrush, penWidth,
 \end_layout
 
 \begin_layout Plain Layout
 
-    int rad = (10 / 2) + 2;
+                 Qt::SolidLine,
 \end_layout
 
 \begin_layout Plain Layout
 
-    update(QRect(lastPoint, endPoint).normalized()
+                 Qt::RoundCap,
 \end_layout
 
 \begin_layout Plain Layout
 
-                   .adjusted(-rad, -rad, +rad, +rad));
+                 Qt::RoundJoin);
 \end_layout
 
 \begin_layout Plain Layout
 
-    lastPoint = endPoint;
+        QPainter painter(&compositeImage);
 \end_layout
 
 \begin_layout Plain Layout
 
-}
+        painter.setPen(pen);
 \end_layout
 
 \begin_layout Plain Layout
 
+        painter.drawLine(lastPoint, endPoint);
 \end_layout
 
 \begin_layout Plain Layout
 
-void ImageDisplayWidget::paintEvent(QPaintEvent *event) {
 \end_layout
 
 \begin_layout Plain Layout
 
-    QPainter painter(this);
+        int rad = (penWidth / 2) + 2;
 \end_layout
 
 \begin_layout Plain Layout
 
-    painter.setRenderHint(QPainter::Antialiasing, false);
+        update(QRect(lastPoint, endPoint).normalized()
 \end_layout
 
 \begin_layout Plain Layout
 
-    painter.drawImage(QPoint(0,0), compositeImage);
+                       .adjusted(-rad, -rad, +rad, +rad));
 \end_layout
 
 \begin_layout Plain Layout
 
-}
 \end_layout
 
 \begin_layout Plain Layout
 
+        lastPoint = endPoint;
 \end_layout
 
 \begin_layout Plain Layout
 
-const QString &ImageDisplayWidget::getLabel() const {
+    }
 \end_layout
 
 \begin_layout Plain Layout
 
-    return label;
 \end_layout
 
 \begin_layout Plain Layout
 
-}
+    void ImageDisplayWidget::paintEvent(QPaintEvent *event) {
 \end_layout
 
 \begin_layout Plain Layout
 
+        QPainter painter(this);
 \end_layout
 
 \begin_layout Plain Layout
 
-void ImageDisplayWidget::setLabel(const QString &name) {
+        painter.setRenderHint(QPainter::Antialiasing, false);
 \end_layout
 
 \begin_layout Plain Layout
 
-    ImageDisplayWidget::label = name;
+        painter.drawImage(QPoint(0, 0), compositeImage);
 \end_layout
 
 \begin_layout Plain Layout
 
-}
+        update();
 \end_layout
 
 \begin_layout Plain Layout
 
+    }
 \end_layout
 
 \begin_layout Plain Layout
 
-QImage ImageDisplayWidget::createImageWithOverlay() {
 \end_layout
 
 \begin_layout Plain Layout
 
-    QImage imageWithOverlay = QImage(image.size(), QImage::Format_RGB16);
+    void ImageDisplayWidget::setCurrentLayer(const QString &layerName) {
 \end_layout
 
 \begin_layout Plain Layout
 
-    QPainter painter(&imageWithOverlay);
+        currentLayer = layerName;
 \end_layout
 
 \begin_layout Plain Layout
 
+    }
 \end_layout
 
 \begin_layout Plain Layout
 
-    painter.setCompositionMode(QPainter::CompositionMode_Source);
 \end_layout
 
 \begin_layout Plain Layout
 
-    painter.fillRect(imageWithOverlay.rect(), Qt::transparent);
+    QImage ImageDisplayWidget::createImageWithOverlay() {
 \end_layout
 
 \begin_layout Plain Layout
 
+        QImage imageWithOverlay = QImage(image.size(), image.format());
 \end_layout
 
 \begin_layout Plain Layout
 
-    painter.setCompositionMode(QPainter::CompositionMode_SourceOver);
+        QPainter painter(&imageWithOverlay);
 \end_layout
 
 \begin_layout Plain Layout
 
-    painter.drawImage(0, 0, image);
 \end_layout
 
 \begin_layout Plain Layout
 
+        painter.setCompositionMode(QPainter::CompositionMode_Source);
 \end_layout
 
 \begin_layout Plain Layout
 
-    painter.setCompositionMode(QPainter::CompositionMode_SourceOver);
+        painter.fillRect(imageWithOverlay.rect(), Qt::transparent);
 \end_layout
 
 \begin_layout Plain Layout
 
-    painter.drawImage(0, 0, image.createAlphaMask());
 \end_layout
 
 \begin_layout Plain Layout
 
+        painter.setCompositionMode(QPainter::CompositionMode_SourceOver);
 \end_layout
 
 \begin_layout Plain Layout
 
-    painter.end();
+        painter.drawImage(0, 0, image);
 \end_layout
 
 \begin_layout Plain Layout
@@ -4876,12 +6849,12 @@ QImage ImageDisplayWidget::createImageWithOverlay() {
 
 \begin_layout Plain Layout
 
-    return imageWithOverlay;
+        painter.setCompositionMode(QPainter::CompositionMode_SourceOver);
 \end_layout
 
 \begin_layout Plain Layout
 
-}
+        painter.drawImage(0, 0, image.createAlphaMask());
 \end_layout
 
 \begin_layout Plain Layout
@@ -4890,69 +6863,240 @@ QImage ImageDisplayWidget::createImageWithOverlay() {
 
 \begin_layout Plain Layout
 
-int ImageDisplayWidget::getPenWidth() const {
+        painter.end();
 \end_layout
 
 \begin_layout Plain Layout
 
-    return penWidth;
 \end_layout
 
 \begin_layout Plain Layout
 
-}
+        return imageWithOverlay;
 \end_layout
 
 \begin_layout Plain Layout
 
+    }
 \end_layout
 
 \begin_layout Plain Layout
 
-void ImageDisplayWidget::setPenWidth(int penWidth) {
 \end_layout
 
 \begin_layout Plain Layout
 
-    ImageDisplayWidget::penWidth = penWidth;
+    int ImageDisplayWidget::getPenWidth() const {
 \end_layout
 
 \begin_layout Plain Layout
 
-}
+        return penWidth;
 \end_layout
 
 \begin_layout Plain Layout
 
+    }
 \end_layout
 
 \begin_layout Plain Layout
 
-QBrush ImageDisplayWidget::getPenBrush() const {
 \end_layout
 
 \begin_layout Plain Layout
 
-    return penBrush;
+    void ImageDisplayWidget::setPenWidth(int newPenWidth) {
 \end_layout
 
 \begin_layout Plain Layout
 
-}
+        penWidth = newPenWidth;
 \end_layout
 
 \begin_layout Plain Layout
 
+    }
 \end_layout
 
 \begin_layout Plain Layout
 
-void ImageDisplayWidget::setPenBrush(const QBrush &penBrush) {
 \end_layout
 
 \begin_layout Plain Layout
 
-    ImageDisplayWidget::penBrush = penBrush;
+    void ImageDisplayWidget::setPenBrush(const QBrush &newPenBrush) {
+\end_layout
+
+\begin_layout Plain Layout
+
+        penBrush = newPenBrush;
+\end_layout
+
+\begin_layout Plain Layout
+
+    }
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    void ImageDisplayWidget::resizeEvent(QResizeEvent *event) {
+\end_layout
+
+\begin_layout Plain Layout
+
+        QWidget::resizeEvent(event);
+\end_layout
+
+\begin_layout Plain Layout
+
+        resizeImage();
+\end_layout
+
+\begin_layout Plain Layout
+
+    }
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    void ImageDisplayWidget::resizeImage() {
+\end_layout
+
+\begin_layout Plain Layout
+
+        image = image.scaled(this->size(), Qt::KeepAspectRatio, Qt::SmoothTransfo
+rmation);
+\end_layout
+
+\begin_layout Plain Layout
+
+        compositeImage = compositeImage.scaled(this->size(), Qt::KeepAspectRatio,
+ Qt::SmoothTransformation);
+\end_layout
+
+\begin_layout Plain Layout
+
+        update();
+\end_layout
+
+\begin_layout Plain Layout
+
+    }
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    const QBrush &ImageDisplayWidget::getPenBrush() const {
+\end_layout
+
+\begin_layout Plain Layout
+
+        return penBrush;
+\end_layout
+
+\begin_layout Plain Layout
+
+    }
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    void ImageDisplayWidget::removeLayer(const QString &layerName) {
+\end_layout
+
+\begin_layout Plain Layout
+
+        setCurrentLayer(BASE_IMAGE);
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        for (int i = 0; i < compositeImage.width(); ++i) {
+\end_layout
+
+\begin_layout Plain Layout
+
+            for (int j = 0; j < compositeImage.height(); ++j) {
+\end_layout
+
+\begin_layout Plain Layout
+
+                if (compositeImage.pixel(i, j) == penBrush.color().rgb()) {
+\end_layout
+
+\begin_layout Plain Layout
+
+                    auto imagePixel = image.pixel(i, j);
+\end_layout
+
+\begin_layout Plain Layout
+
+                    compositeImage.setPixel(i, j, imagePixel);
+\end_layout
+
+\begin_layout Plain Layout
+
+                    pixelDataMap.remove(QPoint(i, j));
+\end_layout
+
+\begin_layout Plain Layout
+
+                }
+\end_layout
+
+\begin_layout Plain Layout
+
+            }
+\end_layout
+
+\begin_layout Plain Layout
+
+        }
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        pixelDataMap.removeIf([&](const QHash<QPoint, RGBLayerName>::iterator
+ &it){
+\end_layout
+
+\begin_layout Plain Layout
+
+            return it.value().layerName == layerName;
+\end_layout
+
+\begin_layout Plain Layout
+
+        });
+\end_layout
+
+\begin_layout Plain Layout
+
+    }
 \end_layout
 
 \begin_layout Plain Layout
@@ -4967,6 +7111,28 @@ void ImageDisplayWidget::setPenBrush(const QBrush &penBrush) {
 
 \begin_layout Subsection
 ImageDisplaySubWindow
+\end_layout
+
+\begin_layout Standard
+Essa classe representa uma sub-janela e é utilizada para exibir uma nova
+ imagem.
+ Assim que ela é criada, o nome da imagem é inserido em uma barra lateral
+ que lista as imagens e também as camadas, conforme ilustrado na Figura
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:sub-listas"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Quando uma janela é fechada, ela pode ser reaberta quando se clica duas
+ vezes no nome da imagem.
+ Quando eliminada da lista, a janela é fechada e todos os dados e camadas
+ são perdidos.
 \end_layout
 
 \begin_layout Standard
@@ -5001,6 +7167,10 @@ status collapsed
 
 \begin_layout Plain Layout
 
+\end_layout
+
+\begin_layout Plain Layout
+
 #include <QMdiSubWindow>
 \end_layout
 
@@ -5021,16 +7191,94 @@ status collapsed
 
 \begin_layout Plain Layout
 
-#include "StackedImagesWidget.h"
-\end_layout
-
-\begin_layout Plain Layout
-
 \end_layout
 
 \begin_layout Plain Layout
 
 class ImageDisplaySubWindow : public QMdiSubWindow {
+\end_layout
+
+\begin_layout Plain Layout
+
+public:
+\end_layout
+
+\begin_layout Plain Layout
+
+    ImageDisplaySubWindow(const QString &filePath, const QString &fileName);
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    [[nodiscard]] ImageDisplayWidget::ImageDisplayWidget *getImageDisplayWidget(
+) const;
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    bool loadImage(const QString &filePath);
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    void scaleImage(double factor);
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    bool addNewLayer(const QString &label);
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    void setCurrentLayer(const QString &layerName);
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    void removeLayerByName(const QString &layerName);
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    void updatePenWidth(const int &value);
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    void updatePenBrush(const QColor &value);
 \end_layout
 
 \begin_layout Plain Layout
@@ -5044,7 +7292,12 @@ private:
 
 \begin_layout Plain Layout
 
-    StackedImagesWidget *stackedImagesWidget;
+    QHash<QString, QBrush> layersColors{};
+\end_layout
+
+\begin_layout Plain Layout
+
+    ImageDisplayWidget::ImageDisplayWidget *imageDisplayWidget{};
 \end_layout
 
 \begin_layout Plain Layout
@@ -5054,12 +7307,11 @@ private:
 
 \begin_layout Plain Layout
 
-    double scaleFactor = 1;
+    double scaleFactor{1.0};
 \end_layout
 
 \begin_layout Plain Layout
 
-    static void adjustScrollBar(QScrollBar *bar, double factor);
 \end_layout
 
 \begin_layout Plain Layout
@@ -5069,62 +7321,20 @@ private:
 
 \begin_layout Plain Layout
 
-public:
 \end_layout
 
 \begin_layout Plain Layout
 
-    ImageDisplaySubWindow(const QString& filePath, const QString& fileName);
-\end_layout
-
-\begin_layout Plain Layout
-
-    [[nodiscard]] ImageDisplayWidget *getTopLayerImage() const;
-\end_layout
-
-\begin_layout Plain Layout
-
-    bool loadImage(const QString &filePath);
-\end_layout
-
-\begin_layout Plain Layout
-
-    void scaleImage(double factor);
-\end_layout
-
-\begin_layout Plain Layout
-
-    void addNewLayer(const QString& label);
-\end_layout
-
-\begin_layout Plain Layout
-
-    void showLayer(const QString &name);
-\end_layout
-
-\begin_layout Plain Layout
-
-    void removeCurrentLayer();
-\end_layout
-
-\begin_layout Plain Layout
-
-    void removeLayerByName(const QString& name);
-\end_layout
-
-\begin_layout Plain Layout
-
-    void updatePenWidth(const int& value);
-\end_layout
-
-\begin_layout Plain Layout
-
-    void updatePenBrush(const QColor & value);
+    static void adjustScrollBar(QScrollBar *bar, double factor);
 \end_layout
 
 \begin_layout Plain Layout
 
 };
+\end_layout
+
+\begin_layout Plain Layout
+
 \end_layout
 
 \begin_layout Plain Layout
@@ -5228,8 +7438,7 @@ ImageDisplaySubWindow::ImageDisplaySubWindow(const QString& filePath, const
 
 \begin_layout Plain Layout
 
-    : stackedImagesWidget(new StackedImagesWidget()), scrollArea(new QScrollArea
-())
+    : scrollArea(new QScrollArea())
 \end_layout
 
 \begin_layout Plain Layout
@@ -5253,16 +7462,7 @@ ImageDisplaySubWindow::ImageDisplaySubWindow(const QString& filePath, const
 
 \begin_layout Plain Layout
 
-    scrollArea->setLayout(stackedImagesWidget);
-\end_layout
-
-\begin_layout Plain Layout
-
     scrollArea->setVisible(false);
-\end_layout
-
-\begin_layout Plain Layout
-
 \end_layout
 
 \begin_layout Plain Layout
@@ -5359,26 +7559,17 @@ ng()));
 
 \begin_layout Plain Layout
 
-    auto *layer = new ImageDisplayWidget();
+    imageDisplayWidget = new ImageDisplayWidget::ImageDisplayWidget();
 \end_layout
 
 \begin_layout Plain Layout
 
-    layer->setImage(newImage);
+    imageDisplayWidget->setImage(newImage);
 \end_layout
 
 \begin_layout Plain Layout
 
-    layer->setLabel(StackedImagesWidget::BASE_IMAGE);
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-    stackedImagesWidget->addLayer(layer);
+    imageDisplayWidget->setCurrentLayer("baseImage");
 \end_layout
 
 \begin_layout Plain Layout
@@ -5387,7 +7578,7 @@ ng()));
 
 \begin_layout Plain Layout
 
-    scaleFactor = 1.0;
+    scrollArea->setWidget(imageDisplayWidget);
 \end_layout
 
 \begin_layout Plain Layout
@@ -5397,6 +7588,11 @@ ng()));
 
 \begin_layout Plain Layout
 
+\end_layout
+
+\begin_layout Plain Layout
+
+    scaleFactor = 1.0;
 \end_layout
 
 \begin_layout Plain Layout
@@ -5415,26 +7611,16 @@ ng()));
 
 \begin_layout Plain Layout
 
-ImageDisplayWidget *ImageDisplaySubWindow::getTopLayerImage() const {
-\end_layout
-
-\begin_layout Plain Layout
-
-    return stackedImagesWidget->getImages().top();
-\end_layout
-
-\begin_layout Plain Layout
-
-}
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
 void ImageDisplaySubWindow::scaleImage(double factor) {
+\end_layout
+
+\begin_layout Plain Layout
+
+    if (imageDisplayWidget == nullptr) return;
+\end_layout
+
+\begin_layout Plain Layout
+
 \end_layout
 
 \begin_layout Plain Layout
@@ -5444,7 +7630,12 @@ void ImageDisplaySubWindow::scaleImage(double factor) {
 
 \begin_layout Plain Layout
 
-    stackedImagesWidget->scaleImage(scaleFactor);
+\end_layout
+
+\begin_layout Plain Layout
+
+    imageDisplayWidget->resize(scaleFactor * imageDisplayWidget->pixmap(Qt::Retu
+rnByValue).size());
 \end_layout
 
 \begin_layout Plain Layout
@@ -5501,17 +7692,51 @@ void ImageDisplaySubWindow::adjustScrollBar(QScrollBar *bar, double factor)
 
 \begin_layout Plain Layout
 
-void ImageDisplaySubWindow::addNewLayer(const QString& label) {
+bool ImageDisplaySubWindow::addNewLayer(const QString& label) {
 \end_layout
 
 \begin_layout Plain Layout
 
-    auto layer = new ImageDisplayWidget();
+    if (imageDisplayWidget == nullptr) return false;
 \end_layout
 
 \begin_layout Plain Layout
 
-    auto baseImage = stackedImagesWidget->getImages().top()->getImage();
+\end_layout
+
+\begin_layout Plain Layout
+
+    if (layersColors.contains(label)) {
+\end_layout
+
+\begin_layout Plain Layout
+
+        QMessageBox::warning(
+\end_layout
+
+\begin_layout Plain Layout
+
+                this,
+\end_layout
+
+\begin_layout Plain Layout
+
+                QGuiApplication::applicationDisplayName(),
+\end_layout
+
+\begin_layout Plain Layout
+
+                tr("Layer with name %1 already exists!").arg(label));
+\end_layout
+
+\begin_layout Plain Layout
+
+        return false;
+\end_layout
+
+\begin_layout Plain Layout
+
+    }
 \end_layout
 
 \begin_layout Plain Layout
@@ -5525,31 +7750,7 @@ void ImageDisplaySubWindow::addNewLayer(const QString& label) {
 
 \begin_layout Plain Layout
 
-\end_layout
-
-\begin_layout Plain Layout
-
-    layer->setLabel(label);
-\end_layout
-
-\begin_layout Plain Layout
-
-    layer->setImage(baseImage);
-\end_layout
-
-\begin_layout Plain Layout
-
-    layer->setPenBrush(brush);
-\end_layout
-
-\begin_layout Plain Layout
-
-    stackedImagesWidget->addLayer(layer);
-\end_layout
-
-\begin_layout Plain Layout
-
-}
+    layersColors.emplace(label, brush);
 \end_layout
 
 \begin_layout Plain Layout
@@ -5558,12 +7759,21 @@ void ImageDisplaySubWindow::addNewLayer(const QString& label) {
 
 \begin_layout Plain Layout
 
-void ImageDisplaySubWindow::removeCurrentLayer() {
+    imageDisplayWidget->setCurrentLayer(label);
 \end_layout
 
 \begin_layout Plain Layout
 
-    stackedImagesWidget->removeLayer();
+    imageDisplayWidget->setPenBrush(brush);
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    return true;
 \end_layout
 
 \begin_layout Plain Layout
@@ -5577,12 +7787,26 @@ void ImageDisplaySubWindow::removeCurrentLayer() {
 
 \begin_layout Plain Layout
 
-void ImageDisplaySubWindow::showLayer(const QString &name) {
+void ImageDisplaySubWindow::setCurrentLayer(const QString &layerName) {
 \end_layout
 
 \begin_layout Plain Layout
 
-    stackedImagesWidget->setTopLayer(name);
+    if (imageDisplayWidget == nullptr) return;
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    imageDisplayWidget->setCurrentLayer(layerName);
+\end_layout
+
+\begin_layout Plain Layout
+
+    imageDisplayWidget->setPenBrush(layersColors.value(layerName));
 \end_layout
 
 \begin_layout Plain Layout
@@ -5596,12 +7820,27 @@ void ImageDisplaySubWindow::showLayer(const QString &name) {
 
 \begin_layout Plain Layout
 
-void ImageDisplaySubWindow::removeLayerByName(const QString& name) {
+void ImageDisplaySubWindow::removeLayerByName(const QString& layerName)
+ {
 \end_layout
 
 \begin_layout Plain Layout
 
-    stackedImagesWidget->removeLayerByName(name);
+    if (imageDisplayWidget == nullptr) return;
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    layersColors.remove(layerName);
+\end_layout
+
+\begin_layout Plain Layout
+
+    imageDisplayWidget->removeLayer(layerName);
 \end_layout
 
 \begin_layout Plain Layout
@@ -5639,7 +7878,27 @@ QColor ImageDisplaySubWindow::generateRandomColor() {
 
 \begin_layout Plain Layout
 
-    return QColor(randomInt(rng), randomInt(rng), randomInt(rng));
+    return {
+\end_layout
+
+\begin_layout Plain Layout
+
+        static_cast<int>(randomInt(rng)),
+\end_layout
+
+\begin_layout Plain Layout
+
+        static_cast<int>(randomInt(rng)),
+\end_layout
+
+\begin_layout Plain Layout
+
+        static_cast<int>(randomInt(rng))
+\end_layout
+
+\begin_layout Plain Layout
+
+    };
 \end_layout
 
 \begin_layout Plain Layout
@@ -5658,17 +7917,21 @@ void ImageDisplaySubWindow::updatePenWidth(const int &value) {
 
 \begin_layout Plain Layout
 
-    auto image = getTopLayerImage();
+    if (imageDisplayWidget == nullptr) return;
 \end_layout
 
 \begin_layout Plain Layout
 
-    int currentWidth = image->getPenWidth();
 \end_layout
 
 \begin_layout Plain Layout
 
-    image->setPenWidth(currentWidth + value);
+    int currentWidth = imageDisplayWidget->getPenWidth();
+\end_layout
+
+\begin_layout Plain Layout
+
+    imageDisplayWidget->setPenWidth(currentWidth + value);
 \end_layout
 
 \begin_layout Plain Layout
@@ -5687,12 +7950,36 @@ void ImageDisplaySubWindow::updatePenBrush(const QColor &value) {
 
 \begin_layout Plain Layout
 
-    auto image = getTopLayerImage();
+    if (imageDisplayWidget == nullptr) return;
 \end_layout
 
 \begin_layout Plain Layout
 
-    image->setPenBrush(value);
+\end_layout
+
+\begin_layout Plain Layout
+
+    imageDisplayWidget->setPenBrush(value);
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+ImageDisplayWidget::ImageDisplayWidget *ImageDisplaySubWindow::getImageDisplayWi
+dget() const {
+\end_layout
+
+\begin_layout Plain Layout
+
+    return imageDisplayWidget;
 \end_layout
 
 \begin_layout Plain Layout
@@ -5718,22 +8005,158 @@ para Treinamento e Aplicação dos Modelos
 \end_layout
 
 \begin_layout Standard
+De forma semelhante, é possível obter os códigos fontes do projeto a partir
+ do repositório em 
+\begin_inset CommandInset href
+LatexCommand href
+target "https://github.com/hereisjohnny2/project-mestrado"
+literal "true"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Criando Ambiente Virtual
+\end_layout
+
+\begin_layout Standard
+Projetos em python normalmente utilizam um ambiente virtual, ou 
+\emph on
+venv,
+\emph default
+ para poder isolar as dependências.
+\end_layout
+
+\begin_layout Enumerate
+Crie um novo ambiente virtual, na raiz do projeto baixado do repositório,
+ com o seguinte comando no terminal:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset listings
+lstparams "language=bash,numbers=left,numberstyle={\footnotesize},basicstyle={\footnotesize\ttfamily},tabsize=4"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+$ python -m venv venv
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Em seguida com o comando 
+\emph on
+source 
+\emph default
+no terminal ative o ambiente criado:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset listings
+lstparams "language=bash,numbers=left,numberstyle={\footnotesize},basicstyle={\footnotesize\ttfamily},tabsize=4"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+$ source venv/bin/activate
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Por fim, com o gerenciador de pacotes do python, 
+\emph on
+pip
+\emph default
+, instale as dependências do projeto a partir do arquivo 
+\emph on
+requirements.txt
+\emph default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset listings
+lstparams "language=bash,numbers=left,numberstyle={\footnotesize},basicstyle={\footnotesize\ttfamily},tabsize=4"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+$ pip install -r requirements.txt
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Assim, já é possível executar o arquivo 
+\emph on
+rock-nn/main.py 
+\emph default
+para treinar e aplicar os modelos de rede neural:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset listings
+lstparams "language=bash,numbers=left,numberstyle={\footnotesize},basicstyle={\footnotesize\ttfamily},tabsize=4"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+$ python rock-nn/main.py <comandos>
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+main.py
+\end_layout
+
+\begin_layout Standard
+Define o ponto de entrada da aplicação.
+\end_layout
+
+\begin_layout Standard
 \begin_inset CommandInset label
 LatexCommand label
 name "list: main.py"
 
 \end_inset
 
+ 
+\end_layout
 
+\begin_layout Standard
 \begin_inset listings
 lstparams "language=Python,numbers=left,numberstyle={\footnotesize},basicstyle={\footnotesize\ttfamily},breaklines=true,showstringspaces=false,tabsize=4,extendedchars=true,caption={main.py}"
 inline false
 status collapsed
-
-\begin_layout Plain Layout
-
-from matplotlib import image
-\end_layout
 
 \begin_layout Plain Layout
 
@@ -5870,6 +8293,43 @@ if __name__ == "__main__":
 
 \end_layout
 
+\begin_layout Subsection
+rockdataset.py
+\end_layout
+
+\begin_layout Standard
+Representa o 
+\emph on
+Dataset
+\emph default
+ que descreve os dados a serem passados pela rede neural durante o treinamento.
+ No construtor da classe é passado a propriedade que irá representar o dados,
+ que nessa implementação se chama 
+\emph on
+content_data
+\emph default
+.
+ O principal método que deve ser sobrecarregado nesse classe é o 
+\emph on
+__getitem__
+\emph default
+, que descreve a maneira como dos dados são acessados durante a execução
+ do treino.
+ Aqui os valores de 
+\emph on
+content_data
+\emph default
+ são separados em um 
+\emph on
+Tensor 
+\emph default
+que representa os valores de RGB e o inteiro que representa a 
+\emph on
+label
+\emph default
+.
+\end_layout
+
 \begin_layout Standard
 \begin_inset CommandInset label
 LatexCommand label
@@ -5968,6 +8428,58 @@ class RockDataset(Dataset):
 \end_inset
 
 
+\end_layout
+
+\begin_layout Subsection
+rockmodel.py
+\end_layout
+
+\begin_layout Standard
+Representa o modelo de rede neural e herda da classe 
+\emph on
+Module 
+\emph default
+de 
+\emph on
+PyTorch
+\emph default
+.
+ No construtor
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Em orientação a objeto um construtor é uma função executada quando um objeto
+ é instanciado (construído).
+ É normalmente utilizado para iniciar o objeto, definindo os valores de
+ seus atributos e realizando alguma tarefa necessária para que o objeto
+ fique pronto para uso.
+\end_layout
+
+\end_inset
+
+ da classe são instanciadas as camadas da rede como propriedades da própria
+ classe.
+ É possível criar quantas camadas foram necessárias, desde que sejam instancias
+ da classe 
+\emph on
+Linear
+\emph default
+ do 
+\emph on
+Pytorch
+\emph default
+, e recebam no construtor a quantidade de neurônios da camada anterior e
+ a quantidade de neurônios que irá possuir.
+ Além disso, é necessário sobrecarregar o método 
+\emph on
+forward
+\emph default
+.
+ Esse é o método responsável por fazer com que os dados de entrada atravessem
+ a rede neural.
+ O resultado de cada uma das camadas pode ser utilizado como entrada de
+ uma função de ativação.
 \end_layout
 
 \begin_layout Standard
@@ -6074,6 +8586,15 @@ class RockNetModel(nn.Module):
 
 \end_layout
 
+\begin_layout Subsection
+tester.py
+\end_layout
+
+\begin_layout Standard
+Contém a função que executa o teste para verificar a acurácia do modelo
+ em cada iteração.
+\end_layout
+
 \begin_layout Standard
 \begin_inset CommandInset label
 LatexCommand label
@@ -6156,6 +8677,21 @@ def apply_model(model_file, image, output=None, save=False):
 
 \begin_layout Plain Layout
 
+    if torch.cuda.is_available():
+\end_layout
+
+\begin_layout Plain Layout
+
+        model.to("cuda:0")
+\end_layout
+
+\begin_layout Plain Layout
+
+        
+\end_layout
+
+\begin_layout Plain Layout
+
     dirname, file = path.split(image)
 \end_layout
 
@@ -6186,7 +8722,7 @@ def apply_model(model_file, image, output=None, save=False):
 
 \begin_layout Plain Layout
 
-    
+    print("Applying Binarization...")
 \end_layout
 
 \begin_layout Plain Layout
@@ -6233,6 +8769,14 @@ def apply_model(model_file, image, output=None, save=False):
 \end_inset
 
 
+\end_layout
+
+\begin_layout Subsection
+trainer.py
+\end_layout
+
+\begin_layout Standard
+Contém a função que executa o treinamento do modelo.
 \end_layout
 
 \begin_layout Standard
@@ -6390,6 +8934,67 @@ def train_from_dataset(data, epochs=5):
 
 \end_layout
 
+\begin_layout Subsection
+dataset.py
+\end_layout
+
+\begin_layout Standard
+Pacote com funções relacionadas ao carregamento dos dados e a criação de
+ 
+\emph on
+Dataloaders:
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+load_data_from_file
+\emph default
+: Função responsável por carregar os dados coletados a partir de um arquivo
+ de texto.
+ Os dados são lidos e colocados dentro de uma lista do python.
+ Os valores de cada 
+\emph on
+label 
+\emph default
+são convertidos para valores numéricos em ordem crescente, a partir de zero,
+ a medida que vão aparecendo.
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+split_dataset
+\emph default
+: A fim de se criar 
+\emph on
+datasets
+\emph default
+ diferentes para treinamento e teste, essa função realiza essa ação a partir
+ de um 
+\emph on
+dataset
+\emph default
+.
+ Ela recebe como parâmetro, além do conjunto de dados, a relação entre dados
+ para treinamento e dados para teste, que por padrão é de 80%.
+ A saída dessa função é uma tupla com o dataset de treino e de teste.
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+create_dataloaders: 
+\emph default
+Cria os 
+\emph on
+dataloaders
+\emph default
+ para serem utilizados nas rotinas de treinamento e de teste das redes neurais
+ a partir da lista de dados coletados.
+\end_layout
+
 \begin_layout Standard
 \begin_inset CommandInset label
 LatexCommand label
@@ -6418,7 +9023,7 @@ from torch.utils.data import DataLoader
 
 \begin_layout Plain Layout
 
-from rock_dataset import RockDataset
+from custom_dataset import CustomDataset
 \end_layout
 
 \begin_layout Plain Layout
@@ -6518,7 +9123,7 @@ def create_dataloaders(data):
 
 \begin_layout Plain Layout
 
-    dataset = RockDataset(load_data_from_file(data))
+    dataset = CustomDataset(load_data_from_file(data))
 \end_layout
 
 \begin_layout Plain Layout
@@ -6555,6 +9160,156 @@ def create_dataloaders(data):
 
 \end_layout
 
+\begin_layout Subsection
+image.py
+\end_layout
+
+\begin_layout Standard
+Pacote que concentra funções para a manipulação de imagens:
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+binarize
+\emph default
+: Recebe o 
+\emph on
+array 
+\emph default
+que representa a imagem a ser binarizada, uma tupla que representa os valores
+ de altura e largura de imagens e o modelo da rede neural que será aplicado
+ sobre cada pixel da imagem.
+ A saída é um novo 
+\emph on
+array
+\emph default
+ que representa a imagem binarizada.
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+apply_binarization
+\emph default
+: Recebe o caminho para a imagem a ser binarizada e o modelo de rede neural
+ a ser aplicado sobre a imagem.
+ Utilizando a biblioteca 
+\emph on
+pillow
+\emph default
+ a imagem é carregada em memória, tem seus canais de cores convertidos para
+ RGB, afim de garantir que os valores de cor sempre teriam esse formato,
+ e então utilizada para criar um 
+\emph on
+array 
+\emph default
+do 
+\emph on
+NumPy.
+ 
+\emph default
+Em seguida o 
+\emph on
+array
+\emph default
+ resultante é utilizado como parâmetro na função 
+\emph on
+binaraize
+\emph default
+.
+ A saída desta função é o 
+\emph on
+array 
+\emph default
+que representa a imagem binarizada gerada por 
+\emph on
+binarize
+\emph default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+calculate_porosity
+\emph default
+: Recebe um 
+\emph on
+array
+\emph default
+ que representa uma imagem binarizada e calcula o valor da porosidade somando
+ o resultado de todos os pixeis com valor igual a 
+\begin_inset Quotes eld
+\end_inset
+
+1
+\begin_inset Quotes erd
+\end_inset
+
+.
+ O valor da porosidade será utilizada futuramente para poder comparar o
+ resultados do processo com o de outros trabalhos no capítulo de resultados.
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+save_porosity
+\emph default
+: Recebe a porosidade calculada, o caminho do arquivo onde o valor de porosidade
+ será salvo, o nome da imagem, e o tempo total de execução do processo de
+ binarização.
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+show_image
+\emph default
+: Recebe um 
+\emph on
+array 
+\emph default
+que representa a imagem a ser exibida utilizando a biblioteca 
+\emph on
+MatPlotLib
+\emph default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+save_image
+\emph default
+: Recebe um 
+\emph on
+array 
+\emph default
+que representa uma imagem binarizada e o nome da imagem e salva localmente
+ utilizando a biblioteca 
+\emph on
+pillow 
+\emph default
+no formato 
+\emph on
+png.
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+convert_image_to_rgb_format
+\emph default
+: Recebe o caminho para uma imagem e converte a mesma para o formato 
+\emph on
+RGB
+\emph default
+.
+\end_layout
+
 \begin_layout Standard
 \begin_inset CommandInset label
 LatexCommand label
@@ -6574,11 +9329,6 @@ status collapsed
 \begin_layout Plain Layout
 
 from os import path
-\end_layout
-
-\begin_layout Plain Layout
-
-from posixpath import split, splitext
 \end_layout
 
 \begin_layout Plain Layout
@@ -6622,37 +9372,41 @@ def binarize(arr, img_size, net):
 
 \begin_layout Plain Layout
 
-    binarr = []
+    tensor_data = torch.from_numpy(arr).view(-1, 3).float()
 \end_layout
 
 \begin_layout Plain Layout
 
-    for row in arr:
+    
 \end_layout
 
 \begin_layout Plain Layout
 
-        for pixel in row:
+    if torch.cuda.is_available():
 \end_layout
 
 \begin_layout Plain Layout
 
-            data = torch.Tensor(pixel)
+        tensor_data = tensor_data.to(device="cuda:0")
 \end_layout
 
 \begin_layout Plain Layout
 
-            output = torch.argmax(net(data.view(-1,3)))
+        
 \end_layout
 
 \begin_layout Plain Layout
 
-            binarr.append(output)
+    tensor_data = torch.argmax(net(tensor_data), dim=1)
 \end_layout
 
 \begin_layout Plain Layout
 
-    return np.reshape(binarr, (height, width))
+\end_layout
+
+\begin_layout Plain Layout
+
+    return tensor_data.view(height, width).cpu().detach().numpy()
 \end_layout
 
 \begin_layout Plain Layout
@@ -6676,7 +9430,22 @@ def apply_binarization(image, net):
 
 \begin_layout Plain Layout
 
-        img = Image.open(image).convert("RGB")    
+        img = Image.open(image)
+\end_layout
+
+\begin_layout Plain Layout
+
+        if img.mode != "RGB":
+\end_layout
+
+\begin_layout Plain Layout
+
+            img = img.convert("RGB") 
+\end_layout
+
+\begin_layout Plain Layout
+
+        
 \end_layout
 
 \begin_layout Plain Layout
@@ -6815,12 +9584,17 @@ def convert_image_to_rgb_format(image_name):
 
 \begin_layout Plain Layout
 
-    img = Image.open(image_name).convert("RGB")
+    print(f"Converting image {image_name}...")
 \end_layout
 
 \begin_layout Plain Layout
 
-    name, _ = path,splitext()
+    img = Image.open(image_name).convert("RGB")   
+\end_layout
+
+\begin_layout Plain Layout
+
+    name, _ = path.splitext(image_name) 
 \end_layout
 
 \begin_layout Plain Layout
@@ -6828,9 +9602,101 @@ def convert_image_to_rgb_format(image_name):
     img.save(f"{name}-converted.png")
 \end_layout
 
+\begin_layout Plain Layout
+
+    print("Done!")
+\end_layout
+
 \end_inset
 
 
+\end_layout
+
+\begin_layout Subsection
+network.py
+\end_layout
+
+\begin_layout Standard
+Pacote de funções para execução do treinamento e do teste da rede neural:
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+run_training
+\emph default
+: Recebe o número de épocas, o 
+\emph on
+dataloader 
+\emph default
+de treinamento, o modelo de rede neural e um otimizador.
+ Para cada época, cada 
+\emph on
+batch
+\emph default
+ de dados dentro do 
+\emph on
+dataloader
+\emph default
+ é carregado e para cada um desses 
+\emph on
+batchs
+\emph default
+ é realizada uma sequencia de treinamento, onde o 
+\emph on
+batch 
+\emph default
+é utilizado para alimentar a rede neural e o resultado da saída é comparado
+ com cada uma das 
+\emph on
+labels 
+\emph default
+de cada um dos valores de RGB do 
+\emph on
+batch 
+\emph default
+por meio de uma função de perda do PyTorch denominada de 
+\emph on
+nll_loss
+\emph default
+.
+ Essa função representa a perda de probabilidade logarítmica negativa e
+ é útil treinar problemas de classificação parecido com aqueles que são
+ tratados neste trabalho.
+ Em seguida é calculado o gradiente da perda e o erro é propagado pelo rede
+ neural a fim de se atualizar os pesos e vieses de cada neurônio.
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+run_test
+\emph default
+: Recebe o 
+\emph on
+dataloader 
+\emph default
+de teste e o modelo de rede neural.
+ Novamente, para cada 
+\emph on
+batch 
+\emph default
+encontrado no 
+\emph on
+dataloader
+\emph default
+, é calculado a saída da rede neural.
+ Contudo, dessa vez, o maior valor do 
+\emph on
+tensor 
+\emph default
+que representa a saída da rede, ou seja, a classe que melhor representa
+ os valores de entrada, é comparada com os valores de cada um das 
+\emph on
+labels.
+ 
+\emph default
+A saída da função é a acurácia do modelo.
 \end_layout
 
 \begin_layout Standard
@@ -6982,6 +9848,22 @@ def run_test(test_dataloader, net):
 
 \end_layout
 
+\begin_layout Subsection
+parser.py
+\end_layout
+
+\begin_layout Standard
+Possui apenas uma função que tem como objetivo criar 
+\emph on
+flags 
+\emph default
+para a utilização da 
+\emph on
+CLI 
+\emph default
+em python.
+\end_layout
+
 \begin_layout Standard
 \begin_inset CommandInset label
 LatexCommand label
@@ -7123,10 +10005,19 @@ n process")
 
 \end_layout
 
+\begin_layout Subsection
+time_measure.py
+\end_layout
+
+\begin_layout Standard
+Possui apenas uma função que é utilizada para marcar o tempo decorrido durante
+ a execução das funções.
+\end_layout
+
 \begin_layout Standard
 \begin_inset CommandInset label
 LatexCommand label
-name "list: timemeasure.py"
+name "list: time_measure.py"
 
 \end_inset
 
@@ -7135,7 +10026,7 @@ name "list: timemeasure.py"
 
 \begin_layout Standard
 \begin_inset listings
-lstparams "language=Python,numbers=left,numberstyle={\footnotesize},basicstyle={\footnotesize\ttfamily},breaklines=true,showstringspaces=false,tabsize=4,extendedchars=true,caption={timemeasure.py}"
+lstparams "language=Python,numbers=left,numberstyle={\footnotesize},basicstyle={\footnotesize\ttfamily},breaklines=true,showstringspaces=false,tabsize=4,extendedchars=true,caption={time_measure.py}"
 inline false
 status collapsed
 
@@ -7175,12 +10066,13 @@ def timing_decorator(func):
 
 \begin_layout Plain Layout
 
-        time_elapsed = end - start
+        time_elapsed = (end - start) * 1000
 \end_layout
 
 \begin_layout Plain Layout
 
-        print("time elapsed in ", func.__name__, ": ", time_elapsed, sep='')
+        print("time elapsed in ", func.__name__, ": ", time_elapsed, "ms",
+ sep='')
 \end_layout
 
 \begin_layout Plain Layout
