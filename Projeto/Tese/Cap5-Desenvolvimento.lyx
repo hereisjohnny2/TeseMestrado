@@ -618,6 +618,40 @@ qss
  em uma aplicação 
 \emph on
 web.
+ 
+\emph default
+As classes que descrevem o funcionamento da janela principal da aplicação
+ são mostrados nas Listagens 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "list: rockimageui.h"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "list: rockimageui.cpp"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ e 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "list: rockimageui.ui"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -716,6 +750,52 @@ ambiente
  apenas àquela sub-janela.
 \end_layout
 
+\begin_layout Itemize
+A visualização de imagens é feita pelos códigos mostrados nas Listagens
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "list: imagedisplaywidget.h"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "list: imagedisplaywidget.cpp"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "list: imagedisplaysubwindow.h"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ e 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "list: imagedisplaysubwindow.cpp"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ 
+\end_layout
+
 \end_deeper
 \begin_layout Itemize
 
@@ -742,6 +822,30 @@ noprefix "false"
 .
  É justamente essa criação de camadas que possibilita a seleção de diferentes
  minerais.
+\end_layout
+
+\begin_layout Itemize
+Os métodos para criação de camadas são mostrados nas Listagens 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "list: imagedisplaywidget.h"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ e 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "list: imagedisplaywidget.cpp"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
 \end_layout
 
 \end_deeper
@@ -825,6 +929,30 @@ Openoffice Calc
 .
 \end_layout
 
+\begin_layout Itemize
+A renderização da tabela de dados é feita pelos códigos da Listagem 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "list: pixeldatatable.h"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ e 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "list: pixeldatatable.cpp"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
 \end_deeper
 \begin_layout Standard
 \begin_inset Float figure
@@ -895,13 +1023,37 @@ noprefix "false"
  nas imagens, e pode ser alterada.
 \end_layout
 
+\begin_layout Itemize
+O sistema de anotaçãoes é feito no código listado em 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "list: imagedisplaywidget.h"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ e 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "list: imagedisplaywidget.cpp"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
 \end_deeper
 \begin_layout Standard
 \begin_inset Float figure
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -972,7 +1124,7 @@ noprefix "false"
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -1250,7 +1402,7 @@ noprefix "false"
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -1439,7 +1591,7 @@ I216.png
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -1715,7 +1867,7 @@ I32.png
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -2078,7 +2230,7 @@ Sólido
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -2441,7 +2593,7 @@ Sólido
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -2863,7 +3015,7 @@ noprefix "false"
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -2903,7 +3055,7 @@ name "fig:exemplo-berea200"
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -2943,7 +3095,7 @@ name "fig:exemplo-berea500"
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -2983,7 +3135,7 @@ name "fig:exemplo-p148"
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -3023,7 +3175,7 @@ name "fig:exemplo-p240"
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -3074,10 +3226,10 @@ Os dados depois de coletados foram exportados para um arquivo de texto no
 label 
 \emph default
 que representa a região onde a imagem foi coletada, conforme mostrado na
- Figura 
+ Listagem 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "fig:exemplo-dat"
+reference "list: resultado-coleta"
 plural "false"
 caps "false"
 noprefix "false"
@@ -3091,41 +3243,62 @@ noprefix "false"
 scripts 
 \emph default
 python.
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename ../../imagens/imagensCriadas/exemplo-dat.png
-	lyxscale 50
-	width 100text%
-
-\end_inset
-
-
 \end_layout
 
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Resultado da coleta de dados
+\begin_layout Standard
 \begin_inset CommandInset label
 LatexCommand label
-name "fig:exemplo-dat"
+name "list: resultado-coleta"
 
 \end_inset
 
-
+ 
 \end_layout
 
-\end_inset
+\begin_layout Standard
+\begin_inset listings
+lstparams "basicstyle={\footnotesize\ttfamily},breaklines=true,showstringspaces=false,tabsize=4,extendedchars=true,caption={Resultado da Coleta}"
+inline false
+status collapsed
 
+\begin_layout Plain Layout
 
+7	87	96	Poro
+\end_layout
+
+\begin_layout Plain Layout
+
+0	4	1	Poro
+\end_layout
+
+\begin_layout Plain Layout
+
+4	81	103	Poro
+\end_layout
+
+\begin_layout Plain Layout
+
+1	67	102	Poro
+\end_layout
+
+\begin_layout Plain Layout
+
+2	60	78	Poro
+\end_layout
+
+\begin_layout Plain Layout
+
+4	81	109	Poro
+\end_layout
+
+\begin_layout Plain Layout
+
+1	64	86	Poro
+\end_layout
+
+\begin_layout Plain Layout
+
+8	81	119	Poro
 \end_layout
 
 \end_inset
@@ -4128,7 +4301,21 @@ Aplicação dos Modelos
 \begin_layout Standard
 Para aplicar o modelo foi desenvolvida uma função chamada 
 \emph on
-apply_model,
+apply_model, 
+\emph default
+que é mostrada na Listagem 
+\emph on
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "list: tester.py"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+,
 \emph default
  semelhante à utilizada no treinamento, que recebe o caminho para o arquivo
  que guarda o modelo em 
@@ -4146,7 +4333,21 @@ flag
 \begin_layout Standard
 Assim que a função é iniciada cria-se uma instancia de 
 \emph on
-RockNetModel 
+RockNetModel, 
+\emph default
+descrita na Listagem 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "list: rockmodel.py"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+,
+\emph on
+ 
 \emph default
 e o modelo salvo é carregado dentro dela por meio da função 
 \emph on
@@ -4163,7 +4364,21 @@ eval
 .
  Por fim, a função 
 \emph on
-apply_binarizarion 
+apply_binarizarion, 
+\emph default
+que pertante ao módulo da Listagem 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "list: image.py"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+,
+\emph on
+ 
 \emph default
 é executada, retornando o resultado da binarização e a duração do processo.
  Calcula-se então a porosidade da imagem amostra que é salvo em um arquivo

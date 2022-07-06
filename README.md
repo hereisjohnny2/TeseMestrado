@@ -46,9 +46,9 @@ Por fim, no diretório `resultados` estão os valores obtidos na aplicação da 
 
 - [X] Mover **descrição das classes** para apêndice
 
-- [ ] Quando fala da classe referenciar o diagrama de classes e o código listado no apêndice, assim leitor poderá verificar o que você esta falando
+- [X] Quando fala da classe referenciar o diagrama de classes e o código listado no apêndice, assim leitor poderá verificar o que você esta falando
 
-- [ ] Maior destaque para o que foi feito e mover parte do como para apêndices
+- [X] Maior destaque para o que foi feito e mover parte do como para apêndices
 
 - [X] Mostrar Figura do software de **Anotação de Regiões de Interesse** e explicar como funciona
 
