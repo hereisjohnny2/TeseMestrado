@@ -143,6 +143,123 @@ Neste capítulo será mostrado o caminho realizado para o desenvolvimento
 \end_layout
 
 \begin_layout Section
+Coleta de Resultados
+\end_layout
+
+\begin_layout Standard
+O processo de coleta dos resultados seguiu o fluxograma mostrado na Figura
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:procedimento-de-coleta-resultados"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ para cada uma das imagens.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../../imagens/imagensCriadas/processo2.png
+	lyxscale 50
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Procedimento de Coleta de Dados para Binarização de Rochas Digitais com
+ Redes Neurais
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:procedimento-de-coleta-resultados"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Uma imagem é inicialmente carregada na Ferramenta de Anotação de Regiões
+ de Interesse e para cada nova região é criada uma camada.
+ Nessas camadas são marcadas os pontos que representam a região na qual
+ serão coletadas as informações dos canais de cores dos pixeis.
+ Assim se encerra coleta de uma determinada área é possível salvar momentaneamen
+te esses dados na Tabela que fica no lado direto da janela do 
+\emph on
+software.
+
+\emph default
+ São criadas quantas camadas forem necessárias e o procedimento é repetido.
+ Para esse trabalho, como já foi explicado anteriormente, são adicionadas
+ apenas uma camada para representar a fase sólida e outra para representar
+ a fase porosa.
+\end_layout
+
+\begin_layout Standard
+Terminada a fase de coleta, os dados da Tabela são salvos e então utilizados
+ para alimentar o 
+\emph on
+script
+\emph default
+ de treinamento da rede neural.
+ O resultado desse treinamento é um arquivo no formato 
+\emph on
+.pt
+\emph default
+ que representa os parâmetros do modelo de inteligência artificial treinado.
+\end_layout
+
+\begin_layout Standard
+Esse arquivo é utilizado então no 
+\emph on
+script
+\emph default
+ que aplica a imagem à rede neural para ser binarizada.
+ O resultado desses processo é a imagem segmentada em fase solida e porosa,
+ e um arquivo de texto contendo a porosidade absoluta obtida e o tempo de
+ execução do modelo.
+\end_layout
+
+\begin_layout Standard
+A seguir são descritos em mais detalhes as funcionalidades e o processo
+ de desenvolvimento dos 
+\emph on
+softwares 
+\emph default
+criados ao longo do trabalho.
+ Para mais detalhes acerca do funcionamento das classes e dos procedimento
+ de como compilar executar esses programas, veja o Apêndice A - Manual do
+ Desenvolvedor.
+\end_layout
+
+\begin_layout Section
 Ferramenta de Anotação de Regiões de Interesse
 \end_layout
 
@@ -1024,7 +1141,7 @@ noprefix "false"
 \end_layout
 
 \begin_layout Itemize
-O sistema de anotaçãoes é feito no código listado em 
+O sistema de anotações é feito no código listado em 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "list: imagedisplaywidget.h"
@@ -4366,7 +4483,7 @@ eval
 \emph on
 apply_binarizarion, 
 \emph default
-que pertante ao módulo da Listagem 
+que pertence ao módulo da Listagem 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "list: image.py"
@@ -4384,111 +4501,6 @@ noprefix "false"
  Calcula-se então a porosidade da imagem amostra que é salvo em um arquivo
  de texto junto com o tempo de execução.
  Por sim, se for o caso, a imagem resultante é salva.
-\end_layout
-
-\begin_layout Section
-Coleta de Resultados
-\end_layout
-
-\begin_layout Standard
-O processo de coleta dos resultados seguiu o fluxograma mostrado na Figura
- 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:procedimento-de-coleta-resultados"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
- para cada uma das imagens.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename ../../imagens/imagensCriadas/processo2.png
-	lyxscale 50
-	width 100text%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Procedimento de Coleta de Dados para Binarização de Rochas Digitais com
- Redes Neurais
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:procedimento-de-coleta-resultados"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Uma imagem é inicialmente carregada na Ferramenta de Anotação de Regiões
- de Interesse e para cada nova região é criada uma camada.
- Nessas camadas são marcadas os pontos que representam a região na qual
- serão coletadas as informações dos canais de cores dos pixeis.
- Assim se encerra coleta de uma determinada área é possível salvar momentaneamen
-te esses dados na Tabela que fica no lado direto da janela do 
-\emph on
-software.
-
-\emph default
- São criadas quantas camadas forem necessárias e o procedimento é repetido.
- Para esse trabalho, como já foi explicado anteriormente, são adicionadas
- apenas uma camada para representar a fase sólida e outra para representar
- a fase porosa.
-\end_layout
-
-\begin_layout Standard
-Terminada a fase de coleta, os dados da Tabela são salvos e então utilizados
- para alimentar o 
-\emph on
-script
-\emph default
- de treinamento da rede neural.
- O resultado desse treinamento é um arquivo no formato 
-\emph on
-.pt
-\emph default
- que representa os parâmetros do modelo de inteligência artificial treinado.
-\end_layout
-
-\begin_layout Standard
-Esse arquivo é utilizado então no 
-\emph on
-script
-\emph default
- que aplica a imagem à rede neural para ser binarizada.
- O resultado desses processo é a imagem segmentada em fase solida e porosa,
- e um arquivo de texto contendo a porosidade absoluta obtida e o tempo de
- execução do modelo.
 \end_layout
 
 \end_body

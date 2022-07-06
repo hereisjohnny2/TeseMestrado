@@ -26,7 +26,7 @@ Por fim, no diretório `resultados` estão os valores obtidos na aplicação da 
 
 ### Sugestões Prof. Basílio
 
-- [ ] Trazer Fluxograma de **Coleta de Resultado** para inicio
+- [X] Trazer Fluxograma de **Coleta de Resultado** para inicio
 
 - [ ] Resumo, apresentar as melhorias que o trabalho trouxe
 
