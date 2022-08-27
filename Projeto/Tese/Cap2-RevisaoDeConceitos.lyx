@@ -2865,8 +2865,8 @@ Um filtro
 \begin_inset Formula $L:S\rightarrow S$
 \end_inset
 
- é considerado linear se as operações naturais de adição e multiplicação
- por um escalar de um sinal forem preservadas, ou seja, 
+ é considerado linear se as operações de adição entre vetores e multiplicação
+ por um escalar de um sinal forem forem respeitadas, ou seja, 
 \begin_inset Formula 
 \begin{equation}
 L(f+g)=L(f)+L(g),\label{eq:filtro-adicao}
@@ -2898,7 +2898,11 @@ onde
 \begin_inset Formula $g$
 \end_inset
 
- representam dois sinais distintos e 
+ representam dois sinais distintos, 
+\begin_inset Formula $L$
+\end_inset
+
+ um filtro aplicado sobre os sinais, e 
 \begin_inset Formula $\lambda$
 \end_inset
 

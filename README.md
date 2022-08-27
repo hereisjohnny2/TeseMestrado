@@ -73,7 +73,7 @@ Por fim, no diretório `resultados` estão os valores obtidos na aplicação da 
 
 - [X] Colocar dimensões no texto e não diretamente na Equação
 
-- [ ] Ver com **Slava** melhor grafia para *"Um filtro L : S → S é considerado linear se as operações naturais de adição e multiplicação por um escalar de um sinal forem preservadas, ou seja,"*
+- [X] Ver com **Slava** melhor grafia para *"Um filtro L : S → S é considerado linear se as operações naturais de adição e multiplicação por um escalar de um sinal forem preservadas, ou seja,"*
 
 - [X] Sempre em maiúsculo: equação -> Equação, figura ->Figura, tabela->Tabela
 
