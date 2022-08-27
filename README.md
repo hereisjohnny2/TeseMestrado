@@ -28,7 +28,7 @@ Por fim, no diretório `resultados` estão os valores obtidos na aplicação da 
 
 - [X] Trazer Fluxograma de **Coleta de Resultado** para inicio
 
-- [ ] Resumo, apresentar as melhorias que o trabalho trouxe
+- [X] Resumo, apresentar as melhorias que o trabalho trouxe
 
 - [ ] Ultrapassar limites de bordas (corrigido na versão final)
 
@@ -57,9 +57,9 @@ Por fim, no diretório `resultados` estão os valores obtidos na aplicação da 
 
 ### Sugestões Prof. Slava
 
-- [ ] Corrigir idioma, deixar em português
+- [X] Corrigir idioma, deixar em português
 
-- [ ] Evitar palavras em inglês como em estocástica/stochastic
+- [X] Evitar palavras em inglês como em estocástica/stochastic
 
 - [X] Trocar a expressão "Representada pela letra" por "Representada pela variável" quando uma nova variável for introduzida
 
@@ -67,7 +67,7 @@ Por fim, no diretório `resultados` estão os valores obtidos na aplicação da 
 
 - [X] Rever referencia de Jr (2017) na pg. 22, já que **Jr** não é sobrenome
 
-- [ ] Verificar pg molhanteSw
+- [X] Verificar pg molhanteSw
 
 - [X] Introduzir as Equações imediatamente após falar sobre a mesma no texto. As Equações devem fazer parte do texto e não serem tratadas como Figuras 
 

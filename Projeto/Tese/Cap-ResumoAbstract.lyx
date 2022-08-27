@@ -237,22 +237,33 @@ Atualmente é cada vez mais comum a aplicação de algorítmos de inteligência
  C++ e QT, foram usadas para treinar redes neurais de diferentes topologias,
  mudando o números de neurônios em cada camada e as funções de ativação
  na saída de cada um desses neurônios.
- Para a construção das redes neurais e execução do treinamento foi utilizada
- a biblioteca PyTorch, desenvolvida pelo 
+ Para a construção e treinamento foi utilizada a biblioteca 
+\emph on
+PyTorch
+\emph default
+, desenvolvida pelo 
 \emph on
 Facebook
 \emph default
- em scripts desenvolvidos em Python.
- Cada uma das sequencias de treinamento e de aplicação do modelo duraram
- em torno de 20 milissegundos.
+ em scripts desenvolvidos em 
+\emph on
+Python
+\emph default
+.
  O software desenvolvido foi utilizado por três grupos diferentes de usuários.
- Grupo 1 - estudantes que acabaram de entrar na universidade, Grupo 2 -
- estudantes de final de curso de engenharia de petróleo e Grupo 3 - geólogos
- com experiência em segmentação de imagens.
- Os resultados obtidos foram analisados e feita comparação dos resultados
- de cada grupo, de forma a identificar também a importância do conhecimento
- das rochas.
- 
+ Grupo 1 - estudantes de graduação, Grupo 2 - estudantes de pós-graduação
+ e Grupo 3 - geólogos com experiência em segmentação de imagens.
+ Como resultado, a duração, tanto do treinamento, quanto a aplicação do
+ modelo duraram na ordem dos milissegundos, o que mostra a capacidade desses
+ algoritmos entregar resultados de forma rápida.
+ Este trabalho também mostra como tecnologias como 
+\emph on
+machine learning
+\emph default
+ podem ser muito uteis na obtenção de valores de porosidade em amostras
+ de rochas reservatórios.
+ Além disso, o uso de ferramentas de anotação tornam o processo de coleta
+ de dados menos tedioso e maçante.
 \begin_inset space ~
 \end_inset
 
@@ -370,6 +381,8 @@ This work aims, through image analysis of oil reservoir rocks, study, simulate
 \end_layout
 
 \begin_layout Standard
+
+\lang english
 Currently, the application of artificial intelligence algorithms in the
  most different technological areas is increasingly common, since they make
  it feasible to perform complex classification and prediction tasks in a
@@ -387,14 +400,18 @@ Currently, the application of artificial intelligence algorithms in the
  For the construction of neural networks and execution of the training,
  the PyTorch library was used, developed by Facebook in scripts developed
  in Python.
- Each of the training and application sequences of the model lasted around
- 20 milliseconds.
  The developed software was used by three different groups of users.
- Group 1 - students who have just entered the university, Group 2 - final
- year students in petroleum engineering and Group 3 - geologists with experience
- in image segmentation.
- The results obtained were analyzed and the results of each group were compared,
- in order to also identify the importance of knowing the rocks.
+ Group 1 - undergraduate students, Group 2 - graduate students and Group
+ 3 - geologists with experience in image segmentation.
+ As a result, the duration of both training and application of the model
+ lasted in the order of milliseconds, which shows the ability of these algorithm
+s to deliver results quickly.
+ This work also shows how technologies such as machine learning can be very
+ useful in obtaining porosity values in samples of reservoir rocks.
+ Additionally, the use of annotation tools can help make the data collection
+ process less tedious and tedious.
+\lang brazilian
+
 \begin_inset space ~
 \end_inset
 
@@ -409,7 +426,10 @@ Currently, the application of artificial intelligence algorithms in the
 
 \series bold
 \size large
-Keywords: 
+\lang english
+Keywords
+\lang brazilian
+: 
 \series default
 \size default
 Neural Networks, Digital Rock, Image Segmentation.

@@ -10026,9 +10026,9 @@ name "list: time_measure.py"
 
 \begin_layout Standard
 \begin_inset listings
-lstparams "language=Python,numbers=left,numberstyle={\footnotesize},basicstyle={\footnotesize\ttfamily},breaklines=true,showstringspaces=false,tabsize=4,extendedchars=true,caption={time_measure.py}"
+lstparams "language=Python,numbers=left,numberstyle={\footnotesize},basicstyle={\footnotesize\ttfamily},breaklines=true,showstringspaces=false,tabsize=4,extendedchars=true,caption={time\_measure.py}"
 inline false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 
