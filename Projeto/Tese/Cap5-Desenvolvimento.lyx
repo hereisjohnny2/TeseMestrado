@@ -173,7 +173,7 @@ status open
 \begin_inset Graphics
 	filename ../../imagens/imagensCriadas/processo2.png
 	lyxscale 50
-	width 100text%
+	width 90text%
 
 \end_inset
 
@@ -1083,7 +1083,7 @@ status collapsed
 \begin_inset Graphics
 	filename ../../imagens/imagensCriadas/tabela-dados1.png
 	lyxscale 50
-	width 100text%
+	width 90text%
 
 \end_inset
 
@@ -1094,7 +1094,7 @@ status collapsed
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Tabela com dados coletados
+Tabela com dados coletados pelo usuário
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:tabela-dados-1"
@@ -3132,14 +3132,14 @@ noprefix "false"
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename ../../imagens/imagensCriadas/exemplo-i26.png
 	lyxscale 50
-	width 100text%
+	width 90text%
 
 \end_inset
 
@@ -3172,14 +3172,14 @@ name "fig:exemplo-berea200"
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename ../../imagens/imagensCriadas/exemplo-berea500.png
 	lyxscale 50
-	width 100text%
+	width 90text%
 
 \end_inset
 
@@ -3212,14 +3212,14 @@ name "fig:exemplo-berea500"
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename ../../imagens/imagensCriadas/exemplo-p140.png
 	lyxscale 50
-	width 100text%
+	width 90text%
 
 \end_inset
 
@@ -3252,14 +3252,14 @@ name "fig:exemplo-p148"
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename ../../imagens/imagensCriadas/exemplo-p240.png
 	lyxscale 50
-	width 100text%
+	width 90text%
 
 \end_inset
 
@@ -3292,14 +3292,14 @@ name "fig:exemplo-p240"
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename ../../imagens/imagensCriadas/exemplo-p262.png
 	lyxscale 50
-	width 100text%
+	width 90text%
 
 \end_inset
 
