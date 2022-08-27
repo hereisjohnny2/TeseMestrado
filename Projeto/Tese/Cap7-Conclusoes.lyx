@@ -368,6 +368,10 @@ status collapsed
 Como resultado, a duração, tanto do treinamento, quanto a aplicação do modelo
  duraram na ordem dos milissegundos, o que mostra a capacidade desses algoritmos
  entregar resultados de forma rápida.
+ Mesmo que tenha sido observadas valores de porosidade distintos entre as
+ amostras de um mesmo grupo e o valor obtido em laboratório era esperado
+ que tal comportamento fosse observado devido a natureza da estrutura de
+ uma rocha reservatório e o processo de coleta das imagens.
 \end_layout
 
 \begin_layout Standard
@@ -474,7 +478,7 @@ github
 \emph default
  do autor
 \begin_inset Foot
-status open
+status collapsed
 
 \begin_layout Plain Layout
 Ferramenta para Anotação de Regiões de Interesse: 

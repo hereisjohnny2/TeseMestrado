@@ -244,14 +244,23 @@ Facebook
 \emph default
  em scripts desenvolvidos em Python.
  Cada uma das sequencias de treinamento e de aplicação do modelo duraram
- em torno de 20 milissegundos.O software desenvolvido foi utilizado por três
- grupos diferentes de usuários.
+ em torno de 20 milissegundos.
+ O software desenvolvido foi utilizado por três grupos diferentes de usuários.
  Grupo 1 - estudantes que acabaram de entrar na universidade, Grupo 2 -
  estudantes de final de curso de engenharia de petróleo e Grupo 3 - geólogos
  com experiência em segmentação de imagens.
  Os resultados obtidos foram analisados e feita comparação dos resultados
  de cada grupo, de forma a identificar também a importância do conhecimento
  das rochas.
+ 
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -393,6 +402,10 @@ Currently, the application of artificial intelligence algorithms in the
 \begin_inset Newline newline
 \end_inset
 
+
+\end_layout
+
+\begin_layout Standard
 
 \series bold
 \size large

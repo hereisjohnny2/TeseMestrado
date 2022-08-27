@@ -101,6 +101,6 @@ Por fim, no diretório `resultados` estão os valores obtidos na aplicação da 
 
 - [X] Verificar a fonte da Figura 12
 
-- [ ] Discutir o fato da informação de porosidade variar de acordo com o método experimental aplicado
+- [X] Discutir o fato da informação de porosidade variar de acordo com o método experimental aplicado
 
-- [ ] Discutir a heterogeneidade das amostras
+- [X] Discutir a heterogeneidade das amostras

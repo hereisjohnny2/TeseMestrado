@@ -14530,5 +14530,74 @@ noprefix "false"
  
 \end_layout
 
+\begin_layout Standard
+Uma questão a ser levada em consideração acerca da heterogeneidade dos resultado
+s de porosidade observados é o fato de existir a mesma heterogeneidade nas
+ próprias amostras coletadas em laboratório.
+ Isso ocorre porque no processo de obtenção das amostras petrográficas,
+ conforme descrito no Capítulo 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:Revisao-de-Conceitos"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, duas lâminas produzidas a partir de secções diferentes de um mesmo testemunho
+ podem possuir topologias completamente diferente, devido a própria natureza
+ estrutural de uma rocha reservatório 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "jones2022effect"
+literal "false"
+
+\end_inset
+
+.
+ Nesses casos os valores de porosidade pouco podem afirmar sobre o resultado
+ da segmentação se analisados de forma independente, servido apenas como
+ um guia para se compreender a natureza da rocha de onde ela foi extraída.
+ 
+\end_layout
+
+\begin_layout Standard
+A analise da forma das regiões de contorno dos grão por sua vez possuem
+ mais relevância nesse caso.
+ Assim, mesmo as imagens que produziram resultados de porosidade próximos
+ do valor obtido em laboratório não necessariamente refletem como um todo
+ a natureza daquela rocha.
+ Trabalhos como os de 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+citeonline{adeleye2022quantitative}
+\end_layout
+
+\end_inset
+
+ e 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+citeonline{jamalian2022toward}
+\end_layout
+
+\end_inset
+
+ mostram maneira de como essa heterogeneidade pode ser quantificada e estudada
+ para se obter um melhor resultado na análise de propriedades petrofísica
+ que estão além do escopo deste trabalho.
+\end_layout
+
 \end_body
 \end_document
