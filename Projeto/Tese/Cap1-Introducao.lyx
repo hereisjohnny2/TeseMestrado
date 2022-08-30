@@ -4,7 +4,7 @@
 \begin_header
 \save_transient_properties true
 \origin unavailable
-\textclass abnt
+\textclass /home2/andreduartebueno/workdir/TeseMestrado/Projeto/Tese/abnt
 \begin_preamble
 \usepackage {graphicx}
 \usepackage {longtable}
@@ -101,11 +101,12 @@
 \papercolumns 1
 \papersides 1
 \paperpagestyle fancy
-\tracking_changes false
+\tracking_changes true
 \output_changes false
 \html_math_output 0
 \html_css_as_file 0
 \html_be_strict false
+\author 1908091853 "andreduartebueno"
 \end_header
 
 \begin_body
@@ -159,7 +160,12 @@ pagenumbering{arabic}
 No presente trabalho desenvolve-se um estudo acerca da aplicação de algoritmos
  de inteligência artificial no processamento de imagens de rochas reservatório.
  Mais especificamente, ele é focado no processo de binarização das mesmas,
- de forma a facilitar a caracterização de propriedades petrofísicas.
+ de forma a facilitar a caracterização de propriedades petrofísicas
+\change_inserted 1908091853 1661893612
+, além de verificar os efeitos da aplicação da metodologia com difetentes
+ tipos de usuários
+\change_unchanged
+.
 \end_layout
 
 \begin_layout Standard
@@ -191,13 +197,36 @@ name "sec:Escopo-do-Problema"
 
 \begin_layout Standard
 É cada vez mais comum a aplicação de algoritmos de inteligência artificial
- nas mais diferentes áreas tecnológica, principalmente na engenharia.
+ nas mais diferentes áreas tecnológica
+\change_inserted 1908091853 1661893626
+s
+\change_unchanged
+, principalmente na engenharia.
  O uso de algoritmos inteligentes torna factível a execução, em um curto
  espaço de tempo, de tarefas complexas de classificação e predição, considerando
  um treinamento prévio realizado por humanos.
  Métodos dessa natureza já haviam sido previstos há décadas, mas somente
  com o aumento exponencial da capacidade de processamento dos computadores
  e a diminuição de seu custo isso tem se tornado possível.
+\change_inserted 1908091853 1661893676
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1661893708
+acho que vale citar que na última década houve um crescimento muito grande
+ das técnicas de IA [com referencias]
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+
 \end_layout
 
 \begin_layout Standard
@@ -205,17 +234,48 @@ O uso dessas metodologias se torna muito pertinente na geologia, na petrofísica
  e em especial na engenharia de reservatórios, uma vez que a capacidade
  de prever e delimitar a capacidade produtiva do reservatório é essencial
  no âmbito econômico.
- Ter conhecimento das propriedades físicas das rochas, como porosidade e
- permeabilidade, ajudam nesse processo, já que são parâmetros essenciais
- na simulação e predição da capacidade produtiva dos reservatórios, além
- de trazer informações importantes acerca das heterogeneidades que formam
- tais estruturas.
+ Ter conhecimento das propriedades físicas das rochas, como porosidade
+\change_inserted 1908091853 1661893771
+,
+\change_deleted 1908091853 1661893770
+ e
+\change_unchanged
+ permeabilidade
+\change_inserted 1908091853 1661893800
+, fatores de forma, e tortuosidade
+\change_unchanged
+, ajudam nesse processo, já que são parâmetros essenciais na simulação e
+ predição da capacidade produtiva dos reservatórios, além de trazer informações
+ importantes acerca das heterogeneidades que formam tais estruturas.
  Métodos como análise petrofísica de testemunhos são extremamente úteis
- nesses aspecto, muitas vezes demandam um custo muito alto para serem realizadas
- devido aos equipamentos utilizados no processo, como porosímetro e permeâmetro,
- mas principalmente devido o custo para obter as amostras.
+ nesses aspecto
+\change_inserted 1908091853 1661893818
+s
+\change_unchanged
+, muitas vezes demandam um custo muito alto para serem realizadas devido
+ aos equipamentos utilizados no processo, como porosímetro e permeâmetro,
+ mas principalmente devido o custo para obter 
+\change_deleted 1908091853 1661893844
+as 
+\change_unchanged
+amostras
+\change_inserted 1908091853 1661893848
+ cilíndricas
+\change_unchanged
+.
  Além disso alguns desses ensaios são destrutivos, logo, o objeto de estudo
- é perdido depois que o estudo é concluído.
+ é perdido depois que o 
+\change_deleted 1908091853 1661893868
+estudo
+\change_inserted 1908091853 1661893868
+ensaio
+\change_unchanged
+ é concluído.
+
+\change_inserted 1908091853 1661893884
+ Como exemplo a porosimetria a mercúrio.
+\change_unchanged
+
 \end_layout
 
 \begin_layout Standard
@@ -310,7 +370,19 @@ O processo se inicia com a aquisição da amostra, seja um testemunho ou uma
  As imagens das rochas nesse caso são produzidas em um microscópio óptico
  ou eletrônico a partir das lâminas obtidas após o polimento.
  A partir desse ponto todo o procedimento passa a ser realizado no computador,
- onde as imagens passam por uma etapa crítica de processamento.
+ onde as imagens passam por 
+\change_deleted 1908091853 1661894564
+uma
+\change_unchanged
+ etapa
+\change_inserted 1908091853 1661894566
+s
+\change_unchanged
+ 
+\change_deleted 1908091853 1661894567
+crítica
+\change_unchanged
+ de processamento.
  Primeiramente, no pré-processamento, alguns problemas podem ser corrigidos
  por meio de filtros.
  Todavia alguns métodos de pré-processamento podem acabar afetando, em alguns
@@ -332,17 +404,42 @@ cite{leu2014fast}
 \end_layout
 
 \begin_layout Standard
-Logo depois, na segmentação, o objetivo é, na maioria dos casos, separar
- a fase porosa da fase granular.
+Logo depois, na segmentação, o objetivo é, na maioria dos casos
+\change_inserted 1908091853 1661894617
+ aplicados a engenharia de reservatórios
+\change_unchanged
+, separar a fase porosa da fase granular.
  Em muitos casos são utilizadas técnicas que limitam o nível de cinza em
  uma imagem controlando o 
 \emph on
 thresholding
+\change_inserted 1908091853 1661894631
+
 \emph default
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1661894658
+já foi definido o que é? se não precisa definir aqui; pode colocar nota
+ de rodapé
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
 .
  Contudo em estruturas com geometrias mais complexas esses métodos em geral
- não trazem bons resultados sozinhos e acabam dependendo de etapas adicionais
- 
+ não trazem bons resultados 
+\change_deleted 1908091853 1661894673
+sozinhos
+\change_unchanged
+ e acabam dependendo de etapas adicionais 
 \begin_inset ERT
 status open
 
@@ -359,8 +456,13 @@ cite{iassonov2009segmentation}
 \end_layout
 
 \begin_layout Standard
-São vários os fatores que podem afetar a qualidade da etapa de segmentação,
- entre eles:
+São vários os fatores que podem afetar a qualidade 
+\change_inserted 1908091853 1661894769
+dos parâmetros a serem medidos
+\change_deleted 1908091853 1661894778
+da etapa de segmentação
+\change_unchanged
+, entre eles:
 \end_layout
 
 \begin_layout Enumerate
@@ -539,8 +641,13 @@ Objetivos específicos:
 
 \begin_deeper
 \begin_layout Itemize
-Estudar diferentes métodos de aprendizagem de maquina e aprendizagem profundas
- aplicadas à análise de imagens.
+Estudar diferentes métodos de aprendizagem de m
+\change_deleted 1908091853 1661895062
+a
+\change_inserted 1908091853 1661895062
+á
+\change_unchanged
+quina e aprendizagem profundas aplicadas à análise de imagens.
 \end_layout
 
 \begin_layout Itemize
@@ -651,7 +758,11 @@ Desenvolvimento
 
 , é mostrado o caminho realizado para o desenvolvimento da ferramenta de
  anotação de regiões, a coleta dos dados a partir das imagens obtidas em
- laboratório, e dos os 
+ laboratório
+\change_deleted 1908091853 1661895143
+,
+\change_unchanged
+ e dos os 
 \emph on
 scripts
 \emph default
@@ -694,7 +805,25 @@ Manual do Desenvolvedor
 \begin_inset Quotes erd
 \end_inset
 
-, são apresentados os códigos-fonte desenvolvidos para o projeto.
+, são apresentados os códigos-fonte desenvolvidos para o projeto
+\change_inserted 1908091853 1661895171
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1661895185
+e instruções para modificação?
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+.
 \end_layout
 
 \begin_layout Standard
@@ -706,7 +835,17 @@ Manual do Usuário
 \begin_inset Quotes erd
 \end_inset
 
-, são mostrados os manuais de utilização dos programas desenvolvidos.
+, 
+\change_deleted 1908091853 1661895201
+são mostrados os manuais
+\change_inserted 1908091853 1661895204
+é o manual
+\change_unchanged
+ de 
+\change_inserted 1908091853 1661895208
+instalação e 
+\change_unchanged
+utilização dos programas desenvolvidos.
 \end_layout
 
 \end_body
