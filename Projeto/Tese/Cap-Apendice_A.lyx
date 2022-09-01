@@ -4,7 +4,7 @@
 \begin_header
 \save_transient_properties true
 \origin unavailable
-\textclass abnt
+\textclass /home2/andreduartebueno/workdir/TeseMestrado/Projeto/Tese/abnt
 \begin_preamble
 \usepackage {graphicx}
 \usepackage {longtable}
@@ -108,11 +108,12 @@
 \papercolumns 1
 \papersides 1
 \paperpagestyle fancy
-\tracking_changes false
+\tracking_changes true
 \output_changes false
 \html_math_output 0
 \html_css_as_file 0
 \html_be_strict false
+\author 1908091853 "andreduartebueno"
 \end_header
 
 \begin_body
@@ -140,8 +141,15 @@ thepage}
 
 \end_inset
 
-Este apêndice descreve os códigos-fontes desenvolvidos para o a criação
- da ferramenta de anotação de regiões de interesse e dos 
+Este apêndice descreve os códigos-fontes desenvolvidos para 
+\change_deleted 1908091853 1662036892
+o 
+\change_unchanged
+a criação da ferramenta de anotação de regiões de interesse e 
+\change_deleted 1908091853 1662036901
+d
+\change_unchanged
+os 
 \emph on
 scripts
 \emph default
@@ -178,10 +186,63 @@ thepage}
 \end_layout
 
 \begin_layout Section
-Ferramenta de Aquisição de Regiões de Interesse
+Ferramenta de 
+\change_deleted 1908091853 1662036879
+Aquisição
+\change_inserted 1908091853 1662037424
+Anotação
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1662037447
+mantenha o nome usado no trabalho ou mude em todo ele; evite dois nomes
+ com o mesmo fim
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+ de Regiões de Interesse
+\change_inserted 1908091853 1662037155
+
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Ferramenta-de-AnotaçãoDeRegioes"
+
+\end_inset
+
+
+\change_unchanged
+
 \end_layout
 
 \begin_layout Standard
+
+\change_inserted 1908091853 1662037326
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1662037412
+Comece explicando o que este software vai fazer; pode replicar aqui apenas
+ a primeira parte da figura 5.1; destacando que o resultado são grupos de
+ píxeis para treinamento de redes neurais.
+ Fale do formato do arquivo de entrada e do arquivo de saída; mostre exemplo
+ de arquivo de saída.
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
 Para facilitar o processo de desenvolvimento, todos os códigos fontes do
  projeto podem ser baixados em 
 \begin_inset CommandInset href

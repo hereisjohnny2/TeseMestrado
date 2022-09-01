@@ -1960,6 +1960,34 @@ com valores de intensidade mais bem distribuídos.
 \end_layout
 
 \begin_layout Standard
+
+\change_inserted 1908091853 1662034619
+Uma das grandes dificuldades práticas no trabalho 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1662034434
+
+
+\backslash
+citeonline{rego2010desenvolvimento}
+\end_layout
+
+\end_inset
+
+ foi a marcação dos píxeis que compunham as fases sólida e porosa, pois
+ cada píxel era anotado individualmente e então usado para alimentar um
+ software externo.
+ Isto se mostrou tedioso, mas, principalmente, sujeito a um baixo número
+ de amostras.
+ Seria muito mais prático se estivesse disponível uma ferramenta de marcação
+ que possibilita-se a coleta de informações de grupos de píxeis usando.
+ 
+\end_layout
+
+\begin_layout Standard
 Neste trabalho serão utilizadas outras funções que buscam evitar, ou pelo
  menos mitigar, os problemas listados acima.
  A ideia será buscar meios de se evitar que o problema do 
