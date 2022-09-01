@@ -4,7 +4,7 @@
 \begin_header
 \save_transient_properties true
 \origin unavailable
-\textclass abnt
+\textclass /home2/andreduartebueno/workdir/TeseMestrado/Projeto/Tese/abnt
 \begin_preamble
 \usepackage {graphicx}
 \usepackage {longtable}
@@ -117,11 +117,12 @@
 \papercolumns 1
 \papersides 1
 \paperpagestyle fancy
-\tracking_changes false
+\tracking_changes true
 \output_changes false
 \html_math_output 0
 \html_css_as_file 0
 \html_be_strict false
+\author 1908091853 "andreduartebueno"
 \end_header
 
 \begin_body
@@ -176,7 +177,11 @@ Neste capítulo é apresentada uma revisão bibliográfica dos trabalhos, técni
 \end_layout
 
 \begin_layout Section
-Segmentação de Imagens Amostras de Rochas
+Segmentação de Imagens 
+\change_inserted 1908091853 1662030439
+de 
+\change_unchanged
+Amostras de Rochas
 \end_layout
 
 \begin_layout Standard
@@ -195,9 +200,12 @@ citeonline{lin2018new}
 
  é proposta uma nova metodologia para segmentação de imagens de rochas baseadas
  na porosidade, calculada como limitador para obter o melhor valor de limiar.
- Dessa forma é levado em consideração características petrofísicas da amostras,
- o que ajuda na obtenção de resultados mais próximos da realidade quando
- se trata de segmentação.
+ Dessa forma é levado em consideração características petrofísicas da
+\change_inserted 1908091853 1662030468
+s
+\change_unchanged
+ amostras, o que ajuda na obtenção de resultados mais próximos da realidade
+ quando se trata de segmentação.
  
 \begin_inset Note Note
 status collapsed
@@ -323,8 +331,25 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Imagem binarizada do arenito usando método comum para o cálculo da porosidade
- 
+Imagem binarizada do arenito usando método comum
+\change_inserted 1908091853 1662030509
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1662030520
+método comum é vago? se souber o nome coloque
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+ para o cálculo da porosidade 
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:imagem-ct-lin-1"
@@ -428,8 +453,13 @@ citeonline{rubo2019digital}
 
  foi possível a geração de modelos de classificação mineralógica dos grãos
  presentes em amostras de rochas da secção do pré-sal, na bacia de Santos,
- por meio da utilização de redes neurais artificiais e algorítmos de florestas
- aleatórias
+ por meio da utilização de redes neurais artificiais e 
+\change_inserted 1908091853 1662030616
+algoritmo
+\change_deleted 1908091853 1662030616
+algorítmo
+\change_unchanged
+s de florestas aleatórias
 \begin_inset Note Note
 status collapsed
 
@@ -446,7 +476,13 @@ você precisa explicar este algoritmo de florestas no capítulo de revisão
  eles o filtro gaussiano, sobel, hessiano e diferença de gaussianas.
  As redes neurais desenvolvidas utilizaram três camadas profundas com 45
  neurônios cada, função logística como função de ativação e gradiente descendent
-e estocástico como algorítmo de aprendizagem.
+e estocástico como 
+\change_inserted 1908091853 1662030616
+algoritmo
+\change_deleted 1908091853 1662030616
+algorítmo
+\change_unchanged
+ de aprendizagem.
  Os modelos foram validados utilizando o teste de validação cruzada 
 \begin_inset Quotes eld
 \end_inset
@@ -526,6 +562,31 @@ poro
  Além disso os autores identificaram que os modelos criados confundiram
  bolhas em regiões porosas como fase sólida e dolomita como outros minerais,
  e tiveram dificuldade de classificar poros com presença de materiais argilosos.
+\change_inserted 1908091853 1662030734
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1662030785
+se tiver imagem de entrada e imagem com resultado obtido neste artigo coloque
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1662030765
+Veja Figura XX e abaixo a figura.
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+
 \end_layout
 
 \begin_layout Section
@@ -546,15 +607,24 @@ citeonline{alqahtani2018deep}
 \end_inset
 
  propõe uma abordagem baseada em redes neurais convolucionais para prever
- de forma rápida propriedades relacionadas aos meios porosos a partir de
- um 
+\change_inserted 1908091853 1662030901
+,
+\change_unchanged
+ de forma rápida
+\change_inserted 1908091853 1662030904
+,
+\change_unchanged
+ propriedades relacionadas aos meios porosos a partir de um 
 \emph on
 dataset
 \emph default
  composto por 7860 imagens 2D em escala de cinza formadas por regiões de
  interesse de 128 x 128 pixeis de microtomografias.
- Essas imagens representavam amostra de 3 tipos de arenitos diferentes:
- 
+ Essas imagens representavam amostra
+\change_inserted 1908091853 1662030924
+s
+\change_unchanged
+ de 3 tipos de arenitos diferentes: 
 \emph on
 Bentheimer, Berea 
 \emph default
@@ -570,12 +640,55 @@ As imagens foram submetidas à um processo de segmentação para diferenciar
 Otsu.
 
 \emph default
- Em seguida, a rede de poros foi extraída utilizando-se o algorítmo de 
+ Em seguida, a rede de poros foi extraída utilizando-se o 
+\change_inserted 1908091853 1662030616
+algoritmo
+\change_deleted 1908091853 1662030616
+algorítmo
+\change_unchanged
+ de 
 \emph on
 watershead
+\change_inserted 1908091853 1662030946
+
 \emph default
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1662030954
+(descrito brevemente na seção xx)
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
 .
  Assim, foram extraídos os valores de porosidade, número de coordenação
+\change_inserted 1908091853 1662030980
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1662031034
+não lembro de ter definido o que é o número de coordenação; deve ser feito
+ na primeira menção ou referenciar livro que explique, como livros da teoria
+ da percolação
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
  e tamanho médio de poro de cada uma das amostras.
  O passo seguinte foi separar os conjuntos de treino (5680 imagens) e validação
  (2180 imagens), que foram utilizados para alimentar a rede neural em 
@@ -648,10 +761,46 @@ ReLU,
 normalização e 
 \emph on
 max pooling
+\change_inserted 1908091853 1662031110
+
 \emph default
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1662031136
+max pooling já foi definido e explicado?
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
 ; uma camada para as operações de 
 \emph on
-flattening, 
+flattening
+\change_inserted 1908091853 1662031147
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1662031148
+já foi definido e explicado?
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+, 
 \emph default
 ativação com 
 \emph on
@@ -660,7 +809,25 @@ ReLU
 e 
 \emph on
 dropout
+\change_inserted 1908091853 1662031155
+
 \emph default
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1662031156
+já foi definido e explicado?
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
 ; e uma última camada com a informação sobre a propriedade física.
  A Figura 
 \begin_inset CommandInset ref
@@ -673,6 +840,25 @@ noprefix "false"
 \end_inset
 
  ilustra a metodologia utilizada pelos autores.
+\change_inserted 1908091853 1662031199
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1662031237
+ou apresenta os conceitos, explica e mantem como esta; ou diz algo como
+ "maiores detalhes dos termos e aplicação na referência xxx".
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+
 \end_layout
 
 \begin_layout Standard
@@ -739,7 +925,7 @@ literal "false"
 Como resultado, o modelo foi capaz de estimar os valores de porosidade,
  número de coordenação
 \begin_inset Foot
-status collapsed
+status open
 
 \begin_layout Plain Layout
 O número de coordenação pode ser definido como a quantidade de gargantas
@@ -752,6 +938,24 @@ literal "false"
 \end_inset
 
 .
+\change_inserted 1908091853 1662031291
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1662031306
+mova para local onde cita o número de coordenação pela 1x
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+
 \end_layout
 
 \end_inset
@@ -859,7 +1063,15 @@ Estaillades
 \emph on
 Savonnieres
 \emph default
-, e arenito 
+, e 
+\change_inserted 1908091853 1662031437
+os 
+\change_unchanged
+arenito
+\change_inserted 1908091853 1662031434
+s
+\change_unchanged
+ 
 \emph on
 Berea
 \emph default
@@ -898,7 +1110,27 @@ Google
  para a resolução de problemas de classificação e extração de atributos
  chamado 
 \emph on
-Inception V3,
+Inception V3
+\change_inserted 1908091853 1662031743
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1662031751
+
+\emph on
+link para site que descreve
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+,
 \emph default
  cuja estrutura é mostrada na Figura 
 \begin_inset CommandInset ref
@@ -924,7 +1156,25 @@ softmax
  Estimou-se então os valores de porosidade das imagens de entrada com resolução
  de 299 x 299 pixeis.
  Os testes foram feitos utilizando um conjunto de 1200 imagens, 300 para
- cada classe, e foi obtido um resultado de 100% para todas as amostras.
+ cada classe, e foi obtido um resultado
+\change_inserted 1908091853 1662031800
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1662031803
+do que?
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+ de 100% para todas as amostras.
  Ou seja, o modelo se tornou capaz de distinguir entre qualquer um dos tipos
  de rocha utilizada.
 \end_layout
@@ -953,7 +1203,11 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Arquitetura da Inception V3(
+Arquitetura da 
+\emph on
+Inception V3
+\emph default
+(
 \emph on
 Google Codelabs
 \emph default
@@ -1539,10 +1793,22 @@ citeonline{rubo2019digital}
 
 \end_inset
 
- poderia ser feita uma tentativa de ser treinar a base de dado utilizando
- outras funções de ativação como ReLU e softmax, que já se mostraram bastante
- proeminentes em outros trabalhos envolvendo redes convolucionais e visão
- computacional.
+ poderia ser feita uma tentativa de 
+\change_deleted 1908091853 1662031955
+ser
+\change_unchanged
+ treinar a base de dado utilizando outras funções de ativação como ReLU
+ e softmax, que já se mostraram bastante proeminentes
+\change_inserted 1908091853 1662031987
+, conforme apresentado
+\change_unchanged
+ em 
+\change_deleted 1908091853 1662031992
+outros 
+\change_inserted 1908091853 1662031992
+ 
+\change_unchanged
+trabalhos envolvendo redes convolucionais e visão computacional.
  A função escolhida (função logística ou 
 \emph on
 sigmoid
@@ -1656,8 +1922,13 @@ name "fig:sigmoid-derivada"
 \end_layout
 
 \begin_layout Standard
-Outros algorítmos de aprendizagem, além do gradiente descendente estocástico
- (
+Outros 
+\change_inserted 1908091853 1662030616
+algoritmo
+\change_deleted 1908091853 1662030616
+algorítmo
+\change_unchanged
+s de aprendizagem, além do gradiente descendente estocástico (
 \emph on
 Stocastic Gradient Descendent
 \emph default
@@ -1675,9 +1946,13 @@ citeonline{alqahtani2018deep}
 
 \end_inset
 
- se mostrou bem sucedido nesse aspecto, todavia ainda foram observadas dificulda
-des no que se diz respeito a anomalias provocadas por minerais de brilho
- mais intenso, algo que poderia ser melhorado se fosse utilizado um 
+ se mostrou bem sucedido nesse aspecto, todavia
+\change_inserted 1908091853 1662032076
+,
+\change_unchanged
+ ainda foram observadas dificuldades no que se diz respeito a anomalias
+ provocadas por minerais de brilho mais intenso, algo que poderia ser melhorado
+ se fosse utilizado um 
 \emph on
 dataset 
 \emph default
@@ -1692,6 +1967,18 @@ Neste trabalho serão utilizadas outras funções que buscam evitar, ou pelo
 vanishing gradient
 \emph default
  possa afetar os resultados e principalmente o tempo de processamento.
+\change_inserted 1908091853 1662032101
+
+\end_layout
+
+\begin_layout Standard
+
+\change_inserted 1908091853 1662032160
+Também notou-se a falta de análises no que se refere a pessoa que faz o
+ treinamento da rede.
+ Neste trabalho faremos uma breve análise deste fator.
+\change_unchanged
+
 \end_layout
 
 \end_body
