@@ -4,7 +4,7 @@
 \begin_header
 \save_transient_properties true
 \origin unavailable
-\textclass abnt
+\textclass /home2/andreduartebueno/workdir/TeseMestrado/Projeto/Tese/abnt
 \begin_preamble
 \usepackage {graphicx}
 \usepackage {longtable}
@@ -106,11 +106,12 @@
 \papercolumns 1
 \papersides 1
 \paperpagestyle fancy
-\tracking_changes false
+\tracking_changes true
 \output_changes false
 \html_math_output 0
 \html_css_as_file 0
 \html_be_strict false
+\author 1908091853 "andreduartebueno"
 \end_header
 
 \begin_body
@@ -244,7 +245,19 @@ name "fig:janela-principal-marcacao"
 \end_layout
 
 \begin_layout Enumerate
-Lista de Imagens: Guarda todas a imagens abertas na área de trabalho;
+Lista de Imagens: 
+\change_deleted 1908091853 1662297534
+Guarda
+\change_inserted 1908091853 1662297535
+Lista
+\change_unchanged
+ 
+\change_deleted 1908091853 1662297538
+todas a
+\change_inserted 1908091853 1662297538
+das
+\change_unchanged
+ imagens abertas na área de trabalho;
 \end_layout
 
 \begin_layout Enumerate
@@ -255,6 +268,10 @@ Lista de Regiões: Mostra as regiões que estão atualmente sendo marcadas
 \begin_layout Enumerate
 Sub-Janela de Imagem: Janela que é aberta na área de trabalho quando uma
  imagem é carregada;
+\change_inserted 1908091853 1662297594
+ permite visualizar as regiões demarcadas.
+\change_unchanged
+
 \end_layout
 
 \begin_layout Enumerate
@@ -273,12 +290,28 @@ Arquivos: Ações relacionadas à abrir uma nova imagem, exportar para um arquiv
 \end_layout
 
 \begin_layout Enumerate
-Imagem: Ações relacionadas criar ou remover uma nova região de interesse,
- e ajustar o tamanho do pincel;
+Imagem: Ações relacionadas 
+\change_inserted 1908091853 1662297640
+a 
+\change_unchanged
+criar ou remover uma nova região de interesse
+\change_deleted 1908091853 1662297655
+,
+\change_inserted 1908091853 1662297658
+.
+ Também permite
+\change_deleted 1908091853 1662297659
+ e
+\change_unchanged
+ ajustar o tamanho do pincel;
 \end_layout
 
 \begin_layout Enumerate
-Exibir: Mostra ou fechar a lista de imagens e a tabela de dados;
+Exibir: Mostra
+\change_inserted 1908091853 1662297665
+r
+\change_unchanged
+ ou fechar a lista de imagens e a tabela de dados;
 \end_layout
 
 \end_deeper
@@ -307,7 +340,7 @@ noprefix "false"
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -501,7 +534,13 @@ delete
 
 \end_deeper
 \begin_layout Enumerate
-Utilize o mouse, com o botão esquerdo pressionada pra iniciar a marcação:
+Utilize o mouse, com o botão esquerdo pressionad
+\change_deleted 1908091853 1662297779
+a
+\change_inserted 1908091853 1662297779
+o
+\change_unchanged
+ pra iniciar a marcação:
 \end_layout
 
 \begin_deeper
@@ -702,7 +741,29 @@ name "fig:usage-5"
 \end_deeper
 \end_deeper
 \begin_layout Enumerate
-Envie os dados pra da Tabela de Dados pra uma pré-visualização:
+Envie os dados pra
+\change_deleted 1908091853 1662297870
+ da
+\change_unchanged
+ Tabela de Dados pra uma pré-visualização:
+\change_inserted 1908091853 1662297873
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1662297877
+verifique o texto
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+
 \end_layout
 
 \begin_deeper
@@ -852,7 +913,7 @@ no teclado:
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -899,7 +960,11 @@ Interface de Linha de Comando para Treinamento e Aplicação de Modelos de
 \begin_layout Standard
 A interface de linha de comando, ou apenas 
 \emph on
-CLI 
+CLI
+\change_inserted 1908091853 1662297987
+,
+\change_unchanged
+ 
 \emph default
 foi desenvolvida em python para poder realizar os procedimentos de treinamento
  e aplicação dos modelos de redes neurais.

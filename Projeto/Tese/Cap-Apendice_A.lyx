@@ -120,6 +120,17 @@
 
 \begin_layout Chapter
 Manual do Desenvolvedor
+\change_inserted 1908091853 1662039689
+
+\begin_inset CommandInset label
+LatexCommand label
+name "chap:Manual-do-Desenvolvedor"
+
+\end_inset
+
+
+\change_unchanged
+
 \end_layout
 
 \begin_layout Standard
@@ -160,7 +171,13 @@ Machine Learning,
 além disso são mostrados os diagramas de classe e instruções de como compilar
  e executar ambos projetos.
  Cada classe tem uma breve descrição de seu funcionamento para facilitar
- no processo de compreensão.
+ 
+\change_deleted 1908091853 1662295547
+no processo de
+\change_inserted 1908091853 1662295547
+a
+\change_unchanged
+ compreensão.
 \end_layout
 
 \begin_layout Standard
@@ -289,6 +306,30 @@ literal "true"
 
 \end_layout
 
+\begin_layout Standard
+
+\change_inserted 1908091853 1662295683
+A versão do software de anotação desenvolvido, utilizada nos testes e simulações
+ apresentados nesta dissertação usou QT6 na sua versão X.X.X e CMAKE na sua
+ versão X.X.X.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1662295736
+Sempre que temos resultados que são obtidos e analisados é preciso informar
+ as versões exatas dos sotfwares utilizados; pois software pode apresentar
+ bugs e uma nova versão pode mutdar resultados.
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
 Compilando e Executando o Projeto
 \end_layout
@@ -298,7 +339,11 @@ A compilação do projeto é feita utilizando a ferramenta
 \emph on
 CMake 
 \emph default
-para gerar o 
+para gerar o
+\change_inserted 1908091853 1662295788
+s
+\change_unchanged
+ 
 \emph on
 makefiles
 \emph default
@@ -600,6 +645,59 @@ $ ./rock_image_cpp
 \end_deeper
 \begin_layout Subsection
 Diagrama de Classes
+\change_inserted 1908091853 1662296382
+
+\end_layout
+
+\begin_layout Standard
+
+\change_inserted 1908091853 1662296383
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1662296586
+pelo diagrama um ColorDialog é herdeiro de QDialog e tem um RockImageUI?
+ (simbolo de agregação!)
+\end_layout
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1662296605
+tem de corrigir o diagrama;
+\end_layout
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1662296629
+sugiro deixar, entre ColorDialog e RockImageUI uma associação simples.
+\end_layout
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1662296697
+O mesmo pra PixelDataTable, CustomMessageDialog,RGBLayer;
+\end_layout
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1662296737
+Talvez vc tenha invertido a posição do símbolo de agregação;
+\end_layout
+
+\begin_layout Plain Layout
+
+\change_inserted 1908091853 1662296764
+Se RockImageUI tem um ColorDialog, o losango da agregação fica ligado a
+ classe RockImageUI
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+
 \end_layout
 
 \begin_layout Standard
@@ -607,7 +705,7 @@ Diagrama de Classes
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \noindent
@@ -650,6 +748,10 @@ name "fig:Diagrama-de-classes-anot"
 \end_layout
 
 \begin_layout Subsection
+
+\change_inserted 1908091853 1662296860
+Classe 
+\change_unchanged
 RockImageUI
 \end_layout
 
@@ -684,7 +786,11 @@ cpp
  dependentes de QT.
  Como os arquivos .h e .cpp gerados contém instruções específicas de QT, eles
  precisam passar por um pré-processamento.
- Isto é feito usando o compilador MOC - Meta Object Compiler, de QT
+ Isto é feito usando o compilador MOC - 
+\emph on
+Meta Object Compiler
+\emph default
+, de QT
 \begin_inset Foot
 status open
 
@@ -5088,6 +5194,10 @@ status collapsed
 \end_layout
 
 \begin_layout Subsection
+
+\change_inserted 1908091853 1662296865
+Classe 
+\change_unchanged
 CustomMessageDialogs
 \end_layout
 
@@ -5250,6 +5360,10 @@ bool CustomMessageDialogs::Question(QWidget *parent, const QString &title,
 \end_layout
 
 \begin_layout Subsection
+
+\change_inserted 1908091853 1662296868
+Classe 
+\change_unchanged
 ColorDialog
 \end_layout
 
@@ -5689,6 +5803,10 @@ void ColorDialog::createColorInput(const QString &label) {
 \end_layout
 
 \begin_layout Subsection
+
+\change_inserted 1908091853 1662296869
+Classe 
+\change_unchanged
 PixelDataTable
 \end_layout
 
@@ -6036,6 +6154,10 @@ void PixelDataTable::addCell(int column, const QString& value) {
 \end_layout
 
 \begin_layout Subsection
+
+\change_inserted 1908091853 1662296870
+Classe 
+\change_unchanged
 ImageDisplayWidget
 \end_layout
 
@@ -7171,6 +7293,10 @@ rmation);
 \end_layout
 
 \begin_layout Subsection
+
+\change_inserted 1908091853 1662296872
+Classe 
+\change_unchanged
 ImageDisplaySubWindow
 \end_layout
 
@@ -9678,7 +9804,11 @@ network.py
 \end_layout
 
 \begin_layout Standard
-Pacote de funções para execução do treinamento e do teste da rede neural:
+Pacote de funções para execução do treinamento e 
+\change_deleted 1908091853 1662297318
+do 
+\change_unchanged
+teste da rede neural:
 \end_layout
 
 \begin_layout Itemize
@@ -9716,7 +9846,11 @@ de cada um dos valores de RGB do
 \emph on
 batch 
 \emph default
-por meio de uma função de perda do PyTorch denominada de 
+por meio de uma função de perda do PyTorch denominada 
+\change_deleted 1908091853 1662297349
+de
+\change_unchanged
+ 
 \emph on
 nll_loss
 \emph default
