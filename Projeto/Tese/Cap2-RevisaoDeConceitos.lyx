@@ -87,7 +87,6 @@
 \html_math_output 0
 \html_css_as_file 0
 \html_be_strict false
-\author 1908091853 "andreduartebueno"
 \end_header
 
 \begin_body
@@ -143,11 +142,8 @@ Este capítulo apresenta um conjunto de conceitos e modelos desenvolvidos
 status open
 
 \begin_layout Plain Layout
-você precisa copiar todos os termos aqui definidos para a nomenclatura
-\change_inserted 1908091853 1661895279
-; e apagar o que não foi utilizado na nomenclatura antiga
-\change_unchanged
-
+você precisa copiar todos os termos aqui definidos para a nomenclatura;
+ e apagar o que não foi utilizado na nomenclatura antiga
 \end_layout
 
 \end_inset
@@ -428,6 +424,10 @@ literal "false"
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset Note Note
+status collapsed
+
 \begin_layout Subsection
 Saturação
 \begin_inset Index idx
@@ -440,43 +440,32 @@ Saturação
 \end_inset
 
 
-\change_inserted 1908091853 1661895351
-
 \begin_inset Note Note
 status open
 
 \begin_layout Plain Layout
-
-\change_inserted 1908091853 1661896566
 como não usa saturação/capilaridade/permeabilidade poderia pensar em retirar
  ou colocar estes itens num apêndice "Propriedades de Rochas Reservatório";
- 
 \end_layout
 
 \begin_layout Plain Layout
-
-\change_inserted 1908091853 1661895450
 pense em falar mais de porosidade a partir de imagens e quais fatores afetam
  a qualidade desta medida quando obtida a partir de imagens...
-\change_unchanged
-
 \end_layout
 
 \end_inset
 
 
-\change_unchanged
-
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 A saturação é definida como a fração de volume poroso ocupado por um fluido
  em particular.
  No caso de reservatórios, normalmente se observa água, gás ou óleo.
  Expressando de forma matemática o que se tem é:
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Formula 
 \begin{equation}
 S_{fluido}=\frac{V_{fluido}}{V_{poroso}}.\label{eq: saturação}
@@ -487,7 +476,7 @@ S_{fluido}=\frac{V_{fluido}}{V_{poroso}}.\label{eq: saturação}
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 De acordo com 
 \begin_inset ERT
 status open
@@ -519,7 +508,7 @@ citeonline{dake1983fundamentals}
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Define-se como a saturação de água existente no reservatório, no momento
  de sua descoberta, como a saturação de água inicial, inata ou conata 
 \begin_inset Formula $S_{wi}$
@@ -558,7 +547,7 @@ noprefix "false"
 :
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Formula 
 \begin{equation}
 S_{o}=\left(1-\frac{N_{p}}{N}\right)\frac{B_{o}}{B_{oi}}(1-S_{wi}),\label{eq:Saturação Média do Óleo}
@@ -619,7 +608,7 @@ Tensão Superficial
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 A capilaridade é um fenômeno observado no interior de meios porosos em decorrênc
 ia da presença de 2 ou mais fluidos, imiscíveis, ocupando o mesmo espaço
  vazio.
@@ -637,7 +626,7 @@ literal "false"
  de separação entre eles, o que provoca a formação de uma zona de transição.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 A capilaridade é resultado das interações entre as moléculas dos fluidos,
  que tendem a ser atraídas em todas às direções pelas moléculas que às cercam,
  exceto se estiverem na superfície.
@@ -645,13 +634,13 @@ A capilaridade é resultado das interações entre as moléculas dos fluidos,
  a separação.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Em um reservatório o estado de equilíbrio é governado por mecanismos de
  capilaridade, entre eles a molhabilidade, a tensão interfacial entre fluidos
  e a pressão capilar nos poros.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 A molhabilidade
 \begin_inset Index idx
 status open
@@ -694,7 +683,7 @@ noprefix "false"
  ilustra esse fenômeno para o caso da mistura de água e óleo.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Float figure
 placement H
 wide false
@@ -748,7 +737,7 @@ literal "false"
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 A 
 \begin_inset Index idx
 status open
@@ -778,7 +767,7 @@ literal "false"
  por cada um dos fluidos.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Considerando um cilindro de raio 
 \begin_inset Formula $r[m]$
 \end_inset
@@ -816,7 +805,7 @@ noprefix "false"
 :
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Formula 
 \begin{equation}
 P_{c}=P_{A}-P_{B}.\label{eq: pressao-capilar}
@@ -827,7 +816,7 @@ P_{c}=P_{A}-P_{B}.\label{eq: pressao-capilar}
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Em uma condição de equilíbrio, a resultante vertical da tensão superficial
  é igualada à ação da pressão capilar na secção transversal do tubo.
  A Equação 
@@ -852,7 +841,7 @@ descreve então a pressão capilar para uma superfície cilíndrica em função
 :
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Formula 
 \begin{equation}
 P_{c}=\frac{2\sigma\cos(\theta)}{r}.\label{eq: pressao-capilar-funcao-tensao-superficial}
@@ -863,7 +852,7 @@ P_{c}=\frac{2\sigma\cos(\theta)}{r}.\label{eq: pressao-capilar-funcao-tensao-sup
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Float figure
 placement H
 wide false
@@ -918,7 +907,7 @@ literal "false"
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 A partir da formulação dos conceitos de capilaridade e saturação é possível
  tirar algumas conclusões sobre o assunto.
  Para uma amostra de rocha saturada com dois fluidos diferentes pode-se
@@ -941,7 +930,7 @@ Permeabilidade
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 A permeabilidade é a propriedade que relaciona a capacidade que a diferença
  de pressão dentro de uma determinada formação deixar transmitir um fluido.
  É, em outras palavras, a condutividade de fluidos de um material, ou inverso
@@ -958,7 +947,7 @@ literal "false"
  do fluido e sua vazão.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 A estimativa da permeabilidade em um sistema poroso pode ser feita inicialmente
  por meio de uma simplificação da sua geometria, considerando uma sequência
  de feixes de capilares.
@@ -1004,7 +993,7 @@ Poiseuille
 [m] é igual à:
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Formula 
 \begin{equation}
 F=-\mu A\frac{d\nu}{dx}=-\mu(2\pi rL)\frac{d\nu}{dx}.\label{eq:forças viscosas}
@@ -1015,7 +1004,7 @@ F=-\mu A\frac{d\nu}{dx}=-\mu(2\pi rL)\frac{d\nu}{dx}.\label{eq:forças viscosas}
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Considerando que existe, além das forças viscosas, a ação do diferencial
  de pressão 
 \begin_inset Formula $\Delta P=(p_{1}-p_{2})$
@@ -1028,7 +1017,7 @@ Considerando que existe, além das forças viscosas, a ação do diferencial
 igual a:
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Formula 
 \begin{equation}
 F_{pressão}=\Delta P\pi r^{2},\label{eq: força diferencia de pressão}
@@ -1043,7 +1032,7 @@ sob uma aceleração constante,
 e portanto,
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Formula 
 \begin{equation}
 d\nu=-\frac{(p_{1}-p_{2})}{2\mu L}rdr.\label{eq: força viscosa igual força pressão}
@@ -1054,7 +1043,7 @@ d\nu=-\frac{(p_{1}-p_{2})}{2\mu L}rdr.\label{eq: força viscosa igual força pre
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Integrando a Equação 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -1068,7 +1057,7 @@ noprefix "false"
  obtêm-se que,
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Formula 
 \begin{equation}
 v=-\frac{(p_{1}-p_{2})}{2\mu L}r^{2}+C_{1},\label{eq:viscosidade}
@@ -1083,7 +1072,7 @@ onde
 é uma constante arbitrária, produto da integração.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Considerando uma condição de não escorregamento na parte do cilindro, ou
  seja, quando 
 \begin_inset Formula $r=r_{0}\Rightarrow v=0\mid r_{0}=0$
@@ -1102,7 +1091,7 @@ noprefix "false"
  se torna,
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Formula 
 \begin{equation}
 v=\frac{\left(r_{0}^{2}-r^{2}\right)\left(p_{1}-p_{2}\right)}{4\mu L}.\label{eq:viscosidade-nao-escorregamento}
@@ -1113,11 +1102,11 @@ v=\frac{\left(r_{0}^{2}-r^{2}\right)\left(p_{1}-p_{2}\right)}{4\mu L}.\label{eq:
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Se a vazão do fluido ao longo de um elemento com área é igual a:
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Formula 
 \begin{equation}
 dq=vdA,\label{eq:vazao elemento infinitesimal}
@@ -1128,7 +1117,7 @@ dq=vdA,\label{eq:vazao elemento infinitesimal}
 então a vazão como um todo será,
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Formula 
 \begin{equation}
 q=\frac{\pi r_{0}^{4}(p_{1}-p_{2})}{8\mu L}.\label{eq:vazao total}
@@ -1139,7 +1128,7 @@ q=\frac{\pi r_{0}^{4}(p_{1}-p_{2})}{8\mu L}.\label{eq:vazao total}
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Todavia, a Equação 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -1155,7 +1144,7 @@ noprefix "false"
  Sendo assim, ela se torna inaplicável na maioria dos casos mais complexos.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 A formulação de 
 \emph on
 Darcy
@@ -1178,7 +1167,7 @@ noprefix "false"
  de uma constatação empírica do fenômeno do escoamento em meios porosos.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Formula 
 \begin{equation}
 q=KA\frac{\left(h_{1}-h_{2}\right)}{L},\label{eq: equação de darcy}
@@ -1216,7 +1205,7 @@ noprefix "false"
  mostra como o experimento foi realizado para se chegar no seguinte resultado:
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Float figure
 placement H
 wide false
@@ -1283,7 +1272,7 @@ literal "false"
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Sob as condições de um fluxo horizontal, isotérmico, laminar e permanente
  de um fluido de natureza incompressível, homogêneo e de viscosidade invariável
  com o tempo, ao longo de um meio poroso homogêneo e não reativo, a 
@@ -1305,7 +1294,7 @@ Darcy
  se torna:
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Formula 
 \begin{equation}
 q=\frac{kA\Delta P}{\mu L},\label{eq:equacao de darcy final}
@@ -1329,7 +1318,7 @@ milidarcy
 ).
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Essa permeabilidade absoluta
 \begin_inset Index idx
 status open
@@ -1355,7 +1344,7 @@ Permeabilidade Absoluta
 e absoluta do meio poroso, ou seja,
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Formula 
 \begin{equation}
 k_{r,i}=\frac{k_{i}}{k}.\label{eq: permeabilidade-relativa}
@@ -1366,7 +1355,7 @@ k_{r,i}=\frac{k_{i}}{k}.\label{eq: permeabilidade-relativa}
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 É conveniente associar a permeabilidade relativa com a saturação em um meio
  poroso, uma vez que se observa que a permeabilidade efetiva de um determinado
  fluido cai conforme a saturação do mesmo 
@@ -1404,7 +1393,7 @@ noprefix "false"
  é máxima quando a fase não-molhante atinge sua saturação residual.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Float figure
 placement H
 wide false
@@ -1459,7 +1448,7 @@ literal "false"
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Segundo 
 \begin_inset ERT
 status open
@@ -1495,7 +1484,7 @@ noprefix "false"
  para o gás (não-molhante) e o óleo (molhante).
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Float figure
 placement H
 wide false
@@ -1550,7 +1539,7 @@ literal "false"
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Na drenagem, o fluido não-molhante entre inicialmente no meio poroso e ocupa
  as partes centrais dos poros de maior diâmetro até que seja atingido um
  ponto crítico de saturação para que o seja formada uma fase contínua e
@@ -1576,7 +1565,7 @@ noprefix "false"
  ilustra esse processo.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Float figure
 placement H
 wide false
@@ -1619,6 +1608,11 @@ literal "false"
 \end_inset
 
 ]
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -2065,48 +2059,32 @@ literal "false"
 
 .
  Dessa forma:
-\change_inserted 1908091853 1661948455
-
 \begin_inset Note Note
-status open
+status collapsed
 
 \begin_layout Plain Layout
-
-\change_inserted 1908091853 1661948476
 estes termos que você apresenta, fs, fmax, e outros, devem estar na nomenclatura
 ;
 \end_layout
 
 \begin_layout Plain Layout
-
-\change_inserted 1908091853 1661948492
 e sempre que um termo aparece pela primeira vez você tem de informar:
 \end_layout
 
 \begin_layout Plain Layout
-
-\change_inserted 1908091853 1661948493
 - o nome
 \end_layout
 
 \begin_layout Plain Layout
-
-\change_inserted 1908091853 1661948497
 - o símbolo
 \end_layout
 
 \begin_layout Plain Layout
-
-\change_inserted 1908091853 1661948501
 - as unidades em SI
-\change_unchanged
-
 \end_layout
 
 \end_inset
 
-
-\change_unchanged
 
 \end_layout
 
@@ -2820,11 +2798,11 @@ p(i)=\text{\ensuremath{\frac{n_{i}}{NM}}},\label{eq:dist-probabilidade-intensida
 \end_inset
 
 onde 
-\begin_inset Formula $N$
+\begin_inset Formula $M$
 \end_inset
 
  representa o número de linhas e 
-\begin_inset Formula $M$
+\begin_inset Formula $N$
 \end_inset
 
  o número de colunas da imagem.
@@ -4247,10 +4225,6 @@ status open
 
 \begin_layout Plain Layout
 Preparação de uma lamina de uma amostra de um meio poroso
-\change_deleted 1908091853 1661948165
-.
-\change_unchanged
-
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:preparacao-lamina"
@@ -6119,25 +6093,17 @@ onde
  o tamanho do 
 \emph on
 mini-batches.
-\change_inserted 1908091853 1662029854
-
 \begin_inset Note Note
 status open
 
 \begin_layout Plain Layout
 
-\change_inserted 1908091853 1662029879
-
 \emph on
 lembre de colocar estes termos, u,m,w...etc, na nomenclatura
-\change_unchanged
-
 \end_layout
 
 \end_inset
 
-
-\change_unchanged
 
 \end_layout
 
