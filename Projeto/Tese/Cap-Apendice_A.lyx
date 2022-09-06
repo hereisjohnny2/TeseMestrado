@@ -4,7 +4,7 @@
 \begin_header
 \save_transient_properties true
 \origin unavailable
-\textclass /home2/andreduartebueno/workdir/TeseMestrado/Projeto/Tese/abnt
+\textclass abnt
 \begin_preamble
 \usepackage {graphicx}
 \usepackage {longtable}
@@ -108,7 +108,7 @@
 \papercolumns 1
 \papersides 1
 \paperpagestyle fancy
-\tracking_changes true
+\tracking_changes false
 \output_changes false
 \html_math_output 0
 \html_css_as_file 0
@@ -120,17 +120,6 @@
 
 \begin_layout Chapter
 Manual do Desenvolvedor
-\change_inserted 1908091853 1662039689
-
-\begin_inset CommandInset label
-LatexCommand label
-name "chap:Manual-do-Desenvolvedor"
-
-\end_inset
-
-
-\change_unchanged
-
 \end_layout
 
 \begin_layout Standard
@@ -152,15 +141,8 @@ thepage}
 
 \end_inset
 
-Este apêndice descreve os códigos-fontes desenvolvidos para 
-\change_deleted 1908091853 1662036892
-o 
-\change_unchanged
-a criação da ferramenta de anotação de regiões de interesse e 
-\change_deleted 1908091853 1662036901
-d
-\change_unchanged
-os 
+Este apêndice descreve os códigos-fontes desenvolvidos para a criação da
+ ferramenta de anotação de regiões de interesse e os 
 \emph on
 scripts
 \emph default
@@ -171,13 +153,7 @@ Machine Learning,
 além disso são mostrados os diagramas de classe e instruções de como compilar
  e executar ambos projetos.
  Cada classe tem uma breve descrição de seu funcionamento para facilitar
- 
-\change_deleted 1908091853 1662295547
-no processo de
-\change_inserted 1908091853 1662295547
-a
-\change_unchanged
- compreensão.
+ a compreensão.
 \end_layout
 
 \begin_layout Standard
@@ -203,38 +179,17 @@ thepage}
 \end_layout
 
 \begin_layout Section
-Ferramenta de 
-\change_deleted 1908091853 1662036879
-Aquisição
-\change_inserted 1908091853 1662037424
-Anotação
-\begin_inset Note Note
-status open
 
-\begin_layout Plain Layout
-
-\change_inserted 1908091853 1662037447
-mantenha o nome usado no trabalho ou mude em todo ele; evite dois nomes
- com o mesmo fim
-\change_unchanged
-
-\end_layout
-
-\end_inset
-
-
-\change_unchanged
- de Regiões de Interesse
-\change_inserted 1908091853 1662037155
-
+\emph on
+Software
+\emph default
+ de Anotação de Regiões de Interesse
 \begin_inset CommandInset label
 LatexCommand label
-name "sec:Ferramenta-de-AnotaçãoDeRegioes"
+name "sec:Software-de-AnotaçãoDeRegioes"
 
 \end_inset
 
-
-\change_unchanged
 
 \end_layout
 
@@ -307,8 +262,6 @@ literal "true"
 \end_layout
 
 \begin_layout Standard
-
-\change_inserted 1908091853 1662295683
 A versão do software de anotação desenvolvido, utilizada nos testes e simulações
  apresentados nesta dissertação usou QT6 na sua versão X.X.X e CMAKE na sua
  versão X.X.X.
@@ -316,13 +269,9 @@ A versão do software de anotação desenvolvido, utilizada nos testes e simula�
 status open
 
 \begin_layout Plain Layout
-
-\change_inserted 1908091853 1662295736
 Sempre que temos resultados que são obtidos e analisados é preciso informar
  as versões exatas dos sotfwares utilizados; pois software pode apresentar
  bugs e uma nova versão pode mutdar resultados.
-\change_unchanged
-
 \end_layout
 
 \end_inset
@@ -339,11 +288,7 @@ A compilação do projeto é feita utilizando a ferramenta
 \emph on
 CMake 
 \emph default
-para gerar o
-\change_inserted 1908091853 1662295788
-s
-\change_unchanged
- 
+para gerar os 
 \emph on
 makefiles
 \emph default
@@ -748,11 +693,7 @@ name "fig:Diagrama-de-classes-anot"
 \end_layout
 
 \begin_layout Subsection
-
-\change_inserted 1908091853 1662296860
-Classe 
-\change_unchanged
-RockImageUI
+Classe RockImageUI
 \end_layout
 
 \begin_layout Standard
@@ -5194,11 +5135,7 @@ status collapsed
 \end_layout
 
 \begin_layout Subsection
-
-\change_inserted 1908091853 1662296865
-Classe 
-\change_unchanged
-CustomMessageDialogs
+Classe CustomMessageDialogs
 \end_layout
 
 \begin_layout Standard
@@ -5360,11 +5297,7 @@ bool CustomMessageDialogs::Question(QWidget *parent, const QString &title,
 \end_layout
 
 \begin_layout Subsection
-
-\change_inserted 1908091853 1662296868
-Classe 
-\change_unchanged
-ColorDialog
+Classe ColorDialog
 \end_layout
 
 \begin_layout Standard
@@ -5803,11 +5736,7 @@ void ColorDialog::createColorInput(const QString &label) {
 \end_layout
 
 \begin_layout Subsection
-
-\change_inserted 1908091853 1662296869
-Classe 
-\change_unchanged
-PixelDataTable
+Classe PixelDataTable
 \end_layout
 
 \begin_layout Standard
@@ -6154,11 +6083,7 @@ void PixelDataTable::addCell(int column, const QString& value) {
 \end_layout
 
 \begin_layout Subsection
-
-\change_inserted 1908091853 1662296870
-Classe 
-\change_unchanged
-ImageDisplayWidget
+Classe ImageDisplayWidget
 \end_layout
 
 \begin_layout Standard
@@ -7293,11 +7218,7 @@ rmation);
 \end_layout
 
 \begin_layout Subsection
-
-\change_inserted 1908091853 1662296872
-Classe 
-\change_unchanged
-ImageDisplaySubWindow
+Classe ImageDisplaySubWindow
 \end_layout
 
 \begin_layout Standard
@@ -9804,11 +9725,7 @@ network.py
 \end_layout
 
 \begin_layout Standard
-Pacote de funções para execução do treinamento e 
-\change_deleted 1908091853 1662297318
-do 
-\change_unchanged
-teste da rede neural:
+Pacote de funções para execução do treinamento e teste da rede neural:
 \end_layout
 
 \begin_layout Itemize
@@ -9847,10 +9764,6 @@ de cada um dos valores de RGB do
 batch 
 \emph default
 por meio de uma função de perda do PyTorch denominada 
-\change_deleted 1908091853 1662297349
-de
-\change_unchanged
- 
 \emph on
 nll_loss
 \emph default

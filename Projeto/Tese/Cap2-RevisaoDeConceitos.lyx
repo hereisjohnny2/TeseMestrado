@@ -4,7 +4,7 @@
 \begin_header
 \save_transient_properties true
 \origin unavailable
-\textclass /home2/andreduartebueno/workdir/TeseMestrado/Projeto/Tese/abnt
+\textclass abnt
 \begin_preamble
 \usepackage {graphicx}
 \usepackage {longtable}
@@ -82,7 +82,7 @@
 \papercolumns 1
 \papersides 1
 \paperpagestyle fancy
-\tracking_changes true
+\tracking_changes false
 \output_changes false
 \html_math_output 0
 \html_css_as_file 0
@@ -378,10 +378,7 @@ Porosidade Efetiva
 \end_inset
 
  trata da razão entre o volume de poros que estão devidamente interconectados
-\change_inserted 1908091853 1661895652
- as paredes externas
-\change_unchanged
- e o volume total.
+ as paredes externas e o volume total.
  É uma medida que, do ponto de vista da engenharia, é de suma importância,
  já que está relacionada com o percentual de fluido que possui alguma mobilidade
  dentro do sistema rochoso 
@@ -599,10 +596,26 @@ Capilaridade
 
 \end_inset
 
+, Molhabilidade
+\begin_inset Index idx
+status open
 
-\change_inserted 1908091853 1661896303
-, Molhabilidade e Tensão Superficial
-\change_unchanged
+\begin_layout Plain Layout
+Molhabilidade
+\end_layout
+
+\end_inset
+
+ e Tensão Superficial
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Tensão Superficial
+\end_layout
+
+\end_inset
+
 
 \end_layout
 
@@ -704,10 +717,6 @@ status open
 
 \begin_layout Plain Layout
 Ângulo de contado formado pela água em relação a uma superfície sólida
-\change_deleted 1908091853 1661948078
-.
-\change_unchanged
-
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:angulo-de-contato"
@@ -877,12 +886,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Ângulo de contato formado pela água em relação a uma superfície sólida
-\change_deleted 1908091853 1661948082
-.
-
-\change_unchanged
- 
+Ângulo de contato formado pela água em relação a uma superfície sólida 
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:tubo-com-agua"
@@ -1237,26 +1241,16 @@ status open
 \begin_layout Plain Layout
 Experimento realizado por Darcy para a formulação da Equação da vazão total
  em um meio poroso
-\change_deleted 1908091853 1661896473
-.
-\change_inserted 1908091853 1661896475
-
 \begin_inset Note Note
 status open
 
 \begin_layout Plain Layout
-
-\change_inserted 1908091853 1661896492
 lembre de tirar os pontos de todas as figuras e tabelas; títulos não levam
  ponto
-\change_unchanged
-
 \end_layout
 
 \end_inset
 
-
-\change_unchanged
 
 \begin_inset CommandInset label
 LatexCommand label
@@ -1434,10 +1428,6 @@ status open
 \begin_layout Plain Layout
 Relação entre a saturação da fase molhante e sua permeabilidade efetiva
  para um escoamento bifásico
-\change_deleted 1908091853 1661896507
-.
-\change_unchanged
-
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:saturacao-x-permeabilidade-relativa-bifasico"
@@ -1529,10 +1519,6 @@ status open
 
 \begin_layout Plain Layout
 Processo de embebição de em um escoamento bifásico gás-óleo
-\change_deleted 1908091853 1661948102
-.
-\change_unchanged
-
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:embebicao-oleo-gas"
@@ -1614,10 +1600,6 @@ status open
 
 \begin_layout Plain Layout
 Processo de drenagem de em um escoamento bifásico gás-óleo
-\change_deleted 1908091853 1661948106
-.
-\change_unchanged
-
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:drenagem-oleo-gas"
@@ -1771,11 +1753,7 @@ as espaciais
 \begin_inset Formula $M$
 \end_inset
 
- representa o número de linhas
-\change_deleted 1908091853 1661948027
-,
-\change_unchanged
- e 
+ representa o número de linhas e 
 \begin_inset Formula $N$
 \end_inset
 
@@ -1874,10 +1852,6 @@ status open
 \begin_layout Plain Layout
 Relações entre os processos de discretização, reconstrução, codificação
  e decodificação
-\change_deleted 1908091853 1661948061
-.
-\change_unchanged
-
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:niveis-abstracao-represetacao-sinal"
@@ -1933,17 +1907,21 @@ literal "false"
 .
  Esse fenômeno é denominado de 
 \emph on
-aliased, 
+aliased
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+
+\emph on
+aliased
+\end_layout
+
+\end_inset
+
+, 
 \emph default
-e
-\change_inserted 1908091853 1661948225
-,
-\change_unchanged
- para entender melhor como ele funciona
-\change_inserted 1908091853 1661948244
- apresentamos
-\change_unchanged
- a Figura 
+e, para entender melhor como ele funciona apresentamos a Figura 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:sinal-aliased"
@@ -1953,12 +1931,8 @@ noprefix "false"
 
 \end_inset
 
-
-\change_inserted 1908091853 1661948249
-, que
-\change_unchanged
- mostra o resultado da amostragem unidimensional de dois sinais, com frequências
- iguais a 
+, que mostra o resultado da amostragem unidimensional de dois sinais, com
+ frequências iguais a 
 \begin_inset Formula $f_{azul}=3/4$
 \end_inset
 
@@ -2004,10 +1978,6 @@ Fenômeno
 aliasing 
 \emph default
 em um sinal unidimensional
-\change_deleted 1908091853 1661948110
-.
-\change_unchanged
-
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:sinal-aliased"
@@ -2041,14 +2011,32 @@ literal "false"
 
 \begin_layout Standard
 A taxa mínima de amostragem
-\change_inserted 1908091853 1661948376
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Taxa Mínima de Amostragem
+\end_layout
+
+\end_inset
+
  (
 \begin_inset Formula $f_{s}$
 \end_inset
 
-)
-\change_unchanged
- para que um sinal possa ser reconstruído é descrito pelo teorema de 
+) para que um sinal possa ser reconstruído é descrito pelo 
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Teorema de 
+\emph on
+Shannon
+\end_layout
+
+\end_inset
+
+teorema de 
 \emph on
 Shannon
 \emph default
@@ -2056,6 +2044,16 @@ Shannon
  
 \emph on
 Nyquist
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Frequência de Nyquist
+\end_layout
+
+\end_inset
+
+
 \emph default
  
 \begin_inset CommandInset citation
@@ -2158,11 +2156,7 @@ citeonline{castelo2013estimativa}
 , a partir da forma geométrica dos objetos, obtida na segmentação, é possível
  aplicar operadores morfológicos a fim de analisar, modificar e extrair
  informações que podem ser úteis em modelos de classificação, ou seja, reconhece
-r, inferir e verificar a identidade dos objetos
-\change_inserted 1908091853 1661948612
- (suas características)
-\change_unchanged
-.
+r, inferir e verificar a identidade dos objetos (suas características).
 \end_layout
 
 \begin_layout Subsection
@@ -2202,33 +2196,8 @@ Cor
 \end_inset
 
 , não é, portanto uma característica da luz, mas uma sensação provocada
- pelo complexo sistema sensorial eletroquímico do corpo humano baseada na
-\change_inserted 1908091853 1661948663
-s
-\change_unchanged
- atividade
-\change_inserted 1908091853 1661948664
-s
-\change_unchanged
- do
-\change_inserted 1908091853 1661948669
-s
-\change_unchanged
- 
-\change_deleted 1908091853 1661948672
-cérebro, 
-\change_unchanged
-olhos
-\change_inserted 1908091853 1661948675
-,
-\change_deleted 1908091853 1661948676
- e
-\change_unchanged
- do nervo óptico
-\change_inserted 1908091853 1661948680
- e do cérebro
-\change_unchanged
-.
+ pelo complexo sistema sensorial eletroquímico do corpo humano baseada nas
+ atividades dos olhos, do nervo óptico e do cérebro.
 \end_layout
 
 \begin_layout Standard
@@ -2246,8 +2215,6 @@ literal "false"
 \end_layout
 
 \begin_layout Standard
-
-\change_inserted 1908091853 1661948812
 Na prática as cores precisam ser modeladas tanto no que se refere a percepção
  humana quando no que se refere a diferentes equipamentos, como câmeras
  fotográficas, scanners, impressoras e outros sistemas.
@@ -2381,23 +2348,7 @@ Essas cores, combinadas duas a duas, em igual intensidade, produzem as suas
  e do amarelo é o azul.
  A cor branca é gerada pela combinação das três primárias ou da cor secundária
  com a sua oposta.
-\change_inserted 1908091853 1661948955
-
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-
-\change_inserted 1908091853 1661948958
-faltou a preta
-\change_unchanged
-
-\end_layout
-
-\end_inset
-
-
-\change_unchanged
+ A cor preta é gerada quando todos os valores são iguais a zero.
  Na Figura 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -2435,10 +2386,6 @@ status open
 
 \begin_layout Plain Layout
 Modelo cromático RGB
-\change_deleted 1908091853 1661948114
-.
-\change_unchanged
-
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:modelo-rgb"
@@ -2591,10 +2538,6 @@ saturation
 brightness
 \emph default
 )
-\change_deleted 1908091853 1661948119
-.
-\change_unchanged
-
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:hsb-coordenadas"
@@ -2701,10 +2644,6 @@ literal "false"
 \end_inset
 
 , como é mostrado na Equação:
-\change_inserted 1908091853 1661949211
-~
-\change_unchanged
-
 \end_layout
 
 \begin_layout Standard
@@ -2791,25 +2730,12 @@ status open
 \begin_layout Plain Layout
 \noindent
 \align center
-
-\change_deleted 1908091853 1661949594
-\begin_inset Graphics
-	filename ../../imagens/imagensLivros/histograma.png
-	scale 90
-
-\end_inset
-
-
-\change_inserted 1908091853 1661949594
-
 \begin_inset Note Note
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \noindent
 \align center
-
-\change_inserted 1908091853 1661949608
 \begin_inset Graphics
 	filename ../../imagens/imagensLivros/histograma.png
 	scale 90
@@ -2817,8 +2743,6 @@ status open
 \end_inset
 
 TROQUEI POR UMA IMAGEM MAIS BONITA...KAKAKA
-\change_unchanged
-
 \end_layout
 
 \end_inset
@@ -2843,21 +2767,13 @@ TROQUEI POR UMA IMAGEM MAIS BONITA...KAKAKA
 \end_inset
 
 
-\change_unchanged
-
 \end_layout
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Imagem ao lado de seu histograma
-\change_inserted 1908091853 1661949894
- (doguinha Molly)
-\change_deleted 1908091853 1661948124
-.
-\change_unchanged
-
+Imagem ao lado de seu histograma 
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:imagem-histograma"
@@ -2970,10 +2886,6 @@ status open
 
 \begin_layout Plain Layout
 Diferenças entre histograma bimodal (a) e multimodal (b)
-\change_deleted 1908091853 1661948131
-.
-\change_unchanged
-
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:hist-bi-multi"
@@ -3039,13 +2951,8 @@ noprefix "false"
  se concentram nas pontas do gráfico.
  Esses valores podem ser equalizados tornando a distribuição mais homogênea
  ao longo do histograma, de maneira que se busque deixá-los igualmente espaçados.
- enquanto uma imagem com valores de contraste mais bem balanceados ten
-\change_deleted 1908091853 1661950021
-t
-\change_inserted 1908091853 1661950021
-d
-\change_unchanged
-e a ter uma resposta semelhante em seu histograma.
+ enquanto uma imagem com valores de contraste mais bem balanceados tende
+ a ter uma resposta semelhante em seu histograma.
 \end_layout
 
 \begin_layout Standard
@@ -3072,10 +2979,6 @@ status open
 
 \begin_layout Plain Layout
 Histogramas e variações de contrastes
-\change_deleted 1908091853 1661948138
-.
-\change_unchanged
-
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:hist-contraste"
@@ -3223,12 +3126,8 @@ noprefix "false"
 
  trata de preservar a informação da imagem mesmo que esta sofra uma transformaçã
 o de escala, desde que essa transformação seja constante.
-
-\change_inserted 1908091853 1661950177
  Na prática, o entendimento destes conceitos nos permite otimizar a aplicação
  combinada destes filtros.
-\change_unchanged
-
 \end_layout
 
 \begin_layout Standard
@@ -3264,7 +3163,8 @@ noprefix "false"
 
 \end_inset
 
-.
+, onde em (a) se observa a imagem original, e em (c) o resultado após a
+ aplicação do filtro da mediana.
  Outro filtro estatístico é o filtro de moda de ordem n (
 \emph on
 Mode Filter of Order n
@@ -3299,17 +3199,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Redução de ru
-\change_deleted 1908091853 1661950360
-i
-\change_inserted 1908091853 1661950361
-í
-\change_unchanged
-do aplicando filtro de mediana
-\change_deleted 1908091853 1661948143
-.
-\change_unchanged
-
+Redução de ruído aplicando filtro de mediana
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:reducao-ruido-mediana"
@@ -3329,24 +3219,6 @@ literal "false"
 \end_inset
 
 ]
-\change_inserted 1908091853 1661950382
-
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-
-\change_inserted 1908091853 1661950415
-em (a) imagem original, em (c) resultado após aplicar filtro da mediana
-\change_unchanged
-
-\end_layout
-
-\end_inset
-
-
-\change_unchanged
-
 \end_layout
 
 \end_inset
@@ -3458,10 +3330,6 @@ status open
 
 \begin_layout Plain Layout
 Duas máscaras 3x3 aplicadas em uma suavização
-\change_deleted 1908091853 1661948146
-.
-\change_unchanged
-
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:mascaras-filtro-pb"
@@ -3579,11 +3447,7 @@ Resultado do processo de suavização em uma imagem produzida pelo telescópio
  
 \emph on
 Hubble
-\change_deleted 1908091853 1661948150
-
 \emph default
-.
-\change_unchanged
 
 \begin_inset CommandInset label
 LatexCommand label
@@ -3716,17 +3580,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-M
-\change_deleted 1908091853 1661950621
-a
-\change_inserted 1908091853 1661950621
-á
-\change_unchanged
-scara de um filtro laplaciano 3x3
-\change_deleted 1908091853 1661948153
-.
-\change_unchanged
-
+Máscara de um filtro laplaciano 3x3
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:mascara-laplaciano"
@@ -3766,6 +3620,13 @@ status open
 \begin_layout Plain Layout
 Segmentação
 \end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "subsec:Segmentacao"
 
 \end_inset
 
@@ -3868,15 +3729,8 @@ literal "false"
 \end_inset
 
 .
- As bordas são regiões de interesse 
-\change_inserted 1908091853 1661950791
-que 
-\change_unchanged
-caracterizam os contornos dos objetos presentes
-\change_inserted 1908091853 1661950803
- na imagem
-\change_unchanged
-.
+ As bordas são regiões de interesse que caracterizam os contornos dos objetos
+ presentes na imagem.
  A posição dos pixeis onde ocorrem variações abruptas nos valores de intensidade
  são denominados de pontos de borda e caracterizam as transições entre diferente
 s regiões.
@@ -3906,7 +3760,7 @@ te o crescimento de regiões, e a seleção da propriedade característica.
 Na Figura 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "fig:aplicacao-segmentacao"
+reference "fig:aplicacao-segmentacao-metodo-bordas"
 plural "false"
 caps "false"
 noprefix "false"
@@ -3973,37 +3827,13 @@ status open
 
 \begin_layout Plain Layout
 Segmentação de uma imagem utilização a abordagem baseada em bordas (a, b,
- c) e em regiões (d, e, f)
-\change_deleted 1908091853 1661948158
-.
-
-\change_unchanged
- 
+ c) e em regiões (d, e, f) 
 \begin_inset CommandInset label
 LatexCommand label
-name "fig:aplicacao-segmentacao"
+name "fig:aplicacao-segmentacao-metodo-bordas"
 
 \end_inset
 
-
-\change_inserted 1908091853 1661954797
-
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-
-\change_inserted 1908091853 1661954833
-label com nome genérico; ideal colocar próprio título ou algo mais específico
- - aplicacao-segmentacao-metodo-bordas
-\change_unchanged
-
-\end_layout
-
-\end_inset
-
-
-\change_unchanged
 
 \begin_inset Newline newline
 \end_inset
@@ -4031,12 +3861,8 @@ literal "false"
 
 \begin_layout Standard
 Algoritmos de segmentação baseados no crescimento de regiões tornam difícil
- a obtenção de bons resultados pois concentra
-\change_inserted 1908091853 1661954933
-m
-\change_unchanged
- a informação de forma local, mesclando regiões e provocando um processo
- de segmentação.
+ a obtenção de bons resultados pois concentram a informação de forma local,
+ mesclando regiões e provocando um processo de segmentação.
  Além disso é uma técnica cara em termos computacionais e demanda de um
  consumo muito alto de memória 
 \begin_inset CommandInset citation
@@ -4054,40 +3880,16 @@ literal "false"
 \end_layout
 
 \begin_layout Standard
-Outra abordagem que envolve a segmentação por regiões é o 
-\change_inserted 1908091853 1661956113
-algoritmo
-\change_deleted 1908091853 1661956113
-algorítmo
-\change_unchanged
- de divisores de água ou 
+Outra abordagem que envolve a segmentação por regiões é o algoritmo de divisores
+ de água ou 
 \emph on
 watersheads
 \emph default
-, que se baseia nos conceitos de bacias hidrográficas e topografia
-\change_deleted 1908091853 1661954977
-,
-\change_inserted 1908091853 1661954977
-.
-
-\change_unchanged
+, que se baseia nos conceitos de bacias hidrográficas e topografia.
+ Nessa técnica a imagem é modelada como uma superfície topográfica, como
+ se fosse, na verdade, composta por montanhas ou vales e a altitude dos
+ pontos correspondessem ao gradiente dos valores de intensidade dos pixeis
  
-\change_deleted 1908091853 1661954980
-tanto que n
-\change_inserted 1908091853 1661954980
-N
-\change_unchanged
-essa técnica a imagem é modelada como uma superfície topográfica, como se
- fosse
-\change_inserted 1908091853 1661954989
-,
-\change_unchanged
- na verdade
-\change_inserted 1908091853 1661954991
-,
-\change_unchanged
- composta por montanhas ou vales e a altitude dos pontos correspondessem
- ao gradiente dos valores de intensidade dos pixeis 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "gonzalez2010processamento"
@@ -4110,23 +3912,11 @@ Inicialmente, simula-se uma inundação nos mínimos locais, o que provoca
 \end_layout
 
 \begin_layout Itemize
-pontos que pertencem
-\change_deleted 1908091853 1661955024
- 
-\change_inserted 1908091853 1661955024
-a
-\change_unchanged
-à um mínimo local;
+pontos que pertencem a um mínimo local;
 \end_layout
 
 \begin_layout Itemize
-pontos que pertencem 
-\change_deleted 1908091853 1661955027
-à
-\change_inserted 1908091853 1661955027
-a
-\change_unchanged
- um mínimo de 
+pontos que pertencem a um mínimo de 
 \emph on
 watershead
 \emph default
@@ -4134,13 +3924,7 @@ watershead
 \end_layout
 
 \begin_layout Itemize
-pontos que pertencem 
-\change_deleted 1908091853 1661955031
-à
-\change_inserted 1908091853 1661955031
-a
-\change_unchanged
- linhas de 
+pontos que pertencem a linhas de 
 \emph on
 watershead
 \emph default
@@ -4203,11 +3987,7 @@ status open
 Processo de aplicação da segmentação por 
 \emph on
 watersheads
-\change_deleted 1908091853 1661948162
-
 \emph default
-.
-\change_unchanged
 
 \begin_inset CommandInset label
 LatexCommand label
@@ -4316,30 +4096,18 @@ A abordagem baseada em histogramas define o limiar no vale formado no histograma
 \begin_layout Itemize
 O método de 
 \emph on
-Otsu
-\change_inserted 1908091853 1661955132
-
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-
-\change_inserted 1908091853 1661955134
-
-\emph on
-referenciar
-\change_unchanged
-
-\end_layout
+Otsu 
+\emph default
+tenta buscar ao longo de um conjunto de valores de pixeis um limiar ótimo
+ que minimiza as variâncias intraclasses de uma imagem segmentada 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "najman1994watershed"
+literal "false"
 
 \end_inset
 
-
-\change_unchanged
- 
-\emph default
-tenta buscar ao longo de um conjunto de valores de pixeis um limiar ótimo
- que minimiza as variâncias intraclasses de uma imagem segmentada;
+;
 \end_layout
 
 \begin_layout Itemize
@@ -4527,29 +4295,21 @@ scanners
  Na maioria dos casos opta-se pela utilização de uma câmera de vídeo acoplada
  a um microscópio como sensor de aquisição.
  Um conversor ADC
-\change_inserted 1908091853 1661955488
-
+\emph on
+, 
+\emph default
+ou seja um conversor Analógico-Digital,
 \begin_inset Note Note
 status open
 
 \begin_layout Plain Layout
-
-\change_inserted 1908091853 1661955502
 o que é ADC? colocar aqui e na lista de siglas
-\change_unchanged
-
 \end_layout
 
 \end_inset
 
-
-\change_unchanged
- transforma o sinal analógico 
-\change_deleted 1908091853 1661955517
-e
-\change_unchanged
- em discreto e transmite essa informação para um computador ou armazena
- em algum dispositivo de memória.
+ transforma o sinal analógico em discreto e transmite essa informação para
+ um computador ou armazena em algum dispositivo de memória.
 \end_layout
 
 \begin_layout Subsubsection
@@ -4557,12 +4317,9 @@ Etapa 3 - Pré-Processamento
 \end_layout
 
 \begin_layout Standard
-Como definido anteriormente, o pré-processamento envole
-\change_deleted 1908091853 1661955549
-m
-\change_unchanged
- um série de procedimentos para a eliminação de irregularidades das imagens,
- tornando-as mais apropriadas para determinadas aplicações.
+Como definido anteriormente, o pré-processamento envole um série de procedimento
+s para a eliminação de irregularidades das imagens, tornando-as mais apropriadas
+ para determinadas aplicações.
  Nesse etapa são aplicados filtros espaciais ou frequenciais, organização
  dos dados, conversão de formatos e eliminação de bordas.
 \end_layout
@@ -4593,32 +4350,19 @@ Etapa 5 - Caracterização
 É nessa etapa que são extraídas informações de interesse, descrevesse e
  classifica-se os objetos e regiões segmentados nas etapas anteriores, e
  obtêm-se informações quantitativas sobre as propriedades físicas da rocha,
- como porosidade, 
-\change_deleted 1908091853 1661955623
-permeabilidade,
-\change_unchanged
- distribuição de tamanho dos poros
-\change_inserted 1908091853 1661955631
-(e/ou sólidos)
-\change_unchanged
- e curvas de auto-correlação e conectividade.
-\change_inserted 1908091853 1661955638
-
+ como porosidade, distribuição de tamanho dos poros (e/ou sólidos) e curvas
+ de auto-correlação e conectividade.
+ Para que permeabilidade seja obtida é necessário antes gerar um imagem
+ 3D da rocha estudada.
 \begin_inset Note Note
 status open
 
 \begin_layout Plain Layout
-
-\change_inserted 1908091853 1661955647
 para obter a permeabilidade temos de gerar a imagem 3D
-\change_unchanged
-
 \end_layout
 
 \end_inset
 
-
-\change_unchanged
 
 \end_layout
 
@@ -4629,11 +4373,8 @@ Etapa 6 - Reconhecimento e Interpretação
 \begin_layout Standard
 Trata-se de atribuir significado aos objetos encontrados nas imagens.
  Envolve o reconhecimento de padrões, nesse caso de rochas reservatórios,
- a reconstrução 3D e a simulação de processos
-\change_inserted 1908091853 1661955671
-, o que inclui a determinação da permeabilidade
-\change_unchanged
-.
+ a reconstrução 3D e a simulação de processos, o que inclui a determinação
+ da permeabilidade.
 \end_layout
 
 \begin_layout Section
@@ -4646,11 +4387,7 @@ Inteligência Artificial
 
 \end_inset
 
-Inteligência Artificial
-\change_inserted 1908091853 1661955815
- - IA
-\change_unchanged
-
+Inteligência Artificial - IA
 \end_layout
 
 \begin_layout Standard
@@ -4665,26 +4402,16 @@ literal "false"
 \end_inset
 
 .
- É uma área demasiada extensa e envolve uma série de 
-\change_deleted 1908091853 1661955781
-técnicas
-\change_inserted 1908091853 1661955789
-modelos
+ É uma área demasiada extensa e envolve uma série de modelos
 \begin_inset Note Note
 status open
 
 \begin_layout Plain Layout
-
-\change_inserted 1908091853 1661955799
 abaixo você tem seções que falam de modelos
-\change_unchanged
-
 \end_layout
 
 \end_inset
 
-
-\change_unchanged
 , e dentre elas destacam-se as Redes Neurais Artificiais, os Algoritmos
  Genéticos e a Lógica 
 \emph on
@@ -4730,24 +4457,12 @@ Machine Learning
 \end_layout
 
 \begin_layout Standard
-Um algor
-\change_deleted 1908091853 1661955921
-í
-\change_inserted 1908091853 1661955921
-i
-\change_unchanged
-tmo de 
+Um algoritmo de 
 \emph on
 Machine Learning 
 \emph default
-é um algor
-\change_deleted 1908091853 1661955923
-í
-\change_inserted 1908091853 1661955923
-i
-\change_unchanged
-tmo capaz de aprender a partir dos dados e poder realizar previsões acercas
- de coisas do mundo real.
+é um algoritmo capaz de aprender a partir dos dados e poder realizar previsões
+ acercas de coisas do mundo real.
  Por aprendizagem aqui, 
 \begin_inset ERT
 status open
@@ -4820,23 +4535,13 @@ es de entrada uma determinada classe
 \end_layout
 
 \begin_layout Itemize
-Classificação com Entradas Faltantes: Nesse caso, o 
-\change_inserted 1908091853 1661956113
-algoritmo
-\change_deleted 1908091853 1661956113
-algorítmo
-\change_unchanged
- de classificação passa a ser treinado em um conjunto de funções para atribuir
- a classe a uma entrada, e não apenas uma função, como no caso mais simples.
- Essa tarefa muitas vezes é implementada fazendo o 
-\change_inserted 1908091853 1661956113
-algoritmo
-\change_deleted 1908091853 1661956113
-algorítmo
-\change_unchanged
- aprender o conjunto de funções por meio de distribuição probabilística
- sobre as variáveis mais importantes e resolvendo a classificação marginalizando
- as variáveis faltantes.
+Classificação com Entradas Faltantes: Nesse caso, o algoritmo de classificação
+ passa a ser treinado em um conjunto de funções para atribuir a classe a
+ uma entrada, e não apenas uma função, como no caso mais simples.
+ Essa tarefa muitas vezes é implementada fazendo o algoritmo aprender o
+ conjunto de funções por meio de distribuição probabilística sobre as variáveis
+ mais importantes e resolvendo a classificação marginalizando as variáveis
+ faltantes.
 \end_layout
 
 \begin_layout Itemize
@@ -4868,14 +4573,9 @@ A medida de desempenho
 \emph on
 P 
 \emph default
-deve ser uma forma quantitativa se o 
-\change_inserted 1908091853 1661956113
-algoritmo
-\change_deleted 1908091853 1661956113
-algorítmo
-\change_unchanged
- de fato está aprendendo, ou seja, o quão bem ele está realizando a tarefa
- a qual lhe foi atribuída 
+deve ser uma forma quantitativa se o algoritmo de fato está aprendendo,
+ ou seja, o quão bem ele está realizando a tarefa a qual lhe foi atribuída
+ 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "murphy2012machine"
@@ -4885,12 +4585,7 @@ literal "false"
 
 .
  Tarefas como a classificação e transcrição normalmente utilizam uma métrica
- de acurácia, que nada mais é que a fração de entradas para as quais o 
-\change_inserted 1908091853 1661956113
-algoritmo
-\change_deleted 1908091853 1661956113
-algorítmo
-\change_unchanged
+ de acurácia, que nada mais é que a fração de entradas para as quais o algoritmo
  produz uma saída correta.
  Também é comum analisar essas tarefas por meio da taxa de erro, que representa
  as entradas para as quais a saída é incorreta.
@@ -4921,13 +4616,8 @@ onde
 \begin_inset Formula $\hat{f}(x_{i})$
 \end_inset
 
- é a previsão feita pelo 
-\change_inserted 1908091853 1661956113
-algoritmo
-\change_deleted 1908091853 1661956113
-algorítmo
-\change_unchanged
- a partir de uma observação do i-ésimo elemento de um conjunto de dados.
+ é a previsão feita pelo algoritmo a partir de uma observação do i-ésimo
+ elemento de um conjunto de dados.
 \end_layout
 
 \begin_layout Standard
@@ -4989,13 +4679,7 @@ label
 \begin_inset Formula $y$
 \end_inset
 
-, o 
-\change_inserted 1908091853 1661956113
-algoritmo
-\change_deleted 1908091853 1661956113
-algorítmo
-\change_unchanged
- realiza um previsão de 
+, o algoritmo realiza um previsão de 
 \begin_inset Formula $y$
 \end_inset
 
@@ -5064,13 +4748,7 @@ literal "false"
 \end_layout
 
 \begin_layout Subsection
-
-\change_inserted 1908091853 1661967508
-Algoritmo
-\change_deleted 1908091853 1661956113
-Algorítmo
-\change_unchanged
-s de 
+Algoritmos de 
 \begin_inset Index idx
 status open
 
@@ -5148,10 +4826,6 @@ status open
 
 \begin_layout Plain Layout
 Representação de uma árvore de decisão
-\change_deleted 1908091853 1661948171
-.
-\change_unchanged
-
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:arvore-decisao"
@@ -5284,23 +4958,12 @@ Redes Neurais Artificias
 
 \end_inset
 
-Redes Neurais Artificias
-\change_inserted 1908091853 1661969075
- - RNA
-\change_unchanged
-
+Redes Neurais Artificias - RNA
 \end_layout
 
 \begin_layout Standard
-A
-\change_inserted 1908091853 1661969055
-s
-\change_unchanged
- redes neurais artificiais são definidas como modelos não-lineares
-\change_inserted 1908091853 1661969069
-,
-\change_unchanged
- com capacidade de imitar o comportamento do cérebro humano e sua estrutura
+As redes neurais artificiais são definidas como modelos não-lineares, com
+ capacidade de imitar o comportamento do cérebro humano e sua estrutura
  de neurônios 
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -5340,15 +5003,9 @@ noprefix "false"
 \end_inset
 
  variando de 
-\change_deleted 1908091853 1662029056
-1
-\change_inserted 1908091853 1662029056
-
 \begin_inset Formula $1$
 \end_inset
 
-
-\change_unchanged
  a 
 \begin_inset Formula $n$
 \end_inset
@@ -5575,23 +5232,15 @@ A função de rampa, descrita na Equação
 \end_layout
 
 \begin_layout Standard
-
-\change_inserted 1908091853 1662029379
 \begin_inset Note Note
-status open
+status collapsed
 
 \begin_layout Plain Layout
-
-\change_inserted 1908091853 1662029395
 troquei na equação da rampa 0 por -1
-\change_unchanged
-
 \end_layout
 
 \end_inset
 
-
-\change_unchanged
 
 \begin_inset Formula 
 \begin{equation}
@@ -5825,12 +5474,8 @@ Softmax
  A função de ativação 
 \emph on
 ReLU 
-\change_inserted 1908091853 1662029485
-
 \emph default
-é 
-\change_unchanged
-mostrada na Equação 
+é mostrada na Equação
 \end_layout
 
 \begin_layout Standard
@@ -5854,19 +5499,8 @@ noprefix "false"
 
 \end_inset
 
-
-\change_inserted 1908091853 1662029496
-, a mesma 
-\change_unchanged
-tem como principal vantagem o fato de 
-\change_deleted 1908091853 1662029508
-que ela
-\change_unchanged
- não ativa
-\change_inserted 1908091853 1662029510
-r
-\change_unchanged
- imediatamente todos os neurônios, pois os valores negativos de 
+, a mesma tem como principal vantagem o fato de não ativar imediatamente
+ todos os neurônios, pois os valores negativos de 
 \begin_inset Formula $u$
 \end_inset
 
@@ -5948,13 +5582,7 @@ sigmoid
 e é bastante utilizada para a classificação de problemas com mais de duas
  classes.
  Ela converte os valores das camadas de saída em uma função de probabilidade.
- Sua estrutura é 
-\change_deleted 1908091853 1662029546
-mostrada
-\change_inserted 1908091853 1662029546
-dada
-\change_unchanged
- por 
+ Sua estrutura é dada por
 \end_layout
 
 \begin_layout Standard
@@ -6097,17 +5725,12 @@ y_{j}^{l}=\eta\left(\sum_{k}w_{jk}^{l}y_{k}^{l-1}+\theta_{j}^{l}\right),\label{e
 
 \end_inset
 
-onde 
-\change_inserted 1908091853 1662029626
-a 
-\change_unchanged
-notação 
+onde a notação 
 \begin_inset Formula $w_{jk}^{l}$
 \end_inset
 
  denota o peso da conexão entre o k-ésimo neurônio da (l-1)-ésima camada
  com o j-ésimo neurônio da l-ésima camada.
- 
 \end_layout
 
 \begin_layout Standard
@@ -6275,9 +5898,6 @@ biases
 \emph default
 e aos pesos.
  Um exemplo de função de custo é a função de custo quadrático, que é expressa
-\change_deleted 1908091853 1662029700
-da
-\change_unchanged
  pela Equação
 \end_layout
 
@@ -6295,23 +5915,12 @@ na qual
 
  é o número total de exemplos de treino no 
 \emph on
-dataset
-\change_inserted 1908091853 1662029709
-.
-\change_unchanged
-
+dataset.
 \end_layout
 
 \begin_layout Standard
-Normalmente
-\change_inserted 1908091853 1662029714
-,
-\change_unchanged
- quando uma rede é treinada
-\change_inserted 1908091853 1662029723
-,
-\change_unchanged
- não se utiliza o conjunto de dados por inteiro de uma vez.
+Normalmente, quando uma rede é treinada, não se utiliza o conjunto de dados
+ por inteiro de uma vez.
  É comum que antes ele seja dividido em conjuntos menores de pares entrada
  e 
 \emph on
@@ -6545,11 +6154,7 @@ noprefix "false"
 \end_inset
 
  pode tornar o aprendizado muito lento.
- Por isso uma função de custo substituta que 
-\change_inserted 1908091853 1662029894
-p
-\change_unchanged
-ode ser adotada é 
+ Por isso uma função de custo substituta que pode ser adotada é 
 \emph on
 Cross-Entropy
 \emph default
@@ -6565,7 +6170,7 @@ Cross-Entropy
 
 \end_inset
 
-, que é expressa na forma de 
+, que é expressa na forma de
 \end_layout
 
 \begin_layout Standard
@@ -6642,29 +6247,38 @@ noprefix "false"
 
 \begin_layout Standard
 Observa-se que o gradiente da função de ativação não é considerado, o que
- ajuda a resolver o problema do 
+ ajuda a resolver um problema muito comum ao se treinar redes neurais que
+ é a dissipação do gradiente ou, em inglês, 
 \emph on
 vanishing gradient.
-\change_inserted 1908091853 1662029923
-
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-
-\change_inserted 1908091853 1662029975
-
+ 
+\emph default
+Esse fenômeno costuma ocorrer para algumas funções de ativação nas quais
+ o gradiente tende a zero, como no caso da função 
 \emph on
-o que é vanishing gradient; se colocar algo assim ou descreve o que é ou
- coloca um link para artigo onde o mesmo é apresentado e estudado.
- Da forma como esta fica meio solto.
-\end_layout
+sigmoid
+\emph default
+ ou da tangente hiperbólica.
+ A medida que a rede se torna mais 
+\begin_inset Quotes eld
+\end_inset
+
+inteligente
+\begin_inset Quotes erd
+\end_inset
+
+, com o valor de saída obtido se tornando cada vez mais próximo do valor
+ desejado, ao mesmo tempo ela começa a perder a capacidade de aprendizado,
+ visto que esses valores só serão igualados em um tempo que tende ao infinito
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "tan2019vanishing"
+literal "false"
 
 \end_inset
 
-
-\change_unchanged
-
+.
 \end_layout
 
 \begin_layout Standard

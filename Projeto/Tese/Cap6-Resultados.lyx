@@ -4,7 +4,7 @@
 \begin_header
 \save_transient_properties true
 \origin unavailable
-\textclass /home2/andreduartebueno/workdir/TeseMestrado/Projeto/Tese/abnt
+\textclass abnt
 \begin_preamble
 \usepackage {graphicx}
 \usepackage {longtable}
@@ -83,7 +83,7 @@
 \papercolumns 1
 \papersides 1
 \paperpagestyle fancy
-\tracking_changes true
+\tracking_changes false
 \output_changes false
 \html_math_output 0
 \html_css_as_file 0
@@ -153,12 +153,8 @@ thepage}
 
 \end_inset
 
- Neste capítulo são apresentados os resultados obtido
-\change_inserted 1908091853 1662071660
-s
-\change_unchanged
- a partir da aplicação dos modelos de inteligência artificial sobre imagens
- de rocha reservatório.
+ Neste capítulo são apresentados os resultados obtidos a partir da aplicação
+ dos modelos de inteligência artificial sobre imagens de rocha reservatório.
 \end_layout
 
 \begin_layout Section
@@ -173,12 +169,8 @@ name "sec:Resultados-para-Berea"
 \end_layout
 
 \begin_layout Standard
-
-\change_inserted 1908091853 1662071825
 Apresenta-se nesta seção as imagens coloridas, tabela de resultados e análises
  para imagens binarizadas do Berea 200.
-\change_unchanged
-
 \end_layout
 
 \begin_layout Subsection
@@ -302,10 +294,6 @@ status open
 
 \begin_layout Plain Layout
 I22.png Original
-\change_deleted 1908091853 1662071683
-.
-\change_unchanged
-
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:I22.png-original"
@@ -709,25 +697,17 @@ noprefix "false"
 
 \end_inset
 
- lista os resultados obtidos para as 5 iterações 
-\change_inserted 1908091853 1662071854
-
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-
-\change_inserted 1908091853 1662071863
-você não explicou o que são estas iterações
-\change_unchanged
-
-\end_layout
+ lista os resultados obtidos para as 5 iterações, descritas na Seção 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Aplicação-do-Software"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
-
-\change_unchanged
-nas 4 Figuras que representam a categoria Berea200.
+, nas 4 Figuras que representam a categoria Berea200.
 \end_layout
 
 \begin_layout Standard
@@ -1612,25 +1592,11 @@ foi constado que os valores de porosidade se mantiveram em uma média próxima
 .
  A Figura I216 teve resultados mais homogêneos, enquanto a Figura I26, teve
  resultados mais heterogêneos, pois nas duas primeiras iterações os valores
- de porosidade obtidos foram bem abaixo dos valores das outras iterações.
-\change_inserted 1908091853 1662071949
-
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-
-\change_inserted 1908091853 1662071954
-alguma razão para isso?
-\change_unchanged
-
-\end_layout
-
-\end_inset
-
-
-\change_unchanged
-
+ de porosidade obtidos foram bem abaixo dos valores das outras iterações,
+ o que provavelmente pode ter sido provocado pela qualidade da resolução
+ das imagens obtidas ou pela fadiga do processo.
+ Isso será observado também ao longo da coleta de resultados para os outros
+ grupos de amostras também.
 \end_layout
 
 \begin_layout Section
@@ -1642,13 +1608,9 @@ name "sec:Resultados-para-Berea-1"
 \end_inset
 
 
-\change_inserted 1908091853 1662033930
-
 \end_layout
 
 \begin_layout Standard
-
-\change_inserted 1908091853 1662071825
 Apresenta-se nesta seção as imagens coloridas, tabela de resultados e análises
  para imagens binarizadas do Berea 500.
 \end_layout
@@ -2568,10 +2530,6 @@ status open
 
 \begin_layout Plain Layout
 Resultados Berea500
-\change_deleted 1908091853 1662071708
-.
-\change_unchanged
-
 \begin_inset CommandInset label
 LatexCommand label
 name "tab:resultados-Berea500"
@@ -4143,11 +4101,7 @@ noprefix "false"
 
 .
  A amostra I31 mostrou os resultados de porosidade mais bem comportados
- ao longo da
-\change_inserted 1908091853 1662072014
-s
-\change_unchanged
- iterações.
+ ao longo das iterações.
  Observando a Figura 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -4160,15 +4114,8 @@ noprefix "false"
 
 , é de se esperador tal comportamento, já que seus poros estão bem destacados,
  o que facilita no momento da coleta.
- Todas as amostras dessa categoria
-\change_inserted 1908091853 1662072033
- 
-\change_deleted 1908091853 1662072033
-, 
-\change_unchanged
-e também da categoria Berea200, possuem essa característica de poros bem
- destacados.
- 
+ Todas as amostras dessa categoria e também da categoria Berea200, possuem
+ essa característica de poros bem destacados.
 \end_layout
 
 \begin_layout Section
@@ -4180,13 +4127,9 @@ name "sec:Resultados-para-P148_K2"
 \end_inset
 
 
-\change_inserted 1908091853 1662033940
-
 \end_layout
 
 \begin_layout Standard
-
-\change_inserted 1908091853 1662071825
 Apresenta-se nesta seção as imagens coloridas, tabela de resultados e análises
  para imagens binarizadas do P148_K2.
 \end_layout
@@ -5481,10 +5424,6 @@ status open
 
 \begin_layout Plain Layout
 Resultados P148_K2
-\change_deleted 1908091853 1662071722
-.
-\change_unchanged
-
 \begin_inset CommandInset label
 LatexCommand label
 name "tab:resultados-P148_K-1"
@@ -7431,13 +7370,7 @@ As amostras dessa categoria foram de longe as que apresentaram os resultados
  Os tons de azul acentuados confundiram no momento da coleta de informações.
  A cor dos poros era por vezes muito próxima da cor da matriz sólida.
  Acredita-se que essa característica também possa ter provocado a rede neural
- a se confundir ao realizar 
-\change_deleted 1908091853 1662072094
-a coleta
-\change_inserted 1908091853 1662072096
-o processamento
-\change_unchanged
-.
+ a se confundir ao realizar o processamento.
  As médias dos resultados variaram entre 
 \begin_inset Formula $9\%$
 \end_inset
@@ -7448,11 +7381,7 @@ o processamento
 
 .
  A amostra 3271i02 foi de fato a mais complicada de se realizar a coleta,
- o que pode ser justificado se for observada 
-\change_inserted 1908091853 1662072108
-a 
-\change_unchanged
-Figura 
+ o que pode ser justificado se for observada a Figura 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:3271i02.png-original"
@@ -7488,24 +7417,19 @@ $
 \end_inset
 
 .
-\change_inserted 1908091853 1662072139
-
+ Outro ponto a ser considerado é o fato da amostra possuir uma baixa conectivida
+de e/ou muitos estreitamentos de ligações, além de uma porosidade e uma
+ permeabilidade bem baixas.
 \begin_inset Note Note
-status open
+status collapsed
 
 \begin_layout Plain Layout
-
-\change_inserted 1908091853 1662072213
 porosidade 14.8 e permeabilidade 2, bem baixa, indica baixa conectividade
  e/ou muitos estreitamentos de ligações
-\change_unchanged
-
 \end_layout
 
 \end_inset
 
-
-\change_unchanged
 
 \end_layout
 
@@ -7518,13 +7442,9 @@ name "sec:Resultados-para-P240_K104"
 \end_inset
 
 
-\change_inserted 1908091853 1662033979
-
 \end_layout
 
 \begin_layout Standard
-
-\change_inserted 1908091853 1662071825
 Apresenta-se nesta seção as imagens coloridas, tabela de resultados e análises
  para imagens binarizadas do P240_K104.
 \end_layout
@@ -8819,10 +8739,6 @@ status open
 
 \begin_layout Plain Layout
 Resultados P240_K104
-\change_deleted 1908091853 1662071737
-.
-\change_unchanged
-
 \begin_inset CommandInset label
 LatexCommand label
 name "tab:resultados_P240_K104"
@@ -10765,35 +10681,16 @@ Análise Resultados P240_K104
 Em relação à categoria anterior, pode-se se dizer que as amostras em P240_K104
  mostram resultados mais bem comportados, ainda que suas médias estejam
  acima do valor de porosidade medido em laboratório.
- O fato dos poros
-\change_deleted 1908091853 1662072283
-os
-\change_unchanged
- das amostras dessa categoria serem um pouco maiores de fato ajudou a manter
- uma certa consistência na coleta de dados.
- Ainda assim, a tonalidade azulada presente na imagem promove
-\change_deleted 1908091853 1662072300
-m
-\change_unchanged
- algumas confusões nessa etapa.
- Novamente, essa característica pode também explicar o fato 
-\change_deleted 1908091853 1662072306
-das
-\change_unchanged
- dos valores da média estarem acima do valor de porosidade esperado
-\change_deleted 1908091853 1662072320
-s
-\change_unchanged
-.
+ O fato dos poros das amostras dessa categoria serem um pouco maiores de
+ fato ajudou a manter uma certa consistência na coleta de dados.
+ Ainda assim, a tonalidade azulada presente na imagem promove algumas confusões
+ nessa etapa.
+ Novamente, essa característica pode também explicar o fato dos valores
+ da média estarem acima do valor de porosidade esperado.
  O que vale ser destacado aqui é o fato de que o modelo de rede neural entregou
  aqui as imagens com os limites das regiões mais bem destacados.
  O uso de amostras com mais qualidade poderiam resultar em binarizações
  ainda mais precisas.
-
-\change_deleted 1908091853 1662072332
- 
-\change_unchanged
-
 \end_layout
 
 \begin_layout Section
@@ -10805,13 +10702,9 @@ name "sec:Resultados-para-P262_K441"
 \end_inset
 
 
-\change_inserted 1908091853 1662034002
-
 \end_layout
 
 \begin_layout Standard
-
-\change_inserted 1908091853 1662071825
 Apresenta-se nesta seção as imagens coloridas, tabela de resultados e análises
  para imagens binarizadas do P262_K441.
 \end_layout
@@ -12107,10 +12000,6 @@ status open
 
 \begin_layout Plain Layout
 Resultados P262_K441
-\change_deleted 1908091853 1662071749
-.
-\change_unchanged
-
 \begin_inset CommandInset label
 LatexCommand label
 name "tab:resultados-P262_K441"
@@ -14061,23 +13950,15 @@ A última categoria de amostras, P262_K441, possuía as amostras de pior qualida
  Além disso ela seria um ótimo exemplo para o caso de se buscar a segmentação
  de diferentes regiões, além de poros e matriz rochosa, uma vez que possui
  cores bem destacadas para outros minerais.
-\change_inserted 1908091853 1662072394
-
 \begin_inset Note Note
 status open
 
 \begin_layout Plain Layout
-
-\change_inserted 1908091853 1662072417
 considere fazer uma coleta com 4x mais píxeis e compare os resultados;
-\change_unchanged
-
 \end_layout
 
 \end_inset
 
-
-\change_unchanged
 
 \end_layout
 
@@ -14090,58 +13971,22 @@ Análise dos Resultados Considerando Aplicação da Metodologia pelo Mesmo
 Observando os resultados obtidos para as categorias listadas nas seções
  anteriores, pode-se destacar que as amostras da categoria P240_K104 entregaram
  o melhor resultados de segmentação, mesmo que seus valores de porosidade
- não estejam exatamente condi
-\change_deleted 1908091853 1662072442
-c
-\change_inserted 1908091853 1662072442
-z
-\change_unchanged
-entes com aqueles medidos em laboratório.
- A porosidade 
-\change_deleted 1908091853 1662072455
-absoluta
-\change_inserted 1908091853 1662072456
-obtida
-\change_unchanged
- pelo algoritmo é descrita como absoluta, uma vez que é levado em consideração
- a razão entre a soma de pixeis da cor branca e a soma total de pixeis.
- O valor
-\change_deleted 1908091853 1662072465
-e
-\change_unchanged
- de porosidade medido em laboratório pode conter alguma margem de erro,
- principalmente se for considerado problemas na aplicação da resina.
- 
+ não estejam exatamente condizentes com aqueles medidos em laboratório.
+ A porosidade obtida pelo algoritmo é descrita como absoluta, uma vez que
+ é levado em consideração a razão entre a soma de pixeis da cor branca e
+ a soma total de pixeis.
+ O valor de porosidade medido em laboratório pode conter alguma margem de
+ erro, principalmente se for considerado problemas na aplicação da resina.
 \end_layout
 
 \begin_layout Standard
 As amostras das categorias Berea200 e Berea500 não puderam ter seus valores
- de porosidade comparados com valores reais
-\change_inserted 1908091853 1662072479
-
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-
-\change_inserted 1908091853 1662072489
-corrigir.
- pois permeabilidades são 200 e 500
-\change_unchanged
-
-\end_layout
-
-\end_inset
-
-
-\change_unchanged
-.
+ de porosidade comparados com valores reais.
  Mesmo assim é possível tirar algumas conclusões dos resultados obtidos,
  como o fato da qualidade da imagem impactar diretamente no resultado da
  segmentação.
  As regiões de contorno dos grão dessas amostras acabaram sofrendo um pouco
  devido a natureza das imagens.
- 
 \end_layout
 
 \begin_layout Standard
@@ -14151,25 +13996,7 @@ Vale ressaltar também que a experiência do usuário é fator crucial para
  fosse possível obter resultados mais próximos da realidade para algumas
  amostras.
  O fato de redes neurais também serem dependentes de grandes quantidades
- de dados também pode ter sido um fator relevante a ser considerado
-\change_inserted 1908091853 1662072520
-
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-
-\change_inserted 1908091853 1662072523
-facil de testar
-\change_unchanged
-
-\end_layout
-
-\end_inset
-
-
-\change_unchanged
-.
+ de dados também pode ter sido um fator relevante a ser considerado.
  O processo de coleta é cansativo e demanda uma concentração do usuário
  que por vezes pode ser perdida, provocando algumas falhas por erro humano.
  O uso de técnicas mais generalistas e menos dependentes de dados poderiam
@@ -14182,7 +14009,6 @@ literal "false"
 \end_inset
 
 .
- 
 \end_layout
 
 \begin_layout Section
@@ -14191,41 +14017,6 @@ Análise dos Resultados Considerando Aplicação da Metodologia por Usuários
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-depois de considerar média e desvio padrão para um mesmo usuário
-\end_layout
-
-\begin_layout Plain Layout
-repete considerando diferentes usuários; vai estudar a variação para diferentes
- usuários;
-\end_layout
-
-\begin_layout Plain Layout
-o ideal é dividir em 3 grupos:
-\end_layout
-
-\begin_layout Plain Layout
-- Usuários iniciantes em engenharia
-\end_layout
-
-\begin_layout Plain Layout
-- Usuários concluintes
-\end_layout
-
-\begin_layout Plain Layout
-- Geólogos experientes
-\end_layout
-
-\begin_layout Plain Layout
-daí consegue fazer considerações sobre os diferentes usuários e diferentes
- grupos
-\end_layout
-
-\end_inset
-
 Os valores de porosidade das imagens dos voluntários é descrito na Tabela
  
 \begin_inset CommandInset ref
@@ -14252,10 +14043,6 @@ status open
 
 \begin_layout Plain Layout
 Valores de Porosidade das Análises dos Voluntários
-\change_deleted 1908091853 1662071753
-.
-\change_unchanged
-
 \begin_inset CommandInset label
 LatexCommand label
 name "tab:resultados-voluntarios"
@@ -14274,37 +14061,20 @@ name "tab:resultados-voluntarios"
 \noindent
 \align center
 \begin_inset Tabular
-<lyxtabular version="3" rows="6" columns="5">
+<lyxtabular version="3" rows="6" columns="6">
 <features tabularvalignment="middle" tabularwidth="100text%">
 <column alignment="center" valignment="top" width="0pt">
-<column alignment="center" valignment="top" width="0pt">
-<column alignment="center" valignment="top" width="0pt">
-<column alignment="center" valignment="top" width="0pt">
-<column alignment="center" valignment="top" width="0pt">
+<column alignment="center" valignment="top" width="13text%">
+<column alignment="center" valignment="top" width="13text%">
+<column alignment="center" valignment="top" width="13text%">
+<column alignment="center" valignment="top" width="13text%">
+<column alignment="center" valignment="top" width="13text%">
 <row>
 <cell multicolumn="1" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
 Imagens
-\change_inserted 1908091853 1662072829
-
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-
-\change_inserted 1908091853 1662072837
-coloque coluna com valores experimentais
-\change_unchanged
-
-\end_layout
-
-\end_inset
-
-
-\change_unchanged
-
 \end_layout
 
 \end_inset
@@ -14313,25 +14083,7 @@ coloque coluna com valores experimentais
 \begin_inset Text
 
 \begin_layout Plain Layout
-Voluntário 1
-\change_inserted 1908091853 1662072630
-
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-
-\change_inserted 1908091853 1662072634
-engenheiro
-\change_unchanged
-
-\end_layout
-
-\end_inset
-
-
-\change_unchanged
-
+Valores Experimentais
 \end_layout
 
 \end_inset
@@ -14340,23 +14092,7 @@ engenheiro
 \begin_inset Text
 
 \begin_layout Plain Layout
-Voluntário 2
-\change_inserted 1908091853 1662072640
-
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-
-\change_inserted 1908091853 1662072640
-engenheiro
-\end_layout
-
-\end_inset
-
-
-\change_unchanged
-
+Voluntário 1 (Engenheiro)
 \end_layout
 
 \end_inset
@@ -14365,23 +14101,16 @@ engenheiro
 \begin_inset Text
 
 \begin_layout Plain Layout
-Voluntário 3
-\change_inserted 1908091853 1662072642
-
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-
-\change_inserted 1908091853 1662072645
-doutorando
+Voluntário 2 (Engenheiro)
 \end_layout
 
 \end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
 
-
-\change_unchanged
-
+\begin_layout Plain Layout
+Voluntário 3 (Doutorando)
 \end_layout
 
 \end_inset
@@ -14390,23 +14119,7 @@ doutorando
 \begin_inset Text
 
 \begin_layout Plain Layout
-Voluntário 4
-\change_inserted 1908091853 1662072647
-
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-
-\change_inserted 1908091853 1662072651
-graduando
-\end_layout
-
-\end_inset
-
-
-\change_unchanged
-
+Voluntário 4 (Graduando)
 \end_layout
 
 \end_inset
@@ -14418,6 +14131,15 @@ graduando
 
 \begin_layout Plain Layout
 I212
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-
 \end_layout
 
 \end_inset
@@ -14489,6 +14211,15 @@ I310
 \begin_inset Text
 
 \begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
 33,2604
 \begin_inset space ~
 \end_inset
@@ -14544,6 +14275,19 @@ I310
 
 \begin_layout Plain Layout
 3271i01
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+14,80
+\begin_inset space ~
+\end_inset
+
+%
 \end_layout
 
 \end_inset
@@ -14615,6 +14359,19 @@ I310
 \begin_inset Text
 
 \begin_layout Plain Layout
+24,00
+\begin_inset space ~
+\end_inset
+
+%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
 27,7952
 \begin_inset space ~
 \end_inset
@@ -14670,6 +14427,19 @@ I310
 
 \begin_layout Plain Layout
 L67409i1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+26,20
+\begin_inset space ~
+\end_inset
+
+%
 \end_layout
 
 \end_inset
@@ -14752,22 +14522,12 @@ Sobre os dados coletados por diferentes tipos de voluntários, pode-se se
 background 
 \emph default
 de cada um deles.
- Observa-se que os valores obtidos pelo voluntário 4
-\change_inserted 1908091853 1662072737
-(graduando)
-\change_unchanged
- foram os que mais se afastaram dos valores de porosidade real de cada uma
- das imagens.
+ Observa-se que os valores obtidos pelo voluntário 4 (graduando) foram os
+ que mais se afastaram dos valores de porosidade real de cada uma das imagens.
  É provável que isso tenha ocorrido devido a baixa quantidade de dados coletados
  durante sua iteração.
  Isso também reforça que a quantidade de dados é crucial para que sejam
- obtidos bons resultados com 
-\change_inserted 1908091853 1662072756
-algoritmos
-\change_deleted 1908091853 1662072756
-algorítmos
-\change_unchanged
- de inteligência artificial.
+ obtidos bons resultados com algoritmos de inteligência artificial.
 \end_layout
 
 \begin_layout Standard
@@ -14800,15 +14560,8 @@ name "sec:Analise-Resultados"
 \end_layout
 
 \begin_layout Standard
-Observando os valores de obtidos pelos voluntários, e considerando que 
-\change_deleted 1908091853 1662072873
-o 
-\change_unchanged
-as análises realizadas pelo usuário na
-\change_inserted 1908091853 1662072885
-s
-\change_unchanged
- Seções 
+Observando os valores de obtidos pelos voluntários, e considerando que as
+ análises realizadas pelo usuário nas Seções 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sec:Resultados-para-Berea"
@@ -14860,22 +14613,10 @@ noprefix "false"
 
  que se enquadraria na mesma categoria que os voluntários 1 e 2, era de
  se esperar uma certa disparidade nos valores obtidos.
- Conforme foi explicado
-\change_inserted 1908091853 1662072904
-,
-\change_unchanged
- 
-\change_deleted 1908091853 1662072899
-antes
-\change_unchanged
- os fatores qualidade das imagens, número de dados a serem coletados (devido
- a natureza de aprendizagem das redes neurais), e a experiência profissional
- 
-\change_deleted 1908091853 1662072913
-dos
-\change_unchanged
- dos usuários, foram peças chaves para obtenção desses valores.
- 
+ Conforme foi explicado, os fatores qualidade das imagens, número de dados
+ a serem coletados (devido a natureza de aprendizagem das redes neurais),
+ e a experiência profissional dos usuários, foram peças chaves para obtenção
+ desses valores.
 \end_layout
 
 \begin_layout Standard
