@@ -272,7 +272,7 @@ Machine Learning PyTorch
 \emph on
 script 
 \emph default
-de treinamento é um outro arquivo no formato ascii e com extensão 
+de treinamento é um outro arquivo no formato ASCII e com extensão 
 \emph on
 .pt
 \emph default
@@ -551,21 +551,6 @@ name "sec:Sugestoes-Para-Trabalhos-Futuros"
 Utilizar a ferramenta de anotação de regiões de interesse para classificação
  e segmentação de não apenas regiões de poros e matriz sólida, mas também
  para os diferentes componentes mineralógicos que compõem a imagem.
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-tente conseguir alguém que possa fazer isso para você; daí poderia acrescentar
- resultado na versão final;
-\end_layout
-
-\begin_layout Plain Layout
-uma imagem com uns 5 minerais diferentes.
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Itemize
@@ -669,57 +654,6 @@ noprefix "false"
 \end_inset
 
 .
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status collapsed
-
-\begin_layout Itemize
-Coloque cada sugestão como uma itemização.
-\end_layout
-
-\begin_layout Itemize
-Fale dos erros cometidos e o que fazer para corrigi-los.
-\end_layout
-
-\begin_layout Itemize
-Fale o que faltou fazer, inovações para o futuro.
-\end_layout
-
-\begin_layout Itemize
-Faça sugestões para trabalhos futuros incluindo não apenas o escopo do seu
- trabalho, mas sugestões mais abrangentes para trabalhos futuros.
- Por exemplo, em quais outras áreas da pesquisa científica ou tecnológica
- seu trabalho ou parte dele pode ser aproveitado.
- Em quais áreas os modelos, métodos e técnicas desenvolvidas podem ser utilizado
-s.
-\end_layout
-
-\begin_layout Itemize
-coloque aqui diversas dicas para trabalhos futuros
-\end_layout
-
-\begin_layout Itemize
-coloque primeiro, exemplos de trabalhos que dão continuidade ao trabalho
- desenvolvido, e que são fáceis de fazer (muito provavelmente você mesmo
- fará este trabalho)
-\end_layout
-
-\begin_layout Itemize
-exemplos de novos trabalhos, que ampliam o trabalho desenvolvido e que podem
- ser feitos em até 1 ano (provavelmente você mesmo fará este trabalho).
-\end_layout
-
-\begin_layout Itemize
-outros exemplos de trabalhos que podem ser desenvolvidos, mas que tem um
- enfoque diferente, ou que irão demorar muito (provavelmente você fará isto
- num doutorado, ou outra pessoa poderá fazê-lo).
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \end_body

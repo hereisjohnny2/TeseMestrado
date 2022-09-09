@@ -138,17 +138,6 @@ thepage}
 Este capítulo apresenta um conjunto de conceitos e modelos desenvolvidos
  por outros autores e que estão diretamente relacionados a este trabalho,
  estes conceitos serão utilizados neste trabalho.
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-você precisa copiar todos os termos aqui definidos para a nomenclatura;
- e apagar o que não foi utilizado na nomenclatura antiga
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Section
@@ -294,18 +283,6 @@ literal "false"
 \begin_inset Formula $\phi[\frac{m³}{m³}]$
 \end_inset
 
-
-\begin_inset Note Note
-status collapsed
-
-\begin_layout Plain Layout
-Toda vez que incluir um termo coloque o termo, suas unidades SI, e uma descrição.
- Faça isso quando o termo aparece pela primeira vez.
- Para sua dissertação estas definições irão para a nomenclatura.
-\end_layout
-
-\end_inset
-
  na Equação 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -428,21 +405,6 @@ literal "false"
 \begin_inset Note Note
 status collapsed
 
-\begin_layout Subsection
-Saturação
-\begin_inset Index idx
-status open
-
-\begin_layout Plain Layout
-Saturação
-\end_layout
-
-\end_inset
-
-
-\begin_inset Note Note
-status open
-
 \begin_layout Plain Layout
 como não usa saturação/capilaridade/permeabilidade poderia pensar em retirar
  ou colocar estes itens num apêndice "Propriedades de Rochas Reservatório";
@@ -451,6 +413,21 @@ como não usa saturação/capilaridade/permeabilidade poderia pensar em retirar
 \begin_layout Plain Layout
 pense em falar mais de porosidade a partir de imagens e quais fatores afetam
  a qualidade desta medida quando obtida a partir de imagens...
+\end_layout
+
+\end_inset
+
+
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Subsection
+Saturação
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Saturação
 \end_layout
 
 \end_inset
@@ -2708,24 +2685,6 @@ status open
 \begin_layout Plain Layout
 \noindent
 \align center
-\begin_inset Note Note
-status collapsed
-
-\begin_layout Plain Layout
-\noindent
-\align center
-\begin_inset Graphics
-	filename ../../imagens/imagensLivros/histograma.png
-	scale 90
-
-\end_inset
-
-TROQUEI POR UMA IMAGEM MAIS BONITA...KAKAKA
-\end_layout
-
-\end_inset
-
-
 \begin_inset Graphics
 	filename ../../imagens/imagensLivros/Molly-02-Nenem-Praia.jpg
 	lyxscale 25

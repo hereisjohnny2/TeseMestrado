@@ -464,11 +464,6 @@ Em seguida serão desenvolvidos os modelos para serem aplicados nas amostras.
 \end_layout
 
 \begin_layout Standard
-Todos os códigos desenvolvidos serão testados e incorporados a biblioteca
- LIB_LDSC em C++, além de publicados no site github.
-\end_layout
-
-\begin_layout Standard
 Os códigos passarão então por alguns testes e, após aprovação, serão utilizados
  para realizar as análises de diferentes amostras de imagens.
 \end_layout
