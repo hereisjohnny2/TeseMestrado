@@ -2273,8 +2273,8 @@ Dentre estes, os mais comuns são os sistemas cromáticos CIE-RGB, HSV e HSL.
 \begin_layout Standard
 O sistema CIE-RGB define um espaço de cores tricromático baseados nas porções
  superior (azul), média (verde) e inferior (vermelho) do espectro visual,
- correspondendo aos valores de frequência definidos pela Comissão Internacional
- de Iluminação 
+ correspondendo aos valores de comprimento de onda definidos pela Comissão
+ Internacional de Iluminação 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "de2006introduccao"
@@ -4272,18 +4272,9 @@ scanners
 \emph on
 , 
 \emph default
-ou seja um conversor Analógico-Digital,
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-o que é ADC? colocar aqui e na lista de siglas
-\end_layout
-
-\end_inset
-
- transforma o sinal analógico em discreto e transmite essa informação para
- um computador ou armazena em algum dispositivo de memória.
+ou seja um conversor Analógico-Digital, transforma o sinal analógico em
+ discreto e transmite essa informação para um computador ou armazena em
+ algum dispositivo de memória.
 \end_layout
 
 \begin_layout Subsubsection
@@ -4328,16 +4319,6 @@ Etapa 5 - Caracterização
  de auto-correlação e conectividade.
  Para que permeabilidade seja obtida é necessário antes gerar um imagem
  3D da rocha estudada.
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-para obter a permeabilidade temos de gerar a imagem 3D
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Subsubsection
@@ -4378,7 +4359,7 @@ literal "false"
 .
  É uma área demasiada extensa e envolve uma série de modelos
 \begin_inset Note Note
-status open
+status collapsed
 
 \begin_layout Plain Layout
 abaixo você tem seções que falam de modelos
@@ -6093,18 +6074,6 @@ onde
  o tamanho do 
 \emph on
 mini-batches.
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-
-\emph on
-lembre de colocar estes termos, u,m,w...etc, na nomenclatura
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \end_deeper
