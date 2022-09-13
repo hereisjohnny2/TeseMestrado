@@ -326,6 +326,91 @@ literal "false"
 \end_layout
 
 \begin_layout Standard
+Para rochas sedimentares a porosidade é frequentemente observada na faixa
+ entre 5 e 25%.
+ Nos casos onde esse valor extrapola, ficando entre 25 e 35 %, é possível
+ afirmar que o reservatório em questão é excelente nos caso dos fluidos
+ presentes serem hidrocarbonetos 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "suguio2003geologia"
+literal "false"
+
+\end_inset
+
+.
+ No caso de rochas carbonáticas é mais comum que o valor de porosidade seja
+ observado na faixa entre 0 e 20%, e em caso mais excepcionais, entre 30
+ e 75%.
+ A Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:freq-poros"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ faz uma relação entre frequência e porosidade para rochas dessa natureza.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename ../../imagens/imagensArtigos/freq-poros.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Relação entre frequência e porosidade para rochas carbonáticas.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:freq-poros"
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+[Fonte: 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "scholle2003color"
+literal "false"
+
+\end_inset
+
+]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 No estudo da porosidade é comum definir dois conceitos relacionados à forma
  com a qual os poros se conectam, a porosidade total e efetiva.
  Na porosidade total
@@ -395,6 +480,414 @@ literal "false"
 \begin{equation}
 \phi_{total}=\phi_{efetiva}+V_{argilas}\times\phi_{argilas}\label{eq:porosidade total e efetiva}
 \end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Tal grandeza se mostra essencial para a indústria de óleo e gás, uma vez
+ que o resultado obtido nas análises de porosidade de um determinado conjunto
+ de amostras para um reservatório está diretamente atrelado à lucratividade
+ durante a produção.
+ 
+\end_layout
+
+\begin_layout Standard
+O tamanho e a geometria dos poros e o diâmetro e a conectividade das gargantas
+ (ligação entrei dois ou mais poros) são fatores cruciais que afetam a produtivi
+dade de um reservatório.
+ A circularidade é uma característica simples da qual é possível extrair
+ sobre a estrutura de um poro e representa a relação entre o seu tamanho
+ e formato.
+ Assim, poros com diâmetros menores terão menos facilidade de acumular fluidos
+ e permitir que eles sejam transmitidos rocha, enquanto poros com dimensões
+ maiores e geometria mais bem comportadas se mostram, na maioria dos caso,
+ estruturas mais produtivas 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "archie1952classification"
+literal "false"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+A circularidade 
+\begin_inset Formula $c$
+\end_inset
+
+ é definida por:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+c=\frac{4\pi A}{S^{2}},\label{eq:circularidade}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+onde 
+\begin_inset Formula $A$
+\end_inset
+
+ é a área de um determinado poro e 
+\begin_inset Formula $S$
+\end_inset
+
+é o perímetro.
+\end_layout
+
+\begin_layout Standard
+Ainda de acordo com 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+citeonline{archie1952classification}
+\end_layout
+
+\end_inset
+
+, a visibilidade é outro parâmetro de contribui bastante para se analisar
+ como os fluidos podem estar distribuídos dentro da matriz porosa.
+ A classificação da visibilidade se dá por meio das classes apresentadas
+ na Tabela 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:visibilidade-poros"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Classificação da visibilidade 
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:visibilidade-poros"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="3">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0pt">
+<column alignment="center" valignment="top" width="0pt">
+<column alignment="center" valignment="top" width="0pt">
+<row>
+<cell multicolumn="1" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Classe
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Tamanho
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Visibilidade
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Não Visível
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+< 1 
+\begin_inset Formula $\mu m$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+B
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Visível
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+entre 1 e 10 
+\begin_inset Formula $\mu m$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+C
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Visível
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+> 10 
+\begin_inset Formula $\mu m$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+D
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+Vugs
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Um 
+\emph on
+vug 
+\emph default
+pode ser definido como uma cavidade, vazio ou poro grande em uma rocha que
+ é comumente revestida com precipitados minerais
+\emph on
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+> 1 
+\begin_inset Formula $mm$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Segundo 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+citeonline{bellini2019caracterizaccao}
+\end_layout
+
+\end_inset
+
+ poros podem ser classificados em 4 tipos diferentes de acordo com sua estrutura.
+ Esses tipo podem ser poros fechados e isolados, poros com estagnação (nos
+ quais os fluidos ficam retidos após entrarem), poros com garganta conectados
+ (onde existe uma conexão entre eles e o fluido atravessa o meio poroso),
+ e poros com garganta desconectados (os fluidos ainda atravessam o meio
+ poroso mas não existe conexão entre eles).
+ A Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:tipos-de-poros"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ exemplifica cada um desses tipos.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename ../../imagens/imagensArtigos/bellini-tipos-poros.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Tipos de poros de acordo com a geometria das sua conectividade.
+ (a) Poros Isolados; (b) Poros com Estagnação; (c) Poros Conectados; e (d)
+ Poros Garganta.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:tipos-de-poros"
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+[Fonte: 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "bellini2019caracterizaccao"
+literal "false"
+
+\end_inset
+
+]
+\end_layout
+
+\end_inset
+
+
+\end_layout
 
 \end_inset
 
@@ -1803,7 +2296,7 @@ noprefix "false"
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \noindent
@@ -1926,7 +2419,7 @@ noprefix "false"
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \noindent
