@@ -141,7 +141,7 @@ Este capítulo apresenta um conjunto de conceitos e modelos desenvolvidos
 \end_layout
 
 \begin_layout Section
-Propriedades das Rochas Reservatórios
+Rochas Reservatórios e Porosidade
 \begin_inset CommandInset label
 LatexCommand label
 name "sec:Propriedades-Rochas-Reservatorios"
@@ -152,9 +152,8 @@ name "sec:Propriedades-Rochas-Reservatorios"
 \end_layout
 
 \begin_layout Standard
-Esta seção trata de definir alguns conceitos relacionados às propriedades
- físicas das rochas reservatório, dentre elas porosidade, permeabilidade,
- capilaridade.
+Esta seção trata de definir alguns conceitos relacionados a porosidade em
+ rochas reservatórios.
 \end_layout
 
 \begin_layout Subsection

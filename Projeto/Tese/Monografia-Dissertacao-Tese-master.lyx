@@ -408,6 +408,9 @@ filename "Cap-Apendice_A.lyx"
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
 \begin_inset CommandInset include
 LatexCommand include
 filename "Cap-Apendice_B.lyx"
